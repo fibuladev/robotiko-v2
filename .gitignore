@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Video & Audio (too large for Git, use S3)
+*.mp4
+*.mov
+*.avi
+*.mp3
+*.wav
+*.flac
+
+# Large images (use Git LFS or S3)
+*.psd
+*.ai
+*_4k.png
+*_8k.png
+
+# Temp files
+*.tmp
+*.log
+.cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets
+.env
+credentials.json

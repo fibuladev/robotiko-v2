@@ -1,0 +1,33 @@
+name: Create New Episode Scaffolding
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_number:
+        description: 'Episode Number (e.g., 1, 7, 10)'
+        required: true
+        type: string
+
+jobs:
+  create-episode:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Run Creation Script
+        run: |
+          python scripts/create_episode.py ${{ inputs.episode_number }}
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "Robotiko Automation"
+          git config --global user.email "bot@robotiko.ai"
+          git add .
+          git commit -m "🚀 Scaffolding created for Episode ${{ inputs.episode_number }}"
+          git push

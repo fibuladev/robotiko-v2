@@ -1,0 +1,28 @@
+{
+  "project_name": "Robotiko v2.0",
+  "total_episodes": 10,
+  "current_phase": "Pre-Production",
+  "version_control": {
+    "bible_version": "v1.0",
+    "pipeline_version": "v1.0"
+  },
+  "episodes": {
+    "ep01": {
+      "title": "The Cycle Break / First Contact",
+      "status": "completed",
+      "folder_name": "episode-01",
+      "key_assets_locked": true
+    },
+    "ep02": {
+      "title": "Global Collapse Tour",
+      "status": "planned",
+      "folder_name": "episode-02",
+      "key_assets_locked": false
+    }
+  },
+  "global_settings": {
+    "fps": 24,
+    "resolution": "4K",
+    "aspect_ratio": "16:9"
+  }
+}

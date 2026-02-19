@@ -1,0 +1,33 @@
+{
+  "robotiko": {
+    "name": "Robotiko v2.0",
+    "archetype": "The Seeker",
+    "base_visual_prompt": "Retro-futuristic chrome metal body, exposed colorful analog wires (blue and red), glowing blue eyes, 70s sci-fi mechanical aesthetic",
+    "master_ref_path": "_assets/cast/ref_robotiko_master.png",
+    "evolution": {
+      "phase_1_awakening": {
+        "episodes": [1, 2, 3],
+        "state": "Pristine chrome, curious eyes, clean analog wires"
+      },
+      "phase_2_destruction": {
+        "episodes": [4, 5, 6, 7],
+        "state": "Rusted joints, sparks flying, glitching blue eyes, cracked chassis"
+      },
+      "phase_3_reconstruction": {
+        "episodes": [8, 9, 10],
+        "state": "Translucent digital skin, bioluminescent core, dissolved metal"
+      }
+    }
+  },
+  "mentor": {
+    "name": "The Cosmic Mentor",
+    "archetype": "The Guide",
+    "base_visual_prompt": "Figure in a dark green cloak, leather tunic, deep wisdom, organic texture, holding a wooden staff with glowing amber tip",
+    "master_ref_path": "_assets/cast/ref_mentor_master.png",
+    "status": {
+      "active": [1, 2, 3, 4, 5, 6],
+      "dying": [7],
+      "deceased": [8, 9, 10]
+    }
+  }
+}

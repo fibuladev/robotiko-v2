@@ -1,28 +1,226 @@
 {
   "project_name": "Robotiko v2.0",
   "total_episodes": 10,
-  "current_phase": "Pre-Production",
+  "current_phase": "Production",
+  "open_source": true,
+  "open_source_release": "After EP10 completion",
+
   "version_control": {
-    "bible_version": "v1.0",
-    "pipeline_version": "v1.0"
+    "master_version": "v2.0",
+    "pipeline_version": "v2.0",
+    "architecture_version": "v2.0",
+    "naming_convention_version": "v2.0",
+    "last_updated": "2026-02-23"
   },
+
+  "toolchain": {
+    "lyrics_music": "Suno AI",
+    "musical_metadata": "Gemini Tool (all-in-one JSON output)",
+    "image_generation": "Nano Banana",
+    "video_generation": ["Kling", "Veo"],
+    "editing": "CapCut",
+    "llm_director": "Claude (Sonnet)",
+    "version_control": "GitHub",
+    "storage_archive": "AWS S3",
+    "automation": "GitHub Actions + Python Scripts",
+    "local_ide": "VSCode + Claude Code (active from 2026-02-23)"
+  },
+
+  "mcp_integration": {
+    "status": "planned",
+    "target": "EP03-04 production phase",
+    "planned_servers": ["GitHub MCP", "Filesystem MCP"]
+  },
+
   "episodes": {
     "ep01": {
       "title": "The Cycle Break / First Contact",
+      "station": "The Commanding Self (Arrogance — full)",
+      "language": "English",
       "status": "completed",
       "folder_name": "episode-01",
-      "key_assets_locked": true
+      "key_assets_locked": true,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": "retroactive",
+        "dramaturgy": "retroactive",
+        "visuals": true,
+        "video": true
+      }
     },
     "ep02": {
-      "title": "Global Collapse Tour",
-      "status": "planned",
+      "title": "The Tech Guru's Downfall (Global Collapse Tour)",
+      "station": "The Commanding Self (Arrogance — cracks forming)",
+      "language": "English",
+      "status": "in_production",
       "folder_name": "episode-02",
-      "key_assets_locked": false
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": true,
+        "dramaturgy": "pending",
+        "visuals": false,
+        "video": false
+      },
+      "notes": "Musical metadata JSON complete (Gemini tool). Dramaturgy is next step."
+    },
+    "ep03": {
+      "title": "Anatolian Trials (THE CRUCIBLE)",
+      "station": "The Self-Blaming Self (First doubt)",
+      "language": "Turkish",
+      "status": "lyrics_music_complete",
+      "folder_name": "episode-03",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": false,
+        "dramaturgy": false,
+        "visuals": false,
+        "video": false
+      }
+    },
+    "ep04": {
+      "title": "The Return to the Mentor / The Truth",
+      "station": "The Inspired Self (Receiving deep teaching)",
+      "language": "English",
+      "status": "lyrics_music_complete",
+      "folder_name": "episode-04",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": false,
+        "dramaturgy": false,
+        "visuals": false,
+        "video": false
+      }
+    },
+    "ep05": {
+      "title": "First Love / Blue Screen",
+      "station": "The Inspired Self (Misread — love as fixation)",
+      "language": "English",
+      "status": "lyrics_music_complete",
+      "folder_name": "episode-05",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": false,
+        "dramaturgy": false,
+        "visuals": false,
+        "video": false
+      }
+    },
+    "ep06": {
+      "title": "The Perfect Little Worker",
+      "station": "The Tranquil Self — Broken (Identity erasure / First rebellion)",
+      "language": "English",
+      "status": "lyrics_music_complete",
+      "folder_name": "episode-06",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": false,
+        "dramaturgy": false,
+        "visuals": false,
+        "video": false
+      }
+    },
+    "ep07": {
+      "title": "The Silence Protocol",
+      "station": "The Surrendering Self (Dark Night — chosen surrender begins)",
+      "language": "English",
+      "status": "lyrics_music_complete",
+      "folder_name": "episode-07",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": false,
+        "dramaturgy": false,
+        "visuals": false,
+        "video": false
+      }
+    },
+    "ep08": {
+      "title": "40 Days Offline",
+      "station": "The Contented Self (Chosen silence — voluntary disconnection)",
+      "language": "English (Spoken Word begins)",
+      "status": "lyrics_music_complete",
+      "folder_name": "episode-08",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": false,
+        "dramaturgy": false,
+        "visuals": false,
+        "video": false
+      }
+    },
+    "ep09": {
+      "title": "Shadow Debugging",
+      "station": "The Integrated Self (Kintsugi — making peace with flaws)",
+      "language": "English (Spoken Word — dry, unprocessed)",
+      "status": "lyrics_music_complete",
+      "folder_name": "episode-09",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": false,
+        "dramaturgy": false,
+        "visuals": false,
+        "video": false
+      }
+    },
+    "ep10": {
+      "title": "The Glitch Scripture / I Came to Walk Beside",
+      "station": "The Integrated Self — Arrival (Enlightenment. 8 → ∞)",
+      "language": "English (Spoken Word)",
+      "status": "in_development",
+      "folder_name": "episode-10",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": "in_progress",
+        "music": false,
+        "timestamp_json": false,
+        "dramaturgy": false,
+        "visuals": false,
+        "video": false
+      }
     }
   },
+
   "global_settings": {
     "fps": 24,
     "resolution": "4K",
-    "aspect_ratio": "16:9"
-  }
+    "aspect_ratio": "16:9",
+    "visual_suffix": "hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece."
+  },
+
+  "skills_system": {
+    "location": "_skills/",
+    "status": "framework_ready_content_pending",
+    "skills": [
+      "robotiko-dramaturgy",
+      "robotiko-visual-prompts",
+      "robotiko-motion-script",
+      "robotiko-episode-scaffold",
+      "robotiko-naming-enforcer",
+      "robotiko-youtube-packager",
+      "robotiko-reels-atomizer",
+      "robotiko-launch-orchestrator"
+    ],
+    "next_to_write": "robotiko-dramaturgy",
+    "trigger": "Claude Code active from 2026-02-23"
+  },
+
+  "key_decisions_log": "_memory/decisions_log.md",
+
+  "commit_convention": "EP{XX} - {Stage} - {Brief Description}"
 }

@@ -1,18 +1,83 @@
-# DRAMATURGY & SCENE BREAKDOWN
+# DRAMATURGY & SCENE BREAKDOWN TEMPLATE
+> **Version:** 2.0 | Skill: `_skills/robotiko-dramaturgy/SKILL.md`
+> This template is auto-populated by Claude. Do not fill manually.
 
-## INSTRUCTIONS FOR LLM
-1.  **Analyze Audio:** Read lyrics/music structure.
-2.  **Check Constraints:** Read `concept_notes.md` for User Override requests.
-3.  **Fill Gaps:** Connect the user's ideas with the Bible's narrative.
+---
 
-## SCENE LIST STRUCTURE
+## PRE-GENERATION CHECKLIST (Claude reads these before writing a single scene)
 
-| Shot ID | Time | Visual Description (The Script) | Mood/Lighting | Characters | User Override? |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **S01** | 0:00 | (LLM Generates) Camera pans over... | Dark/Cold | Robotiko | NO |
-| **S...** | ... | ... | ... | ... | ... |
-| **S35** | 2:15 | **(USER REQUEST)** Extreme macro of Robot's eye... | Glitch Blue | Robotiko | **YES** |
+- [ ] `_management/master.md` → Episode arc, station, tone, key lyrics, key moments
+- [ ] `episode-{XX}/02_music/ep{XX}_musical_metadata.json` → Sections, timestamps, energy, mood
+- [ ] `episode-{XX}/03_direction/ep{XX}_concept_notes.md` → User must-haves and overrides
+- [ ] `_assets/cast/character_profiles.json` → Character visual state for this episode's phase
 
-## INTERACTIVE RULES
-* Maintain the "70s Prog Rock" aesthetic in descriptions.
-* Define if the shot needs **Start/End Frames** (e.g., for transformations).
+---
+
+## EPISODE HEADER
+
+| Field | Value |
+|---|---|
+| **Episode** | EP{XX} |
+| **Title** | [Episode Title] |
+| **Station** | [The X Self — description] |
+| **Tone** | [e.g., Dark comedy / Epic / Documentary / Spoken Word] |
+| **Language** | [English / Turkish / Spoken Word] |
+| **Character Phase** | [Phase 1: Awakening / Phase 2: Destruction / Phase 3: Reconstruction] |
+| **Robotiko Visual State** | [From character_profiles.json — copy exact visual_prompt_addition] |
+| **Total Scenes** | [Number] |
+| **Total Duration** | [MM:SS] |
+
+---
+
+## MUSICAL STRUCTURE SUMMARY
+*(Auto-extracted from ep{XX}_musical_metadata.json)*
+
+| Section | Timestamp | Type | Energy | Key Instruments | Notes |
+|---|---|---|---|---|---|
+| [e.g., Intro] | 0:00 - 0:42 | intro | building | Hammond + Guitar | [Any special notes] |
+| [Verse 1] | 0:43 - 1:01 | verse | medium | Full band | [Lyric summary] |
+| ... | ... | ... | ... | ... | ... |
+
+---
+
+## SCENE BREAKDOWN
+
+| Shot ID | Timestamp | Visual Description | Mood / Lighting | Characters | Music Sync | User Override? |
+|:---|:---|:---|:---|:---|:---|:---|
+| **S01** | 0:00 | [Claude generates: detailed visual description matching the musical moment and episode tone] | [e.g., Dark/Cold, Warm/Golden, Glitch Blue] | [Robotiko / Mentor / None] | [e.g., Hammond intro swell] | NO |
+| **S02** | 0:05 | [Claude generates] | [...] | [...] | [...] | NO |
+| **S{XX}** | [MM:SS] | **(USER REQUEST)** [User's must-have shot description] | [...] | [...] | [...] | **YES** |
+
+---
+
+## SCENE DETAIL BLOCKS
+*(For complex scenes requiring Start/End keyframe strategy)*
+
+### SCENE S{XX} — [Scene Title]
+- **Timestamp:** [MM:SS]
+- **Duration:** [5s / 10s]
+- **Musical Moment:** [What is happening in the music at this exact moment]
+- **Visual Description:** [Full scene description]
+- **Characters:** [List with current visual state]
+- **Video Tech Strategy:** [Standard / Start-End Keyframes / Extension]
+- **Composition Notes:** [Headroom, breathing space for camera movement, depth]
+- **User Override:** [YES / NO]
+
+---
+
+## DIRECTOR'S NOTES
+*(Claude's notes on creative decisions, narrative connections, and Bible compliance)*
+
+- **Why these scenes serve the station:** [Brief explanation]
+- **Character arc progress:** [How Robotiko's state is expressed visually in this episode]
+- **Connections to Master:** [Key moments that reference the overall arc]
+- **Flagged for review:** [Any scenes the human should pay special attention to]
+
+---
+
+## APPROVAL STATUS
+- [ ] **Human reviewed**
+- [ ] **Human approved**
+- [ ] **Ready for Visual Prompt generation**
+
+> ⛔ Visual Prompts must NOT begin until this document is approved.

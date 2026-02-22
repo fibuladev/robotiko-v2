@@ -1,23 +1,95 @@
-# VISUAL PROMPT TEMPLATE (NANO BANANA) - v2.0
-
-## INSTRUCTIONS FOR LLM
-1.  **Analyze Scene:** Check `character_profiles.json` for current character state (e.g., is Robotiko damaged?).
-2.  **Video Logic:** Define if this shot needs "Standard", "Start/End Keyframes", or "Extension".
-3.  **Consistency:** Always use the defined Style Suffix.
-
-## STYLE SUFFIX (DO NOT MODIFY)
-`hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece`
+# VISUAL PROMPT TEMPLATE (NANO BANANA)
+> **Version:** 2.0 | Skill: `_skills/robotiko-visual-prompts/SKILL.md`
+> This template is auto-populated by Claude. Do not fill manually.
 
 ---
-## GENERATED PROMPTS FOR EPISODE {EPISODE_NUMBER}
 
-### SECTION: [Insert Section Name]
+## PRE-GENERATION CHECKLIST (Claude reads these before writing a single prompt)
 
-#### Scene {SCENE_NUMBER}
-* **Timestamp:** [MM:SS]
-* **Action:** [Detailed description of the moment]
-* **Character(s):** [List characters present]
-* **Video Tech Need:** [Standard / Start-End Keyframes / Extension]
-* **Image Reference Path:** `_assets/cast/[filename]` (or N/A)
-* **Text Prompt:**
-    > [PROMPT HERE], [STYLE SUFFIX]
+- [ ] `_management/master.md` → Visual DNA, color palette, forbidden list, mandatory suffix
+- [ ] `episode-{XX}/03_direction/ep{XX}_dramaturgy.md` → APPROVED scene breakdown
+- [ ] `_assets/cast/character_profiles.json` → Character visual state + visual_prompt_addition for this phase
+- [ ] `_assets/cast/ref_robotiko_master.png` → Visual reference (if Robotiko appears)
+- [ ] `_assets/cast/ref_mentor_master.png` → Visual reference (if Mentor appears)
+
+> ⚠️ Dramaturgy must be APPROVED before this file is generated.
+
+---
+
+## EPISODE HEADER
+
+| Field | Value |
+|---|---|
+| **Episode** | EP{XX} |
+| **Title** | [Episode Title] |
+| **Station** | [The X Self] |
+| **Character Phase** | [Phase 1 / 2 / 3] |
+| **Robotiko Visual State** | [Exact visual_prompt_addition from character_profiles.json] |
+| **Total Prompts** | [Number] |
+
+---
+
+## MANDATORY STYLE SUFFIX
+> ⛔ This suffix must be appended to EVERY prompt without exception. Do not modify.
+
+```
+hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+```
+
+---
+
+## FORBIDDEN AESTHETICS REMINDER
+- ❌ Clean Apple design
+- ❌ Pixar-style rendering
+- ❌ Generic cyberpunk neon
+- ❌ Smooth plastic textures
+- ❌ Cheap melodrama or ornamental excess
+
+---
+
+## GENERATED PROMPTS
+
+### SECTION: [Section Name from Dramaturgy — e.g., "INTRO & AWAKENING (0:00 - 0:42)"]
+
+---
+
+#### Scene S{XX} — [Scene Title]
+- **Timestamp:** [MM:SS]
+- **Dramaturgy Reference:** [Brief scene description from approved dramaturgy]
+- **Characters Present:** [List — with phase-appropriate visual state noted]
+- **Image Reference Path:** `_assets/cast/ref_{character}_master.png` *(or N/A if no characters)*
+- **Video Tech Strategy:** [Standard / Start-End Keyframes / Extension]
+- **Composition Notes:** [Headroom for camera movement, breathing space, depth — never tight crops]
+
+**Text Prompt:**
+> [Full scene description]. [Character visual state if present]. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+
+---
+
+#### Scene S{XX} — [Scene Title]
+- **Timestamp:** [MM:SS]
+- **Dramaturgy Reference:** [...]
+- **Characters Present:** [...]
+- **Image Reference Path:** [...]
+- **Video Tech Strategy:** [...]
+- **Composition Notes:** [...]
+
+**Text Prompt:**
+> [...], hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+
+---
+
+### SECTION: [Next Section Name]
+
+*(Continue pattern for all scenes)*
+
+---
+
+## QUALITY CHECKLIST (Claude self-validates before delivery)
+
+- [ ] Every prompt ends with the mandatory style suffix
+- [ ] Every scene with a character references the correct master image path
+- [ ] Character visual state matches the episode's phase (no pristine Robotiko in Phase 2)
+- [ ] No forbidden aesthetics present in any prompt
+- [ ] All prompts composed with headroom and breathing space
+- [ ] Total prompt count matches approved dramaturgy scene count

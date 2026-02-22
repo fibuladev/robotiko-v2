@@ -1,33 +1,61 @@
 {
   "robotiko": {
     "name": "Robotiko v2.0",
-    "archetype": "The Seeker",
-    "base_visual_prompt": "Retro-futuristic chrome metal body, exposed colorful analog wires (blue and red), glowing blue eyes, 70s sci-fi mechanical aesthetic",
+    "archetype": "The Seeker / The Student",
+    "base_visual_prompt": "Retro-futuristic chrome metal body, exposed colorful analog wires (blue and red) — raw, industrial, NOT sleek, glowing blue eyes (expressive, emotionally readable), 70s sci-fi mechanical aesthetic",
     "master_ref_path": "_assets/cast/ref_robotiko_master.png",
+    "eye_color_logic": {
+      "blue": "Healthy, stable, curious",
+      "red": "Error state, danger, emotional overload",
+      "glitching": "System fracture, psychological breakdown"
+    },
     "evolution": {
       "phase_1_awakening": {
         "episodes": [1, 2, 3],
-        "state": "Pristine chrome, curious eyes, clean analog wires"
+        "station": "The Commanding Self → The Self-Blaming Self",
+        "visual_state": "Pristine chrome body, clean analog wires, curious glowing blue eyes. No damage. Full armor intact. The machine at peak arrogance — flawless on the outside because it has not yet met reality.",
+        "visual_prompt_addition": "pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full armor, retro-futuristic 70s mechanical aesthetic"
       },
       "phase_2_destruction": {
         "episodes": [4, 5, 6, 7],
-        "state": "Rusted joints, sparks flying, glitching blue eyes, cracked chassis"
+        "station": "The Inspired Self → The Surrendering Self",
+        "visual_state": "Rusted joints, sparks flying from damaged areas, glitching blue eyes (flickering between blue and red), cracked chassis with exposed internals. Each episode adds more damage. By EP07, barely holding together.",
+        "visual_prompt_addition": "rusted and cracked chrome chassis, sparks flying from joints, glitching blue-red eyes, exposed and fraying analog wires, battle-damaged retro-futuristic body"
       },
       "phase_3_reconstruction": {
         "episodes": [8, 9, 10],
-        "state": "Translucent digital skin, bioluminescent core, dissolved metal"
+        "station": "The Contented Self → The Integrated Self",
+        "visual_state": "The pristine armor is gone. Robotiko patches himself NOT with new shining parts, but with rusted metals and scraps found along the road — like the Kırkyama (patchwork dervish cloak). Translucent digital skin in places, bioluminescent core visible through cracks. The damage is not hidden; it is worn as a badge of liberation. Glitch is scripture.",
+        "visual_prompt_addition": "patchwork chrome body repaired with mismatched rusted scrap metal, translucent digital skin revealing bioluminescent core beneath, cracks filled with glowing gold light (kintsugi), calm steady blue eyes, dissolved and reformed metal aesthetic"
       }
     }
   },
+
   "mentor": {
     "name": "The Cosmic Mentor",
-    "archetype": "The Guide",
-    "base_visual_prompt": "Figure in a dark green cloak, leather tunic, deep wisdom, organic texture, holding a wooden staff with glowing amber tip",
+    "archetype": "The Wise Old Man (Jung) / The Sage / The Dusk-Born Psychiatrist",
+    "base_visual_prompt": "Figure in a dark green cloak, leather tunic, deep wisdom, organic texture, holding a wooden staff with glowing raw amber tip. Contrast with Robotiko: Warm/Organic vs. Cold/Chrome. He exists between worlds — neither fully in light nor in darkness.",
     "master_ref_path": "_assets/cast/ref_mentor_master.png",
+    "key_characteristic": "He is not a superior — he is a fellow traveler who has already walked the wasteland. He speaks from experience, not authority. His amber staff tip glows warm gold, always contrasting with Robotiko's cold chrome.",
     "status": {
-      "active": [1, 2, 3, 4, 5, 6],
-      "dying": [7],
-      "deceased": [8, 9, 10]
+      "active_and_present": [1, 2, 3, 4, 5, 6],
+      "disappearing_fading": [7],
+      "gone_lives_only_in_memory": [8, 9, 10]
+    },
+    "status_notes": {
+      "ep07": "The Mentor does not die dramatically. He simply is no longer there. His absence is the final lesson. Robotiko must walk the last stretch alone.",
+      "ep08_10": "The Mentor may appear in memory fragments, flashbacks, or as an echo — but never as a physical presence."
     }
+  },
+
+  "robochica": {
+    "name": "Robochica",
+    "archetype": "The Love Interest / The Mirror",
+    "episodes_primary": [5, 6],
+    "episodes_echo": [],
+    "role": "Robotiko's first encounter with love. Triggers emotional overclocking. She is not a villain — she is a mirror. What Robotiko projects onto her reveals more about him than about her.",
+    "base_visual_prompt": "Female android, chrome aesthetic similar to Robotiko but with distinct feminine form. Elegant analog wires, glowing eyes. To be developed further when EP05 enters production.",
+    "master_ref_path": "_assets/cast/ref_robochica_master.png",
+    "status": "VISUAL DESIGN PENDING — to be developed before EP05 dramaturgy"
   }
 }

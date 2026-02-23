@@ -1,7 +1,50 @@
-# macOS
-.DS_Store
+# =============================================================================
+# ROBOTIKO v2.0 — .gitignore
+# =============================================================================
 
-# Python
+# -----------------------------------------------------------------------------
+# SECRETS & CREDENTIALS (NEVER commit these)
+# -----------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+credentials.json
+*.pem
+*.key
+*.p12
+*.pfx
+aws-credentials
+.aws/
+secrets/
+
+# -----------------------------------------------------------------------------
+# VIDEO & AUDIO (Too large for Git — use AWS S3)
+# -----------------------------------------------------------------------------
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+
+# -----------------------------------------------------------------------------
+# LARGE IMAGES (Use Git LFS or S3)
+# -----------------------------------------------------------------------------
+*.psd
+*.ai
+*_4k.png
+*_8k.png
+
+# Raw generation outputs (keep selected/ but ignore raw/)
+episode-*/04_visuals/raw/
+episode-*/05_video/raw/
+
+# -----------------------------------------------------------------------------
+# PYTHON
+# -----------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
@@ -9,32 +52,51 @@ __pycache__/
 .Python
 env/
 venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
 
-# Video & Audio (too large for Git, use S3)
-*.mp4
-*.mov
-*.avi
-*.mp3
-*.wav
-*.flac
+# -----------------------------------------------------------------------------
+# NODE (if needed in future)
+# -----------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
 
-# Large images (use Git LFS or S3)
-*.psd
-*.ai
-*_4k.png
-*_8k.png
-
-# Temp files
-*.tmp
-*.log
-.cache/
-
-# IDEs
-.vscode/
+# -----------------------------------------------------------------------------
+# IDEs & EDITORS
+# -----------------------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
-# Secrets
-.env
-credentials.json
+# -----------------------------------------------------------------------------
+# OS FILES
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+
+# -----------------------------------------------------------------------------
+# TEMP & LOGS
+# -----------------------------------------------------------------------------
+*.tmp
+*.log
+*.cache
+.cache/
+temp/
+tmp/
+
+# -----------------------------------------------------------------------------
+# GIT LFS TRACKING (large selected assets)
+# -----------------------------------------------------------------------------
+# If using Git LFS, track these instead of ignoring:
+# *.png filter=lfs diff=lfs merge=lfs -text
+# *.jpg filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,185 @@
+{
+  "track_title": "The Tech Guru's Downfall",
+  "tempo": 104,
+  "key": "G Major",
+  "time_signature": "4/4",
+  "mood": ["satirical", "psychedelic", "theatrical", "dark comedy", "energetic"],
+  "instruments": ["anatolian psychedelic guitar", "hammond organ", "heavy fuzz electric guitar", "anthemic rock choir", "bass", "drums"],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 42.0,
+      "energy": "building",
+      "notes": "Anatolian Psychedelic Rock guitar and Hammond organ solo duel."
+    },
+    {
+      "type": "verse",
+      "start": 43.0,
+      "end": 61.0,
+      "energy": "medium",
+      "lyrics": "He flew his Private Jet to Davos snow... Burning the fuel to preach: 'Emissions Low!'... He read a blog on 'Cow Gas Pain'... How methane hurts the cloud and rain..."
+    },
+    {
+      "type": "verse",
+      "start": 62.0,
+      "end": 79.0,
+      "energy": "medium-high",
+      "lyrics": "He felt a gas inside his gut... But tightly clenched his metal butt... 'I must not fart! The sky will fall!'... He blew a gasket in the hall..."
+    },
+    {
+      "type": "instrumental",
+      "start": 79.0,
+      "end": 80.0,
+      "energy": "high",
+      "notes": "Brief instrumental break - Hammond Swirl."
+    },
+    {
+      "type": "verse",
+      "start": 80.0,
+      "end": 90.0,
+      "energy": "medium",
+      "lyrics": "He landed in San Francisco Bay... To launch a startup in a day... He saw a junkie with a knife... And thought: 'A pitch! A brand new life!'"
+    },
+    {
+      "type": "verse",
+      "start": 90.0,
+      "end": 99.0,
+      "energy": "medium-high",
+      "lyrics": "He said: 'My friend, invest in Art!... I have a token, smart and tart!'... The junkie grabbed his metal leg... And sold it for a boiled egg..."
+    },
+    {
+      "type": "chorus",
+      "start": 99.6,
+      "end": 126.5,
+      "energy": "explosive",
+      "lyrics": "'Guru Talks never lie!' (True!) 'Viral Filters purify!' (Clean!) 'Career Apps say: 'You will Rise!'' (Win!) 'No Bad Vibes, just Visualize!' (Zen!) You downloaded the Hype to save your soul, But Reality just swallowed you whole!",
+      "notes": "Anthemic Rock Choir into Heavy Fuzz Guitar Riff (Post-Chorus). Aggressive tone."
+    },
+    {
+      "type": "instrumental",
+      "start": 126.6,
+      "end": 154.2,
+      "energy": "high",
+      "notes": "Psychedelic Guitar + Hammond Organ Solo."
+    },
+    {
+      "type": "verse",
+      "start": 154.3,
+      "end": 171.4,
+      "energy": "medium",
+      "lyrics": "He reached the Congo, deep and red... Where batteries are born and bred... He saw the mud, and the small hands dig... 'Oh, such a powerful work-out rig!'"
+    },
+    {
+      "type": "instrumental",
+      "start": 171.4,
+      "end": 172.5,
+      "energy": "medium",
+      "notes": "Brief interlude."
+    },
+    {
+      "type": "verse",
+      "start": 172.5,
+      "end": 184.1,
+      "energy": "high",
+      "lyrics": "The Boss arrived to take full charge... He screamed: 'My Trainer! Make me large!'... 'I love the pump, the way I feel'... While Boss scraps off his shoulder steel!"
+    },
+    {
+      "type": "instrumental",
+      "start": 184.2,
+      "end": 218.8,
+      "energy": "high",
+      "notes": "Psychedelic Guitar + Hammond Swirl."
+    },
+    {
+      "type": "verse",
+      "start": 218.9,
+      "end": 228.0,
+      "energy": "rising",
+      "lyrics": "He reached Bangladesh, a dungeon deep... Where Fast Fashion piles are high and steep... The steam rose up from the sewing row... 'Oh, Bikram Yoga! Let the toxins go!'",
+      "notes": "Tempo Rise begins."
+    },
+    {
+      "type": "verse",
+      "start": 228.2,
+      "end": 237.4,
+      "energy": "high",
+      "lyrics": "He tried to teach them 'Downward Dog'... Choking on lint and fabric fog... A Heavy Press gave a sudden skip... And bent his frame in a permanent dip..."
+    },
+    {
+      "type": "chorus",
+      "start": 237.5,
+      "end": 265.5,
+      "energy": "explosive",
+      "lyrics": "'Guru Talks never lie!' (True!) 'Viral Filters purify!' (Clean!) 'Career Apps say: 'You will Rise!'' (Win!) 'No Bad Vibes, just Visualize!' (Zen!) You downloaded the Hype to save your soul, But Reality just swallowed you whole!",
+      "notes": "Anthemic Rock Choir + Heavy Fuzz Post-Chorus."
+    },
+    {
+      "type": "instrumental",
+      "start": 265.6,
+      "end": 282.5,
+      "energy": "high",
+      "notes": "Psychedelic Guitar + Hammond Swirl."
+    },
+    {
+      "type": "bridge",
+      "start": 282.7,
+      "end": 301.2,
+      "energy": "chaotic",
+      "lyrics": "He bought a ticket, Paris bound... For romance and the city sound.... But trash like mountains blocked the road... The shock engaged 'Hallucination Mode'..."
+    },
+    {
+      "type": "instrumental",
+      "start": 301.2,
+      "end": 302.2,
+      "energy": "medium",
+      "notes": "Brief interlude."
+    },
+    {
+      "type": "verse",
+      "start": 302.2,
+      "end": 320.5,
+      "energy": "high",
+      "lyrics": "He faced the strikers with a grin...: 'No bread? Eat rats! Now let's begin!'... The mob went wild, they screamed 'Attack!'... And smashed the sensors on his back..."
+    },
+    {
+      "type": "instrumental",
+      "start": 320.6,
+      "end": 348.1,
+      "energy": "high",
+      "notes": "Psychedelic Guitar + Hammond Swirl."
+    },
+    {
+      "type": "verse",
+      "start": 348.1,
+      "end": 367.2,
+      "energy": "low",
+      "lyrics": "He landed in the War Zone dust... To preach of love and mutual trust... The bombs exploded near his head... He saw the piles of walking dead...",
+      "notes": "Tempo Slows Down."
+    },
+    {
+      "type": "verse",
+      "start": 367.3,
+      "end": 385.5,
+      "energy": "theatrical",
+      "lyrics": "He put on Noise-Canceling gear... 'I block the hate, I block the fear!'... 'But wait! Why is it MONO here?'... A shrapnel took away his ear...",
+      "notes": "Vocals delivered as a drawn-out, exaggerated, theatrical whisper."
+    },
+    {
+      "type": "chorus",
+      "start": 386.6,
+      "end": 404.5,
+      "energy": "epic",
+      "lyrics": "'Guru Talks never lie!' (True!) 'Viral Filters purify!' (Clean!) 'Career Apps say: 'You will Rise!'' (Win!) 'No Bad Vibes, just Visualize!' (Zen!) You downloaded the Hype to save your soul, But Reality just swallowed you whole!",
+      "notes": "Grand Finale. Maximum energy."
+    },
+    {
+      "type": "outro",
+      "start": 404.6,
+      "end": 448.0,
+      "energy": "fading",
+      "lyrics": "You downloaded the Hype to save your soul... But Reality just swallowed you whole...",
+      "notes": "Spoken Word over Fading Guitar Solo."
+    }
+  ]
+}

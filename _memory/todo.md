@@ -1,7 +1,7 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-02-24
+> Last Updated: 2026-02-25
 
 ---
 
@@ -46,7 +46,9 @@
 ## NEXT: EP02 PRODUCTION
 > Unblock after infrastructure is complete
 
-- [ ] `ep02_concept_notes.md` — Human defines must-have shots
+- [x] `ep02_concept_notes.md` — Concept notes written (must-have shots, overrides, mood)
+- [x] `ep02_musical_metadata.json` — Musical metadata added to episode-02/02_music/
+- [x] `ep02_lyrics_v01.md` — Lyrics added to episode-02/01_lyrics/
 - [ ] `ep02_dramaturgy_v01.md` — Claude generates (skill: robotiko-dramaturgy)
 - [ ] **[CHECKPOINT]** Human approves dramaturgy
 - [ ] `ep02_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts)

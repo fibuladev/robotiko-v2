@@ -1,7 +1,7 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-02-23
+> Last Updated: 2026-02-24
 
 ---
 
@@ -24,13 +24,22 @@
 - [x] `_memory/decisions_log.md` — Foundation decisions logged
 - [x] `_memory/todo.md` — This file
 
-### 🔄 IN PROGRESS (This Session)
-- [ ] `docs/` skeleton — getting-started, skills-guide, tools-setup
-- [ ] `tests/` skeleton — naming-check, skill-output-validator, pipeline-integrity-check
-- [ ] `CHANGELOG.md` — repo root
-- [ ] `.github/ISSUE_TEMPLATE/` — bug report + feature request templates
-- [ ] `.github/pull_request_template.md`
-- [ ] `CONTRIBUTING.md` skeleton
+### ✅ COMPLETED (2026-02-23 Session)
+- [x] `docs/` skeleton — getting-started, skills-guide, tools-setup
+- [x] `CHANGELOG.md` — repo root
+- [x] `.github/ISSUE_TEMPLATE/` — bug report + feature request templates
+- [x] `.github/pull_request_template.md`
+- [x] `CONTRIBUTING.md` skeleton
+
+### ✅ COMPLETED (2026-02-24 Session)
+- [x] `_skills/robotiko-dramaturgy/SKILL.md` — v1.0 written
+- [x] `_skills/robotiko-visual-prompts/SKILL.md` — v1.0 written
+- [x] `_skills/robotiko-motion-script/SKILL.md` — v1.0 written
+- [x] `_skills/robotiko-episode-scaffold/SKILL.md` — v1.0 written
+- [x] `_skills/robotiko-naming-enforcer/SKILL.md` — v1.0 written
+- [x] `_skills/robotiko-youtube-packager/SKILL.md` — v1.0 written
+- [x] `_skills/robotiko-reels-atomizer/SKILL.md` — v1.0 written
+- [x] `_skills/robotiko-launch-orchestrator/SKILL.md` — v1.0 written
 
 ---
 
@@ -54,14 +63,14 @@
 ## BACKLOG
 
 ### Skills (Content to Write)
-- [ ] `_skills/robotiko-dramaturgy/SKILL.md` — HIGHEST PRIORITY
-- [ ] `_skills/robotiko-visual-prompts/SKILL.md`
-- [ ] `_skills/robotiko-motion-script/SKILL.md`
-- [ ] `_skills/robotiko-episode-scaffold/SKILL.md`
-- [ ] `_skills/robotiko-naming-enforcer/SKILL.md`
-- [ ] `_skills/robotiko-youtube-packager/SKILL.md`
-- [ ] `_skills/robotiko-reels-atomizer/SKILL.md`
-- [ ] `_skills/robotiko-launch-orchestrator/SKILL.md`
+- [x] `_skills/robotiko-dramaturgy/SKILL.md` — ✅ v1.0 complete
+- [x] `_skills/robotiko-visual-prompts/SKILL.md` — ✅ v1.0 complete
+- [x] `_skills/robotiko-motion-script/SKILL.md` — ✅ v1.0 complete
+- [x] `_skills/robotiko-episode-scaffold/SKILL.md` — ✅ v1.0 complete
+- [x] `_skills/robotiko-naming-enforcer/SKILL.md` — ✅ v1.0 complete
+- [x] `_skills/robotiko-youtube-packager/SKILL.md` — ✅ v1.0 complete
+- [x] `_skills/robotiko-reels-atomizer/SKILL.md` — ✅ v1.0 complete
+- [x] `_skills/robotiko-launch-orchestrator/SKILL.md` — ✅ v1.0 complete
 
 ### EP01 Retroactive
 - [ ] `ep01_musical_metadata.json` — Retroactive documentation

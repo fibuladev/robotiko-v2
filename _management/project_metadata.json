@@ -205,7 +205,7 @@
 
   "skills_system": {
     "location": "_skills/",
-    "status": "framework_ready_content_pending",
+    "status": "all_skills_v1.0_complete",
     "skills": [
       "robotiko-dramaturgy",
       "robotiko-visual-prompts",
@@ -216,7 +216,6 @@
       "robotiko-reels-atomizer",
       "robotiko-launch-orchestrator"
     ],
-    "next_to_write": "robotiko-dramaturgy",
     "trigger": "Claude Code active from 2026-02-23"
   },
 

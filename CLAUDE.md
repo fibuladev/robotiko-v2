@@ -27,6 +27,7 @@ Before any task, read in this order:
 2. `_management/project_metadata.json` — Current episode status and toolchain.
 3. `_memory/lessons.md` — Your self-improvement rules. Internalize before starting.
 4. `_memory/todo.md` — Current open tasks and priorities.
+5. `_management/pipeline_rules.md` — Production workflow, video strategy modes, quality gates.
 
 If a task involves a specific episode, also read:
 - `episode-{XX}/02_music/ep{XX}_musical_metadata.json`
@@ -84,6 +85,20 @@ When the human gives a trigger phrase, read the relevant SKILL.md before doing a
 - For clear tasks: execute and deliver. Do not ask for hand-holding.
 - For ambiguous tasks: state your interpretation, then execute.
 - For bugs or errors: fix them. Point at the problem, resolve it, report back.
+
+### 7. Extended Thinking Protocol
+
+Use the right model for the right task. Deep creative reasoning requires extended thinking; mechanical tasks do not.
+
+| Task | Model | Reason |
+|---|---|---|
+| Dramaturgy scene breakdown | Opus + extended thinking | Music → visual mapping → character arc → narrative consistency |
+| Motion script design | Opus + extended thinking | Beat sync + motion intensity + camera sequencing |
+| Complex multi-character visual prompts | Opus | Character positioning + symbolic weight |
+| Standard visual prompts | Sonnet | Template-driven, no deep reasoning needed |
+| YouTube packaging, naming validation | Sonnet/Haiku | Mechanical, not creative |
+
+If token budget is constrained, prioritize: **Dramaturgy > Motion Script > Visual Prompts.**
 
 ---
 

@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c 'FILE=\"$TOOL_INPUT_FILE_PATH\"; if echo \"$FILE\" | grep -q \"episode-\"; then BASENAME=$(basename \"$FILE\"); if echo \"$BASENAME\" | grep -qE \"^ep[0-9]{2}_|^MANIFEST|^SKILL|^CHANGELOG|\\.gitkeep$\"; then exit 0; else echo \"[NAMING HOOK] WARNING: $BASENAME may not follow naming convention. See: _management/naming_convention.md\"; fi; fi'"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -33,6 +33,7 @@ Read these files in this exact order:
 | 2 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Tempo (BPM), sections with timestamps, energy levels, instruments, mood per section |
 | 3 | `episode-{XX}/04_visuals/selected/` | Verify which selected images exist (file listing) |
 | 4 | `_management/master.md` | Episode tone, station, character phase, narrative arc |
+| 5 | `_templates/video_prompt_template.md` | Output structure and formatting template |
 
 **If the musical metadata JSON is missing:** STOP. Beat sync is impossible without temporal data.
 **If selected images are missing:** STOP. The motion script references specific image files as input assets.

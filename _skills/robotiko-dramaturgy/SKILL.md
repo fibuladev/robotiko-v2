@@ -21,8 +21,9 @@ Read these files in this exact order before generating any output:
 | 2 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Sections, timestamps, energy levels, mood, instruments, lyrics per section |
 | 3 | `episode-{XX}/03_direction/ep{XX}_concept_notes.md` | Human must-have shots, creative overrides, specific visual requests |
 | 4 | `_assets/cast/character_profiles.json` | Character visual state for this episode's phase (use `visual_prompt_addition`) |
+| 5 | `_templates/dramaturgy_template.md` | Output structure and formatting template |
 
-**If any of these files are missing:** STOP. Inform the human. Do not proceed with partial inputs.
+**If any of inputs 1-4 are missing:** STOP. Inform the human. Do not proceed with partial inputs.
 
 ---
 

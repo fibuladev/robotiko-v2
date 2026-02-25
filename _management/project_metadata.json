@@ -17,7 +17,7 @@
     "lyrics_music": "Suno AI",
     "musical_metadata": "Gemini Tool (all-in-one JSON output)",
     "image_generation": "Nano Banana",
-    "video_generation": ["Kling", "Veo"],
+    "video_generation": ["Seedream", "Kling", "Veo"],
     "editing": "CapCut",
     "llm_director": "Claude (Sonnet)",
     "version_control": "GitHub",

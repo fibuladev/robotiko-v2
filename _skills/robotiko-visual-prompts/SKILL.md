@@ -29,6 +29,7 @@ Read these files in this exact order:
 | 3 | `_assets/cast/character_profiles.json` | Character `visual_prompt_addition` for this episode's phase, `master_ref_path`, eye color logic |
 | 4 | `_assets/cast/ref_robotiko_master.png` | Visual reference image (if Robotiko appears in the episode) |
 | 5 | `_assets/cast/ref_mentor_master.png` | Visual reference image (if Mentor appears in the episode) |
+| 6 | `_templates/visual_prompt_template.md` | Output structure and formatting template |
 
 **If the approved dramaturgy file is missing:** STOP. The pipeline requires human-approved dramaturgy before visual prompts can be generated.
 

@@ -142,12 +142,15 @@ robotiko-v2/
 
 ## 4. FOLDER MIRRORING (S3 Backup)
 
-Heavy assets (audio, raw images, raw video) are mirrored to AWS S3:
+All generated binary assets (audio, images, video) are stored exclusively on AWS S3 — never in Git:
 ```
-Local:  episode-01/04_visuals/raw/  ==  S3: robotiko-bucket/episode-01/04_visuals/raw/
-Local:  episode-01/05_video/raw/    ==  S3: robotiko-bucket/episode-01/05_video/raw/
-Local:  episode-01/02_music/        ==  S3: robotiko-bucket/episode-01/02_music/
+Local:  episode-{XX}/02_music/         ==  S3: robotiko-bucket/episode-{XX}/02_music/
+Local:  episode-{XX}/04_visuals/raw/   ==  S3: robotiko-bucket/episode-{XX}/04_visuals/raw/
+Local:  episode-{XX}/04_visuals/selected/  ==  S3: robotiko-bucket/episode-{XX}/04_visuals/selected/
+Local:  episode-{XX}/05_video/raw/     ==  S3: robotiko-bucket/episode-{XX}/05_video/raw/
+Local:  episode-{XX}/05_video/selected/    ==  S3: robotiko-bucket/episode-{XX}/05_video/selected/
 ```
+Git tracks only text files: lyrics, metadata JSON, dramaturgy, visual prompts, motion scripts, management docs.
 
 Sync trigger: Automatic when episode is tagged as `completed` (planned via GitHub Actions).
 

@@ -38,9 +38,13 @@ secrets/
 *_4k.png
 *_8k.png
 
-# Raw generation outputs (keep selected/ but ignore raw/)
+# All generated assets — raw and selected — go to AWS S3, not Git
 episode-*/04_visuals/raw/
+episode-*/04_visuals/selected/
 episode-*/05_video/raw/
+episode-*/05_video/selected/
+episode-*/02_music/*.wav
+episode-*/02_music/*.mp3
 
 # -----------------------------------------------------------------------------
 # PYTHON

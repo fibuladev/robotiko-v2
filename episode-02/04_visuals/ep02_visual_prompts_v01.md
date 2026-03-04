@@ -43,16 +43,16 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 ---
 
-#### Scene S01 — The World Map / Tour Itinerary
+#### Scene S01 — The Commander's Map Room
 - **Timestamp:** 0:00–0:14
-- **Dramaturgy Reference:** A retro-futuristic 1970s-style airline poster world map on a riveted brushed-steel wall, with glowing amber route lines pulsing between DAVOS → SAN FRANCISCO → CONGO → BANGLADESH → PARIS → WAR ZONE, synchronized to the opening guitar riff.
-- **Characters Present:** None (graphic element)
-- **Image Reference Path:** N/A
+- **Dramaturgy Reference:** Robotiko sits at a massive retro-futuristic command console, leaning slightly forward to study a backlit vintage world map embedded in the console surface. Amber route lines glow across continents. The room is dark and cathedral-like — a megalomaniac surveying his conquest map.
+- **Characters Present:** Robotiko (Phase 1 — pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full armor, retro-futuristic 70s mechanical aesthetic)
+- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
 - **Video Tech Strategy:** Standard
-- **Composition Notes:** Wide frame. The map fills most of the canvas — leave headroom above and breathing space on all sides for slow push-in movement. Route lines extend to the edges to imply a world beyond the frame.
+- **Composition Notes:** Wide shot, low camera angle looking slightly up at the commander. Robotiko occupies the left-center of the frame, console spreads across the lower third, map glow illuminates from below. Leave headroom above for the overhead light cone. Deep dark room behind for volumetric fog.
 
 **Text Prompt:**
-> A vintage world map printed in heavy halftone dots on thick cream paper, mounted flush against a wall of brushed and riveted industrial steel — bolts visible at each corner, patina of use and age on the metal surface. The map is styled as a 1970s airline travel poster: bold block typography, saturated Kodachrome geography, continents rendered in flattened graphic planes. Six destination markers glow in warm amber — DAVOS, SAN FRANCISCO, CONGO, BANGLADESH, PARIS, WAR ZONE — connected by thick luminous amber route lines that pulse with a slow rhythmic throb, like a heartbeat made visible. The amber routes glow against a steel blue background, each connection line slightly raised above the paper surface as if electrified from within. The steel wall behind the map shows decades of industrial use: oil streaks, fingerprints of many hands, reflected glints from an unseen overhead source. No color in the frame except the warm amber of the routes against the cold steel blue — a tour itinerary designed by a megalomaniac. Dust motes visible in the shaft of light striking the map from above left. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A chrome android sits at a massive retro-futuristic command console, leaning slightly forward to study a backlit vintage world map embedded in the console surface. Amber route lines glow across continents. The console is covered with analog dials, toggle switches, and flickering amber indicator lights. The room is dark, lit only by the map's warm glow and scattered instrument panels. Overhead, a single cone of light falls on the android's chrome shoulders. Dust motes drift through the light shaft. The android's blue eyes reflect the amber map lines. Exposed analog wires (blue and red) are visible at the neck joint. Wide shot, low camera angle looking slightly up at the commander. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

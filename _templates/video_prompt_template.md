@@ -1,5 +1,5 @@
-# VIDEO PRODUCTION SHEET (SEEDREAM / KLING / VEO)
-> **Version:** 2.0 | Skill: `_skills/robotiko-motion-script/SKILL.md`
+# VIDEO PRODUCTION SHEET (KLING / VEO / SEEDANCE)
+> **Version:** 5.2 | Skill: `_skills/robotiko-motion-script/SKILL.md`
 > This template is auto-populated by Claude. Do not fill manually.
 > For video generation strategy rules, refer to `_management/pipeline_rules.md`
 
@@ -14,6 +14,7 @@
 
 > ⚠️ Selected images must exist before this file is generated.
 > ⚠️ Motion script must be approved by human before any video generation begins.
+> ⚠️ Supplementary images (if flagged) must be generated before video production starts.
 
 ---
 
@@ -25,7 +26,8 @@
 | **Title** | [Episode Title] |
 | **Station** | [The X Self] |
 | **Dominant Energy** | [e.g., building / explosive / desolate / hypnotic] |
-| **Total Shots** | [Number] |
+| **Total Shots** | [Number of dramaturgy scenes] |
+| **Total Clips** | [Number including sub-clips] |
 | **Total Duration** | [MM:SS] |
 
 ---
@@ -34,11 +36,47 @@
 
 | Mode | When to Use | Input | Duration |
 |---|---|---|---|
-| **A — Standard** | Atmospheric shots, simple movement, no transformation | 1 image | 5s |
+| **A — Standard** | Atmospheric shots, simple movement, no transformation | 1 image | 5s or 10s (tool-dependent) |
 | **B — Start/End Keyframes** | Transformations, morphing, travel, character state changes | 2 images | 5s or 10s |
-| **C — Extension** | Continuous long takes, slow pans, sustained atmosphere | 1 image + prev clip | Variable |
+
+**Duration Coverage Strategy:**
+
+| Scene Duration | Strategy | Clip Count | Notes |
+|---|---|---|---|
+| ≤ 5s | **Direct** | 1 × 5s | Trim excess in CapCut |
+| 6–10s | **Direct** | 1 × 10s | Trim in CapCut |
+| 11–15s | **Speed Ramp** | 1 × 10s + slow-mo (max 1.5×) | |
+| 16–30s | **Multi-Clip** | ⌈duration / 10⌉ clips | Each sub-clip gets own camera move |
+| 30s+ | **Multi-Clip** | ⌈duration / 10⌉ clips | May need supplementary images |
 
 **Motion Strength Scale:** 1 = Barely breathing / 5 = Cinematic drama / 10 = Chaos and disintegration
+
+---
+
+## TOOL ASSIGNMENT SUMMARY
+
+> Claude generates this section based on Step 7 (Tool Assignment Analysis) from the motion-script skill.
+
+### Tool Distribution
+
+| Tool | Clips | Credits Used | Budget | Buffer | Assignment Logic |
+|---|---|---|---|---|---|
+| **[Tool 1]** | [N] | [X] | [Y] | [Z] | [Brief logic] |
+| **[Tool 2]** | [N] | [X] | [Y] | [Z] | [Brief logic] |
+| **TOTAL** | **[N]** | — | — | — | — |
+
+### Assignment Rules Applied
+
+1. [Rule 1 — e.g., "Mode B → Kling only"]
+2. [Rule 2 — e.g., "Map shots → Seedance 1.0"]
+3. [Rule 3]
+4. [Rule 4]
+
+### Clips by Tool
+
+**[Tool 1] ([N]):** [clip list]
+
+**[Tool 2] ([N]):** [clip list]
 
 ---
 
@@ -46,47 +84,127 @@
 
 ---
 
-### SHOT S{XX} — [Shot Title]
+### SHOT S{XX} — [Shot Title] (Direct)
 
 | Field | Value |
 |---|---|
-| **Timestamp** | [MM:SS] |
-| **Musical Moment** | [What is happening in the music — e.g., "Hammond swirl peaks, drum roll begins"] |
+| **Timestamp** | [MM:SS–MM:SS] |
+| **Scene Duration** | [Xs] |
+| **Coverage** | Direct — 1 × [5s/10s] |
+| **Musical Moment** | [What is happening in the music] |
 | **Scene Context** | [One sentence from approved dramaturgy] |
-| **Tech Strategy** | [Mode A / Mode B / Mode C] |
-| **Duration** | [5s / 10s] |
+| **Tech Strategy** | [Mode A / Mode B] |
+| **Clip Duration** | [5s / 10s] |
 | **Motion Strength** | [1-10] |
+| **Recommended Tool** | [Tool name (Mode, resolution) — rationale] |
 
 **Assets Required:**
 - **Start Frame:** `episode-{XX}/04_visuals/selected/ep{XX}_s{XX}_selected.png`
 - **End Frame:** `episode-{XX}/04_visuals/selected/ep{XX}_s{XX}_selected.png` *(Mode B only — else N/A)*
 
-**Camera Move:** [Pan Left / Pan Right / Slow Zoom In / Slow Zoom Out / Tilt Up / Tilt Down / Static / Handheld / Crane Up / Crane Down]
+**Camera Move:** [From approved vocabulary]
 
 **Motion Prompt:**
-> [Director's Note: Precise description of the movement, atmosphere, and emotional intent. Reference the musical moment. Describe what should feel alive in the frame.]
+> [Pure visual/motion description for the video generation tool — no character names, no music references]
+> Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
-### SHOT S{XX} — [Shot Title]
+### SHOT S{XX} — [Shot Title] (Speed Ramp)
 
 | Field | Value |
 |---|---|
-| **Timestamp** | [MM:SS] |
-| **Musical Moment** | [...] |
-| **Scene Context** | [...] |
-| **Tech Strategy** | [...] |
-| **Duration** | [...] |
-| **Motion Strength** | [...] |
+| **Timestamp** | [MM:SS–MM:SS] |
+| **Scene Duration** | [Xs] |
+| **Coverage** | Speed Ramp — 1 × 10s → [Xs at 0.X×] |
+| **Musical Moment** | [What is happening in the music] |
+| **Scene Context** | [One sentence from approved dramaturgy] |
+| **Tech Strategy** | [Mode A / Mode B] |
+| **Clip Duration** | 10s |
+| **Playback Speed** | [e.g., 0.7× (10s → 14s)] |
+| **Motion Strength** | [1-10] |
+| **Recommended Tool** | [Tool name (Mode, resolution) — rationale] |
 
 **Assets Required:**
-- **Start Frame:** [...]
-- **End Frame:** [...] *(or N/A)*
+- **Start Frame:** `episode-{XX}/04_visuals/selected/ep{XX}_s{XX}_selected.png`
+- **End Frame:** N/A
 
-**Camera Move:** [...]
+**Camera Move:** [From approved vocabulary]
 
 **Motion Prompt:**
-> [...]
+> [Pure visual/motion description — no character names, no music references, no speed ramp technical notes]
+> Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+
+---
+
+### SHOT S{XX} — [Shot Title] (Multi-Clip: N clips)
+
+| Field | Value |
+|---|---|
+| **Timestamp** | [MM:SS–MM:SS] |
+| **Scene Duration** | [Xs] |
+| **Coverage** | Multi-Clip — N × [5s/10s] = [Xs total] |
+| **Musical Moment** | [Overall musical context for this scene] |
+| **Scene Context** | [One sentence from approved dramaturgy] |
+
+#### Clip A — S{XX}a
+
+| Field | Value |
+|---|---|
+| **Clip Duration** | [5s / 10s] |
+| **Motion Strength** | [1-10] |
+| **Tech Strategy** | [Mode A / Mode B] |
+| **Recommended Tool** | [Tool name (Mode, resolution) — rationale] |
+
+**Assets Required:**
+- **Start Frame:** `episode-{XX}/04_visuals/selected/ep{XX}_s{XX}_selected.png`
+
+**Camera Move:** [From approved vocabulary]
+
+**Motion Prompt:**
+> [Pure visual/motion description for this sub-clip — no character names, no music references]
+> Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+
+#### Clip B — S{XX}b
+
+| Field | Value |
+|---|---|
+| **Clip Duration** | [5s / 10s] |
+| **Motion Strength** | [1-10] |
+| **Tech Strategy** | Mode A |
+| **Recommended Tool** | [Tool name (Mode, resolution) — rationale] |
+
+**Assets Required:**
+- **Start Frame:** `episode-{XX}/04_visuals/selected/ep{XX}_s{XX}_selected.png` *(same image, different camera move)*
+
+**Camera Move:** [From approved vocabulary — different from Clip A]
+
+**Motion Prompt:**
+> [Pure visual/motion description for this sub-clip — no character names, no music references]
+> Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+
+#### Clip C — S{XX}c (if needed — with supplementary image)
+
+| Field | Value |
+|---|---|
+| **Clip Duration** | [5s / 10s] |
+| **Motion Strength** | [1-10] |
+| **Tech Strategy** | Mode A |
+| **Recommended Tool** | [Tool name (Mode, resolution) — rationale] |
+
+**Assets Required:**
+- **Start Frame:** ⚠️ NEW IMAGE REQUIRED
+
+**Supplementary Visual Prompt:**
+> [Full visual prompt with mandatory suffix — ready to paste into Nano Banana]
+
+**Expected Selected Image:** `episode-{XX}/04_visuals/selected/ep{XX}_s{XX}c_selected.png`
+
+**Camera Move:** [From approved vocabulary]
+
+**Motion Prompt:**
+> [Pure visual/motion description for this sub-clip — no character names, no music references]
+> Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -97,17 +215,32 @@
 ## BEAT SYNC NOTES
 *(Claude flags critical musical moments that require precise visual sync)*
 
-| Timestamp | Musical Event | Required Visual Action |
-|---|---|---|
-| [MM:SS] | [e.g., Snare drum solo drop] | [e.g., Chain explosion — must land on beat] |
-| [MM:SS] | [e.g., Hammond organ swell] | [e.g., Slow zoom out begins here] |
-| [MM:SS] | [e.g., Chorus explosion] | [e.g., Cut to wide shot — maximum impact] |
+| Timestamp | Musical Event | Required Visual Action | Clip Reference |
+|---|---|---|---|
+| [MM:SS] | [e.g., Snare drum solo drop] | [e.g., Chain explosion — must land on beat] | S{XX} / S{XX}a |
+| [MM:SS] | [e.g., Hammond organ swell] | [e.g., Slow zoom out begins here] | S{XX}b |
+
+---
+
+## COVERAGE SUMMARY
+
+| Metric | Value |
+|---|---|
+| **Total music duration** | [seconds] |
+| **Total generated clip duration** | [seconds] |
+| **Coverage ratio** | [percentage] |
+| **Total clips** | [number] |
+| **Clips from existing images** | [number] |
+| **Clips needing new images** | [number] |
 
 ---
 
 ## APPROVAL STATUS
 - [ ] **Human reviewed camera moves**
-- [ ] **Human reviewed tech strategy (Mode A/B/C)**
+- [ ] **Human reviewed tech strategy (Mode A/B)**
+- [ ] **Human reviewed duration coverage**
+- [ ] **Human reviewed tool assignments**
+- [ ] **Human generated supplementary images (if any)**
 - [ ] **Human approved**
 - [ ] **Ready for video generation**
 

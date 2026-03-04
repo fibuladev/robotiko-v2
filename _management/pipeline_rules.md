@@ -1,5 +1,5 @@
 # PRODUCTION PIPELINE & QUALITY ASSURANCE
-> **Version:** 2.0 | **Last Updated:** 2026-02-23
+> **Version:** 2.4 | **Last Updated:** 2026-03-01
 > Always refer to `_management/master.md` as the absolute source of truth.
 
 ---
@@ -102,15 +102,47 @@ Two steps require explicit human approval before proceeding. Everything else Cla
   - `ep{XX}_musical_metadata.json` (for beat sync)
 - **Tool:** Claude executes `_skills/robotiko-motion-script/SKILL.md`
 - **Output:** `episode-{XX}/05_video/ep{XX}_motion_script_v01.md`
-- **⛔ MANDATORY CHECKPOINT:** Human reviews camera moves and tech strategy before video generation.
+  - Output includes a **Tool Assignment Summary** section and per-clip `| Recommended Tool |` field
+- **⛔ MANDATORY CHECKPOINT:** Human reviews camera moves, tech strategy, and tool assignments before video generation.
+
+### Step 8b: Supplementary Image Generation (If Required)
+- **Trigger:** Motion script flags sub-clips with `⚠️ NEW IMAGE REQUIRED`
+- **Input:** Inline supplementary visual prompts from the motion script
+- **Tool:** Nano Banana (same as Step 6)
+- **Output:** Additional images in `04_visuals/selected/` with sub-clip naming (e.g., `ep{XX}_s{XX}c_selected.png`)
+- **Note:** This step only runs if the motion script identifies scenes where existing images cannot cover the full duration. The motion script contains ready-to-use visual prompts for these supplementary images.
+
+### Step 8c: Tool Assignment (Built into Motion Script)
+- **Purpose:** The motion script includes per-clip tool recommendations based on current tool capabilities and credit budgets.
+- **Input:** Tool capabilities from `_management/project_metadata.json` (resolution, keyframe support, duration, cost)
+- **Assignment Logic:** Mode B → highest-quality keyframe tool (Kling or Seedance 1.0). Map/texture → Seedance 1.0 (budget-efficient). Fixed-duration match → natural fit. Character close-ups → highest resolution.
+- **Output:** `| Recommended Tool |` field in every clip + Tool Assignment Summary section in the motion script
+- **Note:** Tool assignments are recommendations. The human makes the final decision during video generation. Credit budgets and tool availability may change between sessions.
 
 ### Step 9: Video Generation
-- **Tool:** Seedream, Kling or Veo
+- **Tool:** Per clip's `| Recommended Tool |` from the approved motion script. Tools include Kling, Veo, Seedance 1.0 (or others as added to toolchain).
 - **Strategy Options:**
-  - **Mode A — Standard (5s):** Atmospheric/simple movement. Input: 1 image.
+  - **Mode A — Standard (5s or 10s):** Atmospheric/simple movement. Input: 1 image. Duration depends on tool capability.
   - **Mode B — Start/End Keyframes (5s or 10s):** Transformations, morphing, complex travel. Input: 2 images.
-  - **Mode C — Extension:** Continuous long takes, pans.
-- **Output:** `episode-{XX}/05_video/raw/ep{XX}_s{XX}_video_{tool}.mp4`
+- **Output:** `episode-{XX}/05_video/raw/ep{XX}_s{XX}_video_{tool}.mp4` (or `ep{XX}_s{XX}{a|b|c|d}_video_{tool}.mp4` for sub-clips)
+
+### Duration Coverage Strategy (Step 8 Rule)
+
+Video generation tools produce fixed-duration clips (5s or 10s). Music sections have arbitrary duration (5s–36s+). The motion script must ensure **full duration coverage** — every second of music must have corresponding video content.
+
+| Scene Duration | Strategy | Clip Count | Notes |
+|---|---|---|---|
+| ≤ 5s | **Direct** | 1 × 5s | Trim excess in CapCut |
+| 6–10s | **Direct** | 1 × 10s | Trim in CapCut. If tool is 5s-only: 1 × 5s + speed ramp |
+| 11–15s | **Speed Ramp** | 1 × 10s + slow-mo (max 1.5×) | If tool is 5s-only: 2 × 5s |
+| 16–30s | **Multi-Clip** | ⌈duration / 10⌉ × 10s clips | Each sub-clip gets own camera move + motion prompt |
+| 30s+ | **Multi-Clip** | ⌈duration / 10⌉ × 10s clips | May need supplementary images (Step 8b) |
+
+**Sub-clip naming:** `s{XX}a`, `s{XX}b`, `s{XX}c`, `s{XX}d` — consistent with existing keyframe pair naming.
+
+**Speed ramp limit:** Maximum 1.5× slowdown (e.g., 10s clip → 15s at most). Beyond 1.5× looks unnatural.
+
+**Coverage target:** ≥ 95% of total music duration covered by generated clip time (before speed ramp adjustments)
 
 ### Step 10: Video Selection
 - **Tool:** Human curates final clips
@@ -120,13 +152,26 @@ Two steps require explicit human approval before proceeding. Everything else Cla
 
 ## PHASE 5: POST-PRODUCTION
 
-### Step 11: Editing
-- **Tool:** CapCut
+### Step 11: Editing + Post-Production Unification
+- **Tool:** CapCut Pro
 - **Input:** Selected video clips + Final audio
 - **Output:** `episode-{XX}/06_edit/ep{XX}_final_v01.mp4`
-- **QA Checklist:**
+
+#### CapCut Post-Production Protocol
+
+Apply these to ALL clips before editing, to unify output from multiple AI tools (Kling, Veo, Seedance 1.0):
+
+1. **Film Grain:** 10-15% overlay on every clip. Breaks AI smoothness, creates organic analog texture.
+2. **Color Match:** Select the best reference clip (best Kodachrome warmth) → match all other clips to it using CapCut's Match Color feature.
+3. **Letterbox 2.35:1:** Add cinematic black bars (top + bottom). Hides edge artifacts, reinforces cinematic format.
+4. **Kodachrome LUT:** If available, apply a warm Kodachrome color grading preset for unified look across all clips.
+
+#### QA Checklist
+  - [ ] Film grain applied to all clips (10-15%)
+  - [ ] Color matched across all clips (single reference)
+  - [ ] Letterbox 2.35:1 applied
   - [ ] Beat sync verified
-  - [ ] Color consistency (Kodachrome warmth, film grain)
+  - [ ] Color consistency (Kodachrome warmth preserved)
   - [ ] 4K export confirmed
   - [ ] No clean/sterile aesthetics — analog decay preserved
 

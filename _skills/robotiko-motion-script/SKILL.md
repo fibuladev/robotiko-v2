@@ -1,5 +1,5 @@
 # SKILL: robotiko-motion-script
-> **Version:** 1.0 | **Last Updated:** 2026-02-24
+> **Version:** 1.4 | **Last Updated:** 2026-03-01
 > **Trigger:** `"Generate motion script for EP{XX}"`
 > **Output:** `episode-{XX}/05_video/ep{XX}_motion_script_v{VV}.md`
 
@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Generate a shot-by-shot motion script that defines camera movements, video generation strategy, motion intensity, and beat sync instructions for each scene of an episode. The motion script translates still images (selected visuals) into cinematic motion by telling the video generation tool (Seedream / Kling / Veo) exactly how each frame should come alive.
+Generate a shot-by-shot motion script that defines camera movements, video generation strategy, motion intensity, and beat sync instructions for each scene of an episode. The motion script translates still images (selected visuals) into cinematic motion by telling the video generation tool (Kling / Veo / Seedance) exactly how each frame should come alive.
 
 This is the final creative document before video generation begins. Precision here determines whether the final video breathes with the music or fights against it.
 
@@ -74,18 +74,84 @@ Read these files in this exact order:
 - If a scene was flagged for Start/End keyframes in the dramaturgy, confirm that both `s{XX}a` and `s{XX}b` selected images exist (or that two separate scene images are available for the transformation).
 
 ### Step 5: Determine Tech Strategy Per Shot
-Assign one of three video generation modes to each shot:
+Assign one of two video generation modes to each shot:
 
 | Mode | When to Use | Input | Duration | Motion Strength Range |
 |---|---|---|---|---|
-| **A — Standard** | Atmospheric shots, simple movement, single subject, no transformation | 1 selected image | 5s | 1-6 |
+| **A — Standard** | Atmospheric shots, simple movement, single subject, no transformation | 1 selected image | 5s or 10s (tool-dependent) | 1-8 |
 | **B — Start/End Keyframes** | Transformations, morphing, character state changes, location transitions, complex travel | 2 selected images | 5s or 10s | 3-8 |
-| **C — Extension** | Continuous long takes, sustained atmosphere, slow reveals, scenes that need to breathe longer | 1 image + previous clip output | Variable | 1-5 |
 
 Decision logic:
-- Does the scene involve transformation or travel? → **Mode B**
-- Does the scene need to sustain beyond 5 seconds for musical reasons? → **Mode C**
-- Is it a single atmospheric moment or character portrait? → **Mode A**
+- Does the scene involve transformation or before/after change? → **Mode B**
+- Is it a single atmospheric moment, character portrait, or environmental shot? → **Mode A**
+
+> **Note:** Mode C (Extension) has been deprecated. Video generation tools produce fixed-duration clips (5s or 10s) with no chaining capability. Scenes longer than 10s are handled through the Duration Coverage Strategy (Step 6).
+
+### Step 6: Duration Coverage Analysis (CRITICAL)
+
+**This step prevents the duration gap problem.** Calculate coverage for every shot:
+
+1. For each shot, compute: `scene_duration = timestamp_end - timestamp_start`
+2. Apply the Duration Coverage Strategy:
+
+| Scene Duration | Strategy | Clip Count | Notes |
+|---|---|---|---|
+| ≤ 5s | **Direct** | 1 × 5s | Trim excess in CapCut |
+| 6–10s | **Direct** | 1 × 10s | Trim in CapCut. If tool is 5s-only: 1 × 5s + speed ramp |
+| 11–15s | **Speed Ramp** | 1 × 10s + slow-mo (max 1.5×) | If tool is 5s-only: 2 × 5s |
+| 16–30s | **Multi-Clip** | ⌈duration / 10⌉ × 10s clips | Each sub-clip gets own camera move + motion prompt |
+| 30s+ | **Multi-Clip** | ⌈duration / 10⌉ × 10s clips | May need supplementary images |
+
+3. For Multi-Clip shots, define sub-clips (labeled a, b, c, d...):
+   - Each sub-clip gets its own camera move and motion prompt
+   - Sub-clips should create visual variety (different camera moves, not identical repetitions)
+   - Determine which sub-clips can reuse the existing selected image and which need new images
+
+4. For sub-clips requiring new images, include an inline **Supplementary Visual Prompt**:
+   - Must follow all visual prompt rules (mandatory suffix, character phase, forbidden aesthetics)
+   - Include the expected selected image filename
+   - The human generates the image from this prompt before video generation
+
+5. Calculate totals:
+   - Total generated clip duration must be ≥ 95% of total music duration
+   - Document the coverage ratio in the Coverage Summary section
+
+### Step 7: Tool Assignment Analysis
+
+After determining coverage strategy (Step 6), assign an AI video generation tool to each clip based on capabilities, budget, and quality requirements.
+
+#### Tool Inventory
+
+| Tool | Keyframe Support | Resolution | Duration | Cost Model |
+|---|---|---|---|---|
+| **Kling AI Pro** | Start + End | 1080p | 5s or 10s | Credits (paid) |
+| **Google Veo** | None | ~1080p | 8s fixed | Free (daily limit) |
+| **Seedance 1.0 (CapCut)** | Start + End | 1080p | 5s or 10s | 25cr/5s, 50cr/10s (CapCut Pro, 1200cr/month) |
+
+> Tool inventory may change between episodes. Always check `_management/project_metadata.json` for current tool availability and credit budgets before assigning.
+
+#### Assignment Rules (Priority Order)
+
+1. **Mode B → highest-quality keyframe tool** — Transformation shots need maximum visual quality. Keyframe support is mandatory. Kling or Seedance 1.0 (both 1080p).
+2. **Map/texture shots → Seedance 1.0** — CapCut Pro credits are included in the subscription, making Seedance budget-efficient for vintage paper, halftone, and grain-heavy textures.
+3. **Scene duration matches tool's fixed output → use that tool** — If a tool produces fixed-length clips (e.g., 8s) and the scene duration is 8-9s, it's a natural match with minimal CapCut adjustment.
+4. **Speed Ramp shots → avoid fixed-duration tools** — If a tool produces 8s fixed output and the scene needs Speed Ramp (e.g., 8s → 12s at 0.67×), the resulting slowdown (1.5×) may exceed the max rule. Verify before assigning.
+5. **Character close-ups → highest resolution available** — Chrome detail, eye color, wire textures are resolution-sensitive. Kling or Seedance 1.0 (both 1080p).
+6. **Everything else → balance between Kling and Seedance 1.0** — Split across credit pools to maximize retake buffer on both tools.
+
+#### Budget Tracking
+
+For each tool, calculate:
+- Total credits consumed by all assigned clips
+- Remaining buffer (for retakes)
+- Aim for ≥15% buffer per paid tool
+
+#### Output Requirements
+
+- Add `| **Recommended Tool** |` field to every clip's table (after Motion Strength)
+- Format: `{Tool Name} ({Mode}, {resolution}) — {brief rationale}`
+- Add a **Tool Assignment Summary** section between Video Strategy Reference and Motion Script sections
+- Summary must include: tool distribution table, assignment rules applied, clips-by-tool list, credit budget
 
 ---
 
@@ -145,27 +211,50 @@ A 1-10 scale defining how much movement exists in the frame:
 
 ## MOTION PROMPT WRITING GUIDE
 
-The Motion Prompt field is a director's note describing what should feel alive in the frame. It is NOT a repeat of the visual prompt — the image already exists. This describes the **movement layer** added on top.
+The Motion Prompt is fed directly to the video generation tool (Kling / Veo / Seedance). It must contain ONLY what the tool can see and execute — pure visual and motion descriptions. The tool does not know our characters, our music, or our story.
+
+Musical context belongs in the **Musical Moment** field. Narrative context belongs in the **Scene Context** field. The Motion Prompt is ONLY for the video generation tool.
 
 ### DO:
 - Describe what moves, how fast, and in what direction
-- Reference the musical moment ("as the fuzz guitar enters, sparks begin cascading")
 - Specify atmospheric motion: fog, dust, light flickers, wire sway, ember drift
-- Note the emotional intent of the movement ("the zoom tightens like a closing fist")
+- Describe characters by their visual appearance ("chrome android", "robed figure with glowing staff")
 - Keep it concise — 2-4 sentences maximum
-- Describe the feeling of time within the shot (slow, suspended, urgent, relentless)
+- Describe visible light changes, color shifts, particle effects
 
 ### DON'T:
+- Use character names (Robotiko, Mentor) — the tool doesn't know them
+- Reference musical instruments (Hammond organ, fuzz guitar, bass drop) — the tool doesn't hear music
+- Include narrative commentary ("the only honest light in EP02", "this is Tuesday")
+- Add speed ramp technical notes ("0.71× slowdown will make...") — that's post-production info
+- Include audience/viewer direction ("the audience needs time to read")
+- Write poetic metaphors the tool cannot render ("approaching the sermon", "a congregation drawn to the preacher")
+- Add timing cues (BPM, "on the downbeat", "at ~1:31") — the tool doesn't know the timeline
 - Repeat the visual description from the dramaturgy or visual prompt
-- Describe what the image looks like — describe what MOVES
-- Write prose paragraphs — this is a technical instruction
-- Request impossible physics (an AI video model cannot rotate a subject 360 degrees from a single still image)
-- Ignore the musical moment — every motion prompt must acknowledge what the music is doing
+- Request impossible physics (an AI video model cannot rotate a subject 360° from a single still image)
+
+### Mandatory Video Style Suffix
+
+Append this to the end of every motion prompt — no exceptions:
+
+> Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+
+This is the video equivalent of the visual prompt suffix. It ensures consistent 70s analog aesthetic across all video generation tools (Kling, Veo, Seedance 1.0).
+
+### Image Fidelity & Representation Rules
+
+- **Source images are production-ready.** Video generators must animate them faithfully — not reinterpret, enhance, or "improve" visual elements.
+- **Protect abstract elements:** When the source image contains silhouettes, blurred figures, abstract textures, or intentionally undefined elements, the motion prompt MUST include explicit preservation language: "maintain as featureless dark shapes, do not resolve into detailed figures."
+- **Gender diversity:** All crowd, audience, mob, and group references MUST specify "mixed men and women." Never leave group descriptions as implicitly all-male.
+- **Video generators will "clarify" ambiguity** — they turn silhouettes into photorealistic faces, blurred shapes into detailed objects. The motion prompt must actively prevent this.
 
 ### EXAMPLE (Good):
-> Slow zoom in toward Robotiko's face as the Hammond organ swell builds. His blue eyes flicker imperceptibly — not a full glitch, just a tremor. Wisps of volumetric fog drift left to right across the lower third of the frame. The amber light from the Mentor's staff pulses once, slowly, like a heartbeat.
+> Slow zoom toward the chrome android's face. Blue eyes flicker imperceptibly — a faint tremor. Wisps of volumetric fog drift left to right across the lower third of the frame. Amber light pulses once, slowly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
-### EXAMPLE (Bad):
+### EXAMPLE (Bad — narrative/musical contamination):
+> Slow zoom in toward Robotiko's face as the Hammond organ swell builds. The slowdown to 0.71× will make the approach feel reverential — a congregation drawn to the preacher in suspended time.
+
+### EXAMPLE (Bad — vague and empty):
 > Camera moves in. Robotiko is standing there looking broken. Make it look cinematic and epic. The atmosphere should feel emotional.
 
 ---
@@ -195,14 +284,37 @@ Each shot block contains:
 | **Shot ID** | S{XX} — matches dramaturgy and visual prompt scene ID |
 | **Shot Title** | Brief descriptive title |
 | **Timestamp** | From musical metadata |
+| **Scene Duration** | Calculated duration in seconds |
+| **Coverage Strategy** | Direct / Speed Ramp (with ratio) / Multi-Clip (with count) |
 | **Musical Moment** | What is happening in the music at this exact moment |
 | **Scene Context** | 1-sentence reference to the approved dramaturgy |
-| **Tech Strategy** | Mode A / Mode B / Mode C |
-| **Duration** | 5s / 10s / Variable |
+| **Tech Strategy** | Mode A / Mode B |
+
+**For Direct and Speed Ramp shots (single clip):**
+
+| Field | Description |
+|---|---|
+| **Clip Duration** | 5s / 10s |
 | **Motion Strength** | 1-10 |
+| **Recommended Tool** | Tool name, mode, resolution, brief rationale |
 | **Assets Required** | Start Frame path (and End Frame path if Mode B) |
 | **Camera Move** | One move from the approved vocabulary |
-| **Motion Prompt** | Director's note on movement, atmosphere, and musical sync |
+| **Motion Prompt** | Pure visual/motion description for the video generation tool (no character names, no music references) |
+| **Speed Ramp** | (Speed Ramp only) Target playback ratio, e.g., "0.7× (10s → 14s)" |
+
+**For Multi-Clip shots (multiple sub-clips):**
+
+Each sub-clip (Clip A, Clip B, etc.) contains:
+
+| Field | Description |
+|---|---|
+| **Sub-clip ID** | S{XX}a / S{XX}b / S{XX}c / etc. |
+| **Clip Duration** | 5s / 10s |
+| **Motion Strength** | 1-10 |
+| **Recommended Tool** | Tool name, mode, resolution, brief rationale |
+| **Assets Required** | Image path. If new image needed: `⚠️ NEW IMAGE REQUIRED` + inline supplementary visual prompt |
+| **Camera Move** | One move from the approved vocabulary |
+| **Motion Prompt** | Pure visual/motion description for this sub-clip (no character names, no music references) |
 
 ### 4. Beat Sync Notes
 Critical musical moments requiring precise visual synchronization:
@@ -211,8 +323,19 @@ Critical musical moments requiring precise visual synchronization:
 |---|---|---|
 | MM:SS | [specific musical event] | [specific visual response] |
 
-### 5. Approval Status
-Checkboxes: Human reviewed camera moves, Human reviewed tech strategy, Human approved, Ready for video generation.
+### 5. Coverage Summary
+
+| Metric | Value |
+|---|---|
+| Total music duration | [seconds] |
+| Total generated clip duration | [seconds] |
+| Coverage ratio | [percentage] |
+| Total clips | [number] (single clips + sub-clips) |
+| Clips from existing images | [number] |
+| Clips needing new images | [number] |
+
+### 6. Approval Status
+Checkboxes: Human reviewed camera moves, Human reviewed tech strategy, Human reviewed coverage, Human approved, Ready for video generation.
 
 ---
 
@@ -250,16 +373,26 @@ Checkboxes: Human reviewed camera moves, Human reviewed tech strategy, Human app
 
 Before delivering the motion script to the human, verify:
 
-- [ ] Every shot references an existing selected image file path
-- [ ] Every shot has exactly one camera move from the approved vocabulary
+- [ ] **Duration coverage:** Total generated clip duration ≥ 95% of total music duration
+- [ ] Every clip (including sub-clips) references an existing selected image or has a flagged supplementary visual prompt
+- [ ] Every clip has exactly one camera move from the approved vocabulary
 - [ ] Motion strength values align with the musical energy arc (no motion 9 during a quiet bridge)
-- [ ] Tech strategy (A/B/C) is appropriate for each shot's requirements
+- [ ] Tech strategy (A/B) is appropriate for each shot's requirements
 - [ ] Beat Sync Notes table includes all critical musical moments (chorus entries, drops, solos, silence)
-- [ ] No shot combines multiple camera moves (one move per shot — strict)
+- [ ] No clip combines multiple camera moves (one move per clip — strict)
 - [ ] Motion prompts describe movement, not visual appearance
 - [ ] Motion prompts reference the musical moment they live in
 - [ ] Shot sequence follows rhythm principles (no three consecutive high-intensity shots without a breath)
+- [ ] Sub-clips within a shot use varied camera moves (not identical repetitions)
 - [ ] Average motion strength matches the episode's station energy
+- [ ] Supplementary visual prompts include the mandatory suffix and respect character phase
+- [ ] Coverage Summary section is present and accurate
+- [ ] Every clip has a Recommended Tool assignment
+- [ ] All Mode B shots assigned to highest-resolution keyframe tool
+- [ ] No Speed Ramp shots assigned to fixed-duration tools without verifying slowdown limit
+- [ ] Total credits per paid tool ≤ budget (with ≥15% buffer for retakes)
+- [ ] No character close-ups assigned to low-resolution tools
+- [ ] Tool Assignment Summary section is present and accurate
 - [ ] Approval checkboxes are present at the bottom
 - [ ] Ask yourself: **"Would Fibula approve this?"**
 
@@ -268,7 +401,7 @@ Before delivering the motion script to the human, verify:
 ## WHAT HAPPENS NEXT
 
 After human approves the motion script:
-1. Human feeds each shot to the video generation tool (Seedream / Kling / Veo) with:
+1. Human feeds each shot to its **Recommended Tool** (per the Tool Assignment Summary) with:
    - The selected image(s) as input
    - The camera move instruction
    - The motion prompt as descriptive guidance

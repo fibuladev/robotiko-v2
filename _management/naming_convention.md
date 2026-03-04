@@ -43,7 +43,10 @@ ep{EPISODE_NUMBER}_s{SCENE_NUMBER}_{TYPE}_v{VERSION}.{EXTENSION}
 | Raw Image | `ep{XX}_s{XX}_v{XX}.png` | `ep03_s01_v04.png` |
 | Selected Image | `ep{XX}_s{XX}_selected.png` | `ep03_s01_selected.png` |
 | Raw Video | `ep{XX}_s{XX}_video_{tool}.mp4` | `ep03_s01_video_kling.mp4` |
+| Raw Video (sub-clip) | `ep{XX}_s{XX}{a\|b\|c\|d}_video_{tool}.mp4` | `ep02_s29c_video_kling.mp4` |
 | Selected Video | `ep{XX}_s{XX}_selected.mp4` | `ep03_s01_selected.mp4` |
+| Selected Video (sub-clip) | `ep{XX}_s{XX}{a\|b\|c\|d}_selected.mp4` | `ep02_s29c_selected.mp4` |
+| Supplementary Image | `ep{XX}_s{XX}{a\|b\|c\|d}_selected.png` | `ep02_s29c_selected.png` |
 | Audio File | `ep{XX}_audio_v{XX}.mp3` | `ep02_audio_v01.mp3` |
 | Final Edit | `ep{XX}_final_v{XX}.mp4` | `ep02_final_v01.mp4` |
 
@@ -112,6 +115,7 @@ _memory/decisions_log.md
 5. **Tool name in video files:** Always specify the generation tool (`kling`, `veo`).
 6. **Musical metadata has no version suffix** — it is always the single source of truth per episode. If it needs updating, overwrite and commit with a descriptive message.
 7. **Selected files have no version suffix** — selection is a curation decision, not an iteration.
+8. **Sub-clip suffix** uses lowercase letters (a, b, c, d) appended directly to the scene number. This pattern is used for: keyframe pairs (start/end), multi-clip sub-clips, and supplementary images. Example: `ep02_s07a` (keyframe start), `ep02_s29c` (third sub-clip of scene 29).
 
 ---
 

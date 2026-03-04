@@ -126,6 +126,16 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 ---
 
+## MANDATORY VIDEO SUFFIX
+
+Append this to every single motion prompt — no exceptions:
+
+```
+Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+```
+
+---
+
 ## FILE NAMING CONVENTION (Quick Reference)
 
 ```

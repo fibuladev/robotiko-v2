@@ -133,7 +133,7 @@ After determining coverage strategy (Step 6), assign an AI video generation tool
 #### Assignment Rules (Priority Order)
 
 1. **Mode B → highest-quality keyframe tool** — Transformation shots need maximum visual quality. Keyframe support is mandatory. Kling or Seedance 1.0 (both 1080p).
-2. **Map/texture shots → Seedance 1.0** — CapCut Pro credits are included in the subscription, making Seedance budget-efficient for vintage paper, halftone, and grain-heavy textures.
+2. **Map/texture shots → Kling 2.5 Turbo (static) or Kling 3.0 (camera move)** — Seedance 1.0 performs poorly on abstract/texture content (maps, macro surfaces, paper). Kling handles soyut sahneler better. Reserve Seedance for character-focused scenes.
 3. **Scene duration matches tool's fixed output → use that tool** — If a tool produces fixed-length clips (e.g., 8s) and the scene duration is 8-9s, it's a natural match with minimal CapCut adjustment.
 4. **Speed Ramp shots → avoid fixed-duration tools** — If a tool produces 8s fixed output and the scene needs Speed Ramp (e.g., 8s → 12s at 0.67×), the resulting slowdown (1.5×) may exceed the max rule. Verify before assigning.
 5. **Character close-ups → highest resolution available** — Chrome detail, eye color, wire textures are resolution-sensitive. Kling or Seedance 1.0 (both 1080p).
@@ -219,7 +219,8 @@ Musical context belongs in the **Musical Moment** field. Narrative context belon
 - Describe what moves, how fast, and in what direction
 - Specify atmospheric motion: fog, dust, light flickers, wire sway, ember drift
 - Describe characters by their visual appearance ("chrome android", "robed figure with glowing staff")
-- Keep it concise — 2-4 sentences maximum
+- **Keep it SHORT — max 2-3 sentences before the video suffix.** Video tools respond to atmosphere + mood keywords (glowing, hypnotic, charred, decay) far better than literal micro-descriptions (halftone dots large as coins, paper fibers visible as individual strands). Over-detailed prompts confuse the model.
+- Use strong evocative adjectives rather than precise physical measurements
 - Describe visible light changes, color shifts, particle effects
 
 ### DON'T:
@@ -241,6 +242,26 @@ Append this to the end of every motion prompt — no exceptions:
 
 This is the video equivalent of the visual prompt suffix. It ensures consistent 70s analog aesthetic across all video generation tools (Kling, Veo, Seedance 1.0).
 
+### Mandatory Anti-Spawn Guard
+
+Append this AFTER the video style suffix on every motion prompt — no exceptions:
+
+> Do not add extra characters. Keep everything as pictured.
+
+Video generators (Kling, Veo, Seedance) spawn phantom characters in backgrounds — flickering, glitching figures that waste credits on retakes. This guard line prevents the tool from adding elements not present in the source image. Apply to ALL prompts, not just crowd scenes.
+
+### Crowd Scene Micro-Motion Protocol
+
+In scenes with multiple characters (2+ people), follow these rules strictly:
+
+1. **Specify exact count and appearance** — "four men in black vests", NOT "smiling touts" or "a group of men"
+2. **Lock positions** — Include "remain in their exact positions" in the prompt
+3. **Micro-actions only** — Limit character movement to: subtle head nods, slow head pan, slight head tilt. NEVER use broad gestures (beckoning, leaning in, gesturing warmly, waving)
+4. **Environmental motion for liveliness** — Use neon sign flicker, smoke drift, light reflections instead of character movement to make the scene feel alive
+5. **Static background** — Add "Background remains static" for scenes with background crowds
+
+**Why:** Plural group descriptions + broad gestures cause video generators to spawn duplicate characters and distort limbs. Specifying count, locking positions, and limiting to micro-motion prevents this.
+
 ### Image Fidelity & Representation Rules
 
 - **Source images are production-ready.** Video generators must animate them faithfully — not reinterpret, enhance, or "improve" visual elements.
@@ -248,8 +269,11 @@ This is the video equivalent of the visual prompt suffix. It ensures consistent 
 - **Gender diversity:** All crowd, audience, mob, and group references MUST specify "mixed men and women." Never leave group descriptions as implicitly all-male.
 - **Video generators will "clarify" ambiguity** — they turn silhouettes into photorealistic faces, blurred shapes into detailed objects. The motion prompt must actively prevent this.
 
-### EXAMPLE (Good):
-> Slow zoom toward the chrome android's face. Blue eyes flicker imperceptibly — a faint tremor. Wisps of volumetric fog drift left to right across the lower third of the frame. Amber light pulses once, slowly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+### EXAMPLE (Good — character scene):
+> Slow zoom toward the chrome android's face. Blue eyes flicker — a faint tremor. Volumetric fog drifts across the frame, amber light pulses slowly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+
+### EXAMPLE (Good — texture/map scene):
+> Extreme close-up on a glowing red light marker on a charred, burnt map. The red light pulses slowly and hypnotically. The surrounding paper is heavily textured with ashes and decay. Cinematic 35mm film style, heavy film grain, shallow depth of field, Kodachrome colors, 16:9. Do not add extra characters. Keep everything as pictured.
 
 ### EXAMPLE (Bad — narrative/musical contamination):
 > Slow zoom in toward Robotiko's face as the Hammond organ swell builds. The slowdown to 0.71× will make the approach feel reverential — a congregation drawn to the preacher in suspended time.

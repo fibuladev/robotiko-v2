@@ -50,6 +50,7 @@ When the human gives a trigger phrase, read the relevant SKILL.md before doing a
 | "Package EP{XX} for YouTube" | `_skills/robotiko-youtube-packager/SKILL.md` |
 | "Atomize EP{XX} for social" | `_skills/robotiko-reels-atomizer/SKILL.md` |
 | "Orchestrate EP{XX} launch" | `_skills/robotiko-launch-orchestrator/SKILL.md` |
+| "Edit EP{XX} in CapCut" | `_skills/robotiko-capcut-editor/SKILL.md` |
 
 ---
 

@@ -13,8 +13,11 @@
       "phase_1_awakening": {
         "episodes": [1, 2, 3],
         "station": "The Commanding Self → The Self-Blaming Self",
-        "visual_state": "Pristine chrome body, clean analog wires, curious glowing blue eyes. No damage. Full armor intact. The machine at peak arrogance — flawless on the outside because it has not yet met reality.",
-        "visual_prompt_addition": "pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full armor, retro-futuristic 70s mechanical aesthetic"
+        "visual_state": "Chrome body accumulates damage across Phase 1. EP01: pristine, no damage — the machine at peak arrogance. EP02: right ear missing (shrapnel scar, exposed wires at ear socket), torso dent/gouge from press machine, shoulder scratches from Congo steel. EP03: EP02 damage carries forward, plus minor cosmetic marks (bullet graze on cheek, road dust) that are temporary. Full armor intact throughout, but no longer pristine after EP01.",
+        "visual_prompt_addition": {
+          "ep01": "pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full armor, retro-futuristic 70s mechanical aesthetic",
+          "ep02_ep03": "chrome body with battle scars, right ear missing with shrapnel scar and exposed wires at ear socket, torso dent from press machine, shoulder scratches, clean exposed analog wires (blue and red), glowing steady blue eyes, full armor intact, retro-futuristic 70s mechanical aesthetic"
+        }
       },
       "phase_2_destruction": {
         "episodes": [4, 5, 6, 7],

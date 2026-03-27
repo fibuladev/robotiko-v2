@@ -47,6 +47,24 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 ## PRE-GENERATION ANALYSIS
 
+### Step 0: Pre-Generate Reference Images (CHARACTER + ENVIRONMENT)
+
+Before writing any scene prompts, identify and prepare reference images:
+
+**Character References:**
+- Scan the dramaturgy for episode-specific character groups (e.g., sol-liberal travelers, wedding guests, nightclub touts).
+- For each group, write a standalone prompt that clearly shows the group in a neutral composition — this becomes the character reference image.
+- The human generates this image first, then uploads it alongside every scene prompt where that group appears.
+- Robotiko and Mentor already have master references (`ref_robotiko_master.png`, `ref_mentor_master.png`). Episode-specific groups do NOT — they need per-episode reference images.
+
+**Environment References:**
+- Scan the dramaturgy for locations that appear in 3+ scenes (e.g., sanayi sitesi, nightclub interior, metrobüs).
+- For each recurring location, write a standalone environment prompt — wide establishing shot, no characters, full spatial detail.
+- The human generates this image first, then uploads it alongside every scene prompt set in that location.
+- This ensures visual continuity: same workshop walls, same lighting fixtures, same floor texture across all scenes.
+
+**Why this matters:** Without reference images, Nano Banana generates different-looking characters and environments in every scene. Reference images anchor visual identity across the episode.
+
 ### Step 1: Confirm Character Phase
 - From `character_profiles.json`, extract the `visual_prompt_addition` for this episode's phase.
 - This exact string will be embedded in every prompt where that character appears.
@@ -95,15 +113,18 @@ The prompt reads as a single flowing description, not as a bulleted list.
 
 ### Rule 3: Character Embedding
 When a character appears in a scene:
-- Embed the full `visual_prompt_addition` string from `character_profiles.json`
-- Reference any scene-specific eye state or damage state from the dramaturgy
-- Do NOT use vague references like "Robotiko" alone — always include visual descriptors
+- Use a **short identifier** — the reference image carries the visual details. Long descriptions compete with the reference image and confuse the model.
+- For Robotiko: "the chrome android" is sufficient when `ref_robotiko_master.png` is uploaded as reference.
+- For Mentor: "an elderly figure in dark green cloak, wooden staff with glowing amber tip" when `ref_mentor_master.png` is uploaded.
+- For episode-specific groups: use a brief consistent descriptor (e.g., "three young travelers — mixed men and women with colorful scarves") when the group's reference image is uploaded.
+- Only add specific damage/state details if they differ from the reference image (e.g., "thin scratch across his cheek" for a new wound).
+- Do NOT use character names ("Robotiko", "Mentor") — image generators don't know names. Describe by appearance.
 
-**Example — Robotiko in Phase 1:**
-> A retro-futuristic chrome android with pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full armor, retro-futuristic 70s mechanical aesthetic, standing at the edge of...
+**Example — Robotiko with reference image uploaded:**
+> The chrome android standing at the edge of a rusted platform...
 
-**Example — Robotiko in Phase 2:**
-> A retro-futuristic chrome android with rusted and cracked chrome chassis, sparks flying from joints, glitching blue-red eyes, exposed and fraying analog wires, battle-damaged retro-futuristic body, kneeling on...
+**Example — Robotiko WITHOUT reference image (fallback only):**
+> A retro-futuristic chrome android with battle-scarred chrome body, exposed analog wires, glowing blue eyes, standing at the edge of...
 
 ### Rule 4: Environmental Specificity
 - Never write generic environments ("a futuristic city", "a dark room").
@@ -258,8 +279,9 @@ Self-validation checklist at the bottom of the document.
 
 Before delivering the visual prompts to the human, verify:
 
+- [ ] Character and environment reference prompts are included at the top of the document (Step 0)
 - [ ] Every single prompt ends with the mandatory style suffix (check every one — no exceptions)
-- [ ] Every scene with a character includes the full `visual_prompt_addition` from character_profiles.json
+- [ ] Short character identifiers used — reference images carry visual details (not full descriptions)
 - [ ] Every scene with a character references the correct `master_ref_path`
 - [ ] Character visual state matches the episode's phase (no pristine Robotiko in Phase 2/3)
 - [ ] No forbidden aesthetics appear in any prompt (clean, sterile, neon cyberpunk, Pixar, smooth plastic)

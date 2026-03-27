@@ -154,8 +154,11 @@ Video generation tools produce fixed-duration clips (5s or 10s). Music sections 
 
 ### Step 11: Editing + Post-Production Unification
 - **Tool:** CapCut Pro
-- **Input:** Selected video clips + Final audio
-- **Output:** `episode-{XX}/06_edit/ep{XX}_final_v01.mp4`
+- **Skill:** Claude executes `_skills/robotiko-capcut-editor/SKILL.md` to generate episode-specific edit guide
+- **Input:** Selected video clips + Final audio + Approved motion script
+- **Output:**
+  - Edit guide: `episode-{XX}/06_edit/ep{XX}_capcut_guide_v{VV}.md`
+  - Final video: `episode-{XX}/06_edit/ep{XX}_final_v{VV}.mp4`
 
 #### CapCut Post-Production Protocol
 
@@ -204,6 +207,7 @@ Claude reads the relevant SKILL.md before executing any workflow.
 | `robotiko-youtube-packager` | "Package EP{XX} for YouTube" | Metadata file |
 | `robotiko-reels-atomizer` | "Atomize EP{XX} for social" | Clip list |
 | `robotiko-launch-orchestrator` | "Orchestrate EP{XX} launch" | Launch checklist |
+| `robotiko-capcut-editor` | "Edit EP{XX} in CapCut" | Edit guide |
 
 ---
 
@@ -213,5 +217,5 @@ Claude reads the relevant SKILL.md before executing any workflow.
 SCAFFOLD → LYRICS → MUSIC → METADATA JSON → CONCEPT NOTES
     → DRAMATURGY [✋ CHECKPOINT] → VISUAL PROMPTS → IMAGE GEN → IMAGE SELECT
     → MOTION SCRIPT [✋ CHECKPOINT] → VIDEO GEN → VIDEO SELECT
-    → EDIT → YOUTUBE + SOCIAL
+    → CAPCUT GUIDE → EDIT → YOUTUBE + SOCIAL
 ```

@@ -12,6 +12,7 @@ Skills are operational instructions for Claude AI to execute specific workflows.
 6. **robotiko-youtube-packager** - Generate YouTube metadata
 7. **robotiko-reels-atomizer** - Extract social media clips
 8. **robotiko-launch-orchestrator** - Master launch coordinator
+9. **robotiko-capcut-editor** - CapCut post-production edit guide
 
 ## Model Recommendations
 

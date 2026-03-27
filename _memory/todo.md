@@ -1,7 +1,7 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-03-01 (Session 6: Multiframes Killed + Pipeline Cleanup)
+> Last Updated: 2026-03-07 (Session 9: EP03 Brainstorming + Concept Notes)
 
 ---
 
@@ -85,6 +85,20 @@
 - [ ] Human selects video clips
 - [ ] Final edit — CapCut
 
+### 2026-03-18 Session Summary (CapCut Post-Production Setup)
+**Task:** Set up CapCut Desktop post-production pipeline for EP02.
+**Completed:**
+- [x] Kodachrome LUT imported (Presetpro - Kodachrome 64.cube) → Adjustment Layer, intensity 80%
+- [x] Film Grain effect added (Effects → "Grain") → Adjustment Layer, texture 10
+- [x] Letterbox 2.35:1 activated (Player → Ratio → 2.35)
+- [x] All video clips + music (episode-2.1.wav) imported to timeline
+**Pending for tomorrow (2026-03-19):**
+- [ ] Audio-video sync — align clip boundaries to musical beats using motion script timestamps
+- [ ] S01 re-generation via Veo (original was 5s, needs 8s+ for speed ramp coverage)
+- [ ] Vignette effect (Effects → "Vignette" → ~20%)
+- [ ] Selective effects (chromatic aberration on S07, S11, S23, S28, S32)
+- [ ] Speed ramp adjustments on applicable clips (S01-S03, S13, S15, S16, etc.)
+
 ### 2026-02-27 Session Summary (Duration Coverage Fix)
 **Problem:** Motion script v01 had 39% duration coverage (175s video for 448s music). Pipeline assumed 1 scene = 1 clip.
 **Solution:** Created Duration Coverage Strategy (Direct / Speed Ramp / Multi-Clip). Updated 7 pipeline files + rewrote motion script.
@@ -120,6 +134,76 @@
 
 ---
 
+## NEXT: EP03 PRODUCTION
+
+- [x] `ep03_lyrics_v01.md` — Lyrics added to episode-03/01_lyrics/
+- [x] `ep03_musical_metadata.json` — Musical metadata added to episode-03/02_music/
+- [x] `ep03_concept_notes.md` — Concept notes written (brainstorming session 2026-03-07)
+- [x] `ep03_dramaturgy_v01.md` — Claude generates (skill: robotiko-dramaturgy) ✅ 2026-03-10
+- [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-03-10
+- [ ] `ep03_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts)
+- [ ] Image generation
+- [ ] Human selects images
+- [ ] `ep03_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script)
+- [ ] **[CHECKPOINT]** Human approves motion script
+- [ ] Video generation
+- [ ] Final edit — CapCut
+
+### 2026-03-07 Session Summary (EP03 Brainstorming + Concept Notes)
+**Task:** Brainstorm creative direction for EP03 dramaturgy before writing.
+**Key decisions:** Spoken intro = Mentor-Robotiko argument in house + model selection screen (anti-guru thesis). Sol-liberal group only in intro+V1. Locations: East=village wedding, North=Trabzon road rage, South=Alanya nightclub scam, Istanbul=miniature bridge + metrobus. Finale=sanayi sitesi kaynakci with grease IV. Mentor in chorus=amber light presence only. EP02 ear damage carries, no new permanent damage. Instrumental breaks=transition montages.
+**Deliverable:** `episode-03/03_direction/ep03_concept_notes.md` — complete with all must-have shots, creative overrides, mood notes.
+**Next step:** Create dramaturgy v01 in a new session.
+
+### 2026-03-10 Session Summary (EP03 Dramaturgy v01)
+**Task:** Generate EP03 dramaturgy scene breakdown from approved concept notes + musical metadata.
+**Deliverable:** `episode-03/03_direction/ep03_dramaturgy_v01.md` — 40 scenes, 8:44 (524s), full coverage.
+**Key structure:** 5 spoken intro scenes (argument + model screen), 6 geographic trial locations (city/east/north/south/cinci hoca/Istanbul), 5 finale scenes (sanayi sitesi + grease IV). Mentor hybrid presence (physical bookends, amber atmospheric in choruses). Sol-liberal group intro+V1 only.
+**Flagged for review:** S04 text legibility, S23 receipt comedy balance, S33-S34 miniature bridge, S38 two-plane composition.
+**Next step:** Human reviews and approves dramaturgy → then visual prompts in a new session.
+
+### 2026-03-10 Session 2 Summary (EP03 Dramaturgy Review + Approval)
+**Task:** Human review of EP03 dramaturgy v01 — corrections and approval.
+**Corrections applied:** (1) S01: "Anatolian house" → "modest house, their shared home" (they haven't traveled yet). (2) S23: receipt river removed, rewritten as tout-to-nightclub transition scene. (3) S26: receipt river + MIB consolidated here (V4a lyrics). (4) S24: stale "receipt in hand" reference removed. (5) Robotiko Visual State: "pristine" → EP02 cumulative damage (missing ear, torso dent, shoulder scratches). (6) Director's Notes: "pristine everywhere except ear" corrected.
+**Infrastructure updates:** `character_profiles.json` Phase 1 visual_prompt_addition split into `ep01` (pristine) and `ep02_ep03` (battle-scarred). Lesson added to `lessons.md`: cumulative damage rule.
+**Production estimate:** ~50-52 video clips for 524s coverage (similar ratio to EP02's 49/448s).
+**Status:** Dramaturgy APPROVED ✅. Ready for visual prompts in a new session.
+**Next step:** `ep03_visual_prompts_v01.md` — generate in new session (skill: robotiko-visual-prompts).
+
+---
+
+## NEXT: EP04 PRODUCTION
+
+- [x] `ep04_lyrics_v01.md` — Lyrics added to episode-04/01_lyrics/
+- [x] `ep04_musical_metadata.json` — Musical metadata added to episode-04/02_music/
+- [x] `ep04_concept_notes.md` — Concept notes written
+- [x] `ep04_dramaturgy_v01.md` — Claude generates (skill: robotiko-dramaturgy) ✅ 2026-03-22
+- [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-03-23
+- [x] `ep04_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅ 2026-03-23
+- [ ] Image generation
+- [ ] Human selects images
+- [ ] `ep04_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script)
+- [ ] **[CHECKPOINT]** Human approves motion script
+- [ ] Video generation
+- [ ] Final edit — CapCut
+
+### 2026-03-22 Session Summary (EP04 Dramaturgy v01)
+**Task:** Generate EP04 dramaturgy scene breakdown from approved concept notes + musical metadata.
+**Deliverable:** `episode-04/03_direction/ep04_dramaturgy_v01.md` — 44 scenes, 7:03 (423s), full coverage.
+**Key structure:** 3-act structure (Return & Testimony / Cosmic Journey & Sacred Law / Temptation, Hammer & Awakening). Robotiko fully passive — only movement is final head-lift (S44). Mentor as sole protagonist. Historical montage across 4 eras (S16-S19) with Young Mentor aging. S20 = Piercing the Veil / Kindred Souls (aydınlanmış figürler, amber gözler — gönül gözü açık). S21 = Film-within-film (iç içe çerçevelerde aldatan/aldatılan döngüsü, S16-S19 yankıları, Mentor tek uyanık figür). Moon/Sun transformation (S22-S23) with staff materialization. Devil = black smoke + spiral horns (S27-S29). Hammer scene (S31-S34): real, heavy, amber glow only at swing. Second tea glass as emotional anchor (6 appearances). Amber = truth color DNA (staff → Kindred Souls' eyes → Sun → TRUTH → hammer → eyes).
+**Flagged for review:** S04 tea glass detail, S16-S19 Young Mentor consistency, S20 Kindred Souls amber eyes + reference image, S21 nested frames readability, S23 Sun transformation, S27-S28 smoke+horns, S34 ego shatter, S44 eye color change.
+**Next step:** Human reviews and approves dramaturgy → then visual prompts in a new session.
+
+### 2026-03-23 Session Summary (EP04 Visual Prompts v01)
+**Task:** Generate EP04 visual prompts from approved dramaturgy (44 scenes).
+**Deliverable:** `episode-04/04_visuals/ep04_visual_prompts_v01.md` — 48 prompts (44 scenes, 4 keyframe pairs: S03, S30, S34, S44) + 4 reference images.
+**Reference images created:** (1) REF-ENV-01: Mentor's Room interior, (2) REF-CHAR-01: Young Mentor (clean-shaven, for vision sequences), (3) REF-CHAR-02: Kindred Souls (dervish, philosopher, healer, sage with amber eyes), (4) REF-ENV-02: Sunlit Moon Surface.
+**Key tracking:** Young Mentor aging across S16-S34 (clean-shaven → stubble → thin beard → fuller beard → middle-aged). Staff chronology correct (no staff in visions S16-S33, born at S34, present in room S35+). Amber DNA maintained throughout. Devil = smoke + horns only. Robotiko passive (Phase 2: rusted, cracked, sparking, glitching). Only movement = S44 head-lift.
+**Validation:** 52 prompts with suffix ✅, 52 with 16:9 ✅, no "pristine" in prompts ✅, no character names in prompts ✅.
+**Next step:** Human generates reference images first → then scene images in Nano Banana → select → motion script in new session.
+
+---
+
 ## BACKLOG
 
 ### Skills (Content to Write)
@@ -143,7 +227,7 @@
 - [ ] Test MCP workflow on EP03
 
 ### EP03-10 Timestamp JSONs
-- [ ] `ep03_musical_metadata.json`
+- [x] `ep03_musical_metadata.json` — completed
 - [ ] `ep04_musical_metadata.json`
 - [ ] `ep05_musical_metadata.json`
 - [ ] `ep06_musical_metadata.json`

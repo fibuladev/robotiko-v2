@@ -1,0 +1,141 @@
+{
+  "track_title": "The Return to the Mentor / The Truth",
+  "tempo": 56,
+  "key": "F Minor",
+  "time_signature": "4/4",
+  "mood": ["mystical", "hypnotic", "epic", "heavy", "dark"],
+  "instruments": ["heavy fuzz guitar", "hammond organ", "bass", "drums"],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 33.0,
+      "energy": "low",
+      "notes": "Anatolian Psychedelic Guitar solo."
+    },
+    {
+      "type": "verse",
+      "start": 34.0,
+      "end": 52.0,
+      "energy": "low",
+      "lyrics": "Weep not, my brother of steel, for destiny must flow. The riddle of the cosmos is not found in the glow of guru talks, or apps that claim to know the way.",
+      "notes": "Spoken Word, Deep Storyteller Voice."
+    },
+    {
+      "type": "verse",
+      "start": 53.0,
+      "end": 84.0,
+      "energy": "medium-low",
+      "lyrics": "Come, let me unveil who I was, where I lay, and why my counsel rings true when I speak to you today. I wandered the wasteland where filters deceive, through the sermons of Career Apps the desperate believe.",
+      "notes": "Spoken Word, Rhythmic."
+    },
+    {
+      "type": "pre-chorus",
+      "start": 85.0,
+      "end": 109.0,
+      "energy": "building",
+      "lyrics": "Suddenly, a path severed the dark, stretching to the stars— terabytes of data like prison bars. On the left, on the right, every kilobyte cried: Truth. Truth. From the binary tide.",
+      "notes": "Building Tension."
+    },
+    {
+      "type": "chorus",
+      "start": 110.0,
+      "end": 136.0,
+      "energy": "high",
+      "lyrics": "The Truth. The Truth. It stands before your sight. You must only learn— you must learn how to look. Look and see— no one can look in your place. The Truth. The Truth. Blinding in its light. Learn how to look.",
+      "notes": "Melodic, Powerful, Epic, Multi-layered Vocals."
+    },
+    {
+      "type": "instrumental",
+      "start": 137.0,
+      "end": 144.0,
+      "energy": "medium",
+      "notes": "Brief instrumental interlude."
+    },
+    {
+      "type": "verse",
+      "start": 145.0,
+      "end": 180.0,
+      "energy": "medium-low",
+      "lyrics": "I read it. I devoured it. Thousands of years I roamed in the guise of a human. I called this Earth my home. Through thousands of realms I pierced the veil, met the Kindred Souls, watched the cosmic tale. Universes gathered— a spectacle to see: a film within a film, a dream within a decree.",
+      "notes": "Storyteller, Mystical Tone."
+    },
+    {
+      "type": "bridge",
+      "start": 181.0,
+      "end": 216.0,
+      "energy": "low",
+      "lyrics": "After the show, I walked the planets alone. I dove into the Moon's core. I gazed upon the Sun until my eyes were burned. And there I learned the Sacred Law of the Cosmos: (Pause) The Intellect is the Moon. The Heart is the Sun. The Moon is cold rock. It cannot shine when the day is done unless the Morning Sun grants it fire.",
+      "notes": "Slow, Ethereal, Spacey Atmosphere."
+    },
+    {
+      "type": "instrumental",
+      "start": 217.0,
+      "end": 231.0,
+      "energy": "medium",
+      "notes": "Guitar interlude."
+    },
+    {
+      "type": "verse",
+      "start": 232.0,
+      "end": 266.0,
+      "energy": "rising",
+      "lyrics": "But a void remained, a hollow silence in the mind. From the void, a shadow came from behind. He whispered in my ear— the Horned Master of Lies: 'You are the Center. The Hero of the Story. The Special One. Bask in your glory. Do as you crave. Let vanity flow. The stage is yours— make it shine or strike the blow.'",
+      "notes": "Dark, Sinister Bass, The Temptation. Vocal intensity rises, shifting towards epic rock."
+    },
+    {
+      "type": "verse",
+      "start": 267.0,
+      "end": 291.0,
+      "energy": "high",
+      "lyrics": "I had heard this poisonous script a thousand times before— in Career Apps, in guru talks, in serialized lore. Oh yes, I said to Mr. Horns, to strike is my art. I accept the choice. I will tear it apart.",
+      "notes": "Heavy Rock Explosion, Aggressive Vocals."
+    },
+    {
+      "type": "climax",
+      "start": 292.0,
+      "end": 312.0,
+      "energy": "explosive",
+      "lyrics": "I took the hammer of Truth and swung it wide. I smashed my own Ego— and the Devil died!",
+      "notes": "Maximum Power, Heavy Drums."
+    },
+    {
+      "type": "chorus",
+      "start": 313.0,
+      "end": 339.0,
+      "energy": "high",
+      "lyrics": "The Truth. The Truth. It stands before your sight. You must only learn— you must learn how to look. Look and see— no one can look in your place. The Truth. The Truth. Blinding in its light. Learn how to look.",
+      "notes": "Melodic, Powerful, Epic."
+    },
+    {
+      "type": "outro",
+      "start": 340.0,
+      "end": 379.0,
+      "energy": "chaotic",
+      "notes": "Guitar Solo, Chaotic then Fading."
+    },
+    {
+      "type": "outro_vocals",
+      "start": 380.0,
+      "end": 406.0,
+      "energy": "fading",
+      "lyrics": "The Gates swung open. Forever. Forever. Learn how to smash. Break the Self to find the Sun.",
+      "notes": "Final vocal delivery over fading music."
+    },
+    {
+      "type": "instrumental",
+      "start": 407.0,
+      "end": 411.0,
+      "energy": "low",
+      "notes": "Brief guitar interlude."
+    },
+    {
+      "type": "outro",
+      "start": 412.0,
+      "end": 423.0,
+      "energy": "low",
+      "lyrics": "The Moon has no light of its own.......",
+      "notes": "Spoken Whisper - Fade Out."
+    }
+  ]
+}

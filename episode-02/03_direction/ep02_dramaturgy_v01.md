@@ -143,10 +143,9 @@ All 22 must-have shots from concept notes are integrated into the scene breakdow
 - **Single Keyframe:** Triptych composition — Instagram left, reality right, Robotiko center. All three panels simultaneously visible.
 - **Motion Strategy:** Standard. The composition IS the message. Minimal movement — the contrast does the work.
 
-### S19 — The Boss / Shoulder Scrape (Start/End Keyframe Candidate)
-- **Start Keyframe:** Robotiko flexing in bodybuilder pose, chrome pristine. The Boss approaching with scraping tool.
-- **End Keyframe:** Same pose, but bright scratches visible on left shoulder. The Boss holding harvested chrome fragments. Robotiko still grinning.
-- **Motion Strategy:** Start-End keyframe. Damage must be clearly visible as a before/after.
+### S19 — The Boss / Shoulder Scrape (Standard — Aftermath)
+- **Single Keyframe:** The scraping is done. Robotiko stands on a rocky outcrop in bodybuilder pose, left shoulder showing fresh scrape marks — raw metal exposed. The oversized Boss stands beside him, one hand holding gleaming chrome shards, the other giving a thumbs-up. A proud workout-complete moment atop the open-pit mine. Robotiko is grinning.
+- **Motion Strategy:** Standard (Mode A). The damage result is shown, not the process. Simple slow zoom or static.
 
 ### S23 — The Press (Start/End Keyframe Candidate)
 - **Start Keyframe:** Robotiko standing beneath the press, looking up with mild curiosity. Press descending.
@@ -157,10 +156,9 @@ All 22 must-have shots from concept notes are integrated into the scene breakdow
 - **Single Keyframe:** Split-reality composition with romantic Paris on left, garbage Paris on right, Robotiko straddling the center with glitching eyes.
 - **Motion Strategy:** Standard. Complex composition requiring precise split — motion would compromise the visual statement. The eye glitch is the only movement needed.
 
-### S28 — Sensor Smash (Start/End Keyframe Candidate)
-- **Start Keyframe:** Robotiko facing forward, back intact. Mob hands reaching from behind.
-- **End Keyframe:** Robotiko's head rotated 180 degrees to look behind, back panels torn open, sparks cascading. Expression: confused, not angry.
-- **Motion Strategy:** Start-End keyframe. The head rotation and back damage are both essential reads.
+### S28 — Sensor Smash (Standard — Aftermath)
+- **Single Keyframe:** Robotiko seen from three-quarter rear angle. Back sensor panels show deep spider-web fracture patterns — cracked but not torn off, faint sparks seeping through cracks. An angry crowd surges behind him in the smoke-filled Paris street. Expression (partially visible): confused, not angry.
+- **Motion Strategy:** Standard (Mode A). Damage is surface-level: cracks and fractures, not catastrophic panel loss. Functional integrity preserved for continuity through S29-S35.
 
 ### S32 — The Ear Shot / Episode Climax (Start/End Keyframe Candidate — CRITICAL)
 - **Start Keyframe:** Close-up, right side of head. Headphones intact. Ear intact. Expression calm. Shrapnel entering frame from right edge as motion blur.
@@ -195,7 +193,7 @@ The final chorus (S33) must feel fundamentally different from the first two, des
 | San Francisco | Leg detached/reattached | S11–S12 | Functionally repaired. No visible trace. |
 | Congo | Left shoulder scrape — raw metal | S19 | S20 → S35 (all remaining shots) |
 | Bangladesh | Right torso dent — concave dimple | S23 | S24 → S35 (all remaining shots) |
-| Paris | Back sensor panels torn — exposed wires | S28 | S29 → S35 (all remaining shots) |
+| Paris | Back sensor panels cracked — spider-web fracture pattern, faint sparks through cracks | S28 | S29 → S35 (all remaining shots) |
 | War Zone | Right ear lost — exposed circuitry, silver-blue fluid. Right eye turns red. | S32 | S33 → S35 (all remaining shots) |
 
 ### Color Progression Execution

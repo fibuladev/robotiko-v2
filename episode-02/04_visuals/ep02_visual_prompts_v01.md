@@ -319,29 +319,16 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 ---
 
-#### Scene S19a — The Boss / Shoulder Scrape: START KEYFRAME
-- **Timestamp:** 2:52 (start)
-- **Dramaturgy Reference:** A large, oversized Boss figure in hard hat and corporate polo arrives. Robotiko obligingly flexes into a bodybuilder pose — chrome pristine. The Boss approaches with a scraping tool. The moment before contact.
-- **Characters Present:** Robotiko (Phase 1 — fully pristine chrome, in bodybuilder flex pose), The Boss (approaching with scraping tool)
+#### Scene S19 — The Boss / Shoulder Scrape: Aftermath
+- **Timestamp:** 2:52–3:04
+- **Dramaturgy Reference:** The scraping is done. Robotiko stands on a rocky outcrop in bodybuilder pose, left shoulder showing fresh scrape marks — raw metal exposed. The oversized Boss stands beside him, one hand holding gleaming chrome shards, the other giving a thumbs-up. A proud workout-complete moment. Robotiko is grinning.
+- **Characters Present:** Robotiko (FIRST DAMAGE: left shoulder scrape — raw metal exposed, chrome plating removed. Still in bodybuilder pose, grinning), The Boss (holding chrome fragments, giving thumbs-up)
 - **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
-- **Video Tech Strategy:** Start-End Keyframe (S19a → S19b)
-- **Composition Notes:** Two-figure composition. Robotiko center-right in full-body flex pose. The Boss approaching from the left, tool in hand. Both in full frame for clear damage comparison. Red earth mine background.
+- **Video Tech Strategy:** Standard (Mode A)
+- **Composition Notes:** Two-figure composition atop the open-pit mine. Robotiko on a small rock, bodybuilder pose. Boss beside him — taller even without the rock. Boss holds chrome shards in one palm, thumbs-up with the other. Red earth mine terraces visible in background.
 
 **Text Prompt:**
-> At the rim of the Congo open-pit mine, a retro-futuristic chrome android with pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full chrome armor, retro-futuristic 70s mechanical aesthetic has adopted a classic bodybuilder double-bicep pose — arms raised, chrome bicep plates elevated, every surface of the pristine chassis catching the harsh tropical sun in bright highlights. The chrome is immaculate: no marks, no dust beyond the lower legs, every surface as-manufactured. Approaching from the left: a massive human figure, proportioned beyond normal — shoulders stretching the corporate polo shirt to its structural limit, hard hat bearing a mining company logo, work boots leaving deep impressions in the red earth. He carries a flat metal scraping tool — industrial gauge, edge sharpened. His expression is proprietary: he has identified what he wants from this arrangement. The chrome left shoulder is the focal point of the approaching tool. Red dust swirls in the air between the two figures, caught in the harsh overhead light. The approaching tool has not yet made contact. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
-
----
-
-#### Scene S19b — The Boss / Shoulder Scrape: END KEYFRAME
-- **Timestamp:** 3:04 (end)
-- **Dramaturgy Reference:** Same pose, but bright raw-metal scratches visible on Robotiko's left shoulder — chrome plating scraped away exposing the metal beneath. The Boss holding harvested chrome fragments in his palm. Robotiko still grinning, not looking at his shoulder.
-- **Characters Present:** Robotiko (FIRST DAMAGE: left shoulder scrape — raw metal exposed, chrome plating removed. Still in pose, still smiling), The Boss (holding chrome fragments)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
-- **Video Tech Strategy:** Start-End Keyframe (S19a → S19b)
-- **Composition Notes:** Same composition as S19a for clear before/after comparison. The shoulder scrape must be prominently visible — bright raw metal catching the harsh tropical light. The Boss holds chrome fragments visibly in his open palm.
-
-**Text Prompt:**
-> Same configuration at the Congo mine rim, seconds later: the retro-futuristic chrome android with pristine chrome body (save for the new damage), clean exposed analog wires (blue and red), glowing steady blue eyes still holding unwavering confidence, retro-futuristic 70s mechanical aesthetic, remains in the same bodybuilder double-bicep pose. But now: the left shoulder plate shows a fresh scrape — chrome plating removed in three parallel drag-marks, exposing the raw metal beneath, a different quality of surface from the polished chrome that surrounds it, catching the tropical sun in a harder, whiter specular highlight. Tiny orange sparks still drift from the scraped edges, their arcs extinguishing in the red dust air. The android's expression is unchanged — the smile holds, the blue eyes look forward, he has not turned to look at his shoulder. The massive Boss figure stands to the left, hard hat pushed back, palm outstretched to display the chrome fragments he has harvested — thin curved plates of chrome plating sitting in his work-gloved hand like silver scale fragments, glinting in the harsh overhead light. He is satisfied. The android is proud to be useful. The red dust hangs between them. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> At the rim of the Congo open-pit mine, a retro-futuristic chrome android with exposed analog wires (blue and red), glowing steady blue eyes, retro-futuristic 70s mechanical aesthetic stands atop a rocky outcrop in a classic bodybuilder double-bicep pose — grinning proudly. His left shoulder plate shows fresh scrape marks, chrome plating removed exposing raw metal beneath, catching the harsh tropical sun in a whiter specular highlight. Beside him: a massive human figure proportioned beyond normal, hard hat, corporate polo stretched across enormous shoulders, tool belt at his hip. He holds gleaming chrome shards in one open palm, the other hand raised in a thumbs-up. The open-pit mine terraces descend behind them in red earth layers. Ochre dust drifts in the heavy tropical air. A workout-complete celebration between foreman and machine. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -474,29 +461,16 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 ---
 
-#### Scene S28a — Sensor Smash: START KEYFRAME
-- **Timestamp:** 5:02 (start)
-- **Dramaturgy Reference:** Robotiko facing forward — back intact. Mob hands reach from behind toward his back sensor panels.
-- **Characters Present:** Robotiko (shoulder scrape + torso dent, facing forward, back panels intact), mob hands (approaching from behind)
+#### Scene S28 — Sensor Smash: Aftermath
+- **Timestamp:** 5:02–5:12
+- **Dramaturgy Reference:** Aftermath of mob attack. Robotiko seen from three-quarter rear angle — back sensor panels show deep spider-web fracture patterns, cracked but intact. An angry crowd surges behind him in the smoke-filled Paris street. Expression (partially visible in profile): confused, not angry.
+- **Characters Present:** Robotiko (THIRD DAMAGE: left shoulder scrape + right torso dent + back sensor panel cracks. Expression confused), crowd (surging behind, rendered as rough silhouettes)
 - **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
-- **Video Tech Strategy:** Start-End Keyframe (S28a → S28b)
-- **Composition Notes:** Robotiko centered, facing viewer. The back panels should be implied as intact — clean chrome back visible in the composition. Multiple hands reach into the frame from the left and right sides behind Robotiko. Firelight and smoke from the Paris barricades provide the lighting environment.
+- **Video Tech Strategy:** Standard (Mode A)
+- **Composition Notes:** Three-quarter rear angle — Robotiko's back visible with cracked sensor panels, face partially visible in profile. Crowd behind as dark silhouettes against barricade firelight. 16:9 widescreen composition.
 
 **Text Prompt:**
-> A retro-futuristic chrome android with Congo shoulder scrape (left shoulder, raw metal exposed) and Bangladesh torso dent (right torso, concave dimple), clean exposed analog wires (blue and red), glowing steady blue eyes (left eye) and faintly strobing right eye, retro-futuristic 70s mechanical aesthetic, faces the viewer directly — the chrome back visible as a clean plane of sensor panel housing behind the figure, the back plates smooth and intact. From the left and right edges of the frame behind the android, multiple hands reach toward the back sensors: working hands, rough-skinned, some gloved in work leather, some bare, reaching forward from the smoke and firelight of the Paris barricade confrontation. The hands have not yet contacted the back panels. The android's expression toward the viewer reads as genuine puzzlement — not at the hands, which have not yet registered in the android's awareness — but as a general condition of not understanding why its offerings have not been received. Smoke from the barricades drifts through the frame in horizontal bands. Orange firelight from the burning barricades provides the primary illumination from behind the mob, creating strong rim lighting on the reaching hands. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
-
----
-
-#### Scene S28b — Sensor Smash: END KEYFRAME
-- **Timestamp:** 5:12 (end)
-- **Dramaturgy Reference:** Robotiko's head has rotated 180 degrees to look behind — owl-like mechanical rotation. Back sensor panels torn open, wires exposed, small fires in the circuitry. Expression: not anger, not fear, but genuine puzzlement. He faces the viewer with bewildered non-comprehension. Sparks cascade from torn wiring.
-- **Characters Present:** Robotiko (THIRD DAMAGE: shoulder scrape + torso dent + back sensors torn — panels hanging open, wires exposed, small fires. Head rotated 180°, expression confused), mob (attacking from behind)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
-- **Video Tech Strategy:** Start-End Keyframe (S28a → S28b)
-- **Composition Notes:** Same composition but now the head has rotated to face the viewer while the body faces away — the head is now "backward" relative to the body, looking directly out. The back damage (now facing the mob) is implied through the torn-panel wiring that is visible at the sides of the torso. Expression of pure confused non-comprehension must read clearly.
-
-**Text Prompt:**
-> The same Paris scene, seconds later, with a transformation that should be unsettling but reads instead as innocent mechanical curiosity: the retro-futuristic chrome android's torso still faces away from the viewer — away from the camera, toward the mob attacking from behind — but the chrome head has rotated 180 degrees on its neck joint, turning to face the camera with an owl-like completeness that requires no strain, only mechanism. The face that looks directly at the viewer wears an expression of pure genuine puzzlement — not anger, not fear, not even pain: only the specific confusion of a being who was helping and cannot process why the people it was helping are now tearing it apart. The blue eye holds, the right eye still faintly strobes. At the back of the torso (facing the mob, now visible around the body's sides in the composition): sensor panels have been wrenched open — chrome plate sections hang at angles from their hinges, wiring pulled free and exposed, small electrical fires burning in the open circuitry in tiny blue-orange flames. Bright orange sparks shower from the torn connections in cascading arcs. The hands of the mob are visible at the edges, still working at the back damage. Congo shoulder scrape visible on the left shoulder. Bangladesh torso dent visible on the right side. Now: Paris sensor tear across the back. Clean exposed analog wires (blue and red) — some of these now no longer clean, now exposed and fraying at the back. Retro-futuristic 70s mechanical aesthetic. Firelight and smoke. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> 16:9 widescreen composition. A retro-futuristic chrome android seen from a three-quarter rear angle, exposed analog wires (blue and red), retro-futuristic 70s mechanical aesthetic. The chrome back shows deep spider-web fracture patterns across the sensor panels — cracked but not broken off, with faint orange sparks seeping through the cracks. Left shoulder shows a raw metal scrape, right torso has a concave dent. The android's face, partially visible in profile, wears an expression of confused puzzlement. Behind the android, an angry crowd surges forward through thick smoke — figures rendered as rough dark silhouettes against the orange glow of burning barricades. A Paris street at night. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

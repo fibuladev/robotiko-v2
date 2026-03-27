@@ -605,23 +605,22 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 |---|---|
 | **Timestamp** | 2:52–3:04 |
 | **Scene Duration** | 12s |
-| **Coverage** | Speed Ramp — 1 × 10s Mode B → 12s at 0.83× |
+| **Coverage** | Speed Ramp — 1 × 10s → 12s at 0.83× |
 | **Musical Moment** | Verse 6 — "While Boss scraps off his shoulder steel!" Heavy drums accent scraping. |
-| **Scene Context** | TRANSFORMATION: Boss scrapes chrome from Robotiko's shoulder. First real damage. |
-| **Tech Strategy** | Mode B — Start/End Keyframes |
+| **Scene Context** | Aftermath: Boss has scraped chrome from Robotiko's shoulder. First real damage visible. Celebration moment. |
+| **Tech Strategy** | Mode A — Standard |
 | **Clip Duration** | 10s |
 | **Playback Speed** | 0.83× (10s → 12s) |
-| **Motion Strength** | 6 |
-| **Recommended Tool** | Kling 2.5 Turbo (Mode B, 1080p) — Static camera, first real damage |
+| **Motion Strength** | 3 |
+| **Recommended Tool** | Kling 2.5 Turbo (Mode A, 1080p) — Static camera, aftermath shot |
 
 **Assets Required:**
-- **Start Frame:** `episode-02/04_visuals/selected/ep02_s19a_selected.png`
-- **End Frame:** `episode-02/04_visuals/selected/ep02_s19b_selected.png`
+- **Single Frame:** `episode-02/04_visuals/selected/ep02_s19_selected.png`
 
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Metal tool drags across chrome shoulder — each pass produces orange sparks cascading downward. The transformation from pristine to scraped chrome is cumulative — each pass strips a layer of surface. The chrome android holds a bodybuilder pose, grinning wider. Sparks cascade against the ochre dust backdrop. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Dust drifts slowly across the open-pit mine. Chrome shards glint in the Boss's open palm. The android holds his bodybuilder pose, grinning. Subtle wind movement on dust and clothing. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -806,7 +805,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Zoom pulls back to reveal the full triptych again — wider perspective that emphasizes the damage in the center panel. The chrome android's asymmetric pose is more visible at this distance. All three panels visible: filtered perfection, raw reality, and the cracking figure between them. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow zoom out reveals the full composition. The chrome android stands center frame, arms raised asymmetrically. Smoke and digital artifacts drift across the image. Harsh light flickers. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -877,7 +876,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Frame holds still. Left side: cafe lights twinkle, couples walk in slow motion. Right side: barricade fires crackle, smoke billows, riot police shift positions. Center: the chrome android's left eye glows steady blue, right eye strobes between blue and red in rapid irregular pulses. Chrome body reflects both realities — warm gold and dirty gray fighting on every surface. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Smoke drifts across the scene. Cafe lights flicker on the left, barricade flames glow on the right. The chrome android stands still at center, one eye pulsing faintly red. Gentle light shifts across chrome surfaces. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -902,7 +901,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Dolly toward the confrontation. The rat on the baguette twitches its nose, whiskers catching firelight. The chrome android extends the offering with sommelier-like confidence. Strikers — mixed men and women, rough impressionistic figures matching the source image — recoil as a wave, do not add photorealistic facial detail. Barricade fire flickers behind them. Orange firelight fights gray smoke. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow dolly toward the chrome android holding a baguette with a rat perched on top. Barricade fire flickers behind the crowd. Smoke and embers drift upward. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -912,22 +911,21 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 |---|---|
 | **Timestamp** | 5:02–5:12 |
 | **Scene Duration** | 10s |
-| **Coverage** | Direct — 1 × 10s Mode B (perfect match) |
+| **Coverage** | Direct — 1 × 10s (perfect match) |
 | **Musical Moment** | Verse 9 — "And smashed the sensors on his back." Aggressive drums. |
-| **Scene Context** | TRANSFORMATION: Mob attacks from behind, sensor panels torn, head rotates 180° |
-| **Tech Strategy** | Mode B — Start/End Keyframes |
+| **Scene Context** | Aftermath: Mob has attacked from behind, back sensor panels cracked (spider-web fractures). Crowd surging in smoke. |
+| **Tech Strategy** | Mode A — Standard |
 | **Clip Duration** | 10s |
-| **Motion Strength** | 7 |
-| **Recommended Tool** | Kling 2.5 Turbo (Mode B, 1080p) — Static camera, mob attack transformation |
+| **Motion Strength** | 4 |
+| **Recommended Tool** | Kling 2.5 Turbo (Mode A, 1080p) — Static camera, aftermath shot |
 
 **Assets Required:**
-- **Start Frame:** `episode-02/04_visuals/selected/ep02_s28a_selected.png`
-- **End Frame:** `episode-02/04_visuals/selected/ep02_s28b_selected.png`
+- **Single Frame:** `episode-02/04_visuals/selected/ep02_s28_selected.png`
 
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Multiple hands — diverse skin tones, mixed men and women — grab the chrome android from behind. Sparks cascade from torn wiring in sheets. The head rotates slowly from forward to 180° — mechanical owl-turn with an expression of innocent confusion. Back panels peel progressively — first one, then two, colorful wires spilling out. Hands and figures remain rough and impressionistic as in the source image, do not add photorealistic detail. Firelight illuminates the shower of sparks. Expression throughout: bewildered, not angry. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> The crowd surges forward through thick smoke. Orange firelight flickers from burning barricades. Faint sparks seep through cracks on the chrome android's back. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -1036,7 +1034,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Slow zoom out reveals the devastation. The chrome android stands motionless in a peace pose — the only saturated colors in a desaturated monochrome landscape: blue eyes, blue-red wires. Distant explosions bloom in slow motion behind him. Dust hangs permanently in the air. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow zoom out. The chrome android stands motionless, arms open. A distant explosion blooms slowly behind him. Dust hangs in the air. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip B — S30b (Sustained Stillness)
 
@@ -1078,7 +1076,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Gentle zoom toward the chrome android's face — oversized 70s headphones filling the frame. Blue eyes steady, half-lidded, serene. Lips move slightly. Behind him, out of focus: an explosion lifts a vehicle in extreme slow motion. Scorched leather headphone edges catch faint orange glow. The zoom is gentle, almost intimate. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Gentle zoom toward the chrome android's face. Oversized 70s headphones fill the frame. Behind him, out of focus, an orange glow pulses faintly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -1088,22 +1086,21 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 |---|---|
 | **Timestamp** | 6:17–6:25 |
 | **Scene Duration** | 8s |
-| **Coverage** | Direct — 1 × 10s Mode B (excess 2s — use for emphasis: HOLD THIS SHOT) |
+| **Coverage** | Direct — 1 × 10s (excess 2s — use for emphasis: HOLD THIS SHOT) |
 | **Musical Moment** | "A shrapnel took away his ear" — whisper BREAKS. One beat silence. Chorus 3 detonates. |
-| **Scene Context** | CRITICAL TRANSFORMATION: Shrapnel strikes right ear. Headphone shatters. Ear tears away. First acknowledgment. Red eye. |
-| **Tech Strategy** | Mode B — Start/End Keyframes |
+| **Scene Context** | AFTERMATH: Hard cut from S31's calm headphone close-up to the damage result. Ear gone, fluid dripping, red eye. The audience sees the result, not the impact — maximum shock via contrast with S31's serenity. |
+| **Tech Strategy** | Mode A — Standard |
 | **Clip Duration** | 10s |
-| **Motion Strength** | 8 |
-| **Recommended Tool** | Kling 3.0 (Mode B, 1080p) — **EP02 critical turning point. HIGHEST PRIORITY.** |
+| **Motion Strength** | 3 |
+| **Recommended Tool** | Kling 3.0 (Mode A, 1080p) — **EP02 critical turning point. HIGHEST PRIORITY.** |
 
 **Assets Required:**
-- **Start Frame:** `episode-02/04_visuals/selected/ep02_s32a_selected.png`
-- **End Frame:** `episode-02/04_visuals/selected/ep02_s32b_selected.png`
+- **Single Frame:** `episode-02/04_visuals/selected/ep02_s32b_selected.png`
 
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Barely perceptible zoom tightening. The headphone cup shatters outward from a shrapnel impact. Sparks erupt — vivid orange-white against near-total black. Silver-blue hydraulic fluid seeps in a slow drip from the torn ear cavity. The chrome hand reaches toward the damage. The right eye shifts from blue to red in a slow iris-change. Mouth opens. The transformation from serene calm to devastation. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow zoom toward the torn ear cavity. Silver-blue fluid drips downward. Faint sparks flicker from exposed wiring. The right eye glows steady red. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -1149,7 +1146,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the chrome android's torso. The zoom inventories the damage in sequence — shoulder scrape passes through frame, torso dent fills the center, exposed back sensor wires visible at the edge. The zoom is clinical, forensic. Ear sparks slow to a faint pulse. The spotlight narrows imperceptibly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow zoom toward the chrome android's torso. Spotlight narrows slightly. Faint sparks flicker from the ear cavity. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -1178,7 +1175,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> The pullback begins. Slow zoom out from the figure. The chrome android's arms lower slowly to his sides. Ear sparks slow from bright orange to dim amber. The visual darkens by a fraction. The spotlight begins to narrow. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow zoom out. The chrome android's arms lower to his sides. The spotlight begins to narrow. Darkness grows at the edges. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip B — S34b (The Void Expands)
 
@@ -1241,7 +1238,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Near-total darkness. The chrome android reduced to points of light. The blue eye dims incrementally — each blink lasts longer than the last. The red eye holds steady. Ear sparks fire once, twice. In the extreme far background, a barely perceptible amber dot. Heavy film grain dominates the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Near-total darkness. Faint points of light — one blue, one red — glow in the void. A single spark flickers and dies. Heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip B — S35b (Silence)
 
@@ -1258,7 +1255,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The blue eye blinks one final time and holds closed — then fades. The ear sparks die. Only the red eye remains — a single point of steady red in total black. Heavy film grain dissolves the image into abstract texture. The red eye holds. Then fades to black. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> The blue light fades. Only a steady red point remains in total darkness. Heavy film grain dissolves the image. Then black. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -1352,7 +1349,7 @@ The average motion strength is 4.1 — within the EP01-03 target of 4-5. The arc
 
 ### Camera Move Decisions
 
-- **Mode B shots (S07, S11, S19, S23, S28) use Static** — transformation IS the movement. Exception: **S11 (Pan Right)** for thief escape tracking, **S32 (Slow Zoom In)** for the zoom into the wound.
+- **Mode B shots (S07, S11, S23, S28) use Static** — transformation IS the movement. Exception: **S11 (Pan Right)** for thief escape tracking, **S32 (Slow Zoom In)** for the zoom into the wound. **S19** converted to Mode A (aftermath shot — video tools couldn't handle scraping transformation).
 - **Speed Ramp shots favor Slow Zoom In/Out** — the slowdown enhances the zoom's contemplative quality.
 - **Multi-Clip sub-clips vary camera moves** — no two sub-clips within a shot share the same camera move (prevents visual monotony over 20-36 second scenes).
 - **S33a (Hero Shot) is Static** — stillness against Chorus 3's maximum sonic energy.

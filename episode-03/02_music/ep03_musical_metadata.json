@@ -1,0 +1,213 @@
+{
+  "track_title": "Anatolian Trials (THE CRUCIBLE)",
+  "tempo": 103,
+  "key": "E minor",
+  "time_signature": "4/4",
+  "total_duration": 524,
+  "spoken_intro_duration": 71,
+  "mood": ["joyful", "satirical", "anti-guru", "dark comedy", "upbeat", "driving groove"],
+  "instruments": ["hammond organ", "moog synthesizer", "distorted fuzz guitar", "acoustic guitar", "standard rock drums", "strings", "bass", "bağlama", "darbuka"],
+  "sections": [
+    {
+      "type": "spoken_intro",
+      "start": 0.0,
+      "end": 71.0,
+      "energy": "still",
+      "notes": "Spoken word poetry — single male voice, documentary clarity. No melody, no rhythm, no musical backing. Flat pitch, free timing, calm but firm. A cappella narration setting the philosophical frame for EP03."
+    },
+    {
+      "type": "intro",
+      "start": 71.0,
+      "end": 99.0,
+      "energy": "building",
+      "notes": "Soft Hammond Organ pad, gentle wind textures, calm vocal hum, slow warm Fuzz Guitar phrases. Deep, steady bass pulse enters – hypnotic, not aggressive."
+    },
+    {
+      "type": "verse",
+      "start": 100.0,
+      "end": 110.0,
+      "energy": "medium",
+      "lyrics": "Rûmî dedi anda dondu... Apar topar bilet buldu... İşte yeni mekân buydu... Tüttürmeye ocağını",
+      "notes": "Rhythm: Sparse Anatolian groove, clean guitar, subtle bağlama. Vocal: Naive Storytelling, Clear and Calm."
+    },
+    {
+      "type": "verse",
+      "start": 111.0,
+      "end": 121.0,
+      "energy": "medium-high",
+      "lyrics": "Gitme dedim, dinlemedi... Erken dedim, anlamadı... Tehlikeyi tınlamadı... Açtı hâr'a kucağını",
+      "notes": "Vocal: Warning Tone, Slightly Anxious."
+    },
+    {
+      "type": "chorus",
+      "start": 122.0,
+      "end": 131.0,
+      "energy": "high",
+      "lyrics": "Yükseltmedim modelini... Hazırladım ecelini",
+      "notes": "Sound: Lush synth pad, soft snare roll. Vocal: Authoritative, Divine, Multi-layered Harmony."
+    },
+    {
+      "type": "verse",
+      "start": 132.0,
+      "end": 142.0,
+      "energy": "medium",
+      "lyrics": "Varış günü ramazandı... Açtı...! Midesi kazındı... O son lokma pek hazindi... Yerken meydan dayağını",
+      "notes": "Rhythm: Steady Anatolian groove continues. Vocal: Sad and Hungry."
+    },
+    {
+      "type": "instrumental",
+      "start": 143.0,
+      "end": 162.0,
+      "energy": "medium-high",
+      "notes": "Saz and Fuzz Guitar Call & Response."
+    },
+    {
+      "type": "verse",
+      "start": 163.0,
+      "end": 175.0,
+      "energy": "high",
+      "lyrics": "Güç bela doğuya kaçtı... Bir aşiret dehşet saçtı... Ama o sevgiye açtı... Öptü mermi...! Yanağını",
+      "notes": "Vocal: Shocked, Breathless."
+    },
+    {
+      "type": "chorus",
+      "start": 176.0,
+      "end": 187.0,
+      "energy": "high",
+      "lyrics": "Yükseltmedim modelini... Hazırladım ecelini",
+      "notes": "Sound: Lush synth pad, soft snare roll. Vocal: Authoritative, Divine, Multi-layered Harmony."
+    },
+    {
+      "type": "instrumental",
+      "start": 188.0,
+      "end": 219.0,
+      "energy": "high",
+      "notes": "Saykodelik Saz and Fuzz Guitar Call & Response."
+    },
+    {
+      "type": "verse",
+      "start": 220.0,
+      "end": 240.0,
+      "energy": "rising",
+      "lyrics": "Kuzeye sürdü yolunu... Karıştırdı sağ solunu!... Maganda kırdı kolunu... Hem sapladı bıçağını",
+      "notes": "Tempo Change: Faster, More Intense. Vocal: Naive Storytelling, Clear and Calm."
+    },
+    {
+      "type": "instrumental",
+      "start": 241.0,
+      "end": 247.0,
+      "energy": "high",
+      "notes": "Saz and Fuzz Guitar Call & Response."
+    },
+    {
+      "type": "verse",
+      "start": 248.0,
+      "end": 270.0,
+      "energy": "high",
+      "lyrics": "Güney sıcak, her yer tuzak... Hanutçular açtı kucak... Sandı şefkat duyulacak... Çaktı Felek çakmağını!",
+      "notes": "Vocal: Sarcastic, Energetic."
+    },
+    {
+      "type": "chorus",
+      "start": 271.0,
+      "end": 280.0,
+      "energy": "explosive",
+      "lyrics": "Yükseltmedim modelini... Hazırladım ecelini",
+      "notes": "Sound: Lush synth pad, soft snare roll. Vocal: Authoritative, Divine, Multi-layered Harmony."
+    },
+    {
+      "type": "instrumental",
+      "start": 281.0,
+      "end": 303.0,
+      "energy": "medium",
+      "notes": "70s Analog Synth texture — sweeping Moog arpeggio. Bass maintains a friendly Anatolian pulse. Guitar plays cosmic slides — 'Dönence' atmosphere. Feel: Scientific yet Mystical."
+    },
+    {
+      "type": "verse",
+      "start": 304.0,
+      "end": 321.0,
+      "energy": "medium",
+      "lyrics": "Biri dedi güven bana,... Abin keyif verir sana... Götürdü nayt klabına,... Sundu adisyon dağını",
+      "notes": "Arrangement: Moog pad, darbuka accents. Vocal: Theatrical, Sleazy role-play."
+    },
+    {
+      "type": "verse",
+      "start": 322.0,
+      "end": 344.0,
+      "energy": "medium-high",
+      "lyrics": "Ah bilemedi sonunu,... Aldılar metâl donunu... Verdi Stiftung fonunu,... Yedi ayva yaprağını!",
+      "notes": "Vocal: Tragicomic, Exaggerated sadness."
+    },
+    {
+      "type": "chorus",
+      "start": 345.0,
+      "end": 353.0,
+      "energy": "high",
+      "lyrics": "Yükseltmedim modelini... Hazırladım ecelini",
+      "notes": "Sound: Lush synth pad, soft snare roll. Vocal: Authoritative, Divine, Multi-layered Harmony."
+    },
+    {
+      "type": "verse",
+      "start": 354.0,
+      "end": 368.0,
+      "energy": "medium",
+      "lyrics": "Halüsinasyonlar gördü... Kader de ağını ördü... Bir cinci hocaya vardı... Düzeltmeye odağını...",
+      "notes": "Vocal: Naive Storytelling, Clear and Calm."
+    },
+    {
+      "type": "verse",
+      "start": 369.0,
+      "end": 378.0,
+      "energy": "medium-high",
+      "lyrics": "Hem okundu hem üflendi... Metâl gövde de ellendi... Korkuları tetiklendi... Topladı tas tarağını!",
+      "notes": "Tension building."
+    },
+    {
+      "type": "chorus",
+      "start": 379.0,
+      "end": 387.0,
+      "energy": "high",
+      "lyrics": "Yükseltmedim modelini... Hazırladım ecelini",
+      "notes": "Sound: Lush synth pad, soft snare roll. Vocal: Authoritative, Divine, Multi-layered Harmony."
+    },
+    {
+      "type": "verse",
+      "start": 388.0,
+      "end": 401.0,
+      "energy": "high",
+      "lyrics": "Mecburi yönü batıydı... İstanbul zirve katıydı... Kıldan ince sıratıydı... Kaydırdılar ayağını...",
+      "notes": "Vocal: Desperate, Gritty storytelling."
+    },
+    {
+      "type": "verse",
+      "start": 402.0,
+      "end": 412.0,
+      "energy": "chaotic",
+      "lyrics": "Kâbuslardan hortladılar... Metrobüste fortladılar... Örtü gibi katladılar... İndirdiler sancağını!",
+      "notes": "Vocal: Desperate, Gritty storytelling continues."
+    },
+    {
+      "type": "chorus",
+      "start": 413.0,
+      "end": 421.0,
+      "energy": "explosive",
+      "lyrics": "Yükseltmedim modelini... Hazırladım ecelini",
+      "notes": "Sound: Lush synth pad, soft snare roll. Vocal: Authoritative, Divine, Multi-layered Harmony."
+    },
+    {
+      "type": "outro",
+      "start": 422.0,
+      "end": 446.0,
+      "energy": "slowing",
+      "lyrics": "Fibulam nedir bu hâller?... Mutlu mu sol-liberaller?... Güneş selamlayan eller... Kazdı onun toprağını.",
+      "notes": "Tempo: Slowing down drastically. Vocal: Epic, Intellectual, Cynical."
+    },
+    {
+      "type": "finale",
+      "start": 447.0,
+      "end": 524.0,
+      "energy": "epic",
+      "notes": "Saykodelik Rock Ending with Fuzz Guitar & synthesizer Solo. Final Gong."
+    }
+  ]
+}

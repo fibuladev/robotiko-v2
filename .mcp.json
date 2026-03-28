@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "google-drive": {
+      "command": "node",
+      "args": ["_tools/mcp-gdrive/src/index.js"],
+      "cwd": "_tools/mcp-gdrive"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@robotiko/mcp-gdrive",
+  "version": "1.0.0",
+  "description": "Custom Google Drive MCP server for Robotiko v2.0 asset management",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "robotiko-gdrive-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "auth": "node src/auth.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "googleapis": "^144.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "private": true,
+  "license": "MIT"
+}

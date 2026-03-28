@@ -9,6 +9,8 @@
 .env.local
 .env.*.local
 credentials.json
+gcp-oauth.keys.json
+tokens.json
 *.pem
 *.key
 *.p12

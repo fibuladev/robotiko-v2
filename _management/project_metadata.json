@@ -27,9 +27,14 @@
   },
 
   "mcp_integration": {
-    "status": "planned",
-    "target": "EP03-04 production phase",
-    "planned_servers": ["GitHub MCP", "Filesystem MCP"]
+    "status": "active",
+    "servers": {
+      "google-drive": {
+        "path": "_tools/mcp-gdrive/",
+        "status": "active",
+        "purpose": "Binary asset management (PNG, MP4, WAV) on Google Drive"
+      }
+    }
   },
 
   "episodes": {

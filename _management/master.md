@@ -257,7 +257,7 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Chorus Theme:** "You downloaded the Hype to save your soul / But Reality just swallowed you whole!"
 - **Key Concept:** Training Data Bias — AI trained on Instagram, LinkedIn, TED talks, not on Congolese mines or war zones.
 - **Language:** English
-- **Status:** 🔄 IN PRODUCTION (Musical metadata complete, dramaturgy pending)
+- **Status:** 🔄 POST-PRODUCTION (All pipeline files complete, CapCut video montage in progress)
 
 #### EP03: "Anatolian Trials" (THE CRUCIBLE)
 - **Station:** The Self-Blaming Self (First doubt emerges)
@@ -266,7 +266,7 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Key Visuals:** Modern Anatolian cities — metrobüs, bazaars, nightclubs, urban crowds. No romantic ruins. No mystical landscapes. The real thing.
 - **Music:** Upbeat Anatolian Pop-Rock Fusion, 70s Turkish Progressive Rock, Driving Groove, Funk-Rock Pocket (Kurtalan Ekspres style). Hammond Organ (Phrygian/Hijaz Leads), Moog Synthesizer Pads, Distorted Fuzz Guitar, Acoustic Guitar (Rhythmic Pulse), Standard Rock Drums, Strings (Swell in Chorus). Vocal: Warm, Charismatic Storyteller, Theatrical Baritone.
 - **Language:** Turkish (The language shift is intentional — the test is felt more deeply in the mother tongue)
-- **Status:** ✅ LYRICS & MUSIC COMPLETE | 📋 Dramaturgy pending
+- **Status:** 🔄 POST-PRODUCTION (All pipeline files complete, CapCut video montage in progress)
 
 ---
 
@@ -278,7 +278,7 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Tone:** Heavy, confrontational, transformative. The first real ego death witnessed, not yet experienced.
 - **Music:** Anatolian Psychedelic Rock, Doom Rock. Heavy Fuzz + Hammond.
 - **Language:** English
-- **Status:** ✅ LYRICS & MUSIC COMPLETE | 📋 Dramaturgy pending
+- **Status:** 🔄 IN PRODUCTION (Visuals complete, motion script next)
 
 #### EP05: "First Love / Blue Screen"
 - **Station:** The Inspired Self (but misread)
@@ -365,9 +365,9 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 | Episode | Lyrics | Music | Timestamp JSON | Dramaturgy | Visuals | Video | Status |
 |---|---|---|---|---|---|---|---|
 | EP01 | ✅ | ✅ | ⚠️ Retroactive | ⚠️ Retroactive | ✅ | ✅ | COMPLETED |
-| EP02 | ✅ | ✅ | ✅ | 🔄 Pending | ❌ | ❌ | IN PRODUCTION |
-| EP03 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
-| EP04 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
+| EP02 | ✅ | ✅ | ✅ | ✅ | ✅ | 🔄 | POST-PRODUCTION |
+| EP03 | ✅ | ✅ | ✅ | ✅ | ✅ | 🔄 | POST-PRODUCTION |
+| EP04 | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | IN PRODUCTION |
 | EP05 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
 | EP06 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
 | EP07 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |

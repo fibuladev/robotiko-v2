@@ -75,6 +75,7 @@ npm-debug.log*
 # -----------------------------------------------------------------------------
 .vscode/*
 !.vscode/extensions.json
+.claude/settings.local.json
 .idea/
 *.swp
 *.swo

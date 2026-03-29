@@ -58,50 +58,52 @@
       "title": "The Tech Guru's Downfall (Global Collapse Tour)",
       "station": "The Commanding Self (Arrogance — cracks forming)",
       "language": "English",
-      "status": "in_production",
+      "status": "post_production",
       "folder_name": "episode-02",
       "key_assets_locked": false,
       "production": {
         "lyrics": true,
         "music": true,
         "timestamp_json": true,
-        "dramaturgy": "pending",
-        "visuals": false,
-        "video": false
+        "dramaturgy": true,
+        "visuals": true,
+        "video": "in_progress"
       },
-      "notes": "Musical metadata JSON complete (Gemini tool). Dramaturgy is next step."
+      "notes": "All pipeline files complete. CapCut video montage in progress."
     },
     "ep03": {
       "title": "Anatolian Trials (THE CRUCIBLE)",
       "station": "The Self-Blaming Self (First doubt)",
       "language": "Turkish",
-      "status": "lyrics_music_complete",
+      "status": "post_production",
       "folder_name": "episode-03",
       "key_assets_locked": false,
       "production": {
         "lyrics": true,
         "music": true,
-        "timestamp_json": false,
-        "dramaturgy": false,
-        "visuals": false,
-        "video": false
-      }
+        "timestamp_json": true,
+        "dramaturgy": true,
+        "visuals": true,
+        "video": "in_progress"
+      },
+      "notes": "All pipeline files complete. CapCut video montage in progress."
     },
     "ep04": {
       "title": "The Return to the Mentor / The Truth",
       "station": "The Inspired Self (Receiving deep teaching)",
       "language": "English",
-      "status": "lyrics_music_complete",
+      "status": "in_production",
       "folder_name": "episode-04",
       "key_assets_locked": false,
       "production": {
         "lyrics": true,
         "music": true,
-        "timestamp_json": false,
-        "dramaturgy": false,
-        "visuals": false,
+        "timestamp_json": true,
+        "dramaturgy": true,
+        "visuals": true,
         "video": false
-      }
+      },
+      "notes": "Visuals complete (46 prompts, all images generated). Motion script next."
     },
     "ep05": {
       "title": "First Love / Blue Screen",

@@ -76,6 +76,7 @@ After any correction from the human:
 - **RULE:** Seedance 1.0 performs well on character/figure scenes (Robotiko, people) but POORLY on abstract/texture content (maps, macro surfaces, paper textures). For map/texture shots, prefer Kling 2.5 Turbo (static camera) or Kling 3.0 (camera movement). Reserve Seedance for character-focused scenes where its budget advantage matters. (Added 2026-03-09, EP02 S29 lesson)
 - **RULE:** Selected files have no version suffix. `ep{XX}_s{XX}_selected.png` — not `ep{XX}_s{XX}_selected_v01.png`.
 - **RULE:** Musical metadata JSON has no version suffix. It is always `ep{XX}_musical_metadata.json`.
+- **RULE:** Never use generic "Kling AI Pro" in motion scripts. Always specify the exact model: **Kling 2.5 Turbo** for Static camera shots, **Kling 3.0** for shots with camera movement (zoom, dolly, tilt, crane, pan). Mode B (keyframe) shots always have camera movement → always Kling 3.0. (Added 2026-03-29, EP04 motion script correction)
 
 ---
 

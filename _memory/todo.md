@@ -180,9 +180,9 @@
 - [x] `ep04_dramaturgy_v01.md` — Claude generates (skill: robotiko-dramaturgy) ✅ 2026-03-22
 - [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-03-23
 - [x] `ep04_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅ 2026-03-23
-- [ ] Image generation
-- [ ] Human selects images
-- [ ] `ep04_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script)
+- [x] Image generation ✅ (54 images in raw/, all reviewed)
+- [x] Human selects images ✅ (images reviewed, to be moved from raw/ to selected/)
+- [x] `ep04_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script) ✅ 2026-03-29
 - [ ] **[CHECKPOINT]** Human approves motion script
 - [ ] Video generation
 - [ ] Final edit — CapCut
@@ -201,6 +201,15 @@
 **Key tracking:** Young Mentor aging across S16-S34 (clean-shaven → stubble → thin beard → fuller beard → middle-aged). Staff chronology correct (no staff in visions S16-S33, born at S34, present in room S35+). Amber DNA maintained throughout. Devil = smoke + horns only. Robotiko passive (Phase 2: rusted, cracked, sparking, glitching). Only movement = S44 head-lift.
 **Validation:** 52 prompts with suffix ✅, 52 with 16:9 ✅, no "pristine" in prompts ✅, no character names in prompts ✅.
 **Next step:** Human generates reference images first → then scene images in Nano Banana → select → motion script in new session.
+
+### 2026-03-29 Session Summary (EP04 Motion Script v01)
+**Task:** Generate EP04 motion script from approved dramaturgy (44 scenes) + selected images (54 in raw/).
+**Deliverable:** `episode-04/05_video/ep04_motion_script_v01.md` — 45 clips (44 scenes + 1 multi-clip sub-clip for S37).
+**Coverage:** 405s generated / 423s music = 95.7%. 18 Speed Ramp clips, 1 Multi-Clip (S37: 2 sub-clips), 4 Mode B (S03, S30, S34, S44).
+**Tool assignment:** Kling 25 clips (~1575cr est., 47.5% buffer), Seedance 20 clips (850cr, 29.2% buffer). No Veo.
+**Key decisions:** (1) Average MS ~4.0 — lower than Destruction norm, justified by 56 BPM meditative tone. (2) S32-S33-S34 triple peak (MS 7-8-8) justified as climax. (3) S36/S39 share S35's image (visual prompt merges). (4) S37a/S37b share S37's image (different camera moves). (5) 0 supplementary images needed.
+**Post-gen validation:** 45 video suffixes ✅, 45 anti-spawn guards ✅, 45 camera moves ✅, no character names in motion prompts ✅, coverage ≥95% ✅.
+**Next step:** Human reviews and approves motion script → then video generation begins.
 
 ---
 

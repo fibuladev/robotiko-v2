@@ -20,8 +20,9 @@ When a significant decision is made:
 - **Reason:** Project will be open source. Universal language ensures broader accessibility. The philosophical depth is preserved through Anatolian wisdom references (Yunus Emre, Pir Sultan Abdal, Hacı Bektaş, Mevlana) without framing them as religious doctrine.
 
 ### Musical Metadata Format
-- **Decision:** All-in-one JSON produced by Gemini Tool. No separate timestamped lyrics file needed.
+- **Decision:** All-in-one JSON produced by Claude via `_skills/robotiko-musical-metadata/SKILL.md`. Human provides BPM + Key (from vocalremover.org) + timestamped lyrics. No separate timestamped lyrics file needed.
 - **Reason:** The JSON already contains sections with timestamps, lyrics, energy, mood, and instrument notes. It is complete as delivered. Adding a separate file would create redundancy.
+- **Update (2026-03-31):** Originally used Gemini Tool for JSON generation. Replaced with custom Claude skill to keep the entire pipeline within the repo — no external tool dependency for open source contributors.
 - **Format:** `ep{XX}_musical_metadata.json` — single source of truth for audio structure.
 
 ### Skills Architecture

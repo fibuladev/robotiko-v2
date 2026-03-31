@@ -42,6 +42,7 @@ When the human gives a trigger phrase, read the relevant SKILL.md before doing a
 
 | Trigger | Skill to Read |
 |---|---|
+| "Create musical metadata for EP{XX}" | `_skills/robotiko-musical-metadata/SKILL.md` |
 | "Create dramaturgy for EP{XX}" | `_skills/robotiko-dramaturgy/SKILL.md` |
 | "Generate visual prompts for EP{XX}" | `_skills/robotiko-visual-prompts/SKILL.md` |
 | "Generate motion script for EP{XX}" | `_skills/robotiko-motion-script/SKILL.md` |

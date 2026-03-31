@@ -5,7 +5,7 @@
 
 ## What is This?
 
-ROBOTIKO v2.0 is a 10-episode CyberAnatolian concept album + video series, built entirely by one human and Claude + Gemini Pro + AI Tools. This repository contains not just the creative assets, but the **entire production pipeline** — so others can replicate it for their own projects.
+ROBOTIKO v2.0 is a 10-episode CyberAnatolian concept album + video series, built entirely by one human and Claude + AI Tools. This repository contains not just the creative assets, but the **entire production pipeline** — so others can replicate it for their own projects.
 
 ---
 
@@ -16,9 +16,8 @@ Before you begin, you need:
 - [ ] **Claude Code** — [Install guide](https://docs.anthropic.com)
 - [ ] **VSCode** — With Claude Code extension
 - [ ] **GitHub account** — For version control
-- [ ] **AWS account** — For S3 storage (heavy assets)
+- [ ] **Google Drive** — For binary asset storage (via custom MCP server in `_tools/mcp-gdrive/`)
 - [ ] **Suno AI** — For music generation
-- [ ] **Gemini** — For musical metadata JSON generation
 - [ ] **Nano Banana Pro** — For image generation
 - [ ] **Seedream / Kling / Veo** — For video generation
 - [ ] **CapCut** — For final editing

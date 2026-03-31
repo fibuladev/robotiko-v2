@@ -39,7 +39,7 @@ Two steps require explicit human approval before proceeding. Everything else Cla
 
 ### Step 2: Musical Metadata JSON
 - **Input:** Audio file + Lyrics
-- **Tool:** Human listens to audio → Gemini Tool generates structured JSON
+- **Tool:** Human provides BPM + Key (from [vocalremover.org](https://vocalremover.org/key-bpm-finder)) + timestamped lyrics → Claude executes `_skills/robotiko-musical-metadata/SKILL.md`
 - **Output:** `episode-{XX}/02_music/ep{XX}_musical_metadata.json`
 - **Format:** All-in-one JSON containing:
   - `tempo`, `key`, `time_signature`, `mood[]`, `instruments[]`

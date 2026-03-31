@@ -183,8 +183,8 @@
 - [x] Image generation ✅ (54 images in raw/, all reviewed)
 - [x] Human selects images ✅ (images reviewed, to be moved from raw/ to selected/)
 - [x] `ep04_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script) ✅ 2026-03-29
-- [ ] **[CHECKPOINT]** Human approves motion script
-- [ ] Video generation
+- [x] **[CHECKPOINT]** Human approves motion script ✅ 2026-03-31 (17 videos generated, quality confirmed)
+- [ ] Video generation (remaining clips)
 - [ ] Final edit — CapCut
 
 ### 2026-03-22 Session Summary (EP04 Dramaturgy v01)

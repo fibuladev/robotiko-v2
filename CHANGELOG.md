@@ -37,7 +37,7 @@
 ## [0.2.0] — 2026-02-23 — EP02 Musical Metadata
 
 ### Added
-- `episode-02/02_music/ep02_musical_metadata.json` — All-in-one musical metadata (Gemini Tool)
+- `episode-02/02_music/ep02_musical_metadata.json` — All-in-one musical metadata
 
 ---
 

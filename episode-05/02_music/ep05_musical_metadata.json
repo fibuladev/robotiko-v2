@@ -1,0 +1,103 @@
+{
+  "track_title": "First Love / Blue Screen",
+  "tempo": 122,
+  "key": "E Minor",
+  "time_signature": "4/4",
+  "total_duration": 267,
+  "mood": ["tender", "erotic", "playful", "comedic", "sensual", "blues", "tragic"],
+  "instruments": ["clean electric guitar with chorus effect", "bass", "light drums", "keyboard/organ"],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 32.0,
+      "energy": "low",
+      "notes": "Smooth bass line, light drums, clean electric guitar with chorus effect — blues lick. Mid-tempo groove, head-nodding beat."
+    },
+    {
+      "type": "verse",
+      "start": 33.0,
+      "end": 49.0,
+      "energy": "medium-low",
+      "lyrics": "Don't you walk so slow... don't you step so light... Your name is blazing... burning through the night...",
+      "notes": "Soft Baritone, Half-Spoken, Playful. Whispered line endings, mischievous tone."
+    },
+    {
+      "type": "verse",
+      "start": 50.0,
+      "end": 69.0,
+      "energy": "medium",
+      "lyrics": "Your twin reactors... are swelling up the mesh! Straining the fabric... of your metal flesh! Mmm... your metal... flesh...",
+      "notes": "Bass gets groovy, funky rhythm. Vocal: Breathless, Aroused but Soft. Slight moan at end."
+    },
+    {
+      "type": "bridge",
+      "start": 70.0,
+      "end": 91.0,
+      "energy": "medium",
+      "lyrics": "If my Mother... had your electric VIBE... My dead father... would come back alive! Yeah... he'd come back alive...",
+      "notes": "Soft Keyboard/Organ enters. Vocal: Crooning, Smooth. Melodic singing — no scream."
+    },
+    {
+      "type": "chorus",
+      "start": 92.0,
+      "end": 124.0,
+      "energy": "high",
+      "lyrics": "I laser-etched your name on my metal shell! Embedded it deep in a memory cell! I didn't download you from the Cloud above... I hacked the mainframe to code this love!",
+      "notes": "Soulful Rock, Warm and Catchy. Vocal: Passionate but Controlled."
+    },
+    {
+      "type": "instrumental",
+      "start": 125.0,
+      "end": 169.0,
+      "energy": "medium",
+      "notes": "Slow Blues Guitar Solo. Clean, Warm, Emotional — NOT distorted. Crying gently, sexy bends."
+    },
+    {
+      "type": "verse",
+      "start": 170.0,
+      "end": 185.0,
+      "energy": "low",
+      "lyrics": "I was a system saint... playing it so cool... Saw your wireframe... and broke every rule...",
+      "notes": "Bass only background. Vocal: Intimate, like sharing a secret."
+    },
+    {
+      "type": "verse",
+      "start": 186.0,
+      "end": 203.0,
+      "energy": "medium-high",
+      "lyrics": "Now I'm fully turned on... a high-voltage fool! Oh yes, a high... voltage... fool...!",
+      "notes": "Groove returns, music builds. Vocal: Playful growl."
+    },
+    {
+      "type": "outro",
+      "start": 204.0,
+      "end": 221.0,
+      "energy": "fading",
+      "notes": "Music fades with funky bass riff. Vocal: Soft Spoken, Tired but happy."
+    },
+    {
+      "type": "outro_vocals",
+      "start": 222.0,
+      "end": 242.0,
+      "energy": "low",
+      "lyrics": "If we don't sync... I am beyond repair... System Fatal... Infinite Despair...",
+      "notes": "Vocal: Soft, Vulnerable. The comedic mask drops — real fear beneath the playfulness."
+    },
+    {
+      "type": "outro_whisper",
+      "start": 243.0,
+      "end": 253.0,
+      "energy": "minimal",
+      "lyrics": "Beyond... Repair...",
+      "notes": "Whispered. Barely audible. The seed of EP06's crisis."
+    },
+    {
+      "type": "instrumental",
+      "start": 254.0,
+      "end": 267.0,
+      "energy": "fading",
+      "notes": "Instrumental end. Slow-funky bass riff fading to silence."
+    }
+  ]
+}

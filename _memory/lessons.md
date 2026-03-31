@@ -69,7 +69,7 @@ After any correction from the human:
 
 ## CATEGORY: PIPELINE & FILES
 
-- **RULE:** Musical metadata JSON is all-in-one — produced by Gemini Tool. Never ask the human to add more data to it. It is complete as delivered.
+- **RULE:** Musical metadata JSON is all-in-one — produced by Claude via `_skills/robotiko-musical-metadata/SKILL.md` from human-provided BPM, Key, and timestamped lyrics. Never ask the human to add more data to it. It is complete as delivered.
 - **RULE:** Never reference `video_strategy_rules.md` — it does not exist. All strategy rules are in `_management/pipeline_rules.md`.
 - **RULE:** Seedance Multiframes costs ~565 credits per generation (~1130cr for 2 tests). CapCut Pro monthly budget is 1200cr. Never assign Multiframes for production — budget-destroying.
 - **RULE:** Raw folders (`04_visuals/raw/`, `05_video/raw/`) are gitignored. Never try to commit files from these folders.

@@ -42,7 +42,7 @@ This eliminates the need to explain the same workflow repeatedly — Claude lear
 ```
 episode-scaffold
     → lyrics (human)
-    → musical-metadata (human + Gemini)
+    → musical-metadata (human BPM/Key/timestamps + Claude skill)
     → concept-notes (human)
     → dramaturgy [✋ CHECKPOINT]
     → visual-prompts

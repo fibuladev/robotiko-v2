@@ -13,7 +13,7 @@
 | **LLM Director** | Claude (Sonnet) via Claude Code + VSCode | Dramaturgy, visual prompts, motion scripts, skill execution |
 | **Local IDE** | VSCode + Claude Code | Primary development environment (active from 2026-02-23) |
 | **Music Generation** | Suno AI | Audio production |
-| **Metadata Generation** | Gemini 3.1 Pro | Musical metadata JSON (all-in-one structured output) |
+| **Metadata Generation** | Claude (robotiko-musical-metadata skill) | Musical metadata JSON from human-provided BPM, Key, timestamped lyrics |
 | **Image Generation** | Nano Banana Pro | Visual prompt execution |
 | **Video Generation** | Seedream / Kling / Veo | Motion production |
 | **Editing** | CapCut | Final assembly |
@@ -26,7 +26,7 @@
 ```
 Human (Lyrics + Vision)
     → Suno AI (Audio)
-    → Gemini 3.1 Pro (Musical Metadata JSON)
+    → Claude (Musical Metadata JSON — from human BPM/Key/timestamps)
     → Claude / master.md / concept_notes (Dramaturgy) [✋ CHECKPOINT]
     → Claude (Visual Prompts)
     → Nano Banana Pro (Images)
@@ -40,8 +40,8 @@ Human (Lyrics + Vision)
 
 ### Musical Metadata Flow (Critical)
 ```
-Human listens to audio
-    → Gemini 3.1 Pro
+Human listens to audio + runs vocalremover.org (BPM/Key)
+    → Claude (robotiko-musical-metadata skill)
     → ep{XX}_musical_metadata.json (all-in-one)
         ├── tempo, key, time_signature
         ├── mood[], instruments[]

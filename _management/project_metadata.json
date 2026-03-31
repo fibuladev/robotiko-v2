@@ -15,7 +15,7 @@
 
   "toolchain": {
     "lyrics_music": "Suno AI",
-    "musical_metadata": "Gemini Tool (all-in-one JSON output)",
+    "musical_metadata": "Claude (robotiko-musical-metadata skill, from human BPM/Key/timestamped lyrics)",
     "image_generation": "Nano Banana",
     "video_generation": ["Kling", "Veo", "Seedance 1.0"],
     "editing": "CapCut",
@@ -212,8 +212,9 @@
 
   "skills_system": {
     "location": "_skills/",
-    "status": "all_skills_v1.0_complete",
+    "status": "all_skills_complete",
     "skills": [
+      "robotiko-musical-metadata",
       "robotiko-dramaturgy",
       "robotiko-visual-prompts",
       "robotiko-motion-script",
@@ -221,7 +222,8 @@
       "robotiko-naming-enforcer",
       "robotiko-youtube-packager",
       "robotiko-reels-atomizer",
-      "robotiko-launch-orchestrator"
+      "robotiko-launch-orchestrator",
+      "robotiko-capcut-editor"
     ],
     "trigger": "Claude Code active from 2026-02-23"
   },

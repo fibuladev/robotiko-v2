@@ -1,7 +1,7 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-03-07 (Session 9: EP03 Brainstorming + Concept Notes)
+> Last Updated: 2026-03-31 (EP05 Dramaturgy Planning + Concept Notes)
 
 ---
 
@@ -213,6 +213,42 @@
 
 ---
 
+## NEXT: EP05 PRODUCTION
+
+- [x] `ep05_lyrics_v01.md` — Lyrics complete
+- [x] `ep05_musical_metadata.json` — Musical metadata complete
+- [x] `ep05_concept_notes.md` — Concept notes written ✅ 2026-03-31
+- [x] `character_profiles.json` — Robochica visual design finalized ✅ 2026-03-31
+- [ ] Robochica master reference image (`ref_robochica_master.png`) — Generate + human approve
+- [ ] Environment reference images (retro-futuristic supermarket, office, café, street) — Generate + human approve
+- [x] `ep05_dramaturgy_v01.md` — Claude generates (skill: robotiko-dramaturgy) ✅ 2026-03-31 (32 scenes, 267s, 100% coverage)
+- [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-03-31
+- [x] `ep05_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅ 2026-04-02 (41 prompts: 8 ref + 33 scene)
+- [x] Image generation ✅ 2026-04-02 (33 scene images + 8 reference images generated in Nano Banana)
+- [x] Human selects images ✅ 2026-04-02 (all reviewed and approved)
+- [ ] `ep05_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script)
+- [ ] **[CHECKPOINT]** Human approves motion script
+- [ ] Video generation
+- [ ] Final edit — CapCut
+
+### 2026-04-02 Session Summary (EP05 Visual Prompts + Image Generation)
+**Task:** Generate EP05 visual prompts and all scene images.
+**Deliverable:** `episode-05/04_visuals/ep05_visual_prompts_v01.md` — 41 prompts (8 reference + 33 scene, including S15a/S15b keyframe split).
+**Reference images:** REF-CHAR-01 (Robochica — 3 iterations, dark amber glass lens eyes fix), REF-CHAR-02 (Elderly Robot Couple), REF-ENV-01-06 (Supermarket, Street, Cafe, Office, Iron Vault, Room).
+**Key fixes during production:** (1) Robochica eyes: "amber glow" → "dark amber glass lenses" (3 attempts, final working formula). (2) Cathedral → "colossal iron vault" (no religious connotation). (3) Office: narrow corridor → wide plaza floor. (4) robochica_1 tattoo: chest → inner forearm (clean surface, EP06 _2/_3/_4 preparation). (5) Cem Karaca poster: post-production compositing (Nano Banana refuses real people).
+**All 8 human overrides implemented:** S05 (both in frame), S07 (drool), S11 (elderly couple), S13 (forearm tattoo), S15a/b (hacker mask + cloud), S22-S23 (folders), S24 (red body), S28 (eye projection).
+**Image review:** 33/33 approved. 0 critical issues. 4 minor CapCut post-production adjustments noted.
+**Next step:** Motion script in new session.
+
+### 2026-03-31 Session Summary (EP05 Dramaturgy Planning + Concept Notes)
+**Task:** Plan EP05 dramaturgy — "First Love / Blue Screen" (highest viral potential episode).
+**Key decisions:** (1) Robochica: amber/gold eyes (EP04 truth-color irony), warm gold/copper wires, fractal shoulder pattern, mirror principle (max 3 face-on shots). (2) Locations: multiple retro-futuristic everyday (market, office, street, café) — each encounter closer. Syd Mead aesthetic. (3) Mentor: amber echoes ONLY, no image. (4) Tonal shift: pure surprise at 3:24, zero dark hints before.
+**Human overrides (8):** (1) Both in frame for "walk so slow" (2) Drool effect for "twin reactors" (3) Elderly robot couple for "dead father" line (4) robochica_1 tattoo → seeds EP06's _2,_3,_4 (5) Hacker mask + physical cloud with data center (6) Windows folders thrown aside (7) Bright red overheating body (8) Eye projection EP03 callback in outro.
+**Deliverables:** `character_profiles.json` updated (Robochica design complete), `ep05_concept_notes.md` written (full creative direction + 8 human overrides + 12 creative rules).
+**Next step:** Generate dramaturgy v01 (this session or next).
+
+---
+
 ## BACKLOG
 
 ### Skills (Content to Write)
@@ -237,8 +273,8 @@
 
 ### EP03-10 Timestamp JSONs
 - [x] `ep03_musical_metadata.json` — completed
-- [ ] `ep04_musical_metadata.json`
-- [ ] `ep05_musical_metadata.json`
+- [x] `ep04_musical_metadata.json` — completed
+- [x] `ep05_musical_metadata.json` — completed
 - [ ] `ep06_musical_metadata.json`
 - [ ] `ep07_musical_metadata.json`
 - [ ] `ep08_musical_metadata.json`

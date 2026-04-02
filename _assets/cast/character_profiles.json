@@ -57,8 +57,18 @@
     "episodes_primary": [5, 6],
     "episodes_echo": [],
     "role": "Robotiko's first encounter with love. Triggers emotional overclocking. She is not a villain — she is a mirror. What Robotiko projects onto her reveals more about him than about her.",
-    "base_visual_prompt": "Female android, chrome aesthetic similar to Robotiko but with distinct feminine form. Elegant analog wires, glowing eyes. To be developed further when EP05 enters production.",
+    "base_visual_prompt": "Retro-futuristic chrome female android, 70s sci-fi feminine form — elegant curves in chrome plating, distinct from Robotiko but clearly from the same aesthetic universe. Exposed warm-toned analog wires (gold and copper), glowing amber-gold eyes (steady, warm), subtle scratches and minor wear marks on chrome (NOT pristine, carries her own history). Art deco-influenced head shape, slightly more elongated than Robotiko. One unique visual signature: a fractal/mandala pattern etched into her left shoulder plate, identifiable even in silhouette.",
     "master_ref_path": "_assets/cast/ref_robochica_master.png",
-    "status": "VISUAL DESIGN PENDING — to be developed before EP05 dramaturgy"
+    "eye_color": "amber-gold (steady, warm — carries the color of TRUTH from EP04's amber DNA, creating structural irony: Robotiko unconsciously sees the Mentor's teaching in her eyes)",
+    "wire_colors": "gold and copper (warm tones, contrasting Robotiko's blue and red)",
+    "visual_signature": "Fractal/mandala pattern etched into left shoulder plate — identifiable even in partial views or silhouette",
+    "damage_level": "Subtle — minor scratches, slight wear marks. Significantly cleaner than Robotiko's Phase 2 damage but NOT pristine. She has her own history, her own journey.",
+    "dramaturgy_rules": {
+      "mirror_principle": "She is a mirror — reveals more about Robotiko than about herself. Her body language is always ambiguous: could be receptive or indifferent. The audience fills in what they want, just as Robotiko does.",
+      "face_visibility": "Maximum 3 clear face-on shots per episode. All other scenes: partial view, profile, silhouette, reflection in Robotiko's chrome, or obscured by light/shadow.",
+      "no_clear_emotions": "Never show Robochica expressing clear, unambiguous emotions. She is what Robotiko projects onto her.",
+      "not_a_villain": "She does nothing wrong. The tragedy is Robotiko's projection, not her actions."
+    },
+    "status": "VISUAL DESIGN COMPLETE — ready for reference image generation"
   }
 }

@@ -109,17 +109,18 @@
       "title": "First Love / Blue Screen",
       "station": "The Inspired Self (Misread — love as fixation)",
       "language": "English",
-      "status": "lyrics_music_complete",
+      "status": "in_production",
       "folder_name": "episode-05",
       "key_assets_locked": false,
       "production": {
         "lyrics": true,
         "music": true,
-        "timestamp_json": false,
-        "dramaturgy": false,
-        "visuals": false,
+        "timestamp_json": true,
+        "dramaturgy": true,
+        "visuals": true,
         "video": false
-      }
+      },
+      "notes": "Dramaturgy approved 2026-03-31. Visual prompts v01 complete (41 prompts). All 33 scene images generated. Motion script next."
     },
     "ep06": {
       "title": "The Perfect Little Worker",
@@ -230,5 +231,17 @@
 
   "key_decisions_log": "_memory/decisions_log.md",
 
-  "commit_convention": "EP{XX} - {Stage} - {Brief Description}"
+  "commit_convention": "EP{XX} - {Stage} - {Brief Description}",
+
+  "creator": {
+    "name": "Ca Ya",
+    "location": "Bratislava",
+    "channel_name": "Fibula",
+    "author_md": true,
+    "open_source_signal_episode": "EP07",
+    "ep01_launch": "2026-04-22",
+    "release_rhythm": "weekly",
+    "social_platforms": ["youtube", "instagram", "tiktok"],
+    "creator_strategy_doc": "_management/creator_strategy.md"
+  }
 }

@@ -71,4 +71,37 @@ When a significant decision is made:
 
 ---
 
+## 2026-03-25 — CREATOR IDENTITY & CHANNEL STRATEGY
+
+### Creator Strategy Finalized
+- **Decision:** Creator identity, channel architecture, open source rollout, social media strategy, and inspiration credits strategy approved and documented in `_management/creator_strategy.md`.
+- **Key decisions:**
+  - Channel name: **Fibula** (creator identity, not project name — allows future projects)
+  - AUTHOR.md approved — appears only on EP10 release day when repo goes public
+  - No timestamps in YouTube descriptions (cinematic integrity — "do not skip")
+  - No end screens except EP10 GitHub link (silence after music is sacred)
+  - Repository goes public on EP10 release day — no delay (promises made EP07-EP09 must be kept)
+  - Open source rollout anchored to EP07 YouTube description
+  - EP07 video: silent text card ("This was made by one human and AI")
+  - Inspiration credits at episode level, not project level (Cem Karaca → EP05, Korkmazgil → EP06)
+  - Pinned comments serve as breadcrumbs, never duplicate description content
+  - Social media: YouTube + Instagram + TikTok. No X/Twitter. No face reveal, ever.
+  - Release rhythm: weekly (not day-locked). EP01 launch: April 22, 2026
+  - Pre-launch: 4 weeks starting March 25
+  - Post-series: gradual fade-out over 6-7 weeks, then silence
+  - Banner evolves every 2-3 episodes to reflect Robotiko's arc
+  - About section has 4 progressive phases revealing more over time
+  - #aiart hashtag NOT used before EP07
+  - Social content derived from episode material via reels-atomizer skill
+
+### EP05 — Cem Karaca Easter Egg
+- **Decision:** Worn vintage 1970s Turkish rock concert poster visible peripherally in Robotiko's room scenes.
+- **Reason:** EP05 inspired by "Delikanlı Sevdası." Poster is discoverable easter egg, not focal point. Integrated into visual prompts REF-ENV-06, S26, S27.
+
+### EP06 — Korkmazgil Easter Egg (Future)
+- **Decision:** Korkmazgil portrait visible OUTSIDE the sterile workspace — corridor or street wall as Robotiko exits.
+- **Reason:** EP06 inspired by "Bir Ornek Insan Portresi." Poet exists outside the machine. To be integrated during EP06 dramaturgy.
+
+---
+
 *Add new decisions below as production progresses.*

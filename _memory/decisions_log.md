@@ -17,7 +17,7 @@ When a significant decision is made:
 
 ### bible.md → master.md
 - **Decision:** Renamed `bible.md` to `master.md` and removed all explicit religious references.
-- **Reason:** Project will be open source. Universal language ensures broader accessibility. The philosophical depth is preserved through Anatolian wisdom references (Yunus Emre, Pir Sultan Abdal, Hacı Bektaş, Mevlana) without framing them as religious doctrine.
+- **Reason:** Project will be open source. Universal language ensures broader accessibility. The philosophical depth is preserved through the Turkish wisdom tradition (Yunus Emre, Pir Sultan Abdal, Hacı Bektaş, Mevlana) without framing them as religious doctrine.
 
 ### Musical Metadata Format
 - **Decision:** All-in-one JSON produced by Claude via `_skills/robotiko-musical-metadata/SKILL.md`. Human provides BPM + Key (from vocalremover.org) + timestamped lyrics. No separate timestamped lyrics file needed.

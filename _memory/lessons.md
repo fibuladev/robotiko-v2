@@ -119,7 +119,22 @@ After any correction from the human:
 
 ## CATEGORY: CHARACTER DESIGN (Added 2026-03-23)
 
-- **RULE:** Never write "amber eyes" or "glowing [color] eyes" in visual prompts. Image generators render literal glowing eyeballs = alien/creepy, not wise/benevolent. Instead, use "amber waves radiating around their eyes" or "soft golden light rippling outward from their gaze." The symbolic meaning (wisdom, truth, inner sight) is conveyed through aura/emanation around the eyes, not by changing the eye color itself. (Added 2026-03-23, EP04 Kindred Souls lesson)
+- **RULE:** Never write "amber eyes", "glowing [color] eyes", "aura around eyes", or "no glow/no luminescence" in visual prompts. Image generators render ANY eye glow description as literal glowing eyeballs = alien/creepy. Negative instructions ("no glow") cause the generator to latch onto the keyword "glow" and apply it. **WORKING FIX (tested 2026-03-31):** Describe eyes as a PHYSICAL MATERIAL: "dark amber glass lenses set into chrome sockets, like polished gemstones — warm brown-gold tone, reflective, catching the environment light on their smooth curved surface." The key: (1) "glass lenses" = solid material, not light source, (2) "dark amber" = warm but not luminous, (3) "like polished gemstones" = gives generator a non-glowing reference object, (4) "catching the environment light" = reflective, not emissive. Three failed approaches: "amber eyes" (v1), "warm glow radiating around eyes" (v2), "no glow, no luminescence" (v3 — produced cyan glowing eyes). (Added 2026-03-23, updated 2026-03-31 with confirmed working fix)
+
+---
+
+- **RULE:** Image generators (Nano Banana, etc.) REFUSE to generate real public figures — even as posters or background references. Uploading a real person's photo as reference also triggers the refusal. The only viable method for real-world easter eggs (posters, portraits of real people) is POST-PRODUCTION COMPOSITING: generate the scene without the poster, then composite the real image onto the wall using Photoshop perspective warp. Add a "Post-Production Easter Egg" note below the prompt (outside the `>` block) specifying the source file and placement. (Added 2026-03-31, EP05 Cem Karaca poster — Nano Banana refused both text description and image upload)
+
+---
+
+## CATEGORY: VEO PROMPT FORMAT (Added 2026-04-03)
+
+- **RULE:** Veo does NOT respond well to our standard motion prompt format (camera move + atmospheric description + video suffix). Gemini-optimized prompts work 100%. Use this dedicated Veo format for ALL Veo-assigned clips:
+  ```
+  Animated version of the attached image. Maintain 100% visual fidelity to the original scene. Do not add any new characters, people, or objects. The environment and background must remain completely static and unchanged.
+  Action: [Specific motion description — explicitly state what stays still AND what moves, with direction and speed]. 35mm film aesthetic, heavy film grain, shallow depth of field, Kodachrome color palette.
+  ```
+- **KEY DIFFERENCES from Kling/Seedance prompts:** (1) Anti-spawn guard at TOP, not bottom. (2) "Animated version of the attached image" anchors to source. (3) "Action:" label separates motion instruction. (4) Explicitly state what does NOT move. (5) Shorter suffix without "Shot on" or "cinematic 16:9 framing". (Added 2026-04-03, human-tested with Gemini optimization — standard prompts produced garbage, this format produced perfect results)
 
 ---
 

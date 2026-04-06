@@ -444,7 +444,7 @@
 
 ---
 
-### SHOT S15 — Hacker Mask → Cloud Cutting (Direct) ⭐ User Override #5
+### SHOT S15 — Cloud Release (Direct) ⭐ User Override #5
 
 | Field | Value |
 |---|---|
@@ -452,20 +452,21 @@
 | **Scene Duration** | 8s |
 | **Coverage** | Direct — 1 × 10s |
 | **Musical Moment** | "I didn't download you from the Cloud above..." — chorus continues, the "Cloud" lyric matches the literal visual. |
-| **Scene Context** | Shot A: Hacker mask close-up. Shot B: Wide — seated at workstation, cord to physical cloud with data center, cutting the cord. Start-End Keyframe transformation. |
-| **Tech Strategy** | Mode B — Start/End Keyframes |
+| **Scene Context** | Wide shot — seated at workstation, the cord is severed and the blue cloud with the data center drifts upward like a released kite. The moment of liberation from passive consumption. |
+| **Tech Strategy** | Mode A |
 | **Clip Duration** | 10s |
-| **Motion Strength** | 6 |
-| **Recommended Tool** | Kling 3.0 (Mode B, 1080p) — keyframe transformation, highest quality |
+| **Motion Strength** | 5 |
+| **Recommended Tool** | Kling 3.0 (Mode A, 1080p) — single physical motion (cloud drifting upward), character close-up detail |
 
 **Assets Required:**
-- **Start Frame:** `episode-05/04_visuals/raw/15a.png`
-- **End Frame:** `episode-05/04_visuals/raw/15b.png`
+- **Start Frame:** `episode-05/04_visuals/raw/15b.png`
 
-**Camera Move:** Slow Zoom Out
+> **Note:** Originally planned as Mode B with 15a → 15b keyframes, but the environment shift from foggy close-up (15a) to full workstation (15b) was too complex for keyframe interpolation. Simplified to Mode A using only 15b. 15a is preserved as a dramaturgy reference but not used in this clip.
+
+**Camera Move:** Static
 
 **Motion Prompt:**
-> Slow zoom out from a chrome-mesh masked face revealing a retro-futuristic workstation with CRT monitors and blinking vacuum tubes. A thick cord extends upward from the seated figure to a physical blue cloud floating above, with a data center building on top. The figure grips and cuts the cord — sparks fly from the severed point. Cool blue light from the cloud, warm amber from the workstation below. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The chrome-mesh masked figure at the retro-futuristic workstation remains in the exact pose pictured. The thick cord extending from his hand to the blue cloud above severs at the cut point with a final burst of sparks. The fluffy blue cloud, with the miniature data center on top, slowly drifts upward and out of the top of the frame, the severed upper half of the cord trailing behind it like the string of a released kite. The lower stump of the cord remains in the figure's grip. CRT monitors glow steadily in the background. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -611,7 +612,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Slow zoom out from the chrome android as the vast iron vault dissolves around him — iron walls becoming translucent and ghostly, the polished floor fragmenting. One last shaft of amber light lingers across his body then gives way to cooler fluorescent light. The transition is gentle, like waking from a dream. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The chrome android stands still in the exact pose pictured at the threshold between two worlds already visible in the frame — warm amber iron vault on the left, cool retro-futuristic office with CRT terminals on the right. Slow zoom out keeping the same composition intact. Dust motes drift gently through the amber shaft of light on the left. The fluorescent light on the right flickers subtly. Both environments remain exactly as pictured — do not transform, morph, or replace either side. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -635,7 +636,7 @@
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Slow dolly toward the chrome android standing at his workstation in the retro-futuristic office, holding a tall stack of yellow file folders. His blue eyes shift away from the folders toward something across the office floor. Analog CRT terminals glow green on chrome desks around him. Fluorescent overhead light with warm amber accents. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A continuous, slow camera push-in toward the chrome android standing at his workstation in the retro-futuristic office, holding a tall stack of yellow file folders against his chest. He remains in the exact pose pictured, folders held firmly. Then, he slowly and deliberately turns his head toward the left side of the frame (screen-left), looking directly toward the golden-brass female android standing in the distant background among the rows of desks. His glowing blue eyes lock onto her. CRT terminals glow steadily with green phosphor text on the chrome desks around him. Fluorescent overhead lighting with warm amber accents remains constant. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything exactly as pictured.
 
 ---
 
@@ -714,7 +715,6 @@
 ### ACT 3: THE CRACK (3:24 – 4:27)
 
 > **Post-production note:** The Kodachrome → Blue Screen color transition beginning at S26 will be handled by CapCut color grading. Motion prompts describe atmosphere and movement ONLY — no color shift instructions.
-> **Post-production note:** Cem Karaca poster in S26-S27 will be composited in post-production. Do NOT reference in motion prompts.
 
 ---
 
@@ -739,8 +739,8 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Animated version of the attached image. Maintain 100% visual fidelity to the original scene. Do not add any new characters, people, or objects. The environment and background must remain completely static and unchanged.
-> Action: The chrome android remains seated on the edge of the cot in the exact pose pictured. The only motion is a barely perceptible rise and fall of his chest, and his exposed analog wires pulsing very faintly with residual warmth. The single amber desk lamp flickers almost imperceptibly. All chrome surfaces and room elements remain static. 35mm film aesthetic, heavy film grain, shallow depth of field, Kodachrome color palette.
+> Animated version of the attached image. Maintain 100% visual fidelity to the original scene. Do not add any new characters, people, or objects. The environment and background must remain completely static and unchanged. Do not add water drops, leaks, dripping, moisture, or any decay elements that are not in the source image.
+> Action: The chrome android remains seated on the edge of the cot in the exact pose pictured. The only motion is a barely perceptible rise and fall of his chest. His exposed analog wires pulse very faintly with residual warmth. The amber desk lamp glows steadily, warm and quiet. The ceiling, walls, and all surfaces remain completely static and dry. 35mm film aesthetic, heavy film grain, shallow depth of field, Kodachrome color palette.
 
 ---
 
@@ -788,7 +788,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Close-up of the chrome android's face. Twin beams of warm amber light project outward from his eyes, forming a holographic female silhouette in the air before him. The projection flickers and trembles with warm golden tones. The room around it is cold and dark — the projection is the only light source. His chrome face catches the warm glow on one side, cold emptiness on the other. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The chrome android remains completely motionless in the exact pose pictured — head fixed, eyes fixed, the twin amber beams from his eyes remain locked in position pointing straight ahead. The projected golden female figure in front of him stays in the exact same spot. The only motion is a gentle, slow pulsing of the projection's amber glow — brightening and dimming rhythmically, like a heartbeat of light. The cold dark room around them remains completely static. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

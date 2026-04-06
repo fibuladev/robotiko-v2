@@ -235,7 +235,7 @@
 **Task:** Generate EP05 visual prompts and all scene images.
 **Deliverable:** `episode-05/04_visuals/ep05_visual_prompts_v01.md` — 41 prompts (8 reference + 33 scene, including S15a/S15b keyframe split).
 **Reference images:** REF-CHAR-01 (Robochica — 3 iterations, dark amber glass lens eyes fix), REF-CHAR-02 (Elderly Robot Couple), REF-ENV-01-06 (Supermarket, Street, Cafe, Office, Iron Vault, Room).
-**Key fixes during production:** (1) Robochica eyes: "amber glow" → "dark amber glass lenses" (3 attempts, final working formula). (2) Cathedral → "colossal iron vault" (no religious connotation). (3) Office: narrow corridor → wide plaza floor. (4) robochica_1 tattoo: chest → inner forearm (clean surface, EP06 _2/_3/_4 preparation). (5) Cem Karaca poster: post-production compositing (Nano Banana refuses real people).
+**Key fixes during production:** (1) Robochica eyes: "amber glow" → "dark amber glass lenses" (3 attempts, final working formula). (2) Cathedral → "colossal iron vault" (no religious connotation). (3) Office: narrow corridor → wide plaza floor. (4) robochica_1 tattoo: chest → inner forearm (clean surface, EP06 _2/_3/_4 preparation). (5) Cem Karaca poster: originally planned as post-production composite, ABANDONED 2026-04-06 — all AI tools refused compositing, plan pivoted to YouTube description + outro credit card.
 **All 8 human overrides implemented:** S05 (both in frame), S07 (drool), S11 (elderly couple), S13 (forearm tattoo), S15a/b (hacker mask + cloud), S22-S23 (folders), S24 (red body), S28 (eye projection).
 **Image review:** 33/33 approved. 0 critical issues. 4 minor CapCut post-production adjustments noted.
 **Next step:** Motion script in new session.

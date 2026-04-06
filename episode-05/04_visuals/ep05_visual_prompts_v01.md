@@ -133,8 +133,6 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 **Text Prompt:**
 > Wide establishing shot of a small retro-futuristic personal room. No characters present. Chrome walls with subtle brushed texture. A single CRT terminal sits on a small chrome desk, its screen dark. An analog clock with mechanical hands hangs on the wall above. A narrow cot with a chrome frame and thin mattress occupies one corner. A single amber desk lamp on the desk provides the only warm light source, casting a golden pool across the desk surface and a warm reflection on the chrome wall behind. The room is sparse, minimal, solitary — a machine's private space. The amber light from the desk lamp is the only warmth in an otherwise cool chrome environment. 16:9 widescreen composition with the desk lamp as focal warm point. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
-**Post-Production Easter Egg:** Composite the real Cem Karaca "Delikanlı Sevdası" poster (`cemkaraca.jpg`) onto the wall beside the cot using Photoshop perspective warp. Peripheral placement — visible but not centered. Apply to: REF-ENV-06 selected image, S26, S27 scenes. Image generators refuse real public figures — compositing is the only viable method.
-
 ---
 
 ---

@@ -575,16 +575,18 @@
 | **Musical Moment** | "Two is lost" | "Take my hand" | **"Eight shall turn aside"** |
 | **Motion Strength** | 5 | 4 | 4 |
 | **Tool** | Kling 3.0 | Kling 3.0 | Kling 3.0 |
-| **Status** | ✅ KEEP | ✅ KEEP | ✅ KEEP |
+| **Status** | ✅ KEEP | ✅ UPDATED (new intact stone 8) | ✅ UPDATED (same image, different camera) |
 
-**Assets:** `2-lost.png` | `49.png` | `50.png`
+**Assets:** `2-lost.png` | `49-50.png` (NEW — intact stone 8) | `49-50.png` (same, different camera)
 **Camera Moves:** Slow Zoom In | Static | Slow Zoom Out
+
+> **3-STAGE MOTIF:** S50-S51 (4:11, intact) → S71 (6:26, cracking) → S72-S73 (6:30, ∞ transformation). Same Anatolian mountain location, same stone monolith, three stages of transformation. Viewer sees the 8 intact here, recognizes it when it cracks 2 minutes later.
 
 **Motion Prompt (S49):** Slow zoom toward the two hands reaching — aged human finger and chrome mechanical finger with amber and blue fire at contact. Behind them, the cracked clock dial shifts, numbers glowing. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
-**Motion Prompt (S50):** Animated version of attached image. Maintain 100% fidelity. Do not add characters or objects. Action: The massive stone "8" monolith stands against a swirling cosmic sky. Energy ripples around the carved number. Clouds churn behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+**Motion Prompt (S50):** Animated version of attached image. Maintain 100% fidelity. Do not add characters or objects. Action: The massive intact stone "8" monolith stands immovable in the Anatolian mountain landscape. Volumetric fog drifts slowly at the base. Dark amber storm clouds shift behind. The ancient weathered stone surface catches fading dusk light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
-**Motion Prompt (S51):** Slow zoom out from the stone "8" monolith revealing the vast cosmic landscape. Sky swirls with energy. The monolith stands defiant and ancient. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+**Motion Prompt (S51):** Slow zoom out from the intact stone "8" monolith, revealing the vast Anatolian mountain range and dramatic storm sky. Fog rolls across the cracked earth at the base. The monolith stands defiant and eternal. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -822,25 +824,27 @@
 
 ---
 
-### SHOTS S71–S73 — Eight to Infinity (Direct × 3)
+### SHOTS S71–S72 — Eight to Infinity (Mode A + Mode B)
 
-| Field | S71 | S72 | S73 |
-|---|---|---|---|
-| **Timestamp** | 6:26 | 6:30 | 6:33 |
-| **Duration** | 4s | 3s | 4s |
-| **Musical Moment** | **Whisper: "The eight turns sideways..."** | Whisper fading | Echo |
-| **Motion Strength** | 4 | 5 | 3 |
-| **Tool** | Kling 3.0 | Kling 3.0 | Veo |
-| **Status** | ✅ KEEP | ✅ KEEP | ✅ KEEP |
+| Field | S71 | S72 |
+|---|---|---|
+| **Timestamp** | 6:26–6:30 | 6:30–6:37 |
+| **Duration** | 4s | 7s |
+| **Musical Moment** | **Whisper: "The eight turns sideways..."** | Whisper fading → Echo |
+| **Motion Strength** | 4 | 5 |
+| **Tech Strategy** | Mode A | **Mode B (Start-End)** |
+| **Tool** | Kling 3.0 | Kling 3.0 (Mode B) |
+| **Status** | ✅ UPDATED (new cracking stone 8) | ✅ UPDATED (Mode B: 8→∞ transformation) |
 
-**Assets:** `61.png` | `62.png` | `63.png`
-**Camera Moves:** Static | Static | Slow Zoom Out
+**Assets (S71):** `61.png` (NEW — cracking stone 8, Anatolian mountain landscape)
+**Assets (S72):** Start: `61.png` → End: `63.png` (NEW — 8→∞, same landscape)
+**Camera Moves:** Static | Static (transformation carries the motion)
 
-**Motion Prompt (S71):** The stone "8" monolith cracks — light spills from the fractures, brightening. The ancient stone begins its transformation. Fissures widen slowly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> **3-STAGE MOTIF PAYOFF:** S50-S51 (4:11, intact stone 8) → S71 (6:26, cracking) → S72 (6:30, Mode B transformation into ∞). Same Anatolian mountains, same cracked earth, same scale. The viewer recognizes the stone from 2 minutes earlier — now it shatters and becomes infinity. Location continuity technique: 63.png was generated using 61.png as reference image.
 
-**Motion Prompt (S72):** The "8" shape rotates and morphs — the vertical form slowly tilts sideways, the loops widening into the horizontal infinity symbol "∞". Light expands as the transformation completes. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+**Motion Prompt (S71):** The massive stone "8" monolith cracks violently in the mountain landscape — brilliant white light spills from deepening fractures. Rock fragments float away from the surface. Fog churns at the base. The ancient stone begins its transformation. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
-**Motion Prompt (S73):** Slow zoom out from the infinity symbol floating in cosmic space. Stars and nebulae surround it. The symbol pulses with gentle light. Vast, eternal, promising. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+**Motion Prompt (S72):** The cracking stone "8" shatters and transforms — fragments drift apart as a radiant white infinity symbol emerges from within, expanding to fill the space where the stone stood. The same mountain landscape holds steady as the transformation completes. Pure white light radiates from the three-dimensional infinity form. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

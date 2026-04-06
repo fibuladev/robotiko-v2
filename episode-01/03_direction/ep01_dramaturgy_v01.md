@@ -203,8 +203,8 @@
 | Shot ID | Time | Visual Description | Mood / Lighting | Characters | Music Sync | Source |
 |:---|:---|:---|:---|:---|:---|:---|
 | **S49** | 4:06 | Human and robot fingers touching — amber and blue fire at contact, cracked clock dial behind with visible numbers. "2" broken/missing. | Dramatic/Fire | Mentor + Robotiko (hands) | "From nil to seven... two is lost" | 2-lost.png |
-| **S50** | 4:11 | Massive stone "8" monolith in a swirling cosmic landscape. Dark sky, energy around the number. | Dark/Epic | None | "Take my hand — the two arise" | 49.png |
-| **S51** | 4:16 | Stone "8" variant — different angle, more dramatic sky treatment, the monolith stands defiant. | Dark/Dramatic | None | **"Trust me; the eight shall turn aside"** Cymbal splash. | 50.png |
+| **S50** | 4:11 | Massive INTACT stone "8" monolith in Anatolian mountain landscape at dusk. Ancient, weathered, moss-covered. No cracks, no light. Fog at base. Human silhouettes for scale. | Amber/Epic | None | "Take my hand — the two arise" | 49-50.png (NEW — intact, same location as S71) |
+| **S51** | 4:16 | Same intact stone "8" — slow zoom out revealing full mountain range and dramatic storm sky. Monolith stands defiant and eternal. | Amber/Dramatic | None | **"Trust me; the eight shall turn aside"** Cymbal splash. | 49-50.png (same, different camera) |
 
 ### Section 17: BRIDGE — "Five thousand years I've waited" (4:22-4:36, 14s, 3 shots)
 
@@ -285,9 +285,8 @@
 
 | Shot ID | Time | Visual Description | Mood / Lighting | Characters | Music Sync | Source |
 |:---|:---|:---|:---|:---|:---|:---|
-| **S71** | 6:26 | Stone "8" monolith cracking — light spilling from fractures. The number begins its transformation. | Dark/Fractured | None (symbolic) | **Whisper:** "The eight turns sideways..." | 61.png |
-| **S72** | 6:30 | The "8" rotating/transforming into infinity symbol "∞". Light expanding as the shape shifts. | Light/Transformative | None (symbolic) | Whisper fading | 62.png |
-| **S73** | 6:33 | Infinity symbol floating in cosmic space — stars, nebulae. The promise realized visually. | Cosmic/Expansive | None (symbolic) | Echo fading | 63.png |
+| **S71** | 6:26 | Same stone "8" from S50-S51 — now CRACKING. Brilliant white light spills from deep fractures. Rock fragments float. Same Anatolian mountain landscape. | Amber/Fractured | None (symbolic) | **Whisper:** "The eight turns sideways..." | 61.png (NEW — cracking stone 8) |
+| **S72** | 6:30 | **MODE B:** Stone 8 shatters → radiant white 3D infinity symbol "∞" emerges. Same mountain backdrop holds steady. Transformation complete. | White/Transcendent | None (symbolic) | Whisper fading → Echo | 61.png→63.png (NEW — Mode B transformation) |
 
 ### Section 28: OUTRO — Instrumental (6:37-7:22, 45s, 5 shots)
 

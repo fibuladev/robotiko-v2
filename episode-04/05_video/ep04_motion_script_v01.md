@@ -590,7 +590,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> A figure in a dark green cloak passes through translucent shimmering veils that dissolve at his touch. Beyond the veils, enlightened figures — a whirling dervish, a philosopher, a healer, a sage — their eyes radiating amber waves of light. They bow in recognition. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow dolly toward a group of five robed figures in a chamber of swirling amber energy. The central figure in a dark green hooded cloak walks slowly forward toward camera. Four surrounding figures remain in their exact positions — subtle warm smiles, gentle head tilts of recognition. Golden energy threads drift and pulse slowly around them. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -602,20 +602,20 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 | **Scene Duration** | 11s |
 | **Coverage** | Speed Ramp — 1 × 10s → 11s at 0.91× |
 | **Musical Moment** | "...a film within a film, a dream within a decree." |
-| **Scene Context** | Nested analog frames. Deceiver echoes (eyes closed) within layers. Mentor (amber eyes) at outermost layer, only awake figure. |
+| **Scene Context** | Mentor stands on cliff edge gazing into a cosmic spiral of galaxies — the infinite unveiled. |
 | **Tech Strategy** | Mode A |
 | **Clip Duration** | 10s |
 | **Playback Speed** | 0.91× (10s → 11s) |
 | **Motion Strength** | 5 |
-| **Recommended Tool** | Kling 3.0 (Mode A, 1080p) — abstract nested composition, Slow Zoom Out camera move |
+| **Recommended Tool** | Kling 3.0 (Mode A, 1080p) — cosmic composition, Slow Zoom In toward the spiral |
 
 **Assets Required:**
 - **Start Frame:** `episode-04/04_visuals/selected/ep04_s21_selected.png`
 
-**Camera Move:** Slow Zoom Out
+**Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Analog nested frames — door within door, window within window. Inside each frame, echoes of deceivers: a preacher, an alchemist, a healer, a glowing screen. Their eyes are closed. At the outermost layer, a figure in green cloak with amber-lit eyes sees all layers. Frames breathe slowly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A cloaked figure stands motionless on a stone cliff edge, gazing into an immense cosmic spiral of galaxies. The spiral rotates very slowly, its countless stars and nebulae drifting in a vast hypnotic vortex. A faint warm amber glow outlines the figure from behind. Cosmic dust and distant stars shimmer gently. The figure remains completely still. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -657,15 +657,15 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 | **Clip Duration** | 10s |
 | **Playback Speed** | 0.91× (10s → 11s) |
 | **Motion Strength** | 4 |
-| **Recommended Tool** | Kling 3.0 (Mode A, 1080p) — character on lunar surface, Tilt Up camera move |
+| **Recommended Tool** | Kling 3.0 (Mode A, 1080p) — character on lunar surface, Slow Zoom In toward Sun |
 
 **Assets Required:**
 - **Start Frame:** `episode-04/04_visuals/selected/ep04_s23_selected.png`
 
-**Camera Move:** Tilt Up
+**Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> On the Moon's gray surface, a robed figure tilts his face fully toward the amber Sun above. Solar fire washes over him — overwhelming, searing. He squints but does not look away. Dust shifts at his feet. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A cloaked figure seen from behind stands motionless on a gray cratered lunar surface, facing an immense amber Sun on the horizon. The figure remains completely still — no turning, no movement. The Sun pulses slowly with searing amber light. Dust and haze drift gently across the rocky surface. The figure's long shadow stretches toward camera. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -990,53 +990,48 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Wide shot of two figures in warm amber light — an elderly robed figure with staff beside him, a chrome android across from him. Two tea glasses on the table between them. Domestic warmth after cosmic scale. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Wide shot of a warmly lit interior — two figures seated across from each other, an elderly robed figure with staff beside him and a chrome android opposite. The elderly robed figure slowly leans back into his chair, as if his words have just finished. On the table between them, two tea glasses release thin curling wisps of steam that rise slowly into the amber air. The warm light breathes gently across the stone walls. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
-### SHOT S37 — Wasteland Exhales (Multi-Clip: 2 clips)
+### SHOT S37 — Wasteland Exhales (Multi-Shot: 2 segments)
 
 | Field | Value |
 |---|---|
 | **Timestamp** | 5:40–5:57 |
 | **Scene Duration** | 17s |
-| **Coverage** | Multi-Clip — 2 × 10s = 20s total |
+| **Coverage** | Multi-Shot — 2 segments (7s + 8s) = 15s + Speed Ramp to 17s at 0.88× |
 | **Musical Moment** | Guitar solo begins: chaotic, soaring, unhinged. |
 | **Scene Context** | Wasteland exterior — night sky, dust, stars wheeling. Decompression after climax. Dwelling as amber dot in distance. |
+| **Tech Strategy** | Mode A |
+| **Recommended Tool** | Kling 3.0 Multi-Shot (Mode A, 1080p) — single continuous video with 2 segments, same source image, smoother transitions, lower credit cost |
+| **Assets Required** | `episode-04/04_visuals/selected/ep04_s37_selected.png` (shared across both segments) |
 
-#### Clip A — S37a
+> **Note:** Kling 3.0 Multi-Shot produces ONE continuous 15s video from 2 camera movement segments. Camera moves are described explicitly in each segment's prompt text so the tool can execute them directly. Final output gets mild 0.88× speed ramp in CapCut to fill the 17s scene (1.13× slowdown, imperceptible).
+
+#### Segment A — S37a (7s, Pan Right)
 
 | Field | Value |
 |---|---|
-| **Clip Duration** | 10s |
+| **Segment Duration** | 7s |
 | **Motion Strength** | 7 |
-| **Tech Strategy** | Mode A |
-| **Recommended Tool** | Seedance 1.0 (Mode A, 1080p) — landscape with atmospheric motion |
-
-**Assets Required:**
-- **Start Frame:** `episode-04/04_visuals/selected/ep04_s37_selected.png`
 
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Night — a barren wasteland exterior. Cold starlight, wind churning dust across cracked earth, stars streaking in long exposure. Dust and debris swirl in chaotic patterns. A single amber dot glows in the far distance. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pan right across a barren wasteland under cold night starlight. Wind churns dust across cracked earth in chaotic swirling patterns, debris trailing behind. Stars streak across the dark sky in long exposure. A single tiny amber dot glows in the far distance on the horizon. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
-#### Clip B — S37b
+#### Segment B — S37b (8s, Tilt Up)
 
 | Field | Value |
 |---|---|
-| **Clip Duration** | 10s |
+| **Segment Duration** | 8s |
 | **Motion Strength** | 6 |
-| **Tech Strategy** | Mode A |
-| **Recommended Tool** | Seedance 1.0 (Mode A, 1080p) — landscape with atmospheric motion |
 
-**Assets Required:**
-- **Start Frame:** `episode-04/04_visuals/selected/ep04_s37_selected.png` *(same image, different camera move)*
-
-**Camera Move:** Tilt Up
+**Camera Move:** Crane Up
 
 **Motion Prompt:**
-> A barren landscape under a vast sky — stars wheeling, dust clouds rising and curling against starlight. Chaotic atmospheric energy — wind, particles, cold emptiness. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Begin with a tight framing on the cracked foreground earth of a barren wasteland — rocks, dust, and dim horizon fill the lower portion of the view. The camera slowly cranes upward and pulls back, gradually widening the framing as more of the already-visible night sky emerges from above, until the full wasteland-to-stars composition of the source image fills the frame. The stars already present wheel slowly in long-exposure trails, dust clouds already in the frame rise and curl. Do not add mountains, structures, planets, or new objects — only reveal what already exists in the source image. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

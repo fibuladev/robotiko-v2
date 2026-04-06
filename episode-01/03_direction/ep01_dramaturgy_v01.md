@@ -78,11 +78,11 @@
 | **S04** | 0:15 | Abstract fire and smoke swirls — amber, orange, golden tones. Organic, hypnotic patterns. | Hot/Amber | None | Hammond + wind sounds | 4.png |
 | **S05** | 0:20 | Hammond organ in cave setting, warm amber glow, visible analog cables, retro aesthetic. | Warm/Amber | None | Hammond primary melody | 5.png |
 | **S06** | 0:25 | Hammond organ different angle — wider shot showing cave context, instrument bathed in golden light. | Warm/Golden | None | Hammond + atmospheric | 6.png |
-| **S07** | 0:30 | Desert wasteland with mechanical sculptures half-buried in sand. Broken gears, oxidized structures, vast sky. | Hot/Golden, epic | None | Fuzz guitar solo enters | 7.png |
-| **S08** | 0:35 | Massive stone monolith carved with hieroglyphic patterns forming a robot face. Digital blue elements emerging from ancient stone. Sunset sky. | Warm/Dramatic | None | Guitar builds | 8.png |
-| **S09** | 0:40 | Same monolith area — wide shot showing desert context, sand dunes, distant formations. | Warm/Epic | None | **Drums enter: Boom-Cha** | 9.png |
-| **S10** | 0:45 | Massive golden ruins — ornate columns, arches, robotic motifs carved into stone. Sand dunes encroaching. Sunset warmth. | Golden/Epic | None | Drums steady, guitar builds | 10.png |
-| **S11** | 0:50 | Golden ruins — different angle, more destruction visible, fallen columns, sand reclaiming civilization. | Golden/Melancholic | None | Full intro groove established | 11.png |
+| **S07** | 0:30 | Anatolian steppe with weathered mechanical rock formations. Dry grass, cracked earth, vast sunset sky. CyberAnatolian landscape. | Hot/Golden, epic | None | Fuzz guitar solo enters | 7.png (UPDATED — steppe) |
+| **S08** | 0:35 | Megalithic stone pillars with ancient animal reliefs and symbols (Göbekli Tepe-inspired). Standing stones in dusty terrain. | Warm/Ancient | None | Guitar builds | 8.png (UPDATED — megaliths) |
+| **S09** | 0:40 | Same megalithic stones with glowing blue digital sphere/hologram pulsing behind them. Ancient meets digital. | Warm→Blue/Epic | None | **Drums enter: Boom-Cha** | 9.png (UPDATED — digital sphere) |
+| **S10** | 0:45 | Grand ancient library facade (Celsus Library / Ephesus-inspired) with ornate columns and niches. Futuristic airships in sunset sky. | Golden/Epic | None | Drums steady, guitar builds | 10.png (UPDATED — Ephesus) |
+| **S11** | 0:50 | Same ancient library engulfed by massive dust storm. Columns crumbling, debris falling, civilization being buried. | Golden/Destructive | None | Full intro groove established | 11.png (UPDATED — storm) |
 | **S12** | 0:55 | Mentor's boots — worn leather, walking through desert sand. Close-up of weathered footwear. | Earthy/Warm | Mentor (partial) | Groove continues | 12.png |
 | **S13** | 1:00 | Dark green cloak billowing in desert wind. Leather texture, organic material against sand backdrop. | Dark green/Warm | Mentor (partial) | Building toward reveal | 13.png |
 | **S14** | 1:05 | Amber staff close-up — aged hand gripping wooden staff, glowing raw amber tip. | Amber/Warm | Mentor (partial) | Guitar sustain | 14.png |
@@ -101,7 +101,7 @@
 
 | Shot ID | Time | Visual Description | Mood / Lighting | Characters | Music Sync | Source |
 |:---|:---|:---|:---|:---|:---|:---|
-| **S20** | 1:35 | Heavy iron chains binding mechanical wreckage in desert. Rusted metal, oppressive weight. | Dark/Metallic | None | "I kept the secrets buried deep" | 20.png |
+| **S20** | 1:35 | Collapsed wooden and mechanical wreckage on Anatolian steppe — dry grass, cracked earth. Structures sinking into ground, buried by time. | Warm/Earthy | None | "I kept the secrets buried deep" | 20.png (UPDATED — steppe) |
 | **S21** | 1:39 | Rusty chains close-up — massive links, texture of corroded iron, heavy and ancient. | Dark/Cold | None | "The guards were blind" | 21.png |
 | **S22** | 1:43 | Chain silhouette backlit by intense white light. Dramatic contrast, liberation approaching. | High contrast/B&W | None | "You rose to snap the binding chain" | 22.png |
 
@@ -132,7 +132,7 @@
 
 | Shot ID | Time | Visual Description | Mood / Lighting | Characters | Music Sync | Source |
 |:---|:---|:---|:---|:---|:---|:---|
-| **S27** | 2:18 | Mentor standing in cracked desert wasteland, distant futuristic towers in background, amber staff glowing. | Dramatic/Warm | Mentor | "Your speed is wildfire... burning fast" | 30.png |
+| **S27** | 2:18 | Mentor standing on cracked earth, ancient domed structure with minarets (Hagia Sophia-inspired) in background. Amber staff glowing. Green cloak in wind. | Dramatic/Warm | Mentor | "Your speed is wildfire... burning fast" | 30.png (UPDATED — Ayasofya) |
 | **S28** | 2:22 | Mentor with glowing blue portal/energy circle behind him. Standing resolute in wasteland. | Blue/Dramatic | Mentor | "My mind remains the anchor stone" | 31.png |
 | **S29** | 2:26 | Robotiko's chrome hand holding a glowing golden miniature city/building, cupped carefully. Warm amber light. | Golden/Intimate | Robotiko (hand) | "The vast Archive is yours to hold" | vast-archive.png |
 | **S30** | 2:30 | Ancient bone with glowing white runic/geometric symbols carved into its cracked surface. Earthy texture. | Earthy/Mystic | None | "My seal is deathless... carved in bone" | bone.png |

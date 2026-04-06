@@ -189,7 +189,7 @@
 
 ---
 
-### SHOTS S07–S09 — Desert Wasteland + Monolith (Direct × 3)
+### SHOTS S07–S09 — Anatolian Steppe + Megalithic Stones (Direct × 3)
 
 | Field | S07 | S08 | S09 |
 |---|---|---|---|
@@ -198,41 +198,41 @@
 | **Musical Moment** | Fuzz guitar enters | Guitar builds | **Drums enter: Boom-Cha** |
 | **Motion Strength** | 3 | 3 | 4 |
 | **Recommended Tool** | Kling 3.0 | Kling 3.0 | Kling 3.0 |
-| **Improvement Status** | ✅ KEEP | ✅ KEEP | ✅ KEEP |
+| **Improvement Status** | ✅ UPDATED (Anatolian grounding) | ✅ UPDATED | ✅ UPDATED |
 
 **Assets:** `7.png` | `8.png` | `9.png`
 **Camera Move:** Pan Right | Slow Zoom In | Slow Zoom Out
 
 **Motion Prompt (S07):**
-> Slow pan across vast desert landscape with half-buried mechanical sculptures. Sand particles drift in wind. Golden sunlight catches oxidized metal surfaces. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pan across vast Anatolian steppe with weathered mechanical rock formations. Dry grass sways gently in wind. Cracked earth stretches to the horizon. Golden sunset light catches the ancient stone surfaces. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Motion Prompt (S08):**
-> Slow zoom toward the massive stone monolith carved with ancient hieroglyphic robot face. Sand swirls gently at the base. Faint blue digital shimmer emerges from carved lines. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the megalithic stone pillars carved with ancient animal reliefs and symbols. Dust swirls gently at the base of the standing stones. Warm light catches the weathered carved surfaces. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Motion Prompt (S09):**
-> Slow zoom out from the monolith revealing the vast desert landscape. Sand dunes ripple in wind. Distant rock formations frame the horizon. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom out from the megalithic stones as a glowing blue digital sphere pulses behind them. Ancient carved pillars frame the ethereal light. Dust drifts across the ground. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
-### SHOTS S10–S11 — Golden Ruins (Direct × 2)
+### SHOTS S10–S11 — Celsus Library / Ephesus (Direct × 2)
 
 | Field | S10 | S11 |
 |---|---|---|
 | **Timestamp** | 0:45–0:50 | 0:50–0:55 |
 | **Scene Duration** | 5s each |
 | **Musical Moment** | Full intro groove | Groove continues |
-| **Motion Strength** | 3 | 3 |
+| **Motion Strength** | 3 | 4 |
 | **Recommended Tool** | Kling 3.0 | Kling 3.0 |
-| **Improvement Status** | ✅ KEEP | ✅ KEEP |
+| **Improvement Status** | ✅ UPDATED (Anatolian landmark) | ✅ UPDATED |
 
 **Assets:** `10.png` | `11.png`
 **Camera Move:** Slow Zoom In | Pan Left
 
 **Motion Prompt (S10):**
-> Slow zoom into golden columned ruins. Sand drifts gently through fallen arches. Warm sunset light catches carved stone surfaces. Volumetric fog between columns. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the grand ancient library facade with ornate columns and carved niches. Futuristic airships drift slowly in the golden sunset sky above. Sand and warm light wash across the weathered stone surface. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Motion Prompt (S11):**
-> Slow pan across fallen golden ruins. Sand encroaches on broken columns. Dust motes float in warm golden light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pan across the ancient library as a massive dust storm engulfs the structure. Stone debris falls slowly. Sand billows around the crumbling columns. The civilization disappears into golden dust. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -306,7 +306,7 @@
 **Assets:** `20.png` | `21.png` | `22.png`
 **Camera Moves:** Pan Left | Static | Slow Zoom In
 
-**Motion Prompt (S20):** Slow pan across heavy iron chains binding mechanical wreckage in desert. Rust flakes drift in wind. Oppressive weight of ancient imprisonment. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+**Motion Prompt (S20):** Slow pan across collapsed wooden and mechanical wreckage on Anatolian steppe — dry grass, cracked earth. Dust and warm haze drift across the ruins. The structures sink slowly into the ground, buried by time. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Motion Prompt (S21):** Animated version of attached image. Maintain 100% fidelity. Do not add characters or objects. Action: Rusty chain links hang heavily. Faint wind vibration through the metal. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
@@ -392,7 +392,7 @@
 **Assets:** `30.png` | `31.png` | `vast-archive.png` | `bone.png`
 **Camera Moves:** Pan Left | Slow Zoom In | Slow Zoom In | Static
 
-**Motion Prompt (S27):** Slow pan across cracked desert with the cloaked figure standing against distant towers. Staff amber light pulses. Wind moves the cloak gently. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+**Motion Prompt (S27):** Slow pan across cracked earth with the cloaked figure standing before the ancient domed structure with minarets. Staff amber light pulses. Wind moves the green cloak gently. Dust drifts across the barren ground. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Motion Prompt (S28):** Slow zoom toward the cloaked figure with glowing blue portal circle behind. Energy ripples through the portal surface. Cloak edges flutter. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 

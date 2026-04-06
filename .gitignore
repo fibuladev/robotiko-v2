@@ -6,6 +6,7 @@
 # INTERNAL DOCUMENTS (Not for public repo)
 # -----------------------------------------------------------------------------
 _management/creator_strategy.md
+_management/*_quality_report.md
 
 # -----------------------------------------------------------------------------
 # SECRETS & CREDENTIALS (NEVER commit these)

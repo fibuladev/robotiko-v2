@@ -48,6 +48,7 @@ After any correction from the human:
 - **RULE:** Multi-clip sub-clips must use varied camera moves — not identical repetitions of the same motion.
 - **RULE:** When a sub-clip needs a new image, include a complete supplementary visual prompt inline in the motion script (with mandatory suffix). The motion script must be self-contained.
 - **RULE:** Coverage target: total generated clip duration ≥ 95% of total music duration.
+- **RULE (EP01 Technique):** SPEED VARIATION REUSE: Same image can be reused with different camera speeds to match musical tempo changes. Example: EP01 S33 (cable tunnel, slow dolly) → S36 (same tunnel, FAST dolly) syncs with "You race across each vast domain" as music accelerates. Camera speed change = emotional change. Same composition, different experience. Cost-effective and narratively powerful. (Added 2026-04-06)
 - **RULE:** Kling 3.0 Multi-Shot: Use for multi-clip shots where sub-clips share the same source image AND are all Kling 3.0. Produces one continuous video (max 15s), smoother transitions, lower credit cost. Segments can be 5-8s each. Mark as `Multi-Shot` (not `Multi-Clip`) in motion script. If sub-clips use different tools or different source images → standard Multi-Clip (separate generations). (Added 2026-03-08, tested on EP02 S34b+c)
 
 ---

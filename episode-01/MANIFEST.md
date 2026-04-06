@@ -1,52 +1,60 @@
-# EPISODE 01 - FILE MANIFEST
+# EPISODE 01 — FILE MANIFEST
 
-**Status:** ✅ Completed (but needs cleanup)
-**Completion Date:** January 2026 (estimate)
+**Title:** The Cycle Break / First Contact
+**Status:** COMPLETED (video produced) + Retroactive pipeline records created 2026-04-06
+**Station:** The Commanding Self (Arrogance — full)
+**Phase:** Phase 1: Awakening (PRISTINE)
 
-## 📁 CURRENT STATE
+---
 
-### 🎵 Audio
-- ✅ Music created (Suno)
-- ⚠️  Lyrics: Exists
-- 📍 Location: `02_music/ep01_audio_v01.mp3`
+## PIPELINE FILES
 
-### 🎨 Visuals
-- ✅ 45-50 image prompts (Nano Banana Pro)
-- ⚠️  Some prompts modified just-in-time (not documented)
-- 📍 Location: `04_visuals/ep01_visual_prompts.pdf`
+### 01_lyrics/
+- `ep01_lyrics.md` — Full formatted lyrics with section headers and stage directions
 
+### 02_music/
+- `ep01_musical_metadata.json` — Complete metadata (75 BPM, B Minor, 442s, 28 sections)
 
-### 🎬 Video
-- ✅ Motion prompts created (Kling/Veo)
-- ⚠️  Similar to visuals: Some JIT changes
-- 📍 Location: `05_video/ep01_motion_script.pdf`
+### 03_direction/
+- `ep01_concept_notes.md` — **RETROACTIVE** (created 2026-04-06). Creative vision, must-have shots, improvement notes.
+- `ep01_dramaturgy_v01.md` — **RETROACTIVE** (created 2026-04-06). 78 shots, 28 sections, 442s full coverage. Includes RE-SHOOT flags.
 
-### ✂️ Edit
-- ✅ Final video not exported yet
-- 📍 Location will be: `06_edit/ep01_final_v01.mp4`
+### 04_visuals/
+- `raw/` — 82 images (1-24, 30-66 + named images + variants). All used in production.
+  - Numbered: `1.png` through `66.png` (with gaps at 25-29, 52, 54 — numbering skips, not missing)
+  - Variants: `32.1-32.3.png`, `44.1-44.2.png`, `57.1-57.4.png`
+  - Named: `chorus1a.png`, `chorus1b.png`, `vast-archive.png`, `bone.png`, `pulse.png`, `ignite.png`, `2-lost.png`, `reprise1a.png`, `ch1reprise-d.png`, `intlude.png`, `ultimate.png`, `ulti.png`, `mends.png`, `outro1.png`, `outro2.png`
+- `selected/ep01_visual_prompts_v01.pdf` — Original visual prompts (pre-pipeline PDF format, unreadable by tools)
 
-## 🚨 KNOWN ISSUES
+### 05_video/
+- `ep01_motion_script_v01.md` — **RETROACTIVE** (created 2026-04-06). 78 shots with motion prompts, tool assignments, RE-SHOOT flags.
+- `selected/ep01_motion_script.pdf` — Original motion script (pre-pipeline PDF format, unreadable by tools)
 
-1. **Prompt Drift:** 
-   - Original prompts in pdf ≠ Final used prompts
-   - Estimated: 5-10 shots modified during production
-   
-2. **Missing Documentation:**
-   - No dramaturgy file (was done mentally)
-   - No concept notes (scattered across messages)
+---
 
-3. **File Formats:**
-   - Everything in .txt and pdf (need to convert to .md)
+## RE-SHOOT STATUS
 
-## 🎯 CLEANUP PLAN (Post-EP02)
+| Priority | Shot | Image | Issue | Status |
+|----------|------|-------|-------|--------|
+| ~~HIGH~~ | S69, S70 | ~~59.png, 60.png~~ → **58.png** | Rust on Robotiko | ✅ RESOLVED (2026-04-06) |
+| ~~MEDIUM~~ | S60 | ~~ch1reprise-d.png~~ → **57.3.png** | Too modern/cyan | ✅ RESOLVED (2026-04-06) |
+| ~~LOW-MED~~ | S47 | **46.png** (re-generated) | Text labels + infographic style | ✅ RESOLVED (2026-04-06) |
 
-- [ ] Convert txt and pdf to markdown
-- [ ] Document actual prompts used (reverse-engineer from videos)
-- [ ] Create proper dramaturgy (retroactive)
-- [ ] Archive legacy notes
+---
 
-## 💡 LESSONS LEARNED
+## PRODUCTION NOTES
 
-- Manual workflow = Prompt drift inevitable
-- Need **single source of truth** files
-- Pipeline automation critical for EP02+
+- **Tools used:** Kling + Veo (mixed)
+- **Start-End frame shots:** S31-S32 (Apple transformation), S47-S48 (Cipher transformation)
+- **Smart reuses:** S34 (tunnel slow→fast), S41 (3 uses with different cameras), S57.2 (2 uses with different cameras)
+- **Key technique:** S34 speed variation — same image, different camera speed matches musical acceleration. Documented as reusable technique.
+
+---
+
+## LEGACY FILES (Pre-Pipeline)
+
+The following files predate the pipeline system and are kept for reference:
+- `04_visuals/selected/ep01_visual_prompts_v01.pdf` — Original prompts (PDF)
+- `05_video/selected/ep01_motion_script.pdf` — Original motion script (PDF)
+
+These have been superseded by the retroactive `.md` files created 2026-04-06.

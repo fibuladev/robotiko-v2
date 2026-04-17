@@ -1,7 +1,7 @@
 {
   "project_name": "Robotiko v2.0",
   "total_episodes": 10,
-  "current_phase": "Production",
+  "current_phase": "EP01 Launch",
   "open_source": true,
   "open_source_release": "After EP10 completion",
 
@@ -10,7 +10,7 @@
     "pipeline_version": "v2.0",
     "architecture_version": "v2.0",
     "naming_convention_version": "v2.0",
-    "last_updated": "2026-02-23"
+    "last_updated": "2026-04-16"
   },
 
   "toolchain": {
@@ -21,7 +21,7 @@
     "editing": "CapCut",
     "llm_director": "Claude (Sonnet)",
     "version_control": "GitHub",
-    "storage_archive": "AWS S3",
+    "storage_archive": "Google Drive (fibuladev account)",
     "automation": "GitHub Actions + Python Scripts",
     "local_ide": "VSCode + Claude Code (active from 2026-02-23)"
   },
@@ -42,9 +42,10 @@
       "title": "The Cycle Break / First Contact",
       "station": "The Commanding Self (Arrogance — full)",
       "language": "English",
-      "status": "completed",
+      "status": "pre_launch",
       "folder_name": "episode-01",
       "key_assets_locked": true,
+      "launch_date": "2026-04-22",
       "production": {
         "lyrics": true,
         "music": true,
@@ -52,7 +53,14 @@
         "dramaturgy": "retroactive",
         "visuals": true,
         "video": true
-      }
+      },
+      "social_media": {
+        "youtube_package": true,
+        "social_atomization": true,
+        "launch_checklist": true,
+        "pre_launch_campaign": "in_progress (Days 1-6 done, Days 7-13 scheduled)"
+      },
+      "notes": "Production complete. Social media rollout in progress. YouTube premiere scheduled April 22, 18:00 CET."
     },
     "ep02": {
       "title": "The Tech Guru's Downfall (Global Collapse Tour)",
@@ -241,7 +249,12 @@
     "open_source_signal_episode": "EP07",
     "ep01_launch": "2026-04-22",
     "release_rhythm": "weekly",
-    "social_platforms": ["youtube", "instagram", "tiktok"],
+    "social_platforms": ["youtube", "instagram"],
+    "social_platforms_deferred": ["tiktok (Bratislava location + zero budget, EP07+ revisit)"],
+    "social_handles": {
+      "youtube": "@fibuladev",
+      "instagram": "@fibuladev"
+    },
     "creator_strategy_doc": "_management/creator_strategy.md"
   }
 }

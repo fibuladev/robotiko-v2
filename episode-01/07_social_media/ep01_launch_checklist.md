@@ -11,39 +11,38 @@
 ## PHASE 1: PRE-LAUNCH VERIFICATION (April 20-21)
 
 ### Video
-- [ ] Final video export confirmed (`episode-01/06_edit/ep01_final_v{VV}.mp4`)
-- [ ] 4K resolution, 16:9 aspect ratio, audio sync verified
-- [ ] CapCut grade applied: Kodachrome LUT, film grain, 2.35:1 letterbox
+- [x] Final video export confirmed (`ep01_final_v01.mp4` on D: drive — ready to upload)
+- [x] 4K resolution, 16:9 aspect ratio, audio sync verified
+- [x] CapCut grade applied: Kodachrome LUT, film grain, 2.35:1 letterbox
 
 ### YouTube Package
-- [ ] YouTube package reviewed: `episode-01/07_social_media/ep01_youtube_package.md`
-- [ ] Title: `ROBOTIKO v2.0 — EP01: "The Cycle Break" | Anatolian Psychedelic Rock`
-- [ ] Description: Opens with hook, NO timestamps, credits complete
-- [ ] Tags: Within 500 character limit
-- [ ] Pinned comment ready: "Count the numbers. They will return."
+- [x] YouTube package reviewed: `episode-01/07_social_media/ep01_youtube_package.md`
+- [x] Title: `ROBOTIKO v2.0 — EP01: "The Cycle Break" | Anatolian Psychedelic Rock`
+- [x] Description: Opens with hook, NO timestamps, NO credits (Phase 1 — AI reveal deferred to EP07)
+- [x] Tags: Within 500 character limit
+- [x] Pinned comment ready: "Count the numbers. They will return."
 
 ### Social Clips
-- [ ] Social atomization reviewed: `episode-01/07_social_media/ep01_social_atomization.md`
-- [ ] 5 clips exported in both 16:9 and 9:16 formats
+- [x] Social atomization reviewed: `episode-01/07_social_media/ep01_social_atomization.md`
+- [ ] 5 clips exported in both 16:9 and 9:16 formats (PENDING — to be done in CapCut before April 22)
 - [ ] Audio included in all clips
-- [ ] Platform-specific captions ready (IG, Shorts)
+- [ ] Platform-specific captions ready (IG, Shorts) — captions already written in atomization doc
 
 ### Thumbnail
-- [ ] Thumbnail created based on youtube_package.md guidance
-- [ ] Scene: S39-S40 First Contact (fingers reaching)
-- [ ] NO text (episode number "01" bottom-left only)
-- [ ] Amber/gold tones boosted, dark background vignette
+- [ ] Thumbnail created based on youtube_package.md guidance (PENDING)
+- [x] Scene chosen: S39-S40 First Contact (fingers reaching)
+- [x] NO text (episode number "01" bottom-left only)
+- [x] Amber/gold tones boosted, dark background vignette (spec ready)
 
 ### Channel Readiness
-- [ ] YouTube channel "Fibula" is configured (profile pic, banner v1, About section)
-- [ ] Instagram account live with bio and profile pic
-
-- [ ] Playlist created: "ROBOTIKO v2.0 — The Complete Journey"
-- [ ] Link in bio updated on Instagram → YouTube channel
+- [x] YouTube channel "Fibula" is configured (@fibuladev, profile pic, banner v1, About section)
+- [x] Instagram account live (@fibuladev, bio, profile pic)
+- [x] Playlist created: "ROBOTIKO v2.0 — The Complete Journey"
+- [x] Link in bio updated on Instagram → youtube.com/@fibuladev
 
 ### Files
-- [ ] project_metadata.json EP01 status updated to "ready_for_launch"
-- [ ] All pre-launch calendar posts completed (Days 1-13)
+- [x] project_metadata.json EP01 status updated to "pre_launch"
+- [ ] All pre-launch calendar posts completed (Days 1-6 done, Days 7-13 in progress)
 
 ---
 

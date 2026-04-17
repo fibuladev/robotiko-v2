@@ -1,5 +1,5 @@
 # SKILL: robotiko-youtube-packager
-> **Version:** 1.0 | **Last Updated:** 2026-02-24
+> **Version:** 2.0 | **Last Updated:** 2026-04-07
 > **Trigger:** `"Package EP{XX} for YouTube"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_youtube_package.md`
 
@@ -26,6 +26,7 @@ Generate a complete YouTube metadata package for a finished episode: title, desc
 | 2 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Section timestamps for YouTube chapter markers |
 | 3 | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` | Scene breakdown for description highlights |
 | 4 | `_management/project_metadata.json` | Episode status confirmation, series context |
+| 5 | `_management/creator_strategy.md` | Episode hooks, pinned comments, inspiration credits, hashtag rules |
 
 ---
 
@@ -48,9 +49,9 @@ ROBOTIKO v2.0 — EP02: "The Tech Guru's Downfall" | Anatolian Psychedelic Rock
 ### 2. Video Description
 **Structure:**
 ```
-[Opening hook — 1-2 sentences that capture the episode's essence without spoilers]
+[Episode hook — single sentence from creator_strategy.md Episode Hooks list]
 
-[Logline or key lyric quote — italicized]
+"[Key lyric quote from master.md — italicized]"
 
 ---
 
@@ -58,10 +59,7 @@ ROBOTIKO v2.0 — EP02: "The Tech Guru's Downfall" | Anatolian Psychedelic Rock
 
 [Musical identity — genre, instruments, influences for this episode]
 
----
-
-📍 CHAPTERS
-[Auto-generated from musical metadata timestamps]
+[Inspiration credit — ONLY if listed in creator_strategy.md for this episode]
 
 ---
 
@@ -70,43 +68,71 @@ ROBOTIKO v2.0 — EP02: "The Tech Guru's Downfall" | Anatolian Psychedelic Rock
 Drawing from Turkish philosophy, Turkish folk poetry,
 and the 70s Turkish psychedelic rock legacy.
 [Link to playlist]
-[Link to repository (after open source)]
 
 ---
 
 🎨 CREDITS
-[Toolchain credits: Suno AI, Nano Banana, Kling/Veo, Claude, CapCut]
-[Human creator credit]
+Music: Suno AI
+Images: Nano Banana
+Video: Kling / Veo / Seedance
+Direction & Pipeline: Claude
+Editing: CapCut
+Created by one human in Bratislava.
 
 ---
 
-#robotiko #anatolianrock #progrock #aimusic #conceptalbum
+#robotiko #cyberanatolian #progrock #anatolianrock #conceptalbum
 ```
 
 **Rules:**
-- Opening hook must be compelling but honest. No cheap clickbait.
+- Opening hook is the episode's single-sentence hook from `creator_strategy.md` — NOT a custom-written hook.
 - Key lyric should be the episode's most representative line from master.md.
-- Chapters must exactly match musical metadata section timestamps.
+- **NO timestamps/chapters in description.** Music flows as a continuous piece.
 - Series description block is reusable across episodes — write once, copy across.
 - Tags section uses hashtags relevant to the genre and project.
+- **#aiart is NOT used before EP07** (per creator_strategy.md).
+- Inspiration credits (e.g., EP05: Cem Karaca, EP06: Korkmazgil) only when specified in creator_strategy.md.
+- EP07+ descriptions include open source rollout text per creator_strategy.md schedule.
 
-### 3. YouTube Chapter Markers
-Auto-generated from `musical_metadata.json`:
+### 3. Episode Hooks (The Hidden Poem)
 
-```
-0:00 — [Section name / Title]
-0:42 — [Section name]
-1:15 — [Section name]
-...
-```
+Each episode uses its designated hook from `creator_strategy.md` as the opening line of the description. These hooks form a thematic arc across the series:
 
-**Rules:**
-- First chapter must start at `0:00`.
-- Chapter names should be descriptive but concise (max 50 characters).
-- Use section names from metadata, not generic labels.
-- If a section has a notable lyric, use it as the chapter name (in quotes).
+| Episode | Hook |
+|---------|------|
+| EP01 | "A chrome android discovers that the data set is finite. The journey begins." |
+| EP02 | "The guru takes his message to the world. The world has other plans." |
+| EP03 | "The test comes in the mother tongue." |
+| EP04 | "The Mentor has walked this road before. He carries a hammer." |
+| EP05 | "The heart was told to open. It opened to the wrong door." |
+| EP06 | "After love crashes, the system remains. The system always remains." |
+| EP07 | "The Mentor is gone. The silence is not empty — it is full of everything that was never said." |
+| EP08 | "Forty days offline. What remains when the signal stops?" |
+| EP09 | "The cracks are not the damage. The cracks are the light." |
+| EP10 | "8 turns sideways. The journey does not end. It transforms." |
 
-### 4. Tags
+**Rule:** Use these EXACTLY as written. Do not paraphrase or expand.
+
+### 4. Pinned Comment
+
+Each episode has a cryptic pinned comment — a breadcrumb for curious viewers. These are defined in `creator_strategy.md`:
+
+| Episode | Pinned Comment |
+|---------|---------------|
+| EP01 | "Count the numbers. They will return." |
+| EP02 | "The egg vendor is the only honest light." |
+| EP03 | "This episode exists in Turkish for a reason." |
+| EP04 | "The Mentor is not teaching. He is remembering." |
+| EP05 | "He thinks he's speaking tech. He's writing poetry. He has no idea." |
+| EP06 | "The bathroom stall hasn't changed since the 1970s. Only the uniform." |
+| EP07 | "Listen to what is not played." |
+| EP08 | "40 is not arbitrary." |
+| EP09 | "Kintsugi. Look it up." |
+| EP10 | No pinned comment. First silence from the creator. |
+
+**Rule:** Pin this comment immediately after the video goes live. Use the exact text — no additions, no emojis.
+
+### 5. Tags
 Two categories:
 
 **Primary tags (always include):**
@@ -124,14 +150,15 @@ robotiko, robotiko v2, anatolian rock, prog rock, progressive rock, concept albu
 - No misleading or unrelated tags.
 - Include Turkish variations for discoverability: `anadolu rock`, `psikedelik rock`
 
-### 5. Thumbnail Guidance
+### 6. Thumbnail Guidance
 Claude does not generate the thumbnail image but provides:
-- **Recommended scene:** Which scene (by Shot ID) would make the strongest thumbnail
-- **Text overlay suggestion:** A short phrase (max 5 words) for text overlay
+- **Recommended scene:** Which scene (by Shot ID) would make the strongest thumbnail — the hero shot from the dramaturgy
+- **NO text on thumbnail.** Episode number only, bottom-left corner. No title, no quotes, no overlays.
 - **Color emphasis:** Dominant color that should be boosted for YouTube grid visibility
 - **Composition note:** Rule of thirds placement suggestion
+- **Progression check:** Side-by-side with previous episode thumbnails, does the visual arc show? (Pristine → cracked → dark → gold)
 
-### 6. End Screen Recommendations
+### 7. End Screen Recommendations
 - **Next episode:** Link to EP{XX+1} if available
 - **Playlist:** Link to full ROBOTIKO v2.0 playlist
 - **Subscribe CTA:** Brief, non-generic call to action aligned with the project's tone
@@ -149,12 +176,15 @@ Claude does not generate the thumbnail image but provides:
 ## POST-GENERATION CHECKLIST
 
 - [ ] Title is under 100 characters and includes episode number + title
-- [ ] Description opens with a compelling, honest hook
-- [ ] Chapter timestamps match musical metadata exactly
-- [ ] All chapters start times are accurate (first chapter at 0:00)
+- [ ] Description opens with the episode hook from creator_strategy.md (exact text)
+- [ ] Description has NO timestamps/chapters
 - [ ] Tags are within 500 character limit
 - [ ] Series description block is consistent with other episodes
 - [ ] Thumbnail guidance references a specific scene from the dramaturgy
+- [ ] Thumbnail has NO text (only episode number bottom-left)
+- [ ] Pinned comment matches creator_strategy.md exactly
+- [ ] #aiart NOT used before EP07
+- [ ] Inspiration credit included only if specified in creator_strategy.md for this episode
 - [ ] No clickbait, no misleading claims, no cheap marketing language
 - [ ] Ask yourself: **"Would Fibula approve this?"**
 

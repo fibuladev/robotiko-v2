@@ -1,5 +1,5 @@
 # SKILL: robotiko-launch-orchestrator
-> **Version:** 1.0 | **Last Updated:** 2026-02-24
+> **Version:** 2.0 | **Last Updated:** 2026-04-07
 > **Trigger:** `"Orchestrate EP{XX} launch"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_launch_checklist.md`
 
@@ -59,14 +59,14 @@ The output is a comprehensive checklist organized in launch phases:
 ## YOUTUBE UPLOAD
 - [ ] Video uploaded to YouTube (unlisted first for review)
 - [ ] Title pasted from youtube_package.md
-- [ ] Description pasted from youtube_package.md
-- [ ] Chapter markers verified in YouTube preview
+- [ ] Description pasted from youtube_package.md (NO timestamps)
 - [ ] Tags added from youtube_package.md
-- [ ] Thumbnail uploaded
+- [ ] Thumbnail uploaded (NO text — episode number bottom-left only)
 - [ ] End screen configured (next episode / playlist / subscribe)
 - [ ] Cards added at key moments (if applicable)
 - [ ] Visibility set to "Scheduled" or "Public" per launch plan
 - [ ] Premiere settings configured (if using premiere)
+- [ ] **Pinned comment posted** — exact text from youtube_package.md (breadcrumb for curious viewers)
 ```
 
 ### PHASE 3: SOCIAL MEDIA ROLLOUT
@@ -90,10 +90,23 @@ The output is a comprehensive checklist organized in launch phases:
 ## POST-LAUNCH
 - [ ] project_metadata.json status updated to "completed"
 - [ ] Episode folder verified for completeness (all phases documented)
-- [ ] S3 backup triggered (if automated) or manual backup completed
+- [ ] Google Drive backup verified (all binary assets in correct episode folder)
 - [ ] Naming convention validated for all episode files ("Validate file names for EP{XX}")
 - [ ] Commit: "EP{XX} - Launch - Episode published and verified"
 - [ ] Lessons learned noted in _memory/lessons.md (if any issues during launch)
+
+## BANNER & ABOUT UPDATE CHECK
+After each episode launch, check if a banner/About section update is due:
+
+| After Episode | Banner Update | About Update |
+|---------------|--------------|--------------|
+| EP03 | Banner v2 — subtle cracks visible | Phase 2 About text |
+| EP06 | Banner v3 — near-monochrome, fragmenting | Phase 3 About text (reveals "one human + AI") |
+| EP08 | Banner v4 — dark with golden light in cracks | — |
+| EP10 | Banner v5 — full Kintsugi, gold light from within | Phase 4 About text + open source link |
+
+If a banner update is due after this episode's launch, flag it as an action item.
+Banner specs: `_assets/banners/banner_v{N}_spec.md`
 ```
 
 ---
@@ -129,16 +142,37 @@ Claude suggests a strategy based on the episode's position in the series, but th
 EP10 is the series finale. The launch orchestration for EP10 includes additional steps:
 
 ```
+## EP07-EP10 OPEN SOURCE ROLLOUT
+
+Starting EP07, each episode's YouTube description includes an open source tease per `creator_strategy.md`:
+
+| Episode | Description Addition |
+|---------|---------------------|
+| EP07 | "After Episode 10, the full production pipeline will be open source." |
+| EP08 | "The pipeline behind this series will be open source after the finale." |
+| EP09 | "Two episodes remain. The pipeline approaches open source." |
+| EP10 | "The journey is complete. The pipeline is open source: [GitHub link]" |
+
+**EP07 special:** Include a silent text card after music fades: "This was made by one human and AI. The full pipeline will be open source." (3 seconds, white on black).
+
 ## EP10 SPECIAL — SERIES FINALE
 - [ ] All 10 episodes verified in playlist (correct order)
 - [ ] Series retrospective description written (optional)
 - [ ] All previous episode end screens updated to form a complete chain
-- [ ] Open source release prepared (if ready)
+- [ ] Open source release prepared:
+  - [ ] Repository visibility set to PUBLIC (same day as EP10 release — no delay)
+  - [ ] AUTHOR.md visible at repo root
   - [ ] CONTRIBUTING.md finalized
-  - [ ] docs/ completed
-  - [ ] Repository cleaned for public visibility
-  - [ ] Announcement post drafted
+  - [ ] README.md updated with GitHub link and final status
+  - [ ] getting-started.md completed with full tool setup
+  - [ ] tools-setup.md completed with detailed per-tool setup
+  - [ ] All skills reviewed for reusability
+  - [ ] _management/master.md locked (final version)
+  - [ ] Announcement post drafted for all platforms
+- [ ] Banner v5 uploaded (full Kintsugi)
+- [ ] About section updated to Phase 4 (includes open source link)
 - [ ] Final project_metadata.json update: all episodes marked "completed"
+- [ ] EP10 has NO pinned comment — first silence from the creator
 ```
 
 ---

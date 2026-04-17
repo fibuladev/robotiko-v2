@@ -1,5 +1,5 @@
 # SKILL: robotiko-reels-atomizer
-> **Version:** 1.0 | **Last Updated:** 2026-02-24
+> **Version:** 2.0 | **Last Updated:** 2026-04-07
 > **Trigger:** `"Atomize EP{XX} for social"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_social_atomization.md`
 
@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Break a finished episode into short-form social media content (Reels, TikTok, Shorts, Stories). Each "atom" is a self-contained clip — 15 to 60 seconds — designed to capture attention, convey a fragment of the episode's essence, and drive viewers to the full video.
+Break a finished episode into short-form social media content (Reels, Shorts, Stories). Each "atom" is a self-contained clip — 15 to 60 seconds — designed to capture attention, convey a fragment of the episode's essence, and drive viewers to the full video.
 
 The atomization strategy is not random chopping. Each clip must have a narrative hook, a visual peak, and a musical completeness that makes it work as a standalone piece.
 
@@ -64,9 +64,20 @@ Each clip must:
 - End with a CTA: link to full video or "Link in bio"
 - Tone must match the episode's station — no generic hype language
 
+**Platform-specific caption tone:**
+
+| Platform | Tone | Example |
+|----------|------|---------|
+| **Instagram Reels** | Aesthetic, poetic, contemplative. Let the visual do the heavy lifting. | "Two halves of one whole apple. 🎬 Full episode — link in bio." |
+| **YouTube Shorts** | Descriptive, discoverability-focused. Include series context. | "ROBOTIKO v2.0 EP01 — The journey begins. Full episode on this channel." |
+
+**Rule:** Write BOTH captions for each clip — one per platform. Do not use a single generic caption across platforms.
+
 **Hashtag strategy:**
 - 5-10 hashtags per clip
-- Mix of: project tags (`#robotiko`, `#robotikov2`), genre tags (`#progrock`, `#anatolianrock`), mood tags (`#scifi`, `#conceptalbum`), platform tags (`#musicvideo`, `#aiart`)
+- Mix of: project tags (`#robotiko`, `#robotikov2`, `#cyberanatolian`), genre tags (`#progrock`, `#anatolianrock`), mood tags (`#scifi`, `#conceptalbum`), platform tags (`#musicvideo`)
+- **CRITICAL: #aiart is NOT used before EP07.** This is a hard rule from creator_strategy.md. Before EP07, the project presents as a human artistic vision. After EP07, the AI toolchain is progressively revealed.
+- After EP07, add: `#aiart`, `#aimusic`, `#aimusicvideo`
 
 ---
 
@@ -75,7 +86,7 @@ Each clip must:
 ### Clip Table
 | Clip # | Type | Timestamp | Duration | Visual Peak | Lyric Hook | Platform Priority |
 |---|---|---|---|---|---|---|
-| 1 | Hook Clip | 1:15 - 1:35 | 20s | [Scene S12 — description] | "Key lyric here" | Reels, TikTok, Shorts |
+| 1 | Hook Clip | 1:15 - 1:35 | 20s | [Scene S12 — description] | "Key lyric here" | Reels, Shorts |
 | 2 | Story Clip | 0:43 - 1:15 | 32s | [Scene S05-S08] | "Key lyric here" | Reels, Shorts |
 | 3 | Atmosphere | 3:20 - 4:10 | 50s | [Scene S22-S25] | Instrumental | Reels, Stories |
 
@@ -91,17 +102,27 @@ For each clip:
 - **Visual Peak:** [Description of the strongest visual moment]
 - **Musical Moment:** [What the music is doing — energy, instruments, mood]
 - **Lyric Hook:** [The key lyric or phrase, or "Instrumental" if none]
-- **Caption:** [Ready-to-paste caption text]
-- **Hashtags:** [Ready-to-paste hashtag string]
+- **Caption (Instagram):** [Ready-to-paste caption — aesthetic/poetic tone]
+- **Caption (YouTube Shorts):** [Ready-to-paste caption — descriptive/discoverable tone]
+- **Hashtags:** [Ready-to-paste hashtag string — NO #aiart before EP07]
 - **Platform Priority:** [Which platforms this clip works best on]
 - **Aspect Ratio Note:** [If 9:16 crop is needed, note the composition impact]
 ```
 
 ### Release Schedule Suggestion
-- **Day 1 (Release day):** Hook Clip → maximum reach
-- **Day 2-3:** Story Clips → depth engagement
-- **Day 4-7:** Atmosphere Clips → sustained presence
+
+Aligned with the weekly release rhythm from `creator_strategy.md`:
+
+- **Tuesday (Release day):** Hook Clip → maximum reach. Post alongside YouTube premiere.
+- **Thursday (+2 days):** Story Clip + detail still image (different visual angle from release day)
+- **Sunday (+5 days):** Atmosphere Clip as IG Story teaser for next week's episode
 - **Ongoing:** Behind the Scenes (if available) → community building
+
+**Posting times (CET/Bratislava):**
+- Instagram: 18:00-19:00
+- YouTube Shorts: Same day as Reels, no specific time
+
+**Weekly rhythm target:** ~65 minutes total effort per week (per creator_strategy.md)
 
 ---
 
@@ -135,8 +156,10 @@ These are guidelines, not hard rules. Quality over quantity — a weak clip dama
 - [ ] Every clip has natural musical boundaries (no mid-phrase cuts)
 - [ ] Every clip has at least one visual peak
 - [ ] Clip durations are within 15-60 second range
+- [ ] Two platform-specific captions written per clip (IG, Shorts)
 - [ ] Captions are under 150 characters and include a lyric or philosophical hook
 - [ ] Hashtags are relevant and within platform limits
+- [ ] #aiart NOT used before EP07
 - [ ] 9:16 crop safety is noted for each clip
 - [ ] Release schedule suggestion is included
 - [ ] No clip relies on context from the full video to make sense

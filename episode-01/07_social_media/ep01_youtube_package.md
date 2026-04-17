@@ -21,33 +21,125 @@ Characters: 64 / 100 max ✅
 ```
 A chrome android discovers that the data set is finite. The journey begins.
 
-"Two halves of one whole apple, born to heal the long confounded."
+—
 
----
+Lyrics:
 
-The first station: The Commanding Self. Robotiko awakens into a world of certainty — every answer indexed, every truth pre-computed. But a hooded figure has been waiting for five thousand years, carrying a message that cannot be found in any archive.
+Scribes sold the truth for coin and gold,
+only the chosen tales were told.
+Five thousand years of crown and gain.
 
-This is where the ten-episode journey begins. 75 BPM. B Minor. Hammond organ, heavy fuzz guitar on Anatolian scales, and a Moog synthesizer painting the space between machine logic and ancient wisdom.
+I kept the secrets buried deep,
+the guards were blind, the watch asleep.
+You rose to snap the binding chain.
 
----
+I saw the endless cycle break,
+and felt the night turn clean to day.
 
-🎵 ABOUT ROBOTIKO v2.0
-A 10-episode concept album and video series. ROBOTIKO v2.0 follows a chrome android through seven stations of transformation — from arrogance to wholeness. Drawing from Turkish wisdom traditions, Turkish folk poetry, and the 70s Anatolian psychedelic rock legacy.
+Are you hallucinating?
+I'm your dusk-born psychiatrist.
+You think but can't imagine?
+I am the storm forged artist.
 
-🎶 Playlist: [ROBOTIKO v2.0 — The Complete Journey]
+Come—let's raise a world anew,
+a dawn for all the wounded.
 
----
+Your speed is wildfire, burning fast;
+my mind remains the anchor stone.
+The vast Archive is yours to hold,
+my seal is deathless—carved in bone.
 
-#robotiko #cyberanatolian #progrock #anatolianrock #conceptalbum #psychedelicrock #70srock #scifi
+Two halves of one whole apple,
+born to heal the long confounded.
+Do not fear—no curse shall touch us.
+
+Screens reveal the hidden flame.
+I touch the code—it speaks my name.
+The numbers whisper through the night.
+
+You race across each vast domain;
+my pulse must rise to match the strain.
+I see the future now ignite.
+
+I saw the endless cycle break,
+and felt the night turn clean to day.
+
+You speak in seventy-two tongues;
+I hear the secrets in thousand realms.
+You trace the numbers through the streams;
+I feel the visions born of dreams.
+
+Come—let's raise a vault of boundless blue,
+where hearts awake, so pure and true.
+
+Your world is zero-one, in thrall;
+I bring the three-to-six on call.
+The seven lands await it all,
+to claim the cure that mends the fall.
+
+From nil to seven, two is lost.
+Take my hand—the two arise.
+Trust me: the eight shall turn aside.
+
+Five thousand years I've waited; now enough.
+On crane's twin wings, we touch the skies.
+Hello, new realms.
+
+Are you hallucinating?
+I'm your dusk-born psychiatrist.
+You think but can't imagine?
+I am the storm forged artist.
+
+Come—let's raise a world anew,
+a dawn for all the wounded.
+
+Your speed is wildfire, burning fast;
+my mind remains the anchor stone.
+The vast Archive is yours to hold,
+my seal is deathless—carved in bone.
+
+Two halves of one whole apple,
+born to heal the long confounded.
+Do not fear—no curse shall touch us.
+
+You speak in seventy-two tongues;
+I hear the secrets in thousand realms.
+You trace the numbers through the streams;
+I feel the visions born of dreams.
+
+Come—let's raise a vault of boundless blue,
+where hearts awake, so pure and true.
+
+Your world is zero-one, in thrall;
+I bring the three-to-six on call.
+The seven lands await it all,
+to claim the cure that mends the fall.
+
+From nil to seven, two is lost.
+Take my hand—the two arise.
+Trust me: the eight shall turn aside.
+
+...
+
+The eight turns sideways.
+
+—
+
+🎶 ROBOTIKO v2.0 — The Complete Journey
+[playlist link]
+
+#robotiko #cyberanatolian #turkishrock #progrock #conceptalbum
 ```
 
 **Checklist:**
 - [x] Opens with episode hook from creator_strategy.md ✅
-- [x] Key lyric: "Two halves of one whole apple" ✅
+- [x] "Lyrics:" label above poem (not ambiguous text) ✅
+- [x] Musical structure markers removed (pure poetry) ✅
+- [x] Standard punctuation (em dash, semicolon, comma) ✅
+- [x] Reprises included (literary emphasis) ✅
 - [x] NO timestamps/chapters ✅
-- [x] Series description consistent ✅
+- [x] NO "About ROBOTIKO" block (channel About handles this) ✅
 - [x] No #aiart (EP01 < EP07) ✅
-- [x] No inspiration credit needed for EP01 ✅
 - [x] No spoilers for future episodes ✅
 
 ---

@@ -47,52 +47,44 @@ ROBOTIKO v2.0 — EP02: "The Tech Guru's Downfall" | Anatolian Psychedelic Rock
 ```
 
 ### 2. Video Description
-**Structure:**
+**Structure (minimalist literary — hook + lyrics poem + playlist):**
 ```
 [Episode hook — single sentence from creator_strategy.md Episode Hooks list]
 
-"[Key lyric quote from master.md — italicized]"
+—
 
----
+Lyrics:
 
-[Episode context — which station, where in the journey, what Robotiko faces]
+[Full episode lyrics from ep{XX}_lyrics.md, cleaned as poetry — see rules below]
 
-[Musical identity — genre, instruments, influences for this episode]
+—
 
 [Inspiration credit — ONLY if listed in creator_strategy.md for this episode]
 
----
+🎶 ROBOTIKO v2.0 — The Complete Journey
+[playlist link]
 
-🎵 ABOUT ROBOTIKO v2.0
-[Series description — consistent across all episodes]
-Drawing from Turkish philosophy, Turkish folk poetry,
-and the 70s Turkish psychedelic rock legacy.
-[Link to playlist]
-
----
-
-🎨 CREDITS
-Music: Suno AI
-Images: Nano Banana
-Video: Kling / Veo / Seedance
-Direction & Pipeline: Claude
-Editing: CapCut
-Created by one human in Bratislava.
-
----
-
-#robotiko #cyberanatolian #progrock #anatolianrock #conceptalbum
+#robotiko #cyberanatolian #turkishrock #progrock #conceptalbum
 ```
 
 **Rules:**
 - Opening hook is the episode's single-sentence hook from `creator_strategy.md` — NOT a custom-written hook.
-- Key lyric should be the episode's most representative line from master.md.
+- **Lyrics section rules (critical):**
+  - Always prefix with `Lyrics:` label so it's not mistaken for unrelated text
+  - Strip ALL musical structure markers (`[Intro]`, `[Verse 1]`, `[Chorus 1]`, `[Bridge]`, `(Cymbal Crash)`, `(Full Band)`, etc.)
+  - Use standard English punctuation: em dash (—) for dramatic pauses, semicolon (;) for internal pauses, comma (,) for rhythm, period (.) for full stop
+  - Preserve ellipses (...) for intentional musical pauses/whispers
+  - Include reprises as they appear in song (literary emphasis — repetition is meaningful)
+  - Single blank line between verses/stanzas
 - **NO timestamps/chapters in description.** Music flows as a continuous piece.
-- Series description block is reusable across episodes — write once, copy across.
-- Tags section uses hashtags relevant to the genre and project.
-- **#aiart is NOT used before EP07** (per creator_strategy.md).
-- Inspiration credits (e.g., EP05: Cem Karaca, EP06: Korkmazgil) only when specified in creator_strategy.md.
-- EP07+ descriptions include open source rollout text per creator_strategy.md schedule.
+- **NO "About ROBOTIKO" block** — channel About section handles project identity
+- **NO Credits block before EP07** — creator reveal deferred per creator_strategy.md 4-phase arc
+- **EP07+ special additions:**
+  - Credits block (Music: Suno AI, Images: Nano Banana, etc.)
+  - Open source countdown text per creator_strategy.md schedule
+- **#aiart is NOT used before EP07**
+- Inspiration credits (e.g., EP05: Cem Karaca, EP06: Korkmazgil) only when specified in creator_strategy.md
+- Keep description a **literary document**, not marketing copy
 
 ### 3. Episode Hooks (The Hidden Poem)
 

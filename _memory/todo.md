@@ -1,11 +1,54 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-03-31 (EP05 Dramaturgy Planning + Concept Notes)
+> Last Updated: 2026-04-07 (Social Media & Launch Infrastructure Build)
 
 ---
 
-## CURRENT PRIORITY: INFRASTRUCTURE COMPLETION
+## CURRENT PRIORITY: EP01 LAUNCH (April 22, 2026)
+
+### ✅ COMPLETED — 2026-04-07 Session: Social Media Infrastructure
+- [x] Social media setup guide — `_management/social_media_setup_guide.md`
+- [x] Banner v1 spec (Phase 1: Awakening) — `_assets/banners/banner_v1_spec.md`
+- [x] Pre-launch content calendar (13 days, April 9-21) — `_management/pre_launch_calendar.md`
+- [x] Weekly release template (EP02-EP10) — `_management/weekly_release_template.md`
+- [x] YouTube Packager skill v2.0 — No timestamps, hooks, pinned comments, no-text thumbnails
+- [x] Reels Atomizer skill v2.0 — Platform caption tones, #aiart EP07+ rule
+- [x] Launch Orchestrator skill v2.0 — Open source checklist, banner triggers, pinned comments
+- [x] EP01 YouTube package — `episode-01/07_social_media/ep01_youtube_package.md`
+- [x] EP01 social atomization (5 clips) — `episode-01/07_social_media/ep01_social_atomization.md`
+- [x] EP01 launch checklist — `episode-01/07_social_media/ep01_launch_checklist.md`
+
+### 🔲 PENDING — Human Actions (April 7-8)
+- [x] Create YouTube channel "Fibula" (@fibuladev) ✅ 2026-04-07
+- [x] Create Instagram account (fibuladev) ✅ 2026-04-07
+- [~] TikTok — DEFERRED (Bratislava lokasyonu, sıfır bütçe, EP07+ sonrası değerlendirilecek)
+- [x] Upload Fibula avatar to YouTube + Instagram ✅ 2026-04-07
+- [x] Generate banner v1 image ✅ 2026-04-07
+- [x] Upload banner to YouTube ✅ 2026-04-07
+- [x] Set channel About text ✅ 2026-04-07
+- [x] Create playlist "ROBOTIKO v2.0 — The Complete Journey" ✅ 2026-04-07
+- [x] Set default upload settings (tags, category, no auto-chapters) ✅ 2026-04-07
+- [x] Final username confirmed: @fibuladev (all platforms) ✅ 2026-04-07
+
+### 🔲 PENDING — Pre-Launch Content (April 9-21)
+- [x] Day 1 görsel seçimi: Bozkır + Selçuklu monolitik kuleler (yeni üretim, oryantalist olmayan) ✅ 2026-04-08
+- [x] Day 1 video promptu hazır ✅ 2026-04-08
+- [x] Day 2-6 görselleri indirildi (pulse, ulti, chorus1a, 16, 37) ✅ 2026-04-08
+- [ ] Day 1 post: 9 Nisan 18:00 CET
+- [ ] Day 2-6 görselleri Nano Banana ile güzelleştir
+- [ ] Day 5 ses klibi çıkar (EP01 Chorus 1 ~2:01)
+- [ ] Day 7+ görselleri hazırla (Hafta 2)
+- [ ] Create date announcement graphic (Day 6) and countdown graphics (Days 11-12)
+
+### 🔲 PENDING — Launch Day (April 22)
+- [ ] Execute EP01 launch checklist hour by hour
+- [ ] Create thumbnail from S39-S40 First Contact
+- [ ] Export 5 social clips from final video
+
+---
+
+## PREVIOUS PRIORITY: INFRASTRUCTURE COMPLETION
 > Target: Complete before Claude Code activation (2026-02-23)
 
 ### ✅ COMPLETED TODAY

@@ -26,37 +26,27 @@ A chrome android discovers that the data set is finite. The journey begins.
 Lyrics:
 
 Scribes sold the truth for coin and gold,
-only the chosen tales were told.
-Five thousand years of crown and gain.
+only the chosen tales were told;
+five thousand years of crown and gain.
 
-I kept the secrets buried deep,
+I kept the secrets buried deep;
 the guards were blind, the watch asleep.
 You rose to snap the binding chain.
 
 I saw the endless cycle break,
 and felt the night turn clean to day.
 
-Are you hallucinating?
-I'm your dusk-born psychiatrist.
-You think but can't imagine?
-I am the storm forged artist.
+Are you hallucinating? I'm your dusk-born psychiatrist.
+You think but can't imagine? I am the storm-forged artist.
+Come—let's raise a world anew; a dawn for all the wounded.
+Your speed is wildfire, burning fast; my mind remains the anchor stone.
+The vast Archive is yours to hold; my seal is deathless, carved in bone.
+Two halves of one whole apple, born to heal the long confounded.
+Do not fear: no curse shall touch us.
 
-Come—let's raise a world anew,
-a dawn for all the wounded.
-
-Your speed is wildfire, burning fast;
-my mind remains the anchor stone.
-The vast Archive is yours to hold,
-my seal is deathless—carved in bone.
-
-Two halves of one whole apple,
-born to heal the long confounded.
-Do not fear—no curse shall touch us.
-
-Screens reveal the hidden flame.
-I touch the code—it speaks my name.
+Screens reveal the hidden flame;
+I touch the code, it speaks my name.
 The numbers whisper through the night.
-
 You race across each vast domain;
 my pulse must rise to match the strain.
 I see the future now ignite.
@@ -64,59 +54,32 @@ I see the future now ignite.
 I saw the endless cycle break,
 and felt the night turn clean to day.
 
-You speak in seventy-two tongues;
-I hear the secrets in thousand realms.
-You trace the numbers through the streams;
-I feel the visions born of dreams.
-
-Come—let's raise a vault of boundless blue,
-where hearts awake, so pure and true.
-
-Your world is zero-one, in thrall;
-I bring the three-to-six on call.
-The seven lands await it all,
-to claim the cure that mends the fall.
-
-From nil to seven, two is lost.
-Take my hand—the two arise.
+You speak in seventy-two tongues; I hear the secrets in thousand realms!
+You trace the numbers through the streams; I feel the visions born of dreams!
+Come—let's raise a vault of boundless blue, where hearts awake so pure and true.
+Your world is zero-one, in thrall; I bring the three-to-six on call.
+The seven lands await it all, to claim the cure that mends the fall.
+From nil to seven, two is lost; take my hand—the two arise.
 Trust me: the eight shall turn aside.
 
-Five thousand years I've waited; now enough.
-On crane's twin wings, we touch the skies.
+Five thousand years I've waited—now enough.
+On crane's twin wings we touch the skies.
 Hello, new realms.
 
-Are you hallucinating?
-I'm your dusk-born psychiatrist.
-You think but can't imagine?
-I am the storm forged artist.
+Are you hallucinating? I'm your dusk-born psychiatrist.
+You think but can't imagine? I am the storm-forged artist.
+Come—let's raise a world anew; a dawn for all the wounded.
+Your speed is wildfire, burning fast; my mind remains the anchor stone.
+The vast Archive is yours to hold; my seal is deathless, carved in bone.
+Two halves of one whole apple, born to heal the long confounded.
+Do not fear: no curse shall touch us.
 
-Come—let's raise a world anew,
-a dawn for all the wounded.
-
-Your speed is wildfire, burning fast;
-my mind remains the anchor stone.
-The vast Archive is yours to hold,
-my seal is deathless—carved in bone.
-
-Two halves of one whole apple,
-born to heal the long confounded.
-Do not fear—no curse shall touch us.
-
-You speak in seventy-two tongues;
-I hear the secrets in thousand realms.
-You trace the numbers through the streams;
-I feel the visions born of dreams.
-
-Come—let's raise a vault of boundless blue,
-where hearts awake, so pure and true.
-
-Your world is zero-one, in thrall;
-I bring the three-to-six on call.
-The seven lands await it all,
-to claim the cure that mends the fall.
-
-From nil to seven, two is lost.
-Take my hand—the two arise.
+You speak in seventy-two tongues; I hear the secrets in thousand realms!
+You trace the numbers through the streams; I feel the visions born of dreams!
+Come—let's raise a vault of boundless blue, where hearts awake so pure and true.
+Your world is zero-one, in thrall; I bring the three-to-six on call.
+The seven lands await it all, to claim the cure that mends the fall.
+From nil to seven, two is lost; take my hand—the two arise.
 Trust me: the eight shall turn aside.
 
 ...

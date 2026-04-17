@@ -72,10 +72,19 @@ Lyrics:
 - **Lyrics section rules (critical):**
   - Always prefix with `Lyrics:` label so it's not mistaken for unrelated text
   - Strip ALL musical structure markers (`[Intro]`, `[Verse 1]`, `[Chorus 1]`, `[Bridge]`, `(Cymbal Crash)`, `(Full Band)`, etc.)
-  - Use standard English punctuation: em dash (—) for dramatic pauses, semicolon (;) for internal pauses, comma (,) for rhythm, period (.) for full stop
+  - **Identify rhyme scheme (AAB tercets, ABAB, couplets, etc.) and preserve it through punctuation:**
+    - Within-stanza pause: semicolon (;) or comma (,)
+    - End-of-stanza: period (.)
+    - Don't break tercets with periods mid-structure — this loses the AAB bond
+  - **Call-response chorus pairs (AI vs Human, Q&A structure):** Place both on a single line separated by period. This represents vocal duet structure (Leonard Cohen lyric book style)
+  - Use em dash (—) for dramatic pauses, not semicolon (e.g., "Five thousand years I've waited—now enough")
+  - Use colon (:) for vow/oath/proclamation tone (e.g., "Trust me: the eight shall turn aside")
   - Preserve ellipses (...) for intentional musical pauses/whispers
+  - Preserve exclamation marks (!) from original when they denote musical crescendo
+  - Use typographic apostrophe (') not straight apostrophe (')
+  - Hyphenate compound modifiers: "dusk-born", "storm-forged", "seventy-two"
   - Include reprises as they appear in song (literary emphasis — repetition is meaningful)
-  - Single blank line between verses/stanzas
+  - Single blank line between verses/stanzas; NO blank line within a chorus block
 - **NO timestamps/chapters in description.** Music flows as a continuous piece.
 - **NO "About ROBOTIKO" block** — channel About section handles project identity
 - **NO Credits block before EP07** — creator reveal deferred per creator_strategy.md 4-phase arc

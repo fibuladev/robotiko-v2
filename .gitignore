@@ -107,6 +107,9 @@ _management/platform_research_*.md
 _tools/*.ps1
 _assets/banner_test.png
 
+# Local walkthrough documents (operational, not shared)
+episode-*/07_social_media/*_walkthrough.md
+
 # -----------------------------------------------------------------------------
 # TEMP & LOGS
 # -----------------------------------------------------------------------------

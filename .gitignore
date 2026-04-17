@@ -103,6 +103,10 @@ Desktop.ini
 _management/notebooklm_brief.md
 _management/platform_research_*.md
 
+# Personal/local utility scripts (not project-related)
+_tools/*.ps1
+_assets/banner_test.png
+
 # -----------------------------------------------------------------------------
 # TEMP & LOGS
 # -----------------------------------------------------------------------------

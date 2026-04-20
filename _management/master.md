@@ -98,6 +98,22 @@ The tradition we draw from is one of radical inclusion: "Whatever you seek, seek
 
 ---
 
+### 2.4 The Twin Arrogances
+
+Two voices dominate the late-2020s tech-cultural landscape, and they are not opposites. They are dialects of the same grammar.
+
+- **The Hard Dialect** speaks of software as civilizational weapon, of culture ranked by output, of the right platform rescuing the right nation. Its preachers wear hoodies but speak like admirals.
+
+- **The Soft Dialect** speaks of technology as wellness, of meditation as productivity, of the right consumer ritual enlightening the self. Its preachers wear linen but sell the same platforms.
+
+Both share one assumption: that the world is a legible system, readable from above, fixable through intervention.
+
+ROBOTIKO begins fluent in both. EP02 exposes the hard dialect to reality. EP03 exposes the soft dialect to the mother tongue. Neither test is survived through upgrade. Both are survived through the slow abandonment of the grammar itself.
+
+The Mentor speaks neither dialect. He speaks the third tongue — the language of those who walk beside, not above.
+
+---
+
 ## 3. AESTHETIC & VISUAL DNA (THE GOLDEN STANDARD)
 
 ### 3.1 Style Identity
@@ -353,7 +369,7 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 | Episode | Language | Music Style | Why |
 |---|---|---|---|
 | EP01-02 | English | Anatolian Psychedelic Rock | AI's "global" identity. But the music already calls to its roots. |
-| EP03 | Turkish | Upbeat Anatolian Pop-Rock / Doom Rock | Trauma and test felt in the mother tongue. Anti-guru statement. |
+| EP03 | Turkish | Upbeat Anatolian Pop-Rock / Doom Rock | Trauma and test felt in the mother tongue. Anti-guru statement — both tech-messianism and spiritual tourism tested. |
 | EP04-07 | English | Anatolian Rock (evolving) | Back to English but forever changed by EP03. |
 | EP08-09 | Spoken Word (English) | Minimal Doom Rock / Dry Documentary | Form matches content. Truth needs no ornamentation. |
 | EP10 | Spoken Word (English) | TBD | The final revelation. Still becoming. |

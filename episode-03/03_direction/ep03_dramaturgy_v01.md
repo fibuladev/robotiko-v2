@@ -297,7 +297,7 @@ The station's transition within the episode:
 
 - **EP02 → EP03 continuity:** The ear damage from EP02's war zone shrapnel carries throughout EP03. Robotiko arrives in Anatolia already marked by his "Global Collapse Tour." The chrome carries visible battle scars — missing ear, torso dent, shoulder scratches — a reminder that this is not his first failure.
 - **EP03 → EP04 bridge:** The grease IV scene (S43-S44) directly sets up EP04 ("The Return to the Mentor / The Truth"). The stillness at the end of EP03 is the precondition for EP04's deeper teaching. The teenager returns humbled, not wise — but no longer certain.
-- **Anti-Guru Thesis:** The Model Selection Screen (S04) is the thesis statement. Every subsequent scene is evidence. Modern Anatolia does not distribute wisdom — it tests endurance. The satire targets Robotiko's expectations, not the land itself.
+- **Anti-Guru Thesis:** The Model Selection Screen (S04) is the thesis statement. Every subsequent scene is evidence. Modern Anatolia does not distribute wisdom — it tests endurance. The satire targets both the tech-guru's data-messianism and the spiritual-guru's wisdom-tourism. The "Guru" setting is the lowest model for a reason.
 - **The Grease IV as Kırkyama Foreshadowing:** The workshop repair in EP03 is the first hint of what will become the Kırkyama aesthetic in EP08-10 — repair with available materials, not pristine replacements. The kaynakçı does not restore the chrome to factory condition. He welds, greases, and sends the machine back out. This is the logic of Anatolian repair: functional, not cosmetic.
 
 ### Flagged for Human Review

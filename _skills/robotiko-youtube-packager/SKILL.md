@@ -1,5 +1,5 @@
 # SKILL: robotiko-youtube-packager
-> **Version:** 2.0 | **Last Updated:** 2026-04-07
+> **Version:** 3.0 | **Last Updated:** 2026-05-12
 > **Trigger:** `"Package EP{XX} for YouTube"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_youtube_package.md`
 
@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Generate a complete YouTube metadata package for a finished episode: title, description, timestamps, tags, thumbnail guidance, and end screen recommendations. This skill ensures every upload is optimized for discoverability while maintaining the project's artistic integrity.
+Generate a complete YouTube metadata package for a finished episode: title, description, tags, thumbnail guidance, and end screen recommendations. All metadata standards are defined in `_management/youtube_strategy_v01.md` — this skill implements those standards.
 
 ---
 
@@ -22,38 +22,43 @@ Generate a complete YouTube metadata package for a finished episode: title, desc
 
 | # | File | What to Extract |
 |---|---|---|
-| 1 | `_management/master.md` | Episode title, station, tone, key lyrics, logline, philosophical context |
-| 2 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Section timestamps for YouTube chapter markers |
-| 3 | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` | Scene breakdown for description highlights |
-| 4 | `_management/project_metadata.json` | Episode status confirmation, series context |
-| 5 | `_management/creator_strategy.md` | Episode hooks, pinned comments, inspiration credits, hashtag rules |
+| 1 | `_management/youtube_strategy_v01.md` | Metadata standards, tag list, category, title format, description template |
+| 2 | `_management/master.md` | Episode title, station, tone, key lyrics, logline, philosophical context |
+| 3 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Episode duration and musical context |
+| 4 | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` | Scene breakdown for thumbnail guidance |
+| 5 | `_management/project_metadata.json` | Episode status confirmation, series context |
+| 6 | `_management/creator_strategy.md` | Episode hooks, pinned comments, inspiration credits |
 
 ---
 
 ## OUTPUT STRUCTURE
 
 ### 1. Video Title
-**Format:** `ROBOTIKO v2.0 — EP{XX}: "{Episode Title}" | [Genre Tag]`
+**Format:** `[Curiosity Hook] | ROBOTIKO v2.0`
 
 **Rules:**
-- Maximum 100 characters
-- Include episode number and title from master.md
-- Append a genre/mood tag that aids discoverability
+- Maximum 70 characters
+- No episode numbers (meaningless to new viewers; playlists show order)
+- No genre labels ("Visual Album", "Anatolian Psychedelic Rock" — all removed)
+- Hook creates a curiosity gap — question, contradiction, or mystery
+- "ROBOTIKO" always at the end after pipe
 - Do not use clickbait or misleading titles — the art speaks for itself
 
 **Example:**
 ```
-ROBOTIKO v2.0 — EP02: "The Tech Guru's Downfall" | Anatolian Psychedelic Rock
+The Tech Guru's Downfall | ROBOTIKO
 ```
 
 ### 2. Video Description
-**Structure (minimalist literary — hook + lyrics poem + playlist):**
+**Structure (3-section format — AI categorization signal + lore + credits/cross-links):**
 ```
+An AI-generated cinematic series. Episode {XX} of 10.
 [Episode hook — single sentence from creator_strategy.md Episode Hooks list]
+Full journey → [playlist link]
 
 —
 
-Lyrics:
+THE LORE
 
 [Full episode lyrics from ep{XX}_lyrics.md, cleaned as poetry — see rules below]
 
@@ -61,16 +66,26 @@ Lyrics:
 
 [Inspiration credit — ONLY if listed in creator_strategy.md for this episode]
 
-🎶 ROBOTIKO v2.0 — The Complete Journey
-[playlist link]
+A human wrote the lyrics, shaped the musical direction, designed the story arc,
+and built a tech-art pipeline.
+Music: {tools}. Images: Nano Banana. Video: {tools}. Pipeline: Claude. Edit: CapCut.
+The full production pipeline will be open source after the finale.
 
-#robotiko #cyberanatolian #turkishrock #progrock #conceptalbum
+ROBOTIKO v2.0 — A 10-episode CyberAnatolian concept album and visual series.
+Subscribe to walk beside.
+
+Previous: {title} → {URL}
+Next: {title} → {URL or "Coming soon"}
+
+#robotiko #cyberanatolian #conceptalbum #aiart #aimusic #genai
 ```
 
 **Rules:**
+- **First 3 lines = AI categorization signal.** YouTube reads these most heavily for classification. "An AI-generated cinematic series" signals Film & Animation, not Music.
 - Opening hook is the episode's single-sentence hook from `creator_strategy.md` — NOT a custom-written hook.
-- **Lyrics section rules (critical):**
-  - Always prefix with `Lyrics:` label so it's not mistaken for unrelated text
+- **Cross-links required:** Previous and Next episode links in every description. Update previous episode's description when a new episode goes live.
+- **Lore section rules (critical):**
+  - Always prefix with `THE LORE` header — NOT "Lyrics:" (avoids YouTube music classification signal)
   - Strip ALL musical structure markers (`[Intro]`, `[Verse 1]`, `[Chorus 1]`, `[Bridge]`, `(Cymbal Crash)`, `(Full Band)`, etc.)
   - **Identify rhyme scheme (AAB tercets, ABAB, couplets, etc.) and preserve it through punctuation:**
     - Within-stanza pause: semicolon (;) or comma (,)
@@ -87,11 +102,9 @@ Lyrics:
   - Single blank line between verses/stanzas; NO blank line within a chorus block
 - **NO timestamps/chapters in description.** Music flows as a continuous piece.
 - **NO "About ROBOTIKO" block** — channel About section handles project identity
-- **NO Credits block before EP07** — creator reveal deferred per creator_strategy.md 4-phase arc
-- **EP07+ special additions:**
-  - Credits block (Music: Suno AI, Images: Nano Banana, etc.)
-  - Open source countdown text per creator_strategy.md schedule
-- **#aiart is NOT used before EP07**
+- Credits block is embedded in the description template above
+- **#aiart used from EP01** — AI transparency from day one
+- **NO genre hashtags** (#progrock, #psychedelicrock, etc.) — see youtube_strategy_v01.md Section 5
 - Inspiration credits (e.g., EP05: Cem Karaca, EP06: Korkmazgil) only when specified in creator_strategy.md
 - Keep description a **literary document**, not marketing copy
 
@@ -134,22 +147,23 @@ Each episode has a cryptic pinned comment — a breadcrumb for curious viewers. 
 **Rule:** Pin this comment immediately after the video goes live. Use the exact text — no additions, no emojis.
 
 ### 5. Tags
-Two categories:
+Two categories — per `_management/youtube_strategy_v01.md` Section 5 (layered approach):
 
-**Primary tags (always include):**
+**Base tags (constant across all episodes):**
 ```
-robotiko, robotiko v2, anatolian rock, prog rock, progressive rock, concept album, ai music, suno ai, 70s rock, psychedelic rock
+robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated video, ai cinematic, ai animation, ai art, ai music, suno ai, genai, ai film, ai series, ai short film, ai storytelling, concept album film, animated series, sci-fi animation
 ```
 
 **Episode-specific tags (from master.md):**
 ```
-[station name], [episode-specific keywords], [location names if applicable], [character names]
+[episode title], [station keywords], [location names if applicable], [character names]
 ```
 
 **Rules:**
 - Maximum 500 characters total (YouTube limit).
 - No misleading or unrelated tags.
-- Include Turkish variations for discoverability: `anadolu rock`, `psikedelik rock`
+- **NO music-genre tags** (progressive rock, psychedelic rock, turkish rock, anatolian rock, visual album — all removed).
+- Format tags KEPT (concept album, rock opera) — these signal content format, not music genre.
 
 ### 6. Thumbnail Guidance
 Claude does not generate the thumbnail image but provides:
@@ -176,15 +190,18 @@ Claude does not generate the thumbnail image but provides:
 
 ## POST-GENERATION CHECKLIST
 
-- [ ] Title is under 100 characters and includes episode number + title
-- [ ] Description opens with the episode hook from creator_strategy.md (exact text)
+- [ ] Title follows `[Hook] | ROBOTIKO v2.0` format (max 70 characters, no EP number, no genre)
+- [ ] Description first 3 lines = AI categorization signal ("An AI-generated cinematic series...")
+- [ ] Description opens with episode hook from creator_strategy.md (exact text, line 2)
 - [ ] Description has NO timestamps/chapters
+- [ ] Cross-links present: previous + next episode + playlist
+- [ ] Tags use layered approach: NO genre tags, AI + format tags present
 - [ ] Tags are within 500 character limit
-- [ ] Series description block is consistent with other episodes
+- [ ] Category: Film & Animation (not Music)
+- [ ] Hashtags: `#robotiko #cyberanatolian #conceptalbum #aiart #aimusic #genai` (no genre hashtags)
 - [ ] Thumbnail guidance references a specific scene from the dramaturgy
 - [ ] Thumbnail has NO text (only episode number bottom-left)
 - [ ] Pinned comment matches creator_strategy.md exactly
-- [ ] #aiart NOT used before EP07
 - [ ] Inspiration credit included only if specified in creator_strategy.md for this episode
 - [ ] No clickbait, no misleading claims, no cheap marketing language
 - [ ] Ask yourself: **"Would Fibula approve this?"**

@@ -184,7 +184,17 @@ Apply these to ALL clips before editing, to unify output from multiple AI tools 
 
 ### Step 12: YouTube Packaging
 - **Tool:** Claude executes `_skills/robotiko-youtube-packager/SKILL.md`
-- **Output:** Title, description, timestamps, tags
+- **Output:** Title, description, tags, thumbnail guidance, cross-links
+
+### Step 12.5: YouTube Metadata Review
+- **Reference:** `_management/youtube_strategy_v01.md`
+- **Verify before upload:**
+  - [ ] Title follows `[Hook] | ROBOTIKO v2.0` format (no episode number, no genre label)
+  - [ ] Description first 3 lines = AI categorization signal
+  - [ ] Tags use layered approach (no genre tags, AI + format tags present)
+  - [ ] Category: Film & Animation
+  - [ ] Cross-links: previous + next episode + playlist in description
+  - [ ] Pinned comment matches creator_strategy.md exactly
 
 ### Step 13: Social Media Atomization
 - **Tool:** Claude executes `_skills/robotiko-reels-atomizer/SKILL.md`
@@ -204,7 +214,7 @@ Claude reads the relevant SKILL.md before executing any workflow.
 | `robotiko-motion-script` | "Generate motion script for EP{XX}" | `ep{XX}_motion_script.md` |
 | `robotiko-episode-scaffold` | "Scaffold EP{XX}" | Full folder structure |
 | `robotiko-naming-enforcer` | "Validate file names" | Compliance report |
-| `robotiko-youtube-packager` | "Package EP{XX} for YouTube" | Metadata file |
+| `robotiko-youtube-packager` | "Package EP{XX} for YouTube" | Metadata file (per youtube_strategy_v01.md) |
 | `robotiko-reels-atomizer` | "Atomize EP{XX} for social" | Clip list |
 | `robotiko-launch-orchestrator` | "Orchestrate EP{XX} launch" | Launch checklist |
 | `robotiko-capcut-editor` | "Edit EP{XX} in CapCut" | Edit guide |
@@ -217,5 +227,5 @@ Claude reads the relevant SKILL.md before executing any workflow.
 SCAFFOLD → LYRICS → MUSIC → METADATA JSON → CONCEPT NOTES
     → DRAMATURGY [✋ CHECKPOINT] → VISUAL PROMPTS → IMAGE GEN → IMAGE SELECT
     → MOTION SCRIPT [✋ CHECKPOINT] → VIDEO GEN → VIDEO SELECT
-    → CAPCUT GUIDE → EDIT → YOUTUBE + SOCIAL
+    → CAPCUT GUIDE → EDIT → YOUTUBE + METADATA REVIEW + SOCIAL
 ```

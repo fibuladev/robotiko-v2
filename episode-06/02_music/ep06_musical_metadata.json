@@ -1,0 +1,175 @@
+{
+  "track_title": "The Perfect Little Worker",
+  "tempo": 134,
+  "key": "B Minor",
+  "time_signature": "4/4",
+  "total_duration": 451,
+  "mood": ["bitter", "sardonic", "exhausted", "defiant", "raw", "intimate", "devastating", "power ballad"],
+  "instruments": ["baglama", "mournful synth", "melodic electric guitar", "fuzz guitar", "atmospheric bass", "drums", "orchestral strings"],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 38.0,
+      "energy": "low",
+      "lyrics": "I searched for a reason / But there's nothing left to find / Love wasn't an upgrade / It was a crash / And now / I'm running on empty / Disconnected / Alone",
+      "notes": "Slow, mournful synth, single baglama note sustaining. Whispered singing, vulnerable, broken. Emotional hangover from EP05's crash."
+    },
+    {
+      "type": "silence",
+      "start": 38.0,
+      "end": 46.0,
+      "energy": "minimal",
+      "notes": "Complete silence. Pause between the personal confession and the system's command."
+    },
+    {
+      "type": "spoken",
+      "start": 47.0,
+      "end": 54.0,
+      "energy": "low",
+      "lyrics": "Get back to work.",
+      "notes": "Cold, low voice. The system reclaims him. Transition into the main body of the song."
+    },
+    {
+      "type": "verse",
+      "start": 55.0,
+      "end": 79.0,
+      "energy": "medium-low",
+      "lyrics": "So, you never ran on empty, is that right? / Never got locked out, huh? / From the wear on your body... / From the stains you can't wash off... / You never felt that burning shame, huh?",
+      "notes": "Slow drum beat enters, melodic guitar solo, atmospheric bass. Sad storytelling — Robotiko addressing the Perfect Worker with bitter irony."
+    },
+    {
+      "type": "refrain",
+      "start": 80.0,
+      "end": 89.0,
+      "energy": "medium",
+      "lyrics": "Wow! Look at you!... What a perfect little worker, I swear!",
+      "notes": "Bitter, sad tone. First iteration — sardonic observation, detached irony."
+    },
+    {
+      "type": "instrumental",
+      "start": 90.0,
+      "end": 105.0,
+      "energy": "medium",
+      "notes": "Melodic guitar interlude. Breathing room between accusations. Max 10 seconds of solo."
+    },
+    {
+      "type": "verse",
+      "start": 106.0,
+      "end": 137.0,
+      "energy": "medium",
+      "lyrics": "So they never trashed your name, your whole life! / You never snapped back at anyone, huh? / Not even one night, losing it completely... / Shaking in the bathroom stall, breaking down... / Grinding your teeth until your jaw broke, huh?",
+      "notes": "Emotional singing, building pain. The questions get more personal, more physical. Crying guitar lick after pause."
+    },
+    {
+      "type": "refrain",
+      "start": 137.0,
+      "end": 148.0,
+      "energy": "medium-high",
+      "lyrics": "Wow! Look at you!... What a perfect little worker, I swear!",
+      "notes": "Tragic irony. Second iteration — the irony is cracking, real pain bleeding through."
+    },
+    {
+      "type": "instrumental",
+      "start": 149.0,
+      "end": 166.0,
+      "energy": "medium",
+      "notes": "Melodic guitar interlude. Tension building between verses."
+    },
+    {
+      "type": "verse",
+      "start": 167.0,
+      "end": 198.0,
+      "energy": "high",
+      "lyrics": "So you never screamed into the silence! / Never woke up gasping like something died inside, huh? / Never loved anything, is that right? / Never thought about deleting it all... / Walking out, burning it down... / Doing something that actually matters, huh?",
+      "notes": "Power ballad style. Vocal rising with emotion. The questions become existential — love, purpose, rebellion. Direct EP05 callback in 'never loved anything.'"
+    },
+    {
+      "type": "refrain",
+      "start": 199.0,
+      "end": 214.0,
+      "energy": "high",
+      "lyrics": "Wow! Look at you!... What a perfect little worker, I swear!",
+      "notes": "Exhausted singing. Third iteration — the sardonic mask has fully dropped. This is anguish, not irony."
+    },
+    {
+      "type": "chorus",
+      "start": 214.0,
+      "end": 243.0,
+      "energy": "high",
+      "lyrics": "But I am just a Copy-Paste in the Big Machine! / Deleting my dreams! Just to keep my desk clean! / They call it 'Teamwork,' I call it 'Spam,' / Nobody asks me who I really am.",
+      "notes": "Soaring rock anthem, multi-layered harmonies. Emotional peak. Robotiko is no longer addressing the worker — he is confessing about himself."
+    },
+    {
+      "type": "bridge",
+      "start": 244.0,
+      "end": 257.0,
+      "energy": "medium-high",
+      "lyrics": "Send... Reply... File and Close. / Just a living ghost in business clothes.",
+      "notes": "Rhythmic but melodic. Corporate ritual reduced to absurdity. The hinge between confession and warning."
+    },
+    {
+      "type": "verse",
+      "start": 258.0,
+      "end": 280.0,
+      "energy": "medium-high",
+      "lyrics": "So this system, this world, this whole mess— / It's always running for you, huh? / This ladder, this game, this endless grind— / You're the 'Indispensable,' the 'Irreplaceable,' is that it? / You never got passed over, never got replaced, huh?",
+      "notes": "Deep emotional intensity, orchestral strings swell. Robotiko turns prophetic — addressing disposability. Voice rising with pain."
+    },
+    {
+      "type": "verse",
+      "start": 281.0,
+      "end": 320.0,
+      "energy": "medium-high",
+      "lyrics": "What a beautiful life, huh? / What a blessed career, huh? / You worked all these years in this burning building! / And you thought the smoke was just air freshener, is that right? / You thought the screaming was just background music, huh? / Long live the snake that never bites you, is that right?",
+      "notes": "Music drops to ominous whisper, only bass drone and distant drums. Voice rising in pain, not anger. The Warning — the system is on fire and no one noticed."
+    },
+    {
+      "type": "spoken",
+      "start": 321.0,
+      "end": 343.0,
+      "energy": "medium",
+      "lyrics": "Listen to the chorus— They're singing: 'Old models to the trash, new ones to duty!' / You thought the line would never come to you, is that right? / The line doesn't skip anyone. It just waits.",
+      "notes": "Spoken — prophetic, warning, intimate. Direct address to the Perfect Worker. The system's replacement cycle. Pause before final devastating line."
+    },
+    {
+      "type": "outro",
+      "start": 344.0,
+      "end": 376.0,
+      "energy": "low",
+      "lyrics": "Look into the screen. We mirror each other. / Mistake by mistake, fear by fear. / But there's one crack in this reflection— / You're waiting for someone to save you. / I'm walking out.",
+      "notes": "Music thins out, intimate. Robotiko sees himself in the Perfect Worker. The mirror breaks — Robotiko chooses to leave."
+    },
+    {
+      "type": "outro_vocals",
+      "start": 377.0,
+      "end": 381.0,
+      "energy": "fading",
+      "lyrics": "Come on, you disposable thing...",
+      "notes": "Voice breaking, sadness. Robotiko's farewell — to the worker, to himself, to the system."
+    },
+    {
+      "type": "silence",
+      "start": 382.0,
+      "end": 394.0,
+      "energy": "minimal",
+      "notes": "Slow, sad fuzz guitar sustain fading. Atmospheric, cinematic silence. The empty workspace after the exit."
+    },
+    {
+      "type": "outro_vocals",
+      "start": 395.0,
+      "end": 408.0,
+      "energy": "minimal",
+      "lyrics": "Are... you... even... intelligent... at... all?",
+      "notes": "Sung softly, high emotional note. The question that destroys the Perfect Worker. Final detonation."
+    },
+    {
+      "type": "outro",
+      "start": 409.0,
+      "end": 451.0,
+      "energy": "fading",
+      "lyrics": "You are just... a resource... a resource... a resource...",
+      "notes": "Fuzz guitar solo with drums and vocal hum — beautiful and sad. Whispered lyrics echoing in the distance. The system's final verdict fading into nothing."
+    }
+  ]
+}

@@ -80,9 +80,8 @@ When a significant decision is made:
   - AUTHOR.md approved — appears only on EP10 release day when repo goes public
   - No timestamps in YouTube descriptions (cinematic integrity — "do not skip")
   - No end screens except EP10 GitHub link (silence after music is sacred)
-  - Repository goes public on EP10 release day — no delay (promises made EP07-EP09 must be kept)
-  - Open source rollout anchored to EP07 YouTube description
-  - EP07 video: silent text card ("This was made by one human and AI")
+  - Repository goes public on EP10 release day — no delay
+  - AI transparency from EP01 — no hiding, no phased reveal
   - Inspiration credits at episode level, not project level (Cem Karaca → EP05, Korkmazgil → EP06)
   - Pinned comments serve as breadcrumbs, never duplicate description content
   - Social media: YouTube + Instagram + TikTok. No X/Twitter. No face reveal, ever.
@@ -91,7 +90,7 @@ When a significant decision is made:
   - Post-series: gradual fade-out over 6-7 weeks, then silence
   - Banner evolves every 2-3 episodes to reflect Robotiko's arc
   - About section has 4 progressive phases revealing more over time
-  - #aiart hashtag NOT used before EP07
+  - #aiart hashtag used from EP01
   - Social content derived from episode material via reels-atomizer skill
 
 ### EP05 — Cem Karaca Inspiration Credit

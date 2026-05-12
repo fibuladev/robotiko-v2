@@ -34,7 +34,7 @@
 - **Caption (Instagram):** `"Two halves of one whole apple." A 10-episode journey begins April 22. Link in bio.`
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — "Two halves of one whole apple." Full episode on this channel.`
-- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #psychedelicrock #musicvideo #scifi`
+- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #psychedelicrock #aiart #aimusic #genai`
 - **Platform Priority:** ALL — this is the lead clip
 - **Aspect Ratio Note:** Apple transformation is center-composed. 9:16 crop safe — subject stays centered.
 
@@ -51,7 +51,7 @@
 - **Caption (Instagram):** `What happens when two worlds touch? The answer is ten episodes long. Link in bio.`
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — The handshake that begins a 10-episode journey. Full episode on this channel.`
-- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #scifi #70srock #musicvideo #anatolianrock`
+- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #scifi #70srock #aiart #aimusic #genai`
 - **Platform Priority:** Reels + Shorts (universally impactful)
 - **Aspect Ratio Note:** Hands meeting is center-composed. 9:16 crop safe.
 
@@ -68,7 +68,7 @@
 - **Caption (Instagram):** `He has been walking for five thousand years. He is not tired. Episode 1 — April 22.`
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — "Five thousand years of crown and gain." The Mentor arrives. Full episode on this channel.`
-- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #70srock #psychedelicrock #indieartist`
+- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #70srock #aiart #aimusic #genai`
 - **Platform Priority:** Reels + Shorts (cinematic build-up works better in longer format)
 - **Aspect Ratio Note:** Mentor is vertically composed (standing figure). 9:16 crop works well — may even be BETTER than 16:9 for the silhouette reveal.
 
@@ -85,7 +85,7 @@
 - **Caption (Instagram):** `"On crane's twin wings, we touch the skies." Full episode — link in bio.`
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — The bridge: "Five thousand years I've waited... now enough." Full episode on this channel.`
-- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #psychedelicrock #albumart #musicvideo`
+- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #psychedelicrock #aiart #aimusic #genai`
 - **Platform Priority:** Reels + Stories (mood piece — let the aesthetic breathe)
 - **Aspect Ratio Note:** Crane in flight is wide composition. 9:16 crop WILL lose wing tips. Use letterboxed version with dark borders top/bottom for vertical platforms. Or crop to crane body center.
 
@@ -102,7 +102,7 @@
 - **Caption (Instagram):** `8 turns sideways. The journey transforms. Full episode — link in bio.`
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — "Trust me — the eight shall turn aside." Full episode on this channel.`
-- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #scifi #70srock #anatolianrock #psychedelicrock`
+- **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #scifi #70srock #aiart #aimusic #genai`
 - **Platform Priority:** Reels + Shorts (short, punchy, maximum impact)
 - **Aspect Ratio Note:** Cosmic/nebula scenes are wide but abstract. 9:16 center crop is safe — no critical lateral elements lost.
 
@@ -150,7 +150,7 @@ All clips must be exported from the final EP01 edit (`ep01_final_v{VV}.mp4`):
 - [x] Two platform-specific captions per clip (IG, Shorts) ✅
 - [x] Captions under 150 characters with lyric hook ✅
 - [x] Hashtags relevant, within limits ✅
-- [x] #aiart NOT used (EP01 < EP07) ✅
+- [x] #aiart included ✅
 - [x] 9:16 crop safety noted for each clip ✅
 - [x] Release schedule included ✅
 - [x] No clip relies on full video context ✅

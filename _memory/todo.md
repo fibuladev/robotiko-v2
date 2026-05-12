@@ -1,50 +1,49 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-04-07 (Social Media & Launch Infrastructure Build)
+> Last Updated: 2026-04-22 (EP01 Launch Day + External Promotion Strategy)
 
 ---
 
 ## CURRENT PRIORITY: EP01 LAUNCH (April 22, 2026)
 
-### ✅ COMPLETED — 2026-04-07 Session: Social Media Infrastructure
-- [x] Social media setup guide — `_management/social_media_setup_guide.md`
-- [x] Banner v1 spec (Phase 1: Awakening) — `_assets/banners/banner_v1_spec.md`
-- [x] Pre-launch content calendar (13 days, April 9-21) — `_management/pre_launch_calendar.md`
-- [x] Weekly release template (EP02-EP10) — `_management/weekly_release_template.md`
-- [x] YouTube Packager skill v2.0 — No timestamps, hooks, pinned comments, no-text thumbnails
-- [x] Reels Atomizer skill v2.0 — Platform caption tones, #aiart EP07+ rule
-- [x] Launch Orchestrator skill v2.0 — Open source checklist, banner triggers, pinned comments
-- [x] EP01 YouTube package — `episode-01/07_social_media/ep01_youtube_package.md`
-- [x] EP01 social atomization (5 clips) — `episode-01/07_social_media/ep01_social_atomization.md`
-- [x] EP01 launch checklist — `episode-01/07_social_media/ep01_launch_checklist.md`
+### ✅ COMPLETED — Infrastructure & Content
+- [x] YouTube channel (@fibuladev) — banner, About, playlist hazır ✅ 2026-04-07
+- [x] Instagram account (@fibuladev) — bio, avatar, link ✅ 2026-04-07
+- [x] EP01 YouTube package — `episode-01/07_social_media/ep01_youtube_package.md` ✅ 2026-04-07
+- [x] EP01 social atomization — `episode-01/07_social_media/ep01_social_atomization.md` ✅ 2026-04-07
+- [x] EP01 launch checklist — `episode-01/07_social_media/ep01_launch_checklist.md` ✅ 2026-04-07
+- [x] EP01 walkthrough — `episode-01/07_social_media/ep01_walkthrough.md` ✅ 2026-04-07
+- [x] Pre-launch IG campaign (13 days) — COMPLETED then STRATEGY PIVOTED ✅ 2026-04-21
+- [x] Reels analytics: lessons learned (3 Reels, skip rate, completion, character rule) ✅ 2026-04-21
+- [x] Strategy pivot: pre-launch teasers killed, IG = post-launch Reels funnel only ✅ 2026-04-21
 
-### 🔲 PENDING — Human Actions (April 7-8)
-- [x] Create YouTube channel "Fibula" (@fibuladev) ✅ 2026-04-07
-- [x] Create Instagram account (fibuladev) ✅ 2026-04-07
-- [~] TikTok — DEFERRED (Bratislava lokasyonu, sıfır bütçe, EP07+ sonrası değerlendirilecek)
-- [x] Upload Fibula avatar to YouTube + Instagram ✅ 2026-04-07
-- [x] Generate banner v1 image ✅ 2026-04-07
-- [x] Upload banner to YouTube ✅ 2026-04-07
-- [x] Set channel About text ✅ 2026-04-07
-- [x] Create playlist "ROBOTIKO v2.0 — The Complete Journey" ✅ 2026-04-07
-- [x] Set default upload settings (tags, category, no auto-chapters) ✅ 2026-04-07
-- [x] Final username confirmed: @fibuladev (all platforms) ✅ 2026-04-07
+### ✅ LAUNCH DAY — 22 Nisan
+- [x] YouTube video yayında: https://youtu.be/W_zfFDXn0o0 (20:00 CET) ✅ 2026-04-22
+- [x] Pin comment posted ✅ 2026-04-22
+- [x] External promotion strategy doc created: `episode-01/07_social_media/ep01_external_promotion.md` ✅ 2026-04-22
 
-### 🔲 PENDING — Pre-Launch Content (April 9-21)
-- [x] Day 1 görsel seçimi: Bozkır + Selçuklu monolitik kuleler (yeni üretim, oryantalist olmayan) ✅ 2026-04-08
-- [x] Day 1 video promptu hazır ✅ 2026-04-08
-- [x] Day 2-6 görselleri indirildi (pulse, ulti, chorus1a, 16, 37) ✅ 2026-04-08
-- [ ] Day 1 post: 9 Nisan 18:00 CET
-- [ ] Day 2-6 görselleri Nano Banana ile güzelleştir
-- [ ] Day 5 ses klibi çıkar (EP01 Chorus 1 ~2:01)
-- [ ] Day 7+ görselleri hazırla (Hafta 2)
-- [ ] Create date announcement graphic (Day 6) and countdown graphics (Days 11-12)
+### 🔲 POST-LAUNCH — 23-27 Nisan (Reels + Reddit Prep)
+- [ ] 23-24 Nis — Mentor Arrival Reel (karakter klip) → IG + Shorts
+- [ ] 25 Nis — Eight Turns Reel (klimaks klip) → IG + Shorts
+- [ ] 22-27 Nis — Reddit hesabı oluştur (fibuladev). Karma kazan: yorum yap, upvote et. LINK ATMA.
+- [ ] 22-27 Nis — Discord sunucularına katıl (Images & Words, IMF, PROGROCK.COM). Dinle, yorum yap.
 
-### 🔲 PENDING — Launch Day (April 22)
-- [ ] Execute EP01 launch checklist hour by hour
-- [ ] Create thumbnail from S39-S40 First Contact
-- [ ] Export 5 social clips from final video
+### 🔲 COMMUNITY SHARING — Hafta 1-4 (22 Nis - 18 May)
+**Reddit:**
+- [ ] 22-23 Nis — Reddit hesabı oluştur (fibuladev). Sub'lara katıl.
+- [ ] 24-27 Nis — Günde 2-3 yorum yap, karma kazan. LINK ATMA.
+- [ ] 28 Nis — İlk post: r/ThisIsOurMusic
+- [ ] 1 May — Post: r/progrockmusic
+- [ ] 5 May — Post: r/psychedelicrock
+- [ ] 7 May — Post: r/listentothis Melting Pot
+- [ ] 8-9 May — r/IndieMusicFeedback (önce 3 feedback ver, sonra paylaş)
+**Discord:**
+- [ ] 22-23 Nis — Discord hesabı oluştur. Images & Words + IMF sunucularına katıl.
+- [ ] 24 Nis - 6 May — Dinle, yorum yap, sohbete katıl. LINK ATMA.
+- [ ] 7-8 May — IMF'de EP01 paylaş (feedback verdikten sonra)
+- [ ] 9-11 May — Images & Words'te EP01 paylaş
+- [ ] 12+ May — Haftada 2-3 kez katılım, EP02'de döngüyü tekrarla
 
 ---
 
@@ -292,6 +291,60 @@
 
 ---
 
+## NEXT: EP06 PRODUCTION
+
+- [x] `ep06_lyrics_v01.md` — Lyrics complete
+- [x] `ep06_musical_metadata.json` — Musical metadata complete ✅ 2026-05-01
+- [x] `ep06_concept_notes.md` — Concept notes written and approved ✅ 2026-05-01
+- [x] `ep06_dramaturgy_v01.md` — Claude generates (skill: robotiko-dramaturgy) ✅ 2026-05-01 (43 scenes, 451s, 8 human overrides)
+- [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-05-01
+- [x] `ep06_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅ 2026-05-01 (47 prompts: 2 env ref + 45 scene)
+- [x] `ep06_visual_prompts_v02.md` — Radical simplification for ref-image compatibility ✅ 2026-05-01 (45 scene prompts, 1-3 sentences each)
+- [x] Reference images: REF-ENV-01 (Cold Office) ✅, REF-ENV-02 (Meeting Room) ✅ — already generated. Perfect Worker = existing ref_robotiko_master.png
+- [ ] Image generation — Nano Banana
+- [ ] Human selects images
+- [x] `ep06_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script) ✅ 2026-05-02 (45 clips, 98.7% coverage)
+- [ ] **[CHECKPOINT]** Human approves motion script
+- [ ] Video generation
+- [ ] Final edit — CapCut
+
+### 2026-05-01 Session Summary (EP06 Dramaturgy v01)
+**Task:** Generate EP06 dramaturgy scene breakdown from approved concept notes + musical metadata.
+**Deliverable:** `episode-06/03_direction/ep06_dramaturgy_v01.md` — 43 scenes, 7:31 (451s), 134 BPM, B Minor.
+**Key structure:** Single-location discipline — 90% in EP05's office with warmth stripped. Three-refrain camera escalation (S09 wide → S15 medium → S21 close-up). Perfect Worker = new character (pristine titanium mirror of Robotiko). Chorus contrast (soaring rock anthem + dead desk labor). Mentor amber echoes thinner than EP05 (S19 eye flash, S33 ceiling strip). robochica_1-4 tattoos visible in intro (S03). The Exit (S38) = first voluntary departure in the series. The Collapse (S41) = Perfect Worker's first crack. Guitar solo (S42-S43) = slow zoom out over empty workspace.
+**8 human overrides implemented:** S03 (tattoo reveal), S07 (Perfect Worker intro), S09/S15/S21 (three-refrain escalation), S23 (dead soul at desk), S30 (no literal fire), S38 (the exit), S41 (the collapse), S42 (guitar solo wide).
+**Mode B candidates flagged:** S38 (the exit — walking + worker head turn), S41 (the collapse — seated → knees).
+**Reference images needed:** 1 (Cold Office environment only — Perfect Worker = existing ref_robotiko_master.png).
+**Next step:** Human reviews and approves dramaturgy → then visual prompts in a new session.
+
+### 2026-05-01 Session 2 Summary (EP06 Visual Prompts v01)
+**Task:** Generate EP06 visual prompts from approved dramaturgy (43 scenes).
+**Deliverable:** `episode-06/04_visuals/ep06_visual_prompts_v01.md` — 47 prompts (2 environment references + 45 scene prompts, including 2 Mode B pairs).
+**Reference images created:** (1) REF-ENV-01: Cold Office (EP05 office with warmth stripped, cold fluorescent, green CRT), (2) REF-ENV-02: Meeting Room (glass walls, large dark flat screen, 1-to-1 configuration for S36 mirror scene). No character reference needed — Perfect Worker uses existing `ref_robotiko_master.png`.
+**Key design decisions:** (1) Both characters share same ref image (ref_robotiko_master.png). Differentiation via prompt language only: "damaged chrome android" vs "pristine chrome android." (2) Amber restricted to 3 scenes: S03 (tattoo etchings), S19 (single eye flash), S33 (faint ceiling strip). (3) S30-S31 smoke/haze is real and visible, normalized with air freshener canister — EP02 Bangladesh echo. (4) S32 collapsed robots in background, out of focus but visible. (5) S34 fear is operational (eye widening, jaw tightening), not philosophical.
+**Mode B pairs:** S38a/S38b (the exit — Robotiko near→far, worker head turn), S41a/S41b (the collapse — seated→knees, first crack). S38 flagged for potential Mode B→Mode A downgrade due to dual action risk.
+**Validation:** 47 suffixes ✅, 47 16:9 ✅, 0 character names in prompts ✅, 0 forbidden aesthetics ✅, amber in S03/S19/S33 only ✅.
+
+### 2026-05-01 Session 3 Summary (EP06 Visual Prompts v02 — Radical Simplification)
+**Task:** Revise EP06 visual prompts after user feedback that v01 prompts were too verbose and competed with reference images in Nano Banana.
+**Problem:** When uploading character ref + environment ref + detailed text prompt, Nano Banana couldn't reconcile 3 information sources → wrong angles, wrong framing, characters facing camera instead of desk.
+**Solution:** Created v02 with radically simplified prompts (1-3 sentences before suffix). Added Reference Image Upload Guide (per-scene ref instructions) and Camera Angle Rule (explicit rear/profile angles for desk scenes).
+**Deliverable:** `episode-06/04_visuals/ep06_visual_prompts_v02.md` — 45 scene prompts (env refs removed since already generated).
+**Lesson added:** `_memory/lessons.md` — REFERENCE IMAGE WORKFLOW category (prompt brevity, camera angle fix, upload guide).
+**Status:** v02 written, awaiting user testing with Nano Banana.
+**Next step:** User tests v02 prompts → confirm working → image generation → select → motion script in new session.
+
+### 2026-05-02 Session Summary (EP06 Motion Script v01)
+**Task:** Generate EP06 motion script from approved dramaturgy (43 scenes) + visual prompts v02/v03.
+**Deliverable:** `episode-06/05_video/ep06_motion_script_v01.md` — 45 clips (41 single + 2 Multi-Clip pairs for S42, S43).
+**Coverage:** 445s generated / 451s music = 98.7%. 19 Speed Ramp clips, 2 Multi-Clip scenes (S42: 22s → 2 clips, S43: 20s → 2 clips).
+**Tool assignment:** Kling 3.0: 23 clips (~1610cr, 46% buffer), Kling 2.5 Turbo: 8 clips (~375cr), Seedance 1.0: 14 clips (~700cr, 42% buffer). Veo: 0 (all interior retro-analog → VEO DECAY SPAWN lesson).
+**Key decisions:** (1) Average MS ~3.8 — appropriate for "Tranquil Self — Broken" station (exhausted-sardonic, not explosive). (2) S38 Mode B → Mode A downgrade (dual action: Robotiko walking + Worker head turn = morphing failure risk per MODE B KEYFRAME LIMITS lesson). (3) S41 retained as Mode B (single action: seated → kneeling, stable environment). (4) S37 composite/split-world image treated as static (COMPOSITE/SPLIT-WORLD lesson). (5) S12-S14 bathroom sequence correctly handled with location change. (6) Three-refrain camera escalation maintained (S09 wide → S15 medium → S21 close-up). (7) 16 beat sync notes. (8) 0 supplementary images needed.
+**Post-gen validation:** 45 video suffixes ✅, 45 anti-spawn guards ✅, 45 camera moves ✅, no character names ✅, coverage ≥95% ✅, breathing pattern ✅.
+**Next step:** Human reviews and approves motion script → then video generation begins.
+
+---
+
 ## BACKLOG
 
 ### Skills (Content to Write)
@@ -318,7 +371,7 @@
 - [x] `ep03_musical_metadata.json` — completed
 - [x] `ep04_musical_metadata.json` — completed
 - [x] `ep05_musical_metadata.json` — completed
-- [ ] `ep06_musical_metadata.json`
+- [x] `ep06_musical_metadata.json` — completed ✅ 2026-05-01
 - [ ] `ep07_musical_metadata.json`
 - [ ] `ep08_musical_metadata.json`
 - [ ] `ep09_musical_metadata.json`

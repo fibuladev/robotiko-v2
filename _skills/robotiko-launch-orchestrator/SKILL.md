@@ -1,5 +1,5 @@
 # SKILL: robotiko-launch-orchestrator
-> **Version:** 2.0 | **Last Updated:** 2026-04-07
+> **Version:** 2.1 | **Last Updated:** 2026-05-01
 > **Trigger:** `"Orchestrate EP{XX} launch"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_launch_checklist.md`
 
@@ -73,12 +73,22 @@ The output is a comprehensive checklist organized in launch phases:
 
 ```
 ## SOCIAL MEDIA ROLLOUT
-- [ ] Hook Clip (Clip 1) posted on launch day
+- [ ] Clip 1 posted on launch day (T+1h after video goes public)
   - [ ] Instagram Reels
-  - [ ] TikTok
   - [ ] YouTube Shorts
-- [ ] Story Clips (Clips 2-3) scheduled for Day 2-3
-- [ ] Atmosphere Clips (Clips 4+) scheduled for Day 4-7
+  - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
+- [ ] Clip 2 scheduled for T+24h
+  - [ ] Instagram Reels
+  - [ ] YouTube Shorts
+  - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
+- [ ] Clip 3 scheduled for T+48h
+  - [ ] Instagram Reels
+  - [ ] YouTube Shorts
+  - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
+- [ ] Clip 4 (if exists) scheduled for T+5 days
+  - [ ] Instagram Reels
+  - [ ] YouTube Shorts
+  - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
 - [ ] All captions and hashtags pasted from social_atomization.md
 - [ ] Link to full YouTube video in bio / link tree
 - [ ] Cross-platform links verified
@@ -142,18 +152,10 @@ Claude suggests a strategy based on the episode's position in the series, but th
 EP10 is the series finale. The launch orchestration for EP10 includes additional steps:
 
 ```
-## EP07-EP10 OPEN SOURCE ROLLOUT
+## OPEN SOURCE NOTE
 
-Starting EP07, each episode's YouTube description includes an open source tease per `creator_strategy.md`:
-
-| Episode | Description Addition |
-|---------|---------------------|
-| EP07 | "After Episode 10, the full production pipeline will be open source." |
-| EP08 | "The pipeline behind this series will be open source after the finale." |
-| EP09 | "Two episodes remain. The pipeline approaches open source." |
-| EP10 | "The journey is complete. The pipeline is open source: [GitHub link]" |
-
-**EP07 special:** Include a silent text card after music fades: "This was made by one human and AI. The full pipeline will be open source." (3 seconds, white on black).
+All episode descriptions may include: "The full production pipeline will be open source after the finale."
+EP10 description: "The journey is complete. The pipeline is open source: [GitHub link]"
 
 ## EP10 SPECIAL — SERIES FINALE
 - [ ] All 10 episodes verified in playlist (correct order)

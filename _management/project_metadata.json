@@ -246,11 +246,11 @@
     "location": "Bratislava",
     "channel_name": "Fibula",
     "author_md": true,
-    "open_source_signal_episode": "EP07",
+    "open_source_signal_episode": "EP01",
     "ep01_launch": "2026-04-22",
     "release_rhythm": "weekly",
     "social_platforms": ["youtube", "instagram"],
-    "social_platforms_deferred": ["tiktok (Bratislava location + zero budget, EP07+ revisit)"],
+    "social_platforms_deferred": ["tiktok (Bratislava location + zero budget, revisit when audience exists)"],
     "social_handles": {
       "youtube": "@fibuladev",
       "instagram": "@fibuladev"

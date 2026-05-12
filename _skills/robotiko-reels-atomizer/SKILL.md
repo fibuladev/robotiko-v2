@@ -1,5 +1,5 @@
 # SKILL: robotiko-reels-atomizer
-> **Version:** 2.0 | **Last Updated:** 2026-04-07
+> **Version:** 3.0 | **Last Updated:** 2026-05-01
 > **Trigger:** `"Atomize EP{XX} for social"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_social_atomization.md`
 
@@ -56,6 +56,8 @@ Each clip must:
 | **Atmosphere Clip** | 30-60s | Mood piece, lets the aesthetic breathe | Instrumental sections, environmental sequences |
 | **Behind the Scenes** | 15-30s | Process reveal (optional, human-driven) | Prompt → image → video comparisons |
 
+**Rule:** Every clip must contain narrative content. Pure aesthetic clips with no story function are not used. The ROBOTIKO brand tells stories — even atmosphere clips must carry meaning, not just texture.
+
 ### Step 4: Write Caption and Hashtags per Clip
 
 **Caption rules:**
@@ -76,8 +78,7 @@ Each clip must:
 **Hashtag strategy:**
 - 5-10 hashtags per clip
 - Mix of: project tags (`#robotiko`, `#robotikov2`, `#cyberanatolian`), genre tags (`#progrock`, `#anatolianrock`), mood tags (`#scifi`, `#conceptalbum`), platform tags (`#musicvideo`)
-- **CRITICAL: #aiart is NOT used before EP07.** This is a hard rule from creator_strategy.md. Before EP07, the project presents as a human artistic vision. After EP07, the AI toolchain is progressively revealed.
-- After EP07, add: `#aiart`, `#aimusic`, `#aimusicvideo`
+- **#aiart, #aimusic, #aimusicvideo used from EP01** — AI transparency from day one per creator_strategy.md
 
 ---
 
@@ -104,9 +105,35 @@ For each clip:
 - **Lyric Hook:** [The key lyric or phrase, or "Instrumental" if none]
 - **Caption (Instagram):** [Ready-to-paste caption — aesthetic/poetic tone]
 - **Caption (YouTube Shorts):** [Ready-to-paste caption — descriptive/discoverable tone]
-- **Hashtags:** [Ready-to-paste hashtag string — NO #aiart before EP07]
+- **Hashtags:** [Ready-to-paste hashtag string — include #aiart #aimusic]
 - **Platform Priority:** [Which platforms this clip works best on]
-- **Aspect Ratio Note:** [If 9:16 crop is needed, note the composition impact]
+- **Vertical Framing:** [Technique name — Cinematic Canvas / Pan & Scan / Split-Screen / Analog Typography]
+- **Related Video:** Link to full episode via YouTube Studio "Related Video"
+- **CapCut Steps:** [Numbered steps specific to this clip — timestamps, technique-specific instructions]
+```
+
+### Cinematic Canvas Template Guide
+Include a one-time CapCut setup guide in every atomization output. This goes after the clip detail blocks:
+
+```
+## CAPCUT EXECUTION GUIDE
+
+### One-Time Template Setup
+1. CapCut Desktop → New Project → canvas 9:16 (1080×1920)
+2. Background: pure black (#000000)
+3. Import any placeholder clip → Scale to ~60% so full 16:9 frame fits with black bars above/below
+4. Center the video so bars are equal
+5. Text → "ROBOTIKO v2.0" → serif font, #D4A76A amber, ~36pt → top-left of upper bar
+6. Text → "8 → ∞" → same font/color → bottom-right of lower bar
+7. Optional: Effects → film grain at 10-15% opacity
+8. Save As → "ROBOTIKO_Cinematic_Canvas_Template"
+
+### Per-Clip Workflow
+1. Duplicate template project
+2. Replace video with episode final video
+3. Trim to clip timestamps (Ctrl+B to split)
+4. Adjust text element durations to match trimmed clip
+5. Export → 1080×1920, 30fps, MP4
 ```
 
 ### Release Schedule Suggestion
@@ -117,6 +144,18 @@ Aligned with the weekly release rhythm from `creator_strategy.md`:
 - **Thursday (+2 days):** Story Clip + detail still image (different visual angle from release day)
 - **Sunday (+5 days):** Atmosphere Clip as IG Story teaser for next week's episode
 - **Ongoing:** Behind the Scenes (if available) → community building
+
+### Alternative: Narrative Arc Ordering
+For episodes with strong narrative progression (e.g., EP02's arrogance → damage arc), clips can follow the episode's emotional arc instead of type-based ordering:
+
+| Timing | Narrative Function | Example |
+|--------|-------------------|---------|
+| T+1h (launch day) | Peak state — the hook | Arrogance at its highest |
+| T+24h | Impact — the turn | First irreversible damage |
+| T+48h | Depth — the world | Context that deepens meaning |
+| T+5d | Warmth — re-engagement | The human moment, drives return traffic |
+
+Use narrative ordering when the episode has a clear arc. Use type-based ordering (Hook → Story → Atmosphere) when the episode is more thematic than sequential.
 
 **Posting times (CET/Bratislava):**
 - Instagram: 18:00-19:00
@@ -135,6 +174,95 @@ YouTube episodes are 16:9. Social platforms prefer 9:16 (vertical).
 - For clips with wide compositions or important lateral elements: flag that a 9:16 crop may lose critical visual information.
 - Never crop a clip if it destroys the composition. Instead, suggest a letterboxed version with branded borders top/bottom.
 - Note crop safety in each clip's detail block.
+
+---
+
+## VERTICAL FRAMING TECHNIQUES
+
+16:9 episodes converted to 9:16 vertical format use these 4 techniques instead of simple cropping.
+
+### Technique 1: The Cinematic Canvas (Default)
+Place the wide 16:9 frame in the center of a 9:16 canvas. Do NOT crop to fill. Use the top and bottom black bars as branded creative zones.
+
+**Fixed Template (all clips):**
+- **Top bar:** "ROBOTIKO v2.0" — 70s serif font, Kodachrome amber, left-aligned
+- **Bottom bar:** "8 → ∞" symbol — same font, right-aligned, with analog film texture (light leaks, grain) as background fill
+- **Canvas background:** Pure black with subtle film grain overlay
+
+This is the DEFAULT technique. Use for most clips. Executed in CapCut.
+
+**CapCut Guide — Cinematic Canvas (one-time template setup):**
+
+1. **Create project:** Open CapCut Desktop → New Project → set canvas to **9:16 (1080×1920)**
+2. **Set background:** Canvas background = pure black (#000000)
+3. **Import clip:** Drag the episode clip segment onto the timeline
+4. **Resize video:** Select the clip on canvas → Scale down until the full 16:9 frame fits inside the 9:16 canvas with black bars visible above and below. The video should NOT fill the screen — the bars are intentional. Approximately 60% scale works.
+5. **Center the video:** Position the video vertically so the black bars above and below are roughly equal
+6. **Add top bar text:** Text → Add Text → type "ROBOTIKO v2.0" → Font: closest available serif in CapCut (search "serif" or "classic" — exact font varies by version) → Color: Kodachrome amber (#D4A76A) → Size: ~36pt → Position: top-left of the upper black bar → Duration: match full clip length
+7. **Add bottom bar text:** Text → Add Text → type "8 → ∞" → Same font and color → Position: bottom-right of the lower black bar → Duration: match full clip length. CapCut's kerning and alignment are limited — manual positioning is fine. Slight imperfection fits the analog aesthetic.
+8. **Add film grain overlay (optional):** Overlay → search "film grain" or "noise" in CapCut effects → apply at 10-15% opacity over the full canvas → this adds analog texture to the black bars
+9. **Export as template:** Save project as a template or duplicate it for each new clip — only the video clip on the timeline needs to change
+
+**Reuse for each clip:** Duplicate the project, swap the video segment on the timeline, adjust duration. All text and overlay stays the same.
+
+**Important:** Do NOT use Pan & Scan for clips that contain multiple scene cuts (different compositions, zoom levels, or camera angles within one clip). Pan & Scan only works on a single continuous wide shot where the subject stays in a predictable position. For multi-cut clips, always use Cinematic Canvas.
+
+### Technique 2: Pan & Scan
+Animate a 9:16 "viewfinder" within the wide shot using CapCut keyframe animation. Start with a wide environmental view, then slowly pan/zoom the vertical frame to focus on a character's face or key detail. Conveys scale while keeping the subject present.
+
+Best for: Single continuous wide shots with both environmental context AND character detail. NOT suitable for multi-cut montage clips.
+
+**CapCut Guide — Pan & Scan:**
+
+1. **Create project:** CapCut Desktop → New Project → canvas **9:16 (1080×1920)**
+2. **Import clip:** Drag the single wide shot onto the timeline
+3. **Scale up:** Select clip → Scale up until the video is much larger than the canvas (the 9:16 frame becomes a "window" into the wide shot). Approximately 170-200% scale.
+4. **Set start position:** Move playhead to clip start → click the diamond (◆) keyframe icon next to Position → drag the video so the desired starting area is visible (e.g., wide landscape, left side of scene)
+5. **Set end position:** Move playhead to clip end → drag the video so the desired ending area is visible (e.g., character face, right side of scene) → CapCut auto-creates the second keyframe
+6. **Preview:** Play back. The 9:16 frame should slowly glide across the wide shot over the clip's duration
+7. **Adjust speed curve (optional):** Right-click between keyframes → select "Ease In/Out" for smoother, more cinematic movement instead of linear
+
+**Important:** This technique requires a SINGLE continuous shot — no cuts, no scene changes. If the subject moves unpredictably or the shot contains edits, the pan will miss the subject.
+
+### Technique 3: Symbiosis Split-Screen
+Vertical split: top half shows a close-up (face, detail), bottom half shows the wide environment. Reflects the "two halves of one whole" philosophy.
+
+Best for: Scenes where both scale and emotion matter simultaneously. Use sparingly — max 1 per episode's clip set.
+
+**CapCut Guide — Split-Screen:**
+
+1. **Create project:** CapCut Desktop → New Project → canvas **9:16 (1080×1920)**
+2. **Import two clips:** Place both on the timeline (different tracks — main track + overlay track)
+3. **Top half (close-up):** Select the close-up clip → Scale and crop to fill only the top half of the 9:16 canvas → Position Y: upper half
+4. **Bottom half (wide shot):** Select the wide shot clip → Scale and crop to fill only the bottom half → Position Y: lower half
+5. **Add divider line (optional):** Use a thin white or amber horizontal line between the two halves (Overlay → shape or text element "—" stretched across)
+6. **Sync audio:** Mute the overlay track — audio comes from the main track only
+
+### Technique 4: Analog Typography
+Use vertical empty spaces (top/bottom bars of Cinematic Canvas, or full 9:16 overlay) for bold 70s progressive rock-style titles. Frames the clip as a "digital art gallery" piece.
+
+Best for: Opening or closing seconds of a clip. Can be combined with Technique 1.
+
+**CapCut Guide — Analog Typography:**
+
+1. Start with a **Cinematic Canvas** setup (steps 1-5 above)
+2. **Add title text:** Text → Add Text → type lyric fragment or episode title → Font: bold 70s serif → Color: Kodachrome amber → Size: 48-72pt (larger than the standard bar text)
+3. **Position:** Center it in the upper or lower black bar, or overlay on the video itself with semi-transparent background
+4. **Animate:** Add "Fade In" text animation (0.5s) at clip start, "Fade Out" (0.5s) at clip end
+5. **Duration:** Show the title for the first 3-5 seconds or last 3-5 seconds of the clip, not the full duration
+
+**Rule:** Every clip must specify which technique(s) it uses in its detail block. Default is Technique 1 (Cinematic Canvas). All vertical framing is executed in CapCut (single workflow).
+
+---
+
+## RELATED VIDEO BRIDGE
+
+After uploading each Short to YouTube, use YouTube Studio's "Related Video" feature to link the Short directly to the full episode. This creates a direct funnel from Shorts Feed → Episode.
+
+**Checklist per Short:**
+- [ ] Short uploaded to YouTube
+- [ ] YouTube Studio → Short → Details → "Related Video" → select full episode
+- [ ] Verify the link appears on the Short's player page
 
 ---
 
@@ -159,10 +287,12 @@ These are guidelines, not hard rules. Quality over quantity — a weak clip dama
 - [ ] Two platform-specific captions written per clip (IG, Shorts)
 - [ ] Captions are under 150 characters and include a lyric or philosophical hook
 - [ ] Hashtags are relevant and within platform limits
-- [ ] #aiart NOT used before EP07
+- [ ] #aiart included in hashtags
 - [ ] 9:16 crop safety is noted for each clip
 - [ ] Release schedule suggestion is included
 - [ ] No clip relies on context from the full video to make sense
+- [ ] Related Video bridge configured for every Short
+- [ ] Vertical framing technique specified for each clip
 - [ ] Ask yourself: **"Would Fibula approve this?"**
 
 ---

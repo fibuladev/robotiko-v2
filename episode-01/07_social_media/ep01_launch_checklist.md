@@ -2,7 +2,7 @@
 
 > Episode: EP01 — "The Cycle Break / First Contact"
 > Launch Date: Tuesday, April 22, 2026
-> Launch Time: 18:00 CET (Bratislava)
+> Launch Time: 20:00 CET (Bratislava)
 > Generated: 2026-04-07
 > Skill: robotiko-launch-orchestrator v2.0
 
@@ -17,8 +17,8 @@
 
 ### YouTube Package
 - [x] YouTube package reviewed: `episode-01/07_social_media/ep01_youtube_package.md`
-- [x] Title: `ROBOTIKO v2.0 — EP01: "The Cycle Break" | Anatolian Psychedelic Rock`
-- [x] Description: Opens with hook, NO timestamps, NO credits (Phase 1 — AI reveal deferred to EP07)
+- [x] Title: `The Cycle Break — Sci-Fi Visual Album (ROBOTIKO EP. 1)`
+- [x] Description: Opens with hook, NO timestamps, credits included
 - [x] Tags: Within 500 character limit
 - [x] Pinned comment ready: "Count the numbers. They will return."
 
@@ -58,8 +58,7 @@
   - [ ] Playlist: "ROBOTIKO v2.0 — The Complete Journey"
   - [ ] Subscribe button
   - [ ] (No "next episode" — EP02 not yet published)
-- [ ] Visibility: **Scheduled Premiere** for 18:00 CET
-- [ ] Premiere countdown enabled
+- [ ] Visibility: **Scheduled** for 20:00 CET (no premiere — direct publish)
 
 ### Pre-Publish Review (10:00 CET)
 - [ ] Preview video on YouTube (unlisted link)
@@ -75,22 +74,21 @@
 
 | Time (CET) | Action | Platform | Details |
 |-------------|--------|----------|---------|
-| 09:00 | Upload video | YouTube | Unlisted, scheduled premiere 18:00 |
+| 09:00 | Upload video | YouTube | Scheduled for 20:00 (no premiere) |
 | 10:00 | Pre-publish review | YouTube | Check title, description, thumbnail, end screen |
-| 14:00 | Story teaser | Instagram | "Today is the day." — atmospheric still from EP01 |
-| 17:45 | Final check | YouTube | Premiere countdown active, everything in order |
-| **18:00** | **PREMIERE GOES LIVE** | **YouTube** | The Cycle Breaks. |
-| 18:05 | Pin comment | YouTube | "Count the numbers. They will return." |
-| 18:15 | Hook Clip (Clip 1) | IG Reels + YT Shorts | "Two Halves" — lead social clip |
-| 18:30 | Community post | YouTube | Link to premiere + episode hook text |
-| 19:00 | Story share | Instagram | Share the Reel to Stories with "Episode 1 is live" |
+| 19:45 | Final check | YouTube | Scheduled video visible, everything in order |
+| **20:00** | **VIDEO GOES PUBLIC** | **YouTube** | The Cycle Breaks. |
+| 20:01 | Pin comment | YouTube | "Count the numbers. They will return." |
+| 20:15 | Hook Clip (Clip 1) | IG Reels + YT Shorts | "Mentor Arrival" — lead social clip |
+| 20:30 | Community post | YouTube | Link to video + episode hook text |
+| 21:00 | Story share | Instagram | Share the Reel to Stories with "Episode 1 is live" |
 | Evening | Monitor engagement | All platforms | Respond selectively (1 in 10 rule) |
 
 ### Engagement Rules (Launch Day)
 - Respond to ~1 in 10 comments (per creator_strategy.md)
 - No debate, no defense
 - If asked "What is this?": "A 10-episode concept album and video series. CyberAnatolian prog rock."
-- If asked "Is this AI?": No response (not before EP07)
+- If asked "Is this AI?": "Yes. One human and AI tools. Pipeline goes open source after EP10."
 - Heart/like thoughtful comments silently
 - Do NOT post in other people's comments sections to promote
 
@@ -142,13 +140,12 @@ Follow social atomization release schedule:
 
 ## LAUNCH TIMING RECOMMENDATION
 
-**Recommended:** Scheduled Premiere at 18:00 CET
+**Recommended:** Scheduled publish at 20:00 CET (no premiere)
 
 **Rationale:**
-- EP01 is the series opener — premiere builds community anticipation
-- 18:00 CET catches European evening viewers + US East Coast afternoon
-- Premiere countdown creates urgency for social media followers
-- Live chat during premiere provides first audience interaction data
+- 0 subscribers — premiere live chat would be empty, defeating the purpose
+- 20:00 CET catches European evening prime time + US East Coast afternoon (14:00 EST)
+- Direct publish is cleaner — premiere can be used for later episodes when audience exists (EP03+)
 
 ---
 

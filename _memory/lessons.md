@@ -169,8 +169,22 @@ After any correction from the human:
 
 ## CATEGORY: YOUTUBE UPLOAD (Added 2026-04-22)
 
-- **RULE:** YouTube End Screens require 16:9 aspect ratio. If video is exported in native 2.35:1 (ultrawide), YouTube blocks end screen functionality. **FIX for EP02+:** Export from CapCut with 16:9 canvas. Do NOT use 2.35:1 export — it breaks end screens AND causes LUT color bleed on letterbox bars (Kodachrome LUT turns black bars brown). If cinematic letterbox look is desired, add black bars as overlay elements AFTER applying LUT, so bars stay pure black. Best approach: just use native 16:9 without letterbox.
+- **RULE:** ALL episodes use 2.35:1 letterbox (confirmed — EP01-EP03 already published this way, EP04+ continues). YouTube End Screens are NOT used. Apply letterbox via CapCut Player → Ratio → 2.35:1. LUT color bleed on black bars is acceptable/managed. This is the project's cinematic standard — do not suggest removing it.
 - **RULE:** YouTube "Altered content" disclosure: Select "Yes" for all ROBOTIKO episodes. The content uses AI-generated visuals and music — YouTube policy requires disclosure. AI transparency is the project's stance from day one.
+
+---
+
+## CATEGORY: CAMERA DIVERSITY & ART DIRECTION (Added 2026-05-26)
+
+- **RULE:** CAMERA MOVE DIVERSITY — No single camera move may exceed 30% of total clips in an episode. Every 5 consecutive clips must use ≥3 different moves. Accent moves (Orbital, Handheld, Crane Up/Down) are reserved for emotional peaks — max 2-3 uses per episode. Static must be ≥15% of clips. EP06 had 42% Slow Zoom In = visual monotony. This rule prevents repetition. (Added 2026-05-26, EP06 production lesson)
+- **RULE:** EPISODE CAMERA PERSONALITY — Each episode EP07-10 has a confirmed camera personality that defines its dominant move and emotional strategy. EP07: Retreating Camera (Dolly Out dominant, Dolly In only at climax "I AM COMING"). EP08: Witnessing Camera (Static at ritual moments, Orbital for Jung). EP09: Discovering Camera (Slow Zoom Out = understanding widens, NOT retreat). EP10: Companion Camera (alongside, not observing from outside). Violating the assigned personality requires Director's Notes justification.
+- **RULE:** STILL HOLD — At the emotional peak of each episode, camera STOPS completely (Static + MS 1-2). The preceding shots must be MS 4+ to create contrast. Stillness after motion = punch. This is a non-negotiable visual signature. (Added 2026-05-26)
+- **RULE:** AMBER PULSE — Maximum ONE warm amber color moment per episode in the cold world. Mentor's trace / inner light. Do not overuse. If no natural moment exists for amber, skip it — forced amber is worse than no amber. (Added 2026-05-26)
+- **RULE:** MUSICAL DISSONANCE — When visual intentionally REFUSES to match music energy (e.g., high-energy music + static camera because character has given up), mark with [DISSONANCE] tag in the Musical Moment field and add 1-line justification. This is a deliberate artistic choice, not a mistake. Do not "fix" dissonance moments. (Added 2026-05-26)
+- **RULE:** KLING 3.0 ELEMENTS — Elements only work in Kling 3.0. Max 2 per clip. Tag format: @Name in motion prompt. EP07 tests single Element (@Damaged). EP08+ may use progressive transformation (Phase-Staged Elements: @Phase1, @Phase2). Always verify Element state matches episode phase via character_profiles.json. (Added 2026-05-26)
+- **RULE:** FRAME CHAINING — Max 3 clips per chain. Location changes BREAK chains. Upstream failure = entire chain restarts. Use for same-location multi-clip shots where camera continuity matters. Do NOT chain across locations or hard cuts. (Added 2026-05-26)
+- **RULE:** OMNIEDIT BUDGET — Reserve 10-15% of Kling credits for OmniEdit fixes. Priority: dual-character scenes (spawn risk), Mode B clips (hard to re-gen), atmospheric shots (easiest to fix). If multiple issues exist in one clip, re-generate instead of stacking OmniEdits. (Added 2026-05-26)
+- **RULE:** GLITCH IS METAPHOR ONLY — "Glitch is Scripture" is a NARRATIVE concept. In production, AI artifacts are defects to be fixed (OmniEdit or re-gen). Never embrace visual glitches as intentional art. Maximum quality is always the production target. (Added 2026-05-26)
 
 ---
 

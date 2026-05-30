@@ -100,10 +100,11 @@ Two steps require explicit human approval before proceeding. Everything else Cla
   - Selected images from `04_visuals/selected/`
   - Approved `ep{XX}_dramaturgy.md`
   - `ep{XX}_musical_metadata.json` (for beat sync)
-- **Tool:** Claude executes `_skills/robotiko-motion-script/SKILL.md`
+- **Tool:** Claude executes `_skills/robotiko-motion-script/SKILL.md` (v2.0)
 - **Output:** `episode-{XX}/05_video/ep{XX}_motion_script_v01.md`
-  - Output includes a **Tool Assignment Summary** section and per-clip `| Recommended Tool |` field
-- **⛔ MANDATORY CHECKPOINT:** Human reviews camera moves, tech strategy, and tool assignments before video generation.
+  - Output includes: **Tool Assignment Summary**, **Element Registry**, **Camera Diversity Report**, **Frame Chain Map**, per-clip `| Recommended Tool |`, `| Generation Mode |`, `| Element Tags |` fields
+- **EP07+ additions:** Kling 3.0 Elements (character consistency via @Name tags), Frame Chaining (last-frame → start-frame continuity), OmniEdit budget reserve (10-15% of Kling credits)
+- **⛔ MANDATORY CHECKPOINT:** Human reviews camera moves, tech strategy, tool assignments, camera diversity, and Element assignments before video generation.
 
 ### Step 8b: Supplementary Image Generation (If Required)
 - **Trigger:** Motion script flags sub-clips with `⚠️ NEW IMAGE REQUIRED`

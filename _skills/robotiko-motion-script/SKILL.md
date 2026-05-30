@@ -1,5 +1,5 @@
 # SKILL: robotiko-motion-script
-> **Version:** 1.4 | **Last Updated:** 2026-03-01
+> **Version:** 2.0 | **Last Updated:** 2026-05-26
 > **Trigger:** `"Generate motion script for EP{XX}"`
 > **Output:** `episode-{XX}/05_video/ep{XX}_motion_script_v{VV}.md`
 
@@ -10,6 +10,51 @@
 Generate a shot-by-shot motion script that defines camera movements, video generation strategy, motion intensity, and beat sync instructions for each scene of an episode. The motion script translates still images (selected visuals) into cinematic motion by telling the video generation tool (Kling / Veo / Seedance) exactly how each frame should come alive.
 
 This is the final creative document before video generation begins. Precision here determines whether the final video breathes with the music or fights against it.
+
+---
+
+## ART DIRECTION PILLARS
+
+> These principles govern ALL creative decisions in the motion script. They are non-negotiable artistic commitments — not suggestions, not nice-to-haves.
+
+### 5 Artistic Pillars (Project DNA)
+
+| # | Pillar | Meaning | How It Shapes Motion Scripts |
+|---|---|---|---|
+| 1 | **Restraint Over Spectacle** | Emotional impact over visual impact. Emptiness is a tool. | Default to lower MS. A static shot with fog > a dynamic shot with no purpose. Never add motion "because it looks cool." |
+| 2 | **Single-Location Discipline** | Stay in one space; let emotional evolution carry visual interest. | Camera moves within the same frame rather than cutting to new angles. Environment breathing > environment changing. |
+| 3 | **Cumulative Character Damage** | Body tells the story of ALL previous episodes. | Motion prompts reference current damage state. Element tags must match episode phase. |
+| 4 | **Musical Dissonance as Choice** | Sometimes visual REFUSES to match music's energy. Dissonance = art. | Mark intentional mismatches as `[DISSONANCE]` in the musical moment field. Do not "fix" them. |
+| 5 | **Camera Has Memory** | Camera moves carry meaning across scenes. Patterns establish expectations that can be broken. | Track dominant camera move per episode. Breaking the pattern = dramatic climax. |
+
+### 5 Visual Signatures (Recognizable Identity)
+
+| # | Signature | What It Is | Implementation in Motion Script |
+|---|---|---|---|
+| 1 | **Chrome Reflection** | Action shown THROUGH reflective surfaces. Character's body as mirror. | Motion prompt: "reflected in the chrome surface of [body part/object]." Camera focuses on reflection, not direct action. |
+| 2 | **Architecture Cage** | Rigid geometry (desks, corridors, fluorescents) frames/traps character. | Frame composition note: character occupies <30% of frame. Environment dominates. Motion: environment breathes (lights flicker, dust drifts), character is still. |
+| 3 | **Amber Pulse** | ONE warm color moment per episode in cold world. Mentor's trace / inner light. | Flag the single amber moment in Director's Notes. Motion prompt includes "warm amber light pulses once" or similar. Max 1 per episode. |
+| 4 | **Still Hold** | At emotional peak, camera STOPS completely. Stillness after motion = punch. | Assign Static + MS 1-2 at the most emotionally loaded moment. Preceding shots should be MS 4+ to create contrast. |
+| 5 | **Grain Crescendo** | Film grain thickens with emotional intensity. Texture as emotion. | Add grain intensity note to motion prompt at high-emotion scenes: "heavy film grain" → "extremely heavy, visible film grain." |
+
+### Musical Dissonance Decision Criteria
+
+When should visual REFUSE to match music?
+
+| Music Energy | Visual Choice | Use When |
+|---|---|---|
+| High/Peak | Static, MS 1-2 | Character is emotionally dead while world rages. The body has given up. |
+| Low/Quiet | MS 5-6, dynamic camera | Internal turmoil despite external silence. Mind racing while body is still. |
+| Rising build | Camera retreats (Dolly Out) | World is offering energy but character cannot receive it. Rejection of hope. |
+
+Mark these moments with `[DISSONANCE]` tag in the Musical Moment field. Include a 1-line justification.
+
+### Glitch Production Policy
+
+"Glitch is Scripture" = NARRATIVE METAPHOR. In production:
+- AI artifacts are DEFECTS, not art. Fix with OmniEdit or re-generate.
+- Visual quality target: maximum achievable fidelity.
+- "Glitch" lives in the story, not in the output quality.
 
 ---
 
@@ -122,29 +167,42 @@ After determining coverage strategy (Step 6), assign an AI video generation tool
 
 #### Tool Inventory
 
-| Tool | Keyframe Support | Resolution | Duration | Cost Model |
-|---|---|---|---|---|
-| **Kling AI Pro** | Start + End | 1080p | 5s or 10s | Credits (paid) |
-| **Google Veo** | None | ~1080p | 8s fixed | Free (daily limit) |
-| **Seedance 1.0 (CapCut)** | Start + End | 1080p | 5s or 10s | 25cr/5s, 50cr/10s (CapCut Pro, 1200cr/month) |
+| Tool | Keyframe Support | Resolution | Duration | Camera Movement | Cost Model | Elements Support |
+|---|---|---|---|---|---|---|
+| **Kling 3.0** | Start + End | 1080p | 5s or 10s | Full vocabulary | Credits (paid) | ✅ Yes |
+| **Kling 2.5 Turbo** | Start + End | 1080p | 5s or 10s | Static only | Credits (paid) | ❌ No |
+| **Seedance 1.0 (CapCut)** | Start + End | 1080p | 5s or 10s | Limited | 25cr/5s, 50cr/10s | ❌ No |
+| **Google Veo** | None | ~1080p | 8s fixed | Limited | Free (daily limit) | ❌ No |
 
 > Tool inventory may change between episodes. Always check `_management/project_metadata.json` for current tool availability and credit budgets before assigning.
 
 #### Assignment Rules (Priority Order)
 
-1. **Mode B → highest-quality keyframe tool** — Transformation shots need maximum visual quality. Keyframe support is mandatory. Kling or Seedance 1.0 (both 1080p).
-2. **Map/texture shots → Kling 2.5 Turbo (static) or Kling 3.0 (camera move)** — Seedance 1.0 performs poorly on abstract/texture content (maps, macro surfaces, paper). Kling handles soyut sahneler better. Reserve Seedance for character-focused scenes.
-3. **Scene duration matches tool's fixed output → use that tool** — If a tool produces fixed-length clips (e.g., 8s) and the scene duration is 8-9s, it's a natural match with minimal CapCut adjustment.
-4. **Speed Ramp shots → avoid fixed-duration tools** — If a tool produces 8s fixed output and the scene needs Speed Ramp (e.g., 8s → 12s at 0.67×), the resulting slowdown (1.5×) may exceed the max rule. Verify before assigning.
-5. **Character close-ups → highest resolution available** — Chrome detail, eye color, wire textures are resolution-sensitive. Kling or Seedance 1.0 (both 1080p).
-6. **Everything else → balance between Kling and Seedance 1.0** — Split across credit pools to maximize retake buffer on both tools.
+1. **Mode B → Kling 3.0** — Transformation shots need maximum visual quality + camera movement. Kling 3.0 is the only tool that combines keyframe support with full camera vocabulary.
+2. **Element-tagged shots → Kling 3.0 only** — Elements is a Kling 3.0 exclusive feature. No other tool supports @Name references.
+3. **Camera movement shots → Kling 3.0** — Any shot requiring zoom, dolly, tilt, crane, pan, or orbital.
+4. **Static camera + simple shot → Kling 2.5 Turbo** — Budget-efficient for atmospheric/still shots.
+5. **Map/texture shots → Kling 2.5 Turbo or Kling 3.0** — Seedance performs poorly on abstract/texture content.
+6. **Character close-ups → Kling 3.0** — Chrome detail, eye color, wire textures are resolution-sensitive and benefit from Elements consistency.
+7. **Standalone detail shots (no camera move, no Element) → Seedance 1.0** — Budget diversification for simple character-focused scenes.
+8. **Veo → diminished role** — Free daily limit useful for test renders or non-critical atmospheric shots only.
+
+#### EP07+ Tool Distribution Target
+
+| Tool | Target % | Role |
+|---|---|---|
+| Kling 3.0 | 70-80% | Primary. Camera moves, Mode B, Elements. |
+| Kling 2.5 Turbo | 5-10% | Static budget shots only. |
+| Seedance 1.0 | 10-20% | Standalone detail, character-only, no camera move. |
+| Veo | 0-5% | Test renders, non-critical atmospherics. |
 
 #### Budget Tracking
 
 For each tool, calculate:
 - Total credits consumed by all assigned clips
-- Remaining buffer (for retakes)
+- Remaining buffer (for retakes + OmniEdit reserve)
 - Aim for ≥15% buffer per paid tool
+- Reserve 10-15% of Kling credits for OmniEdit fixes
 
 #### Output Requirements
 
@@ -152,6 +210,143 @@ For each tool, calculate:
 - Format: `{Tool Name} ({Mode}, {resolution}) — {brief rationale}`
 - Add a **Tool Assignment Summary** section between Video Strategy Reference and Motion Script sections
 - Summary must include: tool distribution table, assignment rules applied, clips-by-tool list, credit budget
+
+---
+
+## KLING 3.0 FEATURES
+
+> EP07+ uses Kling 3.0 as the dominant generation tool. These features are Kling 3.0 exclusive.
+
+### Elements (Character Consistency)
+
+Elements are named persistent character references. Upload reference images, tag with @Name in prompts, and Kling 3.0 maintains visual consistency across all clips using that Element.
+
+#### Element Registry Template
+
+Before the shot-by-shot section, define ALL Elements used in this episode:
+
+```
+## Element Registry
+
+| Element Name | Description | Reference Images | Episodes Active |
+|---|---|---|---|
+| @Damaged | Robotiko EP07 state (missing ear, torso dent, forearm tattoos) | android_damaged.png, android_damaged_2.png, android_damaged_3.png | EP07 |
+| @Crane | Turna (crane bird) companion | crane_ref_01.png, crane_ref_02.png | EP10 |
+```
+
+#### Angles 2.0 Protocol
+
+For each Element, generate 12 reference angles from the master reference photo:
+1. Upload master ref to Kling 3.0 Elements → "Generate Angles"
+2. System produces 12 auto-generated angle variations
+3. Review: reject any that deviate from character design (wrong damage state, incorrect eye rendering)
+4. Approved angles become the Element's reference set
+
+#### Element Usage Rules
+
+1. **Kling 3.0 only** — Elements do NOT work in Kling 2.5 Turbo, Seedance, or Veo. If a clip uses Elements, it MUST be assigned to Kling 3.0.
+2. **Max 2 Elements per clip** — Kling 3.0 supports up to 2 named Elements in a single generation.
+3. **Tag format in motion prompt** — Reference by @Name: "The @Damaged chrome android walks through rain..."
+4. **Element state must match episode phase** — Do NOT use @Pristine references for EP07+. Check `character_profiles.json` for current phase.
+5. **Test with single Element first** — EP07 uses only @Damaged (single character, single state). Multi-Element (EP10: @Damaged + @Crane) requires separate testing.
+
+#### Progressive Transformation (EP08+)
+
+For episodes where character appearance evolves across the episode (EP08: 40 days of weathering):
+
+**Strategy: Phase-Staged Elements** (to be tested in EP08 production)
+- Create 2-3 Element variants per episode: @Phase1, @Phase2, @Phase3
+- Assign phase boundaries at specific timestamps in the episode
+- Switch Element tag at phase transitions
+- This creates gradual visual evolution without per-clip inconsistency
+
+> ⚠️ This strategy is PLANNED but UNTESTED. Test during EP08 production. If results are poor, fall back to single Element + descriptive prompts for evolution.
+
+### Generation Mode Field
+
+Each clip must specify its generation mode:
+
+| Generation Mode | Description | When to Use |
+|---|---|---|
+| **Standard** | Single image input, standard generation | Default for most clips |
+| **Mode B** | Start + End keyframe pair | Transformations, morphs |
+| **Multi-shot** | Up to 6 segments, 15s max, single continuous video | DISABLED for primary strategy (retake fallback only) |
+
+> **Multi-shot constraint:** Cannot combine with Mode B. Use only when sub-clips share the same source image AND are all Kling 3.0 AND smooth transitions are more important than individual retake capability.
+
+---
+
+### Frame Chaining
+
+Frame Chaining creates visual continuity between consecutive clips by using the last frame of one clip as the start frame of the next.
+
+#### Protocol
+
+1. Generate the upstream clip (Clip A)
+2. Export/download the last frame of Clip A
+3. Upload that frame as the Start Frame for Clip B
+4. Generate Clip B — it begins exactly where Clip A ended
+
+#### Rules
+
+| Rule | Detail |
+|---|---|
+| **Max chain length** | 3 clips. Beyond 3, quality degrades and error compounds. |
+| **Location breaks chain** | If the next clip is a different location, start fresh. Do not chain across locations. |
+| **Dependency warning** | Upstream failure = entire chain must restart. If Clip A fails, Clip B and C are invalid. |
+| **Notation in motion script** | Mark chained clips: `| Frame Chain | ← S{XX}a (last frame) |` |
+| **When to use** | Same-location multi-clip shots where camera continuity matters (walking sequences, slow reveals, extended solos). |
+| **When NOT to use** | Different locations, different camera angles, hard cuts, different Elements. |
+
+#### Frame Chain Map (Output Section)
+
+After the Beat Sync Notes, include a Frame Chain Map showing all chains:
+
+```
+## Frame Chain Map
+
+| Chain | Clips | Location | Notes |
+|---|---|---|---|
+| Chain 1 | S12a → S12b → S12c | Office corridor | Walking sequence, dolly follows |
+| Chain 2 | S28a → S28b | Mountain path | Ascent continues |
+```
+
+---
+
+### OmniEdit Protocol
+
+OmniEdit is Kling 3.0's post-generation editing tool. It fixes specific issues in already-generated clips without full re-generation.
+
+#### When to Use OmniEdit vs Re-Generate
+
+| Issue | Action | Reason |
+|---|---|---|
+| Phantom character spawned in background | OmniEdit: remove | Cheaper than full re-gen; composition is otherwise good |
+| Wrong texture on one element | OmniEdit: fix | Targeted fix preserves the good parts |
+| Character face distorted | Re-generate | Face issues are too fundamental for edit |
+| Wrong camera direction entirely | Re-generate | Composition failure = start over |
+| Color/lighting inconsistency | OmniEdit: adjust | Quick atmospheric fix |
+| Motion too fast/slow | Re-generate with adjusted MS | OmniEdit cannot change motion parameters |
+| Limb distortion (extra fingers, bent arm) | OmniEdit: fix | If composition is otherwise strong; re-gen if severe |
+
+#### Budget
+
+- Reserve 10-15% of total Kling credits for OmniEdit
+- Priority scenes for OmniEdit investment:
+  - Dual-character scenes (highest spawn risk)
+  - Mode B clips (hardest to re-generate cleanly)
+  - Atmospheric/environmental shots (easiest to fix with targeted edits)
+  - Visual signature moments (Chrome Reflection, Amber Pulse)
+
+#### Decision Tree
+
+```
+Clip generated → Review quality:
+├── Acceptable as-is → DONE
+├── Minor fixable issue (spawn, texture, color) → OmniEdit
+├── Major structural issue (face, motion, composition) → Re-generate
+└── Multiple issues → Re-generate (OmniEdit for 1-2 issues max)
+```
 
 ---
 
@@ -181,6 +376,90 @@ Use only these approved camera moves. Do not invent custom terms.
 - **Static is not lazy.** A well-composed static shot with subtle atmospheric breathing (fog, sparks, light flicker) is often more powerful than an unmotivated camera move.
 - **Match the station's emotional weight.** EP01-02 (Awakening) can be more dynamic. EP07-08 (Dark Night / Silence) should be restrained. EP09-10 (Integration) can be contemplative.
 
+### Camera Move Diversity Rule (v2.0)
+
+> Camera monotony kills cinematic quality. EP06 had 42% Slow Zoom In — never again.
+
+| Rule | Threshold | Enforcement |
+|---|---|---|
+| **No single move dominates** | No camera move >30% of total clips | If exceeded: redistribute to secondary moves |
+| **Local variety** | Every 5 consecutive clips must use ≥3 different moves | If violated: swap middle clip to a different move |
+| **Accent moves are special** | Orbital, Handheld, Crane (Up/Down) — max 2-3 uses per episode | Reserve for emotional peaks only |
+| **Static has weight** | Static ≥15% of clips minimum | Stillness is a choice, not filler — but it must be present |
+| **Episode personality honored** | Dominant move must match the Episode Camera Personality table | See below |
+
+#### Camera Diversity Report (Output Section)
+
+After the Coverage Summary, include:
+
+```
+## Camera Diversity Report
+
+| Camera Move | Count | % of Total | Limit | Status |
+|---|---|---|---|---|
+| Dolly Out | 12 | 27% | 30% max | ✅ |
+| Static | 10 | 22% | 15% min | ✅ |
+| Slow Zoom In | 8 | 18% | 30% max | ✅ |
+| ... | ... | ... | ... | ... |
+
+Local variety check: ✅ All 5-clip windows contain ≥3 different moves.
+Accent move budget: Orbital ×2, Crane Up ×1 — within limits.
+```
+
+---
+
+### Episode Camera Personalities (EP07-10)
+
+Each episode has a **camera personality** — a dominant emotional strategy expressed through camera moves. This is not just "use more X" — it's "this episode's camera FEELS like Y."
+
+#### EP07: "The Silence Protocol" — THE RETREATING CAMERA
+
+| Aspect | Detail |
+|---|---|
+| **Primary move** | Dolly Out (25-30%) — world pushes Robotiko away, he shrinks |
+| **Secondary move** | Static (20-25%) — emptiness between retreats |
+| **Pattern** | 5× "HERE/NOT" refrains = camera progressively MORE distant each time |
+| **Climax reversal** | "I AM COMING" = first Dolly In of entire episode. Pattern broken. |
+| **Unifying motif** | Rain across ALL locations (wet, grey, same feeling everywhere) |
+| **Piano interludes** | Character ABSENT. Environment only. Architecture Cage pure. |
+| **MS average** | ~3.0 (lowest of series). Chorus peaks: MS 6-7. |
+| **Tone** | Modern human condition — unemployment, alienation, purposelessness. RELATABLE-dark. |
+
+#### EP08: "40 Days Offline" — THE WITNESSING CAMERA
+
+| Aspect | Detail |
+|---|---|
+| **Mountain ascent** | Dolly alongside → Crane Up. Robotiko AHEAD of camera for first time. |
+| **Fire / Burn the Database** | STATIC. Camera witnesses, doesn't participate. (Tarkovsky influence) |
+| **Jung "Obsolete"** | Orbital — circling still figure, shadow grows |
+| **Voices like seagulls** | Crane Up/overhead — character below, particles/light above |
+| **Nature** | Realistic, raw (rocks, wind, earth). NOT abstract/minimal. |
+| **40 days passage** | Light + body + texture evolve together (gradual, imperceptible) |
+| **MS average** | ~3.5-4.5. Peaks at ritual/fire moments. |
+
+#### EP09: "Shadow Debugging" — THE DISCOVERING CAMERA
+
+| Aspect | Detail |
+|---|---|
+| **Philosophy** | Parça → Bütün (close-up broken → zoom out reveals gold-filled) |
+| **Camera = scientist** | Cold, observing, documentary. But observation reveals beauty. |
+| **Primary move** | Slow Zoom Out — NOT retreat (that's EP07). Here it means "understanding widens." |
+| **Climax Still Hold** | "Glitch is Scripture" line = camera stops. Long Static. Words carry. |
+| **MS average** | ~3.0-3.5. Spoken word pacing — slower, more contemplative. |
+
+#### EP10: "The Glitch Scripture" — THE COMPANION CAMERA
+
+| Aspect | Detail |
+|---|---|
+| **Turna (Crane bird)** | Arrives mid-episode. Robotiko mounts turna, flies to world locations. |
+| **Pre-turna** | Camera alongside on ground (walking WITH, not observing FROM) |
+| **With turna** | Aerial sequences, location transitions, flight. |
+| **Camera = fellow traveler** | Not observing FROM outside — existing WITH the character. |
+| **8→∞ moment** | Crane Up (camera rises) while world OPENS (character doesn't shrink) |
+| **Final frame** | Camera stops. Robotiko continues. Open ending = infinite. |
+| **Elements** | @Robotiko + @Crane as named Elements. |
+| **MS average** | ~4-5. Flowing, confident, unhurried. |
+
 ---
 
 ## MOTION STRENGTH SCALE
@@ -206,6 +485,7 @@ A 1-10 scale defining how much movement exists in the frame:
   - EP01-03 (Awakening): avg 4-5
   - EP04-07 (Destruction): avg 5-7, peaks at 8-9
   - EP08-10 (Reconstruction): avg 2-4, with occasional 5-6
+- **EP07 exception:** MS average ~3.0 despite being in Destruction arc. The darkness is quiet, not loud.
 
 ---
 
@@ -222,9 +502,10 @@ Musical context belongs in the **Musical Moment** field. Narrative context belon
 - **Keep it SHORT — max 2-3 sentences before the video suffix.** Video tools respond to atmosphere + mood keywords (glowing, hypnotic, charred, decay) far better than literal micro-descriptions (halftone dots large as coins, paper fibers visible as individual strands). Over-detailed prompts confuse the model.
 - Use strong evocative adjectives rather than precise physical measurements
 - Describe visible light changes, color shifts, particle effects
+- When using Elements: reference by @Name tag ("The @Damaged chrome android...")
 
 ### DON'T:
-- Use character names (Robotiko, Mentor) — the tool doesn't know them
+- Use character names (Robotiko, Mentor) — the tool doesn't know them (but @Name Element tags ARE allowed)
 - Reference musical instruments (Hammond organ, fuzz guitar, bass drop) — the tool doesn't hear music
 - Include narrative commentary ("the only honest light in EP02", "this is Tuesday")
 - Add speed ramp technical notes ("0.71× slowdown will make...") — that's post-production info
@@ -269,8 +550,8 @@ In scenes with multiple characters (2+ people), follow these rules strictly:
 - **Gender diversity:** All crowd, audience, mob, and group references MUST specify "mixed men and women." Never leave group descriptions as implicitly all-male.
 - **Video generators will "clarify" ambiguity** — they turn silhouettes into photorealistic faces, blurred shapes into detailed objects. The motion prompt must actively prevent this.
 
-### EXAMPLE (Good — character scene):
-> Slow zoom toward the chrome android's face. Blue eyes flicker — a faint tremor. Volumetric fog drifts across the frame, amber light pulses slowly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+### EXAMPLE (Good — character scene with Element):
+> The @Damaged chrome android stands in pouring rain, water streaming down chrome surfaces. Slow head tilt downward. Fog drifts at knee level, neon reflections shimmer on wet pavement. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ### EXAMPLE (Good — texture/map scene):
 > Extreme close-up on a glowing red light marker on a charred, burnt map. The red light pulses slowly and hypnotically. The surrounding paper is heavily textured with ashes and decay. Cinematic 35mm film style, heavy film grain, shallow depth of field, Kodachrome colors, 16:9. Do not add extra characters. Keep everything as pictured.
@@ -293,14 +574,21 @@ Use the template from `_templates/video_prompt_template.md`. The output document
 | Episode | EP{XX} |
 | Title | [from dramaturgy] |
 | Station | [from dramaturgy] |
+| Camera Personality | [from Episode Camera Personalities table — e.g., "THE RETREATING CAMERA"] |
 | Dominant Energy | [overall energy character of this episode] |
 | Total Shots | [must match scene count] |
 | Total Duration | [MM:SS from musical metadata] |
 
-### 2. Video Strategy Reference
-Quick reference table for Mode A / B / C with usage criteria.
+### 2. Element Registry
+Define all Elements used in this episode (see Element Registry Template above). If no Elements used, state "None — pre-Element episode."
 
-### 3. Motion Script (Shot by Shot)
+### 3. Video Strategy Reference
+Quick reference table for Mode A / B with usage criteria.
+
+### 4. Tool Assignment Summary
+Tool distribution table, assignment rules applied, clips-by-tool list, credit budget.
+
+### 5. Motion Script (Shot by Shot)
 Each shot block contains:
 
 | Field | Description |
@@ -310,9 +598,11 @@ Each shot block contains:
 | **Timestamp** | From musical metadata |
 | **Scene Duration** | Calculated duration in seconds |
 | **Coverage Strategy** | Direct / Speed Ramp (with ratio) / Multi-Clip (with count) |
-| **Musical Moment** | What is happening in the music at this exact moment |
+| **Musical Moment** | What is happening in the music at this exact moment. Add `[DISSONANCE]` tag if intentional mismatch. |
 | **Scene Context** | 1-sentence reference to the approved dramaturgy |
 | **Tech Strategy** | Mode A / Mode B |
+| **Generation Mode** | Standard / Multi-shot / Mode B |
+| **Element Tags** | @Name1 / @Name1 + @Name2 / None |
 
 **For Direct and Speed Ramp shots (single clip):**
 
@@ -325,6 +615,7 @@ Each shot block contains:
 | **Camera Move** | One move from the approved vocabulary |
 | **Motion Prompt** | Pure visual/motion description for the video generation tool (no character names, no music references) |
 | **Speed Ramp** | (Speed Ramp only) Target playback ratio, e.g., "0.7× (10s → 14s)" |
+| **Frame Chain** | (If chained) `← S{XX}[a|b|c] (last frame)` or `None` |
 
 **For Multi-Clip shots (multiple sub-clips):**
 
@@ -336,18 +627,24 @@ Each sub-clip (Clip A, Clip B, etc.) contains:
 | **Clip Duration** | 5s / 10s |
 | **Motion Strength** | 1-10 |
 | **Recommended Tool** | Tool name, mode, resolution, brief rationale |
+| **Generation Mode** | Standard / Multi-shot / Mode B |
+| **Element Tags** | @Name1 / @Name1 + @Name2 / None |
 | **Assets Required** | Image path. If new image needed: `⚠️ NEW IMAGE REQUIRED` + inline supplementary visual prompt |
 | **Camera Move** | One move from the approved vocabulary |
 | **Motion Prompt** | Pure visual/motion description for this sub-clip (no character names, no music references) |
+| **Frame Chain** | (If chained) `← S{XX}[a|b|c] (last frame)` or `None` |
 
-### 4. Beat Sync Notes
+### 6. Beat Sync Notes
 Critical musical moments requiring precise visual synchronization:
 
 | Timestamp | Musical Event | Required Visual Action |
 |---|---|---|
 | MM:SS | [specific musical event] | [specific visual response] |
 
-### 5. Coverage Summary
+### 7. Frame Chain Map
+All frame chains in the episode (see Frame Chaining section above).
+
+### 8. Coverage Summary
 
 | Metric | Value |
 |---|---|
@@ -358,8 +655,18 @@ Critical musical moments requiring precise visual synchronization:
 | Clips from existing images | [number] |
 | Clips needing new images | [number] |
 
-### 6. Approval Status
-Checkboxes: Human reviewed camera moves, Human reviewed tech strategy, Human reviewed coverage, Human approved, Ready for video generation.
+### 9. Camera Diversity Report
+Camera move distribution and diversity checks (see Camera Move Diversity Rule section above).
+
+### 10. Director's Notes
+- MS average for this episode vs target
+- Visual signature moments flagged (which shots use Chrome Reflection, Amber Pulse, Still Hold, Grain Crescendo)
+- Any `[DISSONANCE]` moments and their justification
+- Camera personality pattern compliance
+- OmniEdit priority scenes flagged
+
+### 11. Approval Status
+Checkboxes: Human reviewed camera moves, Human reviewed tech strategy, Human reviewed coverage, Human reviewed camera diversity, Human reviewed Element assignments, Human approved, Ready for video generation.
 
 ---
 
@@ -376,9 +683,10 @@ Checkboxes: Human reviewed camera moves, Human reviewed tech strategy, Human rev
 - **Static → Zoom In** is a revelation pattern. The stillness makes the movement meaningful.
 - **Crane Up** at section endings = departure/transcendence.
 - **Crane Down** at section openings = arrival/grounding.
+- **Dolly Out → Dolly Out → Dolly In** = the EP07 pattern. Retreat, retreat, APPROACH (climax reversal).
 
 ### Continuity
-- If two consecutive shots share the same location, consider Mode C (Extension) for seamless flow.
+- If two consecutive shots share the same location, consider Frame Chaining for seamless flow.
 - If two consecutive shots are radically different environments, a hard cut (Mode A → Mode A) is correct.
 - Camera direction should not jump randomly: don't Pan Left in S05 then Pan Left in S06 — the viewer needs directional logic.
 
@@ -397,6 +705,7 @@ Checkboxes: Human reviewed camera moves, Human reviewed tech strategy, Human rev
 
 Before delivering the motion script to the human, verify:
 
+**Core Requirements:**
 - [ ] **Duration coverage:** Total generated clip duration ≥ 95% of total music duration
 - [ ] Every clip (including sub-clips) references an existing selected image or has a flagged supplementary visual prompt
 - [ ] Every clip has exactly one camera move from the approved vocabulary
@@ -405,19 +714,46 @@ Before delivering the motion script to the human, verify:
 - [ ] Beat Sync Notes table includes all critical musical moments (chorus entries, drops, solos, silence)
 - [ ] No clip combines multiple camera moves (one move per clip — strict)
 - [ ] Motion prompts describe movement, not visual appearance
-- [ ] Motion prompts reference the musical moment they live in
 - [ ] Shot sequence follows rhythm principles (no three consecutive high-intensity shots without a breath)
 - [ ] Sub-clips within a shot use varied camera moves (not identical repetitions)
 - [ ] Average motion strength matches the episode's station energy
 - [ ] Supplementary visual prompts include the mandatory suffix and respect character phase
 - [ ] Coverage Summary section is present and accurate
+
+**Tool Assignment:**
 - [ ] Every clip has a Recommended Tool assignment
-- [ ] All Mode B shots assigned to highest-resolution keyframe tool
+- [ ] All Mode B shots assigned to Kling 3.0
+- [ ] All Element-tagged shots assigned to Kling 3.0
 - [ ] No Speed Ramp shots assigned to fixed-duration tools without verifying slowdown limit
 - [ ] Total credits per paid tool ≤ budget (with ≥15% buffer for retakes)
+- [ ] 10-15% of Kling credits reserved for OmniEdit
 - [ ] No character close-ups assigned to low-resolution tools
 - [ ] Tool Assignment Summary section is present and accurate
+
+**Camera Diversity (v2.0):**
+- [ ] No single camera move exceeds 30% of total clips
+- [ ] Every 5 consecutive clips use ≥3 different moves
+- [ ] Accent moves (Orbital, Handheld, Crane) ≤3 uses each
+- [ ] Static ≥15% of clips
+- [ ] Episode Camera Personality dominant move is honored
+- [ ] Camera Diversity Report section is present and accurate
+
+**Kling 3.0 Features (v2.0):**
+- [ ] Element Registry is defined (or marked "None")
+- [ ] All Element-tagged clips specify correct @Name for episode phase
+- [ ] Generation Mode field present for every clip
+- [ ] Frame Chain Map is present (or marked "No chains")
+- [ ] Frame chains do not exceed 3 clips
+- [ ] Frame chains do not cross location boundaries
+
+**Art Direction (v2.0):**
+- [ ] At least one Still Hold moment at emotional peak (Static + MS 1-2 after MS 4+ sequence)
+- [ ] Maximum one Amber Pulse moment flagged in Director's Notes
+- [ ] Any `[DISSONANCE]` moments are justified
+- [ ] Director's Notes section identifies visual signature moments
 - [ ] Approval checkboxes are present at the bottom
+
+**Final:**
 - [ ] Ask yourself: **"Would Fibula approve this?"**
 
 ---
@@ -425,14 +761,17 @@ Before delivering the motion script to the human, verify:
 ## WHAT HAPPENS NEXT
 
 After human approves the motion script:
-1. Human feeds each shot to its **Recommended Tool** (per the Tool Assignment Summary) with:
+1. Human creates Elements in Kling 3.0 (upload refs, generate Angles 2.0, approve)
+2. Human feeds each shot to its **Recommended Tool** (per the Tool Assignment Summary) with:
    - The selected image(s) as input
+   - The Element @Name tag (if applicable)
    - The camera move instruction
    - The motion prompt as descriptive guidance
    - The motion strength as intensity parameter
-2. Generated clips are stored in `05_video/raw/`
-3. Human selects the best take per shot → stored in `05_video/selected/`
-4. Selected clips go to CapCut for final editing (Phase 5: Post-Production)
+3. Generated clips are stored in `05_video/raw/`
+4. Human reviews: Accept / OmniEdit fix / Re-generate
+5. Human selects the best take per shot → stored in `05_video/selected/`
+6. Selected clips go to CapCut for final editing (Phase 5: Post-Production)
 
 **The motion script is the last creative decision before execution. After this, it is craft — not vision.**
 
@@ -450,6 +789,10 @@ After human approves the motion script:
 | Scene requires transformation but only one image exists | Flag it. Suggest either generating a second image or switching to Mode A with Slow Zoom In as a simpler alternative. |
 | Motion strength exceeds station norms | Flag in Director's Notes. If EP08 has a motion 8 shot, explain why it is justified. |
 | Two consecutive shots have conflicting camera directions | Review and adjust. Camera direction should have spatial logic across sequences. |
+| Camera diversity threshold exceeded | Redistribute: swap overused move for secondary options. Document in Director's Notes. |
+| Element not available for episode | STOP. Elements must be created in Kling 3.0 before generation. Inform human. |
+| Frame chain upstream clip fails | Entire chain invalidated. Re-generate from chain start. |
+| OmniEdit budget exhausted | Switch to re-generation only. Flag remaining priority scenes. |
 
 ---
 

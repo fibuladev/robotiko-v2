@@ -1,7 +1,7 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-04-22 (EP01 Launch Day + External Promotion Strategy)
+> Last Updated: 2026-05-30 (EP07 Direction complete — dramaturgy approved)
 
 ---
 
@@ -345,6 +345,31 @@
 
 ---
 
+## NEXT: EP07 PRODUCTION
+
+- [x] `ep07_lyrics_v01.md` — Lyrics complete (timestamped, from human)
+- [x] `ep07_musical_metadata.json` — 25 sections, 439s, 73 BPM, E Minor ✅ 2026-05-30
+- [x] `ep07_concept_notes.md` — Concept notes written & APPROVED ✅ 2026-05-30 (art-house short-film pivot)
+- [x] `ep07_dramaturgy_v01.md` — 29 scenes, Retreating Camera spine ✅ 2026-05-30
+- [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-05-30
+- [ ] Reference images — @Damaged Element (android_damaged ×3 exist), balcony env (from ref-env-06), waterside, wet street, transit, mall; cold eye-projection treatment
+- [ ] `ep07_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) — NEW SESSION
+- [ ] Image generation — Nano Banana
+- [ ] Human selects images
+- [ ] `ep07_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script v2.0)
+- [ ] **[CHECKPOINT]** Human approves motion script
+- [ ] Video generation
+- [ ] Final edit — CapCut
+
+### 2026-05-30 Session Summary (EP07 Direction: Lyrics → Metadata → Concept → Dramaturgy)
+**Strategic pivot:** EP07 is the series turning point — "music video, a tick above" → art-house short film (fewer words, more silence, design the silences first). Treatment inherited by EP08-10.
+**Deliverables:** `ep07_lyrics_v01.md`, `ep07_musical_metadata.json` (25 sections, 439s, 73 BPM, E Minor), `ep07_concept_notes.md` (APPROVED), `ep07_dramaturgy_v01.md` (29 scenes, APPROVED). All committed in one EP07 - Direction commit.
+**Locked cinematic choices:** wet-grey aftermath; twilight→night→first-light spine; dual anchoring device (wet reflections = self, cold blue-white eye-projection = world's noise — EP05 inversion); amber starvation → ONE received ember at "I AM COMING" (Moon/Sun — amber arrives from outside, caught on wet chrome; eyes STEADY, never glow); Retreating Camera + 5× refrain distance ladder + single Dolly In; tether motif ("plugged in" → "pull the plug", pre-echo of EP08 cable tearing); balcony finale cluster; first Kling 3.0 @Damaged Element test.
+**Also this session:** committed the management/skills backlog (motion-script SKILL v2.0, YouTube strategy v2.0 + packager v4.0, EP04/EP05 post, EP06 visuals fix); added MEMORY lesson — keep the open-source repo free of private conversation quotes.
+**Next step:** Visual prompts in a NEW session (clean context per workflow). Generate reference images first.
+
+---
+
 ## BACKLOG
 
 ### Skills (Content to Write)
@@ -372,7 +397,7 @@
 - [x] `ep04_musical_metadata.json` — completed
 - [x] `ep05_musical_metadata.json` — completed
 - [x] `ep06_musical_metadata.json` — completed ✅ 2026-05-01
-- [ ] `ep07_musical_metadata.json`
+- [x] `ep07_musical_metadata.json` ✅ 2026-05-30
 - [ ] `ep08_musical_metadata.json`
 - [ ] `ep09_musical_metadata.json`
 

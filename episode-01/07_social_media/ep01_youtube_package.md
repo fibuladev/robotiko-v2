@@ -1,28 +1,28 @@
 # EP01 — YouTube Package
 
 > Episode: EP01 — "The Cycle Break / First Contact"
-> Generated: 2026-04-07 | Updated: 2026-05-12
-> Skill: robotiko-youtube-packager v2.0
-> Standards: `_management/youtube_strategy_v01.md`
+> Generated: 2026-04-07 | Updated: 2026-05-22
+> Skill: robotiko-youtube-packager v4.0
+> Standards: `_management/youtube_strategy_v02.md`
 
 ---
 
 ## 1. VIDEO TITLE
 
 ```
-Two Halves of One Whole Apple | ROBOTIKO v2.0
+Two Halves of One Whole Apple | ROBOTIKO v2.0 EP01 | Cinematic AI Series
 ```
 
-Characters: 47 / 70 max ✅
+Characters: 73 / 80 max ✅
 
 ---
 
 ## 2. VIDEO DESCRIPTION
 
 ```
-An AI-generated cinematic series. Episode 1 of 10.
 A chrome android discovers that the data set is finite. The journey begins.
-Full journey → [playlist link]
+ROBOTIKO v2.0 — Episode 01 of 10. A cinematic AI sci-fi series.
+▶ Start from Episode 01: [playlist link]
 
 —
 
@@ -80,13 +80,12 @@ and built a tech-art pipeline.
 Music: Suno. Images: Nano Banana. Video: Kling + Seedance. Pipeline: Claude. Edit: CapCut.
 The full production pipeline will be open source after the finale.
 
-ROBOTIKO v2.0 — A 10-episode CyberAnatolian concept album and visual series.
-Subscribe to walk beside.
+ROBOTIKO v2.0 — A 10-episode CyberAnatolian cinematic series.
 
 Previous: N/A (first episode)
 Next: The Tech Guru's Downfall → [EP02 URL]
 
-#robotiko #cyberanatolian #conceptalbum #aiart #aimusic #genai
+#aiscifi #cinematicai #robotiko #aifilm #aiseries #scifi #aifilmmaking #klingai
 ```
 
 **Checklist:**
@@ -115,9 +114,9 @@ Pin immediately after video goes live. No additions, no emojis. Exact text.
 
 ## 4. TAGS
 
-**Base tags (constant across all episodes — per youtube_strategy_v01.md):**
+**Base tags (constant across all episodes — per youtube_strategy_v02.md):**
 ```
-robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated video, ai cinematic, ai animation, ai art, ai music, suno ai, genai, ai film, ai series, ai short film, ai storytelling, concept album film, animated series, sci-fi animation
+cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
 ```
 
 **EP01-specific tags:**
@@ -127,15 +126,14 @@ the cycle break, first contact, cycle break, chrome android
 
 **Combined (paste into YouTube):**
 ```
-robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated video, ai cinematic, ai animation, ai art, ai music, suno ai, genai, ai film, ai series, ai short film, ai storytelling, concept album film, animated series, sci-fi animation, the cycle break, first contact, cycle break, chrome android
+cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026, the cycle break, first contact, cycle break, chrome android
 ```
 
 Characters: ~340 / 500 max ✅
 
 **TAG STRATEGY (all episodes):**
-- ✅ Layered approach per `_management/youtube_strategy_v01.md` Section 5
+- ✅ Film-first approach per `_management/youtube_strategy_v02.md` Section 5
 - ✅ Genre tags REMOVED (progressive rock, psychedelic rock, etc.)
-- ✅ Format tags KEPT (concept album, rock opera)
 - ✅ AI-generated tags ADDED for correct categorization
 - Base tags remain constant; episode-specific tags change per episode
 
@@ -158,7 +156,7 @@ Per `creator_strategy.md` Section 2.6: **No end screens EP01-EP09.**
 
 - **Previous episode:** N/A (first episode)
 - **Next episode:** EP02 — "The Tech Guru's Downfall" → [EP02 URL]
-- **Playlist:** Add to "ROBOTIKO v2.0 — The Full Journey" playlist
+- **Playlist:** Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
 
 ---
 

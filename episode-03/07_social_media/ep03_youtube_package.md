@@ -2,27 +2,28 @@
 
 > Episode: EP03 — "Anatolian Trials" (THE CRUCIBLE)
 > Generated: 2026-05-12
-> Skill: robotiko-youtube-packager v2.0
-> Standards: `_management/youtube_strategy_v01.md`
+> Updated: 2026-05-22
+> Skill: robotiko-youtube-packager v4.0
+> Standards: `_management/youtube_strategy_v02.md`
 
 ---
 
 ## 1. VIDEO TITLE
 
 ```
-They Folded Him Like Cloth | ROBOTIKO v2.0
+They Folded Him Like Cloth | ROBOTIKO v2.0 EP03 | Cinematic AI Series
 ```
 
-Characters: 44 / 70 max ✅
+Characters: 69 / 80 max ✅
 
 ---
 
 ## 2. VIDEO DESCRIPTION
 
 ```
-An AI-generated cinematic series. Episode 3 of 10.
 The test comes in the mother tongue. (Bu bölüm tamamen Türkçe'dir.)
-Full journey → [playlist link]
+ROBOTIKO v2.0 — Episode 03 of 10. A cinematic AI sci-fi series.
+▶ Start from Episode 01: [playlist link]
 
 BÖLÜM 3: ANADOLU'NUN TESTİ
 Bir Chrome Android (Robotiko v2.0), spiritüel aydınlanma umuduyla Anadolu
@@ -157,13 +158,12 @@ and built a tech-art pipeline.
 Music: Suno. Images: Nano Banana. Video: Kling + Seedance. Pipeline: Claude. Edit: CapCut.
 The full production pipeline will be open source after the finale.
 
-ROBOTIKO v2.0 — A 10-episode CyberAnatolian concept album and visual series.
-Subscribe to walk beside.
+ROBOTIKO v2.0 — A 10-episode CyberAnatolian cinematic series.
 
 Previous: The Tech Guru's Downfall → [EP02 URL]
-Next: [EP04 Title] → Coming soon
+Next: The Moon Has No Light of Its Own → [EP04 URL]
 
-#robotiko #cyberanatolian #conceptalbum #aiart #aimusic #genai
+#aiscifi #cinematicai #robotiko #aifilm #aiseries #scifi #aifilmmaking #klingai
 ```
 
 **Checklist:**
@@ -204,9 +204,9 @@ Pin immediately after video goes live. No additions, no emojis. Exact text from 
 
 ## 4. TAGS
 
-**Base tags (constant across all episodes — per youtube_strategy_v01.md):**
+**Base tags (constant across all episodes — per youtube_strategy_v02.md):**
 ```
-robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated video, ai cinematic, ai animation, ai art, ai music, suno ai, genai, ai film, ai series, ai short film, ai storytelling, concept album film, animated series, sci-fi animation
+cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
 ```
 
 **EP03-specific tags (English):**
@@ -221,15 +221,14 @@ yapay zeka filmi, robot hikayesi, kısa film, yapay zeka sanatı, türkçe kısa
 
 **Combined (paste into YouTube):**
 ```
-robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated video, ai cinematic, ai animation, ai art, ai music, suno ai, genai, ai film, ai series, ai short film, ai storytelling, concept album film, animated series, sci-fi animation, anatolian trials, the crucible, turkish language, anatolia, istanbul, metrobus, yapay zeka filmi, robot hikayesi, kısa film, yapay zeka sanatı, türkçe kısa film, sci-fi türkçe
+cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026, anatolian trials, the crucible, turkish language, anatolia, istanbul, metrobus, yapay zeka filmi, robot hikayesi, kısa film, yapay zeka sanatı, türkçe kısa film, sci-fi türkçe
 ```
 
 Characters: ~430 / 500 max ✅
 
 **TAG STRATEGY (all episodes):**
-- ✅ Layered approach per `_management/youtube_strategy_v01.md` Section 5
+- ✅ Film-first approach per `_management/youtube_strategy_v02.md` Section 5
 - ✅ Genre tags REMOVED (progressive rock, psychedelic rock, etc.)
-- ✅ Format tags KEPT (concept album, rock opera)
 - ✅ AI-generated tags ADDED for correct categorization
 
 ---
@@ -258,7 +257,7 @@ Per `creator_strategy.md` Section 2.6: **No end screens EP01-EP09.**
 
 - **Previous episode:** EP02 — "The Tech Guru's Downfall" → [EP02 URL]
 - **Next episode:** EP04 — [EP04 Title] → [EP04 URL when available]
-- **Playlist:** Add to "ROBOTIKO v2.0 — The Full Journey" playlist
+- **Playlist:** Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
 
 ---
 

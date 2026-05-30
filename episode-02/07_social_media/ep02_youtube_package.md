@@ -1,28 +1,28 @@
 # EP02 — YouTube Package
 
 > Episode: EP02 — "The Tech Guru's Downfall"
-> Generated: 2026-05-01 | Updated: 2026-05-12
-> Skill: robotiko-youtube-packager v2.0
-> Standards: `_management/youtube_strategy_v01.md`
+> Generated: 2026-05-01 | Updated: 2026-05-22
+> Skill: robotiko-youtube-packager v4.0
+> Standards: `_management/youtube_strategy_v02.md`
 
 ---
 
 ## 1. VIDEO TITLE
 
 ```
-The Tech Guru's Downfall | ROBOTIKO v2.0
+The Tech Guru's Downfall | ROBOTIKO v2.0 EP02 | Cinematic AI Series
 ```
 
-Characters: 40 / 70 max ✅
+Characters: 68 / 80 max ✅
 
 ---
 
 ## 2. VIDEO DESCRIPTION
 
 ```
-An AI-generated cinematic series. Episode 2 of 10.
 The guru takes his message to the world. The world has other plans.
-Full journey → [playlist link]
+ROBOTIKO v2.0 — Episode 02 of 10. A cinematic AI sci-fi series.
+▶ Start from Episode 01: [playlist link]
 
 —
 
@@ -109,18 +109,17 @@ But Reality just swallowed you whole...
 
 —
 
-A human wrote the story as lyrics, shaped the musical direction, designed the story arc,
+A human wrote the lyrics, shaped the musical direction, designed the story arc,
 and built a tech-art pipeline.
 Music: Suno + BandLab. Images: Nano Banana. Video: Kling + Veo + Seedance. Pipeline: Claude. Edit: CapCut.
 The full production pipeline will be open source after the finale.
 
-ROBOTIKO v2.0 — A 10-episode CyberAnatolian concept album and visual series.
-Subscribe to walk beside.
+ROBOTIKO v2.0 — A 10-episode CyberAnatolian cinematic series.
 
 Previous: Two Halves of One Whole Apple → https://youtu.be/W_zfFDXn0o0
-Next: [EP03 Title] → [EP03 URL]
+Next: They Folded Him Like Cloth → [EP03 URL]
 
-#robotiko #cyberanatolian #conceptalbum #aiart #aimusic #genai
+#aiscifi #cinematicai #robotiko #aifilm #aiseries #scifi #aifilmmaking #klingai
 ```
 
 **Checklist:**
@@ -154,9 +153,9 @@ Pin immediately after video goes live. No additions, no emojis. Exact text from 
 
 ## 4. TAGS
 
-**Base tags (constant across all episodes — per youtube_strategy_v01.md):**
+**Base tags (constant across all episodes — per youtube_strategy_v02.md):**
 ```
-robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated video, ai cinematic, ai animation, ai art, ai music, suno ai, genai, ai film, ai series, ai short film, ai storytelling, concept album film, animated series, sci-fi animation
+cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
 ```
 
 **EP02-specific tags:**
@@ -166,15 +165,14 @@ the tech guru's downfall, global collapse tour, dark comedy, tech guru, silicon 
 
 **Combined (paste into YouTube):**
 ```
-robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated video, ai cinematic, ai animation, ai art, ai music, suno ai, genai, ai film, ai series, ai short film, ai storytelling, concept album film, animated series, sci-fi animation, the tech guru's downfall, global collapse tour, dark comedy, tech guru, silicon valley
+cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026, the tech guru's downfall, global collapse tour, dark comedy, tech guru, silicon valley
 ```
 
 Characters: ~370 / 500 max ✅
 
 **TAG STRATEGY (all episodes):**
-- ✅ Layered approach per `_management/youtube_strategy_v01.md` Section 5
+- ✅ Film-first approach per `_management/youtube_strategy_v02.md` Section 5
 - ✅ Genre tags REMOVED (progressive rock, psychedelic rock, satirical rock, etc.)
-- ✅ Format tags KEPT (concept album, rock opera)
 - ✅ AI-generated tags ADDED for correct categorization
 
 ---
@@ -196,7 +194,7 @@ Per `creator_strategy.md` Section 2.6: **No end screens EP01-EP09.**
 
 - **Previous episode:** EP01 — "Two Halves of One Whole Apple" → https://youtu.be/W_zfFDXn0o0
 - **Next episode:** EP03 — [EP03 Title] → [EP03 URL]
-- **Playlist:** Add to "ROBOTIKO v2.0 — The Full Journey" playlist
+- **Playlist:** Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
 
 ---
 

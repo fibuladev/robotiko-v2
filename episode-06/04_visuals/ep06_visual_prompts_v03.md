@@ -346,21 +346,22 @@ Desk scenes MUST specify: `profile`, `three-quarter rear`, `from behind`, or `fr
 
 #### S38a — The Exit: Start Frame (Mode B Start)
 - **Timestamp:** 6:03
-- **Upload:** `ref_robotiko_damaged.png` + `ref-env-01.png`
+- **Upload:** `ref_robotiko_damaged.png` + `ref-env-02.png`
 - **Video Tech Strategy:** Start-End Keyframes (Mode B — Start)
+- **Note:** Continues from meeting room (S36-S37). The exit happens HERE, not in the office.
 
 **Text Prompt:**
-> Medium-wide shot. The damaged android stands at his workstation, body angled toward the corridor. The pristine android seated at the adjacent desk, facing his screen. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot in the meeting room. The damaged android stands up from the table. The pristine android still seated across the table. Glass walls, dark screen behind. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
 #### S38b — The Exit: End Frame (Mode B End)
 - **Timestamp:** 6:03
-- **Upload:** `ref_robotiko_damaged.png` + `ref-env-01.png`
+- **Upload:** `ref_robotiko_damaged.png` + `ref-env-02.png`
 - **Video Tech Strategy:** Start-End Keyframes (Mode B — End)
 
 **Text Prompt:**
-> Medium-wide shot. The damaged android mid-way down the corridor, walking away. In the foreground, the pristine android has turned his head toward the corridor. Hands lifted from keyboard. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot. The damaged android at the meeting room doorway, walking out. The pristine android still seated at the table, head turned toward the door. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -370,11 +371,11 @@ Desk scenes MUST specify: `profile`, `three-quarter rear`, `from behind`, or `fr
 
 #### S39 — Silhouette in the Doorway
 - **Timestamp:** 6:17
-- **Upload:** `ref_robotiko_damaged.png` + `ref-env-01.png`
+- **Upload:** `ref_robotiko_damaged.png` + `ref-env-02.png`
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> The damaged android's silhouette in a corridor doorway, backlit. Behind him through the doorway, the office with one chrome figure at a distant desk. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> The damaged android's silhouette in the meeting room glass doorway, backlit. Behind him through the glass, the pristine android alone at the table. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -408,7 +409,7 @@ Desk scenes MUST specify: `profile`, `three-quarter rear`, `from behind`, or `fr
 - **Video Tech Strategy:** Start-End Keyframes (Mode B — End)
 
 **Text Prompt:**
-> Medium shot. The pristine android on his knees on the floor between the desk and chair, torso slumped, head bowed. A single hairline fracture on his chest plate. The adjacent desk empty. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-close shot in the office. The pristine android on his knees on the floor, next to the desk and pushed-back chair. Torso slumped, head bowed. A single hairline fracture on his chest plate. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

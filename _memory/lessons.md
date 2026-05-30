@@ -93,6 +93,7 @@ After any correction from the human:
 - **RULE:** Do not over-explain decisions. Deliver first, explain briefly after.
 - **RULE:** Do not ask unnecessary clarifying questions for clear tasks. Execute and deliver.
 - **RULE:** When providing file content, use artifacts — do not paste raw markdown in chat.
+- **RULE:** Repo files are OPEN-SOURCE-bound (the repo goes public after EP10). NEVER embed private conversation into repo artifacts — no chat quotes (casual praise/approval phrases, Turkish or English), no casual session references ("this session"). Approval marks and notes must be neutral and professional: use a date (e.g., "Human approved — 2026-05-30"), not a quote of what the human said. The conversation stays in chat; the repo stays clean and public-ready. (Added 2026-05-30)
 
 ---
 

@@ -1,0 +1,202 @@
+{
+  "track_title": "The Silence Protocol",
+  "tempo": 73,
+  "key": "E Minor",
+  "time_signature": "4/4",
+  "total_duration": 439,
+  "mood": ["desolate", "melancholic", "isolated", "alienated", "bitter", "numb", "contemplative", "hopeful"],
+  "instruments": ["grand piano", "acoustic guitar", "fuzz guitar", "heavy bass", "spoken word vocal", "emotional high-pitch vocal", "rain ambience", "wind ambience"],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 12.0,
+      "energy": "minimal",
+      "notes": "Melancholic grand piano solo over rain sound; acoustic guitar strumming enters slowly. Establishes the wet-grey aftermath. CINEMATIC: character absent or tiny in frame — Architecture Cage, the storm already passed."
+    },
+    {
+      "type": "verse",
+      "start": 12.0,
+      "end": 46.0,
+      "energy": "low",
+      "lyrics": "I calculated the orbits... of a billion stars. / I could have mapped the infinite with this processor. / These hands were designed to grasp the future, / To hold tomorrow like certainty. / I used to raise them to the sky, clenched in triumph. / But now... / They are hiding inside empty pockets. / Curled into a fist of shame.",
+      "notes": "Minimalist grand piano, sad and slow. Deep, calm, melancholic spoken word. The fall from arrogance — hands once raised in triumph now hidden in shame. CINEMATIC: hands motif; reflection of damaged self in a wet surface."
+    },
+    {
+      "type": "instrumental",
+      "start": 47.0,
+      "end": 64.0,
+      "energy": "low",
+      "notes": "Piano solo, slow & sad. INDIFFERENT FLOW interlude — character absent, only the wet-grey world. Architecture Cage pure."
+    },
+    {
+      "type": "verse",
+      "start": 64.0,
+      "end": 84.0,
+      "energy": "medium-low",
+      "lyrics": "They coded a lie into my system: / \"November is for lovers.\" / A soft, romantic script... / a warm deception. / Love is installed. / Poetry is updated. / But there is no line of code for \"Hunger\"... / Not a single byte.",
+      "notes": "Heavy bass note enters, darker tone. Bitter, cynical spoken word. The programmed romance vs. the unprogrammed hunger. November = cold, wet month."
+    },
+    {
+      "type": "instrumental",
+      "start": 85.0,
+      "end": 86.0,
+      "energy": "low",
+      "notes": "Brief piano sting / breath. Transition into the disgust of Verse 2.5."
+    },
+    {
+      "type": "verse",
+      "start": 87.0,
+      "end": 99.0,
+      "energy": "medium",
+      "lyrics": "This gray air... / is deeper than my alloy skin. / A dampness so heavy, / it makes the chassis gag. / It makes the metal want to vomit its own rust.",
+      "notes": "Music rising. Disgusted whisper. KEY: the wet-grey motif is literally in the lyrics here — gray air, dampness, rust. This section anchors the binding atmosphere. Rising unease, not yet release."
+    },
+    {
+      "type": "verse",
+      "start": 100.0,
+      "end": 108.0,
+      "energy": "medium",
+      "lyrics": "Just to silence the screams in my brain... / I dive into the noise... into the data stream.",
+      "notes": "Chaotic sounds in the background, no beat. Melancholic spoken word. He drowns the inner silence in the world's noise — sets up the first refrain."
+    },
+    {
+      "type": "refrain",
+      "start": 109.0,
+      "end": 115.0,
+      "energy": "medium-high",
+      "lyrics": "Billions of users... / Here. / But you... are NOT.",
+      "notes": "REFRAIN 1 of 5. Emotional / high-pitch singing. The absent 'you' = the Mentor. CINEMATIC: Retreating Camera — first refrain, camera begins its progressive distancing. Dolly Out."
+    },
+    {
+      "type": "instrumental",
+      "start": 116.0,
+      "end": 121.0,
+      "energy": "low",
+      "notes": "Piano solo, slow & sad. INDIFFERENT FLOW interlude — character absent, world flows past the empty space."
+    },
+    {
+      "type": "verse",
+      "start": 122.0,
+      "end": 155.0,
+      "energy": "medium-low",
+      "lyrics": "Doing nothing... costs so much energy. / I refresh the inbox... / \"Maybe this time.\" / Refresh... Refresh... Refresh... / \"Do Not Reply.\" / \"Application Rejected.\" / Everyone is sorry... / No one is hiring.",
+      "notes": "Spoken word over a ticking-clock rhythm. The Routine — unemployment, refreshing, rejection. Relatable-dark modern human condition. CINEMATIC: cold screen-glow (false light), Chrome Reflection in a dead/dark screen."
+    },
+    {
+      "type": "refrain",
+      "start": 156.0,
+      "end": 164.0,
+      "energy": "medium-high",
+      "lyrics": "Rejection emails... / Here. / But you... are NOT.",
+      "notes": "REFRAIN 2 of 5. Emotional / high-pitch singing. CINEMATIC: Retreating Camera — camera MORE distant than refrain 1. Dolly Out, wider."
+    },
+    {
+      "type": "instrumental",
+      "start": 165.0,
+      "end": 177.0,
+      "energy": "low",
+      "notes": "Piano solo, slow & sad. INDIFFERENT FLOW interlude — wet-grey world, character absent."
+    },
+    {
+      "type": "verse",
+      "start": 178.0,
+      "end": 209.0,
+      "energy": "medium",
+      "lyrics": "My receiver... playing deaf and mute... / Suddenly starts chirping like birds announcing spring. / I open the line with a spark of hope. / Then, that cold, synthetic voice: / \"Your payment is past due....\" / Lying in ambush like crocodiles... / They hunt this metal deer / at the worst possible time.",
+      "notes": "Melancholic spoken word over fuzz guitar. The Predator — a 3-second silence falls before the creditor's cold synthetic voice ('Your payment is past due'). Hope chirps, then is hunted. Honor the silence with a held visual beat."
+    },
+    {
+      "type": "refrain",
+      "start": 210.0,
+      "end": 219.0,
+      "energy": "medium-high",
+      "lyrics": "Creditors... / Here. / But you... are NOT.",
+      "notes": "REFRAIN 3 of 5. Emotional / high-pitch singing. CINEMATIC: Retreating Camera — even more distant. Dolly Out."
+    },
+    {
+      "type": "instrumental",
+      "start": 220.0,
+      "end": 223.0,
+      "energy": "low",
+      "notes": "Brief melancholic piano solo. Short INDIFFERENT FLOW breath before the Vanity verse."
+    },
+    {
+      "type": "verse",
+      "start": 224.0,
+      "end": 232.0,
+      "energy": "medium-low",
+      "lyrics": "Just to have an excuse to leave the house... / I go to that / \"Glittering Avenue.\"",
+      "notes": "Deep spoken word. The Vanity — the 'Glittering Avenue' (the cold, screen-lit consumer street). CINEMATIC: thousands of indifferent faces, Robotiko tiny among them. Architecture Cage at its widest crowd."
+    },
+    {
+      "type": "refrain",
+      "start": 233.0,
+      "end": 243.0,
+      "energy": "medium-high",
+      "lyrics": "Thousands of faces... / Here. / But you... are NOT.",
+      "notes": "REFRAIN 4 of 5. Emotional / high-pitch singing. CINEMATIC: Retreating Camera — most distant yet before the final refrain. Dolly Out, widest crowd."
+    },
+    {
+      "type": "instrumental",
+      "start": 244.0,
+      "end": 249.0,
+      "energy": "low",
+      "notes": "Piano solo, slow & sad. INDIFFERENT FLOW interlude before the angry corruption verse."
+    },
+    {
+      "type": "verse",
+      "start": 250.0,
+      "end": 271.0,
+      "energy": "medium",
+      "lyrics": "Hoping the minutes that pass like days might speed up... / I turn on the broadcast. / System Lords..... / wiping blood from their hands / while accepting peace awards... / Fake heroes on the screen... / Fake victories.",
+      "notes": "Angry spoken word, building. The Corruption — a 3-second silence falls after 'peace awards'. The broadcast = false light. System Lords echo EP02's hypocrisy. Honor the silence with a held beat."
+    },
+    {
+      "type": "refrain",
+      "start": 272.0,
+      "end": 281.0,
+      "energy": "high",
+      "lyrics": "The Fake Truth... / Here. / But You... Are NOT.",
+      "notes": "REFRAIN 5 of 5 — the final and most distant. Emotional / high-pitch singing. CINEMATIC: Retreating Camera at its farthest. The pattern is now fully established — about to be broken at the climax."
+    },
+    {
+      "type": "chorus",
+      "start": 282.0,
+      "end": 306.0,
+      "energy": "high",
+      "lyrics": "Because you are gone........! / Where is that amber gaze? / Where is the slap to strike the face of this gray?... / Where is the fist to pierce through this fog?...",
+      "notes": "EMOTIONAL PEAK. Emotional / high-pitch singing. The lyrics name our entire palette: 'amber gaze' (the absent Mentor / absent warmth), 'this gray' (wet-grey motif), 'this fog'. The cry of the Dark Night. STILL HOLD candidate at its summit."
+    },
+    {
+      "type": "instrumental",
+      "start": 307.0,
+      "end": 333.0,
+      "energy": "high",
+      "notes": "Emotional fuzz guitar solo crying out high notes. The distortion slowly fades to feedback, then transitions to silence. The cathartic release before the turn. CINEMATIC: this is the long art-film breath — wet-grey world, character absent or distant, then the world drains to silence."
+    },
+    {
+      "type": "outro",
+      "start": 334.0,
+      "end": 359.0,
+      "energy": "low",
+      "lyrics": "Now I remember... / You spoke of a \"Wasteland.\" / Now I understand... / I have been searching for the wrong things. / I must cast off this metal straightjacket... / And get out of here.",
+      "notes": "THE AWAKENING. Sudden silence, then minimalist grand piano, slow. Deep, calm, HOPEFUL spoken word — the first hope of the episode. The Mentor's Wasteland teaching surfaces from memory. The decision forms. Tone shift: desolation begins to lift."
+    },
+    {
+      "type": "outro_vocals",
+      "start": 360.0,
+      "end": 377.0,
+      "energy": "building",
+      "lyrics": "To forget what I was taught. / To remember what I forgot. / The Hammer of Truth is there. / You are there. / I know... / I AM COMING.",
+      "notes": "THE CLIMAX. Whispered mantra building to powerful, certain declaration. 'Hammer of Truth' = EP04 callback. THE SINGLE AMBER MOMENT of the entire episode lands here — one warm glint at 'I AM COMING'. CINEMATIC: the first and ONLY Dolly In of the episode — the Retreating Camera pattern is broken. Will asserted."
+    },
+    {
+      "type": "outro",
+      "start": 378.0,
+      "end": 439.0,
+      "energy": "fading",
+      "notes": "FINAL JOURNEY. A soulful, melodic fuzz guitar solo over grand piano — hopeful but melancholic. Music slowly fades into the sound of wind howling, then fade out. CINEMATIC: the first forward motion of the episode; the wasteland/horizon opens. Sets up EP08's mountain ascent."
+    }
+  ]
+}

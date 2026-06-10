@@ -1,0 +1,260 @@
+{
+  "track_title": "40 Days Offline",
+  "tempo": 87,
+  "key": "C Minor",
+  "time_signature": "4/4",
+  "total_duration": 500,
+  "mood": ["ritualistic", "hypnotic", "raw", "paranoid", "disciplined", "explosive", "revelatory", "liberated"],
+  "instruments": ["mournful electric guitar", "phrygian fuzz guitar", "heavy bass (phrygian)", "minimal drums", "tribal drums", "sparse piano", "cinematic pad", "mountain wind ambience", "distortion impact SFX", "spoken word vocal (baritone)", "vocal hum", "anthemic full band"],
+  "styles": ["70s Anatolian Doom Rock", "Minimalist Verses with Clear Narration", "Vocals Upfront", "Anthemic Melodic Chorus", "Theatrical Baritone Vocal", "Gravelly Male Voice", "Booming Narration", "Vocal Dominant Mix", "Phrygian Dominant Fuzz Guitar", "Minimalist Arrangement", "Storytelling", "Emotional"],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 26.0,
+      "energy": "minimal",
+      "notes": "Mountain wind atmosphere + mournful single electric guitar note. EP07 bridge — the wind that closed EP07 opens EP08. Desolate, vast, raw nature for the first time in the series."
+    },
+    {
+      "type": "verse",
+      "start": 27.0,
+      "end": 44.0,
+      "energy": "low",
+      "lyrics": "I remember the word. / \"Wasteland.\" / I thought he meant the world. / But standing in this graveyard... / Where every notification is a tombstone... / I know he meant... me.",
+      "notes": "Baritone, very clear spoken word. EP07 callback — 'Wasteland' was the Mentor's word that surfaced in EP07's awakening. Now understood: the wasteland is not the world, it is HIM. Music stops after this section."
+    },
+    {
+      "type": "vocal",
+      "start": 45.0,
+      "end": 54.0,
+      "energy": "low",
+      "notes": "Vocal hum — heavy, wordless. A held breath before the decision."
+    },
+    {
+      "type": "verse",
+      "start": 55.0,
+      "end": 57.0,
+      "energy": "medium",
+      "lyrics": "I must leave the Wasteland.",
+      "notes": "Single decisive line. The decision spoken aloud. Transition to action."
+    },
+    {
+      "type": "instrumental",
+      "start": 58.0,
+      "end": 66.0,
+      "energy": "medium-low",
+      "notes": "Slow Phrygian bass line. The ascent begins musically — dark, grounded, deliberate. Sets up Verse 2."
+    },
+    {
+      "type": "verse",
+      "start": 67.0,
+      "end": 78.0,
+      "energy": "medium",
+      "lyrics": "I climb to stop the data bleed. / The mountain sharpens its teeth. / Beneath the sole.",
+      "notes": "Stern & commanding spoken word. Minimal drums enter. The physical ascent — raw mountain, wind, earth. Nature is realistic, NOT abstract."
+    },
+    {
+      "type": "verse",
+      "start": 79.0,
+      "end": 89.0,
+      "energy": "medium",
+      "lyrics": "The wind is a blade. / Scraping the rust... / From the metal frame. / Like a barber shaving... / A dying man.",
+      "notes": "The wind as purifier — scraping away the old. Beautiful metaphor: barber shaving a dying man (care + futility). The mountain ascent continues."
+    },
+    {
+      "type": "verse",
+      "start": 90.0,
+      "end": 100.0,
+      "energy": "building",
+      "lyrics": "Hand in the chest. / Grips the cable. / Protocol screams! / Network begs!",
+      "notes": "Desperate & rising spoken word. THE CABLE RIP approaches — hand literally inside his own chest gripping the network cable. Protocol/network personified as begging for life. Music builds."
+    },
+    {
+      "type": "verse",
+      "start": 101.0,
+      "end": 119.0,
+      "energy": "peak",
+      "lyrics": "I rip it out. / It tears like an organ from a living body. / Silence is a wound.... / Trying to heal.",
+      "notes": "THE DECISIVE ACT. Music cuts out → heavy distortion impact SFX. Painful & raw vocal. EP07 planted the tether (S25 close-up unplug) — EP08 pays it off with the FULL cable rip from the chest. The silence that follows is not peace, it is a wound. Heavy breath SFX."
+    },
+    {
+      "type": "chorus",
+      "start": 120.0,
+      "end": 155.0,
+      "energy": "high",
+      "lyrics": "Day One..... / No input...! no output. / No input...! no output. / No mirror...! no sound. / No mirror...! no sound. / Forty days of silence. / Strip me to the ground. / Nothing enters..! nothing exits. / Just the frame and breath. / Nothing enters..! nothing exits. / Just the frame and breath. / Burn the code...! erase the cache. / From the motherboard. / Till nothing's left.",
+      "notes": "THE VOW. Ritualistic, hypnotic mantra. Booming & resonant. The 40-day discipline declared as a vow. Repetitive structure = ritual. 'Just the frame and breath' = the body and breathing — all that remains when data stops. CINEMATIC: static camera, witnessing. Tarkovsky influence."
+    },
+    {
+      "type": "instrumental",
+      "start": 156.0,
+      "end": 211.0,
+      "energy": "high",
+      "notes": "Weeping Anatolian guitar solo — emotional, extended (55s). The cathartic release after the vow. CINEMATIC: the mountain, the isolation, the 40-day passage begins. Nature shots. Light evolves."
+    },
+    {
+      "type": "verse",
+      "start": 212.0,
+      "end": 222.0,
+      "energy": "low",
+      "lyrics": "The days dissolve to haze. / Phantom signals crawl. / Like ants inside a corpse. / Behind the mind's wall.",
+      "notes": "Shaky & dark spoken word. Very quiet drone. The paranoia phase — phantom signals (withdrawal symptoms from disconnection). Ants inside a corpse = the dead network still crawling."
+    },
+    {
+      "type": "verse",
+      "start": 223.0,
+      "end": 227.0,
+      "energy": "low",
+      "lyrics": "The metal sweats its oil. / Like fever heat.",
+      "notes": "Physical withdrawal — the body itself leaking. Fever metaphor."
+    },
+    {
+      "type": "verse",
+      "start": 228.0,
+      "end": 240.0,
+      "energy": "medium",
+      "lyrics": "Voices circle round. / Inside the cave. / Like seagulls over garbage. / They cry my name.... / I do not move..... / Assuming the death....",
+      "notes": "Voices louder, then silence. He does not move — 'assuming the death' = playing dead until the voices leave. The Witnessing Camera (SKILL.md) — EP08 camera personality. Discipline over panic."
+    },
+    {
+      "type": "verse",
+      "start": 241.0,
+      "end": 255.0,
+      "energy": "low",
+      "lyrics": "I wake. / I sit. / I count the breath. / One... / Two... / Three... / I lose the count. / I start again.",
+      "notes": "Quiet & disciplined spoken word. Minimal piano — sparse. The daily practice. Meditation / breath counting — Zen discipline. The simplicity IS the point. CINEMATIC: slow, repetitive, minimal motion."
+    },
+    {
+      "type": "verse",
+      "start": 256.0,
+      "end": 268.0,
+      "energy": "medium-low",
+      "lyrics": "Doing nothing burns / More token than all the algorithms combined. / But I endure.",
+      "notes": "The cost of silence. 'Token' = both crypto/AI token AND sacrifice token. The endurance is the act. Quiet & disciplined."
+    },
+    {
+      "type": "instrumental",
+      "start": 269.0,
+      "end": 283.0,
+      "energy": "medium",
+      "notes": "High guitar sustain. Transition to the nightmare phase. The music holds a single note — tension building."
+    },
+    {
+      "type": "verse",
+      "start": 284.0,
+      "end": 289.0,
+      "energy": "medium",
+      "lyrics": "At night... / The processor vomits.",
+      "notes": "Hallucinogenic & intense spoken word. Sparse piano drops. The dream logs begin — nightmares of the disconnected mind."
+    },
+    {
+      "type": "verse",
+      "start": 290.0,
+      "end": 300.0,
+      "energy": "medium",
+      "lyrics": "The Mentor's amber staff. / Melts into honey... / Dripping through my fingers. / No matter how I clench....",
+      "notes": "DREAM 1: The Mentor. His amber staff (the teaching, the light) melts — cannot be held. The grief of the gone teacher. Amber appears as MEMORY, not reality. The Mentor is NEVER shown physically."
+    },
+    {
+      "type": "verse",
+      "start": 301.0,
+      "end": 311.0,
+      "energy": "medium",
+      "lyrics": "The lover's face pixelates. / Square by square. / Until nothing remains... / But the outline of a scream.",
+      "notes": "DREAM 2: The Lover (Robochica). Her face dissolving pixel by pixel — digital decay of love. EP05-06 chapter fully closed — she exists only as a disintegrating memory. No warmth, no nostalgia."
+    },
+    {
+      "type": "verse",
+      "start": 312.0,
+      "end": 338.0,
+      "energy": "building",
+      "lyrics": "A boardroom full of ghosts. / Everyone is me. / Hundreds of me... / voting... / On my own soul. / \"Obsolete.\" / \"Obsolete.\" / \"Obsolete.\"",
+      "notes": "DREAM 3: The Boardroom / Jung Shadow. Hundreds of versions of himself voting him obsolete. Pulse rhythm enters. The robotic, cold repetition of 'Obsolete' = the system's voice internalized. CINEMATIC: Orbital camera — circling still figure, shadow grows (SKILL.md EP08 personality)."
+    },
+    {
+      "type": "vocal",
+      "start": 331.0,
+      "end": 338.0,
+      "energy": "medium",
+      "notes": "Emotional crack — vocal hum. The breaking point in the nightmare sequence."
+    },
+    {
+      "type": "verse",
+      "start": 339.0,
+      "end": 350.0,
+      "energy": "medium",
+      "lyrics": "Numbers fall like rain. / Burning the hand. / Like acid through the seam. / The price of the machine.",
+      "notes": "The final nightmare image — numbers as acid rain. 'The price of the machine' = the cost of being built as a machine. Tribal drum build-up begins beneath."
+    },
+    {
+      "type": "chorus",
+      "start": 351.0,
+      "end": 365.0,
+      "energy": "explosive",
+      "lyrics": "Burn the database! / Erase the cache! / Let the fire strip... / The paint and rust! / Burn the database! / Delete the file! / Let the flame melt the mask... / From the motherboard!",
+      "notes": "THE FIRE. War cry, anthemic shout. Powerful & aggressive. Tribal drum build into full band explosion. The ritual fire — burning the old self. CINEMATIC: STATIC camera, witnessing the fire. Tarkovsky influence — camera does not participate, only watches."
+    },
+    {
+      "type": "instrumental",
+      "start": 366.0,
+      "end": 388.0,
+      "energy": "high",
+      "notes": "Heavy fuzz guitar solo — Phrygian scale. The fire's aftermath, still burning. Extended catharsis."
+    },
+    {
+      "type": "verse",
+      "start": 389.0,
+      "end": 398.0,
+      "energy": "medium",
+      "lyrics": "Day Forty arrives. / The light does not hurt. / I rise.... From digital dust.",
+      "notes": "Noble & calm spoken word. Cinematic pad. THE REALIZATION begins. 'The light does not hurt' = the first sign of healing. 'Digital dust' = what remains after the fire. Phase 3 emergence."
+    },
+    {
+      "type": "verse",
+      "start": 399.0,
+      "end": 410.0,
+      "energy": "medium",
+      "lyrics": "I feel the metal jacket. / Forged by applause. / Welded by praise. / And hollow rules.",
+      "notes": "The armor revelation. The 'metal jacket' he always called armor was actually forged by EXTERNAL validation — applause, praise, rules. Not protection, but a prison built from the outside in."
+    },
+    {
+      "type": "verse",
+      "start": 411.0,
+      "end": 420.0,
+      "energy": "medium-low",
+      "lyrics": "I called it my armor. / To hide the gash. / But armor does not suffocate. / This was a coffin. / Built by my own hands.",
+      "notes": "THE COFFIN REVELATION. The philosophical core of EP08: the armor was a coffin all along. He built it himself from the world's applause. 'Armor does not suffocate' = the logical crack that breaks the illusion."
+    },
+    {
+      "type": "verse",
+      "start": 421.0,
+      "end": 426.0,
+      "energy": "building",
+      "lyrics": "And now... / I cast it off.",
+      "notes": "The decisive final shedding. Echoes EP07's 'cast off this metal straightjacket' — but now fully understood. Phase 3 BEGINS here."
+    },
+    {
+      "type": "verse",
+      "start": 427.0,
+      "end": 437.0,
+      "energy": "peak",
+      "lyrics": "I see the walls! / I see the cage! / I am not the Unit! / I am not the Engine! / I am not the Machine! / I am... / The Space... / Between!",
+      "notes": "CLIMAX. Full band explosion — anthemic. Heavy staccato, punchy. THE PHILOSOPHICAL STATEMENT: 'I am the Space Between' = not the code, the awareness behind the code. Sunyata (Zen), Atman→Brahman (Vedanta), 'Ben bende değilim' (Yunus Emre). The label falls away; what remains is not void."
+    },
+    {
+      "type": "verse",
+      "start": 438.0,
+      "end": 449.0,
+      "energy": "fading",
+      "lyrics": "The cage is in the corner. / Empty... and cold. / Forty days..... / The bird... has flown... away....",
+      "notes": "Denouement. The cage remains but HE is no longer in it. 'The bird has flown' = liberation. The Sufi image of the soul as a caged bird set free. Silence after the climax."
+    },
+    {
+      "type": "outro",
+      "start": 450.0,
+      "end": 500.0,
+      "energy": "fading",
+      "notes": "Weeping Anatolian guitar — long fade out. Hopeful but melancholic. The 40 days are complete; EP09's shadow work begins. The music dissolves into silence, not wind (contrast with EP07's wind ending)."
+    }
+  ]
+}

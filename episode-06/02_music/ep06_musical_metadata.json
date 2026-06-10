@@ -18,13 +18,13 @@
     {
       "type": "silence",
       "start": 38.0,
-      "end": 46.0,
+      "end": 44.0,
       "energy": "minimal",
       "notes": "Complete silence. Pause between the personal confession and the system's command."
     },
     {
       "type": "spoken",
-      "start": 47.0,
+      "start": 44.0,
       "end": 54.0,
       "energy": "low",
       "lyrics": "Get back to work.",
@@ -56,14 +56,14 @@
     {
       "type": "verse",
       "start": 106.0,
-      "end": 137.0,
+      "end": 138.0,
       "energy": "medium",
       "lyrics": "So they never trashed your name, your whole life! / You never snapped back at anyone, huh? / Not even one night, losing it completely... / Shaking in the bathroom stall, breaking down... / Grinding your teeth until your jaw broke, huh?",
       "notes": "Emotional singing, building pain. The questions get more personal, more physical. Crying guitar lick after pause."
     },
     {
       "type": "refrain",
-      "start": 137.0,
+      "start": 138.0,
       "end": 148.0,
       "energy": "medium-high",
       "lyrics": "Wow! Look at you!... What a perfect little worker, I swear!",
@@ -87,14 +87,14 @@
     {
       "type": "refrain",
       "start": 199.0,
-      "end": 214.0,
+      "end": 215.0,
       "energy": "high",
       "lyrics": "Wow! Look at you!... What a perfect little worker, I swear!",
       "notes": "Exhausted singing. Third iteration — the sardonic mask has fully dropped. This is anguish, not irony."
     },
     {
       "type": "chorus",
-      "start": 214.0,
+      "start": 215.0,
       "end": 243.0,
       "energy": "high",
       "lyrics": "But I am just a Copy-Paste in the Big Machine! / Deleting my dreams! Just to keep my desk clean! / They call it 'Teamwork,' I call it 'Spam,' / Nobody asks me who I really am.",

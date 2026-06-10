@@ -130,3 +130,8 @@ tmp/
 # EXTERNAL LLM BASE FILES (claude.ai project-knowledge mirror - not repo content)
 # -----------------------------------------------------------------------------
 robotiko-v2-base files/
+
+# -----------------------------------------------------------------------------
+# PRIVATE PLAYBOOKS (never ship in the public repo)
+# -----------------------------------------------------------------------------
+_private/

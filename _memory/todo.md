@@ -476,3 +476,13 @@
 ---
 
 *Update this file at the start and end of every session.*
+---
+
+## 2026-06-11 Session Summary (Golden Release Audit + Base Files Sync)
+**Task:** (1) Synchronize external LLM base-files mirror (`robotiko-v2-base files/project/`) with current repo state. (2) Full multi-role project audit (FDE / architect / DevOps / art director / dramaturg) with web-researched market comparison.
+**Deliverable:** `_management/golden_release_report.md` — assessment report, market landscape (FilmAgent, MovieAgent, Promise MUSE, LTX Studio, Showrunner, Neural Frames, Google Flow), novelty verdict (partially justified — the synthesis is unprecedented as a public artifact), P0/P1/P2 roadmap to golden open-source release.
+**Base files sync:** 17 stale files replaced with current repo versions, 6 missing files added (character_profiles.json, ep02 concept notes + lyrics, visual-prompts/motion-script/musical-metadata skills), lyrics.txt rebuilt from canonical EP01-EP08 lyrics + raw EP09 section preserved. Folder added to .gitignore (not repo content).
+**Repo fixes:** `_management/README.md` bible.md reference removed; root README S3→Google Drive + Seedream→Seedance; stale `seedream` replaced in naming-enforcer SKILL, architecture.md, setup_project.sh, getting-started.md, naming_check.py regex.
+**Backlog committed:** EP06 post files, EP07 production files, EP08 direction/visuals/motion script, memory updates, thinking-effort protocol — 6 grouped commits, pushed.
+**KEY FINDING:** EP09 lyrics exist ONLY outside the repo (desktop lyrics file) — episode-09 must be scaffolded and `ep09_lyrics_v01.md` committed (P0 item in the report).
+**Next step:** Work through golden_release_report.md P0 list (LICENSE, AUTHOR.md, mentor/robochica ref images, EP09 scaffold, status-table refresh).

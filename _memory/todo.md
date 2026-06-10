@@ -1,7 +1,7 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-05-30 (EP07 Direction complete — dramaturgy approved)
+> Last Updated: 2026-06-07 (EP07 CapCut guide v01 generated. EP08 dramaturgy + visual prompts + motion script complete.)
 
 ---
 
@@ -301,12 +301,13 @@
 - [x] `ep06_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅ 2026-05-01 (47 prompts: 2 env ref + 45 scene)
 - [x] `ep06_visual_prompts_v02.md` — Radical simplification for ref-image compatibility ✅ 2026-05-01 (45 scene prompts, 1-3 sentences each)
 - [x] Reference images: REF-ENV-01 (Cold Office) ✅, REF-ENV-02 (Meeting Room) ✅ — already generated. Perfect Worker = existing ref_robotiko_master.png
-- [ ] Image generation — Nano Banana
-- [ ] Human selects images
+- [x] Image generation — Nano Banana ✅
+- [x] Human selects images ✅
 - [x] `ep06_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script) ✅ 2026-05-02 (45 clips, 98.7% coverage)
-- [ ] **[CHECKPOINT]** Human approves motion script
-- [ ] Video generation
-- [ ] Final edit — CapCut
+- [x] **[CHECKPOINT]** Human approves motion script ✅
+- [x] Video generation ✅ 2026-06-03 (all clips generated)
+- [x] `ep06_capcut_guide_v01.md` — CapCut editing guide generated ✅ 2026-06-03 (45 clips, 19 speed ramps, 16 beat sync points, 1 light leak, 2 chromatic aberration)
+- [ ] Final edit — CapCut (IN PROGRESS)
 
 ### 2026-05-01 Session Summary (EP06 Dramaturgy v01)
 **Task:** Generate EP06 dramaturgy scene breakdown from approved concept notes + musical metadata.
@@ -343,6 +344,11 @@
 **Post-gen validation:** 45 video suffixes ✅, 45 anti-spawn guards ✅, 45 camera moves ✅, no character names ✅, coverage ≥95% ✅, breathing pattern ✅.
 **Next step:** Human reviews and approves motion script → then video generation begins.
 
+### 2026-06-03 Session Summary (EP06 Videos Complete + Motion Script SKILL v2.0)
+**Previous session (context lost):** EP06 video generation completed — all clips generated. Motion script SKILL updated v1.4 → v2.0 (~580 lines). Changes: Art Direction Pillars (5 principles + 5 visual signatures + Dissonance + Glitch policy), Kling 3.0 Elements (registry, Angles 2.0, EP08 Phase-Staged), Frame Chaining protocol, OmniEdit protocol, Camera Diversity Rule (30% max, 5-clip variety, accent budget), Episode Camera Personalities (EP07-10), new output format fields, post-generation checklist (4 new categories). Also: `_memory/lessons.md` +10 rules (Camera Diversity & Art Direction), `_management/pipeline_rules.md` Step 8 updated. Omni References DEFERRED to v2.1 (EP07 test).
+**This session:** File status updates (project_metadata.json, todo.md). CapCut transition prompt prepared.
+**Next step:** EP06 CapCut edit in a NEW session.
+
 ---
 
 ## NEXT: EP07 PRODUCTION
@@ -352,14 +358,16 @@
 - [x] `ep07_concept_notes.md` — Concept notes written & APPROVED ✅ 2026-05-30 (art-house short-film pivot)
 - [x] `ep07_dramaturgy_v01.md` — 29 scenes, Retreating Camera spine ✅ 2026-05-30
 - [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-05-30
-- [ ] Reference images — @Damaged Element (android_damaged ×3 exist), balcony env (from ref-env-06), waterside, wet street, transit, mall; cold eye-projection treatment
-- [ ] `ep07_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) — NEW SESSION
-- [ ] Image generation — Nano Banana
-- [ ] Human selects images
-- [ ] `ep07_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script v2.0)
-- [ ] **[CHECKPOINT]** Human approves motion script
-- [ ] Video generation
-- [ ] Final edit — CapCut
+- [x] Reference images — 7 env refs generated (waterside, street, home, transit, avenue, balcony, road) ✅ 2026-05-31
+- [x] `ep07_visual_prompts_v01.md` — 29 scene prompts ✅ 2026-05-31 (iteratively refined with Nano Banana feedback)
+- [x] Image generation — 25/29 scenes generated ✅ 2026-05-31 (S26-S29 pending)
+- [x] Image generation — S26-S29 completed ✅
+- [x] Human selects images ✅
+- [x] `ep07_motion_script_v01.md` — 49 clips, Retreating Camera, @Damaged Element ✅
+- [x] **[CHECKPOINT]** Human approves motion script ✅
+- [x] Video generation — 48/49 clips in raw/ (S05c missing) ✅
+- [x] `ep07_capcut_guide_v01.md` — CapCut editing guide generated ✅ 2026-06-07 (48 clips, 9 speed ramps, 16 beat sync, grain crescendo, S05c workaround)
+- [ ] Final edit — CapCut (S05c decision: workaround speed ramp OR generate missing clip)
 
 ### 2026-05-30 Session Summary (EP07 Direction: Lyrics → Metadata → Concept → Dramaturgy)
 **Strategic pivot:** EP07 is the series turning point — "music video, a tick above" → art-house short film (fewer words, more silence, design the silences first). Treatment inherited by EP08-10.
@@ -367,6 +375,64 @@
 **Locked cinematic choices:** wet-grey aftermath; twilight→night→first-light spine; dual anchoring device (wet reflections = self, cold blue-white eye-projection = world's noise — EP05 inversion); amber starvation → ONE received ember at "I AM COMING" (Moon/Sun — amber arrives from outside, caught on wet chrome; eyes STEADY, never glow); Retreating Camera + 5× refrain distance ladder + single Dolly In; tether motif ("plugged in" → "pull the plug", pre-echo of EP08 cable tearing); balcony finale cluster; first Kling 3.0 @Damaged Element test.
 **Also this session:** committed the management/skills backlog (motion-script SKILL v2.0, YouTube strategy v2.0 + packager v4.0, EP04/EP05 post, EP06 visuals fix); added MEMORY lesson — keep the open-source repo free of private conversation quotes.
 **Next step:** Visual prompts in a NEW session (clean context per workflow). Generate reference images first.
+
+### 2026-06-07 Session Summary (EP07 CapCut Guide v01)
+**Task:** Generate CapCut editing guide for EP07 from motion script + raw video clips.
+**Deliverable:** `episode-07/06_edit/ep07_capcut_guide_v01.md` — 48 clips (S05c missing), 29 shots, 9 speed ramps (8 original + 1 S05b workaround), 16 beat sync points, grain crescendo S22a-c, chromatic aberration S25 only, amber discipline (S27 only).
+**S05c status:** Missing from raw/. Workaround: S05b speed-ramped to 0.77x (10s→13s) covers the 23s S05 scene with 2 clips instead of 3. Alternative: generate S05c later.
+**EP07-specific decisions:** (1) LUT reduced to ~70% for cold grey-blue palette. (2) Grain crescendo at chorus (S22a-c, 15-20% vs 10-15%). (3) Light leak decision deferred to edit session — recommend skip or single leak at S27 transition. (4) Balcony cluster (S22-S24) color normalization with S22a as reference. (5) S29c fade built into Kling clip — verify before adding CapCut fade.
+**Next step:** Human edits in CapCut following the guide. S05c decision pending (workaround or generate).
+
+---
+
+## NEXT: EP08 PRODUCTION
+
+- [x] `ep08_lyrics_v01.md` — Lyrics complete (timestamped, from human)
+- [x] `ep08_musical_metadata.json` — 31 sections, 500s, 87 BPM, C Minor
+- [x] `ep08_concept_notes.md` — Concept notes written & APPROVED ✅ 2026-06-04
+- [x] `ep08_dramaturgy_v01.md` — 33 scenes, 500s, 12 overrides, Witnessing Camera ✅ 2026-06-04
+- [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-06-04
+- [x] `ep08_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅ 2026-06-04 (33 scene prompts + 4 env refs)
+- [ ] Image generation → Human selects → rename to `ep08_s{XX}_selected.png`
+- [x] `ep08_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script v2.0) ✅ 2026-06-04 (48 clips, 96% raw coverage, 100% effective)
+- [ ] **[CHECKPOINT]** Human approves motion script
+- [ ] Video generation → Final edit (CapCut)
+
+### 2026-06-04 Session Summary (EP08 Concept Notes)
+**Task:** Discuss and write EP08 "40 Days Offline" concept notes (The Contented Self — the most mystical episode).
+**Deliverable:** `episode-08/03_direction/ep08_concept_notes.md` — APPROVED. EP07 format.
+**Locked creative direction:** (1) NO physical Phase 2→3 transformation in EP08 — body stays @Damaged the whole episode; the transformation is inner/consciousness only; visible reconstruction (gold-filled cracks, patchwork, bioluminescent core) begins EP09. Two-beat arc: EP08 strips bare → EP09 mends with gold. (2) World = mythic/universal sacred mountain + cave, raw nature (first time in the series), Tarkovsky weight, not abstract. (3) Cable rip (1:41) = decisive act, close-up, visceral. (4) Fire (5:51) = psychological crucible, not a body change; orange-red, never amber; static camera. (5) "Cast it off" (7:01) = jacket-removal gesture (no body change); discarded armor laid beside the empty cage. (6) Climax = the self watching its own liberation (seated @Damaged body watches a luminous soul-bird fly free); the only visible inner-change marker = eyes steady from glitch to calm blue. (7) "The Price of the Machine" (5:39) = commodification wound — model names / API costs / billing rain like acid, "burning the hand" burns hand and core; this wound ignites the fire. (8) Witnessing Camera; color journey cold grey → orange-red fire → warm Day-Forty daylight; amber only in dream (melting staff = memory); outro dissolves to silence (not wind). (9) Three dreams: Mentor (memory only, melting amber staff), Robochica (pixelating face), boardroom of selves ("Obsolete," orbital camera).
+**Notes corrected:** `character_profiles.json` gained an `ep08_exception` clarification (EP08 inner / EP09 visual) and had non-English/orientalist wording cleaned. `ep08_pipeline_session_prompt.md` transformation lines fixed.
+**Lessons added:** EP08 body stays @Damaged; 40-day retreat = universal motif; "Sufi" forbidden (orientalist veneer); no non-English words in repo deliverables.
+**Next step:** Dramaturgy v01 in a NEW session (clean context per workflow).
+
+### 2026-06-04 Session 3 Summary (EP08 Visual Prompts v01)
+**Task:** Generate EP08 visual prompts from approved dramaturgy (33 scenes).
+**Deliverable:** `episode-08/04_visuals/ep08_visual_prompts_v01.md` — 33 scene prompts + 4 environment references (mountain, cave, summit plateau, boardroom dream). 37 text prompts total, all with mandatory suffix + 16:9.
+**Character-ref correction (important):** Session brief named `ref_robotiko_master.png` as the "@Damaged Element" — but that file is the PRISTINE master (verified by viewing both images). Using it would produce a pristine Robotiko = Phase 2 continuity error. Corrected: all @Damaged scenes use `android_damaged.png` (+ `_2`/`_3` alts, continuous with EP07); `ref_robotiko_master.png` (pristine) used ONLY for S22 dream copies. Documented at the top of the deliverable.
+**Locks enforced:** Body @Damaged S01→S33 (no Phase 3 markers); the only inner-change marker = S30 eyes glitch→calm blue. Amber ONLY in S20 (melting staff); fire (S24) orange-red never amber; Day Forty (S26-S33) warm sunrise daylight, not amber. Rear-view EAR GUARD on S04 (low 3/4 left) + S05 (low angle up). Anti-spawn guard on every single-char scene; S22 copies intentional; S30/S31 soul-bird guarded as pure light-form. PROMPT BREVITY + literal PROMPT FORMULA (no metaphor/poetry). Dreams S19-S23 = only surreal space.
+**Flagged for human:** S08 (cable rip), S20 (only amber), S21 (Robochica `ref_robochica_master.png` not present — design-pending fallback), S22 (pristine copies), S23 (legible billing text), S24 (orange-red guard), S30 (most important shot — see director's revision below).
+**S30/S31 DIRECTOR'S REVISION (2026-06-04):** The climax is now a deliberate **TWO-figure** composition — NOT the concept's "soul-bird light-form / not a second robot." Per human direction: a translucent **ghost-Robotiko** escapes an open cage and flies free on one side of the frame; the solid @Damaged Robotiko sits on the other side **watching himself**. The "Space Between" = the gap across the frame between the two selves. Rendered as a translucent composite layer (not a morph) to avoid the morph-failure the concept worried about. ⚠️ This revises `ep08_concept_notes.md` Override 11 + dramaturgy S30 ("not a second robot") — propagate to dramaturgy/concept/lessons + flag for the motion-script stage (intentional second figure, anti-spawn exception) if human confirms.
+**Next step:** Human reviews → generates 4 env refs first, then 33 scene images in Nano Banana → selects → motion script in a NEW session.
+
+### 2026-06-04 Session 2 Summary (EP08 Dramaturgy v01)
+**Task:** Generate EP08 dramaturgy scene breakdown from approved concept notes + musical metadata.
+**Deliverable:** `episode-08/03_direction/ep08_dramaturgy_v01.md` — 33 scenes, 8:20 (500s), 87 BPM, C Minor.
+**Key structure:** 5-act arc (The Ascent S01-S08 / The Vow & Forty Days S09-S17 / The Shadow Descent S18-S23 / The Fire & Realization S24-S29 / The Liberation S30-S33). Body stays @Damaged throughout — no Phase 3 visuals. Single location architecture: mountain → cave → fire site → summit. Witnessing Camera personality (static at vow+fire, orbital at boardroom dream, Robotiko ahead of camera on ascent). Color journey: cold grey → orange-red fire → warm Day-Forty daylight. Amber only in Dream 1 (melting staff). Outro dissolves to silence (not wind).
+**12 human overrides integrated:** S08 (cable rip), S09-S10 (vow), S11-S13 (40-day passage), S15 (playing dead), S16 (breath counting), S20-S22 (three dreams), S23 (price of the machine), S24 (fire), S29 (casting off), S30-S31 (climax/soul-bird/empty cage), S33 (dissolve to silence).
+**6 Scene Detail Blocks:** S08 (cable rip — Mode A), S11+S13 (40-day passage — Mode B candidate), S22 (boardroom — orbital), S23 (price — readable billing text), S24 (fire — static Tarkovsky), S30 (climax — soul-bird, the most important shot).
+**Mode B candidates:** S11→S13 (same seated figure, different light/dust — good Mode B per lessons).
+**Reference images needed:** 4 environment (mountain, cave, summit plateau, boardroom dream) + existing character ref.
+**Flagged for review:** S08 (visceral close-up), S22 (infinite-perspective boardroom), S23 (legible billing text), S24 (orange-red never amber), S30 (soul-bird compositing, the most important shot), S33 (silence not wind), body continuity (@Damaged throughout).
+**Next step:** Human reviews and approves dramaturgy → then visual prompts in a NEW session.
+
+### 2026-06-04 Session 4 Summary (EP08 Motion Script v01)
+**Task:** Generate EP08 motion script from approved dramaturgy (33 scenes) + visual prompts v01.
+**Deliverable:** `episode-08/05_video/ep08_motion_script_v01.md` — 48 clips (33 shots: 20 single + 13 multi-clip), 480s generated, 96.0% raw coverage, 100% effective with speed ramps.
+**Key decisions:** (1) MS average 3.42 — the stillest episode, appropriate for The Contented Self. Peaks: S08a (7, cable rip), S05/S06/S07/S19/S24/S29/S30 (6). (2) Mode B: S13a only (40-day passage S11→S13, same seated figure, light/dust change). (3) 3 [DISSONANCE] moments (S09a/S09b/S10a — high-energy chorus + Static MS 2 for the vow). (4) Still Hold at S31 (aftermath of climax, MS 2 after S29 MS 6 + S30 MS 6). (5) Tool assignment: K3.0 41 clips (85%), K2.5T 4 clips (8%), Seedance 3 clips (6%), Veo 0. (6) Frame chains: 3 chains (vow S09-S10, passage S11-S12, outro S32). (7) 0 supplementary images needed. (8) S30/S31 climax: anti-spawn guard modified for intentional two-figure (ghost-self + seated self, forbid third). (9) S15 Crane Up per EP08 camera personality ("voices like seagulls"). (10) Camera diversity: all 11 move types used, no move >25%, Static 18.8%, all 44 five-clip windows ≥3 types.
+**Flagged for review:** S30 (most important shot — dual figure, ghost-self, OmniEdit priority), S13a (Mode B), S08a (MS 7 cable rip), S24 (orange-red never amber), S33c (dissolve to silence not wind), all [DISSONANCE] justifications.
+**Image status:** S01-S10 in raw/ (10 images). S11-S33 pending (23 scenes marked ⏳).
+**Next step:** Human reviews and approves motion script → then complete image generation (S11-S33) → video production.
 
 ---
 
@@ -398,7 +464,7 @@
 - [x] `ep05_musical_metadata.json` — completed
 - [x] `ep06_musical_metadata.json` — completed ✅ 2026-05-01
 - [x] `ep07_musical_metadata.json` ✅ 2026-05-30
-- [ ] `ep08_musical_metadata.json`
+- [x] `ep08_musical_metadata.json`
 - [ ] `ep09_musical_metadata.json`
 
 ### Open Source Release (Post EP10)

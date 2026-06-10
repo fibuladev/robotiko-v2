@@ -28,8 +28,9 @@
       "phase_3_reconstruction": {
         "episodes": [8, 9, 10],
         "station": "The Contented Self → The Integrated Self",
-        "visual_state": "The pristine armor is gone. Robotiko patches himself NOT with new shining parts, but with rusted metals and scraps found along the road — like the Kırkyama (patchwork dervish cloak). Translucent digital skin in places, bioluminescent core visible through cracks. The damage is not hidden; it is worn as a badge of liberation. Glitch is scripture.",
-        "visual_prompt_addition": "patchwork chrome body repaired with mismatched rusted scrap metal, translucent digital skin revealing bioluminescent core beneath, cracks filled with glowing gold light (kintsugi), calm steady blue eyes, dissolved and reformed metal aesthetic"
+        "visual_state": "The pristine armor is gone. Robotiko patches himself NOT with new shining parts, but with rusted metals and scraps found along the road — a patchwork body of scavenged, mismatched repairs. Translucent digital skin in places, bioluminescent core visible through cracks. The damage is not hidden; it is worn as a badge of liberation. Glitch is scripture.",
+        "visual_prompt_addition": "patchwork chrome body repaired with mismatched rusted scrap metal, translucent digital skin revealing bioluminescent core beneath, cracks filled with glowing gold light, calm steady blue eyes, dissolved and reformed metal aesthetic",
+        "ep08_exception": "EP08 is Phase 3 at the STATION/soul level ONLY. The BODY stays @Damaged (Phase 2) for the entire episode — no patchwork, no gold-filled cracks, no bioluminescent core, no new parts. The VISIBLE reconstruction described above begins in EP09. EP08's single visible inner-change marker is the climax eyes steadying from glitch to calm blue (not a body change). Two-beat arc: EP08 strips bare / frees the awareness; EP09 mends the body with gold."
       }
     }
   },

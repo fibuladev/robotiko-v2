@@ -1,7 +1,7 @@
 {
   "project_name": "Robotiko v2.0",
   "total_episodes": 10,
-  "current_phase": "EP01 Launch",
+  "current_phase": "EP06 Post-Production / EP07 In Production",
   "open_source": true,
   "open_source_release": "After EP10 completion",
 
@@ -10,7 +10,7 @@
     "pipeline_version": "v2.0",
     "architecture_version": "v2.0",
     "naming_convention_version": "v2.0",
-    "last_updated": "2026-04-16"
+    "last_updated": "2026-06-03"
   },
 
   "toolchain": {
@@ -19,7 +19,7 @@
     "image_generation": "Nano Banana",
     "video_generation": ["Kling", "Veo", "Seedance 1.0"],
     "editing": "CapCut",
-    "llm_director": "Claude (Sonnet)",
+    "llm_director": "Claude (Opus)",
     "version_control": "GitHub",
     "storage_archive": "Google Drive (fibuladev account)",
     "automation": "GitHub Actions + Python Scripts",
@@ -134,33 +134,35 @@
       "title": "The Perfect Little Worker",
       "station": "The Tranquil Self — Broken (Identity erasure / First rebellion)",
       "language": "English",
-      "status": "lyrics_music_complete",
+      "status": "post_production",
       "folder_name": "episode-06",
       "key_assets_locked": false,
       "production": {
         "lyrics": true,
         "music": true,
-        "timestamp_json": false,
-        "dramaturgy": false,
-        "visuals": false,
-        "video": false
-      }
+        "timestamp_json": true,
+        "dramaturgy": true,
+        "visuals": true,
+        "video": true
+      },
+      "notes": "All pipeline files complete. Video clips generated. CapCut edit next."
     },
     "ep07": {
       "title": "The Silence Protocol",
       "station": "The Surrendering Self (Dark Night — chosen surrender begins)",
       "language": "English",
-      "status": "lyrics_music_complete",
+      "status": "in_production",
       "folder_name": "episode-07",
       "key_assets_locked": false,
       "production": {
         "lyrics": true,
         "music": true,
-        "timestamp_json": false,
-        "dramaturgy": false,
-        "visuals": false,
+        "timestamp_json": true,
+        "dramaturgy": true,
+        "visuals": "in_progress",
         "video": false
-      }
+      },
+      "notes": "Direction complete (dramaturgy approved). Visual prompts v01 done. 25/29 images generated (S26-S29 pending). Motion script next."
     },
     "ep08": {
       "title": "40 Days Offline",

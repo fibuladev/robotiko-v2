@@ -88,19 +88,27 @@ When the human gives a trigger phrase, read the relevant SKILL.md before doing a
 - For ambiguous tasks: state your interpretation, then execute.
 - For bugs or errors: fix them. Point at the problem, resolve it, report back.
 
-### 7. Extended Thinking Protocol
+### 7. Thinking Effort Protocol
 
-Use the right model for the right task. Deep creative reasoning requires extended thinking; mechanical tasks do not.
+Match the thinking effort to the task. In Claude Code the reasoning effort is chosen per session
+(e.g. **low / medium / high / extra high / max**). Deep creative reasoning earns high effort; mechanical
+tasks do not. The model is Opus by default for all creative work — effort is the dial that matters most.
 
-| Task | Model | Reason |
+| Task | Thinking Effort | Why |
 |---|---|---|
-| Dramaturgy scene breakdown | Opus + extended thinking | Music → visual mapping → character arc → narrative consistency |
-| Motion script design | Opus + extended thinking | Beat sync + motion intensity + camera sequencing |
-| Complex multi-character visual prompts | Opus | Character positioning + symbolic weight |
-| Standard visual prompts | Sonnet | Template-driven, no deep reasoning needed |
-| YouTube packaging, naming validation | Sonnet/Haiku | Mechanical, not creative |
+| **Dramaturgy** scene breakdown | **Max** | One-shot deep synthesis: music → visual mapping → character arc → narrative consistency, all sections reconciled in a single irreversible pass |
+| **Motion script** design | **Max** | Beat sync + motion intensity + camera sequencing, synchronized across the whole episode at once |
+| **Concept notes** / brainstorming / creative discussion | **High** | Iterative and conversational — depth comes from back-and-forth refinement, not one giant pass. High is the responsive sweet spot |
+| Complex multi-character visual prompts | High / Extra High | Character positioning + symbolic weight |
+| Standard visual prompts | Low / Medium | Template-driven, no deep reasoning needed |
+| YouTube packaging, naming validation, file ops | Low | Mechanical, not creative |
 
-If token budget is constrained, prioritize: **Dramaturgy > Motion Script > Visual Prompts.**
+**Guiding principle:** *Single-shot deep synthesis (dramaturgy, motion script) → **max**. Iterative or
+conversational creative work (concept notes, discussion) → **high**. Mechanical work → **low/medium**.*
+Max never lowers quality — it only costs more time and tokens — so spend it where one irreversible pass
+carries the most weight, and stay responsive with high where the work is a dialogue.
+
+If effort/token budget is constrained, prioritize: **Dramaturgy > Motion Script > Visual Prompts.**
 
 ---
 

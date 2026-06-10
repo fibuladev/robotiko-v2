@@ -60,6 +60,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Image Reference Path:** `_assets/cast/ref_{character}_master.png` *(or N/A if no characters)*
 - **Video Tech Strategy:** [Standard / Start-End Keyframes / Extension]
 - **Composition Notes:** [Headroom for camera movement, breathing space, depth — never tight crops]
+- **Upload:** [Per-scene ref images: `char_ref.png` + `env_ref.png` + chain: S{XX} output + special: path]
 
 **Text Prompt:**
 > [Full scene description]. [Character visual state if present]. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.

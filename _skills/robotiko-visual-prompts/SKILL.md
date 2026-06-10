@@ -200,6 +200,7 @@ Each prompt block contains:
 | **Image Reference Path** | `_assets/cast/ref_{character}_master.png` or N/A |
 | **Video Tech Strategy** | Standard / Start-End Keyframes / Extension (from dramaturgy detail blocks) |
 | **Composition Notes** | Headroom, breathing space, depth guidance |
+| **Upload** | Per-scene list of reference images to upload alongside the text prompt: character ref, environment ref, chain ref (previous scene output), special ref. Eliminates need to scroll to the Reference Image Upload Guide table. |
 | **Text Prompt** | The full image generation prompt ending with the mandatory suffix |
 
 ### 5. Quality Checklist

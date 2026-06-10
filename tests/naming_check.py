@@ -29,7 +29,7 @@ PATTERNS = {
     "motion_script":    r"^ep\d{2}_motion_script_v\d{2}\.md$",
     "raw_image":        r"^ep\d{2}_s\d{2}_v\d{2}\.png$",
     "selected_image":   r"^ep\d{2}_s\d{2}_selected\.png$",
-    "raw_video":        r"^ep\d{2}_s\d{2}_video_(kling|veo|seedream)\.mp4$",
+    "raw_video":        r"^ep\d{2}_s\d{2}_video_(kling|veo|seedance)\.mp4$",
     "selected_video":   r"^ep\d{2}_s\d{2}_selected\.mp4$",
     "audio":            r"^ep\d{2}_audio_v\d{2}\.mp3$",
     "final_edit":       r"^ep\d{2}_final_v\d{2}\.mp4$",

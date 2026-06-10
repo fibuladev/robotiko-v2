@@ -152,7 +152,7 @@ robotiko-v2/
 
 ## 🛠️ Tech Stack
 
-- **AI Tools:** Claude (Anthropic), Suno (Music), Nano Banana Pro (Images), Kling/Veo/Seedream (Video)
+- **AI Tools:** Claude (Anthropic), Suno (Music), Nano Banana Pro (Images), Kling/Veo/Seedance (Video)
 - **Editing:** CapCut
 - **Automation:** Python, GitHub Actions
 - **Storage:** Local + AWS S3 sync
@@ -222,8 +222,8 @@ Skills are operational instructions for Claude AI to execute specific workflows.
 
 ## Model Recommendations
 
-- **Creative Skills** (dramaturgy, visuals, motion): Sonnet 4.5 + Extended Thinking ON
-- **Mechanical Skills** (scaffolding, naming): Haiku 4.5 + Extended Thinking OFF
+- **Creative Skills** (dramaturgy, visuals, motion): Opus — high to max thinking effort
+- **Mechanical Skills** (scaffolding, naming): low thinking effort (a lighter model is fine here)
 
 ## Usage
 

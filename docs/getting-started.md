@@ -19,7 +19,7 @@ Before you begin, you need:
 - [ ] **Google Drive** — For binary asset storage (via custom MCP server in `_tools/mcp-gdrive/`)
 - [ ] **Suno AI** — For music generation
 - [ ] **Nano Banana Pro** — For image generation
-- [ ] **Seedream / Kling / Veo** — For video generation
+- [ ] **Kling / Veo / Seedance 1.0** — For video generation
 - [ ] **CapCut** — For final editing
 
 ---

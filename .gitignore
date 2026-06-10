@@ -126,3 +126,7 @@ tmp/
 # If using Git LFS, track these instead of ignoring:
 # *.png filter=lfs diff=lfs merge=lfs -text
 # *.jpg filter=lfs diff=lfs merge=lfs -text
+# -----------------------------------------------------------------------------
+# EXTERNAL LLM BASE FILES (claude.ai project-knowledge mirror - not repo content)
+# -----------------------------------------------------------------------------
+robotiko-v2-base files/

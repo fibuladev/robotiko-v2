@@ -62,7 +62,7 @@ Scope: Only `episode-{XX}/` and its subfolders.
 
 ### Rule 6: Tool Name in Video Files
 - Raw video files must include the generation tool name
-- Pattern: `ep{XX}_s{XX}_video_{tool}.mp4` where `{tool}` is `kling`, `veo`, or `seedream`
+- Pattern: `ep{XX}_s{XX}_video_{tool}.mp4` where `{tool}` is `kling`, `veo`, or `seedance`
 - Violation: `ep02_s01_video.mp4` (missing tool name)
 
 ### Rule 7: No Version Suffix Exceptions

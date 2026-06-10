@@ -10,12 +10,12 @@
 | **Version Control** | GitHub | The Brain — all decisions, all files, all history |
 | **Storage** | AWS S3 | Long-term archive for heavy video/audio assets |
 | **Automation** | GitHub Actions + Python Scripts | Episode scaffolding, naming validation, status tracking |
-| **LLM Director** | Claude (Sonnet) via Claude Code + VSCode | Dramaturgy, visual prompts, motion scripts, skill execution |
+| **LLM Director** | Claude (Opus) via Claude Code + VSCode | Dramaturgy, visual prompts, motion scripts, skill execution |
 | **Local IDE** | VSCode + Claude Code | Primary development environment (active from 2026-02-23) |
 | **Music Generation** | Suno AI | Audio production |
 | **Metadata Generation** | Claude (robotiko-musical-metadata skill) | Musical metadata JSON from human-provided BPM, Key, timestamped lyrics |
 | **Image Generation** | Nano Banana Pro | Visual prompt execution |
-| **Video Generation** | Seedream / Kling / Veo | Motion production |
+| **Video Generation** | Kling / Veo / Seedance 1.0 | Motion production |
 | **Editing** | CapCut | Final assembly |
 
 ---
@@ -32,7 +32,7 @@ Human (Lyrics + Vision)
     → Nano Banana Pro (Images)
     → Human (Image Selection)
     → Claude (Motion Script) [✋ CHECKPOINT]
-    → Seedream / Kling / Veo (Video)
+    → Kling / Veo / Seedance 1.0 (Video)
     → Human (Video Selection)
     → CapCut (Final Edit)
     → YouTube + Social Media

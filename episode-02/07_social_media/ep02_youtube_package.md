@@ -123,7 +123,7 @@ Next: They Folded Him Like Cloth → [EP03 URL]
 ```
 
 **Checklist:**
-- [x] Opens with episode hook from creator_strategy.md (exact text) ✅
+- [x] Opens with episode hook from youtube_metadata_standards.md (exact text) ✅
 - [x] Playlist CTA above the fold (visible before "Show more") ✅
 - [x] "THE LORE" header above poem (not "Lyrics:" — avoids music classification) ✅
 - [x] Musical structure markers removed (pure poetry) ✅
@@ -137,7 +137,7 @@ Next: They Folded Him Like Cloth → [EP03 URL]
 - [x] NO "About ROBOTIKO" block ✅
 - [x] #aiart included ✅
 - [x] No spoilers for future episodes ✅
-- [x] No inspiration credit (none specified for EP02 in creator_strategy.md) ✅
+- [x] No inspiration credit (none specified for EP02 in youtube_metadata_standards.md) ✅
 
 ---
 
@@ -147,7 +147,7 @@ Next: They Folded Him Like Cloth → [EP03 URL]
 The egg vendor is the only honest light. No civilization saved—just a leg. The real savior wields no hard power. Just a click.
 ```
 
-Pin immediately after video goes live. No additions, no emojis. Exact text from creator_strategy.md.
+Pin immediately after video goes live. No additions, no emojis. Exact text from youtube_metadata_standards.md.
 
 ---
 
@@ -190,7 +190,7 @@ Characters: ~370 / 500 max ✅
 
 ## 6. END SCREEN RECOMMENDATIONS
 
-Per `creator_strategy.md` Section 2.6: **No end screens EP01-EP09.**
+Per `youtube_metadata_standards.md` Section 10: **No end screens EP01-EP09.**
 
 - **Previous episode:** EP01 — "Two Halves of One Whole Apple" → https://youtu.be/W_zfFDXn0o0
 - **Next episode:** EP03 — [EP03 Title] → [EP03 URL]

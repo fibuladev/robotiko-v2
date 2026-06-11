@@ -107,7 +107,7 @@ robotiko-v2/
 ├── LICENSE  LICENSE-CONTENT        # MIT (method) + CC BY-NC 4.0 (creative content)
 │
 ├── _management/                    # CONSTITUTION — source of truth
-│   ├── master.md                   # Universe bible — THE LAW
+│   ├── master.md                   # Universe Canon — THE LAW
 │   ├── pipeline_rules.md           # Production workflow + quality gates
 │   ├── naming_convention.md        # File naming standards (the pipeline's foreign keys)
 │   ├── architecture.md             # This document

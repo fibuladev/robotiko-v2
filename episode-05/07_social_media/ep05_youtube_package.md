@@ -136,7 +136,7 @@ first love blue screen, robot love, android love story, chrome android, robochic
 
 ## 7. END SCREEN
 
-Per creator_strategy.md: **No end screens EP01-EP09.**
+Per youtube_metadata_standards.md: **No end screens EP01-EP09.**
 
 ---
 

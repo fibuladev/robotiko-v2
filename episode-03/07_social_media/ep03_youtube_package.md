@@ -168,7 +168,7 @@ Next: The Moon Has No Light of Its Own → [EP04 URL]
 
 **Checklist:**
 - [x] Opens with AI categorization signal (3-line format) ✅
-- [x] Episode hook from creator_strategy.md (exact text) ✅
+- [x] Episode hook from youtube_metadata_standards.md (exact text) ✅
 - [x] Playlist CTA above the fold ✅
 - [x] "THE LORE" label above poem (not "Lyrics:" — avoids music classification signal) ✅
 - [x] 8-syllable meter note added (Turkish folk poetry tradition) ✅
@@ -188,7 +188,7 @@ Next: The Moon Has No Light of Its Own → [EP04 URL]
 - [x] No genre hashtags (#progrock, #psychedelicrock, etc.) ✅
 - [x] "anatolian pop rock" removed (genre tag) ✅
 - [x] Turkish subject tags added (yapay zeka filmi, kısa film, etc.) ✅
-- [x] No inspiration credit (none specified for EP03 in creator_strategy.md) ✅
+- [x] No inspiration credit (none specified for EP03 in youtube_metadata_standards.md) ✅
 
 ---
 
@@ -198,7 +198,7 @@ Next: The Moon Has No Light of Its Own → [EP04 URL]
 This episode exists in Turkish for a reason.
 ```
 
-Pin immediately after video goes live. No additions, no emojis. Exact text from creator_strategy.md.
+Pin immediately after video goes live. No additions, no emojis. Exact text from youtube_metadata_standards.md.
 
 ---
 
@@ -253,7 +253,7 @@ Characters: ~430 / 500 max ✅
 
 ## 6. END SCREEN
 
-Per `creator_strategy.md` Section 2.6: **No end screens EP01-EP09.**
+Per `youtube_metadata_standards.md` Section 10: **No end screens EP01-EP09.**
 
 - **Previous episode:** EP02 — "The Tech Guru's Downfall" → [EP02 URL]
 - **Next episode:** EP04 — [EP04 Title] → [EP04 URL when available]

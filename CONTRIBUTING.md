@@ -3,7 +3,7 @@
 Welcome. ROBOTIKO v2.0 is two things at once:
 
 1. **A method** — a one-person, LLM-directed film-production pipeline. A git repo that operates as a complete studio: an LLM works as a stage-gated production crew, and the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates).
-2. **A universe** — the ROBOTIKO story: its bible, characters, lyrics, dramaturgy, and finished episodes.
+2. **A universe** — the ROBOTIKO story: its canon, characters, lyrics, dramaturgy, and finished episodes.
 
 This distinction is the heart of the project, and it shapes how you contribute. The **method is open** (MIT) and meant to be taken and reused. The **universe is canon** (CC BY-NC 4.0) and not for editing here. Most people who arrive will want to do the first thing: **fork the method and build their own universe.** That is the point, and it is celebrated.
 
@@ -30,7 +30,7 @@ This is what the repo is *for*. You take the pipeline, swap out the ROBOTIKO sto
 
 **What you replace** (your universe, your creative content):
 
-- `_management/master.md` — swap the ROBOTIKO universe bible for **your own**
+- `_management/master.md` — swap the ROBOTIKO universe canon for **your own**
 - `_assets/cast/character_profiles.json` — rewrite the character state machine for **your** characters
 - `episode-XX/01_lyrics/` — your lyrics and narrative source
 - The **mandatory visual + video suffixes** in `CLAUDE.md` — set your own house style
@@ -55,7 +55,7 @@ These touch the **method**, not the universe. See the canon-lock rules below.
 
 The following are **creative content** of the ROBOTIKO universe, licensed under **CC BY-NC 4.0** (see [LICENSE-CONTENT](LICENSE-CONTENT)) — *not* open method. **Do not change these in pull requests to THIS repo.** You are free to study them, and free to remix them non-commercially with attribution in *your own* fork — but here, they are locked canon. If you believe something is genuinely broken, open an issue to discuss rather than a PR.
 
-- **`_management/master.md`** — the universe bible, the absolute source of truth. Locked.
+- **`_management/master.md`** — the universe canon, the absolute source of truth. Locked.
 - **`_assets/cast/character_profiles.json`** — the character state machine. Character design and episode-by-episode visual state are final for the current season.
 - **The published episode creative files** — lyrics, dramaturgy, concept notes, visual prompts, motion scripts of released episodes.
 - **The mandatory visual suffix** — appended to every visual prompt, no exceptions:
@@ -86,7 +86,7 @@ A numbered path from clone to first episode:
    ```
    Read [docs/getting-started.md](docs/getting-started.md) and [docs/tools-setup.md](docs/tools-setup.md) first.
 
-2. **Write your bible.** Replace `_management/master.md` with your own universe: its world, its arc, its rules, its tone. Everything downstream reads from this file, so it comes first.
+2. **Write your canon.** Replace `_management/master.md` with your own universe: its world, its arc, its rules, its tone. Everything downstream reads from this file, so it comes first.
 
 3. **Rewrite your cast.** Replace `_assets/cast/character_profiles.json` with your characters. This is a *state machine*: each character's visual state per episode (damage, transformation, mood) is tracked here, and the visual-prompt stage enforces it. Replace the reference images in `_assets/cast/` to match.
 

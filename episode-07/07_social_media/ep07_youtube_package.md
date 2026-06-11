@@ -222,7 +222,7 @@ The @Damaged android stands alone on a wet waterside at night, hands in pockets,
 - Next: `Coming soon` (update when EP08 goes live)
 - Playlist: `{PLAYLIST_URL}` in first 3 lines
 
-**End screen:** None (per creator_strategy.md — no end screens EP01-EP09)
+**End screen:** None (per youtube_metadata_standards.md — no end screens EP01-EP09)
 
 **Retroactive update:** When EP07 goes live, update EP06's description to add:
 ```
@@ -233,7 +233,7 @@ Next: Everyone Is Sorry, No One Is Hiring → {EP07_URL}
 
 ## 8. BANNER UPDATE CHECK
 
-EP07 is in the **Deep Destruction** phase (EP06-07) per creator_strategy.md Section 2.2:
+EP07 is in the **Deep Destruction** phase (EP06-07):
 > "Near-monochrome. Silhouette fragmenting. One eye blue, hints of red. Dark."
 
 **Action:** If banner was updated for EP06, no change needed. If not, update before EP07 publish. Same phase.
@@ -242,7 +242,7 @@ EP07 is in the **Deep Destruction** phase (EP06-07) per creator_strategy.md Sect
 
 ## 9. ABOUT SECTION CHECK
 
-EP07 enters **Phase 3** of the About section (EP07-EP09) per creator_strategy.md Section 2.3. The new line:
+EP07 enters **Phase 3** of the About section (EP07-EP09). The new line:
 > "The full production pipeline will be open source after the finale."
 
 **Action:** Update YouTube channel About section to Phase 3 text before or on EP07 publish day.

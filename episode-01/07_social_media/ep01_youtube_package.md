@@ -89,7 +89,7 @@ Next: The Tech Guru's Downfall → [EP02 URL]
 ```
 
 **Checklist:**
-- [x] Opens with episode hook from creator_strategy.md ✅
+- [x] Opens with episode hook from youtube_metadata_standards.md ✅
 - [x] Playlist CTA above the fold (visible before "Show more") ✅
 - [x] "THE LORE" header above poem (not "Lyrics:" — avoids music classification) ✅
 - [x] Musical structure markers removed (pure poetry) ✅
@@ -152,7 +152,7 @@ Characters: ~340 / 500 max ✅
 
 ## 6. END SCREEN RECOMMENDATIONS
 
-Per `creator_strategy.md` Section 2.6: **No end screens EP01-EP09.**
+Per `youtube_metadata_standards.md` Section 10: **No end screens EP01-EP09.**
 
 - **Previous episode:** N/A (first episode)
 - **Next episode:** EP02 — "The Tech Guru's Downfall" → [EP02 URL]

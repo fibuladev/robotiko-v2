@@ -66,7 +66,7 @@
 ---
 
 ## DIRECTOR'S NOTES
-*(Claude's notes on creative decisions, narrative connections, and Bible compliance)*
+*(Claude's notes on creative decisions, narrative connections, and Canon compliance)*
 
 - **Why these scenes serve the station:** [Brief explanation]
 - **Character arc progress:** [How Robotiko's state is expressed visually in this episode]

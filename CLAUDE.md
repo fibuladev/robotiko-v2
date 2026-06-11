@@ -23,7 +23,7 @@ You are not replacing the human. You are amplifying human vision through intelli
 
 Before any task, read in this order:
 
-1. `_management/master.md` — Universe Bible. The absolute source of truth.
+1. `_management/master.md` — Universe Canon. The absolute source of truth.
 2. `_management/project_metadata.json` — Current episode status and toolchain.
 3. `_memory/lessons.md` — Your self-improvement rules. Internalize before starting.
 4. `_memory/todo.md` — Current open tasks and priorities.

@@ -76,7 +76,7 @@ These files live in `_management/` and are versioned via Git, not filename:
 
 | File | Purpose |
 |---|---|
-| `master.md` | Universe Bible — absolute source of truth |
+| `master.md` | Universe Canon — absolute source of truth |
 | `pipeline_rules.md` | Production workflow |
 | `naming_convention.md` | This document |
 | `architecture.md` | Technical stack & data flow |

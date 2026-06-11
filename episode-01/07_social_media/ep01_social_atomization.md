@@ -110,7 +110,7 @@
 
 ## RELEASE SCHEDULE
 
-Aligned with weekly rhythm from creator_strategy.md:
+Aligned with the weekly release rhythm:
 
 | Day | Date | Clip | Platform | Time (CET) |
 |-----|------|------|----------|-------------|

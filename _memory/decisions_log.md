@@ -15,8 +15,8 @@ When a significant decision is made:
 
 ## 2026-02-23 — FOUNDATION DECISIONS
 
-### bible.md → master.md
-- **Decision:** Renamed `bible.md` to `master.md` and removed all explicit religious references.
+### Legacy universe file → master.md
+- **Decision:** Renamed the legacy universe file to `master.md` and removed all explicit religious references.
 - **Reason:** Project will be open source. Universal language ensures broader accessibility. The philosophical depth is preserved through the Turkish wisdom tradition (Yunus Emre, Pir Sultan Abdal, Hacı Bektaş, Mevlana) without framing them as religious doctrine.
 
 ### Musical Metadata Format
@@ -74,7 +74,7 @@ When a significant decision is made:
 ## 2026-03-25 — CREATOR IDENTITY & CHANNEL STRATEGY
 
 ### Creator Strategy Finalized
-- **Decision:** Creator identity, channel architecture, open source rollout, social media strategy, and inspiration credits strategy approved and documented in `_management/creator_strategy.md`.
+- **Decision:** Creator identity, channel architecture, open source rollout, social media strategy, and inspiration credits strategy approved and documented in the creator's private strategy notes.
 - **Key decisions:**
   - Channel name: **Fibula** (creator identity, not project name — allows future projects)
   - AUTHOR.md approved — appears only on EP10 release day when repo goes public

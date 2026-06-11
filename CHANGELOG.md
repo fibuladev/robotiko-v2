@@ -16,7 +16,7 @@ taste (the two approval checkpoints).
 
 ### Ships in 1.0.0
 - **The full method, reproducible from the repo alone:**
-  - `master.md` — Universe Bible (constitution / policy-as-code: golden rules, mandatory suffixes).
+  - `master.md` — Universe Canon (constitution / policy-as-code: golden rules, mandatory suffixes).
   - 10 production skills in `_skills/` — musical-metadata, dramaturgy, visual-prompts, motion-script,
     episode-scaffold, naming-enforcer, youtube-packager, reels-atomizer, launch-orchestrator, capcut-editor.
   - `_memory/lessons.md` — 60+ dated, tested generative-film-grammar rules (a self-improving knowledge base).
@@ -54,9 +54,9 @@ taste (the two approval checkpoints).
 - `_management/architecture.md` — v2.1: AWS S3 → Google Drive + custom MCP; current toolchain
   (Kling 3.0 / Elements / Omni, Seedance 1.0); Claude Code hooks.
 - Root `README.md` — golden pass; storage and tooling references corrected.
-- Stale `Seedream` references replaced with `Seedance` across naming-enforcer SKILL, `architecture.md`,
+- Corrected the stale video-tool name to `Seedance` across naming-enforcer SKILL, `architecture.md`,
   setup script, `docs/getting-started.md`, and `tests/naming_check.py` regex.
-- `_management/README.md` — removed forbidden `bible.md` reference; file list brought current.
+- `_management/README.md` — removed a forbidden legacy source-file reference; file list brought current.
 
 ### Removed / Separated
 - Private files separated from the public tree (local playbook and personal system-maintenance
@@ -164,8 +164,8 @@ taste (the two approval checkpoints).
 - `episode-01/07_social_media/` — YouTube package, social atomization, launch checklist, walkthrough,
   external promotion strategy.
 - Social infrastructure: YouTube + Instagram accounts (@fibuladev), banner, About section, playlist.
-- `_management/creator_strategy.md` — channel name Fibula, AUTHOR.md on EP10 release day,
-  AI transparency from EP01, weekly release rhythm, no end screens except EP10 GitHub link.
+- Creator strategy defined (kept in the creator's private notes) — channel name Fibula,
+  AUTHOR.md on EP10 release day, AI transparency from EP01, weekly release rhythm.
 
 ### Notes
 - **EP01 launched on YouTube April 22, 2026.** First public episode of the series.
@@ -213,7 +213,7 @@ taste (the two approval checkpoints).
 - Claude Code activated as the local LLM director (VSCode + Claude Code, active from 2026-02-23)
 
 ### Changed
-- `_management/master.md` — Universe Bible v2.0 (full rewrite from bible.md)
+- `_management/master.md` — Universe Canon v2.0 (full rewrite of the legacy universe file)
 - `_management/pipeline_rules.md` — v2.0 with musical metadata step and skills system
 - `_management/naming_convention.md` — v2.0 with new file types and commit convention
 - `_management/architecture.md` — v2.0 with Claude Code, MCP roadmap, open source strategy
@@ -224,7 +224,7 @@ taste (the two approval checkpoints).
 - `_templates/video_prompt_template.md` — v2.0 with beat sync notes and fixed broken reference
 
 ### Removed
-- `_management/bible.md` — Replaced by `master.md`
+- The legacy universe file — replaced by `master.md`
 
 ---
 

@@ -94,7 +94,7 @@ only himself, and at the end, not even that.
 
 ## A NOTE ON THE PHASE TRANSITION (corrects earlier framing)
 
-The character bible groups Phase 3: Reconstruction as EP08–10, and an early EP08 planning note implied
+The character profiles group Phase 3: Reconstruction as EP08–10, and an early EP08 planning note implied
 a visible body transformation at ~7:01 (patchwork chrome, kintsugi gold, bioluminescent core). **That
 is not how EP08 works.** Phase 3 begins in EP08 **only at the level of the station and the soul** — the
 *"Contented Self,"* the inner liberation, the armor finally understood as a coffin and let go. The

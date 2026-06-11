@@ -20,7 +20,7 @@ and launch playbooks live in the creator's private notes (not part of the open m
 > Target: Complete before Claude Code activation (2026-02-23)
 
 ### ✅ COMPLETED TODAY
-- [x] `master.md` — Universe Bible v2.0 written
+- [x] `master.md` — Universe Canon v2.0 written
 - [x] `pipeline_rules.md` — v2.0 written
 - [x] `naming_convention.md` — v2.0 written
 - [x] `architecture.md` — v2.0 written
@@ -81,9 +81,9 @@ and launch playbooks live in the creator's private notes (not part of the open m
 - [x] **[PIPELINE FIX]** Duration Coverage Strategy — architecture-level fix across 7 files ✅ 2026-02-27
 - [x] `ep02_motion_script_v02.md` — Full rewrite with duration coverage (49 clips, 100.4% coverage) ✅ 2026-02-27
 - [x] **[CHECKPOINT]** Human approves motion script v02 ✅ 2026-02-28
-- [x] Tool Assignment Plan — 49 clips assigned: Kling=36, Veo=4, Seedream=9 ✅ 2026-02-28
+- [x] Tool Assignment Plan — 49 clips assigned: Kling=36, Veo=4, Seedance=9 ✅ 2026-02-28
 - [x] `ep02_motion_script_v02.md` — Updated with `| Recommended Tool |` field per clip + Tool Assignment Summary section ✅ 2026-02-28
-- [x] Pipeline update: Seedream → Seedance 1.0 + Multiframes (SKILL.md v1.2, template v5.0, pipeline v2.2) ✅ 2026-03-01
+- [x] Pipeline update: Seedance 1.0 adopted + Multiframes (SKILL.md v1.2, template v5.0, pipeline v2.2) ✅ 2026-03-01
 - [x] **EP02 Seedance Test Protocol** — Multiframes tested: **FAIL** (1130cr / 2 tests, budget-destroying) ✅ 2026-03-01
   - [ ] Test 1: S04 — Seedance 1.0 vs Kling (Mode A quality comparison)
   - [ ] Test 2: S11 — Seedance 1.0 vs Kling (Mode B keyframe comparison)
@@ -118,9 +118,9 @@ and launch playbooks live in the creator's private notes (not part of the open m
 
 ### 2026-02-28 Session Summary (Tool Assignment Plan)
 **Task:** Assign AI video generation tool to each of 49 clips based on tool capabilities, credit budgets, and quality requirements.
-**Tool inventory:** Kling AI Pro (3000 cr, 1080p, keyframe), Google Veo (free, 8s fixed, no keyframe), Seedream 1.5 Pro (1200 cr, 720p, keyframe)
-**Assignment strategy:** Mode B → Kling only (6 clips). Map shots → Seedream (9 clips, 720p OK on textures). 8s scene match → Veo (4 clips). Everything else → Kling (30 clips).
-**Credit budget:** Kling 2,275/3,000 (725 buffer). Seedream ~540/1,200 (660 buffer). Veo free.
+**Tool inventory:** Kling AI Pro (3000 cr, 1080p, keyframe), Google Veo (free, 8s fixed, no keyframe), Seedance (1200 cr, 720p, keyframe)
+**Assignment strategy:** Mode B → Kling only (6 clips). Map shots → Seedance (9 clips, 720p OK on textures). 8s scene match → Veo (4 clips). Everything else → Kling (30 clips).
+**Credit budget:** Kling 2,275/3,000 (725 buffer). Seedance ~540/1,200 (660 buffer). Veo free.
 **Files updated:** ep02_motion_script_v02.md (added Tool Assignment Summary + Recommended Tool per clip), _memory/todo.md
 **Next steps:** Generate 2 supplementary images (S29c, S34b), then begin video production per tool assignment.
 
@@ -130,8 +130,8 @@ and launch playbooks live in the creator's private notes (not part of the open m
 **Result:** EP03+ motion scripts will automatically include tool assignments as standard output.
 
 ### 2026-03-01 Session 5 Summary (Seedance Integration + Multiframes Discovery)
-**Discovery:** Human found Seedance 1.0 (CapCut built-in, 1080p, keyframe, 25cr/5s, 50cr/10s) as Seedream 1.5 Pro replacement + Seedance Multiframes (up to 10 keyframes, up to 54s continuous video, AI interpolation).
-**Pipeline update:** Seedream → Seedance 1.0 across all pipeline files. Multiframes added as experimental Mode C.
+**Discovery:** Human found Seedance 1.0 (CapCut built-in, 1080p, keyframe, 25cr/5s, 50cr/10s) for keyframe video + Seedance Multiframes (up to 10 keyframes, up to 54s continuous video, AI interpolation).
+**Pipeline update:** Seedance → Seedance 1.0 across all pipeline files. Multiframes added as experimental Mode C.
 **Files updated:** SKILL.md (v1.2), video_prompt_template.md (v5.0), pipeline_rules.md (v2.2), project_metadata.json
 **Strategy:** Test-first approach — 4 EP02 test clips before reassignment decision (S04, S11, S14, S08).
 **Commits pending:** Previous session's tool assignment integration + this session's Seedance update.
@@ -451,7 +451,7 @@ and launch playbooks live in the creator's private notes (not part of the open m
 **Task:** (1) Synchronize external LLM base-files mirror (`robotiko-v2-base files/project/`) with current repo state. (2) Full multi-role project audit (FDE / architect / DevOps / art director / dramaturg) with web-researched market comparison.
 **Deliverable:** `_management/golden_release_report.md` — assessment report, market landscape (FilmAgent, MovieAgent, Promise MUSE, LTX Studio, Showrunner, Neural Frames, Google Flow), novelty verdict (partially justified — the synthesis is unprecedented as a public artifact), P0/P1/P2 roadmap to golden open-source release.
 **Base files sync:** 17 stale files replaced with current repo versions, 6 missing files added (character_profiles.json, ep02 concept notes + lyrics, visual-prompts/motion-script/musical-metadata skills), lyrics.txt rebuilt from canonical EP01-EP08 lyrics + raw EP09 section preserved. Folder added to .gitignore (not repo content).
-**Repo fixes:** `_management/README.md` bible.md reference removed; root README S3→Google Drive + Seedream→Seedance; stale `seedream` replaced in naming-enforcer SKILL, architecture.md, setup_project.sh, getting-started.md, naming_check.py regex.
+**Repo fixes:** `_management/README.md` legacy source-file reference removed; root README S3→Google Drive; corrected video-tool name to `seedance` in naming-enforcer SKILL, architecture.md, setup_project.sh, getting-started.md, naming_check.py regex.
 **Backlog committed:** EP06 post files, EP07 production files, EP08 direction/visuals/motion script, memory updates, thinking-effort protocol — 6 grouped commits, pushed.
 **KEY FINDING:** EP09 lyrics exist ONLY outside the repo (desktop lyrics file) — episode-09 must be scaffolded and `ep09_lyrics_v01.md` committed (P0 item in the report).
 **Next step:** Work through golden_release_report.md P0 list (LICENSE, AUTHOR.md, mentor/robochica ref images, EP09 scaffold, status-table refresh).
@@ -460,7 +460,7 @@ and launch playbooks live in the creator's private notes (not part of the open m
 
 ## 2026-06-11 Session Summary (Golden Release Fixes — P0 + P1)
 **Task:** Execute the P0/P1 roadmap from `golden_release_report.md` so the repo audits at 5/5 for open source.
-**Phase 1 — Legal/identity:** Dual license created — `LICENSE` (MIT, method) + `LICENSE-CONTENT` (CC BY-NC 4.0, creative content); `AUTHOR.md` at root (made-in-2026, Suno+BandLab, Kling/Seedance/Veo, "one person working alongside the machines"); creator name set to **Can Yalcin** everywhere; README rewritten (license + docs sections, bible.md purged).
+**Phase 1 — Legal/identity:** Dual license created — `LICENSE` (MIT, method) + `LICENSE-CONTENT` (CC BY-NC 4.0, creative content); `AUTHOR.md` at root (made-in-2026, Suno+BandLab, Kling/Seedance/Veo, "one person working alongside the machines"); creator name set to **Can Yalcin** everywhere; README rewritten (license + docs sections, legacy source-file refs purged).
 **Phase 2 — Completeness:** `create_episode.py` fixed (episode-only placeholder substitution, `--dry-run`, English comments, ASCII output) and used to scaffold episode-09 + episode-10; canonical `ep09_lyrics_v01.md` committed (timestamps TBD); master reference images confirmed (`ref_mentor_master.png`, `ref_robochica_master.png`) + `reference_image_prompts.md` written; status single-source-of-truth (project_metadata = live tracker; master §8 + CLAUDE.md point to it; EP01-07 launched, EP08 video gen, EP09-10 scaffolded); personal `.ps1` tools moved out of the tree; secrets/PII swept (personal email/entity-id removed from setup_project.sh).
 **Phase 2.8 — Privacy split:** 10 strategy/analytics/Turkish working files moved to gitignored `_private/` (youtube_strategy v01/v02, analytics baseline, pre-launch calendar, social setup guide, weekly release template, three session-prompt notes, EP05 Turkish brief). `youtube_strategy` split → public method-only `youtube_metadata_standards.md` (skill/template references rewired). Turkish flavor words translated to English in method files. (EP03 Turkish lyrics kept — intentional.)
 **Phase 3 — Docs to golden:** rewrote `docs/getting-started.md`, `docs/skills-guide.md`, `docs/tools-setup.md`; NEW `docs/anatomy-of-an-episode.md` (EP07 end-to-end showcase); full `CONTRIBUTING.md`; `architecture.md` v2.1 (S3→Google Drive/MCP); `CHANGELOG.md` current + prepared 1.0.0; visual DNA at `_assets/style/visual_dna.md`. Parallelized with subagents + a fresh-eyes newcomer review.

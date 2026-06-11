@@ -1,10 +1,10 @@
-# 📚 MANAGEMENT / PROJECT BIBLE
+# 📚 MANAGEMENT / PROJECT CANON
 
 This folder contains the **source of truth** for the Robotiko universe.
 
 ## Files
 
-- `master.md` - Universe Bible: story arc, characters, stations, episodic structure (absolute source of truth)
+- `master.md` - Universe Canon: story arc, characters, stations, episodic structure (absolute source of truth)
 - `pipeline_rules.md` - Production workflow (Lyrics → Audio → Visual → Video → Edit), quality gates, checkpoints
 - `naming_convention.md` - File naming standards
 - `architecture.md` - Technical stack & data flow

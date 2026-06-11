@@ -19,7 +19,7 @@ ROBOTIKO v2.0 is a **repo-as-studio**: a git repository that operates as a compl
 
 ```
 robotiko-v2/
-├── _management/        # Universe bible, pipeline rules, naming convention, architecture
+├── _management/        # Universe Canon, pipeline rules, naming convention, architecture
 ├── _assets/            # Character reference images + profiles (state machine)
 ├── _templates/         # Episode scaffolding templates
 ├── _skills/            # 10 Claude skills — the production crew
@@ -58,7 +58,7 @@ New here? Start with **[docs/getting-started.md](docs/getting-started.md)** and 
 | [docs/tools-setup.md](docs/tools-setup.md) | Per-tool setup (Claude Code, Suno, Nano Banana, Kling/Veo/Seedance, CapCut, MCP) |
 | [docs/skills-guide.md](docs/skills-guide.md) | What the 10 skills are, how to trigger them, a worked example |
 | [docs/anatomy-of-an-episode.md](docs/anatomy-of-an-episode.md) | EP07 traced end-to-end — the showcase artifact |
-| [_management/master.md](_management/master.md) | The universe bible — source of truth for all creative decisions |
+| [_management/master.md](_management/master.md) | The universe canon — source of truth for all creative decisions |
 | [_management/pipeline_rules.md](_management/pipeline_rules.md) | Production workflow, video strategy modes, quality gates |
 | [_management/architecture.md](_management/architecture.md) | Technical stack and data flow |
 | [_management/naming_convention.md](_management/naming_convention.md) | File naming standards (the pipeline's foreign keys) |

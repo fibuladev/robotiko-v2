@@ -194,7 +194,7 @@ Two chrome android faces inches apart. Damaged and cracked on the left, pristine
 - Next: `Coming soon` (update when EP07 goes live)
 - Playlist: `{PLAYLIST_URL}` in first 3 lines
 
-**End screen:** None (per creator_strategy.md — no end screens EP01-EP09)
+**End screen:** None (per youtube_metadata_standards.md — no end screens EP01-EP09)
 
 **Retroactive update:** When EP06 goes live, update EP05's description to add:
 ```
@@ -205,7 +205,7 @@ Next: His Mirror Had No Scratches → {EP06_URL}
 
 ## 8. BANNER UPDATE TRIGGER
 
-EP06 enters the **Deep Destruction** phase (EP06-07) per creator_strategy.md Section 2.2:
+EP06 enters the **Deep Destruction** phase (EP06-07):
 > "Near-monochrome. Silhouette fragmenting. One eye blue, hints of red. Dark."
 
 **Action:** Update YouTube channel banner before or on EP06 publish day.

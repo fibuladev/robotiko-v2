@@ -148,7 +148,7 @@ Not in git. The raw and selected image/video folders, plus audio, are gitignored
 The human and the studio speak two languages by design: creative conversation happens in the author's native language, but **every file, commit, and piece of code is written in English**. That keeps the repository legible to anyone in the world who forks it — the whole reason this is open source.
 
 **Can I fork this for my own universe?**
-That's the intent. The software and method are MIT-licensed; take the skills, scripts, tests, MCP server, and templates and build your own story. Start by replacing `_management/master.md` with your own bible and `_assets/cast/character_profiles.json` with your own characters, then adjust the skills to your aesthetic. The how-to-fork details are in **[../CONTRIBUTING.md](../CONTRIBUTING.md)**.
+That's the intent. The software and method are MIT-licensed; take the skills, scripts, tests, MCP server, and templates and build your own story. Start by replacing `_management/master.md` with your own canon and `_assets/cast/character_profiles.json` with your own characters, then adjust the skills to your aesthetic. The how-to-fork details are in **[../CONTRIBUTING.md](../CONTRIBUTING.md)**.
 
 **One more — how is YouTube metadata supposed to look?**
 The packager skill follows a fixed house style: title format, description signal lines, tag strategy, and category. The standard is documented in **[../\_management/youtube_metadata_standards.md](../_management/youtube_metadata_standards.md)**; review it before any upload.

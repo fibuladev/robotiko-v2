@@ -85,7 +85,7 @@
 | Evening | Monitor engagement | All platforms | Respond selectively (1 in 10 rule) |
 
 ### Engagement Rules (Launch Day)
-- Respond to ~1 in 10 comments (per creator_strategy.md)
+- Respond to ~1 in 10 comments
 - No debate, no defense
 - If asked "What is this?": "A 10-episode concept album and video series. CyberAnatolian prog rock."
 - If asked "Is this AI?": "Yes. One human and AI tools. Pipeline goes open source after EP10."

@@ -1,0 +1,64 @@
+CREATIVE CONTENT LICENSE
+========================
+
+Copyright (c) 2025-2026 Can Yalcin (Fibula)
+
+The CREATIVE CONTENT of ROBOTIKO v2.0 is licensed under the
+Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0).
+
+  Human-readable summary: https://creativecommons.org/licenses/by-nc/4.0/
+  Full legal code:        https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+
+WHAT THIS LICENSE COVERS
+------------------------
+
+"Creative content" means the artistic and narrative work of the ROBOTIKO v2.0
+universe contained in this repository, including but not limited to:
+
+  - Lyrics (`episode-XX/01_lyrics/`)
+  - Dramaturgy, concept notes, and direction (`episode-XX/03_direction/`)
+  - Visual prompts and motion scripts (`episode-XX/04_visuals/`, `05_video/`)
+  - The universe bible and creative canon (`_management/master.md`)
+  - Character designs and profiles (`_assets/cast/`)
+  - YouTube packages, social copy, and other published creative writing
+
+It does NOT cover the software and method of the repository (the pipeline,
+skills, scripts, tests, MCP server, templates, and process documentation),
+which are licensed under the MIT License — see `LICENSE`.
+
+Note: the rendered master assets (final audio, images, and video) are NOT
+distributed in this repository; they are published on the project's official
+channels. This file licenses only the creative content that is present here.
+
+
+WHAT YOU MAY DO
+---------------
+
+  - SHARE — copy and redistribute the material in any medium or format.
+  - ADAPT — remix, transform, and build upon the material.
+
+Under the following terms:
+
+  - ATTRIBUTION — You must give appropriate credit to "Can Yalcin (Fibula) —
+    ROBOTIKO v2.0", provide a link to this repository, and indicate if changes
+    were made. You may do so in any reasonable manner, but not in any way that
+    suggests the licensor endorses you or your use.
+
+  - NONCOMMERCIAL — You may not use the material for commercial purposes. The
+    ROBOTIKO v2.0 story, characters, lyrics, and universe may not be used to
+    generate revenue without separate written permission from the author.
+
+
+WHY DUAL LICENSING
+------------------
+
+The goal is simple: take the METHOD, build YOUR OWN universe.
+
+The pipeline is fully free (MIT) — fork it, sell products built with it, do
+anything. The ROBOTIKO story itself is shared for study and non-commercial
+remix with attribution, but is not for commercial resale. Tell your own story;
+don't sell this one.
+
+For commercial use of the creative content, contact the author.

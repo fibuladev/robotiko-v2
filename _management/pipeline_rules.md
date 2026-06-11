@@ -1,5 +1,5 @@
 # PRODUCTION PIPELINE & QUALITY ASSURANCE
-> **Version:** 2.4 | **Last Updated:** 2026-03-01
+> **Version:** 2.5 | **Last Updated:** 2026-06-11
 > Always refer to `_management/master.md` as the absolute source of truth.
 
 ---
@@ -81,10 +81,10 @@ Two steps require explicit human approval before proceeding. Everything else Cla
   - Every prompt MUST reference character master image path if a character appears
   - Every prompt MUST end with the mandatory visual suffix (no exceptions)
   - Compose with "Headroom" and "Breath" for camera movement space
-  - Skill:** `_skills/robotiko-visual-prompts/SKILL.md`
+  - **Skill:** `_skills/robotiko-visual-prompts/SKILL.md`
 
 ### Step 6: Image Generation
-- **Tool:** Nano Banana Pro (using prompts from Step 5)
+- **Tool:** Nano Banana (using prompts from Step 5)
 - **Output:** `episode-{XX}/04_visuals/raw/ep{XX}_s{XX}_v{XX}.png`
 
 ### Step 7: Image Selection
@@ -195,7 +195,7 @@ Apply these to ALL clips before editing, to unify output from multiple AI tools 
   - [ ] Tags use layered approach (no genre tags, AI + format tags present)
   - [ ] Category: Film & Animation
   - [ ] Cross-links: previous + next episode + playlist in description
-  - [ ] Pinned comment matches creator_strategy.md exactly
+  - [ ] Pinned comment matches youtube_metadata_standards.md (Section 12) exactly
 
 ### Step 13: Social Media Atomization
 - **Tool:** Claude executes `_skills/robotiko-reels-atomizer/SKILL.md`
@@ -210,15 +210,16 @@ Claude reads the relevant SKILL.md before executing any workflow.
 
 | Skill | Trigger Phrase | Output |
 |---|---|---|
-| `robotiko-dramaturgy` | "Create dramaturgy for EP{XX}" | `ep{XX}_dramaturgy.md` |
-| `robotiko-visual-prompts` | "Generate visual prompts for EP{XX}" | `ep{XX}_visual_prompts.md` |
-| `robotiko-motion-script` | "Generate motion script for EP{XX}" | `ep{XX}_motion_script.md` |
+| `robotiko-musical-metadata` | "Create musical metadata for EP{XX}" | `ep{XX}_musical_metadata.json` |
+| `robotiko-dramaturgy` | "Create dramaturgy for EP{XX}" | `ep{XX}_dramaturgy_v01.md` |
+| `robotiko-visual-prompts` | "Generate visual prompts for EP{XX}" | `ep{XX}_visual_prompts_v01.md` |
+| `robotiko-motion-script` | "Generate motion script for EP{XX}" | `ep{XX}_motion_script_v01.md` |
 | `robotiko-episode-scaffold` | "Scaffold EP{XX}" | Full folder structure |
 | `robotiko-naming-enforcer` | "Validate file names" | Compliance report |
-| `robotiko-youtube-packager` | "Package EP{XX} for YouTube" | Metadata file (per youtube_metadata_standards.md) |
+| `robotiko-youtube-packager` | "Package EP{XX} for YouTube" | `ep{XX}_youtube_package.md` (per youtube_metadata_standards.md) |
 | `robotiko-reels-atomizer` | "Atomize EP{XX} for social" | Clip list |
 | `robotiko-launch-orchestrator` | "Orchestrate EP{XX} launch" | Launch checklist |
-| `robotiko-capcut-editor` | "Edit EP{XX} in CapCut" | Edit guide |
+| `robotiko-capcut-editor` | "Edit EP{XX} in CapCut" | `ep{XX}_capcut_guide_v01.md` |
 
 ---
 

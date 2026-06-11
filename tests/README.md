@@ -9,7 +9,7 @@
 |---|---|---|
 | `naming_check.py` | Validates file names against `naming_convention.md` | v1.0 Implemented |
 | `visual_prompt_validator.py` | Validates visual prompt content (suffix, character phase, forbidden aesthetics) | v1.0 Implemented |
-| `pipeline_integrity.py` | Ensures no pipeline steps were skipped | Skeleton |
+| `pipeline_integrity.py` | Ensures no pipeline steps were skipped | Implemented (v1.1) |
 | `naming_check_hook.py` | Lightweight hook script for Claude Code PostToolUse | v1.0 Implemented |
 
 ---

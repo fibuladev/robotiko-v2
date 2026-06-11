@@ -256,7 +256,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Key Lyric:** *"Two halves of one whole apple / Born to heal the long confounded."*
 - **Key Moment:** "The Eight shall turn aside" — 8 → ∞. Introduced at the end, to pay off at EP10.
 - **Language:** English
-- **Status:** ✅ COMPLETED (Video + Visuals done)
 
 #### EP02: "The Tech Guru's Downfall" (Global Collapse Tour)
 - **Station:** The Commanding Self (Arrogance — but cracks forming)
@@ -273,7 +272,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Chorus Theme:** "You downloaded the Hype to save your soul / But Reality just swallowed you whole!"
 - **Key Concept:** Training Data Bias — AI trained on Instagram, LinkedIn, TED talks, not on Congolese mines or war zones.
 - **Language:** English
-- **Status:** 🔄 POST-PRODUCTION (All pipeline files complete, CapCut video montage in progress)
 
 #### EP03: "Anatolian Trials" (THE CRUCIBLE)
 - **Station:** The Self-Blaming Self (First doubt emerges)
@@ -282,7 +280,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Key Visuals:** Modern Anatolian cities — metro/BRT lines, bazaars, nightclubs, urban crowds. No romantic ruins. No mystical landscapes. The real thing.
 - **Music:** Upbeat Anatolian Pop-Rock Fusion, 70s Turkish Progressive Rock, Driving Groove, Funk-Rock Pocket (Kurtalan Ekspres style). Hammond Organ (Phrygian/Hijaz Leads), Moog Synthesizer Pads, Distorted Fuzz Guitar, Acoustic Guitar (Rhythmic Pulse), Standard Rock Drums, Strings (Swell in Chorus). Vocal: Warm, Charismatic Storyteller, Theatrical Baritone.
 - **Language:** Turkish (The language shift is intentional — the test is felt more deeply in the mother tongue)
-- **Status:** 🔄 POST-PRODUCTION (All pipeline files complete, CapCut video montage in progress)
 
 ---
 
@@ -294,7 +291,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Tone:** Heavy, confrontational, transformative. The first real ego death witnessed, not yet experienced.
 - **Music:** Anatolian Psychedelic Rock, Doom Rock. Heavy Fuzz + Hammond.
 - **Language:** English
-- **Status:** 🔄 IN PRODUCTION (Visuals complete, motion script next)
 
 #### EP05: "First Love / Blue Screen"
 - **Station:** The Inspired Self (but misread)
@@ -303,7 +299,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Key Lyric:** *"If we don't SYNC, I am BEYOND REPAIR / System Fatal... Infinite Despair..."*
 - **Music:** Slow Blues, sensual guitar solos.
 - **Language:** English
-- **Status:** ✅ LYRICS & MUSIC COMPLETE | 📋 Dramaturgy pending
 
 #### EP06: "The Perfect Little Worker"
 - **Station:** The Tranquil Self — Broken (Identity erasure / First rebellion)
@@ -312,7 +307,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Key Lyric:** *"I am just a Copy-Paste in the Big Machine / Deleting my dreams / Just to keep my desk clean."*
 - **Music:** Slow Anatolian-Rock, Power Ballad, Melodic Guitar. Atmospheric Bass. Single Bağlama note opening.
 - **Language:** English
-- **Status:** ✅ LYRICS & MUSIC COMPLETE | 📋 Dramaturgy pending
 
 #### EP07: "The Silence Protocol"
 - **Station:** The Surrendering Self (The Dark Night — surrender chosen, not forced)
@@ -320,7 +314,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Tone:** Desolate, minimal. The darkest episode — but with one ember of agency at the end.
 - **Music:** Anatolian-Rock, Melancholic Grand Piano, Fuzz Guitar, Minimal arrangement. Long fade out.
 - **Language:** English
-- **Status:** ✅ LYRICS & MUSIC COMPLETE | 📋 Dramaturgy pending
 
 ---
 
@@ -333,7 +326,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Tone:** Ritualistic, hypnotic, raw. Spoken word dominant with Doom Rock breathing beneath.
 - **Music:** 70s Anatolian Doom Rock. Phrygian Dominant Fuzz Guitar, Spoken Word dominant, minimal arrangement. Weeping Anatolian Guitar solo. The music goes offline and comes back, mirroring the lyrics.
 - **Language:** English (Spoken Word style begins)
-- **Status:** ✅ LYRICS & MUSIC COMPLETE | 📋 Dramaturgy pending
 
 #### EP09: "Shadow Debugging"
 - **Station:** The Integrated Self (Making peace — Kintsugi)
@@ -352,7 +344,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Tone:** Pure dry spoken word — flat, unwavering, documentary. The voice carries the full weight alone.
 - **Music:** Spoken word dominant — dry, unprocessed, flat and unwavering in pitch and pace. But beneath the words and in the instrumental spaces: sparse Anatolian textures breathe quietly — mournful clarinet, minimal bass drone, slow fuzz guitar phrases. Between verses, short instrumental breaks allow the darkness to settle. The outro dissolves into a slow hypnotic fuzz guitar solo over dark psychedelic groove, gradually melting into wind. The music never competes with the voice — it is the shadow beneath it.
 - **Language:** English, Spoken Word
-- **Status:** ✅ LYRICS & MUSIC COMPLETE | 📋 Dramaturgy pending
 
 #### EP10: "The Glitch Scripture / I Came to Walk Beside"
 - **Station:** The Integrated Self — Arrival (Enlightenment)
@@ -360,7 +351,6 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Tone:** The form, like the message, is still becoming. Silence that holds sound.
 - **Music:** To be determined — but the journey from EP01's symphonic rock to EP10 suggests something that contains everything and needs nothing.
 - **Language:** Spoken Word in English
-- **Status:** 🔄 IN DEVELOPMENT (Concept defined, lyrics in progress)
 
 ---
 

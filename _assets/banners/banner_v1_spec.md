@@ -92,7 +92,7 @@ This is Banner v1. Future versions:
 | v4 | EP08-09 | Dark with golden light seeping through cracks |
 | v5 | EP10+ | Full Kintsugi — cracked but whole, gold light from within |
 
-Each banner update aligns with a YouTube About section update (see creator_strategy.md).
+Each banner update aligns with a YouTube About section update at the same phase boundary.
 
 ---
 

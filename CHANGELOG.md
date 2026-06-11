@@ -24,7 +24,7 @@ taste (the two approval checkpoints).
   - `character_profiles.json` + `project_metadata.json` — explicit multi-episode character state machine
     (cumulative damage tracked and enforced across all episodes).
   - `_templates/` — dramaturgy, visual-prompt, video-prompt templates.
-- **Enforcement / CI layer:** `tests/naming_check.py`, `tests/pipeline_integrity_check.py`,
+- **Enforcement / CI layer:** `tests/naming_check.py`, `tests/pipeline_integrity.py`,
   `tests/visual_prompt_validator.py`, Claude Code PostToolUse naming hook, GitHub Actions scaffold.
 - **Tooling:** custom-built Google Drive MCP server (`_tools/mcp-gdrive/`, no third-party packages),
   Python episode-scaffold scripts.
@@ -207,7 +207,7 @@ taste (the two approval checkpoints).
 - `docs/skills-guide.md` — Skills system documentation skeleton
 - `docs/tools-setup.md` — Toolchain setup guide skeleton
 - `tests/naming_check.py` — Naming convention validator skeleton
-- `tests/pipeline_integrity_check.py` — Pipeline integrity checker skeleton
+- `tests/pipeline_integrity.py` — Pipeline integrity checker skeleton
 - `CLAUDE.md` — Claude Code session context
 - `.gitignore` — Expanded with raw folders, secrets, and OS files
 - Claude Code activated as the local LLM director (VSCode + Claude Code, active from 2026-02-23)

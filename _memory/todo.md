@@ -1,49 +1,18 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-06-07 (EP07 CapCut guide v01 generated. EP08 dramaturgy + visual prompts + motion script complete.)
+> Last Updated: 2026-06-11 (Golden release fixes — P0+P1 executed: dual license, AUTHOR.md, EP09/10 scaffold, docs to golden, CI, private-file split.)
 
 ---
 
-## CURRENT PRIORITY: EP01 LAUNCH (April 22, 2026)
+## LAUNCH STATUS (EP01-EP07 launched)
 
-### ✅ COMPLETED — Infrastructure & Content
-- [x] YouTube channel (@fibuladev) — banner, About, playlist hazır ✅ 2026-04-07
-- [x] Instagram account (@fibuladev) — bio, avatar, link ✅ 2026-04-07
-- [x] EP01 YouTube package — `episode-01/07_social_media/ep01_youtube_package.md` ✅ 2026-04-07
-- [x] EP01 social atomization — `episode-01/07_social_media/ep01_social_atomization.md` ✅ 2026-04-07
-- [x] EP01 launch checklist — `episode-01/07_social_media/ep01_launch_checklist.md` ✅ 2026-04-07
-- [x] EP01 walkthrough — `episode-01/07_social_media/ep01_walkthrough.md` ✅ 2026-04-07
-- [x] Pre-launch IG campaign (13 days) — COMPLETED then STRATEGY PIVOTED ✅ 2026-04-21
-- [x] Reels analytics: lessons learned (3 Reels, skip rate, completion, character rule) ✅ 2026-04-21
-- [x] Strategy pivot: pre-launch teasers killed, IG = post-launch Reels funnel only ✅ 2026-04-21
-
-### ✅ LAUNCH DAY — 22 Nisan
-- [x] YouTube video yayında: https://youtu.be/W_zfFDXn0o0 (20:00 CET) ✅ 2026-04-22
-- [x] Pin comment posted ✅ 2026-04-22
-- [x] External promotion strategy doc created: `episode-01/07_social_media/ep01_external_promotion.md` ✅ 2026-04-22
-
-### 🔲 POST-LAUNCH — 23-27 Nisan (Reels + Reddit Prep)
-- [ ] 23-24 Nis — Mentor Arrival Reel (karakter klip) → IG + Shorts
-- [ ] 25 Nis — Eight Turns Reel (klimaks klip) → IG + Shorts
-- [ ] 22-27 Nis — Reddit hesabı oluştur (fibuladev). Karma kazan: yorum yap, upvote et. LINK ATMA.
-- [ ] 22-27 Nis — Discord sunucularına katıl (Images & Words, IMF, PROGROCK.COM). Dinle, yorum yap.
-
-### 🔲 COMMUNITY SHARING — Hafta 1-4 (22 Nis - 18 May)
-**Reddit:**
-- [ ] 22-23 Nis — Reddit hesabı oluştur (fibuladev). Sub'lara katıl.
-- [ ] 24-27 Nis — Günde 2-3 yorum yap, karma kazan. LINK ATMA.
-- [ ] 28 Nis — İlk post: r/ThisIsOurMusic
-- [ ] 1 May — Post: r/progrockmusic
-- [ ] 5 May — Post: r/psychedelicrock
-- [ ] 7 May — Post: r/listentothis Melting Pot
-- [ ] 8-9 May — r/IndieMusicFeedback (önce 3 feedback ver, sonra paylaş)
-**Discord:**
-- [ ] 22-23 Nis — Discord hesabı oluştur. Images & Words + IMF sunucularına katıl.
-- [ ] 24 Nis - 6 May — Dinle, yorum yap, sohbete katıl. LINK ATMA.
-- [ ] 7-8 May — IMF'de EP01 paylaş (feedback verdikten sonra)
-- [ ] 9-11 May — Images & Words'te EP01 paylaş
-- [ ] 12+ May — Haftada 2-3 kez katılım, EP02'de döngüyü tekrarla
+EP01 launched on YouTube 2026-04-22; EP02-EP07 followed on the weekly cadence.
+Channel (@fibuladev) and Instagram set up; per-episode YouTube packages, social
+atomization, launch checklists, and walkthroughs are in each `episode-XX/07_social_media/`.
+Strategy pivot (2026-04-21): pre-launch teasers dropped; Instagram is a post-launch
+Reels funnel to YouTube, not an independent growth channel. Detailed community-sharing
+and launch playbooks live in the creator's private notes (not part of the open method).
 
 ---
 
@@ -486,3 +455,14 @@
 **Backlog committed:** EP06 post files, EP07 production files, EP08 direction/visuals/motion script, memory updates, thinking-effort protocol — 6 grouped commits, pushed.
 **KEY FINDING:** EP09 lyrics exist ONLY outside the repo (desktop lyrics file) — episode-09 must be scaffolded and `ep09_lyrics_v01.md` committed (P0 item in the report).
 **Next step:** Work through golden_release_report.md P0 list (LICENSE, AUTHOR.md, mentor/robochica ref images, EP09 scaffold, status-table refresh).
+
+---
+
+## 2026-06-11 Session Summary (Golden Release Fixes — P0 + P1)
+**Task:** Execute the P0/P1 roadmap from `golden_release_report.md` so the repo audits at 5/5 for open source.
+**Phase 1 — Legal/identity:** Dual license created — `LICENSE` (MIT, method) + `LICENSE-CONTENT` (CC BY-NC 4.0, creative content); `AUTHOR.md` at root (made-in-2026, Suno+BandLab, Kling/Seedance/Veo, "one person working alongside the machines"); creator name set to **Can Yalcin** everywhere; README rewritten (license + docs sections, bible.md purged).
+**Phase 2 — Completeness:** `create_episode.py` fixed (episode-only placeholder substitution, `--dry-run`, English comments, ASCII output) and used to scaffold episode-09 + episode-10; canonical `ep09_lyrics_v01.md` committed (timestamps TBD); master reference images confirmed (`ref_mentor_master.png`, `ref_robochica_master.png`) + `reference_image_prompts.md` written; status single-source-of-truth (project_metadata = live tracker; master §8 + CLAUDE.md point to it; EP01-07 launched, EP08 video gen, EP09-10 scaffolded); personal `.ps1` tools moved out of the tree; secrets/PII swept (personal email/entity-id removed from setup_project.sh).
+**Phase 2.8 — Privacy split:** 10 strategy/analytics/Turkish working files moved to gitignored `_private/` (youtube_strategy v01/v02, analytics baseline, pre-launch calendar, social setup guide, weekly release template, three session-prompt notes, EP05 Turkish brief). `youtube_strategy` split → public method-only `youtube_metadata_standards.md` (skill/template references rewired). Turkish flavor words translated to English in method files. (EP03 Turkish lyrics kept — intentional.)
+**Phase 3 — Docs to golden:** rewrote `docs/getting-started.md`, `docs/skills-guide.md`, `docs/tools-setup.md`; NEW `docs/anatomy-of-an-episode.md` (EP07 end-to-end showcase); full `CONTRIBUTING.md`; `architecture.md` v2.1 (S3→Google Drive/MCP); `CHANGELOG.md` current + prepared 1.0.0; visual DNA at `_assets/style/visual_dna.md`. Parallelized with subagents + a fresh-eyes newcomer review.
+**Phase 4 — Engineering:** `.github/workflows/naming_check.yml` runs all three validators on push/PR; rewrote `pipeline_integrity.py` (real skipped-step detector, ignores scaffold templates); extended `naming_check.py` patterns (capcut_guide/youtube_package/social/PDF/legacy); `visual_prompt_validator.py` `--full` + N/A-placeholder skip. All three pass on the full tree.
+**Out of scope (future):** EP01 retroactive creative chain; EP09/EP10 production; banner art; HN/Reddit launch execution.

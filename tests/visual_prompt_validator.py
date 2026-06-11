@@ -88,9 +88,15 @@ def extract_prompts(content: str) -> list[dict]:
 
     if matches:
         for i, match in enumerate(matches, 1):
+            text = match.strip()
+            # Skip explicit "no prompt" placeholders (a scene whose environment
+            # reference image IS the scene image — no new prompt is generated).
+            probe = text.lstrip("> ").strip().lower()
+            if probe.startswith("n/a") or "env ref serves" in probe or probe.startswith("no prompt"):
+                continue
             prompts.append({
                 "index": i,
-                "text": match.strip(),
+                "text": text,
             })
     else:
         # Fallback: split by scene headers
@@ -249,10 +255,46 @@ def print_report(results: dict) -> int:
 # MAIN
 # ─────────────────────────────────────────────
 
+TEMPLATE_MARKERS = ("auto-populated by Claude", "Do not fill manually", "[Claude generates", "{XX}")
+
+
+def is_unfilled_template(filepath: str) -> bool:
+    try:
+        with open(filepath, encoding="utf-8", errors="ignore") as f:
+            text = f.read()
+    except OSError:
+        return False
+    return any(m in text for m in TEMPLATE_MARKERS)
+
+
+def run_full() -> int:
+    """Validate the latest visual prompts file of every episode, skipping unfilled scaffolds."""
+    exit_code = 0
+    for ep_dir in sorted(d for d in os.listdir(".") if d.startswith("episode-") and os.path.isdir(d)):
+        visuals_dir = os.path.join(ep_dir, "04_visuals")
+        if not os.path.isdir(visuals_dir):
+            continue
+        candidates = sorted(
+            (f for f in os.listdir(visuals_dir) if re.match(r"ep\d{2}_visual_prompts_v\d{2}\.md$", f)),
+            reverse=True,
+        )
+        if not candidates:
+            continue
+        filepath = os.path.join(visuals_dir, candidates[0])
+        if is_unfilled_template(filepath):
+            print(f"\n  Skipping (unfilled scaffold template): {filepath}")
+            continue
+        results = validate_file(filepath)
+        if print_report(results) != 0:
+            exit_code = 1
+    return exit_code
+
+
 def main():
     parser = argparse.ArgumentParser(description="Robotiko Visual Prompt Content Validator")
     parser.add_argument("--file", type=str, help="Path to visual prompts file")
     parser.add_argument("--episode", type=str, help="Episode number (finds file automatically)")
+    parser.add_argument("--full", action="store_true", help="Validate every episode's visual prompts")
     args = parser.parse_args()
 
     # Determine repo root
@@ -262,7 +304,9 @@ def main():
     print("Robotiko v2.0 — Visual Prompt Content Validator")
     print("=" * 50)
 
-    if args.file:
+    if args.full:
+        sys.exit(run_full())
+    elif args.file:
         filepath = args.file
     elif args.episode:
         ep = args.episode.zfill(2)

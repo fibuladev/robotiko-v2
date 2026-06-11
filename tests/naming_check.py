@@ -21,18 +21,31 @@ import argparse
 # ─────────────────────────────────────────────
 
 PATTERNS = {
-    "lyrics":           r"^ep\d{2}_lyrics_v\d{2}\.md$",
+    # Core pipeline deliverables
+    "lyrics":           r"^ep\d{2}_lyrics(_v\d{2})?\.md$",  # _v## standard; unversioned accepted (EP01 legacy)
     "musical_metadata": r"^ep\d{2}_musical_metadata\.json$",
     "concept_notes":    r"^ep\d{2}_concept_notes\.md$",
     "dramaturgy":       r"^ep\d{2}_dramaturgy_v\d{2}\.md$",
     "visual_prompts":   r"^ep\d{2}_visual_prompts_v\d{2}\.md$",
-    "motion_script":    r"^ep\d{2}_motion_script_v\d{2}\.md$",
+    "motion_script":    r"^ep\d{2}_motion_script(_v\d{2})?\.md$",
+    # Direction briefs (one-off planning docs, e.g. ep05_visual_prompt_generation_brief.md)
+    "direction_brief":  r"^ep\d{2}_[a-z0-9_]+_brief\.md$",
+    # Edit + packaging + social deliverables (produced by capcut-editor, youtube-packager, reels-atomizer, launch-orchestrator)
+    "capcut_guide":     r"^ep\d{2}_capcut_guide_v\d{2}\.md$",
+    "youtube_package":  r"^ep\d{2}_youtube_package\.md$",
+    "social_atomization": r"^ep\d{2}_social_atomization\.md$",
+    "launch_checklist": r"^ep\d{2}_launch_checklist\.md$",
+    "walkthrough":      r"^ep\d{2}_walkthrough\.md$",
+    "external_promotion": r"^ep\d{2}_external_promotion\.md$",
+    # Assets
     "raw_image":        r"^ep\d{2}_s\d{2}_v\d{2}\.png$",
     "selected_image":   r"^ep\d{2}_s\d{2}_selected\.png$",
     "raw_video":        r"^ep\d{2}_s\d{2}_video_(kling|veo|seedance)\.mp4$",
     "selected_video":   r"^ep\d{2}_s\d{2}_selected\.mp4$",
     "audio":            r"^ep\d{2}_audio_v\d{2}\.mp3$",
     "final_edit":       r"^ep\d{2}_final_v\d{2}\.mp4$",
+    # Exported documents (PDF exports of text deliverables)
+    "pdf_export":       r"^ep\d{2}_(lyrics|visual_prompts|motion_script|dramaturgy)(_v\d{2})?\.pdf$",
 }
 
 # Files that are allowed with fixed names (not episode-prefixed)

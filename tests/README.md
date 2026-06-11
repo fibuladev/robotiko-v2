@@ -61,6 +61,15 @@ The naming convention hook is configured in `.claude/settings.json` and runs aut
 
 ---
 
-## GitHub Actions Integration (Planned)
+## GitHub Actions Integration
 
-Naming check will run automatically on every push via `.github/workflows/naming_check.yml`.
+All three validators run automatically on every push and pull request via
+[`.github/workflows/naming_check.yml`](../.github/workflows/naming_check.yml):
+
+```
+python tests/naming_check.py --full
+python tests/pipeline_integrity.py --full
+python tests/visual_prompt_validator.py --full
+```
+
+Run them locally the same way before opening a PR.

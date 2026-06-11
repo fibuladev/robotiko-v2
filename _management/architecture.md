@@ -260,7 +260,7 @@ Three layers catch errors at different moments:
 |---|---|---|
 | **At write time** | Claude Code PostToolUse hook (`.claude/settings.json`, Write matcher) | Warns immediately if a file written under `episode-XX/` breaks the naming convention |
 | **On demand / pre-publish** | `tests/` validators (Python) | `naming_check.py` (12 filename patterns + episode-number consistency); `visual_prompt_validator.py` (mandatory suffix, forbidden aesthetics, character-phase consistency); `pipeline_integrity.py` (no skipped steps / missing gate outputs) |
-| **In CI** | GitHub Actions (`.github/workflows/`) | `create_episode.yml` scaffolds episodes on dispatch; naming check is wired to run on push |
+| **In CI** | GitHub Actions (`.github/workflows/`) | `create_episode.yml` scaffolds episodes on dispatch; `naming_check.yml` runs all three validators (`naming_check.py` + `pipeline_integrity.py` + `visual_prompt_validator.py`) on every push and pull request |
 
 The contract for all three is `_management/naming_convention.md`.
 

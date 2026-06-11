@@ -50,6 +50,24 @@ ep{EPISODE_NUMBER}_s{SCENE_NUMBER}_{TYPE}_v{VERSION}.{EXTENSION}
 | Audio File | `ep{XX}_audio_v{XX}.mp3` | `ep02_audio_v01.mp3` |
 | Final Edit | `ep{XX}_final_v{XX}.mp4` | `ep02_final_v01.mp4` |
 
+### Edit, packaging & social deliverables (`06_edit/`, `07_social_media/`)
+
+| File Type | Naming Pattern | Example |
+|---|---|---|
+| CapCut Guide | `ep{XX}_capcut_guide_v{XX}.md` | `ep07_capcut_guide_v01.md` |
+| YouTube Package | `ep{XX}_youtube_package.md` | `ep07_youtube_package.md` |
+| Social Atomization | `ep{XX}_social_atomization.md` | `ep02_social_atomization.md` |
+| Launch Checklist | `ep{XX}_launch_checklist.md` | `ep01_launch_checklist.md` |
+| Walkthrough | `ep{XX}_walkthrough.md` | `ep01_walkthrough.md` |
+| External Promotion | `ep{XX}_external_promotion.md` | `ep01_external_promotion.md` |
+| Direction Brief (one-off) | `ep{XX}_{topic}_brief.md` | `ep05_visual_prompt_generation_brief.md` |
+| PDF Export | `ep{XX}_{deliverable}(_v{XX}).pdf` | `ep01_visual_prompts_v01.pdf` |
+
+> **Legacy note:** EP01 (the first episode) predates strict versioning and uses a
+> few unversioned forms (`ep01_lyrics.md`, `ep01_motion_script.pdf`). These are
+> accepted by the validator for backward compatibility; all new files use the
+> versioned forms above.
+
 ---
 
 ## MANAGEMENT FILES (Fixed Names — No Versioning in Filename)
@@ -128,7 +146,7 @@ Trigger phrase: "Validate file names for EP{XX}"
 Skill: _skills/robotiko-naming-enforcer/SKILL.md
 ```
 
-GitHub Actions will also run a naming check on every push (planned).
+GitHub Actions also runs the naming check — together with the pipeline-integrity and visual-prompt validators — on every push and pull request. See [`.github/workflows/naming_check.yml`](../.github/workflows/naming_check.yml).
 
 ---
 

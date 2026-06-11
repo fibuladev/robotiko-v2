@@ -91,7 +91,7 @@ __pycache__/
 env/
 venv/
 
-# Video & Audio (too large for Git, use S3)
+# Video & Audio (too large for Git, stored on Google Drive)
 *.mp4
 *.mov
 *.avi
@@ -99,7 +99,7 @@ venv/
 *.wav
 *.flac
 
-# Large images (use Git LFS or S3)
+# Large images (stored on Google Drive)
 *.psd
 *.ai
 *_4k.png
@@ -154,7 +154,7 @@ robotiko-v2/
 - **AI Tools:** Claude (Anthropic), Suno (Music), Nano Banana Pro (Images), Kling/Veo/Seedance (Video)
 - **Editing:** CapCut
 - **Automation:** Python, GitHub Actions
-- **Storage:** Local + AWS S3 sync
+- **Storage:** Local + Google Drive (via custom MCP)
 
 ## 🚀 Quick Start
 
@@ -164,7 +164,7 @@ robotiko-v2/
 
 ## 📖 Documentation
 
-- **Universe Bible:** `_management/bible.md`
+- **Universe Bible:** `_management/master.md`
 - **Pipeline Rules:** `_management/pipeline_rules.md`
 - **Skills Guide:** `_skills/README.md`
 
@@ -189,7 +189,7 @@ This folder contains the **source of truth** for the Robotiko universe.
 
 ## Files
 
-- `bible.md` - Story arc, characters, episodic structure
+- `master.md` - Universe bible: story arc, characters, stations, episodic structure
 - `pipeline_rules.md` - Production workflow (Lyrics → Audio → Visual → Video → Edit)
 - `naming_convention.md` - File naming standards
 - `architecture.md` - Technical stack & data flow
@@ -233,7 +233,7 @@ In Claude Code/Chat:
 
 Claude will:
 1. Read the SKILL.md file
-2. Read necessary project files (_management/bible.md, etc.)
+2. Read necessary project files (_management/master.md, etc.)
 3. Execute the workflow
 4. Output files to appropriate folders
 EOF

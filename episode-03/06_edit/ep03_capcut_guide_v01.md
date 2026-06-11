@@ -77,7 +77,7 @@ Import all files from `episode-03/05_video/selected/`:
 - [ ] `episode-03/04_visuals/raw/4.1.png` — CRT screen close-up (static image, 8s on timeline)
 
 **Also import:**
-- [ ] EP03 audio file (WAV/MP3 from S3)
+- [ ] EP03 audio file (WAV/MP3 from Google Drive)
 
 ---
 

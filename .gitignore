@@ -26,7 +26,7 @@ aws-credentials
 secrets/
 
 # -----------------------------------------------------------------------------
-# VIDEO & AUDIO (Too large for Git — use AWS S3)
+# VIDEO & AUDIO (Too large for Git — stored on Google Drive)
 # -----------------------------------------------------------------------------
 *.mp4
 *.mov
@@ -39,14 +39,14 @@ secrets/
 *.ogg
 
 # -----------------------------------------------------------------------------
-# LARGE IMAGES (Use Git LFS or S3)
+# LARGE IMAGES (stored on Google Drive)
 # -----------------------------------------------------------------------------
 *.psd
 *.ai
 *_4k.png
 *_8k.png
 
-# All generated assets — raw and selected — go to AWS S3, not Git
+# All generated assets — raw and selected — go to Google Drive, not Git
 episode-*/04_visuals/raw/
 episode-*/04_visuals/selected/
 episode-*/05_video/raw/

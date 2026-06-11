@@ -38,7 +38,7 @@ episode-{XX}/
 ├── 01_lyrics/
 │   └── ep{XX}_lyrics_v01.md          (placeholder — "Lyrics pending")
 ├── 02_music/
-│   └── .gitkeep                       (audio files are gitignored / stored in S3)
+│   └── .gitkeep                       (audio files are gitignored, stored on Google Drive)
 ├── 03_direction/
 │   ├── ep{XX}_concept_notes.md        (placeholder — "Concept notes pending")
 │   └── .gitkeep

@@ -35,7 +35,7 @@ Two steps require explicit human approval before proceeding. Everything else Cla
 - **Tool:** Human writes lyrics → Suno AI generates audio
 - **Output:**
   - `episode-{XX}/01_lyrics/ep{XX}_lyrics_v01.md`
-  - `episode-{XX}/02_music/ep{XX}_audio_v01.wav` (stored in S3/Git LFS)
+  - `episode-{XX}/02_music/ep{XX}_audio_v01.wav` (stored on Google Drive)
 
 ### Step 2: Musical Metadata JSON
 - **Input:** Audio file + Lyrics

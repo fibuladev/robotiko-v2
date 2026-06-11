@@ -24,7 +24,7 @@ EP___
 ## Testing
 <!-- How was this tested? -->
 - [ ] `python tests/naming_check.py` passed
-- [ ] `python tests/pipeline_integrity_check.py` passed
+- [ ] `python tests/pipeline_integrity.py` passed
 - [ ] Manual review completed
 
 ## Related issues

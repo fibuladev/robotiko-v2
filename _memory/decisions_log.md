@@ -49,7 +49,7 @@ When a significant decision is made:
 
 ### Raw Folder Strategy
 - **Decision:** `04_visuals/raw/` and `05_video/raw/` are gitignored. Only `selected/` folders are tracked in Git.
-- **Reason:** Raw generation outputs are too large and too numerous for Git. S3 handles archive. Only curated selections need version history.
+- **Reason:** Raw generation outputs are too large and too numerous for Git. Google Drive handles the binary archive (via the custom MCP server). Only curated selections need version history.
 
 ### Open Source Release Strategy
 - **Decision:** Full project released as open source after EP10 completion.

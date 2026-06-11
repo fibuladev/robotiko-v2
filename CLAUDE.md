@@ -184,7 +184,7 @@ MEMORY - {Brief Description}
 | **Repo** | github.com/fibuladev/robotiko-v2 |
 | **Format** | 10-Episode Concept Album + Video Series |
 | **Genre** | CyberAnatolian / Sci-Fi Bildungsroman |
-| **Current Phase** | Production (EP02 in progress) |
+| **Current Phase** | See [`_management/project_metadata.json`](_management/project_metadata.json) — single source of truth for status |
 | **IDE** | VSCode + Claude Code |
 | **Communication** | Turkish with human, English for all files and commits |
 

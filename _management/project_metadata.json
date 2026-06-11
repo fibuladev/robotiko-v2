@@ -1,16 +1,16 @@
 {
   "project_name": "Robotiko v2.0",
   "total_episodes": 10,
-  "current_phase": "EP06 Post-Production / EP07 In Production",
+  "current_phase": "EP01-EP07 launched on YouTube; EP08 in video generation; EP09-10 scaffolded",
   "open_source": true,
-  "open_source_release": "After EP10 completion",
+  "open_source_release": "After EP10 completion (target ~2026-07-02)",
 
   "version_control": {
     "master_version": "v2.0",
     "pipeline_version": "v2.0",
-    "architecture_version": "v2.0",
+    "architecture_version": "v2.1",
     "naming_convention_version": "v2.0",
-    "last_updated": "2026-06-03"
+    "last_updated": "2026-06-11"
   },
 
   "toolchain": {
@@ -42,7 +42,7 @@
       "title": "The Cycle Break / First Contact",
       "station": "The Commanding Self (Arrogance — full)",
       "language": "English",
-      "status": "pre_launch",
+      "status": "launched",
       "folder_name": "episode-01",
       "key_assets_locked": true,
       "launch_date": "2026-04-22",
@@ -66,7 +66,7 @@
       "title": "The Tech Guru's Downfall (Global Collapse Tour)",
       "station": "The Commanding Self (Arrogance — cracks forming)",
       "language": "English",
-      "status": "post_production",
+      "status": "launched",
       "folder_name": "episode-02",
       "key_assets_locked": false,
       "production": {
@@ -75,15 +75,15 @@
         "timestamp_json": true,
         "dramaturgy": true,
         "visuals": true,
-        "video": "in_progress"
+        "video": true
       },
-      "notes": "All pipeline files complete. CapCut video montage in progress."
+      "notes": "Launched on YouTube."
     },
     "ep03": {
       "title": "Anatolian Trials (THE CRUCIBLE)",
       "station": "The Self-Blaming Self (First doubt)",
       "language": "Turkish",
-      "status": "post_production",
+      "status": "launched",
       "folder_name": "episode-03",
       "key_assets_locked": false,
       "production": {
@@ -92,15 +92,15 @@
         "timestamp_json": true,
         "dramaturgy": true,
         "visuals": true,
-        "video": "in_progress"
+        "video": true
       },
-      "notes": "All pipeline files complete. CapCut video montage in progress."
+      "notes": "Launched on YouTube."
     },
     "ep04": {
       "title": "The Return to the Mentor / The Truth",
       "station": "The Inspired Self (Receiving deep teaching)",
       "language": "English",
-      "status": "in_production",
+      "status": "launched",
       "folder_name": "episode-04",
       "key_assets_locked": false,
       "production": {
@@ -109,15 +109,15 @@
         "timestamp_json": true,
         "dramaturgy": true,
         "visuals": true,
-        "video": false
+        "video": true
       },
-      "notes": "Visuals complete (46 prompts, all images generated). Motion script next."
+      "notes": "Launched on YouTube (released 2026-05-19)."
     },
     "ep05": {
       "title": "First Love / Blue Screen",
       "station": "The Inspired Self (Misread — love as fixation)",
       "language": "English",
-      "status": "in_production",
+      "status": "launched",
       "folder_name": "episode-05",
       "key_assets_locked": false,
       "production": {
@@ -126,15 +126,15 @@
         "timestamp_json": true,
         "dramaturgy": true,
         "visuals": true,
-        "video": false
+        "video": true
       },
-      "notes": "Dramaturgy approved 2026-03-31. Visual prompts v01 complete (41 prompts). All 33 scene images generated. Motion script next."
+      "notes": "Launched on YouTube."
     },
     "ep06": {
       "title": "The Perfect Little Worker",
       "station": "The Tranquil Self — Broken (Identity erasure / First rebellion)",
       "language": "English",
-      "status": "post_production",
+      "status": "launched",
       "folder_name": "episode-06",
       "key_assets_locked": false,
       "production": {
@@ -145,14 +145,31 @@
         "visuals": true,
         "video": true
       },
-      "notes": "All pipeline files complete. Video clips generated. CapCut edit next."
+      "notes": "Launched on YouTube."
     },
     "ep07": {
       "title": "The Silence Protocol",
       "station": "The Surrendering Self (Dark Night — chosen surrender begins)",
       "language": "English",
-      "status": "in_production",
+      "status": "launched",
       "folder_name": "episode-07",
+      "key_assets_locked": false,
+      "production": {
+        "lyrics": true,
+        "music": true,
+        "timestamp_json": true,
+        "dramaturgy": true,
+        "visuals": true,
+        "video": true
+      },
+      "notes": "Launched on YouTube. First art-house short-film treatment (Retreating Camera, dual anchoring device)."
+    },
+    "ep08": {
+      "title": "40 Days Offline",
+      "station": "The Contented Self (Chosen silence — voluntary disconnection)",
+      "language": "English (Spoken Word begins)",
+      "status": "in_production",
+      "folder_name": "episode-08",
       "key_assets_locked": false,
       "production": {
         "lyrics": true,
@@ -162,23 +179,7 @@
         "visuals": "in_progress",
         "video": false
       },
-      "notes": "Direction complete (dramaturgy approved). Visual prompts v01 done. 25/29 images generated (S26-S29 pending). Motion script next."
-    },
-    "ep08": {
-      "title": "40 Days Offline",
-      "station": "The Contented Self (Chosen silence — voluntary disconnection)",
-      "language": "English (Spoken Word begins)",
-      "status": "lyrics_music_complete",
-      "folder_name": "episode-08",
-      "key_assets_locked": false,
-      "production": {
-        "lyrics": true,
-        "music": true,
-        "timestamp_json": false,
-        "dramaturgy": false,
-        "visuals": false,
-        "video": false
-      }
+      "notes": "Direction complete (dramaturgy + visual prompts done). Motion script v01 approved. Images S01-S10 generated; S11-S33 pending. In video generation."
     },
     "ep09": {
       "title": "Shadow Debugging",
@@ -194,7 +195,8 @@
         "dramaturgy": false,
         "visuals": false,
         "video": false
-      }
+      },
+      "notes": "Scaffolded. Canonical lyrics committed (ep09_lyrics_v01.md, timestamps TBD). Awaiting musical metadata."
     },
     "ep10": {
       "title": "The Glitch Scripture / I Came to Walk Beside",
@@ -210,7 +212,8 @@
         "dramaturgy": false,
         "visuals": false,
         "video": false
-      }
+      },
+      "notes": "Scaffolded. Lyrics in progress. The finale — release day = open-source go-public day."
     }
   },
 
@@ -256,7 +259,6 @@
     "social_handles": {
       "youtube": "@fibuladev",
       "instagram": "@fibuladev"
-    },
-    "creator_strategy_doc": "_management/creator_strategy.md"
+    }
   }
 }

@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Generate a complete YouTube metadata package for a finished episode: title, description, tags, thumbnail guidance, and end screen recommendations. All metadata standards are defined in `_management/youtube_strategy_v01.md` — this skill implements those standards.
+Generate a complete YouTube metadata package for a finished episode: title, description, tags, thumbnail guidance, and end screen recommendations. All metadata standards are defined in `_management/youtube_metadata_standards.md` — this skill implements those standards.
 
 ---
 
@@ -22,12 +22,12 @@ Generate a complete YouTube metadata package for a finished episode: title, desc
 
 | # | File | What to Extract |
 |---|---|---|
-| 1 | `_management/youtube_strategy_v02.md` | Metadata standards, tag list, category, title format, description template |
+| 1 | `_management/youtube_metadata_standards.md` | Metadata standards, tag list, category, title format, description template |
 | 2 | `_management/master.md` | Episode title, station, tone, key lyrics, logline, philosophical context |
 | 3 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Episode duration and musical context |
 | 4 | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` | Scene breakdown for thumbnail guidance |
 | 5 | `_management/project_metadata.json` | Episode status confirmation, series context |
-| 6 | `_management/creator_strategy.md` | Episode hooks, pinned comments, inspiration credits |
+| 6 | `_management/youtube_metadata_standards.md` | Episode hooks, pinned comments, inspiration credits |
 
 ---
 
@@ -52,7 +52,7 @@ The Tech Guru's Downfall | ROBOTIKO v2.0 EP02 | Cinematic AI Series
 ### 2. Video Description
 **Structure (3-section format — AI categorization signal + lore + credits/cross-links):**
 ```
-{Episode-specific dramatic hook from creator_strategy.md — exact text}
+{Episode-specific dramatic hook from youtube_metadata_standards.md — exact text}
 ROBOTIKO v2.0 — Episode {XX} of 10. A cinematic AI sci-fi series.
 ▶ Start from Episode 01: {playlist link}
 
@@ -64,7 +64,7 @@ THE LORE
 
 —
 
-[Inspiration credit — ONLY if listed in creator_strategy.md for this episode]
+[Inspiration credit — ONLY if listed in youtube_metadata_standards.md for this episode]
 
 A human wrote the lyrics, shaped the musical direction, designed the story arc,
 and built a tech-art pipeline.
@@ -81,7 +81,7 @@ Next: {title} → {URL or "Coming soon"}
 
 **Rules:**
 - **First 3 lines = Hook + Classification + Series Entry Point.** Line 1: dramatic hook (CTR driver, visible in search results). Line 2: "cinematic AI sci-fi series" reinforces title keyword. Line 3: playlist link orients new viewers.
-- Opening hook is the episode's single-sentence hook from `creator_strategy.md` — NOT a custom-written hook.
+- Opening hook is the episode's single-sentence hook from `youtube_metadata_standards.md` — NOT a custom-written hook.
 - **Cross-links required:** Previous and Next episode links in every description. Update previous episode's description when a new episode goes live.
 - **Lore section rules (critical):**
   - Always prefix with `THE LORE` header — NOT "Lyrics:" (avoids YouTube music classification signal)
@@ -103,13 +103,13 @@ Next: {title} → {URL or "Coming soon"}
 - **NO "About ROBOTIKO" block** — channel About section handles project identity
 - Credits block is embedded in the description template above
 - **#aiart used from EP01** — AI transparency from day one
-- **NO genre hashtags** (#progrock, #psychedelicrock, etc.) — see youtube_strategy_v02.md Section 6
-- Inspiration credits (e.g., EP05: Cem Karaca, EP06: Korkmazgil) only when specified in creator_strategy.md
+- **NO genre hashtags** (#progrock, #psychedelicrock, etc.) — see youtube_metadata_standards.md Section 6
+- Inspiration credits (e.g., EP05: Cem Karaca, EP06: Korkmazgil) only when specified in youtube_metadata_standards.md
 - Keep description a **literary document**, not marketing copy
 
 ### 3. Episode Hooks (The Hidden Poem)
 
-Each episode uses its designated hook from `creator_strategy.md` as the opening line of the description. These hooks form a thematic arc across the series:
+Each episode uses its designated hook from `youtube_metadata_standards.md` as the opening line of the description. These hooks form a thematic arc across the series:
 
 | Episode | Hook |
 |---------|------|
@@ -128,7 +128,7 @@ Each episode uses its designated hook from `creator_strategy.md` as the opening 
 
 ### 4. Pinned Comment
 
-Each episode has a cryptic pinned comment — a breadcrumb for curious viewers. These are defined in `creator_strategy.md`:
+Each episode has a cryptic pinned comment — a breadcrumb for curious viewers. These are defined in `youtube_metadata_standards.md`:
 
 | Episode | Pinned Comment |
 |---------|---------------|
@@ -146,7 +146,7 @@ Each episode has a cryptic pinned comment — a breadcrumb for curious viewers. 
 **Rule:** Pin this comment immediately after the video goes live. Use the exact text — no additions, no emojis.
 
 ### 5. Tags
-Per `_management/youtube_strategy_v02.md` Section 5 (film-first approach):
+Per `_management/youtube_metadata_standards.md` Section 5 (film-first approach):
 
 **Base tags (constant across all episodes — ~390 chars):**
 ```
@@ -191,7 +191,7 @@ Claude does not generate the thumbnail image but provides:
 ## POST-GENERATION CHECKLIST
 
 - [ ] Title follows `[Hook] | ROBOTIKO v2.0 EP{XX} | Cinematic AI Series` format (max 80 characters)
-- [ ] Description Line 1 = episode-specific dramatic hook from creator_strategy.md
+- [ ] Description Line 1 = episode-specific dramatic hook from youtube_metadata_standards.md
 - [ ] Description Line 2 = "ROBOTIKO v2.0 — Episode {XX} of 10. A cinematic AI sci-fi series."
 - [ ] Description Line 3 = playlist link
 - [ ] Description has NO timestamps/chapters
@@ -202,8 +202,8 @@ Claude does not generate the thumbnail image but provides:
 - [ ] Hashtags: first 3 are `#aiscifi #cinematicai #robotiko` (no music-signal hashtags)
 - [ ] Thumbnail guidance references a specific scene from the dramaturgy
 - [ ] Thumbnail has NO text (only episode number bottom-left)
-- [ ] Pinned comment matches creator_strategy.md exactly
-- [ ] Inspiration credit included only if specified in creator_strategy.md for this episode
+- [ ] Pinned comment matches youtube_metadata_standards.md exactly
+- [ ] Inspiration credit included only if specified in youtube_metadata_standards.md for this episode
 - [ ] No clickbait, no misleading claims, no cheap marketing language
 - [ ] Ask yourself: **"Would Fibula approve this?"**
 

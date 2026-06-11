@@ -1,5 +1,5 @@
 # EPISODE METADATA TEMPLATE (YOUTUBE)
-> Version: 1.0 | Source: `_management/youtube_strategy_v01.md`
+> Version: 2.0 | Source: `_management/youtube_metadata_standards.md`
 > This template is populated by Claude via `_skills/robotiko-youtube-packager/SKILL.md`
 > Do not fill manually.
 
@@ -7,9 +7,8 @@
 
 ## PRE-GENERATION CHECKLIST
 
-- [ ] `_management/youtube_strategy_v01.md` — Metadata standards, tag list, category
+- [ ] `_management/youtube_metadata_standards.md` — Title format, tags, description, hashtags, episode hooks (§11), pinned comments (§12), inspiration credits (§11.1)
 - [ ] `_management/master.md` — Episode title, station, tone, key lyrics
-- [ ] `_management/creator_strategy.md` — Episode hooks, pinned comments, inspiration credits
 - [ ] `episode-{XX}/01_lyrics/ep{XX}_lyrics_v{VV}.md` — Full lyrics for description
 - [ ] `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` — Scene references for thumbnail
 
@@ -17,50 +16,49 @@
 
 ## 1. VIDEO TITLE
 
-**Format:** `[CURIOSITY HOOK] | ROBOTIKO`
+**Format:** `[Curiosity Hook] | ROBOTIKO v2.0 EP{XX} | Cinematic AI Series`
 
 ```
-{hook} | ROBOTIKO
+{hook} | ROBOTIKO v2.0 EP{XX} | Cinematic AI Series
 ```
 
 **Rules:**
-- Maximum 70 characters
-- No episode number, no genre label, no "Visual Album"
-- Hook creates curiosity gap — question, contradiction, or mystery
+- Maximum 80 characters
+- Episode number always 2 digits (`EP01`); "Cinematic AI Series" is the only genre signal
+- Hook creates a curiosity gap — question, contradiction, or mystery
 
 ---
 
 ## 2. VIDEO DESCRIPTION
 
 ```
-An AI-generated cinematic series. Episode {XX} of 10.
-{Episode hook from creator_strategy.md — exact text}
-Full journey → [playlist link]
+{Episode hook from youtube_metadata_standards.md §11 — exact text}
+ROBOTIKO v2.0 — Episode {XX} of 10. A cinematic AI sci-fi series.
+▶ Start from Episode 01: {playlist link}
 
 —
 
-Lyrics:
+THE LORE
 
 {Full lyrics from ep{XX}_lyrics.md, cleaned as poetry}
 {Strip ALL musical structure markers: [Intro], [Verse 1], [Chorus], (Full Band), etc.}
-{Preserve rhyme scheme through punctuation — see SKILL.md for detailed rules}
+{Preserve rhyme scheme through punctuation — see SKILL.md / standards §4.1 for rules}
 
 —
 
-{Inspiration credit — ONLY if listed in creator_strategy.md for this episode}
+{Inspiration credit — ONLY if listed in youtube_metadata_standards.md §11.1 for this episode}
 
 A human wrote the lyrics, shaped the musical direction, designed the story arc,
 and built a tech-art pipeline.
 Music: {Suno / Suno + BandLab}. Images: Nano Banana. Video: {Kling + Seedance / Kling + Veo + Seedance / etc.}. Pipeline: Claude. Edit: CapCut.
-The full production pipeline will be open source after the finale.
+The full production pipeline is open source.
 
-ROBOTIKO v2.0 — A 10-episode CyberAnatolian concept album and visual series.
-Subscribe to walk beside.
+ROBOTIKO v2.0 — A 10-episode CyberAnatolian cinematic series.
 
 Previous: {Previous episode title} → {URL}
 Next: {Next episode title} → {URL or "Coming soon"}
 
-#robotiko #cyberanatolian #conceptalbum #aiart #aimusic #genai
+#aiscifi #cinematicai #robotiko #aifilm #aiseries #scifi #aifilmmaking #klingai
 ```
 
 ---
@@ -68,7 +66,7 @@ Next: {Next episode title} → {URL or "Coming soon"}
 ## 3. PINNED COMMENT
 
 ```
-{Exact text from creator_strategy.md Section 2.7 for EP{XX}}
+{Exact text from youtube_metadata_standards.md §12 for EP{XX}}
 ```
 
 Pin immediately after video goes live. No additions, no emojis. Exact text.
@@ -77,14 +75,14 @@ Pin immediately after video goes live. No additions, no emojis. Exact text.
 
 ## 4. TAGS
 
-**Base tags (constant — from youtube_strategy_v01.md Section 5):**
+**Base tags (constant — from youtube_metadata_standards.md §5):**
 ```
-robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated video, ai cinematic, ai animation, ai art, ai music, suno ai, genai, ai film, ai series, ai short film, ai storytelling, concept album film, animated series, sci-fi animation
+cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
 ```
 
 **Episode-specific tags:**
 ```
-{episode title}, {station keywords from master.md}, {location names if applicable}, {character names}
+{episode hook keywords}, {station keywords from master.md}, {location names if applicable}, {character names}
 ```
 
 **Combined (paste into YouTube):**
@@ -107,10 +105,10 @@ robotiko, robotiko v2.0, cyberanatolian, concept album, rock opera, ai generated
 
 ## 6. END SCREEN
 
-Per `creator_strategy.md` Section 2.6: **No end screens EP01-EP09.**
+Per `youtube_metadata_standards.md` §10: **No end screens EP01-EP09.**
 EP10 only: GitHub repository link.
 
-- **Playlist:** "ROBOTIKO v2.0 — The Full Journey"
+- **Playlist:** "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series"
 - **Cross-link notes:** {previous/next episode update reminders}
 
 ---
@@ -121,7 +119,7 @@ EP10 only: GitHub repository link.
 - **Language:** {English / Turkish}
 - **Altered content disclosure:** Yes
 - **Comments:** Allow all (moderation on)
-- **Visibility:** Scheduled for 20:00 CET
+- **Visibility:** Scheduled
 
 ---
 

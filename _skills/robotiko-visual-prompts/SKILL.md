@@ -58,7 +58,7 @@ Before writing any scene prompts, identify and prepare reference images:
 - Robotiko and Mentor already have master references (`ref_robotiko_master.png`, `ref_mentor_master.png`). Episode-specific groups do NOT — they need per-episode reference images.
 
 **Environment References:**
-- Scan the dramaturgy for locations that appear in 3+ scenes (e.g., sanayi sitesi, nightclub interior, metrobüs).
+- Scan the dramaturgy for locations that appear in 3+ scenes (e.g., an industrial estate, a nightclub interior, a metro/BRT line).
 - For each recurring location, write a standalone environment prompt — wide establishing shot, no characters, full spatial detail.
 - The human generates this image first, then uploads it alongside every scene prompt set in that location.
 - This ensures visual continuity: same workshop walls, same lighting fixtures, same floor texture across all scenes.

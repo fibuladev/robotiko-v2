@@ -78,7 +78,7 @@ Each clip must:
 **Hashtag strategy:**
 - 5-10 hashtags per clip
 - Mix of: project tags (`#robotiko`, `#robotikov2`, `#cyberanatolian`), genre tags (`#progrock`, `#anatolianrock`), mood tags (`#scifi`, `#conceptalbum`), platform tags (`#musicvideo`)
-- **#aiart, #aimusic, #aimusicvideo used from EP01** — AI transparency from day one per creator_strategy.md
+- **#aiart, #aimusic, #aimusicvideo used from EP01** — AI transparency from day one
 
 ---
 
@@ -138,7 +138,7 @@ Include a one-time CapCut setup guide in every atomization output. This goes aft
 
 ### Release Schedule Suggestion
 
-Aligned with the weekly release rhythm from `creator_strategy.md`:
+Aligned with the project's weekly release rhythm (target ~Tuesday):
 
 - **Tuesday (Release day):** Hook Clip → maximum reach. Post alongside YouTube premiere.
 - **Thursday (+2 days):** Story Clip + detail still image (different visual angle from release day)
@@ -161,7 +161,7 @@ Use narrative ordering when the episode has a clear arc. Use type-based ordering
 - Instagram: 18:00-19:00
 - YouTube Shorts: Same day as Reels, no specific time
 
-**Weekly rhythm target:** ~65 minutes total effort per week (per creator_strategy.md)
+**Weekly rhythm target:** ~65 minutes total effort per week
 
 ---
 

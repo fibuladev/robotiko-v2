@@ -4,7 +4,7 @@
 > Generated: 2026-05-12
 > Updated: 2026-05-22
 > Skill: robotiko-youtube-packager v4.0
-> Standards: `_management/youtube_strategy_v02.md`
+> Standards: `_management/youtube_metadata_standards.md`
 
 ---
 
@@ -204,7 +204,7 @@ Pin immediately after video goes live. No additions, no emojis. Exact text from 
 
 ## 4. TAGS
 
-**Base tags (constant across all episodes — per youtube_strategy_v02.md):**
+**Base tags (constant across all episodes — per youtube_metadata_standards.md):**
 ```
 cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
 ```
@@ -227,7 +227,7 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 Characters: ~430 / 500 max ✅
 
 **TAG STRATEGY (all episodes):**
-- ✅ Film-first approach per `_management/youtube_strategy_v02.md` Section 5
+- ✅ Film-first approach per `_management/youtube_metadata_standards.md` Section 5
 - ✅ Genre tags REMOVED (progressive rock, psychedelic rock, etc.)
 - ✅ AI-generated tags ADDED for correct categorization
 

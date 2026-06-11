@@ -188,7 +188,7 @@ Apply these to ALL clips before editing, to unify output from multiple AI tools 
 - **Output:** Title, description, tags, thumbnail guidance, cross-links
 
 ### Step 12.5: YouTube Metadata Review
-- **Reference:** `_management/youtube_strategy_v01.md`
+- **Reference:** `_management/youtube_metadata_standards.md`
 - **Verify before upload:**
   - [ ] Title follows `[Hook] | ROBOTIKO v2.0` format (no episode number, no genre label)
   - [ ] Description first 3 lines = AI categorization signal
@@ -215,7 +215,7 @@ Claude reads the relevant SKILL.md before executing any workflow.
 | `robotiko-motion-script` | "Generate motion script for EP{XX}" | `ep{XX}_motion_script.md` |
 | `robotiko-episode-scaffold` | "Scaffold EP{XX}" | Full folder structure |
 | `robotiko-naming-enforcer` | "Validate file names" | Compliance report |
-| `robotiko-youtube-packager` | "Package EP{XX} for YouTube" | Metadata file (per youtube_strategy_v01.md) |
+| `robotiko-youtube-packager` | "Package EP{XX} for YouTube" | Metadata file (per youtube_metadata_standards.md) |
 | `robotiko-reels-atomizer` | "Atomize EP{XX} for social" | Clip list |
 | `robotiko-launch-orchestrator` | "Orchestrate EP{XX} launch" | Launch checklist |
 | `robotiko-capcut-editor` | "Edit EP{XX} in CapCut" | Edit guide |

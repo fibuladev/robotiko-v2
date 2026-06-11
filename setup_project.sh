@@ -4,8 +4,7 @@
 # 🤖 ROBOTIKO v2.0 - PROJECT STRUCTURE SETUP SCRIPT
 # ============================================================================
 # Architect : Fibula
-# Entity ID : [Ca.Ya.1903]
-# Studio    : FibulaDev (fibuladev@gmail.com)
+# Studio    : Fibula
 # Date      : February 2026
 # ============================================================================
 

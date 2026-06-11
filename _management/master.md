@@ -279,7 +279,7 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Station:** The Self-Blaming Self (First doubt emerges)
 - **Plot:** Robotiko, full of adolescent arrogance and saturated with guru romanticizations of Turkey and its ancient wisdom tradition, ignores the Mentor's warnings and insists on going. The Mentor watches him leave: *"Gitme dedim, dinlemedi. Erken dedim, anlamadı."* Robotiko arrives expecting mystical healing and ancient wisdom freely distributed. Instead, the land tests him through its living, breathing, modern reality: hunger, violence, deception, exploitation, chaos. Every verse is a new wound. The Mentor's chorus echoes like a verdict: *"Yükseltmedim modelini — Hazırladım ecelini."* The journey was never a retreat. It was a crucible designed by the Mentor's knowing silence.
 - **Tone:** The intro opens with a cappella spoken poetry — flat, melodiless, documentarian. *"Anadolu sabır dağıtmaz. Dayanıklılığı yoklar."* The song itself is upbeat Anatolian Pop-Rock — almost cheerful against the carnage. The contrast is the point.
-- **Key Visuals:** Modern Anatolian cities — metrobüs, bazaars, nightclubs, urban crowds. No romantic ruins. No mystical landscapes. The real thing.
+- **Key Visuals:** Modern Anatolian cities — metro/BRT lines, bazaars, nightclubs, urban crowds. No romantic ruins. No mystical landscapes. The real thing.
 - **Music:** Upbeat Anatolian Pop-Rock Fusion, 70s Turkish Progressive Rock, Driving Groove, Funk-Rock Pocket (Kurtalan Ekspres style). Hammond Organ (Phrygian/Hijaz Leads), Moog Synthesizer Pads, Distorted Fuzz Guitar, Acoustic Guitar (Rhythmic Pulse), Standard Rock Drums, Strings (Swell in Chorus). Vocal: Warm, Charismatic Storyteller, Theatrical Baritone.
 - **Language:** Turkish (The language shift is intentional — the test is felt more deeply in the mother tongue)
 - **Status:** 🔄 POST-PRODUCTION (All pipeline files complete, CapCut video montage in progress)
@@ -378,18 +378,11 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 
 ## 8. PRODUCTION STATUS TRACKER
 
-| Episode | Lyrics | Music | Timestamp JSON | Dramaturgy | Visuals | Video | Status |
-|---|---|---|---|---|---|---|---|
-| EP01 | ✅ | ✅ | ⚠️ Retroactive | ⚠️ Retroactive | ✅ | ✅ | COMPLETED |
-| EP02 | ✅ | ✅ | ✅ | ✅ | ✅ | 🔄 | POST-PRODUCTION |
-| EP03 | ✅ | ✅ | ✅ | ✅ | ✅ | 🔄 | POST-PRODUCTION |
-| EP04 | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ | IN PRODUCTION |
-| EP05 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
-| EP06 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
-| EP07 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
-| EP08 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
-| EP09 | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ | LYRICS & MUSIC COMPLETE |
-| EP10 | 🔄 | ❌ | ❌ | ❌ | ❌ | ❌ | IN DEVELOPMENT |
+> **Single source of truth:** production status lives in
+> [`_management/project_metadata.json`](project_metadata.json) — the `episodes`
+> object (per-episode `status` + `production` flags) and the top-level
+> `current_phase`. This document intentionally does **not** duplicate it, so the
+> two can never drift. Check `project_metadata.json` for the live state.
 
 ---
 

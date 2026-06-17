@@ -110,6 +110,9 @@ _assets/banner_test.png
 # Local walkthrough documents (operational, not shared)
 episode-*/07_social_media/*_walkthrough.md
 
+# Build-along tutorial runbooks (local-only — the videos are shared, not these working files)
+_tutorial/
+
 # -----------------------------------------------------------------------------
 # TEMP & LOGS
 # -----------------------------------------------------------------------------

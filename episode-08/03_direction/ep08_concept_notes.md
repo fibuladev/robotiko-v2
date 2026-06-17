@@ -7,7 +7,7 @@
 > **Duration:** 8:20 (500s) | **BPM:** 87 | **Key:** C Minor
 > **Tone:** Ritualistic, hypnotic, raw. Spoken-word dominant, 70s Anatolian Doom Rock breathing
 > beneath. The most still episode of the series — and the most interior.
-> **Status:** DRAFT — awaiting human approval.
+> **Status:** APPROVED (2026-06-04)
 
 ---
 

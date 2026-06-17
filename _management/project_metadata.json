@@ -1,7 +1,7 @@
 {
   "project_name": "Robotiko v2.0",
   "total_episodes": 10,
-  "current_phase": "EP01-EP07 launched on YouTube; EP08 in video generation; EP09-10 scaffolded",
+  "current_phase": "EP01-EP08 launched on YouTube; EP09-10 scaffolded, awaiting pipeline",
   "open_source": true,
   "open_source_release": "After EP10 completion (target ~2026-07-02)",
 
@@ -168,7 +168,7 @@
       "title": "40 Days Offline",
       "station": "The Contented Self (Chosen silence — voluntary disconnection)",
       "language": "English (Spoken Word begins)",
-      "status": "in_production",
+      "status": "launched",
       "folder_name": "episode-08",
       "key_assets_locked": false,
       "production": {
@@ -176,10 +176,10 @@
         "music": true,
         "timestamp_json": true,
         "dramaturgy": true,
-        "visuals": "in_progress",
-        "video": false
+        "visuals": true,
+        "video": true
       },
-      "notes": "Direction complete (dramaturgy + visual prompts done). Motion script v01 approved. Images S01-S10 generated; S11-S33 pending. In video generation."
+      "notes": "Launched on YouTube. 33 scenes, 48 video clips, Witnessing Camera, spoken word dominant."
     },
     "ep09": {
       "title": "Shadow Debugging",

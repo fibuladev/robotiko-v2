@@ -362,10 +362,14 @@ and launch playbooks live in the creator's private notes (not part of the open m
 - [x] `ep08_dramaturgy_v01.md` — 33 scenes, 500s, 12 overrides, Witnessing Camera ✅ 2026-06-04
 - [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-06-04
 - [x] `ep08_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅ 2026-06-04 (33 scene prompts + 4 env refs)
-- [ ] Image generation → Human selects → rename to `ep08_s{XX}_selected.png`
+- [x] Image generation — 33/33 scene images generated ✅ 2026-06-14
 - [x] `ep08_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script v2.0) ✅ 2026-06-04 (48 clips, 96% raw coverage, 100% effective)
-- [ ] **[CHECKPOINT]** Human approves motion script
-- [ ] Video generation → Final edit (CapCut)
+- [x] **[CHECKPOINT]** Human approves motion script ✅
+- [x] Video generation — 48/48 clips generated ✅ 2026-06-14
+- [x] `ep08_capcut_guide_v01.md` — Claude generates (skill: robotiko-capcut-editor) ✅ 2026-06-14
+- [x] `ep08_youtube_package.md` — Claude generates (skill: robotiko-youtube-packager v4.0) ✅ 2026-06-17
+- [x] Final edit — CapCut ✅ 2026-06-17
+- [x] **EP08 LAUNCHED on YouTube** ✅ 2026-06-17
 
 ### 2026-06-04 Session Summary (EP08 Concept Notes)
 **Task:** Discuss and write EP08 "40 Days Offline" concept notes (The Contented Self — the most mystical episode).

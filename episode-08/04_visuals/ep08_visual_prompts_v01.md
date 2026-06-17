@@ -761,10 +761,10 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 
 > **APPROVAL STATUS:**
 > - [ ] Human reviewed
-> - [ ] Human approved
-> - [ ] Ready for image generation
+> - [x] Human approved
+> - [x] Ready for image generation
 >
-> Visual prompts delivered for review. Awaiting human approval before image generation begins.
+> ✅ Visual prompts APPROVED. All 33 images generated.
 >
 > **Flagged for special human attention:** S08 (cable rip — most visceral), S20 (only amber — staff),
 > S21 (Robochica design ref not present — see note), S22 (pristine copies via `ref_robotiko_master.png`),

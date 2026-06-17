@@ -2,7 +2,7 @@
 > **Version:** v01 | **Skill:** `_skills/robotiko-motion-script/SKILL.md` v2.0
 > **Generated:** 2026-06-04 | **Model:** Opus + Extended Thinking (Max Effort)
 > **Dramaturgy:** v01 — APPROVED (2026-06-04)
-> **Visual Prompts:** v01 — APPROVED (2026-06-04)
+> **Visual Prompts:** v01 — APPROVED (2026-06-04) | All 33 images + 48 videos generated
 
 ---
 
@@ -15,7 +15,7 @@
 - [x] `_assets/cast/character_profiles.json` → Phase 2: Destruction (@Damaged). `ep08_exception`: body unchanged.
 - [x] `_memory/lessons.md` → All motion-prompt rules internalized.
 
-> **Image status:** S01–S10 images exist in `04_visuals/raw/` (1.png–10.png). S11–S33 images NOT YET GENERATED. Scenes with pending images are marked ⏳. Motion script is written from dramaturgy + visual prompts intent — proceed with image generation, then video production.
+> **Image status:** All 33 scene images generated and available in `04_visuals/raw/` (1.png–33.png). All 48 video clips generated and available in `05_video/raw/`.
 
 ---
 
@@ -551,8 +551,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + camera move |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s11_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s11_selected.png`
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
@@ -584,8 +583,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + frame chain |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s12_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s12_selected.png`
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -605,8 +603,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + camera move |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s12_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s12_selected.png`
 **Camera Move:** Pan Left
 
 **Motion Prompt:**
@@ -638,9 +635,7 @@
 | **Recommended Tool** | Kling 3.0 (Mode B, 1080p) — Mode B requires K3.0; the time-passage morph |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s11_selected.png` ⏳ image pending
-- **End Frame:** `episode-08/04_visuals/selected/ep08_s13_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s11_selected.png`- **End Frame:** `episode-08/04_visuals/selected/ep08_s13_selected.png`
 **Camera Move:** Static
 
 **Motion Prompt:**
@@ -661,8 +656,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + gentle camera |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s13_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s13_selected.png`
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -694,8 +688,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — cave interior + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s14_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s14_selected.png`
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
@@ -715,8 +708,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — cave detail + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s14_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s14_selected.png`
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
@@ -744,8 +736,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Crane Up + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s15_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s15_selected.png`
 **Camera Move:** Crane Up
 
 **Motion Prompt:**
@@ -773,8 +764,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — character detail + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s16_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s16_selected.png`
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -802,8 +792,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + gentle camera |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s17_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s17_selected.png`
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -831,8 +820,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — night scene + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s18_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s18_selected.png`
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
@@ -859,8 +847,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — dream rupture + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s19_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s19_selected.png`
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
@@ -888,8 +875,7 @@
 | **Recommended Tool** | Seedance 1.0 (Standard, 1080p) — standalone detail, hands only, no Element needed |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s20_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s20_selected.png`
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -917,8 +903,7 @@
 | **Recommended Tool** | Seedance 1.0 (Standard, 1080p) — standalone, no Element, different character |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s21_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s21_selected.png`
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -950,8 +935,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Orbital camera + Element (the single orbital of EP08) |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png`
 **Camera Move:** Orbital
 
 **Motion Prompt:**
@@ -971,8 +955,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + camera |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png`
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -992,8 +975,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png`
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -1021,8 +1003,7 @@
 | **Recommended Tool** | Seedance 1.0 (Standard, 1080p) — standalone detail, hand + text rain, no camera move |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s23_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s23_selected.png`
 **Camera Move:** Tilt Down
 
 **Motion Prompt:**
@@ -1050,8 +1031,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — critical scene, Element, fire detail |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s24_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s24_selected.png`
 **Camera Move:** Static
 
 **Motion Prompt:**
@@ -1083,8 +1063,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + camera move |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s25_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s25_selected.png`
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
@@ -1105,8 +1084,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s25_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s25_selected.png`
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -1133,8 +1111,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + camera |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s26_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s26_selected.png`
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -1162,8 +1139,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — close-up + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s27_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s27_selected.png`
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -1190,8 +1166,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — intimate close-up + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s28_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s28_selected.png`
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -1218,8 +1193,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — gesture scene + Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s29_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s29_selected.png`
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
@@ -1247,8 +1221,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — CRITICAL: most important shot, Element, OmniEdit priority, flag for multiple attempts |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s30_selected.png` ⏳ image pending
-- **Special Ref:** `episode-08/04_visuals/raw/ep08_ref_ghost_style.png` (translucent android reference)
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s30_selected.png`- **Special Ref:** `episode-08/04_visuals/raw/ep08_ref_ghost_style.png` (translucent android reference)
 
 **Camera Move:** Static
 
@@ -1277,8 +1250,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element, dual-figure aftermath |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s31_selected.png` ⏳ image pending
-- **Special Ref:** `episode-08/04_visuals/raw/ep08_ref_ghost_style.png`
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s31_selected.png`- **Special Ref:** `episode-08/04_visuals/raw/ep08_ref_ghost_style.png`
 
 **Camera Move:** Static
 
@@ -1311,8 +1283,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element + camera |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s32_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s32_selected.png`
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
@@ -1333,8 +1304,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s32_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s32_selected.png`
 **Camera Move:** Pan Left
 
 **Motion Prompt:**
@@ -1366,8 +1336,7 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — small figure, Element optional |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png`
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -1387,8 +1356,7 @@
 | **Recommended Tool** | Kling 2.5 Turbo (Standard, 1080p) — static mountain, no character, budget |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png`
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -1408,8 +1376,7 @@
 | **Recommended Tool** | Kling 2.5 Turbo (Standard, 1080p) — static final frame |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png` ⏳ image pending
-
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png`
 **Camera Move:** Static
 
 **Motion Prompt:**
@@ -1463,7 +1430,7 @@
 | **Mode B clips** | 1 (S13a) |
 | **Clips from existing images** | 48 (0 supplementary images needed) |
 | **Clips needing new images** | 0 |
-| **Images with ⏳ pending** | 23 scenes (S11–S33) |
+| **Images** | All 33 scenes generated ✅ |
 
 ---
 
@@ -1543,17 +1510,16 @@
 
 ## APPROVAL STATUS
 
-- [ ] **Human reviewed camera moves**
-- [ ] **Human reviewed tech strategy (Mode A/B)**
-- [ ] **Human reviewed duration coverage**
-- [ ] **Human reviewed camera diversity**
-- [ ] **Human reviewed Element assignments**
-- [ ] **Human reviewed tool assignments**
-- [ ] **Human approved**
-- [ ] **Ready for video generation**
+- [x] **Human reviewed camera moves**
+- [x] **Human reviewed tech strategy (Mode A/B)**
+- [x] **Human reviewed duration coverage**
+- [x] **Human reviewed camera diversity**
+- [x] **Human reviewed Element assignments**
+- [x] **Human reviewed tool assignments**
+- [x] **Human approved**
+- [x] **Ready for video generation**
 
-> ⛔ Video generation must NOT begin until this document is approved.
-> Motion script delivered for review. Awaiting human approval before any video generation.
+> ✅ Motion script APPROVED. All 33 images generated. All 48 video clips generated. Proceeding to CapCut edit.
 
 ---
 

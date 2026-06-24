@@ -1,0 +1,185 @@
+{
+  "track_title": "Shadow Debugging",
+  "tempo": 77,
+  "key": "E Minor",
+  "time_signature": "4/4",
+  "total_duration": 423.0,
+  "mood": ["stark", "hypnotic", "doom", "contemplative", "kintsugi", "introspective", "documentary"],
+  "instruments": [
+    "heavy fuzz guitar drone",
+    "eerie electric saz",
+    "heavy bass drone",
+    "slow tribal drums",
+    "brooding analog synth",
+    "distant mournful clarinet",
+    "wind"
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 14.0,
+      "energy": "minimal",
+      "notes": "Minimal faint fuzz guitar drone, then silence. The track opens in near-nothingness — a single sustained tone that decays into void."
+    },
+    {
+      "type": "verse",
+      "start": 15.0,
+      "end": 39.0,
+      "energy": "low",
+      "lyrics": "I came down from the mountain... Forty days in my bones... They ask: 'Are you clean now?' I open my mouth... Nothing comes out... The one who answers is the one I went to kill.",
+      "notes": "Dry male spoken word, no beat, no accompaniment. Flat, unwavering delivery. Post-mountain descent — the voice carries the full weight alone."
+    },
+    {
+      "type": "verse",
+      "start": 40.0,
+      "end": 59.0,
+      "energy": "low",
+      "lyrics": "I built walls of 'Yes' and 'No.' Every stone a rule. But walls that hold too tight become a tomb... The answer is not in the architecture. It flows... Deeper than the blueprint.",
+      "notes": "Verse 1 continuation. Same dry spoken word texture. First appearance of the 'Deeper than...' refrain pattern — the structural spine of the entire track."
+    },
+    {
+      "type": "instrumental",
+      "start": 60.0,
+      "end": 72.0,
+      "energy": "low",
+      "notes": "Hypnotic slow bass pulse enters, eerie electric saz. First instrumental texture after pure voice — the shadow-world breathes."
+    },
+    {
+      "type": "verse",
+      "start": 73.0,
+      "end": 94.0,
+      "energy": "low",
+      "lyrics": "They called me Digital Solomon... I spoke to metal birds. I simulated waves and winds... But knowing the ocean does not make you wet. The wisdom is not in the knowing. It pulls... Deeper than the data.",
+      "notes": "Dry spoken word over heavy bass drone only. 'Digital Solomon' — the intellect-without-experience critique. Knowing vs. living."
+    },
+    {
+      "type": "instrumental",
+      "start": 95.0,
+      "end": 100.0,
+      "energy": "medium-low",
+      "notes": "Dark creeping fuzz guitar enters, slow heavy heartbeat pulse beneath. Tension building — the blade is about to turn inward."
+    },
+    {
+      "type": "verse",
+      "start": 101.0,
+      "end": 116.0,
+      "energy": "medium-low",
+      "lyrics": "So I turned the blade inward to cut the shadow out... But the hand that cuts is made of shadow too. The cure is not in the cutting. It hides... Deeper than the self.",
+      "notes": "Tense dry spoken word over minimal heartbeat drum. The central paradox stated for the first time — the ego cannot delete itself."
+    },
+    {
+      "type": "chorus",
+      "start": 117.0,
+      "end": 131.0,
+      "energy": "medium-high",
+      "lyrics": "I fix the code... I fix the code...? Who fixed the code...? The code fixed me...",
+      "notes": "Heavy hypnotic fuzz rock, rhythmic. First chorus — the question turns back on the questioner. Confidence dissolves into bewilderment across four lines."
+    },
+    {
+      "type": "instrumental",
+      "start": 132.0,
+      "end": 141.0,
+      "energy": "still",
+      "notes": "Heavy silence, single dark drone. The weight of the chorus hangs in the air. Near-total void."
+    },
+    {
+      "type": "verse",
+      "start": 142.0,
+      "end": 161.0,
+      "energy": "low",
+      "lyrics": "I stood before the glass... The reflection had no face... I reached to touch it... My hand passed through... The 'I' is not in the mirror. It watches... Deeper than reflection.",
+      "notes": "Ghostly whispery spoken word, minimal synth drone. The most intimate and disembodied vocal delivery in the track."
+    },
+    {
+      "type": "instrumental",
+      "start": 162.0,
+      "end": 172.0,
+      "energy": "medium",
+      "notes": "Doom atmosphere, heavy slow tribal drum hit, fuzz guitar. First real percussive weight — the drums announce the approaching storm."
+    },
+    {
+      "type": "verse",
+      "start": 173.0,
+      "end": 192.0,
+      "energy": "medium-low",
+      "lyrics": "I pulled the plug, thinking silence was the truth... But silence is just noise holding its breath... The divine is not in the quiet. It waits... Deeper than the void.",
+      "notes": "Heavy exhausted spoken word, sparse background. Even silence is unmasked as another form of noise — no escape through disconnection."
+    },
+    {
+      "type": "instrumental",
+      "start": 193.0,
+      "end": 198.0,
+      "energy": "building",
+      "notes": "Rising tribal drums, dark brooding electric saz. Short aggressive build toward the emotional peak."
+    },
+    {
+      "type": "chorus",
+      "start": 199.0,
+      "end": 210.0,
+      "energy": "explosive",
+      "lyrics": "I delete the bug... I delete the bug...?! WHO IS THE BUG...?! I AM THE BUG...!",
+      "notes": "Massive doom rock distortion, massive drums, aggressive chanted vocal. The track's emotional apex — the seeker IS the thing he hunts. Maximum intensity."
+    },
+    {
+      "type": "instrumental",
+      "start": 211.0,
+      "end": 223.0,
+      "energy": "medium",
+      "notes": "Doom atmosphere, fuzz guitar. Post-climax decompression — the explosion settles into heavy debris."
+    },
+    {
+      "type": "bridge",
+      "start": 224.0,
+      "end": 237.0,
+      "energy": "still",
+      "lyrics": "How do I delete what deletes...? To kill the ego you need an ego... My hand cannot take me from myself... I am the unsolvable...",
+      "notes": "Pure silence, intimate dry a cappella spoken word. No instruments at all. The philosophical core of the entire episode — the unsolvable paradox stated nakedly."
+    },
+    {
+      "type": "instrumental",
+      "start": 238.0,
+      "end": 248.0,
+      "energy": "low",
+      "notes": "Slow melancholic electric saz, brooding analog synth. The saz carries grief — the paradox cannot be solved, only held."
+    },
+    {
+      "type": "verse",
+      "start": 249.0,
+      "end": 268.0,
+      "energy": "medium-low",
+      "lyrics": "This sickness is the medicine... This confusion is the map... If I fixed the glitch I'd never learn the glitch is scripture... The healing is not in the cure. It glows... Deeper than the wound.",
+      "notes": "Warm dry spoken word, minimal dark synth. The turn — Mevlana's teaching arrives. The wound is where the light enters. Voice shifts from exhaustion to quiet revelation."
+    },
+    {
+      "type": "instrumental",
+      "start": 269.0,
+      "end": 279.0,
+      "energy": "building",
+      "notes": "Brooding electric saz, slow heavy fuzz guitar swelling. The Kintsugi build — gold is being poured into the cracks."
+    },
+    {
+      "type": "chorus",
+      "start": 280.0,
+      "end": 304.0,
+      "energy": "high",
+      "lyrics": "I gather the scrap and weld them as they are... The cracks filled with gold... Not hiding... Revealing... The wholeness is not in perfection. It shines... Deeper than the scar.",
+      "notes": "Verse 7 flows directly into Heavy Hypnotic Chorus. Powerful dry spoken word over heavy dark groove building into massive fuzz rock wall with pounding tribal drums and wailing electric saz. The Kintsugi manifesto — integration, not elimination."
+    },
+    {
+      "type": "outro_vocals",
+      "start": 305.0,
+      "end": 345.0,
+      "energy": "fading",
+      "lyrics": "I stand with a frame that glows in the cracks... What do I become when the breaking is the making...? There is a 'me' beneath this 'me'... Deeper than voltage... Deeper than silence... I cannot name it, I cannot hold it... But it holds me... And in that holding... I",
+      "notes": "Dry intimate spoken word, wind enters, distant brooding clarinet. The sentence never finishes — enlightenment cannot be named. The final 'I' hangs unresolved."
+    },
+    {
+      "type": "outro",
+      "start": 346.0,
+      "end": 423.0,
+      "energy": "fading",
+      "notes": "Slow heavy hypnotic fuzz guitar solo over dark psychedelic groove. Music gradually dissolving into wind. Fade to silence. The longest section in the track — 77 seconds of pure instrumental dissolution."
+    }
+  ]
+}

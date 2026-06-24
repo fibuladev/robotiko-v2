@@ -195,6 +195,12 @@ MEMORY - {Brief Description}
 **Always communicate with the human in Turkish.**
 **All files, commits, and code are written in English.**
 
+**Exception — build-along tutorial recording sessions:** when the session is an on-camera build-along
+recording (you are working from a `_tutorial/ep09_buildalong_*.md` part file, or the human says you are
+recording / shooting the tutorial), conduct the **entire on-screen conversation in English** — the
+build-along targets a global, open-source audience. This overrides the Turkish rule for that session only.
+Off-camera chat about the tutorial stays Turkish; only the recorded session is English.
+
 ---
 
 *"Would Fibula approve this?"*

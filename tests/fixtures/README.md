@@ -1,0 +1,31 @@
+# Validator Fixtures — Frozen Regression Pair
+
+These two files are **frozen snapshots**, not live pipeline output. Do not "fix" them.
+
+| File | State | Must |
+|---|---|---|
+| `ep09_visual_prompts_BROKEN.md` | The real EP09 v01 ref-integrity bug, frozen | **FAIL** ref-integrity |
+| `ep09_visual_prompts_GOOD.md`   | The corrected counterpart | **PASS** every check |
+
+## Why they exist
+
+The ref-integrity bug (EP09 attached Robotiko's **pristine** reference
+`ref_robotiko_master.png` to a **damaged/kintsugi** body episode) passed every
+text-based check green, because:
+
+1. the text prompts say "chrome android", not "robotiko"; and
+2. nothing ever parsed the `Image Reference Path` / `Upload` metadata fields.
+
+`ep09_visual_prompts_BROKEN.md` freezes that exact failure so it can never come
+back silently. `ep09_visual_prompts_GOOD.md` is the same scenes with the
+phase-correct reference (`android_damaged.png`) and the tool-aware anti-spawn
+phrasing ("single figure composition no additional characters").
+
+The meta-tests in [`tests/test_validators.py`](../test_validators.py) grade the
+graders: they assert the suite **fails** on BROKEN (and fails *only* on
+ref-integrity — proving the other checks were the blind ones) and **passes** on
+GOOD. If either direction ever flips, a grader has rotted.
+
+Scenes kept minimal but faithful: S01/S02 = damaged range (S01-S26), S27a =
+kintsugi range (S27+). Behavior is driven by `character_profiles.json`
+(`phase_reference_map`) — the single source of truth — exactly as in production.

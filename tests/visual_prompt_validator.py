@@ -264,7 +264,8 @@ def check_ref_integrity(scenes: list[dict], episode_number: int) -> list[str]:
             if f_basename in combined and not has_allowed:
                 ref_images = profiles["robotiko"]["reference_images"]
                 expected_entry = ref_images.get(ref_id, {})
-                expected_name = os.path.basename(expected_entry.get("path", "") or "none (chain/text only)")
+                expected_path = expected_entry.get("path")
+                expected_name = os.path.basename(expected_path) if expected_path else "text-only base / chain refs (no file)"
                 errors.append(
                     f"  FAIL [Ref Integrity] Scene S{scene['scene_number']:02d}: "
                     f"Uses '{os.path.basename(f_path)}' but phase requires '{ref_id}' "

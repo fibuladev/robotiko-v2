@@ -259,10 +259,12 @@ Three layers catch errors at different moments:
 | When | Mechanism | Checks |
 |---|---|---|
 | **At write time** | Claude Code PostToolUse hook (`.claude/settings.json`, Write matcher) | Warns immediately if a file written under `episode-XX/` breaks the naming convention |
-| **On demand / pre-publish** | `tests/` validators (Python) | `naming_check.py` (12 filename patterns + episode-number consistency); `visual_prompt_validator.py` (mandatory suffix, forbidden aesthetics, character-phase consistency); `pipeline_integrity.py` (no skipped steps / missing gate outputs) |
-| **In CI** | GitHub Actions (`.github/workflows/`) | `create_episode.yml` scaffolds episodes on dispatch; `naming_check.yml` runs all three validators (`naming_check.py` + `pipeline_integrity.py` + `visual_prompt_validator.py`) on every push and pull request |
+| **On demand / pre-publish** | `tests/run_all.py` (one command) | `naming_check.py` (filename patterns + episode-number consistency); `visual_prompt_validator.py` (mandatory suffix, forbidden aesthetics, per-episode character-phase with subject-guard + whitelist, and metadata-based **reference integrity**); `pipeline_integrity.py` (no skipped steps / missing gate outputs); `test_validators.py` (grade-the-graders meta-tests) |
+| **In CI** | GitHub Actions (`.github/workflows/`) | `create_episode.yml` scaffolds episodes on dispatch; `validation_suite.yml` runs the single gate `tests/run_all.py` on every push and pull request, blocking on failure (Python + action SHAs pinned) |
 
-The contract for all three is `_management/naming_convention.md`.
+The contract is `_management/naming_convention.md` (naming) and the
+[`adr/`](adr/) + [`invariant_coverage_matrix.md`](invariant_coverage_matrix.md)
+records (validation backbone).
 
 ---
 

@@ -1,0 +1,34 @@
+name: Validation Suite
+
+# One gate for the whole repo: naming, pipeline integrity, the visual-prompt
+# sweep, and the validator meta-tests (grade-the-graders). A red here blocks the
+# merge. Everything runs through the single entrypoint `tests/run_all.py`.
+#
+# Dependencies are pinned for reproducibility and supply-chain safety:
+#   - the project code is standard-library only (no `pip install`);
+#   - the Python toolchain is pinned to an exact patch version;
+#   - GitHub Actions are pinned to immutable commit SHAs (version in the comment).
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONIOENCODING: utf-8
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5  # v4.3.1
+
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5.6.0
+        with:
+          python-version: '3.11.9'
+
+      - name: Run the full validation suite (blocks on failure)
+        run: python tests/run_all.py

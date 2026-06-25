@@ -146,7 +146,7 @@ Trigger phrase: "Validate file names for EP{XX}"
 Skill: _skills/robotiko-naming-enforcer/SKILL.md
 ```
 
-GitHub Actions also runs the naming check — together with the pipeline-integrity and visual-prompt validators — on every push and pull request. See [`.github/workflows/naming_check.yml`](../.github/workflows/naming_check.yml).
+GitHub Actions also runs the naming check — together with the pipeline-integrity, visual-prompt, and grade-the-graders meta-test suites — on every push and pull request, through the single entrypoint `tests/run_all.py`. See [`.github/workflows/validation_suite.yml`](../.github/workflows/validation_suite.yml).
 
 ---
 

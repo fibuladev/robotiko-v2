@@ -126,7 +126,7 @@ Claude uses Glob and file listing to scan all files, then applies the rules abov
 ```
 python scripts/naming_check.py [--episode XX]
 ```
-Or via GitHub Actions: `naming_check.yml` on every push.
+Or via GitHub Actions: `validation_suite.yml` (one gate — `tests/run_all.py`) on every push.
 
 If the script exists, prefer Method B. Otherwise, execute Method A.
 

@@ -1,5 +1,16 @@
 # Tests
-> **Status:** v1.0 — Naming and visual prompt validators implemented.
+> **Status:** v2.0 — one-command gate; ref-integrity + grade-the-graders meta-tests.
+
+---
+
+## One command
+
+```bash
+python tests/run_all.py        # runs every check; exits non-zero if any fails
+```
+
+This is the single gate. CI runs the identical entrypoint and blocks the merge on
+failure. Code is standard-library only — no `pip install`.
 
 ---
 
@@ -7,10 +18,13 @@
 
 | Script | Purpose | Status |
 |---|---|---|
-| `naming_check.py` | Validates file names against `naming_convention.md` | v1.0 Implemented |
-| `visual_prompt_validator.py` | Validates visual prompt content (suffix, character phase, forbidden aesthetics) | v1.0 Implemented |
-| `pipeline_integrity.py` | Ensures no pipeline steps were skipped | Implemented (v1.1) |
-| `naming_check_hook.py` | Lightweight hook script for Claude Code PostToolUse | v1.0 Implemented |
+| `run_all.py` | One command — runs all checks below, exits non-zero on any failure | v2.0 |
+| `naming_check.py` | Validates file names against `naming_convention.md` | Implemented |
+| `pipeline_integrity.py` | Ensures no pipeline steps were skipped | Implemented |
+| `visual_prompt_validator.py` | Visual prompt content: suffix · forbidden aesthetics · character phase · **reference integrity** | v2.0 |
+| `test_validators.py` | Meta-tests — grade the graders (fixtures + both-directions proofs) | v1.0 |
+| `naming_check_hook.py` | Lightweight hook script for Claude Code PostToolUse | Implemented |
+| `fixtures/` | Frozen BROKEN/GOOD regression pair (see `fixtures/README.md`) | — |
 
 ---
 
@@ -53,23 +67,37 @@ The naming convention hook is configured in `.claude/settings.json` and runs aut
 ### visual_prompt_validator.py
 - Every prompt contains the mandatory visual suffix
 - No forbidden aesthetics (Pixar, clean Apple design, generic cyberpunk neon, etc.)
-- Character phase consistency (pristine Robotiko in Phase 1, damaged in Phase 2, etc.)
+- Character phase consistency — per-episode (EP01 pristine; EP02–03 canon-damaged;
+  Phase-3 markers forbidden pre-Phase-3), with a subject-guard (judge Robotiko, not
+  the scenery) and a scene-pinned whitelist for intentional non-Robotiko subjects
+- **Reference integrity** — every Robotiko scene uses the phase-correct reference
+  image, derived from `character_profiles.json` `phase_reference_map` (the reliable,
+  metadata-based gate)
 
 ### pipeline_integrity.py
 - Checks each pipeline step has its required output file
 - Flags missing steps and mandatory checkpoints
 
+### test_validators.py (meta-tests)
+- The graders, graded: the suite must FAIL the frozen BROKEN fixture and PASS the
+  GOOD one; every loosening is proven both directions (still catches a real bug,
+  ignores the intended case); a parser-coverage guard kills the zero-scene false-green
+
+See [`_management/invariant_coverage_matrix.md`](../_management/invariant_coverage_matrix.md)
+for what is machine-checked vs. human-gated, and [`_management/adr/`](../_management/adr/)
+for the decisions behind these checks.
+
 ---
 
 ## GitHub Actions Integration
 
-All three validators run automatically on every push and pull request via
-[`.github/workflows/naming_check.yml`](../.github/workflows/naming_check.yml):
+Everything runs on every push and pull request through the single entrypoint, via
+[`.github/workflows/validation_suite.yml`](../.github/workflows/validation_suite.yml):
 
 ```
-python tests/naming_check.py --full
-python tests/pipeline_integrity.py --full
-python tests/visual_prompt_validator.py --full
+python tests/run_all.py
 ```
 
-Run them locally the same way before opening a PR.
+A red fails the job and blocks the merge. Run it locally the same way before opening
+a PR. The Python version and the CI actions (pinned to commit SHAs) are pinned in the
+workflow; the code itself has no third-party dependencies.

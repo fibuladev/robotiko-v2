@@ -203,4 +203,66 @@ After any correction from the human:
 
 ---
 
+## CATEGORY: PIPELINE VALIDATION BACKBONE (Added 2026-06-26)
+
+> From the EP09 "Validation Backbone" build-along — turning the reference-integrity
+> bug (visual prompts that passed every check green while attaching the wrong
+> Robotiko reference) into permanent infrastructure. Governance:
+> [`_management/adr/`](../_management/adr/), [`_management/invariant_coverage_matrix.md`](../_management/invariant_coverage_matrix.md).
+
+- **RULE:** A GREEN THAT CHECKED NOTHING IS A FALSE GREEN — If a validator parses a
+  file into zero units (zero scenes, zero prompts) it will report PASS over a
+  totally unchecked file. EP06's ref-integrity was "green" for weeks only because
+  its `#### S11` headers didn't match a parser that required `#### Scene S11`.
+  **FIX:** every parser-backed check must be paired with a coverage test asserting
+  a non-zero parse on every shipped file; accept multiple real-world formats. (TAKE 05)
+- **RULE:** CHECK THE METADATA, NOT JUST THE PROSE — The reference bug lived in the
+  `Image Reference Path` / `Upload` fields; the text prompt said "chrome android"
+  not "robotiko". A prose-only check is the wrong instrument for a reference rule.
+  **FIX:** parse the structured fields and judge against a data source-of-truth
+  (`phase_reference_map`). The short identifier names the subject; the uploaded
+  reference carries the visual truth. (TAKE 02)
+- **RULE:** DON'T KEY ON A SINGLE SYNONYM — Character checks keyed only on
+  "robotiko" missed every prompt that says "the chrome android". Maintain the full
+  identifier set `["robotiko", "chrome android"]`. (TAKE 01)
+- **RULE:** GRADE THE GRADERS — A checker with no proof it works is a more confident
+  way to be wrong. Every check needs a frozen BAD fixture it must fail and a GOOD
+  fixture it must pass, plus an isolation test (fires when it should, silent when
+  it shouldn't). Fixtures are immutable snapshots — never "fix" them. (TAKE 04)
+- **RULE:** A RED TEST IS NOT ALWAYS A BUG — TRIAGE FIRST — Sweep every episode, then
+  classify each red as FIX (real bug → correct it, text-only, keep shipped images),
+  WHITELIST (intentional non-Robotiko subject → scene-pinned exception with a
+  reason), or REFINE (the check over-fires → tighten it). Decide per-failure before
+  changing anything. (TAKE 05)
+- **RULE:** JUDGE THE CHARACTER, NOT THE SCENERY — A forbidden body-state word bound
+  to scenery/effect ("pristine shelves", "translucent data", "iron walls becoming
+  translucent") or negated ("not pristine") is not a character violation. The
+  subject-guard neutralizes those; body words (chest, plate, chassis) stay policed.
+  (TAKE 05, REFINE A)
+- **RULE:** PHASE 1 IS NOT UNIFORM — EP01 is pristine, but canon says EP02–EP03
+  already carry battle damage, so "cracked"/"rusted" are correct there, not
+  violations. Forbidden body-state keywords are keyed PER EPISODE, not per phase;
+  Phase-3 markers stay forbidden until the body reaches Phase 3. (TAKE 05, REFINE B)
+- **RULE:** WHITELISTS ARE NARROW AND PINNED — Never "ignore pristine in this
+  episode." Pin to specific scenes + keywords with a written reason
+  (`phase_keyword_whitelist`), so a pristine-Robotiko slip anywhere else still
+  fires. Never whitelist the reliable gate (ref-integrity) — only the heuristic
+  text check. (TAKE 05)
+- **RULE:** NO LOOSENING WITHOUT A BOTH-DIRECTIONS PROOF — Any change that makes a
+  check pass more (a whitelist, a guard, a granularity tweak) ships with two tests:
+  one proving it STILL catches a real bug, one proving it correctly IGNORES the
+  intended case. (TAKE 06 guardrail)
+- **RULE:** ONE COMMAND, ONE GATE, PINNED — All checks run through
+  `python tests/run_all.py` (exit non-zero on any failure), wired into CI
+  (`.github/workflows/validation_suite.yml`) to block on failure. Keep the code
+  standard-library only (smallest attack surface); pin the Python patch version and
+  pin GitHub Actions to immutable commit SHAs, not floating tags. (TAKE 06)
+- **RULE:** GOVERNANCE IS HONEST ABOUT GAPS — A green CI run does NOT mean every
+  Golden Rule is enforced. The Invariant Coverage Matrix marks each invariant as
+  machine-checked / heuristic / human-gated / GAP. Anti-spawn phrasing, the eye-glow
+  rule, the motion video-suffix, and cultural attribution are currently GAPS — not
+  enforced. Don't imply coverage you don't have. (TAKE 06)
+
+---
+
 *Add new lessons below as they emerge during production.*

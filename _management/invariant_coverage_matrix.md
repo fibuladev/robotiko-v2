@@ -26,10 +26,11 @@ _Last updated: 2026-06-26 (EP09 Validation Backbone)._
 | Scene parser actually **parses** the file | 🟢 Machine | `TestParserCoverage` meta-tests | Guards the zero-scene false-green that started TAKE 05. |
 | The **checkers themselves** are correct | 🟢 Machine | `test_validators.py` (fixtures + both-directions proofs, [ADR 0003](adr/0003-frozen-fixtures-and-meta-tests.md)) | Grade-the-graders. |
 | Robotiko **body-state keywords** match phase | 🟡 Heuristic | `check_character_phase` + subject-guard + scene-pinned whitelist ([ADR 0004](adr/0004-triage-policy-and-check-refinements.md)) | Free-text; cannot fully attribute an adjective to a subject. Backed up by the 🟢 reference check. |
+| **Prompt strings are plain-English ASCII** (model-facing only) | 🟢 Machine | `prompt_hygiene_lint.py` ([ADR 0006](adr/0006-scoped-prompt-hygiene.md)) | Scoped to Text/Motion prompt blockquotes; non-ASCII + tradition-label decoration. |
+| **Cultural attribution** scoping (canon vs prompt) | 🟢 Machine (prompt) + 🔵 Human (canon) | `prompt_hygiene_lint.py` for prompts; canon is human-authored | Was ⚪ Gap. The lint enforces ASCII/no-label in prompt strings and deliberately never reads master.md or direction notes — canon keeps its sanctioned Turkish. |
 | **Anti-spawn guard** phrasing (tool-aware) | ⚪ Gap | — (skill rule only) | The visual-prompts SKILL mandates the phrasing; nothing validates its presence/shape yet. Candidate next check. |
 | **Eye rule** — no glow keyword for eyes | ⚪ Gap | — (lesson + skill only) | "dark amber glass lenses…" formula is documented, not enforced. Candidate next check. |
 | Mandatory **video suffix** on motion prompts | ⚪ Gap | — | No motion-script validator exists; suffix is human-checked. |
-| **Cultural attribution** (CyberAnatolian vs Turkish) | ⚪ Gap | — (Golden Rule #9) | Greppable in principle; currently human-gated. |
 
 ## Golden Rules (narrative / philosophical)
 
@@ -40,7 +41,7 @@ _Last updated: 2026-06-26 (EP09 Validation Backbone)._
 | #3 Character State | 🟢 Machine (ref) + 🟡 Heuristic (text) | The one Golden Rule now substantially machine-enforced. |
 | #4 The Suffix | 🟢 Machine | `check_suffix`. |
 | #5 No Revenge / #6 No Cheap Emotion / #7 No Drama / #8 The 8 Turns | 🔵 Human | Dramaturgy + motion-script checkpoints. |
-| #9 Cultural Attribution | ⚪ Gap → 🔵 Human | See pipeline table. |
+| #9 Cultural Attribution | 🟢 Machine (prompt strings) + 🔵 Human (canon) | The scoped lint keeps attribution out of model-facing prompts while the canon keeps it. See pipeline table. |
 
 ## Human checkpoints (gated by design, not gaps)
 

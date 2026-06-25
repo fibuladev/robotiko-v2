@@ -22,6 +22,7 @@ failure. Code is standard-library only — no `pip install`.
 | `naming_check.py` | Validates file names against `naming_convention.md` | Implemented |
 | `pipeline_integrity.py` | Ensures no pipeline steps were skipped | Implemented |
 | `visual_prompt_validator.py` | Visual prompt content: suffix · forbidden aesthetics · character phase · **reference integrity** | v2.0 |
+| `prompt_hygiene_lint.py` | **Scoped** — model-facing prompt strings (Text/Motion blocks only) must be plain-English ASCII; never reads canon/direction notes | v1.0 |
 | `test_validators.py` | Meta-tests — grade the graders (fixtures + both-directions proofs) | v1.0 |
 | `naming_check_hook.py` | Lightweight hook script for Claude Code PostToolUse | Implemented |
 | `fixtures/` | Frozen BROKEN/GOOD regression pair (see `fixtures/README.md`) | — |
@@ -73,6 +74,14 @@ The naming convention hook is configured in `.claude/settings.json` and runs aut
 - **Reference integrity** — every Robotiko scene uses the phase-correct reference
   image, derived from `character_profiles.json` `phase_reference_map` (the reliable,
   metadata-based gate)
+
+### prompt_hygiene_lint.py (scoped)
+- Reads ONLY the `Text Prompt` blocks in visual-prompt files and the `Motion
+  Prompt` blocks in motion-script files — never master.md or the direction notes
+- Flags non-ASCII characters and tradition-label decoration in those prompt
+  strings (the canon keeps its sanctioned Turkish; only model-facing strings are
+  policed — see [ADR 0006](../_management/adr/0006-scoped-prompt-hygiene.md))
+- `--fix` ASCII-normalizes the prompt blocks in place, leaving everything else untouched
 
 ### pipeline_integrity.py
 - Checks each pipeline step has its required output file

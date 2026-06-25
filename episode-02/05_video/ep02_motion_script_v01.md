@@ -70,7 +70,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The map holds still — the camera does not travel. The route lines pulse in sequence with the opening guitar riff: each amber line throbs bright on the downbeat (104 BPM), Davos first, then cascading southeast. Subtle film grain rolls across the steel-blue surface. A faint heat shimmer distorts the edges of the map. The map breathes like a living document — not the camera, but the light itself is the movement.
+> The map holds still - the camera does not travel. The route lines pulse in sequence with the opening guitar riff: each amber line throbs bright on the downbeat (104 BPM), Davos first, then cascading southeast. Subtle film grain rolls across the steel-blue surface. A faint heat shimmer distorts the edges of the map. The map breathes like a living document - not the camera, but the light itself is the movement.
 
 ---
 
@@ -92,7 +92,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward Robotiko as the Hammond organ sustains its chord — the zoom tightens like a congregation drawn to the preacher. Holographic data streams behind him cascade downward in golden waterfall motion. The silhouetted audience in the foreground shifts slightly — subtle head movements, the ripple of applause. The spotlight narrows imperceptibly. Volumetric fog drifts upward from the auditorium floor.
+> Slow zoom toward Robotiko as the Hammond organ sustains its chord - the zoom tightens like a congregation drawn to the preacher. Holographic data streams behind him cascade downward in golden waterfall motion. The silhouetted audience in the foreground shifts slightly - subtle head movements, the ripple of applause. The spotlight narrows imperceptibly. Volumetric fog drifts upward from the auditorium floor.
 
 ---
 
@@ -114,7 +114,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Intimate zoom toward Robotiko's face as the guitar and Hammond duel for dominance. His blue eyes pulse with a faint, steady glow — barely perceptible brightness fluctuations syncing to the organ rhythm. Reflected light from the crowd below shimmers across his chrome chest plate like candlelight on water. Exposed analog wires along his neck vibrate microscopically with the bass frequencies. The stillness of his expression against the sonic spectacle is the point.
+> Intimate zoom toward Robotiko's face as the guitar and Hammond duel for dominance. His blue eyes pulse with a faint, steady glow - barely perceptible brightness fluctuations syncing to the organ rhythm. Reflected light from the crowd below shimmers across his chrome chest plate like candlelight on water. Exposed analog wires along his neck vibrate microscopically with the bass frequencies. The stillness of his expression against the sonic spectacle is the point.
 
 ---
 
@@ -136,7 +136,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Slow pan right following Robotiko's descent down the jet stairs — each step lands on the guitar riff's rhythmic pulse. Jet exhaust billows in massive white clouds behind the fuselage, drifting left as the camera pans right, creating a natural counter-movement. Snow particles swirl in the exhaust wash. The Swiss Alps in the background hold steady, monolithic and cold, while the foreground churns with vapor and motion.
+> Slow pan right following Robotiko's descent down the jet stairs - each step lands on the guitar riff's rhythmic pulse. Jet exhaust billows in massive white clouds behind the fuselage, drifting left as the camera pans right, creating a natural counter-movement. Snow particles swirl in the exhaust wash. The Swiss Alps in the background hold steady, monolithic and cold, while the foreground churns with vapor and motion.
 
 ---
 
@@ -158,7 +158,7 @@
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Steady dolly push toward the podium as Robotiko gestures at the "SAVE THE PLANET" screen. The screen's spinning globe graphic rotates at a deliberate, almost hypnotic pace. Through the tall windows, jet exhaust is barely visible — a slow, persistent plume. The suited audience silhouettes shift subtly in their seats. Fluorescent tubes above flicker once, almost imperceptibly. The dolly movement is confident, unhurried — we are approaching the sermon.
+> Steady dolly push toward the podium as Robotiko gestures at the "SAVE THE PLANET" screen. The screen's spinning globe graphic rotates at a deliberate, almost hypnotic pace. Through the tall windows, jet exhaust is barely visible - a slow, persistent plume. The suited audience silhouettes shift subtly in their seats. Fluorescent tubes above flicker once, almost imperceptibly. The dolly movement is confident, unhurried - we are approaching the sermon.
 
 ---
 
@@ -180,7 +180,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Deliberate zoom tightening on Robotiko's midsection as the funk-rock bass line accelerates. His chrome abdominal plates vibrate visibly — a rhythmic tremor syncing to the bass. The bead of hydraulic fluid on his temple catches light and begins its slow descent. The audience silhouettes in the foreground lean forward. Ambient spotlight shifts from gold to warm amber — the heat is building. The air itself feels pressurized. Time thickens.
+> Deliberate zoom tightening on Robotiko's midsection as the funk-rock bass line accelerates. His chrome abdominal plates vibrate visibly - a rhythmic tremor syncing to the bass. The bead of hydraulic fluid on his temple catches light and begins its slow descent. The audience silhouettes in the foreground lean forward. Ambient spotlight shifts from gold to warm amber - the heat is building. The air itself feels pressurized. Time thickens.
 
 ---
 
@@ -202,7 +202,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The frame holds still — the chaos is all internal. The transformation from composure to eruption must land precisely on "blew a gasket" (downbeat at ~1:12). Steam bursts from chrome seam lines in radial jets. Orange sparks cascade outward like champagne spray. Papers spiral upward in the steam blast. Audience silhouettes topple backward from their seats. The "SAVE THE PLANET" screen behind flickers and dies. Keep the energy slapstick — a champagne cork, not a bomb. Robotiko's expression moves from strain to pure mortification, mouth forming an O.
+> The frame holds still - the chaos is all internal. The transformation from composure to eruption must land precisely on "blew a gasket" (downbeat at ~1:12). Steam bursts from chrome seam lines in radial jets. Orange sparks cascade outward like champagne spray. Papers spiral upward in the steam blast. Audience silhouettes topple backward from their seats. The "SAVE THE PLANET" screen behind flickers and dies. Keep the energy slapstick - a champagne cork, not a bomb. Robotiko's expression moves from strain to pure mortification, mouth forming an O.
 
 ---
 
@@ -246,7 +246,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Pan right following Robotiko's confident stride along the Embarcadero. His walking rhythm locks to the 104 BPM groove — each step a beat. Neon signs flicker and scroll in the background — startup logos, crypto tickers, wellness apps — each with its own animation rhythm. Fog drifts across the Golden Gate Bridge silhouette. Wet pavement reflections of pink and green neon shimmer beneath Robotiko's chrome feet. He does not look at the blue tarp shelters sliding past on the left.
+> Pan right following Robotiko's confident stride along the Embarcadero. His walking rhythm locks to the 104 BPM groove - each step a beat. Neon signs flicker and scroll in the background - startup logos, crypto tickers, wellness apps - each with its own animation rhythm. Fog drifts across the Golden Gate Bridge silhouette. Wet pavement reflections of pink and green neon shimmer beneath Robotiko's chrome feet. He does not look at the blue tarp shelters sliding past on the left.
 
 ---
 
@@ -268,7 +268,7 @@
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Dolly push into the alley as the scene narrows — the walls close in compositionally. The holographic pitch deck rotates slowly, casting blue-white light across both figures. The "$GURU" token charts pulse upward with false optimism. The switchblade catches neon light — a single glint. The disheveled figure's eyes track downward toward Robotiko's chrome leg. Neon signs above flicker arrhythmically. The dolly creates the sensation of walking into a trap.
+> Dolly push into the alley as the scene narrows - the walls close in compositionally. The holographic pitch deck rotates slowly, casting blue-white light across both figures. The "$GURU" token charts pulse upward with false optimism. The switchblade catches neon light - a single glint. The disheveled figure's eyes track downward toward Robotiko's chrome leg. Neon signs above flicker arrhythmically. The dolly creates the sensation of walking into a trap.
 
 ---
 
@@ -290,7 +290,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> The transformation syncs to the bass drop: the grab must land on "grabbed" (downbeat at ~1:31). The thief's motion trails sparks from the severed joint — a shower of orange dragged rightward through the neon-lit alley. Robotiko's holographic pitch deck continues spinning, untouched, absurdly persistent. The pan follows the escaping figure rightward while Robotiko holds his one-legged pose in the left of frame, arm still raised. The comedic timing is everything — Robotiko's complete stillness against the thief's frantic escape.
+> The transformation syncs to the bass drop: the grab must land on "grabbed" (downbeat at ~1:31). The thief's motion trails sparks from the severed joint - a shower of orange dragged rightward through the neon-lit alley. Robotiko's holographic pitch deck continues spinning, untouched, absurdly persistent. The pan follows the escaping figure rightward while Robotiko holds his one-legged pose in the left of frame, arm still raised. The comedic timing is everything - Robotiko's complete stillness against the thief's frantic escape.
 
 ---
 
@@ -312,7 +312,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Gentle, reverent zoom toward the vendor's hands as they work the wrench on Robotiko's knee joint. The egg cart's heat lamp casts a small pocket of warm golden light — the only honest light in this entire episode. The vendor's breath is visible in the cold air. Robotiko's eyes flicker slightly brighter — a tiny, involuntary response to kindness. The neon chaos of San Francisco recedes to soft bokeh in the background. Time slows. The bass line breathes.
+> Gentle, reverent zoom toward the vendor's hands as they work the wrench on Robotiko's knee joint. The egg cart's heat lamp casts a small pocket of warm golden light - the only honest light in this entire episode. The vendor's breath is visible in the cold air. Robotiko's eyes flicker slightly brighter - a tiny, involuntary response to kindness. The neon chaos of San Francisco recedes to soft bokeh in the background. Time slows. The bass line breathes.
 
 ---
 
@@ -334,7 +334,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The composition IS the movement — the frame holds still while the content fights. Left panel: heart and fire emojis float upward in a continuous loop, skin-smoothing filter pulses softly. Right panel: the rat crosses the foreground, trash shifts in a breeze, the egg vendor walks away. Center: Robotiko's arms hold the chorus pose while his chrome reflects both realities — warm gold on his left side, cold neon on his right. The rock choir detonation at "Guru Talks" should feel like the visual locks into place — everything arrives at once.
+> The composition IS the movement - the frame holds still while the content fights. Left panel: heart and fire emojis float upward in a continuous loop, skin-smoothing filter pulses softly. Right panel: the rat crosses the foreground, trash shifts in a breeze, the egg vendor walks away. Center: Robotiko's arms hold the chorus pose while his chrome reflects both realities - warm gold on his left side, cold neon on his right. The rock choir detonation at "Guru Talks" should feel like the visual locks into place - everything arrives at once.
 
 ---
 
@@ -356,7 +356,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The frame pulses with projected light — phone screens flash across Robotiko's chrome body in rhythmic bursts synced to the fuzz riff. Each app projection cycles in and out like a strobe: podcast waves, fake beach overlay, "YOU WILL RISE!" gradient. The light on his body shifts color with each app — blue, pink, green, white — faster and faster. By the final beat, all projections overlap into white noise. Robotiko stands motionless in the center while the light assaults him. The fuzz guitar sustain at the end holds — the visual freezes on the final harsh white spotlight.
+> The frame pulses with projected light - phone screens flash across Robotiko's chrome body in rhythmic bursts synced to the fuzz riff. Each app projection cycles in and out like a strobe: podcast waves, fake beach overlay, "YOU WILL RISE!" gradient. The light on his body shifts color with each app - blue, pink, green, white - faster and faster. By the final beat, all projections overlap into white noise. Robotiko stands motionless in the center while the light assaults him. The fuzz guitar sustain at the end holds - the visual freezes on the final harsh white spotlight.
 
 ---
 
@@ -378,7 +378,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> A visual exhale after the chorus assault. Slow zoom out reveals the immensity of the salt flat — Robotiko shrinks in the frame as the landscape expands. His reflection stretches in the shallow water, rippling with each step. Heat shimmer distorts the horizon line in a slow, organic wave. The psychedelic guitar bends echo in the visual — the shimmer responds to the wah-pedal. In the extreme distance, a thin vertical line (the Mentor's staff?) could be a mirage. Time suspends. The air breathes.
+> A visual exhale after the chorus assault. Slow zoom out reveals the immensity of the salt flat - Robotiko shrinks in the frame as the landscape expands. His reflection stretches in the shallow water, rippling with each step. Heat shimmer distorts the horizon line in a slow, organic wave. The psychedelic guitar bends echo in the visual - the shimmer responds to the wah-pedal. In the extreme distance, a thin vertical line (the Mentor's staff?) could be a mirage. Time suspends. The air breathes.
 
 ---
 
@@ -400,7 +400,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the Congo destination marker as the Hammond swirls. The two completed routes glow steady amber while the Congo pulse brightens and fades with the organ's rhythm. The map's surface shows its first signs of age — the coffee ring stain catches different angles of light as we push in. Film grain intensifies. Dust motes drift across the surface. The map is becoming a document of consequence, not a brochure.
+> Slow zoom toward the Congo destination marker as the Hammond swirls. The two completed routes glow steady amber while the Congo pulse brightens and fades with the organ's rhythm. The map's surface shows its first signs of age - the coffee ring stain catches different angles of light as we push in. Film grain intensifies. Dust motes drift across the surface. The map is becoming a document of consequence, not a brochure.
 
 ---
 
@@ -422,7 +422,7 @@
 **Camera Move:** Crane Down
 
 **Motion Prompt:**
-> Descending crane movement from above the mine rim downward — revealing the terraced depth of the pit as the guitar descends chromatically. The scale of the mine expands as we lower the perspective. Red dust particles hang in the air, drifting slowly through angled light shafts. Tiny figures on the terraces below shift incrementally — the slow, grinding rhythm of labor. Robotiko's fitness tracker pulses green on his wrist, the only non-red light in the frame. The crane grounds us in this place.
+> Descending crane movement from above the mine rim downward - revealing the terraced depth of the pit as the guitar descends chromatically. The scale of the mine expands as we lower the perspective. Red dust particles hang in the air, drifting slowly through angled light shafts. Tiny figures on the terraces below shift incrementally - the slow, grinding rhythm of labor. Robotiko's fitness tracker pulses green on his wrist, the only non-red light in the frame. The crane grounds us in this place.
 
 ---
 
@@ -444,7 +444,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Zoom tightening toward the fitness tracker screen as it flashes its grotesque reading. The tracker's blue-green glow pulses twice — Robotiko taps it to log the session. Red dust drifts upward from the mine below, coating his lower legs in a slow accumulation. In the background, barely visible, the overloaded truck groans up the mine road — its motion is sluggish, heavy, exhausted. The irony is total: the brightest, most modern light in the frame is measuring someone else's suffering as exercise.
+> Zoom tightening toward the fitness tracker screen as it flashes its grotesque reading. The tracker's blue-green glow pulses twice - Robotiko taps it to log the session. Red dust drifts upward from the mine below, coating his lower legs in a slow accumulation. In the background, barely visible, the overloaded truck groans up the mine road - its motion is sluggish, heavy, exhausted. The irony is total: the brightest, most modern light in the frame is measuring someone else's suffering as exercise.
 
 ---
 
@@ -466,7 +466,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The scraping begins on "Boss scraps off" — each drag of the metal tool across Robotiko's left shoulder produces a shower of tiny orange sparks that fall in rhythm with the heavy drum pattern. The transformation from pristine to scraped must be visible and cumulative — each pass strips another layer. Robotiko holds his bodybuilder pose throughout, grinning wider as if the scraping is applause. Sparks cascade downward against the ochre dust. The Boss's movements are aggressive, utilitarian — he harvests chrome like ore. Robotiko never looks at his own shoulder.
+> The scraping begins on "Boss scraps off" - each drag of the metal tool across Robotiko's left shoulder produces a shower of tiny orange sparks that fall in rhythm with the heavy drum pattern. The transformation from pristine to scraped must be visible and cumulative - each pass strips another layer. Robotiko holds his bodybuilder pose throughout, grinning wider as if the scraping is applause. Sparks cascade downward against the ochre dust. The Boss's movements are aggressive, utilitarian - he harvests chrome like ore. Robotiko never looks at his own shoulder.
 
 ---
 
@@ -488,7 +488,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Slow pan following Robotiko's solitary walk through the transitional landscape. The color palette shifts as the camera drifts — red earth dissolves into sickly yellow-green industrial haze. The scrape on his left shoulder catches the changing light differently than the surrounding chrome — raw metal reflecting amber where chrome reflects blue. Power lines and smokestacks emerge from the haze ahead. Dust and fog interweave. The psychedelic guitar solo spirals above, and the visual pace matches its unhurried, wandering quality.
+> Slow pan following Robotiko's solitary walk through the transitional landscape. The color palette shifts as the camera drifts - red earth dissolves into sickly yellow-green industrial haze. The scrape on his left shoulder catches the changing light differently than the surrounding chrome - raw metal reflecting amber where chrome reflects blue. Power lines and smokestacks emerge from the haze ahead. Dust and fog interweave. The psychedelic guitar solo spirals above, and the visual pace matches its unhurried, wandering quality.
 
 ---
 
@@ -510,7 +510,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow push toward the Bangladesh marker as the Hammond organ leads. Three completed routes glow steady amber. The Bangladesh pulse is more urgent than previous activations — the flicker is faster, reflecting the rising tempo ahead. The map's paper degradation is visible: new creases, a torn corner curling inward. Halftone dots are beginning to smear. Each visual detail of the map's decay mirrors the journey's accumulating cost.
+> Slow push toward the Bangladesh marker as the Hammond organ leads. Three completed routes glow steady amber. The Bangladesh pulse is more urgent than previous activations - the flicker is faster, reflecting the rising tempo ahead. The map's paper degradation is visible: new creases, a torn corner curling inward. Halftone dots are beginning to smear. Each visual detail of the map's decay mirrors the journey's accumulating cost.
 
 ---
 
@@ -532,7 +532,7 @@
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Dolly push into the factory interior as the tempo begins to rise. Steam from pressing stations drifts upward through the fluorescent tubes, creating a permanent low fog that undulates with the air currents. Fabric piles tower unstably — one stack shudders with the vibration of nearby machines. Workers' heads turn incrementally toward Robotiko — not fast, just the slow dawning of disbelief. Sewing machine needles pulse in the rhythm of the drums. The dolly pushes us deeper into the oppression of the space.
+> Dolly push into the factory interior as the tempo begins to rise. Steam from pressing stations drifts upward through the fluorescent tubes, creating a permanent low fog that undulates with the air currents. Fabric piles tower unstably - one stack shudders with the vibration of nearby machines. Workers' heads turn incrementally toward Robotiko - not fast, just the slow dawning of disbelief. Sewing machine needles pulse in the rhythm of the drums. The dolly pushes us deeper into the oppression of the space.
 
 ---
 
@@ -554,7 +554,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The press descends and the impact must land precisely on the drum fill accent (~3:50). The hydraulic press catches fluorescent light along its edge as it slams down — a flash of white. Sparks shower outward from the chrome impact point. The fluorescent tubes flicker from the vibration. When the press lifts, the fist-sized dent is visible — a concave shadow on Robotiko's right torso. He shrugs on the next downbeat, the movement casual and unconcerned. The factory around him has not reacted. The press operator has not looked up. This is Tuesday.
+> The press descends and the impact must land precisely on the drum fill accent (~3:50). The hydraulic press catches fluorescent light along its edge as it slams down - a flash of white. Sparks shower outward from the chrome impact point. The fluorescent tubes flicker from the vibration. When the press lifts, the fist-sized dent is visible - a concave shadow on Robotiko's right torso. He shrugs on the next downbeat, the movement casual and unconcerned. The factory around him has not reacted. The press operator has not looked up. This is Tuesday.
 
 ---
 
@@ -576,7 +576,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The split-screen composition holds static while its contents fight harder than Chorus 1. Left panel: digital artifacts cascade — buffering circles spin, the filter glitches reveal the shoulder scratch underneath, the "LOW BATTERY" warning pulses urgently. Right panel: factory steam rolls across Robotiko's damaged torso, the child's "HELP" sign sways slightly. Center: Robotiko's arms raise but the asymmetry of his dented torso makes the pose pull differently. The choir is louder, the fuzz angrier — and the visual responds not with movement but with intensified degradation. The Instagram reality is losing the war.
+> The split-screen composition holds static while its contents fight harder than Chorus 1. Left panel: digital artifacts cascade - buffering circles spin, the filter glitches reveal the shoulder scratch underneath, the "LOW BATTERY" warning pulses urgently. Right panel: factory steam rolls across Robotiko's damaged torso, the child's "HELP" sign sways slightly. Center: Robotiko's arms raise but the asymmetry of his dented torso makes the pose pull differently. The choir is louder, the fuzz angrier - and the visual responds not with movement but with intensified degradation. The Instagram reality is losing the war.
 
 ---
 
@@ -598,7 +598,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Push toward the Paris marker with more urgency than previous map transitions — the zoom is faster, matching the guitar solo's aggression. Four amber routes blaze. The Paris pulse is erratic, almost desperate. The map's fold lines are becoming tears — paper fibers separate in slow motion. The halftone printing bleeds into itself. This is no longer a travel poster — it is a disintegrating record of consequences. The zoom does not stop at a comfortable framing. It pushes past it.
+> Push toward the Paris marker with more urgency than previous map transitions - the zoom is faster, matching the guitar solo's aggression. Four amber routes blaze. The Paris pulse is erratic, almost desperate. The map's fold lines are becoming tears - paper fibers separate in slow motion. The halftone printing bleeds into itself. This is no longer a travel poster - it is a disintegrating record of consequences. The zoom does not stop at a comfortable framing. It pushes past it.
 
 ---
 
@@ -620,7 +620,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The frame holds still while reality cracks down the center. Left panel: cafe lights twinkle softly, couples move in slow-motion along the Seine. Right panel: barricade fires crackle, smoke billows, riot police silhouettes shift in formation. At the center line, Robotiko's eyes are the only active movement — the left eye holds steady blue, the right eye strobes between blue and red in rapid, irregular pulses. The dissonant Hammond swells correspond to the eye-strobe frequency. The chrome on his body reflects both realities simultaneously — warm gold and dirty gray fighting for dominance on every surface.
+> The frame holds still while reality cracks down the center. Left panel: cafe lights twinkle softly, couples move in slow-motion along the Seine. Right panel: barricade fires crackle, smoke billows, riot police silhouettes shift in formation. At the center line, Robotiko's eyes are the only active movement - the left eye holds steady blue, the right eye strobes between blue and red in rapid, irregular pulses. The dissonant Hammond swells correspond to the eye-strobe frequency. The chrome on his body reflects both realities simultaneously - warm gold and dirty gray fighting for dominance on every surface.
 
 ---
 
@@ -642,7 +642,7 @@
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Dolly push toward the confrontation as the musical dissonance peaks. The rat on the baguette twitches its nose, its whiskers catching firelight from the smoldering barricades. Robotiko's arms extend the offering with the unwavering confidence of a sommelier presenting wine. The strikers' bodies shift collectively backward — a wave of recoil. Barricade fire flickers behind the crowd, casting orange light that fights with the gray smoke. The dolly intensifies the intimacy of the absurdity — we are close enough to see both the rat's whiskers and the strikers' disbelief.
+> Dolly push toward the confrontation as the musical dissonance peaks. The rat on the baguette twitches its nose, its whiskers catching firelight from the smoldering barricades. Robotiko's arms extend the offering with the unwavering confidence of a sommelier presenting wine. The strikers' bodies shift collectively backward - a wave of recoil. Barricade fire flickers behind the crowd, casting orange light that fights with the gray smoke. The dolly intensifies the intimacy of the absurdity - we are close enough to see both the rat's whiskers and the strikers' disbelief.
 
 ---
 
@@ -664,7 +664,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The attack begins on "smashed" — multiple hands grab at the back panels simultaneously, each pull synced to a drum accent. Sparks cascade from torn wiring in sheets — orange against gray smoke. The head rotation from forward-facing to owl-like 180° turn should be slow and mechanical, a 3-second journey that reads as innocent confusion rather than horror. The back panels peel open progressively — first one, then two, then wires spilling outward. Firelight from the barricades illuminates the sparks. Throughout, Robotiko's expression on the rotated face is bewildered, not angry. He was helping.
+> The attack begins on "smashed" - multiple hands grab at the back panels simultaneously, each pull synced to a drum accent. Sparks cascade from torn wiring in sheets - orange against gray smoke. The head rotation from forward-facing to owl-like 180 degrees  turn should be slow and mechanical, a 3-second journey that reads as innocent confusion rather than horror. The back panels peel open progressively - first one, then two, then wires spilling outward. Firelight from the barricades illuminates the sparks. Throughout, Robotiko's expression on the rotated face is bewildered, not angry. He was helping.
 
 ---
 
@@ -686,7 +686,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow, inexorable zoom toward the final marker. The map is barely a map anymore — charred edges curl inward, the paper tears are now structural, the halftone dots have dissolved into abstract smears. Five routes glow through the damage but the final pulse is RED — the first and only color shift in the map sequence. The red pulses like a heartbeat, not a destination. The psychedelic guitar is darker here, more minor-key, and the visual pacing matches — each zoom increment is heavy, reluctant, inevitable. We do not want to arrive. We are arriving anyway.
+> Slow, inexorable zoom toward the final marker. The map is barely a map anymore - charred edges curl inward, the paper tears are now structural, the halftone dots have dissolved into abstract smears. Five routes glow through the damage but the final pulse is RED - the first and only color shift in the map sequence. The red pulses like a heartbeat, not a destination. The psychedelic guitar is darker here, more minor-key, and the visual pacing matches - each zoom increment is heavy, reluctant, inevitable. We do not want to arrive. We are arriving anyway.
 
 ---
 
@@ -708,7 +708,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Slow zoom out reveals the devastation surrounding Robotiko — the landscape expands to show the full scope of ruin. Robotiko remains motionless in his peace pose, arms open, the only saturated colors in a monochrome world: blue eyes, blue-red wires. Behind him, distant explosions bloom in extreme slow motion — orange-black flowers growing against the gray sky. Dust hangs permanently, turning the sun into a pale disc. Rubble does not move. The world has stopped. Only the slow bloom of explosions and the slow retreat of the camera suggest time is passing at all.
+> Slow zoom out reveals the devastation surrounding Robotiko - the landscape expands to show the full scope of ruin. Robotiko remains motionless in his peace pose, arms open, the only saturated colors in a monochrome world: blue eyes, blue-red wires. Behind him, distant explosions bloom in extreme slow motion - orange-black flowers growing against the gray sky. Dust hangs permanently, turning the sun into a pale disc. Rubble does not move. The world has stopped. Only the slow bloom of explosions and the slow retreat of the camera suggest time is passing at all.
 
 ---
 
@@ -730,7 +730,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Tender, terrible zoom toward Robotiko's face — the headphones filling the frame. His blue eyes hold steady, half-lidded, serene. His lips move with the whispered lyrics, barely visible. Behind him, out of focus and deliberately underexposed, an explosion lifts a vehicle into the air in extreme slow motion — debris arcs silently. He hears nothing. The scorched leather edges of the headphones catch a faint orange glow from the background blast. The zoom is gentle, almost intimate — the visual language of care applied to willful deafness. The quietest shot in the episode. The tension is unbearable.
+> Tender, terrible zoom toward Robotiko's face - the headphones filling the frame. His blue eyes hold steady, half-lidded, serene. His lips move with the whispered lyrics, barely visible. Behind him, out of focus and deliberately underexposed, an explosion lifts a vehicle into the air in extreme slow motion - debris arcs silently. He hears nothing. The scorched leather edges of the headphones catch a faint orange glow from the background blast. The zoom is gentle, almost intimate - the visual language of care applied to willful deafness. The quietest shot in the episode. The tension is unbearable.
 
 ---
 
@@ -752,7 +752,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> THIS IS THE MOST IMPORTANT SHOT IN THE EPISODE. The zoom must be barely perceptible — tightening like a held breath. The shrapnel impact lands on "took away" (~6:20) — the headphone cup shatters outward in a freeze-frame slash. Sparks erupt from the exposed circuitry — vivid orange-white against near-total black. Silver-blue hydraulic fluid seeps from the wound in a slow, terrible drip. Robotiko's hand reaches toward the damage — the first time in 6 minutes he has acknowledged his own body. His right eye shifts from blue to red in a slow iris-change, not a flicker. His mouth opens. No sound. One beat of absolute silence. HOLD. The comedy is dead. The before must be serene. The after must be devastating. Use every second.
+> THIS IS THE MOST IMPORTANT SHOT IN THE EPISODE. The zoom must be barely perceptible - tightening like a held breath. The shrapnel impact lands on "took away" (~6:20) - the headphone cup shatters outward in a freeze-frame slash. Sparks erupt from the exposed circuitry - vivid orange-white against near-total black. Silver-blue hydraulic fluid seeps from the wound in a slow, terrible drip. Robotiko's hand reaches toward the damage - the first time in 6 minutes he has acknowledged his own body. His right eye shifts from blue to red in a slow iris-change, not a flicker. His mouth opens. No sound. One beat of absolute silence. HOLD. The comedy is dead. The before must be serene. The after must be devastating. Use every second.
 
 ---
 
@@ -774,7 +774,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The visual STILLNESS against the sonic ASSAULT is the point. The frame does not move. The spotlight does not shift. Robotiko holds the chorus pose — arms raised, mechanical, without conviction. All damage reads under the harsh overhead light: shoulder scrape (orange-raw), torso dent (concave shadow), back sensor wires (hanging), missing ear (sparking intermittently — the sparks are the only movement in the frame). One eye blue, one eye red. No smile. The rock choir screams. The fuzz guitar howls. And the image is a portrait — still, silent, devastating. The sparks from the ear flicker at irregular intervals, dying.
+> The visual STILLNESS against the sonic ASSAULT is the point. The frame does not move. The spotlight does not shift. Robotiko holds the chorus pose - arms raised, mechanical, without conviction. All damage reads under the harsh overhead light: shoulder scrape (orange-raw), torso dent (concave shadow), back sensor wires (hanging), missing ear (sparking intermittently - the sparks are the only movement in the frame). One eye blue, one eye red. No smile. The rock choir screams. The fuzz guitar howls. And the image is a portrait - still, silent, devastating. The sparks from the ear flicker at irregular intervals, dying.
 
 ---
 
@@ -797,7 +797,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Extension of S33 — the continuous pullback begins where the hero shot holds. As the frame widens, the spotlight narrows — a shrinking circle of visibility on Robotiko's body. The darkness encroaches from all edges. His arms lower slowly to his sides — the gesture of surrender, not collapse. Ear sparks slow their frequency, fading from bright orange to dim amber embers. As each instrument drops out of the mix, the visual darkens by a fraction — a synchronized dimming. The spoken word floats over the fading image: "But Reality just swallowed you whole..." His blue eye dims. His red eye holds.
+> Extension of S33 - the continuous pullback begins where the hero shot holds. As the frame widens, the spotlight narrows - a shrinking circle of visibility on Robotiko's body. The darkness encroaches from all edges. His arms lower slowly to his sides - the gesture of surrender, not collapse. Ear sparks slow their frequency, fading from bright orange to dim amber embers. As each instrument drops out of the mix, the visual darkens by a fraction - a synchronized dimming. The spoken word floats over the fading image: "But Reality just swallowed you whole..." His blue eye dims. His red eye holds.
 
 ---
 
@@ -820,7 +820,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Near-total darkness. Extension of S34's pullback — the zoom has stopped, but the light continues to die. Robotiko is reduced to points of light: the blue eye dims incrementally, each blink lasting longer than the last. The red eye holds steady — the only constant. Ear sparks fire once, twice, then nothing — the embers die. In the extreme far background, a barely perceptible amber dot might be the Mentor's staff. Might be nothing. The heavy film grain takes over — the image is dissolving into its own materiality. The guitar harmonic decays into feedback, into hiss, into nothing. The red eye remains. Then silence. Then black.
+> Near-total darkness. Extension of S34's pullback - the zoom has stopped, but the light continues to die. Robotiko is reduced to points of light: the blue eye dims incrementally, each blink lasting longer than the last. The red eye holds steady - the only constant. Ear sparks fire once, twice, then nothing - the embers die. In the extreme far background, a barely perceptible amber dot might be the Mentor's staff. Might be nothing. The heavy film grain takes over - the image is dissolving into its own materiality. The guitar harmonic decays into feedback, into hiss, into nothing. The red eye remains. Then silence. Then black.
 
 ---
 

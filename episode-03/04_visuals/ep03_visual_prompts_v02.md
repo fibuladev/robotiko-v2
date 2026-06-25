@@ -65,7 +65,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Medium-wide interior shot. Breathing space left and right. Depth: foreground table, midground characters, background wall.
 
 **Text Prompt:**
-> Interior of a modest house, rough plaster walls, warm amber lamplight from a single overhead bulb. A wooden table in the foreground with two glasses of dark çay, steam rising. A battle-scarred chrome android stands near a wooden door, a packed canvas bag at his feet, chin raised, one hand on the bag. Across the room, an elderly figure in a dark green cloak over leather tunic sits at the table, hands folded. A wooden staff with a glowing raw amber tip leans against the wall beside him, casting a warm golden pool on the plaster. Old kilim on the floor, a shelf of jars, cracked ceiling paint. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a modest house, rough plaster walls, warm amber lamplight from a single overhead bulb. A wooden table in the foreground with two glasses of dark cay, steam rising. A battle-scarred chrome android stands near a wooden door, a packed canvas bag at his feet, chin raised, one hand on the bag. Across the room, an elderly figure in a dark green cloak over leather tunic sits at the table, hands folded. A wooden staff with a glowing raw amber tip leans against the wall beside him, casting a warm golden pool on the plaster. Old kilim on the floor, a shelf of jars, cracked ceiling paint. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -78,7 +78,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Two-shot with gap between characters. Headroom for tilt. Table/çay foreground.
 
 **Text Prompt:**
-> A battle-scarred chrome android leaning forward with one arm raised, chest reflecting warm lamplight. Across from him at a wooden table, an elderly figure in a dark green cloak, shoulders back, chin low, hands flat on the table. Between them: a wooden table with untouched çay glasses. Warm amber interior lamplight, dynamic shadows on rough plaster walls. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A battle-scarred chrome android leaning forward with one arm raised, chest reflecting warm lamplight. Across from him at a wooden table, an elderly figure in a dark green cloak, shoulders back, chin low, hands flat on the table. Between them: a wooden table with untouched cay glasses. Warm amber interior lamplight, dynamic shadows on rough plaster walls. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -91,7 +91,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Door frame as natural border. Interior warmth vs exterior daylight through doorway.
 
 **Text Prompt:**
-> A wooden door swinging open, bright daylight flooding through the frame. A battle-scarred chrome android stepping through the doorway carrying a canvas bag, back to the viewer. Inside the dim room, an elderly figure in a dark green cloak sits alone at a table, two untouched çay glasses in front of him. A wooden staff with amber glowing tip stands against the wall. Warm interior lamplight contrasts with harsh daylight at the door. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A wooden door swinging open, bright daylight flooding through the frame. A battle-scarred chrome android stepping through the doorway carrying a canvas bag, back to the viewer. Inside the dim room, an elderly figure in a dark green cloak sits alone at a table, two untouched cay glasses in front of him. A wooden staff with amber glowing tip stands against the wall. Warm interior lamplight contrasts with harsh daylight at the door. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -104,7 +104,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Over-shoulder framing. Screen must be readable. Staff in peripheral frame.
 
 **Text Prompt:**
-> An elderly figure in a dark green cloak sitting at a desk, facing a glowing computer monitor. The screen displays text: "SELECT MODEL FOR ROBOTIKO" with four options listed vertically: "Guru", "Basic", "Pro", "UltraPro". A cursor arrow hovers near the top option. Cold blue-white screen light illuminates the figure's weathered face. A wooden staff with a glowing amber tip stands nearby, casting warm golden light on the opposite side. Dark room, the two light sources competing — cold screen blue and warm staff amber. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> An elderly figure in a dark green cloak sitting at a desk, facing a glowing computer monitor. The screen displays text: "SELECT MODEL FOR ROBOTIKO" with four options listed vertically: "Guru", "Basic", "Pro", "UltraPro". A cursor arrow hovers near the top option. Cold blue-white screen light illuminates the figure's weathered face. A wooden staff with a glowing amber tip stands nearby, casting warm golden light on the opposite side. Dark room, the two light sources competing - cold screen blue and warm staff amber. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -134,7 +134,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Window frame composition. Landscape below, reflection in glass. Breathing space around window.
 
 **Text Prompt:**
-> View through an airplane window. Below: patchwork Anatolian landscape, brown earth, green valley strips, thin ribbon roads, scattered villages. Clouds catching golden sunlight. In the scratched plastic window, a faint chrome face reflected — glowing blue eyes visible in the reflection. Airplane interior dim, window light dominant. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> View through an airplane window. Below: patchwork Anatolian landscape, brown earth, green valley strips, thin ribbon roads, scattered villages. Clouds catching golden sunlight. In the scratched plastic window, a faint chrome face reflected - glowing blue eyes visible in the reflection. Airplane interior dim, window light dominant. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -147,7 +147,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Interior cabin shot. Chrome android among human passengers. Depth through seat rows.
 
 **Text Prompt:**
-> Interior of a passenger airplane cabin, fluorescent overhead lights, sterile white-blue tones. A battle-scarred chrome android sits in a window seat. Around him, four excited young travelers — mixed men and women in casual clothes, colorful scarves — lean across aisles and point out windows. One woman holds a dog-eared poetry book. A rolled yoga mat sticks out of the overhead bin. Window light cuts across faces and chrome in parallel stripes. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a passenger airplane cabin, fluorescent overhead lights, sterile white-blue tones. A battle-scarred chrome android sits in a window seat. Around him, four excited young travelers - mixed men and women in casual clothes, colorful scarves - lean across aisles and point out windows. One woman holds a dog-eared poetry book. A rolled yoga mat sticks out of the overhead bin. Window light cuts across faces and chrome in parallel stripes. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -164,7 +164,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide shot through glass doors. Chrome android leading group. Airport depth.
 
 **Text Prompt:**
-> An airport arrivals hall, flat fluorescent overhead light, generic signage in Turkish. A battle-scarred chrome android strides through automatic glass doors, leading the way. Behind him, four young travelers — mixed men and women, colorful scarves, one mid-selfie with phone raised, one dragging an oversized backpack. Tired taxi drivers hold handwritten name cards on the far side. Scuffed floor tiles, plastic chairs, a broken luggage carousel in the background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> An airport arrivals hall, flat fluorescent overhead light, generic signage in Turkish. A battle-scarred chrome android strides through automatic glass doors, leading the way. Behind him, four young travelers - mixed men and women, colorful scarves, one mid-selfie with phone raised, one dragging an oversized backpack. Tired taxi drivers hold handwritten name cards on the far side. Scuffed floor tiles, plastic chairs, a broken luggage carousel in the background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -177,7 +177,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Street-level shot. Chrome android in foreground, group behind. Urban depth with apartment blocks.
 
 **Text Prompt:**
-> A modern Anatolian city street — concrete apartment blocks, plastic shop signage, parked cars, a dusty kebap sign. A battle-scarred chrome android walks ahead on the sidewalk. Behind him, three young travelers — mixed men and women with colorful scarves — follow, looking around. A grandmother on a balcony hangs laundry. Election posters pasted on a wall. Late afternoon daylight, golden hour approaching over concrete. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A modern Anatolian city street - concrete apartment blocks, plastic shop signage, parked cars, a dusty kebap sign. A battle-scarred chrome android walks ahead on the sidewalk. Behind him, three young travelers - mixed men and women with colorful scarves - follow, looking around. A grandmother on a balcony hangs laundry. Election posters pasted on a wall. Late afternoon daylight, golden hour approaching over concrete. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -194,7 +194,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide shot. Square with fountain, group sitting on bench. Shuttered shops in background.
 
 **Text Prompt:**
-> A sunlit Anatolian city square — concrete benches, a dry municipal fountain, pigeons pecking at crumbs. Shop fronts along the square with metal shutters pulled down — closed for Ramadan. A battle-scarred chrome android and three young travelers — mixed men and women with colorful scarves — sitting on a bench, unwrapping sandwiches from backpacks. Golden hour light, warm and ordinary. A municipal bus passes in the background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A sunlit Anatolian city square - concrete benches, a dry municipal fountain, pigeons pecking at crumbs. Shop fronts along the square with metal shutters pulled down - closed for Ramadan. A battle-scarred chrome android and three young travelers - mixed men and women with colorful scarves - sitting on a bench, unwrapping sandwiches from backpacks. Golden hour light, warm and ordinary. A municipal bus passes in the background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -211,7 +211,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Street-level medium shot. Group on sidewalk eating. Shuttered shops behind. Robotiko with powerbank.
 
 **Text Prompt:**
-> A sidewalk in an Anatolian city, shop shutters pulled down for Ramadan. A battle-scarred chrome android sitting on a low concrete wall beside three young travelers — mixed men and women eating sandwiches casually. In his chrome hand: a powerbank with a kebap sticker on it, plugged into a port on his torso via a cable — his version of eating. A cat sits nearby. Warm street light, casual picnic atmosphere against a backdrop of closed shuttered shops. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A sidewalk in an Anatolian city, shop shutters pulled down for Ramadan. A battle-scarred chrome android sitting on a low concrete wall beside three young travelers - mixed men and women eating sandwiches casually. In his chrome hand: a powerbank with a kebap sticker on it, plugged into a port on his torso via a cable - his version of eating. A cat sits nearby. Warm street light, casual picnic atmosphere against a backdrop of closed shuttered shops. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -224,7 +224,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Chaotic street scene. Chrome android pushed against wall. Crowd surrounding. Shuttered shops behind.
 
 **Text Prompt:**
-> An Anatolian city sidewalk erupting into chaos. A battle-scarred chrome android pushed backward by a crowd of furious locals — mixed men and women, fingers pointing, arms shoving. Metal shop shutters closed behind them — Ramadan daytime. A smashed powerbank with a kebap sticker lies on the cracked sidewalk. Hands grabbing at the chrome body, pushing him against a concrete wall. Scattered sandwich wrappings on the ground. Dust rising from the scuffle, harsh daylight. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> An Anatolian city sidewalk erupting into chaos. A battle-scarred chrome android pushed backward by a crowd of furious locals - mixed men and women, fingers pointing, arms shoving. Metal shop shutters closed behind them - Ramadan daytime. A smashed powerbank with a kebap sticker lies on the cracked sidewalk. Hands grabbing at the chrome body, pushing him against a concrete wall. Scattered sandwich wrappings on the ground. Dust rising from the scuffle, harsh daylight. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -241,7 +241,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Interior dolmuş shot. Window view of changing landscape. Chrome android squeezed between passengers.
 
 **Text Prompt:**
-> Interior of a Turkish dolmuş minibus. A battle-scarred chrome android with a dust smudge across his chest sits squeezed between two human passengers who lean away from him. Through the dirty window: the landscape shifts from concrete buildings to open fields, power lines, distant minarets. Straight road ahead. Interior fluorescent light mixed with golden road light through glass. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a Turkish dolmus minibus. A battle-scarred chrome android with a dust smudge across his chest sits squeezed between two human passengers who lean away from him. Through the dirty window: the landscape shifts from concrete buildings to open fields, power lines, distant minarets. Straight road ahead. Interior fluorescent light mixed with golden road light through glass. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -258,7 +258,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide shot of wedding scene. Robotiko on the edge, crowd in center. Festive lighting.
 
 **Text Prompt:**
-> An eastern Anatolian countryside wedding — strings of colored lights hanging between walnut trees. A halay circle of men and women dancing in dusty unison, linked by raised pinkies. A davul-zurna player sweating through his performance. Tables overflowing with food. A battle-scarred chrome android standing at the edge of the celebration, watching the wedding couple. Festive colored lights reflecting off chrome. Golden hour, earthy reds, dusty gold tones. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> An eastern Anatolian countryside wedding - strings of colored lights hanging between walnut trees. A halay circle of men and women dancing in dusty unison, linked by raised pinkies. A davul-zurna player sweating through his performance. Tables overflowing with food. A battle-scarred chrome android standing at the edge of the celebration, watching the wedding couple. Festive colored lights reflecting off chrome. Golden hour, earthy reds, dusty gold tones. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -271,7 +271,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Medium shot. Robotiko in center, guests with raised rifles around him. Muzzle flashes in amber sky.
 
 **Text Prompt:**
-> Eastern Anatolian countryside wedding. Wedding guests — mixed men and women — raising kalashnikov rifles and firing into the amber sky, muzzle flashes bright against sunset. Shell casings spinning in the air. A battle-scarred chrome android standing among them, a bright spark flying off his cheek where a bullet grazes chrome — a thin scratch mark visible. Gunsmoke haze mixing with golden evening light. Festive atmosphere, colorful decorations in the background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Eastern Anatolian countryside wedding. Wedding guests - mixed men and women - raising kalashnikov rifles and firing into the amber sky, muzzle flashes bright against sunset. Shell casings spinning in the air. A battle-scarred chrome android standing among them, a bright spark flying off his cheek where a bullet grazes chrome - a thin scratch mark visible. Gunsmoke haze mixing with golden evening light. Festive atmosphere, colorful decorations in the background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -288,7 +288,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide landscape shot. Road with staff shadow. Amber atmospheric light. Breathing space in all directions.
 
 **Text Prompt:**
-> A dusty Anatolian road stretching into the distance. The entire frame bathed in an unnatural warm amber light, as if golden hour intensified beyond normal. A long shadow falls across the road — the clear silhouette of a cloaked figure holding a staff, but no figure casting it. A battle-scarred chrome android walking alone on the road, small in the frame, looking back over his shoulder at the empty landscape. Amber sky, no clouds. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A dusty Anatolian road stretching into the distance. The entire frame bathed in an unnatural warm amber light, as if golden hour intensified beyond normal. A long shadow falls across the road - the clear silhouette of a cloaked figure holding a staff, but no figure casting it. A battle-scarred chrome android walking alone on the road, small in the frame, looking back over his shoulder at the empty landscape. Amber sky, no clouds. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -305,7 +305,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Interior bus shot. Window showing landscape transition. Robotiko rigid among sleeping passengers.
 
 **Text Prompt:**
-> Interior of a Turkish long-distance bus — high-backed seats with lace antimacassars, a small TV playing a muted show, plastic water bottles in seatback pockets. A battle-scarred chrome android with a thin scratch across his left cheek sits rigid in a window seat. Around him, passengers sleeping with mouths open, eating sunflower seeds, scrolling phones. Through the dirty window: landscape transitioning from golden arid plains with baled hay to rolling green hills. Interior fluorescent mixed with cycling window light. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a Turkish long-distance bus - high-backed seats with lace antimacassars, a small TV playing a muted show, plastic water bottles in seatback pockets. A battle-scarred chrome android with a thin scratch across his left cheek sits rigid in a window seat. Around him, passengers sleeping with mouths open, eating sunflower seeds, scrolling phones. Through the dirty window: landscape transitioning from golden arid plains with baled hay to rolling green hills. Interior fluorescent mixed with cycling window light. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -318,7 +318,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide establishing shot. Robotiko small in frame, dramatic landscape around.
 
 **Text Prompt:**
-> Black Sea coast town — deep green steep terraced hills, gray stone buildings clinging to mountainsides. Trabzon harbor in the distance: container ships, cranes, a mosque perched on a cliff. Low clouds hugging the peaks, wet dense atmosphere. A battle-scarred chrome android stepping off a dolmuş onto a narrow cobblestone street, small against the lush green landscape. Overcast gray sky, wet surfaces reflecting diffused light. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Black Sea coast town - deep green steep terraced hills, gray stone buildings clinging to mountainsides. Trabzon harbor in the distance: container ships, cranes, a mosque perched on a cliff. Low clouds hugging the peaks, wet dense atmosphere. A battle-scarred chrome android stepping off a dolmus onto a narrow cobblestone street, small against the lush green landscape. Overcast gray sky, wet surfaces reflecting diffused light. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -335,7 +335,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Street-level shot. Car and android face to face. Green mountains in background.
 
 **Text Prompt:**
-> A narrow Black Sea town street, wet asphalt, green mountains looming behind. A battle-scarred chrome android mid-step on a crosswalk, one chrome foot on the white stripe. A small old sedan screeched to a halt in front of him — tire marks steaming on wet road, headlights blazing, driver's door swung open. Overcast sky, headlight glare on wet asphalt. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A narrow Black Sea town street, wet asphalt, green mountains looming behind. A battle-scarred chrome android mid-step on a crosswalk, one chrome foot on the white stripe. A small old sedan screeched to a halt in front of him - tire marks steaming on wet road, headlights blazing, driver's door swung open. Overcast sky, headlight glare on wet asphalt. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -365,7 +365,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide establishing shot. Castle on rocky headland, coast below. Full breathing space.
 
 **Text Prompt:**
-> Mediterranean coastline — Alanya castle on a rocky promontory jutting into turquoise water. White tourist hotels lining the shore below. A highway sign reads "ALANYA" in white on green. Bright saturated sunlight, blue sky, palm trees. The warmth is immediate, inviting. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Mediterranean coastline - Alanya castle on a rocky promontory jutting into turquoise water. White tourist hotels lining the shore below. A highway sign reads "ALANYA" in white on green. Bright saturated sunlight, blue sky, palm trees. The warmth is immediate, inviting. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -382,7 +382,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Street-level shot. Chrome android surrounded by touts. Neon signs beginning to glow.
 
 **Text Prompt:**
-> An Alanya tourist strip at dusk — a narrow pedestrian street lined with restaurants and bars, neon signs glowing in pinks and blues. Three men in black vests with slicked hair surround a battle-scarred chrome android — arms wide open, practiced smiles, welcoming gestures. One throws an arm around the android's chrome shoulder. Neon light reflecting off chrome in garish pinks and greens. Warm Mediterranean evening transitioning to neon night. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> An Alanya tourist strip at dusk - a narrow pedestrian street lined with restaurants and bars, neon signs glowing in pinks and blues. Three men in black vests with slicked hair surround a battle-scarred chrome android - arms wide open, practiced smiles, welcoming gestures. One throws an arm around the android's chrome shoulder. Neon light reflecting off chrome in garish pinks and greens. Warm Mediterranean evening transitioning to neon night. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -395,7 +395,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Walking shot toward glowing doorway. Touts flanking android. Neon strip depth.
 
 **Text Prompt:**
-> An Alanya neon-lit street at night. A man in a black vest with his arm around a battle-scarred chrome android's shoulder, guiding him toward a glowing nightclub entrance. Two other touts flanking them from behind. The nightclub doorway pulsing with bass-frequency light — deep purple and red. Neon signs reflecting in puddles on the pavement. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> An Alanya neon-lit street at night. A man in a black vest with his arm around a battle-scarred chrome android's shoulder, guiding him toward a glowing nightclub entrance. Two other touts flanking them from behind. The nightclub doorway pulsing with bass-frequency light - deep purple and red. Neon signs reflecting in puddles on the pavement. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -412,7 +412,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide street shot. Amber atmospheric dominance. Chrome android small in frame looking up.
 
 **Text Prompt:**
-> An Alanya tourist strip at night, but every neon sign along the street has flickered to amber — an unnatural golden glow replacing the pinks and blues. The shadow of a staff stretches impossibly long across the pavement from an unseen source. A battle-scarred chrome android standing alone in the middle of the street, looking up at the amber sky. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> An Alanya tourist strip at night, but every neon sign along the street has flickered to amber - an unnatural golden glow replacing the pinks and blues. The shadow of a staff stretches impossibly long across the pavement from an unseen source. A battle-scarred chrome android standing alone in the middle of the street, looking up at the amber sky. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -429,7 +429,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide underpass shot. Chrome silhouette walking through. Light streaks and reflections.
 
 **Text Prompt:**
-> A highway underpass at twilight. Concrete walls and ceiling, headlights of passing cars streaking through like horizontal light trails. Concentric circles of reflected light on the wet concrete ceiling. Standing water on the road reflecting the light streaks. A chrome silhouette — a battle-scarred android — walking through the underpass, small against the concrete architecture. Twilight blues mixed with amber headlight streaks. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A highway underpass at twilight. Concrete walls and ceiling, headlights of passing cars streaking through like horizontal light trails. Concentric circles of reflected light on the wet concrete ceiling. Standing water on the road reflecting the light streaks. A chrome silhouette - a battle-scarred android - walking through the underpass, small against the concrete architecture. Twilight blues mixed with amber headlight streaks. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -446,7 +446,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Interior nightclub. Booth shot with receipt cascade as central visual. Men in Black flanking.
 
 **Text Prompt:**
-> Interior of a nightclub — low ceilings, mirrored disco balls casting fragmented light, velvet booth seating. A battle-scarred chrome android sits in a corner booth. A waiter in a black shirt presents a check holder. The receipt unfolds from the holder in an impossibly long thermal-printed strip — cascading off the table, curling around chair legs, pooling on the sticky floor, stretching toward the door. Beside the booth, three men in dark suits and sunglasses stand rigid, hands clasped, faces unreadable. Mirror ball fragments dancing across dark suits and chrome body. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a nightclub - low ceilings, mirrored disco balls casting fragmented light, velvet booth seating. A battle-scarred chrome android sits in a corner booth. A waiter in a black shirt presents a check holder. The receipt unfolds from the holder in an impossibly long thermal-printed strip - cascading off the table, curling around chair legs, pooling on the sticky floor, stretching toward the door. Beside the booth, three men in dark suits and sunglasses stand rigid, hands clasped, faces unreadable. Mirror ball fragments dancing across dark suits and chrome body. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -493,7 +493,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Doorway as frame. Dark interior vs exterior. Threshold composition.
 
 **Text Prompt:**
-> A narrow street. An old wooden doorway — warped frame, paint peeling in thick curls, a string of amber prayer beads hanging from the tarnished handle. Beyond the threshold: darkness, a single yellow bulb hanging from a bare wire, the vague silhouette of a seated figure. A battle-scarred chrome android hesitating at the threshold, one chrome foot hovering over the worn stone step. Lo-fi yellow light from inside swallowing the chrome outline at the edges. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A narrow street. An old wooden doorway - warped frame, paint peeling in thick curls, a string of amber prayer beads hanging from the tarnished handle. Beyond the threshold: darkness, a single yellow bulb hanging from a bare wire, the vague silhouette of a seated figure. A battle-scarred chrome android hesitating at the threshold, one chrome foot hovering over the worn stone step. Lo-fi yellow light from inside swallowing the chrome outline at the edges. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -506,7 +506,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Close-up shot. Hand on chrome shoulder. Screen projection from eyes. Claustrophobic framing.
 
 **Text Prompt:**
-> Close-up interior, dim yellow light. A battle-scarred chrome android seated on a wooden chair. A human hand — rough, adorned with a single thick gold ring — reaching from behind and touching his chrome shoulder. The android's blue eyes projecting a glowing screen into the air: a newspaper headline reading "SAPIK HOCA SKANDALI" with a mugshot photo. Lo-fi yellow bulb light, shadow-heavy walls, claustrophobic framing. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up interior, dim yellow light. A battle-scarred chrome android seated on a wooden chair. A human hand - rough, adorned with a single thick gold ring - reaching from behind and touching his chrome shoulder. The android's blue eyes projecting a glowing screen into the air: a newspaper headline reading "SAPIK HOCA SKANDALI" with a mugshot photo. Lo-fi yellow bulb light, shadow-heavy walls, claustrophobic framing. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -536,7 +536,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Dynamic running shot. Chrome android as constant, blurred background. Amber undertone in sky.
 
 **Text Prompt:**
-> A battle-scarred chrome android in full sprint along a highway shoulder, chrome body catching light, arms pumping mechanically. The background landscape blurring past — smeared buildings, road signs, trees. An amber atmospheric undertone in the sky above. Pavement stretching ahead toward a distant bridge silhouette. Daylight transitioning to twilight. Motion energy, speed lines in the environment. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A battle-scarred chrome android in full sprint along a highway shoulder, chrome body catching light, arms pumping mechanically. The background landscape blurring past - smeared buildings, road signs, trees. An amber atmospheric undertone in the sky above. Pavement stretching ahead toward a distant bridge silhouette. Daylight transitioning to twilight. Motion energy, speed lines in the environment. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -553,7 +553,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Vertiginous forced perspective. Bridge impossibly thin. Water far below. Headroom above.
 
 **Text Prompt:**
-> The Bosphorus Bridge rendered in forced miniature perspective — the bridge deck impossibly thin and narrow like a tightrope, cables like threads stretching to vanishing points. A battle-scarred chrome android walking the narrow span, arms slightly out for balance, tiny against the vast structure. Black water far below. Twilight sky bruised purple and blue behind. Bridge lights as tiny amber dots stretching to infinity. Vertiginous, vertigo-inducing perspective. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> The Bosphorus Bridge rendered in forced miniature perspective - the bridge deck impossibly thin and narrow like a tightrope, cables like threads stretching to vanishing points. A battle-scarred chrome android walking the narrow span, arms slightly out for balance, tiny against the vast structure. Black water far below. Twilight sky bruised purple and blue behind. Bridge lights as tiny amber dots stretching to infinity. Vertiginous, vertigo-inducing perspective. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -566,7 +566,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Frozen moment. Body tilting off the thin bridge. Water below. Bridge cables above.
 
 **Text Prompt:**
-> The miniature Bosphorus Bridge at twilight. A battle-scarred chrome android mid-slip — one foot losing traction on the impossibly thin bridge deck, body tilting sideways, chrome arms reaching for cables that seem too far away. Black water vast and indifferent below. Bridge lights as tiny amber dots. The chrome body caught between bridge and sea, frozen in the moment of falling. Twilight purple sky. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> The miniature Bosphorus Bridge at twilight. A battle-scarred chrome android mid-slip - one foot losing traction on the impossibly thin bridge deck, body tilting sideways, chrome arms reaching for cables that seem too far away. Black water vast and indifferent below. Bridge lights as tiny amber dots. The chrome body caught between bridge and sea, frozen in the moment of falling. Twilight purple sky. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -579,7 +579,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Compressed interior. Chrome android visible among human bodies. Fluorescent lighting. No breathing space — intentionally claustrophobic.
 
 **Text Prompt:**
-> Interior of a packed Istanbul metrobüs. Extreme crowd density — human bodies pressed against a battle-scarred chrome android from all sides. Faces, elbows, bags, phones, sweat. Mixed men and women of all ages. Harsh fluorescent overhead tubes casting flat shadowless light. The chrome android's shoulders pressed inward by human mass, taller than the crowd but compressed. Body heat haze in the air. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a packed Istanbul metrobus. Extreme crowd density - human bodies pressed against a battle-scarred chrome android from all sides. Faces, elbows, bags, phones, sweat. Mixed men and women of all ages. Harsh fluorescent overhead tubes casting flat shadowless light. The chrome android's shoulders pressed inward by human mass, taller than the crowd but compressed. Body heat haze in the air. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -592,7 +592,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Tight interior shot. Chrome body bent and compressed among pressing bodies. Blue eyes barely visible.
 
 **Text Prompt:**
-> Interior of a packed metrobüs. A battle-scarred chrome android physically bent and compressed by the surrounding crowd — chrome shoulders caved inward, head forced down, body folding under the weight of pressing human bodies. His blue eyes barely visible between the bodies, dimmed to a low glow. Mixed crowd pressing from all sides, completely indifferent. Harsh fluorescent light. Compressed frame, no air, no space. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a packed metrobus. A battle-scarred chrome android physically bent and compressed by the surrounding crowd - chrome shoulders caved inward, head forced down, body folding under the weight of pressing human bodies. His blue eyes barely visible between the bodies, dimmed to a low glow. Mixed crowd pressing from all sides, completely indifferent. Harsh fluorescent light. Compressed frame, no air, no space. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -609,7 +609,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Interior shot. Amber light replacing fluorescent. Supernatural overlay on mundane setting.
 
 **Text Prompt:**
-> Interior of a packed metrobüs, but every fluorescent tube has been replaced by warm amber light — the entire space glowing golden. A battle-scarred chrome android folded and compressed in the crowd, bathed in amber. The human passengers unaware of the light change, continuing their commute. The amber glow is total, supernatural, warm against the cold chrome and the indifferent crowd. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a packed metrobus, but every fluorescent tube has been replaced by warm amber light - the entire space glowing golden. A battle-scarred chrome android folded and compressed in the crowd, bathed in amber. The human passengers unaware of the light change, continuing their commute. The amber glow is total, supernatural, warm against the cold chrome and the indifferent crowd. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -626,7 +626,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Two-plane composition. Mentor sharp foreground, crowd + Robotiko blurred background. Depth of field separation.
 
 **Text Prompt:**
-> A concrete pedestrian overpass spanning a highway at twilight. In the foreground, sharp focus: an elderly figure in a dark green cloak standing at the railing, facing directly at the viewer, breaking the fourth wall. A wooden staff with bright amber glowing tip in his right hand, casting light on the concrete railing. Behind him, in shallow focus background: a battle-scarred chrome android being passed overhead hand-to-hand by a blurred crowd, body horizontal, arms limp, moving toward a metrobüs exit. Twilight sky, highway lights below. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A concrete pedestrian overpass spanning a highway at twilight. In the foreground, sharp focus: an elderly figure in a dark green cloak standing at the railing, facing directly at the viewer, breaking the fourth wall. A wooden staff with bright amber glowing tip in his right hand, casting light on the concrete railing. Behind him, in shallow focus background: a battle-scarred chrome android being passed overhead hand-to-hand by a blurred crowd, body horizontal, arms limp, moving toward a metrobus exit. Twilight sky, highway lights below. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -656,7 +656,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide establishing shot. Ambulance arriving at industrial zone. Workshop depth.
 
 **Text Prompt:**
-> A white ambulance with a red crescent symbol, siren lights rotating red and blue, pulling into a sanayi sitesi — an industrial auto repair zone. Low concrete buildings with roll-up metal doors, oil stains on asphalt, stacked tires against walls, welding equipment visible through open doorways. Workers in blue overalls watching from doorways. Industrial gray tones, ambulance lights casting rotating red-blue reflections on concrete. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A white ambulance with a red crescent symbol, siren lights rotating red and blue, pulling into a sanayi sitesi - an industrial auto repair zone. Low concrete buildings with roll-up metal doors, oil stains on asphalt, stacked tires against walls, welding equipment visible through open doorways. Workers in blue overalls watching from doorways. Industrial gray tones, ambulance lights casting rotating red-blue reflections on concrete. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -669,7 +669,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Interior workshop entrance. Stretcher being carried in. Workshop tools visible on walls.
 
 **Text Prompt:**
-> A battle-scarred chrome android lying on a white medical stretcher — white sheets, chrome handles — being carried by two workers in blue overalls and heavy boots through the open roll-up door of a kaynakçı workshop. The android's blue eyes barely open. Inside the workshop: walls lined with welding masks hanging from hooks, angle grinders, acetylene tanks chained to the wall, a heavy workbench. Workshop fluorescent light mixed with orange glow from a pilot light. Metal shavings on the concrete floor. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A battle-scarred chrome android lying on a white medical stretcher - white sheets, chrome handles - being carried by two workers in blue overalls and heavy boots through the open roll-up door of a kaynakci workshop. The android's blue eyes barely open. Inside the workshop: walls lined with welding masks hanging from hooks, angle grinders, acetylene tanks chained to the wall, a heavy workbench. Workshop fluorescent light mixed with orange glow from a pilot light. Metal shavings on the concrete floor. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -682,7 +682,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Two-figure composition. Standing figure over lying figure. Workshop bench as operating table.
 
 **Text Prompt:**
-> A kaynakçı (welder) standing over a battle-scarred chrome android lying on a heavy metal workbench. The kaynakçı wears a white doctor's coat over blue work coveralls, sleeves pushed up, forearms scarred with burn marks. A welding mask flipped up on his head. He holds a welding torch in one hand, studying the chrome body below. Vice grip on one end of the bench, metal shavings swept to the edges. Workshop fluorescent overhead, warm orange glow from the welding torch. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A kaynakci (welder) standing over a battle-scarred chrome android lying on a heavy metal workbench. The kaynakci wears a white doctor's coat over blue work coveralls, sleeves pushed up, forearms scarred with burn marks. A welding mask flipped up on his head. He holds a welding torch in one hand, studying the chrome body below. Vice grip on one end of the bench, metal shavings swept to the edges. Workshop fluorescent overhead, warm orange glow from the welding torch. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -708,7 +708,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Composition Notes:** Wide interior-to-exterior shot. Full workshop visible. Open roll-up door showing night exterior. Layered depth.
 
 **Text Prompt:**
-> Wide shot of a kaynakçı workshop at night. A battle-scarred chrome android lying still on a heavy workbench, an IV drip of amber grease connected to his forearm. The kaynakçı-doctor in white coat over coveralls standing beside the bench, arms crossed, watching. Workshop interior: welding equipment, acetylene tanks, tools hanging on walls, oil-stained floor. Through the open roll-up door: the sanayi sitesi exterior at night, a single buzzing fluorescent above the entrance. A stray cat sitting by the door. Black sky. Silence. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of a kaynakci workshop at night. A battle-scarred chrome android lying still on a heavy workbench, an IV drip of amber grease connected to his forearm. The kaynakci-doctor in white coat over coveralls standing beside the bench, arms crossed, watching. Workshop interior: welding equipment, acetylene tanks, tools hanging on walls, oil-stained floor. Through the open roll-up door: the sanayi sitesi exterior at night, a single buzzing fluorescent above the entrance. A stray cat sitting by the door. Black sky. Silence. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

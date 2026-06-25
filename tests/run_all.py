@@ -9,7 +9,8 @@ Check groups:
   1. Naming convention      — file/folder names obey the convention
   2. Pipeline integrity     — no silently-skipped pipeline steps
   3. Visual prompt sweep    — suffix · forbidden aesthetics · character phase · ref integrity
-  4. Validator meta-tests   — grade the graders (fixtures + both-directions proofs)
+  4. Prompt hygiene         — model-facing prompt strings are plain-English ASCII (scoped)
+  5. Validator meta-tests   — grade the graders (fixtures + both-directions proofs)
 
 Dependencies: standard library only. No `pip install`, nothing to pin at the
 package level — the strongest form of dependency hygiene. The toolchain (Python
@@ -26,6 +27,7 @@ CHECK_GROUPS = [
     ("Naming convention",    [sys.executable, "tests/naming_check.py", "--full"]),
     ("Pipeline integrity",   [sys.executable, "tests/pipeline_integrity.py", "--full"]),
     ("Visual prompt sweep",  [sys.executable, "tests/visual_prompt_validator.py", "--full"]),
+    ("Prompt hygiene",       [sys.executable, "tests/prompt_hygiene_lint.py", "--full"]),
     ("Validator meta-tests", [sys.executable, "-m", "unittest", "tests.test_validators"]),
 ]
 

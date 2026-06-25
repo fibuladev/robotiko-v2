@@ -260,8 +260,18 @@ After any correction from the human:
 - **RULE:** GOVERNANCE IS HONEST ABOUT GAPS — A green CI run does NOT mean every
   Golden Rule is enforced. The Invariant Coverage Matrix marks each invariant as
   machine-checked / heuristic / human-gated / GAP. Anti-spawn phrasing, the eye-glow
-  rule, the motion video-suffix, and cultural attribution are currently GAPS — not
-  enforced. Don't imply coverage you don't have. (TAKE 06)
+  rule, and the motion video-suffix are currently GAPS — not enforced. Don't imply
+  coverage you don't have. (TAKE 06)
+- **RULE:** WHEN YOUR OWN RULES CONTRADICT, SCOPE BY AUDIENCE — master.md REQUIRES the
+  sanctioned Turkish attribution (names like Hacı Bektaş Veli, labels like "Turkish
+  wisdom tradition"); production requires model-facing prompts to be plain-English
+  ASCII. The contradiction dissolves once you scope by *who reads the string*: canon
+  and direction notes (concept notes, dramaturgy, musical metadata, and the
+  Dramaturgy Reference / Composition Notes lines INSIDE a visual-prompts file) keep
+  the attribution; only the Text Prompt / Motion Prompt blockquotes must be ASCII.
+  `prompt_hygiene_lint.py` reads ONLY those blockquotes and NEVER opens master.md or
+  the direction notes — the canon is never punished. A scoped check is the resolution
+  to a self-contradiction, not a compromise of it. ([ADR 0006](../_management/adr/0006-scoped-prompt-hygiene.md), TAKE 06)
 
 ---
 

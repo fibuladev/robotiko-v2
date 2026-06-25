@@ -152,7 +152,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Barely perceptible zoom into the warm domestic interior. Amber lamplight flickers on rough plaster walls, steam rising from çay glasses, dust motes drifting through the light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Barely perceptible zoom into the warm domestic interior. Amber lamplight flickers on rough plaster walls, steam rising from cay glasses, dust motes drifting through the light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S01b (The Tension)
 
@@ -313,7 +313,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The frame holds on the weathered face, amber staff light glowing warm on the right edge. The eyes hold steady, unblinking — heavy film grain over every surface. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The frame holds on the weathered face, amber staff light glowing warm on the right edge. The eyes hold steady, unblinking - heavy film grain over every surface. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -338,7 +338,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the airplane window. Anatolian patchwork landscape drifts below — brown earth, ribbon roads, scattered villages. A faint chrome reflection shimmers in the scratched plastic. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the airplane window. Anatolian patchwork landscape drifts below - brown earth, ribbon roads, scattered villages. A faint chrome reflection shimmers in the scratched plastic. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -363,7 +363,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Slow pan right through the airplane cabin. Excited travelers — mixed men and women — lean across aisles pointing out windows, the chrome android in the window seat. Fluorescent cabin light mixes with golden window light in parallel stripes. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pan right through the airplane cabin. Excited travelers - mixed men and women - lean across aisles pointing out windows, the chrome android in the window seat. Fluorescent cabin light mixes with golden window light in parallel stripes. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -387,7 +387,7 @@
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
-> Dolly out as the chrome android strides through automatic glass doors. Travelers — mixed men and women — pour through behind him. Flat fluorescent light reflects off scuffed floor tiles. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Dolly out as the chrome android strides through automatic glass doors. Travelers - mixed men and women - pour through behind him. Flat fluorescent light reflects off scuffed floor tiles. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -411,7 +411,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Pan right following the chrome android on the sidewalk. Concrete apartment blocks and dusty shop signs pass behind. Travelers — mixed men and women — follow at a distance. Golden hour light on concrete. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Pan right following the chrome android on the sidewalk. Concrete apartment blocks and dusty shop signs pass behind. Travelers - mixed men and women - follow at a distance. Golden hour light on concrete. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -483,7 +483,7 @@
 **Camera Move:** Handheld
 
 **Motion Prompt:**
-> Handheld shake — a group of aggressive men grab and violently shake the chrome android, pulling his arms and torso. In the background, young travelers recoil in fear, watching helplessly. Dust rising, shuttered shops behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Handheld shake - a group of aggressive men grab and violently shake the chrome android, pulling his arms and torso. In the background, young travelers recoil in fear, watching helplessly. Dust rising, shuttered shops behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -512,7 +512,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Pan right following the landscape through the dirty dolmuş window. Concrete gives way to open fields and distant minarets, golden road light cycling through the glass. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Pan right following the landscape through the dirty dolmus window. Concrete gives way to open fields and distant minarets, golden road light cycling through the glass. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S13b (Alone)
 
@@ -553,7 +553,7 @@
 **Camera Move:** Pan Left
 
 **Motion Prompt:**
-> Pan left across the outdoor wedding. A halay circle — mixed men and women — dances in dusty unison under colored lights strung between walnut trees. The chrome android watches from the edge. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Pan left across the outdoor wedding. A halay circle - mixed men and women - dances in dusty unison under colored lights strung between walnut trees. The chrome android watches from the edge. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -577,7 +577,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Wedding guests — mixed men and women — fire rifles into the amber sky, muzzle flashes bright against sunset. A spark flies off the chrome android's cheek where a bullet grazes metal, gunsmoke haze mixing with golden evening light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Wedding guests - mixed men and women - fire rifles into the amber sky, muzzle flashes bright against sunset. A spark flies off the chrome android's cheek where a bullet grazes metal, gunsmoke haze mixing with golden evening light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -602,7 +602,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom into the dusty road bathed in unnatural amber light. The long staff-shaped shadow stretches across the road — maintain as a shadow with no visible source, do not resolve into a physical figure. Dust drifts through amber air. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom into the dusty road bathed in unnatural amber light. The long staff-shaped shadow stretches across the road - maintain as a shadow with no visible source, do not resolve into a physical figure. Dust drifts through amber air. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -673,7 +673,7 @@
 **Camera Move:** Pan Left
 
 **Motion Prompt:**
-> Pan left across the Black Sea coast. Deep green terraced hills, gray stone buildings, low clouds hugging peaks. The chrome android steps off a dolmuş, small against the lush green landscape. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Pan left across the Black Sea coast. Deep green terraced hills, gray stone buildings, low clouds hugging peaks. The chrome android steps off a dolmus, small against the lush green landscape. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -697,7 +697,7 @@
 **Camera Move:** Handheld
 
 **Motion Prompt:**
-> Handheld camera. A car screeches to a halt — tire marks steaming on wet asphalt. The chrome android freezes mid-step on the crosswalk, car door swinging open. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Handheld camera. A car screeches to a halt - tire marks steaming on wet asphalt. The chrome android freezes mid-step on the crosswalk, car door swinging open. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -774,7 +774,7 @@
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Dolly in along the neon-lit tourist strip. The chrome android and the four men in black vests remain in their exact positions as the camera approaches. The men hold their smiles, very slight natural head tilts. Neon pinks and greens reflect off chrome. The "Sultan's Bar" and "Rakı & Shisha" signs flicker faintly. Background crowd remains static. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Dolly in along the neon-lit tourist strip. The chrome android and the four men in black vests remain in their exact positions as the camera approaches. The men hold their smiles, very slight natural head tilts. Neon pinks and greens reflect off chrome. The "Sultan's Bar" and "Raki & Shisha" signs flicker faintly. Background crowd remains static. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S22b (Naive Gratitude)
 
@@ -792,7 +792,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The chrome android and the four men in black vests remain in their exact positions. The robot's head slowly pans from left to right, blue eyes glowing steadily. The men maintain their smiles with very slight, natural head nods. The neon "Sultan's Bar" and "Rakı & Shisha" signs have a faint, realistic flicker. Background remains static. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The chrome android and the four men in black vests remain in their exact positions. The robot's head slowly pans from left to right, blue eyes glowing steadily. The men maintain their smiles with very slight, natural head nods. The neon "Sultan's Bar" and "Raki & Shisha" signs have a faint, realistic flicker. Background remains static. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -892,7 +892,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom in along a narrow neon-lit bar street. A mustachioed man in a black vest walks beside the chrome android, guiding him forward. Neon signs glow pink, green, and blue on both sides — Sultan's Bar, Rakı & Shisha. Wet cobblestones reflect the lights. Smoke drifts between outdoor café tables. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom in along a narrow neon-lit bar street. A mustachioed man in a black vest walks beside the chrome android, guiding him forward. Neon signs glow pink, green, and blue on both sides - Sultan's Bar, Raki & Shisha. Wet cobblestones reflect the lights. Smoke drifts between outdoor cafe tables. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S23b (Dusk to Night — Transition)
 
@@ -909,7 +909,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Static shot, empty bar street at dusk. The sky darkens gradually from warm twilight to deep night. Neon signs grow brighter as daylight fades — pinks, greens, blues intensifying. Wet cobblestone reflections shift from warm amber to cold neon. Smoke thickens in the dimming light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Static shot, empty bar street at dusk. The sky darkens gradually from warm twilight to deep night. Neon signs grow brighter as daylight fades - pinks, greens, blues intensifying. Wet cobblestone reflections shift from warm amber to cold neon. Smoke thickens in the dimming light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -980,7 +980,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Amber light seeps upward through ground cracks, casting warm glow on the chrome android from below. A staff shadow stretches across the brick wall — maintain as a shadow with no physical source. Night alley, heavy atmosphere. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Amber light seeps upward through ground cracks, casting warm glow on the chrome android from below. A staff shadow stretches across the brick wall - maintain as a shadow with no physical source. Night alley, heavy atmosphere. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1077,7 +1077,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Pan right following the chrome android in full sprint along a highway shoulder. Background landscape blurring past — smeared buildings, road signs, amber undertone in the sky. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Pan right following the chrome android in full sprint along a highway shoulder. Background landscape blurring past - smeared buildings, road signs, amber undertone in the sky. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1149,7 +1149,7 @@
 **Camera Move:** Handheld
 
 **Motion Prompt:**
-> Handheld shake inside a packed metrobüs. Human bodies — mixed men and women — press against the chrome android from all sides, harsh fluorescent overhead. Claustrophobic compression, body heat haze. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Handheld shake inside a packed metrobus. Human bodies - mixed men and women - press against the chrome android from all sides, harsh fluorescent overhead. Claustrophobic compression, body heat haze. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1173,7 +1173,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the chrome android bent and compressed by the crowd — mixed men and women pressing from all sides, completely indifferent. Chrome shoulders caved, head forced down, blue eyes barely visible. Harsh fluorescent, no space, no air. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the chrome android bent and compressed by the crowd - mixed men and women pressing from all sides, completely indifferent. Chrome shoulders caved, head forced down, blue eyes barely visible. Harsh fluorescent, no space, no air. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1197,7 +1197,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The metrobüs interior floods with warm amber light replacing every fluorescent tube — the entire space glowing golden and supernatural. The chrome android folded in the crowd, bathed in amber, passengers unaware. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The metrobus interior floods with warm amber light replacing every fluorescent tube - the entire space glowing golden and supernatural. The chrome android folded in the crowd, bathed in amber, passengers unaware. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1271,7 +1271,7 @@
 **Camera Move:** Handheld
 
 **Motion Prompt:**
-> Handheld — an ambulance with rotating siren lights idles in front of a welding workshop with a "Kaynakçı Hikmet" sign. Tire stacks, parked cars, welding sparks glowing inside the shop, oil-stained asphalt, siren reflections on concrete. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Handheld - an ambulance with rotating siren lights idles in front of a welding workshop with a "Kaynakci Hikmet" sign. Tire stacks, parked cars, welding sparks glowing inside the shop, oil-stained asphalt, siren reflections on concrete. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1295,7 +1295,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Static shot at the workshop entrance. Two workers in blue overalls stand with the chrome android on a metal stretcher. The android slowly raises his head, looking around in confusion. Welding sparks glow on the left, "Kaynakçı Hikmet" sign overhead. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Static shot at the workshop entrance. Two workers in blue overalls stand with the chrome android on a metal stretcher. The android slowly raises his head, looking around in confusion. Welding sparks glow on the left, "Kaynakci Hikmet" sign overhead. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1320,7 +1320,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The kaynakçı in a white coat and welding mask works on the chrome android lying on the workbench — welding torch in hand, orange sparks flying from the chrome body. Fluorescent tube overhead, dark workshop background, smoke rising. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The kaynakci in a white coat and welding mask works on the chrome android lying on the workbench - welding torch in hand, orange sparks flying from the chrome body. Fluorescent tube overhead, dark workshop background, smoke rising. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1374,7 +1374,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Slow zoom out from the chrome android standing upright, IV tube still connected to his arm, grease bag on the stand beside him. The kaynakçı stands nearby with arms crossed, watching. Workshop tools, acetylene tanks, fluorescent light overhead. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom out from the chrome android standing upright, IV tube still connected to his arm, grease bag on the stand beside him. The kaynakci stands nearby with arms crossed, watching. Workshop tools, acetylene tanks, fluorescent light overhead. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S44b (The Workshop)
 
@@ -1391,7 +1391,7 @@
 **Camera Move:** Pan Left
 
 **Motion Prompt:**
-> Pan left revealing the full workshop — the chrome android stands upright with IV still attached, the kaynakçı beside him with arms crossed. Welding equipment on walls, acetylene tanks, fluorescent light overhead, smoke drifting. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Pan left revealing the full workshop - the chrome android stands upright with IV still attached, the kaynakci beside him with arms crossed. Welding equipment on walls, acetylene tanks, fluorescent light overhead, smoke drifting. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip C — S44c (The Workshop Exterior)
 
@@ -1408,7 +1408,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Slow zoom out from the "Kaynakçı Hikmet" workshop entrance at night. Warm light spills from inside, tire stacks on the right, oil-stained asphalt glistening, city skyline glowing in the distance. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom out from the "Kaynakci Hikmet" workshop entrance at night. Warm light spills from inside, tire stacks on the right, oil-stained asphalt glistening, city skyline glowing in the distance. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip D — S44d (The Widest Frame — Final Gong)
 
@@ -1425,7 +1425,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Widest framing — the sanayi sitesi stretches into night, warm light from the workshop doorway, tire stacks, dark industrial silhouettes against the city skyline. Everything slowly fades darker. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Widest framing - the sanayi sitesi stretches into night, warm light from the workshop doorway, tire stacks, dark industrial silhouettes against the city skyline. Everything slowly fades darker. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

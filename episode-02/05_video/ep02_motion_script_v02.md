@@ -127,7 +127,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the chrome android at the command console. The android leans slightly forward, studying the backlit map. Amber route lines pulse in sequence across the console surface — each line brightens then fades. Analog dials and toggle switches flicker with amber indicator light. Dust motes drift through the overhead light cone falling on chrome shoulders. The zoom tightens from the wide room toward the commander and his glowing map. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow zoom toward the chrome android at the command console. The android leans slightly forward, studying the backlit map. Amber route lines pulse in sequence across the console surface - each line brightens then fades. Analog dials and toggle switches flicker with amber indicator light. Dust motes drift through the overhead light cone falling on chrome shoulders. The zoom tightens from the wide room toward the commander and his glowing map. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -153,7 +153,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the chrome android at the podium. Holographic data streams cascade downward behind him. Dark abstract audience silhouettes — mixed men and women — shift subtly in the darkness, maintain as featureless dark shapes, do not resolve into detailed figures. The golden spotlight narrows imperceptibly. Volumetric fog drifts upward from the floor. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow zoom toward the chrome android at the podium. Holographic data streams cascade downward behind him. Dark abstract audience silhouettes - mixed men and women - shift subtly in the darkness, maintain as featureless dark shapes, do not resolve into detailed figures. The golden spotlight narrows imperceptibly. Volumetric fog drifts upward from the floor. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -229,7 +229,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Steady dolly push toward the podium. The "SAVE THE PLANET" globe graphic rotates slowly. Through tall windows, jet exhaust persists as a slow plume. Abstract suited silhouettes — mixed men and women — shift slightly in their seats, maintain as featureless dark shapes, do not add facial detail. Fluorescent tubes above flicker once. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Steady dolly push toward the podium. The "SAVE THE PLANET" globe graphic rotates slowly. Through tall windows, jet exhaust persists as a slow plume. Abstract suited silhouettes - mixed men and women - shift slightly in their seats, maintain as featureless dark shapes, do not add facial detail. Fluorescent tubes above flicker once. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -254,7 +254,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Zoom tightening on the chrome android's midsection. Chrome abdominal plates vibrate visibly — rhythmic tremor. A hydraulic fluid bead on the temple descends slowly. Dark abstract audience silhouettes — mixed men and women — lean forward slightly, maintain as featureless dark shapes, do not resolve into detailed figures. Spotlight shifts from gold to warm amber. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Zoom tightening on the chrome android's midsection. Chrome abdominal plates vibrate visibly - rhythmic tremor. A hydraulic fluid bead on the temple descends slowly. Dark abstract audience silhouettes - mixed men and women - lean forward slightly, maintain as featureless dark shapes, do not resolve into detailed figures. Spotlight shifts from gold to warm amber. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -279,7 +279,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Frame holds still. Steam bursts from chrome seam lines in radial jets. Orange sparks cascade outward. Papers spiral upward. Abstract audience silhouettes — mixed men and women — topple backward in their seats, maintain as featureless dark shapes, do not add realistic features. The "SAVE THE PLANET" screen behind the podium flickers and dies. The eruption is sudden and comedic — a burst, not a destruction. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Frame holds still. Steam bursts from chrome seam lines in radial jets. Orange sparks cascade outward. Papers spiral upward. Abstract audience silhouettes - mixed men and women - topple backward in their seats, maintain as featureless dark shapes, do not add realistic features. The "SAVE THE PLANET" screen behind the podium flickers and dies. The eruption is sudden and comedic - a burst, not a destruction. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -329,7 +329,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Pan right following the chrome android's stride along the waterfront. Neon signs flicker — startup logos, crypto tickers, wellness apps. Fog drifts across the Golden Gate silhouette in the distance. Wet pavement reflections of pink and green neon shimmer beneath chrome feet. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Pan right following the chrome android's stride along the waterfront. Neon signs flicker - startup logos, crypto tickers, wellness apps. Fog drifts across the Golden Gate silhouette in the distance. Wet pavement reflections of pink and green neon shimmer beneath chrome feet. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -354,7 +354,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Dolly push into the narrow neon-lit alley. The holographic pitch deck rotates, casting blue-white light. "$GURU" token charts pulse upward. A switchblade in the disheveled figure's hand catches neon light — single glint. The figure's eyes track downward toward the chrome leg. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Dolly push into the narrow neon-lit alley. The holographic pitch deck rotates, casting blue-white light. "$GURU" token charts pulse upward. A switchblade in the disheveled figure's hand catches neon light - single glint. The figure's eyes track downward toward the chrome leg. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -379,7 +379,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Sparks trail from the severed chrome joint rightward. The holographic pitch deck continues spinning, untouched. Pan follows the escaping figure clutching the metal leg while the chrome android holds a one-legged pose in frame left — perfectly still, bewildered. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Sparks trail from the severed chrome joint rightward. The holographic pitch deck continues spinning, untouched. Pan follows the escaping figure clutching the metal leg while the chrome android holds a one-legged pose in frame left - perfectly still, bewildered. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -430,7 +430,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Frame holds still. Left panel: emojis float upward, Instagram filter pulses with warm color. Right panel: a rat crosses the foreground, trash shifts on the ground. Center: the chrome android's body reflects both realities — warm gold from the left, cold neon from the right. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Frame holds still. Left panel: emojis float upward, Instagram filter pulses with warm color. Right panel: a rat crosses the foreground, trash shifts on the ground. Center: the chrome android's body reflects both realities - warm gold from the left, cold neon from the right. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -476,7 +476,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Pan across the chrome android's body as app projections cascade across his surface — "YOU WILL RISE!" gradient scrolls from pink to white rightward. Multiple app color cycles flash across the chrome surface. The pan reveals every surface of the body covered in projected light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Pan across the chrome android's body as app projections cascade across his surface - "YOU WILL RISE!" gradient scrolls from pink to white rightward. Multiple app color cycles flash across the chrome surface. The pan reveals every surface of the body covered in projected light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip C — S14c (Isolation Reveal)
 
@@ -519,7 +519,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Slow zoom out reveals the salt flat's immensity — the chrome android shrinks in the frame. His reflection ripples in shallow water. Heat shimmer distorts the horizon in slow organic waves. In the extreme distance, a thin vertical line — possibly a mirage — is barely visible. Bruised purple-orange sky above. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow zoom out reveals the salt flat's immensity - the chrome android shrinks in the frame. His reflection ripples in shallow water. Heat shimmer distorts the horizon in slow organic waves. In the extreme distance, a thin vertical line - possibly a mirage - is barely visible. Bruised purple-orange sky above. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -545,7 +545,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow push toward the Congo destination marker. Two completed routes glow steady amber. The Congo marker pulse brightens and fades rhythmically. Map surface shows first signs of age — coffee ring stain catches light. Film grain intensifies. Dust motes drift through the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Slow push toward the Congo destination marker. Two completed routes glow steady amber. The Congo marker pulse brightens and fades rhythmically. Map surface shows first signs of age - coffee ring stain catches light. Film grain intensifies. Dust motes drift through the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -570,7 +570,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Crane Down
 
 **Motion Prompt:**
-> Descending crane from above the mine rim — revealing terraced depth layer by layer. Red dust particles hang in angled light shafts. Tiny abstract figures — mixed men and women — on the terraces shift incrementally, maintain as distant indistinct shapes, do not resolve into detailed people. A green fitness tracker glow pulses on the chrome android's wrist — the only non-red light in the scene. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Descending crane from above the mine rim - revealing terraced depth layer by layer. Red dust particles hang in angled light shafts. Tiny abstract figures - mixed men and women - on the terraces shift incrementally, maintain as distant indistinct shapes, do not resolve into detailed people. A green fitness tracker glow pulses on the chrome android's wrist - the only non-red light in the scene. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -666,7 +666,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Zoom pushes past the chrome android toward the emerging industrial landscape ahead — power lines and smokestacks materialize from yellow-green haze. The color shift from red-ochre to sickly yellow-green is visible across the frame. The haze thickens as the zoom advances. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Zoom pushes past the chrome android toward the emerging industrial landscape ahead - power lines and smokestacks materialize from yellow-green haze. The color shift from red-ochre to sickly yellow-green is visible across the frame. The haze thickens as the zoom advances. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -692,7 +692,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Push toward the Bangladesh marker. Three amber routes glow steady. The Bangladesh marker pulse is more urgent — flickering faster than previous markers. New creases and a torn corner are visible on the map. Halftone dots smear. The map's damage is accumulating. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Push toward the Bangladesh marker. Three amber routes glow steady. The Bangladesh marker pulse is more urgent - flickering faster than previous markers. New creases and a torn corner are visible on the map. Halftone dots smear. The map's damage is accumulating. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -742,7 +742,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Hydraulic press slams downward — catches fluorescent light on its edge, flash of white on impact. Sparks shower from the chrome impact point. Fluorescent tubes flicker from the vibration. When the press lifts: a fist-sized dent is visible on the right torso. The chrome android shrugs casually. The factory continues unchanged around him. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Hydraulic press slams downward - catches fluorescent light on its edge, flash of white on impact. Sparks shower from the chrome impact point. Fluorescent tubes flicker from the vibration. When the press lifts: a fist-sized dent is visible on the right torso. The chrome android shrugs casually. The factory continues unchanged around him. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -771,7 +771,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The split-screen composition holds static while its contents degrade. Left panel: digital artifacts cascade, buffering circles spin, filter glitches reveal the shoulder scratch beneath. Right panel: factory steam rolls across damaged torso, a child's "HELP" sign sways. Center: the chrome android's arms raise asymmetrically — the dented side pulls differently. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> The split-screen composition holds static while its contents degrade. Left panel: digital artifacts cascade, buffering circles spin, filter glitches reveal the shoulder scratch beneath. Right panel: factory steam rolls across damaged torso, a child's "HELP" sign sways. Center: the chrome android's arms raise asymmetrically - the dented side pulls differently. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip B — S24b (Reality Side Zoom)
 
@@ -788,7 +788,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Zoom pushes toward the right panel — the reality side. The filtered Instagram panel slides off-frame to the left. Factory steam, the child's sign, and the damaged chrome torso fill the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Zoom pushes toward the right panel - the reality side. The filtered Instagram panel slides off-frame to the left. Factory steam, the child's sign, and the damaged chrome torso fill the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip C — S24c (Center: The Guru Cracking)
 
@@ -834,7 +834,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Push toward the Paris marker — faster zoom than previous map transitions. Four amber routes blaze across the damaged surface. Paris marker pulse is erratic and rapid. Fold lines are becoming tears — paper fibers visibly separating. Halftone printing bleeds into itself. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Push toward the Paris marker - faster zoom than previous map transitions. Four amber routes blaze across the damaged surface. Paris marker pulse is erratic and rapid. Fold lines are becoming tears - paper fibers visibly separating. Halftone printing bleeds into itself. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip B — S25b (Map Close-Up)
 
@@ -851,7 +851,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Tight framing on the Paris marker and surrounding map damage. Paper grain visible, smearing ink, tearing fold lines at texture-level detail. The Paris pulse fills a large portion of the frame. The map surface shows extreme wear — tears, ink bleeding, paper fibers separating. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Tight framing on the Paris marker and surrounding map damage. Paper grain visible, smearing ink, tearing fold lines at texture-level detail. The Paris pulse fills a large portion of the frame. The map surface shows extreme wear - tears, ink bleeding, paper fibers separating. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -954,7 +954,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The map holds in its fullest deterioration. Five routes glow faintly through the damage — amber barely visible through charring. The final destination marker pulses RED, not amber. The red pulses slowly, like a heartbeat. No movement — just the pulse and the heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> The map holds in its fullest deterioration. Five routes glow faintly through the damage - amber barely visible through charring. The final destination marker pulses RED, not amber. The red pulses slowly, like a heartbeat. No movement - just the pulse and the heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip B — S29b (Slow Approach)
 
@@ -988,7 +988,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Extreme close-up of the map's texture. Halftone dots appear large as coins, paper fibers visible as individual strands. The red pulse from the war zone marker fills the frame with rhythmic red light. Minimal zoom — the texture detail provides the visual interest. Dust particles settle on the deteriorated surface. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Extreme close-up of the map's texture. Halftone dots appear large as coins, paper fibers visible as individual strands. The red pulse from the war zone marker fills the frame with rhythmic red light. Minimal zoom - the texture detail provides the visual interest. Dust particles settle on the deteriorated surface. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip D — S29d (Red Pulse Isolation)
 
@@ -1005,7 +1005,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Tight framing on the red pulse. The marker fills a quarter of the frame, beating slowly, hypnotically. The surrounding charred paper is near-abstract — textured like a landscape of decay. The red pulse continues alone against the deteriorated surface. Heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Tight framing on the red pulse. The marker fills a quarter of the frame, beating slowly, hypnotically. The surrounding charred paper is near-abstract - textured like a landscape of decay. The red pulse continues alone against the deteriorated surface. Heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -1051,7 +1051,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The frame holds at its widest. The chrome android is small in the devastation, arms still open. A new distant explosion blooms slowly — an orange-black cloud against gray sky. Rubble does not move. Complete visual stillness. The figure remains motionless in the ruined landscape. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> The frame holds at its widest. The chrome android is small in the devastation, arms still open. A new distant explosion blooms slowly - an orange-black cloud against gray sky. Rubble does not move. Complete visual stillness. The figure remains motionless in the ruined landscape. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -1129,7 +1129,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Frame does not move. Spotlight does not shift. The chrome android holds a pose — arms raised, mechanical, without conviction. All damage visible: shoulder scrape, torso dent, exposed back sensor wires, missing right ear sparking intermittently. Left eye blue, right eye red. No smile. Sparks from the ear cavity flicker at irregular intervals. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Frame does not move. Spotlight does not shift. The chrome android holds a pose - arms raised, mechanical, without conviction. All damage visible: shoulder scrape, torso dent, exposed back sensor wires, missing right ear sparking intermittently. Left eye blue, right eye red. No smile. Sparks from the ear cavity flicker at irregular intervals. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip B — S33b (The Damage Inventory)
 
@@ -1192,7 +1192,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Continued pullback from a wider starting position. The spotlight cone is clearly visible against the void — a shrinking circle of light. The chrome android's damage details are harder to read at this distance — becoming a silhouette with points of light: dim blue eye, steady red eye, dying ear sparks. The zoom pulls back steadily. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Continued pullback from a wider starting position. The spotlight cone is clearly visible against the void - a shrinking circle of light. The chrome android's damage details are harder to read at this distance - becoming a silhouette with points of light: dim blue eye, steady red eye, dying ear sparks. The zoom pulls back steadily. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip C — S34c (Near-Silhouette)
 
@@ -1209,7 +1209,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The frame holds at maximum distance. The chrome android is a small figure in a vast dark frame — the spotlight cone barely contains him. Only points of light remain: dim blue eye, steady red eye, last ember from the ear. The visual darkens incrementally. Near-darkness approaches. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> The frame holds at maximum distance. The chrome android is a small figure in a vast dark frame - the spotlight cone barely contains him. Only points of light remain: dim blue eye, steady red eye, last ember from the ear. The visual darkens incrementally. Near-darkness approaches. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 ---
 
@@ -1238,7 +1238,7 @@ This suffix is NOT included in the individual motion prompts below (to keep them
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Near-total darkness. Faint points of light — one blue, one red — glow in the void. A single spark flickers and dies. Heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
+> Near-total darkness. Faint points of light - one blue, one red - glow in the void. A single spark flickers and dies. Heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field.
 
 #### Clip B — S35b (Silence)
 

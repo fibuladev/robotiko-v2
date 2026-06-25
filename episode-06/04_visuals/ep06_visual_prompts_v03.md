@@ -214,7 +214,7 @@ Desk scenes MUST specify: `profile`, `three-quarter rear`, `from behind`, or `fr
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of a CRT monitor screen. Green text on black — an email interface with command options at the bottom. Faint scan lines. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a CRT monitor screen. Green text on black - an email interface with command options at the bottom. Faint scan lines. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -282,7 +282,7 @@ Desk scenes MUST specify: `profile`, `three-quarter rear`, `from behind`, or `fr
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of the pristine android's face in focus. Behind him, out of focus: collapsed chrome androids at distant desks — one slumped face-down, another on its knees. Shallow depth of field. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of the pristine android's face in focus. Behind him, out of focus: collapsed chrome androids at distant desks - one slumped face-down, another on its knees. Shallow depth of field. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -385,7 +385,7 @@ Desk scenes MUST specify: `profile`, `three-quarter rear`, `from behind`, or `fr
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium shot of two adjacent desks. Left desk empty — chair pushed back, CRT dark. On the right, the pristine android sitting alone, profile view, facing his screen. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot of two adjacent desks. Left desk empty - chair pushed back, CRT dark. On the right, the pristine android sitting alone, profile view, facing his screen. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

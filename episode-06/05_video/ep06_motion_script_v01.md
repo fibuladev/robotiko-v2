@@ -150,7 +150,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The dead CRT screen barely catches the ambient fluorescent light. A damaged chrome android's reflection — dimmed eyes, rust streaks down the jawline — is ghostly and still in the dark glass surface. Dust motes drift slowly in the cold air. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The dead CRT screen barely catches the ambient fluorescent light. A damaged chrome android's reflection - dimmed eyes, rust streaks down the jawline - is ghostly and still in the dark glass surface. Dust motes drift slowly in the cold air. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -174,7 +174,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward a chrome android's inner forearm resting on a cold desk surface. Four glowing amber tattoo-like etchings in sequence from wrist toward elbow — warm golden lines on damaged chrome, the only warm color in the cold frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward a chrome android's inner forearm resting on a cold desk surface. Four glowing amber tattoo-like etchings in sequence from wrist toward elbow - warm golden lines on damaged chrome, the only warm color in the cold frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -223,7 +223,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Completely still office interior. No movement anywhere — fluorescent lights hum, workstations empty, monitors dark. Absolute stillness, only the faintest atmospheric dust visible in the cold light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Completely still office interior. No movement anywhere - fluorescent lights hum, workstations empty, monitors dark. Absolute stillness, only the faintest atmospheric dust visible in the cold light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -297,7 +297,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Slow pan from left to right — from a damaged, rusted chrome android at his desk to a pristine, factory-fresh chrome android at the adjacent workstation. The contrast sharpens as the camera crosses: rust and sparks on the left, clean unmarked titanium on the right. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pan from left to right - from a damaged, rusted chrome android at his desk to a pristine, factory-fresh chrome android at the adjacent workstation. The contrast sharpens as the camera crosses: rust and sparks on the left, clean unmarked titanium on the right. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -345,7 +345,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Steady forward push down a corridor of identical retro workstations. Green CRT monitors flicker in sequence along the rows, fluorescent ceiling strips create rhythmic light-shadow bars. No characters — only the architecture of repetition. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Steady forward push down a corridor of identical retro workstations. Green CRT monitors flicker in sequence along the rows, fluorescent ceiling strips create rhythmic light-shadow bars. No characters - only the architecture of repetition. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -369,7 +369,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The pristine chrome android in profile at his workstation — completely still. Hands on keyboard, steady cold blue eyes scanning the CRT. Cold fluorescent side-light catches the unmarked titanium surface. No movement except the faintest green data scroll on the screen. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The pristine chrome android in profile at his workstation - completely still. Hands on keyboard, steady cold blue eyes scanning the CRT. Cold fluorescent side-light catches the unmarked titanium surface. No movement except the faintest green data scroll on the screen. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -419,7 +419,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward damaged chrome hands gripping the top edge of a bathroom stall partition. The right wrist is cracked, sparks dripping slowly down the grey metal surface. Exposed copper wires visible in the gap. The grip tightens — a barely perceptible squeeze. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward damaged chrome hands gripping the top edge of a bathroom stall partition. The right wrist is cracked, sparks dripping slowly down the grey metal surface. Exposed copper wires visible in the gap. The grip tightens - a barely perceptible squeeze. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -443,7 +443,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Close-up of a damaged chrome android's face in anguish — jaw wrenched open, chrome plates cracking at the mandible, eyes flickering rapidly between blue and red. Hydraulic fluid leaks from the eye sockets like tears. The head shakes with involuntary tremors. Cold fluorescent light from above, institutional bathroom tiles behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Close-up of a damaged chrome android's face in anguish - jaw wrenched open, chrome plates cracking at the mandible, eyes flickering rapidly between blue and red. Hydraulic fluid leaks from the eye sockets like tears. The head shakes with involuntary tremors. Cold fluorescent light from above, institutional bathroom tiles behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -468,7 +468,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward two chrome androids seated side by side at adjacent desks, both facing the camera. The left one is damaged — rusted, cracked, sparking. The right one is pristine — factory-fresh, unmarked. The closing distance sharpens the contrast between them. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward two chrome androids seated side by side at adjacent desks, both facing the camera. The left one is damaged - rusted, cracked, sparking. The right one is pristine - factory-fresh, unmarked. The closing distance sharpens the contrast between them. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -492,7 +492,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Slow pan across a desk surface — manila folders, a CRT casting green light over a keyboard, a coffee stain ring on titanium, a small oscillating desk fan. Cold fluorescent ambient light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pan across a desk surface - manila folders, a CRT casting green light over a keyboard, a coffee stain ring on titanium, a small oscillating desk fan. Cold fluorescent ambient light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -516,7 +516,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Crane Down
 
 **Motion Prompt:**
-> Gentle descending move looking down at a pristine android's meticulously organized workstation. Folders aligned, CRT showing orderly data columns, keyboard centered. Everything in position — pristine, efficient, lifeless. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Gentle descending move looking down at a pristine android's meticulously organized workstation. Folders aligned, CRT showing orderly data columns, keyboard centered. Everything in position - pristine, efficient, lifeless. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -565,7 +565,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the damaged chrome android's face in three-quarter view. His glitching eyes cycle through blue and red — then flash a single brief pulse of warm amber before snapping back to cold glitch. Atmospheric dust in the fluorescent light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the damaged chrome android's face in three-quarter view. His glitching eyes cycle through blue and red - then flash a single brief pulse of warm amber before snapping back to cold glitch. Atmospheric dust in the fluorescent light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -613,7 +613,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow, claustrophobic zoom into two chrome android faces inches apart — damaged and cracked on the left, pristine and unblemished on the right. Sparks from the damaged face reflect in the clean titanium surface. The gap between them closes as the camera pushes in. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow, claustrophobic zoom into two chrome android faces inches apart - damaged and cracked on the left, pristine and unblemished on the right. Sparks from the damaged face reflect in the clean titanium surface. The gap between them closes as the camera pushes in. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -637,7 +637,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Extreme close-up: a pristine chrome cheek plate, perfectly polished. In its curved surface, the warped reflection of a damaged, rusted android face is visible — cracks and rust rendered as dark smears in the clean metal. The only motion is the faint flicker of the reflected figure's glitching eyes. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Extreme close-up: a pristine chrome cheek plate, perfectly polished. In its curved surface, the warped reflection of a damaged, rusted android face is visible - cracks and rust rendered as dark smears in the clean metal. The only motion is the faint flicker of the reflected figure's glitching eyes. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -735,7 +735,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> A CRT monitor screen filling the frame — green phosphor text on black, an email interface. A cursor blinks at a reply field. Command options visible at the bottom in bright green capitals. Scan lines roll upward across the screen surface, the green text casting a faint glow on the surrounding desk edge. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A CRT monitor screen filling the frame - green phosphor text on black, an email interface. A cursor blinks at a reply field. Command options visible at the bottom in bright green capitals. Scan lines roll upward across the screen surface, the green text casting a faint glow on the surrounding desk edge. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -759,7 +759,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Slow forward push following a damaged chrome android walking away between rows of identical workstations. The figure's silhouette — one shoulder lower, protruding wires — moves steadily ahead. Fluorescent ceiling strips create rhythmic light-shadow bars across the body. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow forward push following a damaged chrome android walking away between rows of identical workstations. The figure's silhouette - one shoulder lower, protruding wires - moves steadily ahead. Fluorescent ceiling strips create rhythmic light-shadow bars across the body. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -784,7 +784,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward a damaged chrome android standing tall over a seated pristine android at a workstation. The standing figure looms — fractured shadow falling across the pristine worker's clean surface. The seated figure's head remains down. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward a damaged chrome android standing tall over a seated pristine android at a workstation. The standing figure looms - fractured shadow falling across the pristine worker's clean surface. The seated figure's head remains down. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -809,7 +809,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward a pristine chrome android in profile at his workstation, hands typing steadily on the keyboard, cold blue eyes on the CRT screen. On the curved chrome surface of his shoulder, a warped dark reflection of a damaged figure standing behind — rust and cracks rendered as distorted smears in the clean metal. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward a pristine chrome android in profile at his workstation, hands typing steadily on the keyboard, cold blue eyes on the CRT screen. On the curved chrome surface of his shoulder, a warped dark reflection of a damaged figure standing behind - rust and cracks rendered as distorted smears in the clean metal. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -883,7 +883,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the pristine chrome android's face in sharp focus. Behind him, slightly out of focus but visible: other chrome androids collapsed at distant desks — one slumped forward, another on the floor beside a toppled chair. The pristine android faces forward, cold blue eyes steady, unaware. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the pristine chrome android's face in sharp focus. Behind him, slightly out of focus but visible: other chrome androids collapsed at distant desks - one slumped forward, another on the floor beside a toppled chair. The pristine android faces forward, cold blue eyes steady, unaware. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -907,7 +907,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward an office ceiling — parallel rows of cold white fluorescent tube strips across institutional ceiling tiles. One single strip pulses with a faint amber warmth among the cold white ones, its light breathing subtly. Dust motes drift through the amber-tinted light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward an office ceiling - parallel rows of cold white fluorescent tube strips across institutional ceiling tiles. One single strip pulses with a faint amber warmth among the cold white ones, its light breathing subtly. Dust motes drift through the amber-tinted light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -932,7 +932,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the pristine chrome android's face. The optical apertures widen fractionally, jaw plates tighten — the first hint of expression on the factory-fresh surface. The blue eyes remain steady but widened. Atmospheric haze drifts at the edge of the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the pristine chrome android's face. The optical apertures widen fractionally, jaw plates tighten - the first hint of expression on the factory-fresh surface. The blue eyes remain steady but widened. Atmospheric haze drifts at the edge of the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -956,7 +956,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward two pristine chrome android hands at a mechanical keyboard. The left hand types steadily. The right hand trembles visibly — index finger hovering over a key, unable to press down, a clear vibration running through the wrist joint. Green CRT glow illuminates from above. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward two pristine chrome android hands at a mechanical keyboard. The left hand types steadily. The right hand trembles visibly - index finger hovering over a key, unable to press down, a clear vibration running through the wrist joint. Green CRT glow illuminates from above. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -981,7 +981,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward a large dark flat screen mounted on the wall of a small meeting room. Two chrome androids sit across a narrow table — one damaged, one pristine. Both faces overlap in the dark glass surface, the reflection merging cracked rust with clean titanium. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward a large dark flat screen mounted on the wall of a small meeting room. Two chrome androids sit across a narrow table - one damaged, one pristine. Both faces overlap in the dark glass surface, the reflection merging cracked rust with clean titanium. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1005,7 +1005,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Two chrome surfaces already visible in the frame — on the left, a damaged chest plate with cracks, rust, and exposed copper wires; on the right, a pristine chest plate, factory-sealed and clean. Both surfaces remain exactly as pictured. Subtle ambient light breathes slowly across both surfaces, catching different textures. Do not transform, morph, or replace either side. Both remain exactly as pictured. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Two chrome surfaces already visible in the frame - on the left, a damaged chest plate with cracks, rust, and exposed copper wires; on the right, a pristine chest plate, factory-sealed and clean. Both surfaces remain exactly as pictured. Subtle ambient light breathes slowly across both surfaces, catching different textures. Do not transform, morph, or replace either side. Both remain exactly as pictured. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1057,7 +1057,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> A damaged chrome android's silhouette fills the corridor doorway, backlit by dimmer light beyond. The damaged outline — cracked panels, protruding wires, one shoulder lower — is sharp against the light. Through the doorway behind, a distant chrome figure sits alone at a desk under cold fluorescent. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A damaged chrome android's silhouette fills the corridor doorway, backlit by dimmer light beyond. The damaged outline - cracked panels, protruding wires, one shoulder lower - is sharp against the light. Through the doorway behind, a distant chrome figure sits alone at a desk under cold fluorescent. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1082,7 +1082,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward two adjacent workstations. The left desk is empty — chair pushed back, small scorch marks on the surface, CRT monitor dark. At the right desk, a pristine chrome android sits alone, profile view, facing his screen. Fluorescent lights hum overhead. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward two adjacent workstations. The left desk is empty - chair pushed back, small scorch marks on the surface, CRT monitor dark. At the right desk, a pristine chrome android sits alone, profile view, facing his screen. Fluorescent lights hum overhead. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1137,7 +1137,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Slow pull outward from a collapsed chrome android on the office floor — on his knees between desk rows, head bowed. The figure grows smaller as the vast grid of empty workstations expands around him. Fluorescent lights indifferent overhead, heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pull outward from a collapsed chrome android on the office floor - on his knees between desk rows, head bowed. The figure grows smaller as the vast grid of empty workstations expands around him. Fluorescent lights indifferent overhead, heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S42b (Speed Ramp)
 
@@ -1155,7 +1155,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Slow pan across the vast office grid. Empty desks recede in all directions, fluorescent lights stretch in parallel lines. The collapsed chrome figure on the floor passes through the frame — a small disruption in the geometric pattern. Heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pan across the vast office grid. Empty desks recede in all directions, fluorescent lights stretch in parallel lines. The collapsed chrome figure on the floor passes through the frame - a small disruption in the geometric pattern. Heavy film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1184,7 +1184,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Slow pull outward from the extreme wide. The collapsed chrome android on the office floor is barely visible — a small disruption in the geometric desk pattern. Fluorescents dim gradually, shadows deepen, film grain thickens. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow pull outward from the extreme wide. The collapsed chrome android on the office floor is barely visible - a small disruption in the geometric desk pattern. Fluorescents dim gradually, shadows deepen, film grain thickens. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S43b
 
@@ -1201,7 +1201,7 @@ Average MS: **3.8** — deliberately lower than the Destruction-phase norm (5-7)
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The extreme wide office — nearly dark. The collapsed chrome figure barely distinguishable among the desk rows. Fluorescent lights at their dimmest, heavy coarse film grain, shadows consuming the frame. The image holds in near-darkness. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The extreme wide office - nearly dark. The collapsed chrome figure barely distinguishable among the desk rows. Fluorescent lights at their dimmest, heavy coarse film grain, shadows consuming the frame. The image holds in near-darkness. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

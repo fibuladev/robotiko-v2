@@ -133,7 +133,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> A vast still expanse of dark water under a twilight sky. Low fog drifts slowly across the water's surface, faint ripples catch cold light. Wet stone embankment glistens. Atmospheric breathing — fog moves, water ripples, nothing else. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A vast still expanse of dark water under a twilight sky. Low fog drifts slowly across the water's surface, faint ripples catch cold light. Wet stone embankment glistens. Atmospheric breathing - fog moves, water ripples, nothing else. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -165,7 +165,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android sits motionless on a wet bench at the water's edge, hunched, looking out over dark water. Fog drifts at knee level. His cracked reflection trembles in standing water beside the bench. Subtle atmospheric breathing only — fog moves, water ripples. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android sits motionless on a wet bench at the water's edge, hunched, looking out over dark water. Fog drifts at knee level. His cracked reflection trembles in standing water beside the bench. Subtle atmospheric breathing only - fog moves, water ripples. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S02b
 
@@ -232,7 +232,7 @@
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
-> The @Damaged chrome android walks slumped along a wet stone embankment at twilight, seen from the front three-quarter angle. Head bowed, shoulders folded, hands hidden in pockets. The camera retreats ahead of him — he walks toward the camera as it pulls back. Fog surrounds, wet pavement glistens. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android walks slumped along a wet stone embankment at twilight, seen from the front three-quarter angle. Head bowed, shoulders folded, hands hidden in pockets. The camera retreats ahead of him - he walks toward the camera as it pulls back. Fog surrounds, wet pavement glistens. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -264,7 +264,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> A wet city street at dusk. Blurred impressionistic silhouettes of mixed pedestrians flow past — a slow horizontal scan of the world moving through a cold night street. Wet asphalt reflects streetlight. Fog hangs low. No clear subject — the world flows past an empty space. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A wet city street at dusk. Blurred impressionistic silhouettes of mixed pedestrians flow past - a slow horizontal scan of the world moving through a cold night street. Wet asphalt reflects streetlight. Fog hangs low. No clear subject - the world flows past an empty space. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S04b
 
@@ -284,7 +284,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> A wet city street at dusk, camera still. Blurred silhouettes of mixed pedestrians drift slowly past. Wet asphalt pools reflect cold streetlight. Fog breathes. The composition holds on the empty center — the conspicuous absence. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A wet city street at dusk, camera still. Blurred silhouettes of mixed pedestrians drift slowly past. Wet asphalt pools reflect cold streetlight. Fog breathes. The composition holds on the empty center - the conspicuous absence. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -360,7 +360,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> From a medium-wide composition, the camera closes slowly on the @Damaged chrome android's face and upper body as he walks the wet street. His optical lenses dim and weaken, barely flickering blue-red — low charge. Cold dusk surrounds him, warm shopfront glow pooling on the wet pavement behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> From a medium-wide composition, the camera closes slowly on the @Damaged chrome android's face and upper body as he walks the wet street. His optical lenses dim and weaken, barely flickering blue-red - low charge. Cold dusk surrounds him, warm shopfront glow pooling on the wet pavement behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -413,7 +413,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android seated on a bench in darkness. A cold blue-white light beam from his optical lenses projects abstract flickering shapes into the damp fog — faceless, restless, scrolling. The projected light illuminates the fog, casting harsh cold glow on his damaged chrome. Fog drifts through the projected shapes. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android seated on a bench in darkness. A cold blue-white light beam from his optical lenses projects abstract flickering shapes into the damp fog - faceless, restless, scrolling. The projected light illuminates the fog, casting harsh cold glow on his damaged chrome. Fog drifts through the projected shapes. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -439,7 +439,7 @@
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
-> The @Damaged chrome android sits small beneath a massive wall of cold blue-white projected light — abstract flickering shapes filling the upper frame. The camera retreats steadily, the figure shrinking against the immensity of the cold projected feed. Dark waterside, fog. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android sits small beneath a massive wall of cold blue-white projected light - abstract flickering shapes filling the upper frame. The camera retreats steadily, the figure shrinking against the immensity of the cold projected feed. Dark waterside, fog. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -465,7 +465,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Abstract cold blue-white imagery churning across the frame — scrolling light fragments, flickering digital shapes. No figure, no warmth, no subject. The visual noise slowly recedes and dissolves, the cold glow fading. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Abstract cold blue-white imagery churning across the frame - scrolling light fragments, flickering digital shapes. No figure, no warmth, no subject. The visual noise slowly recedes and dissolves, the cold glow fading. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -497,7 +497,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android sits motionless at a desk before a CRT monitor in a cramped dark room. A cable plugs from the wall into his chassis. Cold blue-white screen glow washes his rusted body. Atmospheric breathing only — the screen flickers subtly, dust motes drift. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android sits motionless at a desk before a CRT monitor in a cramped dark room. A cable plugs from the wall into his chassis. Cold blue-white screen glow washes his rusted body. Atmospheric breathing only - the screen flickers subtly, dust motes drift. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S10b
 
@@ -537,7 +537,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> A slow horizontal scan of the cramped room — from the wall clock ticking to the CRT screen glowing cold to the cable running from wall socket into the @Damaged chrome android's chassis. Cold blue-white light, deep shadows. The room breathes with subtle dust and screen flicker. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A slow horizontal scan of the cramped room - from the wall clock ticking to the CRT screen glowing cold to the cable running from wall socket into the @Damaged chrome android's chassis. Cold blue-white light, deep shadows. The room breathes with subtle dust and screen flicker. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip D — S10d
 
@@ -557,7 +557,7 @@
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
-> The camera retreats from the @Damaged chrome android at the desk, revealing the full cramped room — bed, dark window, wall clock, the cable running to the wall. Cold CRT glow is the only light. The figure grows smaller as the room's geometry frames him like a cage. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The camera retreats from the @Damaged chrome android at the desk, revealing the full cramped room - bed, dark window, wall clock, the cable running to the wall. Cold CRT glow is the only light. The figure grows smaller as the room's geometry frames him like a cage. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -611,7 +611,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> An empty bus stop bench under a flickering cold fluorescent lamp at dusk. Wet asphalt stretches in all directions. A traffic light cycles slowly in the background, its colored glow catching on wet surfaces. No figures. Atmospheric breathing — lamp buzzes, rain puddles shimmer. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> An empty bus stop bench under a flickering cold fluorescent lamp at dusk. Wet asphalt stretches in all directions. A traffic light cycles slowly in the background, its colored glow catching on wet surfaces. No figures. Atmospheric breathing - lamp buzzes, rain puddles shimmer. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -643,7 +643,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> The @Damaged chrome android sits on a wet bench under a flickering cold lamp at dusk. His head lifts slightly, optical lenses flickering with a faint spark — a momentary lift, not warmth. The camera closes slowly. Cold wet street surrounds, no shelter. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android sits on a wet bench under a flickering cold lamp at dusk. His head lifts slightly, optical lenses flickering with a faint spark - a momentary lift, not warmth. The camera closes slowly. Cold wet street surrounds, no shelter. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S13b
 
@@ -663,7 +663,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android holds still on the bench under the buzzing lamp. Attentive, head slightly raised. Cold wet asphalt around, the lone lamp casting hard shadows. Atmospheric breathing — lamp flickers, wet surfaces shimmer. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android holds still on the bench under the buzzing lamp. Attentive, head slightly raised. Cold wet asphalt around, the lone lamp casting hard shadows. Atmospheric breathing - lamp flickers, wet surfaces shimmer. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 > **RETAKE (2026-06-07):** Re-generated via Kling 3.0 Omni. Prompt unchanged.
 
@@ -693,7 +693,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android frozen rigid on the bench under the buzzing lamp. Shoulders dropped, head down. A still, frozen composition — barely perceptible lamp buzz and the faintest fog drift are the only motion. Everything else is held, motionless. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android frozen rigid on the bench under the buzzing lamp. Shoulders dropped, head down. A still, frozen composition - barely perceptible lamp buzz and the faintest fog drift are the only motion. Everything else is held, motionless. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 > **RETAKE (2026-06-07):** Re-generated via Kling 3.0 Omni. Prompt unchanged.
 
@@ -723,7 +723,7 @@
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
-> Wide shot. The @Damaged chrome android small on the wet bench under a lone flickering lamp, the empty transit space opening wide around him. The camera retreats steadily — the figure and the lamp shrinking as wet asphalt stretches in all directions. Cold, desolate, exposed. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Wide shot. The @Damaged chrome android small on the wet bench under a lone flickering lamp, the empty transit space opening wide around him. The camera retreats steadily - the figure and the lamp shrinking as wet asphalt stretches in all directions. Cold, desolate, exposed. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -749,7 +749,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> A bustling commercial avenue at evening — cold screens blazing, wet reflective floors, dense crowd of mixed pedestrians flowing. The @Damaged chrome android enters small and dark among the polished crowd. The frame slowly widens to reveal the immensity of the avenue dwarfing him. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A bustling commercial avenue at evening - cold screens blazing, wet reflective floors, dense crowd of mixed pedestrians flowing. The @Damaged chrome android enters small and dark among the polished crowd. The frame slowly widens to reveal the immensity of the avenue dwarfing him. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -776,7 +776,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> A vast commercial avenue at evening. Towering cold screens blaze on both sides, wet reflective floors stretching deep. Blurred dark silhouettes drift through the space like shadows — no clear faces, no distinct figures. The camera closes slowly. Cold screen-glow washes over wet surfaces. Fog hangs between buildings. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A vast commercial avenue at evening. Towering cold screens blaze on both sides, wet reflective floors stretching deep. Blurred dark silhouettes drift through the space like shadows - no clear faces, no distinct figures. The camera closes slowly. Cold screen-glow washes over wet surfaces. Fog hangs between buildings. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 > **HUMAN OVERRIDE (2026-06-07):** Original prompt used "pedestrians" + @Damaged Element + Dolly Out. Triple problem: (1) Element forced android too prominent for very-wide-shot intent, (2) "pedestrians" triggered realistic human generation when source image has blurry dark silhouettes, (3) Dolly Out fabricated content beyond frame edges. Fix: removed Element, rewrote prompt to match source image (blurred silhouettes, no android reference), changed camera to Slow Zoom In.
 
@@ -804,7 +804,7 @@
 **Camera Move:** Pan Left
 
 **Motion Prompt:**
-> The commercial avenue at evening — cold screens blazing, wet floors reflecting. A dense river of blurred pedestrian silhouettes (mixed men and women) flows through the frame. No clear subject. A slow horizontal scan of the indifferent machine running on its own. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The commercial avenue at evening - cold screens blazing, wet floors reflecting. A dense river of blurred pedestrian silhouettes (mixed men and women) flows through the frame. No clear subject. A slow horizontal scan of the indifferent machine running on its own. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -838,7 +838,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android standing in a dark room at night, front-facing. A cold blue-white beam from his head projects broadcast imagery onto the wall behind him — silhouettes at a podium, raised hands. The projected cold light flickers over his damaged chrome. Fog-like haze drifts. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android standing in a dark room at night, front-facing. A cold blue-white beam from his head projects broadcast imagery onto the wall behind him - silhouettes at a podium, raised hands. The projected cold light flickers over his damaged chrome. Fog-like haze drifts. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S19b
 
@@ -886,7 +886,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android standing motionless in the dark room. Broadcast projection frozen on the wall behind him — a still cold image of a single figure with raised arm. Barely perceptible atmospheric breathing — the faintest flicker of projected light. A held, frozen composition. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android standing motionless in the dark room. Broadcast projection frozen on the wall behind him - a still cold image of a single figure with raised arm. Barely perceptible atmospheric breathing - the faintest flicker of projected light. A held, frozen composition. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -912,7 +912,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> High-angle shot looking down into the dark room. The @Damaged chrome android a small rusted shape on the bed in the corner. Cold blue-white broadcast light washing over him from above. The frame slowly widens — the figure grows even tinier, swallowed by the room's dark geometry. Desk, chair, clock visible from above. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> High-angle shot looking down into the dark room. The @Damaged chrome android a small rusted shape on the bed in the corner. Cold blue-white broadcast light washing over him from above. The frame slowly widens - the figure grows even tinier, swallowed by the room's dark geometry. Desk, chair, clock visible from above. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -964,7 +964,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> **STILL HOLD.** The @Damaged chrome android at the balcony railing, arm half-raised, fist held into the fog. The fog wraps around the gesture, undisturbed — nothing parts, nothing answers. Near-total stillness. Only the faintest fog drift. Extremely heavy, visible film grain. Cold grey-blue deep night, no amber. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> **STILL HOLD.** The @Damaged chrome android at the balcony railing, arm half-raised, fist held into the fog. The fog wraps around the gesture, undisturbed - nothing parts, nothing answers. Near-total stillness. Only the faintest fog drift. Extremely heavy, visible film grain. Cold grey-blue deep night, no amber. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip C — S22c
 
@@ -1016,7 +1016,7 @@
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
-> Extreme wide shot. A dark residential tower at night, heavy fog. The @Damaged chrome android barely visible — a tiny figure on a small balcony. The camera retreats to its absolute farthest — the figure a speck. Foggy dead city lights scattered far below. Cold grey-blue deep night, heavy fog, desaturated Kodachrome. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Extreme wide shot. A dark residential tower at night, heavy fog. The @Damaged chrome android barely visible - a tiny figure on a small balcony. The camera retreats to its absolute farthest - the figure a speck. Foggy dead city lights scattered far below. Cold grey-blue deep night, heavy fog, desaturated Kodachrome. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S23b
 
@@ -1036,7 +1036,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Extreme wide shot held. The dark tower, the tiny figure on the balcony, the foggy void. The image settles into near-total stillness — only fog drifts slowly. Cold grey-blue deep night, heavy fog, desaturated Kodachrome. Fading, draining toward dark. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Extreme wide shot held. The dark tower, the tiny figure on the balcony, the foggy void. The image settles into near-total stillness - only fog drifts slowly. Cold grey-blue deep night, heavy fog, desaturated Kodachrome. Fading, draining toward dark. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip C — S23c
 
@@ -1056,7 +1056,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> The frame widens further from the dark tower — the tiny balcony figure shrinking to a near-invisible speck. Fog fills the expanding frame. The image drains toward black and silence. Cold grey-blue deep night, heavy fog. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The frame widens further from the dark tower - the tiny balcony figure shrinking to a near-invisible speck. Fog fills the expanding frame. The image drains toward black and silence. Cold grey-blue deep night, heavy fog. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1088,7 +1088,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android standing at the balcony threshold — dark room with glass door behind, foggy void ahead. Attentive stance, not slumped. Sudden stillness. Cold grey-blue deep night, heavy fog. Faint atmospheric breathing — fog drifts gently. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android standing at the balcony threshold - dark room with glass door behind, foggy void ahead. Attentive stance, not slumped. Sudden stillness. Cold grey-blue deep night, heavy fog. Faint atmospheric breathing - fog drifts gently. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S24b
 
@@ -1108,7 +1108,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Closing slowly on the @Damaged chrome android at the balcony threshold. His stance is upright, attentive. A faint pale light from his optical lenses directed toward the distant fog — showing a bare horizon line, not a feed. Cold, still, the quality of the darkness has shifted. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Closing slowly on the @Damaged chrome android at the balcony threshold. His stance is upright, attentive. A faint pale light from his optical lenses directed toward the distant fog - showing a bare horizon line, not a feed. Cold, still, the quality of the darkness has shifted. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1193,7 +1193,7 @@
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> The @Damaged chrome android standing in a dark building doorframe, facing outward toward a wet street. A single warm amber light point glows on the far horizon, visible down the road through the fog. Warm amber-tinted fog slowly reaches the figure at the entrance, reflecting on his wet chrome surfaces. His optical lenses steady — the flickering stops, becoming clear and still. The camera moves forward toward him — the only approach of the entire film. Dark interior behind, amber direction ahead. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android standing in a dark building doorframe, facing outward toward a wet street. A single warm amber light point glows on the far horizon, visible down the road through the fog. Warm amber-tinted fog slowly reaches the figure at the entrance, reflecting on his wet chrome surfaces. His optical lenses steady - the flickering stops, becoming clear and still. The camera moves forward toward him - the only approach of the entire film. Dark interior behind, amber direction ahead. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1225,7 +1225,7 @@
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
-> The @Damaged chrome android on a wet street at night, taking deliberate forward steps toward a faint amber light on the distant horizon. Dark buildings recede behind him. The camera retreats along the road ahead — the same retreating motion as the refrains, but now he walks purposefully into it. Wet asphalt reflects faint warm-tinted light from the horizon. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android on a wet street at night, taking deliberate forward steps toward a faint amber light on the distant horizon. Dark buildings recede behind him. The camera retreats along the road ahead - the same retreating motion as the refrains, but now he walks purposefully into it. Wet asphalt reflects faint warm-tinted light from the horizon. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S28b
 
@@ -1319,7 +1319,7 @@
 **Camera Move:** Crane Up
 
 **Motion Prompt:**
-> Starting tight on the @Damaged chrome android walking the wet road. The camera rises slowly, the figure shrinking below as the sky and the amber-tinted horizon ahead expand in the frame, strictly within the existing frame composition. The world opens as the figure grows small. Do not add new elements above the frame — reveal only what is already in the image. Wind-blown fog drifts. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Starting tight on the @Damaged chrome android walking the wet road. The camera rises slowly, the figure shrinking below as the sky and the amber-tinted horizon ahead expand in the frame, strictly within the existing frame composition. The world opens as the figure grows small. Do not add new elements above the frame - reveal only what is already in the image. Wind-blown fog drifts. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip B — S29b
 
@@ -1339,7 +1339,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> The camera zooms slowly toward the warm amber light on the far horizon. The @Damaged chrome android walks forward and gradually exits the bottom of the frame — the figure leaves, the destination remains. The amber rift on the horizon grows, its warm glow expanding to fill the frame. Wet asphalt reflections of amber light stretch toward the camera. Wind rises. The amber light becomes the whole world. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The camera zooms slowly toward the warm amber light on the far horizon. The @Damaged chrome android walks forward and gradually exits the bottom of the frame - the figure leaves, the destination remains. The amber rift on the horizon grows, its warm glow expanding to fill the frame. Wet asphalt reflections of amber light stretch toward the camera. Wind rises. The amber light becomes the whole world. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 #### Clip C — S29c
 
@@ -1359,7 +1359,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> A warm amber glow fills the frame — the distant horizon light now close and dominant. No figure. The amber light slowly dims, the image gradually darkening to black. Wind howls. The glow fades. Darkness. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A warm amber glow fills the frame - the distant horizon light now close and dominant. No figure. The amber light slowly dims, the image gradually darkening to black. Wind howls. The glow fades. Darkness. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

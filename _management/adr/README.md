@@ -15,6 +15,7 @@ supersedes the old one (don't rewrite history).
 | [0003](0003-frozen-fixtures-and-meta-tests.md) | Frozen fixtures + meta-tests (grade the graders) | Accepted |
 | [0004](0004-triage-policy-and-check-refinements.md) | Triage policy: fix / whitelist / refine | Accepted |
 | [0005](0005-single-command-ci-gate.md) | Single-command CI gate, dependencies pinned | Accepted |
+| [0006](0006-scoped-prompt-hygiene.md) | Scoped prompt hygiene: ASCII only where it's model-facing | Accepted |
 
 Born out of the EP09 "Validation Backbone" build-along (the reference-integrity
 bug that passed every check green). See also

@@ -34,6 +34,12 @@ _spec = importlib.util.spec_from_file_location(
 vpv = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(vpv)
 
+_hspec = importlib.util.spec_from_file_location(
+    "prompt_hygiene_lint", os.path.join(TESTS_DIR, "prompt_hygiene_lint.py")
+)
+phl = importlib.util.module_from_spec(_hspec)
+_hspec.loader.exec_module(phl)
+
 
 def setUpModule():
     # check_ref_integrity loads _assets/cast/character_profiles.json relative to
@@ -308,6 +314,78 @@ class TestParserCoverage(unittest.TestCase):
         labels = [s["label"] for s in vpv.extract_scenes(content)]
         self.assertIn("S03a", labels)
         self.assertIn("S03b", labels)
+
+
+class TestPromptHygieneLint(unittest.TestCase):
+    """The attribution lint, proven both ways: it catches a tradition label or a
+    non-ASCII char leaking into an actual model-facing prompt string, and it leaves
+    the canon (master.md, direction notes, the Dramaturgy Reference lines in the
+    same file) untouched — out of scope by design, so the canon is never punished."""
+
+    # A scene block whose CANON lines carry sanctioned Turkish + a tradition label,
+    # but whose model-facing Text Prompt is clean plain-English ASCII.
+    CLEAN_PROMPT_DIRTY_CANON = (
+        "#### Scene S01 - Title\n"
+        "- **Dramaturgy Reference:** A glass of çay; the Turkish wisdom tradition "
+        "of Hacı Bektaş Veli. Canonical and required.\n"
+        "- **Composition Notes:** dolmuş interior.\n"
+        "\n"
+        "**Text Prompt:**\n"
+        "> a chrome android in a minibus interior, plain english, masterpiece.\n"
+    )
+
+    def test_catches_nonascii_in_prompt(self):
+        content = (
+            "**Text Prompt:**\n"
+            "> a chrome android with a Hacı Bektaş engraving, masterpiece.\n"
+        )
+        findings = phl.lint_content(content, "Text Prompt")
+        self.assertTrue(any(k == "non-ascii" for _, k, _ in findings))
+
+    def test_catches_tradition_label_in_prompt(self):
+        content = (
+            "**Text Prompt:**\n"
+            "> a chrome android beneath a banner reading the Turkish wisdom tradition, masterpiece.\n"
+        )
+        findings = phl.lint_content(content, "Text Prompt")
+        self.assertTrue(any(k == "tradition-label" for _, k, _ in findings))
+
+    def test_ignores_canon_outside_the_prompt_block(self):
+        # The label + Turkish live in Dramaturgy/Composition lines, NOT the prompt.
+        self.assertEqual(phl.lint_content(self.CLEAN_PROMPT_DIRTY_CANON, "Text Prompt"), [])
+
+    def test_fix_is_scoped_and_idempotent(self):
+        leak = (
+            "- **Dramaturgy Reference:** çay, the Turkish wisdom tradition.\n"
+            "\n"
+            "**Text Prompt:**\n"
+            "> a chrome android, Hacı engraving — masterpiece.\n"
+        )
+        once = phl.fix_content(leak, "Text Prompt")
+        twice = phl.fix_content(once, "Text Prompt")
+        self.assertEqual(once, twice, "fix must be idempotent")
+        self.assertEqual(phl.lint_content(once, "Text Prompt"), [], "prompt must be ASCII after fix")
+        self.assertIn("çay", once, "the out-of-scope Dramaturgy line must be left untouched")
+
+    def test_scope_excludes_master_and_direction_notes(self):
+        files = phl.in_scope_files(REPO_ROOT)
+        self.assertTrue(files, "lint should resolve some in-scope files")
+        for f in files:
+            low = f.replace("\\", "/").lower()
+            self.assertTrue(("/04_visuals/" in low) or ("/05_video/" in low),
+                            f"in-scope file outside the two prompt dirs: {f}")
+            for forbidden in ("master.md", "/03_direction/", "/02_music/",
+                              "_concept_notes", "_dramaturgy", "_musical_metadata"):
+                self.assertNotIn(forbidden, low, f"canon file leaked into scope: {f}")
+        # Prove the exclusion is real, not vacuous: master.md exists but is not in scope.
+        master = os.path.join(REPO_ROOT, "_management", "master.md")
+        self.assertTrue(os.path.exists(master))
+        self.assertNotIn(os.path.abspath(master), [os.path.abspath(x) for x in files])
+
+    def test_all_shipped_prompts_are_ascii_clean(self):
+        # Regression guard: every in-scope file stays clean after the normalization.
+        for path in phl.in_scope_files(REPO_ROOT):
+            self.assertEqual(phl.lint_file(path), [], f"{path} has prompt-hygiene issues")
 
 
 if __name__ == "__main__":

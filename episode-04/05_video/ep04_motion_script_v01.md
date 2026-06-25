@@ -221,7 +221,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Close-up on an elderly robed figure's face — warm, compassionate expression, deep lines around eyes, white beard catching amber lamplight. His hand extends slightly in welcome, palm open. Amber glow halos his silhouette from behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Close-up on an elderly robed figure's face - warm, compassionate expression, deep lines around eyes, white beard catching amber lamplight. His hand extends slightly in welcome, palm open. Amber glow halos his silhouette from behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -270,7 +270,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Two figures in amber lamplight — a robed elder leans forward in his chair, hands clasped in storytelling posture, facing a seated chrome android silhouette. Warm shadows soften around them. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Two figures in amber lamplight - a robed elder leans forward in his chair, hands clasped in storytelling posture, facing a seated chrome android silhouette. Warm shadows soften around them. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -319,7 +319,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Close-up on a wooden staff's glowing amber tip — pulsing warm light, growing brighter. Ancient wood grain visible, long shadows cast across plaster walls. A robed silhouette speaks behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Close-up on a wooden staff's glowing amber tip - pulsing warm light, growing brighter. Ancient wood grain visible, long shadows cast across plaster walls. A robed silhouette speaks behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -418,7 +418,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Pure white-amber radiance floods the entire frame — no structure, no objects, no detail. Overwhelming luminosity pulsing slowly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Pure white-amber radiance floods the entire frame - no structure, no objects, no detail. Overwhelming luminosity pulsing slowly. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -442,7 +442,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Amber afterglow lingers on plaster walls, a worn table, tea glasses, and two seated figures — one robed, one chrome. The cosmic light fades to warm domestic lamplight. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Amber afterglow lingers on plaster walls, a worn table, tea glasses, and two seated figures - one robed, one chrome. The cosmic light fades to warm domestic lamplight. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -466,7 +466,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Two figures sit in calm amber light. Tea steam curls upward from one glass. A chrome face glitches faintly — blue-red eyes almost stabilize, then flicker again. The room breathes in stillness. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Two figures sit in calm amber light. Tea steam curls upward from one glass. A chrome face glitches faintly - blue-red eyes almost stabilize, then flicker again. The room breathes in stillness. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -542,7 +542,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> A Silk Road caravansarai courtyard — arched stone walls, camels resting. A fraudulent healer in religious garb sells amulets to desperate kneeling travelers. A figure in a dark green cloak stands apart, arms folded. Dust motes drift. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A Silk Road caravansarai courtyard - arched stone walls, camels resting. A fraudulent healer in religious garb sells amulets to desperate kneeling travelers. A figure in a dark green cloak stands apart, arms folded. Dust motes drift. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -590,7 +590,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
-> Slow dolly toward a group of five robed figures in a chamber of swirling amber energy. The central figure in a dark green hooded cloak walks slowly forward toward camera. Four surrounding figures remain in their exact positions — subtle warm smiles, gentle head tilts of recognition. Golden energy threads drift and pulse slowly around them. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow dolly toward a group of five robed figures in a chamber of swirling amber energy. The central figure in a dark green hooded cloak walks slowly forward toward camera. Four surrounding figures remain in their exact positions - subtle warm smiles, gentle head tilts of recognition. Golden energy threads drift and pulse slowly around them. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -665,7 +665,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> A cloaked figure seen from behind stands motionless on a gray cratered lunar surface, facing an immense amber Sun on the horizon. The figure remains completely still — no turning, no movement. The Sun pulses slowly with searing amber light. Dust and haze drift gently across the rocky surface. The figure's long shadow stretches toward camera. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A cloaked figure seen from behind stands motionless on a gray cratered lunar surface, facing an immense amber Sun on the horizon. The figure remains completely still - no turning, no movement. The Sun pulses slowly with searing amber light. Dust and haze drift gently across the rocky surface. The figure's long shadow stretches toward camera. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -713,7 +713,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Close-up on a chrome android's face. Glitching blue-red eyes slow their flickering — intervals between glitches growing longer. Amber lamplight reflects in the chrome. A fraction of a head lift, almost imperceptible. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Close-up on a chrome android's face. Glitching blue-red eyes slow their flickering - intervals between glitches growing longer. Amber lamplight reflects in the chrome. A fraction of a head lift, almost imperceptible. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -767,7 +767,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Tilt Up
 
 **Motion Prompt:**
-> On the Moon's surface, behind a robed figure, a column of thick black oily smoke rises from the gray lunar dust. Within the smoke, two points of red light resolve into glowing spiral horns. No face, no body — just smoke, horns, menacing presence. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> On the Moon's surface, behind a robed figure, a column of thick black oily smoke rises from the gray lunar dust. Within the smoke, two points of red light resolve into glowing spiral horns. No face, no body - just smoke, horns, menacing presence. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -816,7 +816,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Wide shot of the Moon surface as battlefield. A robed figure stands at center. To his left, the amber Sun casts warm light. To his right, a black-red smoke column spreads across the lunar landscape. The surface is bisected — amber half and red half. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Wide shot of the Moon surface as battlefield. A robed figure stands at center. To his left, the amber Sun casts warm light. To his right, a black-red smoke column spreads across the lunar landscape. The surface is bisected - amber half and red half. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -842,7 +842,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Crane Up
 
 **Motion Prompt:**
-> On the Moon surface, a robed figure rises from kneeling to standing — warrior posture, shoulders squaring, chin lifting. Lunar dust shifts beneath boots. Green cloak catches amber sunlight. Black smoke recoils behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> On the Moon surface, a robed figure rises from kneeling to standing - warrior posture, shoulders squaring, chin lifting. Lunar dust shifts beneath boots. Green cloak catches amber sunlight. Black smoke recoils behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -867,7 +867,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> On the Moon surface, a robed figure's right hand reaches into the gray lunar rock and pulls out an ancient stone-and-iron hammer — primordial, heavy, embedded for millennia. Fingers close around the worn wooden handle. Dark iron head, no glow. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> On the Moon surface, a robed figure's right hand reaches into the gray lunar rock and pulls out an ancient stone-and-iron hammer - primordial, heavy, embedded for millennia. Fingers close around the worn wooden handle. Dark iron head, no glow. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -891,7 +891,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Tilt Up
 
 **Motion Prompt:**
-> A robed figure raises a hammer above his head on the Moon's surface. Both hands grip the wooden handle, arms trembling with purpose. The stone-iron head ignites with amber light at its apex — echoing the Sun above. Black smoke surges behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A robed figure raises a hammer above his head on the Moon's surface. Both hands grip the wooden handle, arms trembling with purpose. The stone-iron head ignites with amber light at its apex - echoing the Sun above. Black smoke surges behind. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -915,7 +915,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Tilt Down
 
 **Motion Prompt:**
-> The hammer arcs downward in a single clean blow — green cloak billowing, amber trail streaking through the vacuum. The strike hits the lunar rock. Gray dust erupts in slow, airless clouds. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The hammer arcs downward in a single clean blow - green cloak billowing, amber trail streaking through the vacuum. The strike hits the lunar rock. Gray dust erupts in slow, airless clouds. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -940,7 +940,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> On the Moon surface — black smoke explodes outward, spiral horns disintegrate into fading embers. The entire lunar landscape floods with amber light. A robed figure transforms — aged, white-bearded, holding a glowing amber-tipped staff where the hammer was. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> On the Moon surface - black smoke explodes outward, spiral horns disintegrate into fading embers. The entire lunar landscape floods with amber light. A robed figure transforms - aged, white-bearded, holding a glowing amber-tipped staff where the hammer was. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -965,7 +965,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Interior — a modest stone dwelling in warm amber light. An elderly robed figure sits resolved in his chair, a glowing amber staff leaning beside him. Across from him, a chrome android absorbs the warmth, eyes flickering slower. Post-storm calm. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Interior - a modest stone dwelling in warm amber light. An elderly robed figure sits resolved in his chair, a glowing amber staff leaning beside him. Across from him, a chrome android absorbs the warmth, eyes flickering slower. Post-storm calm. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -990,7 +990,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Wide shot of a warmly lit interior — two figures seated across from each other, an elderly robed figure with staff beside him and a chrome android opposite. The elderly robed figure slowly leans back into his chair, as if his words have just finished. On the table between them, two tea glasses release thin curling wisps of steam that rise slowly into the amber air. The warm light breathes gently across the stone walls. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Wide shot of a warmly lit interior - two figures seated across from each other, an elderly robed figure with staff beside him and a chrome android opposite. The elderly robed figure slowly leans back into his chair, as if his words have just finished. On the table between them, two tea glasses release thin curling wisps of steam that rise slowly into the amber air. The warm light breathes gently across the stone walls. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1031,7 +1031,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Crane Up
 
 **Motion Prompt:**
-> Begin with a tight framing on the cracked foreground earth of a barren wasteland — rocks, dust, and dim horizon fill the lower portion of the view. The camera slowly cranes upward and pulls back, gradually widening the framing as more of the already-visible night sky emerges from above, until the full wasteland-to-stars composition of the source image fills the frame. The stars already present wheel slowly in long-exposure trails, dust clouds already in the frame rise and curl. Do not add mountains, structures, planets, or new objects — only reveal what already exists in the source image. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Begin with a tight framing on the cracked foreground earth of a barren wasteland - rocks, dust, and dim horizon fill the lower portion of the view. The camera slowly cranes upward and pulls back, gradually widening the framing as more of the already-visible night sky emerges from above, until the full wasteland-to-stars composition of the source image fills the frame. The stars already present wheel slowly in long-exposure trails, dust clouds already in the frame rise and curl. Do not add mountains, structures, planets, or new objects - only reveal what already exists in the source image. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1056,7 +1056,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Rapid dissolving fragments flash through the frame — torch fire, a glinting vial, dusty stone arches, flickering neon screens, gray lunar surface, amber solar fire. Each fragment appears for a heartbeat then dissolves into the next. Kaleidoscopic memory cascade. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Rapid dissolving fragments flash through the frame - torch fire, a glinting vial, dusty stone arches, flickering neon screens, gray lunar surface, amber solar fire. Each fragment appears for a heartbeat then dissolves into the next. Kaleidoscopic memory cascade. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1080,7 +1080,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> A modest room in near darkness. Only a staff's amber tip glows — steady, patient, a single point of warm light. Two figures visible as dark silhouettes. Gathering shadow, settling calm. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A modest room in near darkness. Only a staff's amber tip glows - steady, patient, a single point of warm light. Two figures visible as dark silhouettes. Gathering shadow, settling calm. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1105,7 +1105,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Static
 
 **Motion Prompt:**
-> A wooden door slightly ajar. Through the crack, cold starlight spills into amber interior — two light sources meeting at the threshold. Amber staff light bleeds outward through the opening, mixing with starlight. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A wooden door slightly ajar. Through the crack, cold starlight spills into amber interior - two light sources meeting at the threshold. Amber staff light bleeds outward through the opening, mixing with starlight. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1130,7 +1130,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Close-up on an elderly robed figure's face — calm, resolved, white beard catching amber light from below. Deep lines around eyes speak of centuries. Settled certainty in the gaze. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Close-up on an elderly robed figure's face - calm, resolved, white beard catching amber light from below. Deep lines around eyes speak of centuries. Settled certainty in the gaze. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1154,7 +1154,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Near darkness. Two silhouettes in minimal amber light — separated by a table, connected by the glow of a staff. The room's only illumination reduced to a small warm radius. Almost-silence made visible. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Near darkness. Two silhouettes in minimal amber light - separated by a table, connected by the glow of a staff. The room's only illumination reduced to a small warm radius. Almost-silence made visible. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1178,7 +1178,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Close-up on an elderly face, half in amber light, half in darkness. A whisper. The amber staff tip flickers once — then holds steady. The room darkens further, light contracting to just this face. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Close-up on an elderly face, half in amber light, half in darkness. A whisper. The amber staff tip flickers once - then holds steady. The room darkens further, light contracting to just this face. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -1203,7 +1203,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Close-up on a chrome android's face. Head slowly lifts. Glitching blue-red eyes settle to steady, clear blue. Amber light reflects in the chrome — two warm golden points in cold metal. Then fade to black. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Close-up on a chrome android's face. Head slowly lifts. Glitching blue-red eyes settle to steady, clear blue. Amber light reflects in the chrome - two warm golden points in cold metal. Then fade to black. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

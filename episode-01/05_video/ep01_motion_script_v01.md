@@ -354,7 +354,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The hooded figure's profile dissolves from the edges — digital grid fragments break away while storm clouds and lightning churn inside the skull. The hood's fabric tips melt into particles. Atmospheric, hallucinatory. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The hooded figure's profile dissolves from the edges - digital grid fragments break away while storm clouds and lightning churn inside the skull. The hood's fabric tips melt into particles. Atmospheric, hallucinatory. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

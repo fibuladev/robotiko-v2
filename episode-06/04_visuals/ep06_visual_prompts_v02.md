@@ -78,7 +78,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of a dark CRT monitor screen. The powered-off screen reflects the damaged android's face — dimmed eyes, rust streaks down the jawline. The reflection stares back from the dead glass. Cold fluorescent ambient light. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a dark CRT monitor screen. The powered-off screen reflects the damaged android's face - dimmed eyes, rust streaks down the jawline. The reflection stares back from the dead glass. Cold fluorescent ambient light. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -88,7 +88,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of a chrome android's inner forearm resting on a desk surface. Four tattoo-like serial markings etched in glowing amber lines run in sequence from wrist toward elbow — warm golden-orange etchings on damaged chrome. The amber glow is the only warm color in the frame. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's inner forearm resting on a desk surface. Four tattoo-like serial markings etched in glowing amber lines run in sequence from wrist toward elbow - warm golden-orange etchings on damaged chrome. The amber glow is the only warm color in the frame. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -98,7 +98,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Wide shot from the far end of the office. The damaged android is the only figure in the vast workspace — small in the geometric grid of empty desks and dark monitors. Deep perspective, cold fluorescent light. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot from the far end of the office. The damaged android is the only figure in the vast workspace - small in the geometric grid of empty desks and dark monitors. Deep perspective, cold fluorescent light. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -122,7 +122,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Low-angle shot looking up at an office ceiling. A grey industrial PA speaker mounted centrally on ceiling tiles, flanked by cold fluorescent tube strips. The speaker grille faces downward — faceless, institutional. Below the ceiling line, tops of CRT monitors partially visible. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Low-angle shot looking up at an office ceiling. A grey industrial PA speaker mounted centrally on ceiling tiles, flanked by cold fluorescent tube strips. The speaker grille faces downward - faceless, institutional. Below the ceiling line, tops of CRT monitors partially visible. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -146,7 +146,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium-wide shot from the side. The damaged android at his desk on the left, head turned to look at the figure beside him. At the adjacent desk on the right, a second identical android — factory-fresh, undamaged, pristine surface — faces his monitor, head down, hands on keyboard, unresponsive. Same body form, opposite condition. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot from the side. The damaged android at his desk on the left, head turned to look at the figure beside him. At the adjacent desk on the right, a second identical android - factory-fresh, undamaged, pristine surface - faces his monitor, head down, hands on keyboard, unresponsive. Same body form, opposite condition. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -180,7 +180,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Profile shot from the right. The pristine android at his workstation — head level, shoulders square, posture perfect. Steady cold blue eyes scan the green CRT data. Hands precise on the keyboard. Cold fluorescent side-light. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Profile shot from the right. The pristine android at his workstation - head level, shoulders square, posture perfect. Steady cold blue eyes scan the green CRT data. Hands precise on the keyboard. Cold fluorescent side-light. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -224,7 +224,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium shot from the side. The damaged android on the left, the pristine android two desks away on the right. The distance between them has halved since the opening. Both clearly legible at this range — rust and cracks beside clean, unmarked surface. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot from the side. The damaged android on the left, the pristine android two desks away on the right. The distance between them has halved since the opening. Both clearly legible at this range - rust and cracks beside clean, unmarked surface. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -238,7 +238,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up detail of a desk surface. Stacks of manila folders, a CRT casting green light over the keyboard, a single coffee stain ring on the titanium surface, a small desk fan oscillating. The texture of corporate life — functional, impersonal. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up detail of a desk surface. Stacks of manila folders, a CRT casting green light over the keyboard, a single coffee stain ring on the titanium surface, a small desk fan oscillating. The texture of corporate life - functional, impersonal. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -248,7 +248,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium overhead-angle shot looking down at a workstation. The pristine android's hands rest precisely on the keyboard. Folders aligned, CRT showing orderly data, no objects out of place. The workspace mirrors the worker — pristine, efficient, empty of personality. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium overhead-angle shot looking down at a workstation. The pristine android's hands rest precisely on the keyboard. Folders aligned, CRT showing orderly data, no objects out of place. The workspace mirrors the worker - pristine, efficient, empty of personality. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -262,7 +262,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium-wide shot. The damaged android stands upright at his workstation — full body visible, chair rolled back behind him. Sparks fly from the shoulder as the motion stresses the broken joint. At the adjacent desk, the pristine android remains seated, head down, unchanged. Vertical contrast — standing damaged vs seated pristine. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot. The damaged android stands upright at his workstation - full body visible, chair rolled back behind him. Sparks fly from the shoulder as the motion stresses the broken joint. At the adjacent desk, the pristine android remains seated, head down, unchanged. Vertical contrast - standing damaged vs seated pristine. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -272,7 +272,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of the damaged android's face, three-quarter view. His glitching eyes flash a single warm amber pulse amid the blue-red chaos — one heartbeat of warm color, then back to cold glitch. A neural echo, barely distinguishable from malfunction. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of the damaged android's face, three-quarter view. His glitching eyes flash a single warm amber pulse amid the blue-red chaos - one heartbeat of warm color, then back to cold glitch. A neural echo, barely distinguishable from malfunction. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -292,7 +292,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Tight close-up, two chrome android faces side by side. On the left, the damaged face — cracked, rusted, glitching eyes. On the right, the pristine face — unblemished, steady cold blue eyes facing forward. Inches apart. Sparks from the damaged face reflect in the clean surface. Shallow depth of field. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Tight close-up, two chrome android faces side by side. On the left, the damaged face - cracked, rusted, glitching eyes. On the right, the pristine face - unblemished, steady cold blue eyes facing forward. Inches apart. Sparks from the damaged face reflect in the clean surface. Shallow depth of field. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -302,7 +302,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Extreme close-up of the pristine android's unblemished chrome cheek plate. The damaged android's cracked, rusted face is visible only as a warped reflection in the polished surface. Same alloy, same form — one damaged, one perfect — reflected in each other. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Extreme close-up of the pristine android's unblemished chrome cheek plate. The damaged android's cracked, rusted face is visible only as a warped reflection in the polished surface. Same alloy, same form - one damaged, one perfect - reflected in each other. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -316,7 +316,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium shot, three-quarter rear view. The damaged android is back at his desk, performing routine work — hands on keyboard, reaching for a folder. The posture is dutiful, the movements mechanical. Deliberately flat, static composition — no visual energy. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, three-quarter rear view. The damaged android is back at his desk, performing routine work - hands on keyboard, reaching for a folder. The posture is dutiful, the movements mechanical. Deliberately flat, static composition - no visual energy. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -336,7 +336,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Extreme wide shot from a high vantage point. The entire office floor — dozens of workstations in precise grid formation. Two chrome androids barely distinguishable at adjacent desks near the center — one slightly darker and irregular (damaged), the other clean (pristine). At this distance both are nearly identical nodes in the pattern. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Extreme wide shot from a high vantage point. The entire office floor - dozens of workstations in precise grid formation. Two chrome androids barely distinguishable at adjacent desks near the center - one slightly darker and irregular (damaged), the other clean (pristine). At this distance both are nearly identical nodes in the pattern. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -350,7 +350,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of a CRT monitor screen filling the frame. Green phosphor text on black — an email interface. Cursor blinking at a reply field. Command options in bright green capitals at the bottom: SEND — REPLY — FILE — CLOSE. Faint scan lines visible. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a CRT monitor screen filling the frame. Green phosphor text on black - an email interface. Cursor blinking at a reply field. Command options in bright green capitals at the bottom: SEND - REPLY - FILE - CLOSE. Faint scan lines visible. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -360,7 +360,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Shot from behind. The damaged android walks between rows of identical workstations, moving away from camera. His silhouette — one shoulder lower, protruding wires — moves through the desk corridor. Fluorescent ceiling strips create rhythmic light-shadow bars across his body. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Shot from behind. The damaged android walks between rows of identical workstations, moving away from camera. His silhouette - one shoulder lower, protruding wires - moves through the desk corridor. Fluorescent ceiling strips create rhythmic light-shadow bars across his body. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -374,7 +374,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium shot from the side. The damaged android stands tall over the seated pristine android. The standing figure looms — his fractured shadow falls darker across the worker's clean surface. The pristine android remains at his desk, diminished in the frame, head down. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot from the side. The damaged android stands tall over the seated pristine android. The standing figure looms - his fractured shadow falls darker across the worker's clean surface. The pristine android remains at his desk, diminished in the frame, head down. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -384,7 +384,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close profile shot of the pristine android at his workstation. Steady cold blue eyes on the CRT screen, hands typing. On the curved chrome surface of his shoulder, a warped dark reflection of the damaged android standing behind is visible — rust and cracks rendered as distorted smears in the clean metal. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close profile shot of the pristine android at his workstation. Steady cold blue eyes on the CRT screen, hands typing. On the curved chrome surface of his shoulder, a warped dark reflection of the damaged android standing behind is visible - rust and cracks rendered as distorted smears in the clean metal. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -408,7 +408,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium-wide shot of the office interior. The haze has thickened — visible layers of smoke curl around CRT monitors and settle on desk surfaces. Fluorescent strips glow through the dense atmosphere in diffused halos. An air freshener canister sits undisturbed on a desk. Workstations emerge from and disappear into the haze. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot of the office interior. The haze has thickened - visible layers of smoke curl around CRT monitors and settle on desk surfaces. Fluorescent strips glow through the dense atmosphere in diffused halos. An air freshener canister sits undisturbed on a desk. Workstations emerge from and disappear into the haze. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -418,7 +418,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of the pristine android's face in sharp focus, steady cold blue eyes forward, composed. Behind him, slightly out of focus but clearly visible: other chrome androids collapsed at distant desks — one slumped face-down, another on its knees beside a toppled chair. Fallen, unattended, unremarkable. The pristine worker does not acknowledge them. Shallow depth of field. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of the pristine android's face in sharp focus, steady cold blue eyes forward, composed. Behind him, slightly out of focus but clearly visible: other chrome androids collapsed at distant desks - one slumped face-down, another on its knees beside a toppled chair. Fallen, unattended, unremarkable. The pristine worker does not acknowledge them. Shallow depth of field. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -428,7 +428,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Shot looking up at the office ceiling. Parallel rows of cold white fluorescent tube strips across institutional ceiling tiles. Among the cold white tubes, one single strip carries the faintest amber tint — so subtle it could be an aging bulb. Barely distinguishable from the white ones around it. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Shot looking up at the office ceiling. Parallel rows of cold white fluorescent tube strips across institutional ceiling tiles. Among the cold white tubes, one single strip carries the faintest amber tint - so subtle it could be an aging bulb. Barely distinguishable from the white ones around it. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -442,7 +442,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of the pristine android's face. First visible emotion — the optical apertures have widened fractionally, jaw plates tightened. The factory-fresh surface is still unblemished, but the expression carries the first crack in composure. Operational fear — a machine registering a threat to its function. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of the pristine android's face. First visible emotion - the optical apertures have widened fractionally, jaw plates tightened. The factory-fresh surface is still unblemished, but the expression carries the first crack in composure. Operational fear - a machine registering a threat to its function. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -452,7 +452,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Close-up of two pristine chrome android hands at a mechanical keyboard. The left hand types steadily. The right hand shows the faintest tremor — the index finger hesitates on a key, a micro-vibration barely perceptible. Green CRT glow from above. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of two pristine chrome android hands at a mechanical keyboard. The left hand types steadily. The right hand shows the faintest tremor - the index finger hesitates on a key, a micro-vibration barely perceptible. Green CRT glow from above. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -466,7 +466,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Interior of a small meeting room. The damaged android and a pristine identical android sit across a narrow table from each other. A large dark flat screen on the far wall reflects both faces — one cracked and rusted, one clean and unblemished — overlapping in the dark glass. Glass walls reveal the larger office beyond. Intimate, close quarters. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Interior of a small meeting room. The damaged android and a pristine identical android sit across a narrow table from each other. A large dark flat screen on the far wall reflects both faces - one cracked and rusted, one clean and unblemished - overlapping in the dark glass. Glass walls reveal the larger office beyond. Intimate, close quarters. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -476,7 +476,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Split-frame close-up. Left half: damaged chrome chest plate — rusted, cracked, copper wires visible inside the fracture. Right half: pristine chrome chest plate — unblemished, factory-fresh, panel sealed cleanly. Same alloy, different biography. The gap between the two surfaces is the dividing line. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Split-frame close-up. Left half: damaged chrome chest plate - rusted, cracked, copper wires visible inside the fracture. Right half: pristine chrome chest plate - unblemished, factory-fresh, panel sealed cleanly. Same alloy, different biography. The gap between the two surfaces is the dividing line. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -497,7 +497,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Start-End Keyframes (Mode B — End)
 
 **Text Prompt:**
-> Medium-wide shot. The damaged android is mid-way down the corridor, walking steadily away, not looking back. In the foreground, the pristine android has turned his head for the first time — cold blue eyes now directed toward the corridor, tracking the departing figure. Hands lifted from keyboard. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot. The damaged android is mid-way down the corridor, walking steadily away, not looking back. In the foreground, the pristine android has turned his head for the first time - cold blue eyes now directed toward the corridor, tracking the departing figure. Hands lifted from keyboard. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -511,7 +511,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> The damaged android's silhouette in the corridor doorway, backlit by the dimmer light beyond. Damaged outline sharp — cracked panels, protruding wires, one shoulder lower. Behind him through the doorway, the office stretches back under cold fluorescent light with one remaining chrome figure at a distant desk. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> The damaged android's silhouette in the corridor doorway, backlit by the dimmer light beyond. Damaged outline sharp - cracked panels, protruding wires, one shoulder lower. Behind him through the doorway, the office stretches back under cold fluorescent light with one remaining chrome figure at a distant desk. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -521,7 +521,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Medium shot of two adjacent workstations. The left desk is empty — chair pushed back, small scorch marks and a faint rust ring on the surface, CRT monitor dark. At the adjacent desk on the right, the pristine android sits alone, profile view, facing his screen. The empty workspace is a conspicuous void. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot of two adjacent workstations. The left desk is empty - chair pushed back, small scorch marks and a faint rust ring on the surface, CRT monitor dark. At the adjacent desk on the right, the pristine android sits alone, profile view, facing his screen. The empty workspace is a conspicuous void. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -545,7 +545,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Start-End Keyframes (Mode B — End)
 
 **Text Prompt:**
-> Medium shot. The pristine android collapsed on the office floor — on his knees between the desk and pushed-back chair, hands at his sides, torso slumped, head bowed. A single hairline fracture runs from the center of his chest plate toward the left shoulder — the first blemish on his factory-fresh surface. The adjacent desk is empty. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot. The pristine android collapsed on the office floor - on his knees between the desk and pushed-back chair, hands at his sides, torso slumped, head bowed. A single hairline fracture runs from the center of his chest plate toward the left shoulder - the first blemish on his factory-fresh surface. The adjacent desk is empty. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -555,7 +555,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Wide shot of the office. The chrome android on his knees on the floor between desk rows — a small collapsed figure in the vast grid of empty workstations. Single fracture visible on chest. Empty desks recede in all directions. Fluorescent lights indifferent overhead. Heavy film grain. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of the office. The chrome android on his knees on the floor between desk rows - a small collapsed figure in the vast grid of empty workstations. Single fracture visible on chest. Empty desks recede in all directions. Fluorescent lights indifferent overhead. Heavy film grain. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -565,7 +565,7 @@ When a character is **seated at a desk facing a monitor**, the prompt MUST speci
 - **Video Tech Strategy:** Standard
 
 **Text Prompt:**
-> Extreme wide shot from the furthest possible vantage. The chrome android on his knees is barely visible — a small disruption in the geometric pattern of desks. Fluorescents dimmed, shadows deepened, overall exposure darker. Extremely heavy coarse film grain, image losing resolution, approaching darkness. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Extreme wide shot from the furthest possible vantage. The chrome android on his knees is barely visible - a small disruption in the geometric pattern of desks. Fluorescents dimmed, shadows deepened, overall exposure darker. Extremely heavy coarse film grain, image losing resolution, approaching darkness. 16:9 widescreen composition. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

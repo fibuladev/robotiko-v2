@@ -250,7 +250,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> The @Damaged chrome android lifts his chin slowly from his chest, gaze turning upward toward the mountain above — the smallest possible gesture of will. Wind presses, fog low, cold grey light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android lifts his chin slowly from his chest, gaze turning upward toward the mountain above - the smallest possible gesture of will. Wind presses, fog low, cold grey light. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -398,7 +398,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> The @Damaged chrome android's chest wound exposed — a gaping cavity with severed wires sparking, the torn cable dangling from his clenched fist, dark fluid and sparks suspended in the air. Camera pushes slowly into the visceral aftermath. Extremely heavy, visible film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android's chest wound exposed - a gaping cavity with severed wires sparking, the torn cable dangling from his clenched fist, dark fluid and sparks suspended in the air. Camera pushes slowly into the visceral aftermath. Extremely heavy, visible film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -452,7 +452,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android stands alone and centered on the vast summit plateau under heavy grey sky, arms at his sides, chest wound visible. The frame holds perfectly still — wind and faint mechanical breathing are the only motion. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android stands alone and centered on the vast summit plateau under heavy grey sky, arms at his sides, chest wound visible. The frame holds perfectly still - wind and faint mechanical breathing are the only motion. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None (Chain 2 start)
 
@@ -506,7 +506,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Same summit, same static composition. The @Damaged chrome android motionless, faint steam rising from his chassis vents into the cold air — the only visible sign of function. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Same summit, same static composition. The @Damaged chrome android motionless, faint steam rising from his chassis vents into the cold air - the only visible sign of function. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** ← S09b (last frame)
 
@@ -639,7 +639,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The seated @Damaged chrome android transforms through time — from stiff alert posture in dawn light to a dust-covered, settled figure in deep twilight shadow, nearly one with the stone. The light shifts, dust accumulates, the posture softens. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The seated @Damaged chrome android transforms through time - from stiff alert posture in dawn light to a dust-covered, settled figure in deep twilight shadow, nearly one with the stone. The light shifts, dust accumulates, the posture softens. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -824,7 +824,7 @@
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
-> Camera pans slowly right across the near-dark cave, the @Damaged chrome android barely visible, his optical lenses flickering faint red and blue — the only light, catching softly on the nearby stone. Stars visible at the cave mouth. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Camera pans slowly right across the near-dark cave, the @Damaged chrome android barely visible, his optical lenses flickering faint red and blue - the only light, catching softly on the nearby stone. Stars visible at the cave mouth. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -959,7 +959,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Camera pushes slowly toward the @Damaged chrome android at the center of the boardroom — his rusted, cracked frame clearly damaged among the rows of pristine identical copies. Cold fluorescent light flickers momentarily. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Camera pushes slowly toward the @Damaged chrome android at the center of the boardroom - his rusted, cracked frame clearly damaged among the rows of pristine identical copies. Cold fluorescent light flickers momentarily. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -979,7 +979,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Camera pulls back from the @Damaged chrome android as the infinite boardroom flickers and glitches briefly — the cold clinical space destabilizing for an instant, the pristine copies shuddering. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Camera pulls back from the @Damaged chrome android as the infinite boardroom flickers and glitches briefly - the cold clinical space destabilizing for an instant, the pristine copies shuddering. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -1007,7 +1007,7 @@
 **Camera Move:** Tilt Down
 
 **Motion Prompt:**
-> Cold digital text cascades down from above — readable billing figures, API pricing, model names — acid-green and sickly-white against the dark void. One chrome android hand reaches up, palm cupping the falling data, the numbers burning through the chrome palm. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Cold digital text cascades down from above - readable billing figures, API pricing, model names - acid-green and sickly-white against the dark void. One chrome android hand reaches up, palm cupping the falling data, the numbers burning through the chrome palm. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -1035,7 +1035,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Damaged chrome android stands close to a real fire of mountain brush and torn cable, facing it and watching the orange-red flames leap, his head tilted down toward the fire, the firelight glowing up onto his damaged chrome face — he gazes into the fire, not a dark silhouette. Smoke rises into the cold night. The frame is perfectly static — the fire is the only source of motion and warmth. Extremely heavy, visible film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android stands close to a real fire of mountain brush and torn cable, facing it and watching the orange-red flames leap, his head tilted down toward the fire, the firelight glowing up onto his damaged chrome face - he gazes into the fire, not a dark silhouette. Smoke rises into the cold night. The frame is perfectly static - the fire is the only source of motion and warmth. Extremely heavy, visible film grain. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -1170,7 +1170,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Camera pushes slowly into a tight close-up of the @Damaged chrome android's hands resting on his cracked chest — the torn cable hole, the dented torso. His optical lenses flicker between blue and red but noticeably slower. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Camera pushes slowly into a tight close-up of the @Damaged chrome android's hands resting on his cracked chest - the torn cable hole, the dented torso. His optical lenses flicker between blue and red but noticeably slower. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -1197,7 +1197,7 @@
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
-> The @Damaged chrome android performs a coat-shrugging gesture — shoulders rolling, arms pulling back — as a jacket-like armor shell drops to the stone beside him. Camera retreats to give space to the gesture against the warm dawn sky. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Damaged chrome android performs a coat-shrugging gesture - shoulders rolling, arms pulling back - as a jacket-like armor shell drops to the stone beside him. Camera retreats to give space to the gesture against the warm dawn sky. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -1226,7 +1226,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Wide open summit in warm daylight. The solid @Damaged chrome android sits still on one side, optical lenses steadying to calm blue; on the other side a translucent see-through ghost version of the same android — sky visible through its spectral body — rises and flies free from an open empty cage beside cast-off armor. The frame holds perfectly still. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. No third figure. Exactly two instances of the same android — one solid and seated, one translucent and ascending.
+> Wide open summit in warm daylight. The solid @Damaged chrome android sits still on one side, optical lenses steadying to calm blue; on the other side a translucent see-through ghost version of the same android - sky visible through its spectral body - rises and flies free from an open empty cage beside cast-off armor. The frame holds perfectly still. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. No third figure. Exactly two instances of the same android - one solid and seated, one translucent and ascending.
 
 **Frame Chain:** None
 
@@ -1255,7 +1255,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Wide summit, warm fading light. The solid @Damaged chrome android sits still on the rock with steady calm blue optical lenses, head raised, watching a distant faint translucent ghost-figure high above the horizon. Open empty cage and cast-off armor nearby on the rock. Nearly motionless — barely perceptible breathing. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. No third figure. Exactly two instances of the same android — one solid seated, one distant faint translucent.
+> Wide summit, warm fading light. The solid @Damaged chrome android sits still on the rock with steady calm blue optical lenses, head raised, watching a distant faint translucent ghost-figure high above the horizon. Open empty cage and cast-off armor nearby on the rock. Nearly motionless - barely perceptible breathing. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. No third figure. Exactly two instances of the same android - one solid seated, one distant faint translucent.
 
 **Frame Chain:** None
 
@@ -1340,7 +1340,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> Camera slowly widens from the mountain summit in warm fading light, a small chrome android figure or barely visible in the vast landscape. Rock, sky, and fading warmth — the mountain is the subject. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Camera slowly widens from the mountain summit in warm fading light, a small chrome android figure or barely visible in the vast landscape. Rock, sky, and fading warmth - the mountain is the subject. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 

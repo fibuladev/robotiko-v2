@@ -93,7 +93,7 @@ Save generated environment references to: `episode-07/04_visuals/raw/`
 **Generate ref:** None required — standalone.
 
 **Text Prompt:**
-> Photorealistic, not a painting, not an illustration. A desolate modern urban waterside embankment at twilight, the sun already set, the sky draining from cold grey to black — post-storm, clouds dispersing, no active rain. A single weathered wooden bench sits near the water's edge on cracked wet concrete pavement. Dark still water stretches to a fog-shrouded urban horizon, low fog sitting on the surface, faint ripples disturbing the dark water. Standing water pools on the concrete. A single dim sodium streetlamp glows weakly in the far distance. Modern steel railing, wet concrete, no vegetation, no ruins, no fantasy elements. No figures. No text, no borders, no frames. Depth composition: wet concrete foreground, bench and water's edge midground, fog-shrouded water and darkening sky background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic, not a painting, not an illustration. A desolate modern urban waterside embankment at twilight, the sun already set, the sky draining from cold grey to black - post-storm, clouds dispersing, no active rain. A single weathered wooden bench sits near the water's edge on cracked wet concrete pavement. Dark still water stretches to a fog-shrouded urban horizon, low fog sitting on the surface, faint ripples disturbing the dark water. Standing water pools on the concrete. A single dim sodium streetlamp glows weakly in the far distance. Modern steel railing, wet concrete, no vegetation, no ruins, no fantasy elements. No figures. No text, no borders, no frames. Depth composition: wet concrete foreground, bench and water's edge midground, fog-shrouded water and darkening sky background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -103,7 +103,7 @@ Save generated environment references to: `episode-07/04_visuals/raw/`
 **Generate ref:** None required — standalone.
 
 **Text Prompt:**
-> Photorealistic, not a painting, not an illustration. A wide modern urban street at dusk, wet asphalt gleaming with reflected cold streetlight. Fog hangs low between worn modern concrete buildings. On one side, warm light spills from shopfronts — a vendor's steam cart, a soft glowing advertising panel, blurred impressionistic silhouettes of mixed pedestrians (men and women) walking. On the other side, cold darkness and shuttered storefronts. Standing water in gutter channels reflects contrasting warm and cold light sources. Post-storm, no active rain — only wet surfaces. No clear protagonist visible — all figures are abstract blurred shapes. No text, no borders, no frames. Depth composition: wet asphalt foreground, flowing silhouettes and shopfronts midground, fog-shrouded buildings and fading sky background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic, not a painting, not an illustration. A wide modern urban street at dusk, wet asphalt gleaming with reflected cold streetlight. Fog hangs low between worn modern concrete buildings. On one side, warm light spills from shopfronts - a vendor's steam cart, a soft glowing advertising panel, blurred impressionistic silhouettes of mixed pedestrians (men and women) walking. On the other side, cold darkness and shuttered storefronts. Standing water in gutter channels reflects contrasting warm and cold light sources. Post-storm, no active rain - only wet surfaces. No clear protagonist visible - all figures are abstract blurred shapes. No text, no borders, no frames. Depth composition: wet asphalt foreground, flowing silhouettes and shopfronts midground, fog-shrouded buildings and fading sky background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -113,7 +113,7 @@ Save generated environment references to: `episode-07/04_visuals/raw/`
 **Generate ref:** Upload `episode-05/04_visuals/raw/ref-env-06.png` as spatial reference — same room layout, warmth stripped.
 
 **Text Prompt:**
-> Photorealistic, not a painting, not an illustration. A cramped, austere modern room stripped of all warmth. A desk with an old CRT monitor against one wall, its cold blue-white screen the dominant light source. A narrow bed against the opposite wall. A wall clock with visible hands on the wall. A power cable runs visibly from a wall socket across the floor toward the desk. A desk lamp is present but switched OFF — dark. No warm tones anywhere. Dying dusk light fading through a small window, turning grey. The room is modern and minimal — no fantasy elements, no ruins, no vegetation. No figures. No text, no borders, no frames. Depth composition: cable and floor foreground, desk and CRT midground, bed and window background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic, not a painting, not an illustration. A cramped, austere modern room stripped of all warmth. A desk with an old CRT monitor against one wall, its cold blue-white screen the dominant light source. A narrow bed against the opposite wall. A wall clock with visible hands on the wall. A power cable runs visibly from a wall socket across the floor toward the desk. A desk lamp is present but switched OFF - dark. No warm tones anywhere. Dying dusk light fading through a small window, turning grey. The room is modern and minimal - no fantasy elements, no ruins, no vegetation. No figures. No text, no borders, no frames. Depth composition: cable and floor foreground, desk and CRT midground, bed and window background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -123,7 +123,7 @@ Save generated environment references to: `episode-07/04_visuals/raw/`
 **Generate ref:** None required — standalone.
 
 **Text Prompt:**
-> Photorealistic, not a painting, not an illustration. An exposed modern bus stop or transit bench on a wet open street at dusk, the sky overcast and light failing — post-storm, no active rain, only wet surfaces. A single flickering cold fluorescent lamp illuminates the bench from above, buzzing. Wet asphalt stretches in all directions — no sheltering structures nearby, nowhere to hide. A dim traffic light cycles in the background, its colored glow catching on wet surfaces. Cold sodium and fluorescent mix. Modern urban infrastructure — no fantasy elements, no vegetation, no ruins. No figures. No text, no borders, no frames. Depth composition: wet ground foreground, bench and lamp midground, empty wet road and traffic light background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic, not a painting, not an illustration. An exposed modern bus stop or transit bench on a wet open street at dusk, the sky overcast and light failing - post-storm, no active rain, only wet surfaces. A single flickering cold fluorescent lamp illuminates the bench from above, buzzing. Wet asphalt stretches in all directions - no sheltering structures nearby, nowhere to hide. A dim traffic light cycles in the background, its colored glow catching on wet surfaces. Cold sodium and fluorescent mix. Modern urban infrastructure - no fantasy elements, no vegetation, no ruins. No figures. No text, no borders, no frames. Depth composition: wet ground foreground, bench and lamp midground, empty wet road and traffic light background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -133,7 +133,7 @@ Save generated environment references to: `episode-07/04_visuals/raw/`
 **Generate ref:** None required — standalone.
 
 **Text Prompt:**
-> Photorealistic, not a painting, not an illustration. A vast modern consumer avenue or mall concourse at evening, blazing with cold blue-white commercial light against the darkness outside. Towering advertising screens, illuminated shop windows, reflective wet floors. A dense river of mixed pedestrians (men and women) flows through as blurred impressionistic silhouettes — no detailed faces. Cold screens cast competing light pools on wet surfaces. Reflective shop glass shows distorted shapes. Modern architecture dwarfs any individual — immense scale, glass and steel, no fantasy elements. The outside beyond glass walls is pure dark. No clear protagonist. No text, no borders, no frames. Depth composition: wet reflective floor foreground, dense crowd silhouettes and screens midground, towering far screens and dark ceiling background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic, not a painting, not an illustration. A vast modern consumer avenue or mall concourse at evening, blazing with cold blue-white commercial light against the darkness outside. Towering advertising screens, illuminated shop windows, reflective wet floors. A dense river of mixed pedestrians (men and women) flows through as blurred impressionistic silhouettes - no detailed faces. Cold screens cast competing light pools on wet surfaces. Reflective shop glass shows distorted shapes. Modern architecture dwarfs any individual - immense scale, glass and steel, no fantasy elements. The outside beyond glass walls is pure dark. No clear protagonist. No text, no borders, no frames. Depth composition: wet reflective floor foreground, dense crowd silhouettes and screens midground, towering far screens and dark ceiling background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -143,7 +143,7 @@ Save generated environment references to: `episode-07/04_visuals/raw/`
 **Generate ref:** Upload `episode-05/04_visuals/raw/ref-env-06.png` as spatial reference — the balcony extends from the same room.
 
 **Text Prompt:**
-> Photorealistic, not a painting, not an illustration. A narrow residential balcony extending from a dark modern apartment tower at deep night. Iron railing, wet concrete floor, moisture beading on every surface. Beyond the railing: a vast dark void — a foggy dead modern city far below, scattered dim urban lights like dying embers in the fog. The sky is black, heavy with low cloud and fog. Volumetric fog wraps around the balcony, thickening into the distance. Behind the balcony, a glass door leads back into a dark room, barely visible interior. Cold grey-blue tones only — no warmth, no stars, no direction. Modern urban setting — no fantasy, no ruins, no vegetation. No figures. No text, no borders, no frames. Depth composition: balcony floor and railing foreground, fog void midground, distant foggy cityscape and black sky background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic, not a painting, not an illustration. A narrow residential balcony extending from a dark modern apartment tower at deep night. Iron railing, wet concrete floor, moisture beading on every surface. Beyond the railing: a vast dark void - a foggy dead modern city far below, scattered dim urban lights like dying embers in the fog. The sky is black, heavy with low cloud and fog. Volumetric fog wraps around the balcony, thickening into the distance. Behind the balcony, a glass door leads back into a dark room, barely visible interior. Cold grey-blue tones only - no warmth, no stars, no direction. Modern urban setting - no fantasy, no ruins, no vegetation. No figures. No text, no borders, no frames. Depth composition: balcony floor and railing foreground, fog void midground, distant foggy cityscape and black sky background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -153,7 +153,7 @@ Save generated environment references to: `episode-07/04_visuals/raw/`
 **Generate ref:** None required — standalone.
 
 **Text Prompt:**
-> Photorealistic, not a painting, not an illustration. A long, straight wet road stretching toward a distant horizon at the edge of night. Dark modern buildings of a dead city recede on both sides. Wet asphalt reflects a faint warm-tinted light from a distant amber rift at the horizon — not a sunrise, only the first hint that darkness might thin. Grey fog drifts across the road, thinning slightly toward the vanishing point. Wind-blown mist at ground level. Modern urban infrastructure — concrete, asphalt, steel, no fantasy elements, no vegetation, no ruins. No figures. No text, no borders, no frames. Depth composition: wet road surface foreground, flanking dark buildings midground, thinning fog and distant amber-tinted horizon crack background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic, not a painting, not an illustration. A long, straight wet road stretching toward a distant horizon at the edge of night. Dark modern buildings of a dead city recede on both sides. Wet asphalt reflects a faint warm-tinted light from a distant amber rift at the horizon - not a sunrise, only the first hint that darkness might thin. Grey fog drifts across the road, thinning slightly toward the vanishing point. Wind-blown mist at ground level. Modern urban infrastructure - concrete, asphalt, steel, no fantasy elements, no vegetation, no ruins. No figures. No text, no borders, no frames. Depth composition: wet road surface foreground, flanking dark buildings midground, thinning fog and distant amber-tinted horizon crack background. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -218,7 +218,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** USE ENV REF DIRECTLY — `ep07_ref_env_waterside.png` as scene image. No separate generation needed. If a tiny distant silhouette is desired, apply minimal inpainting on the env ref.
 
 **Text Prompt:**
-> N/A — env ref serves as scene image.
+> N/A - env ref serves as scene image.
 
 ---
 
@@ -236,7 +236,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_waterside.png`
 
 **Text Prompt:**
-> Wide shot, a chrome android seated alone on a wet wooden bench at the water's edge, hunched, looking out over the dark water. First faint stars prick the darkening twilight sky. His cracked, distorted reflection lies broken on the wet stone beside him. Hands rest open on his knees. Small figure in a wide cold frame — wet embankment, fog on the water, grey-blue twilight. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot, a chrome android seated alone on a wet wooden bench at the water's edge, hunched, looking out over the dark water. First faint stars prick the darkening twilight sky. His cracked, distorted reflection lies broken on the wet stone beside him. Hands rest open on his knees. Small figure in a wide cold frame - wet embankment, fog on the water, grey-blue twilight. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -268,7 +268,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** USE ENV REF DIRECTLY — `ep07_ref_env_street.png` as scene image. No separate generation needed. The env ref already contains the wet street with blurred crowd silhouettes and the conspicuous empty space.
 
 **Text Prompt:**
-> N/A — env ref serves as scene image.
+> N/A - env ref serves as scene image.
 
 ---
 
@@ -286,7 +286,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_street.png`
 
 **Text Prompt:**
-> Photorealistic, not a painting. Medium-wide shot, city street at dusk after rain — puddles on the asphalt but no active rain falling, no umbrellas. Only ONE chrome android walks alone with hands in pockets, head low, step faltering — small in the midground. Around him, mixed couples (men and women) walk arm in arm under warm shopfront glow. A vendor's steam rises, a romantic advertising panel glows softly. He stays in the cold, unable to draw from the warm light — his optical lenses dim and weak, barely flickering blue-red. Blurred human pedestrians cross the foreground. Wet asphalt reflects warm shop light against cold street darkness. Only one android in the entire frame, no second robot. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic, not a painting. Medium-wide shot, city street at dusk after rain - puddles on the asphalt but no active rain falling, no umbrellas. Only ONE chrome android walks alone with hands in pockets, head low, step faltering - small in the midground. Around him, mixed couples (men and women) walk arm in arm under warm shopfront glow. A vendor's steam rises, a romantic advertising panel glows softly. He stays in the cold, unable to draw from the warm light - his optical lenses dim and weak, barely flickering blue-red. Blurred human pedestrians cross the foreground. Wet asphalt reflects warm shop light against cold street darkness. Only one android in the entire frame, no second robot. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -304,7 +304,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_waterside.png` + chain: S02 output
 
 **Text Prompt:**
-> Medium-close shot, waterside at near-dark. A chrome android's rusted, fraying hand lifted into the damp grey air — rust beads with moisture on corroded chrome, exposed copper wires fraying at the wrist. Faint fog-breath ghosts from chassis vents. Below, his cracked trembling reflection in the black water. Tighter framing — on the hand, the chassis damage, the wet reflection. Cold grey, near-black atmosphere, fog. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-close shot, waterside at near-dark. A chrome android's rusted, fraying hand lifted into the damp grey air - rust beads with moisture on corroded chrome, exposed copper wires fraying at the wrist. Faint fog-breath ghosts from chassis vents. Below, his cracked trembling reflection in the black water. Tighter framing - on the hand, the chassis damage, the wet reflection. Cold grey, near-black atmosphere, fog. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -322,7 +322,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_waterside.png` + special: `episode-05/04_visuals/raw/28.png` (projection style ref)
 
 **Text Prompt:**
-> Medium shot, dark waterside. A chrome android seated on the bench in darkness. From his optical lenses, a cold blue-white beam projects into the damp fog before him, materializing a teeming scroll of abstract faceless shapes — countless flickering silhouettes and avatars hanging in the foggy air. The projection is cold and restless, illuminating the fog and his damaged chrome in harsh blue-white light. Dark water and fog behind. The projected figures remain abstract and faceless — impressionistic shapes, not detailed people. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, dark waterside. A chrome android seated on the bench in darkness. From his optical lenses, a cold blue-white beam projects into the damp fog before him, materializing a teeming scroll of abstract faceless shapes - countless flickering silhouettes and avatars hanging in the foggy air. The projection is cold and restless, illuminating the fog and his damaged chrome in harsh blue-white light. Dark water and fog behind. The projected figures remain abstract and faceless - impressionistic shapes, not detailed people. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -336,7 +336,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_waterside.png` + chain: S07 output
 
 **Text Prompt:**
-> Wide shot. A massive wall of cold blue-white projected avatars and abstract faceless shapes fills the upper frame — countless, indifferent, immense. A chrome android sits small beneath the projection, cold light washing his damaged chrome. The figure is shrinking against the feed's immensity. Dark waterside, fog, black water beyond. The projected wall is abstract — impressionistic silhouettes, not detailed faces. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot. A massive wall of cold blue-white projected avatars and abstract faceless shapes fills the upper frame - countless, indifferent, immense. A chrome android sits small beneath the projection, cold light washing his damaged chrome. The figure is shrinking against the feed's immensity. Dark waterside, fog, black water beyond. The projected wall is abstract - impressionistic silhouettes, not detailed faces. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -354,7 +354,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** chain: S08 output (color/glow ref only)
 
 **Text Prompt:**
-> Abstract cold blue-white imagery churning across the frame — scrolling light, flickering fragmented screen data, abstract digital silhouettes. A restless wash of cold digital noise with no figure present, no warmth, no subject. Pure visual static — the world's indifferent feed grinding on without anyone watching. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Abstract cold blue-white imagery churning across the frame - scrolling light, flickering fragmented screen data, abstract digital silhouettes. A restless wash of cold digital noise with no figure present, no warmth, no subject. Pure visual static - the world's indifferent feed grinding on without anyone watching. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -372,7 +372,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_home.png`
 
 **Text Prompt:**
-> Medium shot, cramped room at dusk dying to evening. A chrome android sits motionless at a desk before a CRT monitor, a cable visibly plugged from the wall socket into his chassis — tethered. Cold blue-white screen glow washes his face and rusted body, the only significant light. On the screen, lines of text: "Do Not Reply." "Application Rejected." A wall clock on the wall. A desk lamp present but dark, switched off. Dying dusk through a small window. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, cramped room at dusk dying to evening. A chrome android sits motionless at a desk before a CRT monitor, a cable visibly plugged from the wall socket into his chassis - tethered. Cold blue-white screen glow washes his face and rusted body, the only significant light. On the screen, lines of text: "Do Not Reply." "Application Rejected." A wall clock on the wall. A desk lamp present but dark, switched off. Dying dusk through a small window. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -386,7 +386,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_home.png` + chain: S10 output
 
 **Text Prompt:**
-> Photorealistic. Wide shot of a cramped dark room seen from the doorway. Only ONE chrome android sits hunched at a desk in the far corner, small in the frame, occupying less than 20% of the image. A CRT monitor glows cold blue-white — the only light source, washing the walls. The screen shows rejection text. A wall clock on the wall, a narrow bed, a desk lamp switched off. Night outside a small window. The android is dwarfed by the dark empty space of the room. Only one android, only one desk setup. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Photorealistic. Wide shot of a cramped dark room seen from the doorway. Only ONE chrome android sits hunched at a desk in the far corner, small in the frame, occupying less than 20% of the image. A CRT monitor glows cold blue-white - the only light source, washing the walls. The screen shows rejection text. A wall clock on the wall, a narrow bed, a desk lamp switched off. Night outside a small window. The android is dwarfed by the dark empty space of the room. Only one android, only one desk setup. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -404,7 +404,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** USE ENV REF DIRECTLY — `ep07_ref_env_transit.png` as scene image. No separate generation needed. The env ref already shows the empty bench, buzzing lamp, and wet desolate transit space.
 
 **Text Prompt:**
-> N/A — env ref serves as scene image.
+> N/A - env ref serves as scene image.
 
 ---
 
@@ -436,7 +436,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_transit.png` + chain: S13 output
 
 **Text Prompt:**
-> Medium shot, same bus stop (13.png). A chrome android frozen rigid on the bench under the buzzing cold lamp. His shoulders drop, head down. The lamp buzzes overhead, wet asphalt around him empty and exposed. A still, frozen composition — a motionless beat in cold failing dusk. No handheld devices. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, same bus stop (13.png). A chrome android frozen rigid on the bench under the buzzing cold lamp. His shoulders drop, head down. The lamp buzzes overhead, wet asphalt around him empty and exposed. A still, frozen composition - a motionless beat in cold failing dusk. No handheld devices. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -450,7 +450,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_transit.png` + chain: S14 output
 
 **Text Prompt:**
-> Wide shot. A chrome android small on the wet bench under a lone flickering lamp, the empty transit space opening wide around him in failing dusk. Wet asphalt stretches in all directions — no other figures, no shelter, exposed. The widest framing of the transit location, cold and desolate. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot. A chrome android small on the wet bench under a lone flickering lamp, the empty transit space opening wide around him in failing dusk. Wet asphalt stretches in all directions - no other figures, no shelter, exposed. The widest framing of the transit location, cold and desolate. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -500,7 +500,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** USE ENV REF DIRECTLY — `ep07_ref_env_avenue.png` as scene image. No separate generation needed. The env ref already contains the blazing screens, blurred crowd, and protagonist-free Architecture Cage composition.
 
 **Text Prompt:**
-> N/A — env ref serves as scene image.
+> N/A - env ref serves as scene image.
 
 ---
 
@@ -520,7 +520,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 > **PRODUCTION NOTE:** Original prompt had Robotiko lying on the bed with projection on the ceiling. Nano Banana could not reliably generate a supine figure with upward eye-projection. Adjusted to standing front-facing composition with wall projection — stronger visual: he confronts the broadcast rather than being washed over by it. Generated image (19.png) approved.
 
 **Text Prompt:**
-> Medium shot, cramped dark room at night. One chrome android standing front-facing. A cold blue-white light beam from his head projecting broadcast imagery onto the wall behind him — silhouettes at a podium, raised hands. Cold projected light on his damaged chrome body, the only light source. Dark room. Only one android. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, cramped dark room at night. One chrome android standing front-facing. A cold blue-white light beam from his head projecting broadcast imagery onto the wall behind him - silhouettes at a podium, raised hands. Cold projected light on his damaged chrome body, the only light source. Dark room. Only one android. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -536,7 +536,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 > **PRODUCTION NOTE:** Updated to match S19 production adjustment — standing composition with wall projection, not supine on bed. Generated image (20.png) shows the same room and angle as 19.png with different projection content (single figure, raised arm). Approved.
 
 **Text Prompt:**
-> Medium shot, same dark room (19.png). One chrome android standing motionless, front-facing. Broadcast projection frozen on the wall behind him — a single silhouette figure with raised arm. Cold blue-white projected glow on his motionless damaged chrome. A still, frozen composition. Only one android. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, same dark room (19.png). One chrome android standing motionless, front-facing. Broadcast projection frozen on the wall behind him - a single silhouette figure with raised arm. Cold blue-white projected glow on his motionless damaged chrome. A still, frozen composition. Only one android. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -550,7 +550,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_home.png` + chain: S20 output
 
 **Text Prompt:**
-> High-angle shot looking straight down into a cramped dark room. One small rusted chrome android on the bed in the far corner, occupying less than 15% of the frame. Cold blue-white broadcast light washing over him. Room furniture visible from above — desk, chair, monitor, wall clock. Deep shadows, dark room. Only one android. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> High-angle shot looking straight down into a cramped dark room. One small rusted chrome android on the bed in the far corner, occupying less than 15% of the frame. Cold blue-white broadcast light washing over him. Room furniture visible from above - desk, chair, monitor, wall clock. Deep shadows, dark room. Only one android. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -568,7 +568,7 @@ For each scene, upload the listed references alongside the text prompt in Nano B
 - **Upload:** `android_damaged.png` + `ep07_ref_env_balcony.png`
 
 **Text Prompt:**
-> Medium shot, deep night. One chrome android standing at a balcony railing, thick fog around him, dark foggy city far below. One arm raised, fist reaching into the fog. Fog surrounding the raised fist, undisturbed. No warm light, no amber — only cold grey-blue fog and darkness. Maximum film grain. Only one android. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, deep night. One chrome android standing at a balcony railing, thick fog around him, dark foggy city far below. One arm raised, fist reaching into the fog. Fog surrounding the raised fist, undisturbed. No warm light, no amber - only cold grey-blue fog and darkness. Maximum film grain. Only one android. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

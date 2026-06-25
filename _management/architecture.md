@@ -259,7 +259,7 @@ Three layers catch errors at different moments:
 | When | Mechanism | Checks |
 |---|---|---|
 | **At write time** | Claude Code PostToolUse hook (`.claude/settings.json`, Write matcher) | Warns immediately if a file written under `episode-XX/` breaks the naming convention |
-| **On demand / pre-publish** | `tests/run_all.py` (one command) | `naming_check.py` (filename patterns + episode-number consistency); `visual_prompt_validator.py` (mandatory suffix, forbidden aesthetics, per-episode character-phase with subject-guard + whitelist, and metadata-based **reference integrity**); `pipeline_integrity.py` (no skipped steps / missing gate outputs); `test_validators.py` (grade-the-graders meta-tests) |
+| **On demand / pre-publish** | `tests/run_all.py` (one command) | `naming_check.py` (filename patterns + episode-number consistency); `visual_prompt_validator.py` (mandatory suffix, forbidden aesthetics, per-episode character-phase with subject-guard + whitelist, and metadata-based **reference integrity**); `prompt_hygiene_lint.py` (scoped — model-facing prompt strings must be plain-English ASCII; never reads canon); `pipeline_integrity.py` (no skipped steps / missing gate outputs); `test_validators.py` (grade-the-graders meta-tests) |
 | **In CI** | GitHub Actions (`.github/workflows/`) | `create_episode.yml` scaffolds episodes on dispatch; `validation_suite.yml` runs the single gate `tests/run_all.py` on every push and pull request, blocking on failure (Python + action SHAs pinned) |
 
 The contract is `_management/naming_convention.md` (naming) and the

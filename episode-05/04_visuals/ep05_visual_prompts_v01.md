@@ -9,7 +9,7 @@
 - [x] `_management/master.md` → Visual DNA, color palette, forbidden list, mandatory suffix
 - [x] `episode-05/03_direction/ep05_dramaturgy_v01.md` → APPROVED scene breakdown (32 scenes)
 - [x] `_assets/cast/character_profiles.json` → Phase 2: Destruction visual state + Robochica design
-- [x] `_assets/cast/ref_robotiko_master.png` → Visual reference (Robotiko appears throughout)
+- [x] `_assets/cast/android_damaged.png` → Visual reference (Robotiko appears throughout)
 - [x] `episode-05/03_direction/ep05_concept_notes.md` → 8 human overrides, 12 creative rules
 - [x] `_memory/lessons.md` → Amber eyes rule, 16:9 rule, short identifier rule, ref image rules
 
@@ -53,7 +53,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 | Character | Short Identifier | Reference Path |
 |---|---|---|
-| Robotiko | "the chrome android" | `_assets/cast/ref_robotiko_master.png` |
+| Robotiko | "the chrome android" | `_assets/cast/android_damaged.png` |
 | Robochica | "the chrome female android with warm gold wires and fractal shoulder pattern" | `_assets/cast/ref_robochica_master.png` |
 | Elderly Robot Couple | "the two elderly chrome robots" | `_assets/cast/ref_elderly_couple_ep05.png` |
 
@@ -147,7 +147,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:00
 - **Dramaturgy Reference:** Close-up of Robotiko's face — steady blue eyes from EP04's finale, now scanning and hungry. Phase 2 damage visible on face.
 - **Characters Present:** Robotiko (Phase 2)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Close-up with breathing space around head. Leave room for subtle camera drift. Cool-to-warm transition in lighting.
 
@@ -160,7 +160,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:08
 - **Dramaturgy Reference:** Wide shot of retro-futuristic supermarket. Robotiko walks through aisle. Sparks catch amber light.
 - **Characters Present:** Robotiko (Phase 2)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `ref_env_supermarket_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `ref_env_supermarket_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide shot with strong aisle perspective. Character positioned in right third, depth through shelves.
 
@@ -173,7 +173,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:16
 - **Dramaturgy Reference:** Robotiko rounds aisle end and sees Robochica through shelves. Her profile, fractal shoulder pattern, one amber eye visible. His blue eyes widen.
 - **Characters Present:** Robotiko, Robochica (partial — profile only)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_robochica_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_robochica_master.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Split composition — Robotiko sharp focus in foreground right, Robochica soft focus in background left through shelf gap. Depth of field separation.
 
@@ -186,7 +186,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:24
 - **Dramaturgy Reference:** Close-up of Robotiko frozen mid-step, chrome food item slipping from hand. Sparks increase. Cooling vents hiss.
 - **Characters Present:** Robotiko (Phase 2)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium close-up. Space below for dropping item. Warm amber reflection on chrome face.
 
@@ -199,7 +199,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:33
 - **Dramaturgy Reference:** Street scene. Both characters in frame. Robochica walks slowly, Robotiko watches transfixed. His sparks increase rhythmically.
 - **Characters Present:** Robotiko, Robochica (both in frame)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_street_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_street_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide shot. She walks left-to-right in the left half, he stands frozen in the right half. Distance between them. Amber street lamp pools.
 
@@ -212,7 +212,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:41
 - **Dramaturgy Reference:** Medium shot of Robotiko watching her pass. His head tracks her. One blue wire flickers to warmer hue. Spark from chest crack looks like a heartbeat.
 - **Characters Present:** Robotiko (Phase 2)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium shot, character left of center, gaze directed right (toward where she passed). Amber street reflections on chrome.
 
@@ -225,7 +225,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:50
 - **Dramaturgy Reference:** ZOOM on Robotiko's face. Oil drips from mouth. Ultra-comic arousal. The drool catches amber light beautifully.
 - **Characters Present:** Robotiko (extreme close-up)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Extreme close-up of face, lower jaw and mouth area prominent. The drool is the focal point. Warm amber lighting makes it glisten comedically.
 
@@ -238,7 +238,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:58
 - **Dramaturgy Reference:** Medium shot of Robotiko's chest. Exposed wires glowing intensely. Heat distortion above shoulders. Steam from neck joints.
 - **Characters Present:** Robotiko (chest/torso close-up)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium close-up on torso area. Heat shimmer above shoulders. Warm tones intensifying.
 
@@ -251,7 +251,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 1:04
 - **Dramaturgy Reference:** Close-up of face. Eyes half-closed. Long slow oil drip. Steam from neck. Cooling fans stutter. Steam burst from damaged ear socket.
 - **Characters Present:** Robotiko (extreme close-up)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Extreme close-up, tighter than S07. Steam and oil prominent. The frame itself radiates warmth.
 
@@ -264,7 +264,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 1:10
 - **Dramaturgy Reference:** Interior of retro-futuristic cafe. Robotiko at table, leaning forward with earnest intensity. Keyboard/organ warmth.
 - **Characters Present:** Robotiko (Phase 2)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `ref_env_cafe_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `ref_env_cafe_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium shot. Character seated at table in left half. Cafe environment visible behind. Pendant lamp warmth above.
 
@@ -290,7 +290,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 1:24
 - **Dramaturgy Reference:** Back to Robotiko in cafe. Pleased with his own metaphor. Slight smile, warm blue eyes, leaning back. Other robot figures in soft focus behind.
 - **Characters Present:** Robotiko (Phase 2)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `ref_env_cafe_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `ref_env_cafe_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium shot. Character leaning back, relaxed posture. The warmth peak of Act 1.
 
@@ -307,7 +307,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 1:32
 - **Dramaturgy Reference:** Close-up of Robotiko's inner forearm. Laser from fingertip of his other hand etches "robochica_1" in amber-gold on chrome. The "1" subscript must be LEGIBLE. Glow cools to permanent mark. *(Changed from chest to forearm — chest too cluttered with Phase 2 damage for legible text. Forearm = classic tattoo placement, cleaner surface. EP06 will add _2, _3, _4 below it on the same forearm.)*
 - **Characters Present:** Robotiko (forearm close-up, other hand with laser)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Tight on inner forearm. Text must read clearly — the forearm's flat chrome surface provides clean canvas. Amber glow is primary light source. The "_1" subscript critical for EP06 payoff (where _2, _3, _4 will appear below it like tally marks).
 
@@ -320,7 +320,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 1:40
 - **Dramaturgy Reference:** Robotiko presses finger to temple. Translucent data visualization around his head — punch-card patterns, vacuum-tube glow, reel-to-reel streams. Inside one memory cell: Robochica's silhouette in amber.
 - **Characters Present:** Robotiko (Phase 2)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium close-up. Space around head for data visualization. Retro-futuristic data aesthetic — analog-digital hybrid.
 
@@ -333,7 +333,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 1:48
 - **Dramaturgy Reference:** Close-up of Robotiko wearing retro-futuristic chrome mesh hacker mask. Only blue eyes visible. Confident, rebellious, playful. Direct gaze at camera.
 - **Characters Present:** Robotiko (in hacker mask)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Start-End Keyframes (this is the START frame)
 - **Composition Notes:** Tight close-up on masked face. Blue eyes are the only recognizable feature. Confident energy.
 
@@ -346,7 +346,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 1:48
 - **Dramaturgy Reference:** Wide shot. Robotiko at retro workstation. Physical cord extends upward to a LITERAL BLUE CLOUD floating above, with a DATA CENTER BUILDING on top. He cuts the cord.
 - **Characters Present:** Robotiko (at desk, hacker mask)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Start-End Keyframes (this is the END frame)
 - **Composition Notes:** Vertical composition within 16:9. Bottom: Robotiko at desk. Middle: cord extending up. Top: cloud + data center. Must read as PHYSICAL objects.
 
@@ -359,7 +359,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 1:56
 - **Dramaturgy Reference:** Robotiko at massive retro-futuristic mainframe. His wires physically plugged into the machine. CRT screens show hearts and love-frequency waveforms. Hands dance across mechanical switches.
 - **Characters Present:** Robotiko (Phase 2)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide-medium shot. The mainframe is massive — floor to ceiling. Robotiko is dwarfed by it. Blinking lights create visual rhythm.
 
@@ -372,7 +372,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:05
 - **Dramaturgy Reference:** Two chrome figures walk into vast colossal iron vault. Massive iron-chrome arched walls, broken skylights, amber light shafts, polished chrome floor. Walking side by side, 3-4 body-widths apart.
 - **Characters Present:** Robotiko, Robochica (walking, separated by distance)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_ironvault_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_ironvault_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide shot. Enormous space. Two small figures in vast architecture. Chrome floor reflections. The solo's emotional entry.
 
@@ -385,7 +385,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:16
 - **Dramaturgy Reference:** Two figures continue walking. Distance closed to 2 body-widths. Robotiko's sparks leave amber light trail on floor. Robochica's wires catch skylight. Chrome floor reflections beneath.
 - **Characters Present:** Robotiko, Robochica (walking, closer)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_ironvault_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_ironvault_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide shot, slightly closer than S17. Two body-widths between figures. Floor reflections double the visual. Warm traces on distant walls.
 
@@ -398,7 +398,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:27
 - **Dramaturgy Reference:** Close-up of Robotiko's cracked chest. A FEW THIN beams of warm amber light seep through fractures from within. Subtle, quiet, understated. Unconscious preview of EP09 Kintsugi. He does not notice it.
 - **Characters Present:** Robotiko (chest close-up)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Tight on chest. Amber light beams are thin and few — understated. The iron vault's cool blue-gray surroundings make the warm light more poignant.
 
@@ -411,7 +411,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:37
 - **Dramaturgy Reference:** THE defining image. Wide shot. Industrial iron vault to vanishing points. Two chrome figures close together — one damaged/sparking, one cleaner/warmer. Amber light shafts. Chrome floor reflections. Amber glow on distant horizon. POSTER IMAGE quality.
 - **Characters Present:** Robotiko, Robochica (full figures, wide shot)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_ironvault_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_ironvault_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** MAXIMUM depth. Foreground: chrome floor reflections. Midground: two figures. Background: vanishing iron vault + amber horizon. Rule of thirds: figures slightly left of center, amber horizon on right third. Gallery-worthy composition.
 
@@ -424,7 +424,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:45
 - **Dramaturgy Reference:** Cathedral dissolves. Iron walls become translucent, skylights blur, chrome floor fragments. Reality returns. Last amber shaft lingers then replaced by fluorescent office lighting. Gentle dream-ending transition.
 - **Characters Present:** Robotiko (solo — Robochica dissolves with the space)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Transitional shot. Elements of iron vault dissolving into mundane environment. Dreamy and disorienting.
 
@@ -437,7 +437,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:50
 - **Dramaturgy Reference:** Retro-futuristic office. Robotiko at workstation, arms full of WINDOWS-STYLE FILE FOLDERS (classic yellow folder icon, physical). Model AI employee. Then his eyes shift — he sees Robochica at another desk.
 - **Characters Present:** Robotiko (with folders), Robochica (distant, at another desk)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_office_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_robochica_master.png` + `ref_env_office_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium-wide. Robotiko in foreground with folders. Robochica visible in background at distant desk. Office environment. The yellow folders are KEY visual element.
 
@@ -450,7 +450,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:58
 - **Dramaturgy Reference:** Robotiko THROWS folders. Yellow folder icons flying through air, papers and punch-cards exploding, data sheets fluttering like confetti. His eyes locked on Robochica. One folder lands on his terminal.
 - **Characters Present:** Robotiko (action — throwing)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `ref_env_office_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `ref_env_office_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Dynamic composition. Folders and papers mid-flight filling the frame. Chaotic energy. His expression: determined, excited.
 
@@ -463,7 +463,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 3:06
 - **Dramaturgy Reference:** Robotiko's entire body turned BRIGHT RED. Full-body overheating made visible. Rust glows orange. All wires red. Heat distortion around silhouette. Ecstatic expression.
 - **Characters Present:** Robotiko (full body — bright red)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Full body visible. The red glow is the dominant visual element. Heat distortion around silhouette. Arms slightly spread — celebratory.
 
@@ -476,7 +476,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 3:15
 - **Dramaturgy Reference:** Tighter on body. Electricity ARCS visibly across red-hot chassis. Blue-white bolts between joints, cracks, wires. Miniature lightning across red chrome. The last moment of pure joy.
 - **Characters Present:** Robotiko (upper body close-up — electric arcs)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Upper body close-up. Electric arcs are the visual spectacle. Maximum warmth and intensity. The PEAK of comedy's visual energy.
 
@@ -493,7 +493,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 3:24
 - **Dramaturgy Reference:** Robotiko's room. Sits on edge of cot. No longer bright red — heat fading back to chrome. Content, tired. Single amber desk lamp. The warmth begins to cool. Not ominous — just... less.
 - **Characters Present:** Robotiko (alone, seated)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `ref_env_room_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `ref_env_room_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium shot. Seated on cot in the right half. Desk lamp provides the only warm light — but slightly dimmer than expected. The first degree of warmth leaving.
 
@@ -506,7 +506,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 3:33
 - **Dramaturgy Reference:** Same room. Leaned forward, elbows on knees. Eyes scan the room. Desk lamp flickers. Amber warmth drops. Chrome walls reflect cooler silver. Sparks now look like damage again.
 - **Characters Present:** Robotiko (alone, searching)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `ref_env_room_ep05.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `ref_env_room_ep05.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Similar framing to S26 but cooler. The same room, subtly colder. Kodachrome saturation visibly decreasing.
 
@@ -519,7 +519,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 3:42
 - **Dramaturgy Reference:** Close-up of Robotiko's eyes. A PROJECTION emanates outward from his pupils — Robochica's holographic image forming in the air. The room has gone cold. The projection is the only warm light. EP03 callback: same technique as cinci hoca, different meaning.
 - **Characters Present:** Robotiko (close-up — eyes), Robochica (as projection/hologram)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Face fills left half. Projection fills right half. Warm/cold split: warm amber hologram on cold blue room. The desk lamp is nearly out.
 
@@ -532,7 +532,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 3:50
 - **Dramaturgy Reference:** The eye projection FLICKERS. Scan lines cut across hologram. Robochica's form fragments, pixelates, dissolves. Robotiko reaches toward it — fingers pass through light. First real fear. Cold deep digital blue invades from edges.
 - **Characters Present:** Robotiko (reaching toward failing projection)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium shot. His hands reaching toward the flickering projection. The color transition is visible: amber → nothing → blue. Cold blue creeping from the edges of the frame.
 
@@ -545,7 +545,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 3:58
 - **Dramaturgy Reference:** Projection dies completely. Robotiko alone in cold blue light. Desk lamp dead. CRT shows blank blue screen. Chrome walls reflect blue. The "robochica_1" tattoo visible — in cold blue light it looks like a scar, not a badge. NOT Windows BSOD — existential, immersive deep blue.
 - **Characters Present:** Robotiko (alone, blue-lit)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium shot. Completely cold. NO warm tones. The blue is existential, immersive. The tattoo on his inner forearm is visible and reads as a wound.
 
@@ -558,7 +558,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 4:03
 - **Dramaturgy Reference:** Extreme close-up. Robotiko's eyes filling the frame. Blue flickers between dead blue and complete darkness. Near-silence. "Beyond... Repair..." barely audible. No sparks. No movement. A machine that has stopped processing.
 - **Characters Present:** Robotiko (extreme close-up — eyes only)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** EXTREME close-up — eyes only, filling the frame. Flickering blue against darkness. Minimal. The silence is visual. This image should linger.
 

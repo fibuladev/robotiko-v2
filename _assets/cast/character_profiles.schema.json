@@ -66,6 +66,23 @@
           },
           "additionalProperties": false
         },
+        "phase_keyword_whitelist": {
+          "type": "object",
+          "description": "Scene-pinned exceptions where a forbidden phase keyword legitimately describes a non-Robotiko subject (foil androids, dream copies). Narrow by design.",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["scenes", "keywords", "reason"],
+              "properties": {
+                "scenes": { "type": "array", "items": { "type": "integer", "minimum": 1 } },
+                "keywords": { "type": "array", "items": { "type": "string" } },
+                "reason": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
         "eye_color_logic": { "type": "object" },
         "evolution": { "type": "object" }
       }

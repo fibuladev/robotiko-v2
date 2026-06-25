@@ -37,26 +37,45 @@ FORBIDDEN_AESTHETICS = [
     "unreal engine",
 ]
 
-# Robotiko visual state per phase (from character_profiles.json)
-PHASE_KEYWORDS = {
-    "phase_1": {  # EP01-03: Awakening
-        "episodes": [1, 2, 3],
-        "required_keywords": ["pristine", "chrome"],
-        "forbidden_keywords": ["rusted", "cracked", "translucent", "patched"],
-        "label": "Phase 1: Pristine Chrome (Awakening)",
-    },
-    "phase_2": {  # EP04-07: Destruction
-        "episodes": [4, 5, 6, 7],
-        "required_keywords": ["rust", "crack", "spark", "damage", "glitch"],
-        "forbidden_keywords": ["pristine", "translucent", "bioluminescent"],
-        "label": "Phase 2: Damaged Chrome (Destruction)",
-    },
-    "phase_3": {  # EP08-10: Reconstruction
-        "episodes": [8, 9, 10],
-        "required_keywords": ["translucent", "patch", "kintsugi", "scrap"],
-        "forbidden_keywords": ["pristine"],
-        "label": "Phase 3: Reconstructed (Kintsugi)",
-    },
+# Robotiko visual state per phase. The forbidden set is per-EPISODE, not per-phase,
+# because Phase 1 is NOT uniform: EP01 is pristine, but canon (character_profiles
+# evolution.phase_1_awakening) says EP02-EP03 already carry battle damage — missing
+# ear, torso dent, cracked sensor panels. So "cracked"/"rusted" are CORRECT for
+# EP02-EP03, not violations. Phase-3 markers (translucent body, gold-filled cracks,
+# bioluminescent core) stay forbidden until the body actually reaches Phase 3.
+PHASE_LABELS = {
+    1: "Phase 1: Pristine Chrome (Awakening)",
+    2: "Phase 2: Damaged Chrome (Destruction)",
+    3: "Phase 3: Reconstructed (Kintsugi)",
+}
+
+PHASE3_MARKERS = ["translucent", "patched", "bioluminescent", "kintsugi"]
+
+# Forbidden Robotiko body-state keywords, per episode.
+EPISODE_FORBIDDEN = {
+    1: ["rusted", "cracked"] + PHASE3_MARKERS,   # EP01: pristine — no damage at all
+    2: PHASE3_MARKERS,                            # EP02-03: damage is canon; no Phase-3 yet
+    3: PHASE3_MARKERS,
+    4: ["pristine"] + PHASE3_MARKERS,            # EP04-07: damaged; pristine + Phase-3 forbidden
+    5: ["pristine"] + PHASE3_MARKERS,
+    6: ["pristine"] + PHASE3_MARKERS,
+    7: ["pristine"] + PHASE3_MARKERS,
+    8: ["pristine"],                              # EP08-10: Phase 3 — only pristine is wrong
+    9: ["pristine"],
+    10: ["pristine"],
+}
+
+# A forbidden keyword is judged ONLY when it describes Robotiko. When it is bound to
+# scenery or an effect (a "cracked" wall, a "translucent" data hologram, "pristine"
+# shelves), it is not a character-state violation. These nouns, appearing within a few
+# words of the keyword, neutralize it. Body words (chest, plate, chassis, panel, hand)
+# are deliberately ABSENT — those keep the keyword pointed at Robotiko.
+NON_ROBOTIKO_NOUNS = {
+    "wall", "walls", "shelf", "shelves", "glass", "data", "visualization",
+    "hologram", "sky", "snow", "floor", "ground", "screen", "mirror", "window",
+    "windows", "skylight", "skylights", "curtain", "curtains", "ceiling",
+    "building", "buildings", "room", "corridor", "vault", "tiles", "tile",
+    "wallpaper", "fog", "cloud", "clouds", "world",
 }
 
 
@@ -114,13 +133,21 @@ def extract_prompts(content: str) -> list[dict]:
 def extract_scenes(content: str) -> list[dict]:
     """
     Extract full scene metadata blocks from a visual prompts file.
-    Parses Characters Present, Image Reference Path, and Upload fields
-    alongside the text prompt — the fields the ref-integrity check needs.
+    Parses Characters Present, Image Reference Path, Upload and the text prompt —
+    the fields the ref-integrity and character-phase checks need.
+
+    Handles BOTH header conventions:
+      - "#### Scene S03a — Title"  (EP02, EP04, EP05, EP07-09)
+      - "#### S11 — Title"          (EP06)
+    The "Scene" word is optional. The a/b sub-scene suffix (Mode B keyframe pairs)
+    is preserved as a label so S03a and S03b read as the two distinct frames they
+    are — not as a duplicate "S03".
     """
     scenes = []
 
     scene_block_pattern = re.compile(
-        r"####\s*Scene\s+S(\d{2})\w*\s*[^\n]*\n(.*?)(?=\n####\s*Scene\s+S\d{2}|\n---\s*\n##\s|\Z)",
+        r"####\s*(?:Scene\s+)?S(\d{2})(\w*)\s*[^\n]*\n"
+        r"(.*?)(?=\n####\s*(?:Scene\s+)?S\d{2}|\n---\s*\n##\s|\Z)",
         re.DOTALL
     )
 
@@ -136,16 +163,34 @@ def extract_scenes(content: str) -> list[dict]:
         ),
     }
 
+    # The text prompt body — a markdown blockquote after the **Text Prompt:** marker.
+    text_pattern = re.compile(
+        r"\*\*(?:Text\s+)?Prompt:?\s*\*\*:?\s*\n?>?\s*(.*?)(?=\n####|\n---|\Z)",
+        re.DOTALL | re.IGNORECASE
+    )
+
     for scene_match in scene_block_pattern.finditer(content):
         scene_num = int(scene_match.group(1))
-        block = scene_match.group(2)
+        suffix = scene_match.group(2) or ""
+        block = scene_match.group(3)
 
-        scene = {"scene_number": scene_num, "characters": "", "ref_path": "", "upload": ""}
+        scene = {
+            "scene_number": scene_num,
+            "label": f"S{scene_num:02d}{suffix}",
+            "characters": "",
+            "ref_path": "",
+            "upload": "",
+            "text": "",
+        }
 
         for field, pattern in field_patterns.items():
             m = pattern.search(block)
             if m:
                 scene[field] = m.group(1).strip().split("\n")[0].strip()
+
+        tm = text_pattern.search(block)
+        if tm:
+            scene["text"] = tm.group(1).strip()
 
         scenes.append(scene)
 
@@ -266,11 +311,12 @@ def check_ref_integrity(scenes: list[dict], episode_number: int) -> list[str]:
                 expected_entry = ref_images.get(ref_id, {})
                 expected_path = expected_entry.get("path")
                 expected_name = os.path.basename(expected_path) if expected_path else "text-only base / chain refs (no file)"
+                label = scene.get("label", f"S{scene['scene_number']:02d}")
                 errors.append(
-                    f"  FAIL [Ref Integrity] Scene S{scene['scene_number']:02d}: "
+                    f"  FAIL [Ref Integrity] Scene {label}: "
                     f"Uses '{os.path.basename(f_path)}' but phase requires '{ref_id}' "
                     f"(expected: {expected_name}). "
-                    f"Rule: {ref_id} ref must be used for EP{episode_number:02d} S{scene['scene_number']:02d}."
+                    f"Rule: {ref_id} ref must be used for EP{episode_number:02d} {label}."
                 )
                 break
 
@@ -309,42 +355,90 @@ def check_forbidden_aesthetics(prompts: list[dict]) -> list[str]:
     return errors
 
 
-def check_character_phase(prompts: list[dict], episode_number: int) -> list[str]:
+def keyword_targets_robotiko(text_lower: str, keyword: str) -> bool:
     """
-    Check that Robotiko's visual state matches the episode's phase.
-    Only checks prompts that mention Robotiko.
+    Decide whether a forbidden keyword actually describes Robotiko, or whether it
+    is bound to scenery / an effect (a 'cracked' wall, a 'translucent' data
+    hologram, 'pristine' shelves). Returns True only if at least one occurrence is
+    Robotiko-pointed: not negated ("not pristine"), and not within a few words of a
+    non-Robotiko noun. This is what lets the check judge Robotiko, not the set.
     """
-    errors = []
-    warnings = []
+    words = re.findall(r"[a-z0-9]+", text_lower)
+    for i, w in enumerate(words):
+        if w != keyword:
+            continue
+        if i > 0 and words[i - 1] == "not":          # "not pristine"
+            continue
+        window = words[max(0, i - 3):i + 4]
+        if any(n in NON_ROBOTIKO_NOUNS for n in window if n != keyword):
+            continue
+        return True
+    return False
 
-    # Find which phase this episode belongs to
-    current_phase = None
-    for phase_key, phase_data in PHASE_KEYWORDS.items():
-        if episode_number in phase_data["episodes"]:
-            current_phase = phase_data
-            break
 
-    if not current_phase:
+def load_phase_whitelist(episode_number: int, profiles: dict = None) -> list:
+    """
+    Scene-pinned exceptions where a forbidden keyword legitimately describes a
+    NON-Robotiko subject (e.g. EP08 S22's pristine dream copies, EP06's pristine
+    conformist foil android). Narrow by design: pinned to specific scenes + keywords
+    so a new pristine-Robotiko error anywhere else still fires.
+    """
+    if profiles is None:
+        try:
+            profiles = load_profiles()
+        except (FileNotFoundError, json.JSONDecodeError, KeyError):
+            return []
+    wl = profiles.get("robotiko", {}).get("phase_keyword_whitelist", {})
+    return wl.get(str(episode_number), [])
+
+
+def _is_whitelisted(entries: list, scene_number: int, keyword: str) -> bool:
+    for e in entries:
+        if scene_number in e.get("scenes", []) and keyword in e.get("keywords", []):
+            return True
+    return False
+
+
+def check_character_phase(scenes: list[dict], episode_number: int, whitelist: list = None) -> list[str]:
+    """
+    Check that Robotiko's visual state matches the episode's phase. Scene-based, so
+    it knows the scene id (for honest labels and scene-pinned whitelisting) and only
+    judges words that describe Robotiko (subject-guard), not the scenery.
+    """
+    forbidden = EPISODE_FORBIDDEN.get(episode_number)
+    if forbidden is None:
         return [f"  WARN: Episode {episode_number} not mapped to any phase."]
 
+    phase = get_phase_for_episode(episode_number, load_profiles()) if os.path.exists(
+        os.path.join(".", "_assets", "cast", "character_profiles.json")
+    ) else 0
+    label = PHASE_LABELS.get(phase, f"EP{episode_number:02d}")
+
+    if whitelist is None:
+        whitelist = load_phase_whitelist(episode_number)
+
     robotiko_identifiers = ["robotiko", "chrome android"]
-    robotiko_prompts = [
-        p for p in prompts
-        if any(ident in p["text"].lower() for ident in robotiko_identifiers)
-    ]
+    errors = []
 
-    if not robotiko_prompts:
-        return []
+    for scene in scenes:
+        haystack = f"{scene.get('characters', '')} {scene.get('text', '')}".lower()
+        if not any(ident in haystack for ident in robotiko_identifiers):
+            continue
 
-    # Check for forbidden keywords in current phase
-    for prompt in robotiko_prompts:
-        text_lower = prompt["text"].lower()
-        for forbidden in current_phase["forbidden_keywords"]:
-            if forbidden in text_lower:
-                errors.append(
-                    f"  FAIL [Character Phase] Prompt #{prompt['index']}: "
-                    f"Contains '{forbidden}' which is forbidden in {current_phase['label']}."
-                )
+        text_lower = scene.get("text", "").lower()
+        scene_label = scene.get("label", f"S{scene.get('scene_number', 0):02d}")
+
+        for kw in forbidden:
+            if kw not in text_lower:
+                continue
+            if not keyword_targets_robotiko(text_lower, kw):
+                continue  # describes scenery/effect, not Robotiko
+            if _is_whitelisted(whitelist, scene.get("scene_number", -1), kw):
+                continue  # intentional, documented non-Robotiko subject
+            errors.append(
+                f"  FAIL [Character Phase] Scene {scene_label}: "
+                f"Contains '{kw}' describing Robotiko, which is forbidden in {label}."
+            )
 
     return errors
 
@@ -388,9 +482,8 @@ def validate_file(filepath: str) -> dict:
     results["errors"].extend(check_forbidden_aesthetics(prompts))
 
     if episode_number > 0:
-        results["errors"].extend(check_character_phase(prompts, episode_number))
-
         scenes = extract_scenes(content)
+        results["errors"].extend(check_character_phase(scenes, episode_number))
         results["errors"].extend(check_ref_integrity(scenes, episode_number))
 
     return results

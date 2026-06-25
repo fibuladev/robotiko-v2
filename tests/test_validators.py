@@ -175,13 +175,139 @@ class TestTextGraders(unittest.TestCase):
         self.assertEqual(vpv.check_forbidden_aesthetics(ok), [])
 
     def test_character_phase_grader_catches_pristine_in_phase3(self):
-        # EP09 is Phase 3 — "pristine" is forbidden in the prompt text.
-        bad = [{"index": 1, "text": f"a pristine chrome android, {SUFFIX}"}]
-        self.assertTrue(vpv.check_character_phase(bad, 9))
+        # EP09 is Phase 3 — "pristine" describing Robotiko is forbidden.
+        bad = [_scene(f"a pristine chrome android, {SUFFIX}")]
+        self.assertTrue(vpv.check_character_phase(bad, 9, whitelist=[]))
 
     def test_character_phase_grader_passes_correct_phase3(self):
-        ok = [{"index": 1, "text": f"a battle-scarred chrome android, gold in the cracks, {SUFFIX}"}]
-        self.assertEqual(vpv.check_character_phase(ok, 9), [])
+        ok = [_scene(f"a battle-scarred chrome android, gold in the cracks, {SUFFIX}")]
+        self.assertEqual(vpv.check_character_phase(ok, 9, whitelist=[]), [])
+
+
+# ─────────────────────────────────────────────
+# Each loosening, proven both directions: still CATCHES a real Robotiko bug,
+# and correctly IGNORES the intended case. No check is loosened without this.
+# ─────────────────────────────────────────────
+
+def _scene(text, characters="Robotiko (@Damaged)", number=1, label=None):
+    return {
+        "scene_number": number,
+        "label": label or f"S{number:02d}",
+        "characters": characters,
+        "text": text,
+        "ref_path": "",
+        "upload": "",
+    }
+
+
+class TestSubjectGuardRefinement(unittest.TestCase):
+    """REFINE A — judge Robotiko, not the scenery."""
+
+    def test_ignores_pristine_scenery(self):
+        # EP05 S10 real text: "pristine shelves" is the supermarket, not Robotiko.
+        s = _scene("his cracked chassis contrasts with the pristine shelves around him")
+        self.assertEqual(vpv.check_character_phase([s], 5, whitelist=[]), [])
+
+    def test_ignores_translucent_effects_and_walls(self):
+        # EP05 S22 (data viz) and S30 (iron walls dissolving) — environment/effect.
+        s1 = _scene("a translucent visualization of data flows around his head")
+        s2 = _scene("the colossal iron walls becoming translucent and ghostly")
+        self.assertEqual(vpv.check_character_phase([s1], 5, whitelist=[]), [])
+        self.assertEqual(vpv.check_character_phase([s2], 5, whitelist=[]), [])
+
+    def test_ignores_negated_pristine(self):
+        s = _scene("subtle wear marks, the chrome android is not pristine, he carries history")
+        self.assertEqual(vpv.check_character_phase([s], 5, whitelist=[]), [])
+
+    def test_still_catches_pristine_robotiko_body(self):
+        # The real bug the guard must NOT mask: Robotiko himself described pristine.
+        s = _scene("the chrome android's pristine chest plate, clean and sealed")
+        self.assertTrue(vpv.check_character_phase([s], 5, whitelist=[]))
+
+
+class TestPhaseGranularityRefinement(unittest.TestCase):
+    """REFINE B — EP01 is pristine, but EP02/EP03 are canon-damaged."""
+
+    def test_ep01_still_forbids_cracked_robotiko(self):
+        s = _scene("the chrome android with a cracked dented chest plate")
+        self.assertTrue(vpv.check_character_phase([s], 1, whitelist=[]))
+
+    def test_ep02_allows_canon_damage(self):
+        s = _scene("the chrome android, cracked sensor panels, missing right ear, torso dent")
+        self.assertEqual(vpv.check_character_phase([s], 2, whitelist=[]), [])
+
+    def test_ep03_allows_canon_damage(self):
+        s = _scene("the chrome android with cracked back panels and rusted joints")
+        self.assertEqual(vpv.check_character_phase([s], 3, whitelist=[]), [])
+
+    def test_ep02_still_catches_phase3_marker_leak(self):
+        # Damage is fine in EP02; a Phase-3 marker (translucent body) is not.
+        s = _scene("the chrome android with translucent digital skin over a glowing core")
+        self.assertTrue(vpv.check_character_phase([s], 2, whitelist=[]))
+
+
+class TestWhitelistNarrowness(unittest.TestCase):
+    """The whitelist (loaded from character_profiles.json) is scene-pinned: it
+    silences the intended case WITHOUT silencing the same keyword elsewhere."""
+
+    def test_ep08_s22_dream_copies_ignored(self):
+        s = _scene(
+            "every seat occupied by an identical pristine undamaged chrome android",
+            characters="Robotiko (damaged, center); hundreds of pristine copies",
+            number=22,
+        )
+        self.assertEqual(vpv.check_character_phase([s], 8), [])
+
+    def test_ep08_pristine_robotiko_elsewhere_still_fires(self):
+        s = _scene("the pristine chrome android at the center, undamaged", number=10)
+        self.assertTrue(vpv.check_character_phase([s], 8))
+
+    def test_ep06_foil_scene_ignored(self):
+        s = _scene("two chrome android faces side by side, pristine on the right",
+                   characters="", number=21)
+        self.assertEqual(vpv.check_character_phase([s], 6), [])
+
+    def test_ep06_pristine_robotiko_in_unlisted_scene_still_fires(self):
+        s = _scene("the chrome android, pristine and undamaged chrome body", number=99)
+        self.assertTrue(vpv.check_character_phase([s], 6))
+
+
+class TestParserCoverage(unittest.TestCase):
+    """The false-green that started TAKE 05: a scene parser that silently matches
+    zero blocks reports PASS over an unchecked file. Guard it forever."""
+
+    SHIPPED = [
+        "episode-02/04_visuals/ep02_visual_prompts_v01.md",
+        "episode-04/04_visuals/ep04_visual_prompts_v01.md",
+        "episode-05/04_visuals/ep05_visual_prompts_v01.md",
+        "episode-06/04_visuals/ep06_visual_prompts_v03.md",  # the "#### S11" format
+        "episode-08/04_visuals/ep08_visual_prompts_v01.md",
+        "episode-09/04_visuals/ep09_visual_prompts_v01.md",
+    ]
+
+    def _read(self, rel):
+        with open(os.path.join(REPO_ROOT, rel), encoding="utf-8") as f:
+            return f.read()
+
+    def test_every_shipped_episode_parses_scenes(self):
+        for rel in self.SHIPPED:
+            scenes = vpv.extract_scenes(self._read(rel))
+            self.assertGreater(
+                len(scenes), 0,
+                f"{rel} parsed ZERO scenes — ref-integrity would silently pass over nothing.",
+            )
+
+    def test_ep06_alternate_header_format_is_parsed(self):
+        # EP06 uses "#### S11 —", not "#### Scene S11 —". Regression guard.
+        content = self._read("episode-06/04_visuals/ep06_visual_prompts_v03.md")
+        self.assertGreaterEqual(len(vpv.extract_scenes(content)), 30)
+
+    def test_keyframe_pairs_get_distinct_labels(self):
+        # S03a and S03b must not collapse to a single "S03".
+        content = self._read("episode-04/04_visuals/ep04_visual_prompts_v01.md")
+        labels = [s["label"] for s in vpv.extract_scenes(content)]
+        self.assertIn("S03a", labels)
+        self.assertIn("S03b", labels)
 
 
 if __name__ == "__main__":

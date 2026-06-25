@@ -44,6 +44,22 @@
         }
       }
     },
+    "phase_keyword_whitelist": {
+      "6": [
+        {
+          "scenes": [21, 32, 35],
+          "keywords": ["pristine"],
+          "reason": "EP06 'pristine' describes the conformist FOIL android (the damaged-vs-pristine office duality), never Robotiko. Robotiko is 'the damaged android' and is independently verified @Damaged by the ref-integrity check (clean). Narrowly pinned to the only scenes whose text carries the 'chrome android' identifier and therefore fire the keyword check; a pristine-Robotiko slip in any other scene still fails."
+        }
+      ],
+      "8": [
+        {
+          "scenes": [22],
+          "keywords": ["pristine"],
+          "reason": "EP08 S22 boardroom dream: hundreds of identical PRISTINE copies of Robotiko surround the one real @Damaged original at center. The copies are intentional (documented in the file). Robotiko's own reference stays android_damaged.png and is still policed by ref-integrity."
+        }
+      ]
+    },
     "eye_color_logic": {
       "blue": "Healthy, stable, curious",
       "red": "Error state, danger, emotional overload",

@@ -9,7 +9,7 @@
 - [x] `_management/master.md` → Visual DNA, color palette, forbidden list, mandatory suffix
 - [x] `episode-04/03_direction/ep04_dramaturgy_v01.md` → APPROVED scene breakdown (44 scenes)
 - [x] `_assets/cast/character_profiles.json` → Phase 2 visual state confirmed
-- [x] `_assets/cast/ref_robotiko_master.png` → Robotiko visual reference
+- [x] `_assets/cast/android_damaged.png` → Robotiko visual reference
 - [x] `_assets/cast/ref_mentor_master.png` → Mentor visual reference (old sage — room scenes only)
 
 > ⚠️ Dramaturgy APPROVED by human before visual prompt generation.
@@ -100,7 +100,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:00
 - **Dramaturgy Reference:** Night wasteland. Damaged Robotiko approaches the Mentor's dwelling from the distance.
 - **Characters Present:** Robotiko (Phase 2 — rusted, cracked, sparking)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide landscape, figure small in frame. House at right third. Leave breathing space left for potential pan. Headroom above for stars.
 
@@ -126,7 +126,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:18
 - **Dramaturgy Reference:** Robotiko enters the doorway. Cold night behind, warm amber room ahead. Bag in hand.
 - **Characters Present:** Robotiko (Phase 2 — in doorway, bag in hand), Mentor (seated, watching)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_mentor_master.png` + REF-ENV-01
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_mentor_master.png` + REF-ENV-01
 - **Video Tech Strategy:** Start-End Keyframes (START)
 - **Composition Notes:** Doorway framing. Cold backlight behind Robotiko. Warm interior ahead. Leave headroom above.
 
@@ -139,7 +139,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:18
 - **Dramaturgy Reference:** Robotiko inside the room, bag dropped on floor, head bowed in shame.
 - **Characters Present:** Robotiko (Phase 2 — inside, head bowed), Mentor (seated)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_mentor_master.png` + REF-ENV-01
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_mentor_master.png` + REF-ENV-01
 - **Video Tech Strategy:** Start-End Keyframes (END)
 - **Composition Notes:** Interior shot. Robotiko standing head-down, bag on stone floor. Mentor seated. The doorway behind still shows night.
 
@@ -182,7 +182,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:43
 - **Dramaturgy Reference:** Medium shot of Robotiko seated, head bowed, hands on knees. Glitching eyes reflect amber. First time truly passive.
 - **Characters Present:** Robotiko (Phase 2 — seated, head bowed, listening), Mentor (partial view)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png` + `_assets/cast/ref_mentor_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png` + `_assets/cast/ref_mentor_master.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium shot. Robotiko at center. Mentor partially visible at frame edge. Amber reflections on chrome. Space above for headroom.
 
@@ -199,7 +199,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 0:53
 - **Dramaturgy Reference:** Wider two-shot. Mentor leans forward, elbows on knees. Storyteller posture. Robotiko sits opposite.
 - **Characters Present:** Mentor (leaning forward, storytelling), Robotiko (still, listening)
-- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/ref_robotiko_master.png` + REF-ENV-01
+- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/android_damaged.png` + REF-ENV-01
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide two-shot. Mentor at left, Robotiko at right. Table with tea glasses between them. Depth layering.
 
@@ -298,7 +298,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:12
 - **Dramaturgy Reference:** The blinding light fades. Back in the room. Amber afterglow lingers on every surface. Two figures in silence.
 - **Characters Present:** Mentor (seated, still), Robotiko (seated, absorbing)
-- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/ref_robotiko_master.png` + REF-ENV-01
+- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/android_damaged.png` + REF-ENV-01
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide interior. Amber afterglow. Two figures separated by the table. Return to intimate scale.
 
@@ -315,7 +315,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 2:17
 - **Dramaturgy Reference:** The Mentor pauses, hands folded. Tea steam rises. Robotiko's glitching eyes almost stabilize. The untouched glass sits patient.
 - **Characters Present:** Mentor (pausing), Robotiko (reflecting)
-- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/ref_robotiko_master.png` + REF-ENV-01
+- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/android_damaged.png` + REF-ENV-01
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium two-shot. Calm composition. Tea steam as the only movement. Breathing space on all sides.
 
@@ -455,7 +455,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 3:32
 - **Dramaturgy Reference:** Cut to room. Robotiko close-up. Glitching eyes slow their pattern. Head lifts imperceptibly. The first tremor of reception.
 - **Characters Present:** Robotiko (close-up — eyes flickering slower, teaching landing)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Tight close-up on Robotiko's face. Amber reflection on chrome. Eyes as focal point. Leave some space for subtle tilt.
 
@@ -633,7 +633,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 5:13
 - **Dramaturgy Reference:** Back in the room. Old Mentor with staff (first time together in the room). Posture resolved, not victorious. Robotiko absorbs. Eyes slowing.
 - **Characters Present:** Mentor (old sage, resolved, staff beside him), Robotiko (Phase 2, absorbing, eyes slower)
-- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/ref_robotiko_master.png` + REF-ENV-01
+- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/android_damaged.png` + REF-ENV-01
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Medium two-shot. Mentor at left with staff. Robotiko at right. Table between. Warm settled amber. Intimate after cosmic.
 
@@ -720,7 +720,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 6:47
 - **Dramaturgy Reference:** Room almost dark. Two silhouettes in amber. Staff only illumination. Oil lamp dead. Silence settles.
 - **Characters Present:** Mentor (silhouette), Robotiko (silhouette)
-- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/ref_robotiko_master.png` + REF-ENV-01
+- **Image Reference Path:** `_assets/cast/ref_mentor_master.png` + `_assets/cast/android_damaged.png` + REF-ENV-01
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Wide interior. Minimal amber. Two dark silhouettes. The table between. Near silence made visual. Maximum darkness.
 
@@ -746,7 +746,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 7:00
 - **Dramaturgy Reference:** Robotiko head-down, glitching blue-red eyes. The position he has held for 43 scenes. Near darkness, amber staff light.
 - **Characters Present:** Robotiko (Phase 2 — head-down, glitching eyes)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Start-End Keyframes (START)
 - **Composition Notes:** Close-up on face. Head angled down. Glitching eyes visible. Amber reflection on chrome. Leave headroom for the lift.
 
@@ -759,7 +759,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **Timestamp:** 7:00
 - **Dramaturgy Reference:** Head lifted. Eyes settled — steady, clear blue. Not red, not glitching. Amber staff light reflects in his blue eyes. Curiosity. Hope. The first spark. Fade to black.
 - **Characters Present:** Robotiko (close-up — eyes STEADY BLUE, head up, amber reflecting in eyes)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Start-End Keyframes (END)
 - **Composition Notes:** Close-up on face. Head raised. Eyes are the focal point — steady blue with amber reflection. The episode's final image before black.
 

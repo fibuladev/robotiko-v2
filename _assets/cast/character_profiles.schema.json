@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Robotiko v2.0 Character Profiles",
+  "description": "Character definitions including phase-aware reference image mappings for the visual pipeline.",
+  "type": "object",
+  "required": ["robotiko"],
+  "properties": {
+    "robotiko": {
+      "type": "object",
+      "required": ["name", "master_ref_path", "reference_images", "phase_reference_map", "evolution"],
+      "properties": {
+        "name": { "type": "string" },
+        "archetype": { "type": "string" },
+        "base_visual_prompt": { "type": "string" },
+        "master_ref_path": { "type": "string" },
+        "reference_images": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "object",
+            "required": ["path", "alt_angles", "description"],
+            "properties": {
+              "path": { "type": ["string", "null"] },
+              "alt_angles": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "description": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "phase_reference_map": {
+          "type": "object",
+          "required": ["default_by_phase"],
+          "properties": {
+            "default_by_phase": {
+              "type": "object",
+              "required": ["1", "2", "3"],
+              "additionalProperties": { "type": "string" }
+            },
+            "episode_overrides": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "ref": { "type": "string" },
+                  "note": { "type": "string" },
+                  "scene_ranges": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": ["start", "end", "ref"],
+                      "properties": {
+                        "start": { "type": "integer", "minimum": 1 },
+                        "end": { "type": "integer", "minimum": 1 },
+                        "ref": { "type": "string" }
+                      },
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "eye_color_logic": { "type": "object" },
+        "evolution": { "type": "object" }
+      }
+    },
+    "mentor": { "type": "object" },
+    "robochica": { "type": "object" },
+    "mechanic": {
+      "type": "object",
+      "required": ["name", "master_ref_path", "episodes_primary"],
+      "properties": {
+        "name": { "type": "string" },
+        "archetype": { "type": "string" },
+        "episodes_primary": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "role": { "type": "string" },
+        "base_visual_prompt": { "type": "string" },
+        "master_ref_path": { "type": "string" },
+        "design_notes": { "type": "object" }
+      }
+    }
+  }
+}

@@ -4,12 +4,13 @@ Validates visual prompt files for:
   1. Mandatory suffix presence in every prompt
   2. Character phase consistency (Robotiko visual state matches episode phase)
   3. Forbidden aesthetics detection
+  4. Reference image integrity (phase-correct character reference per scene)
 
 Usage:
     python tests/visual_prompt_validator.py --file episode-02/04_visuals/ep02_visual_prompts_v01.md
     python tests/visual_prompt_validator.py --episode 02
 
-Status: IMPLEMENTED v1.0
+Status: IMPLEMENTED v2.0
 """
 
 import os
@@ -110,6 +111,171 @@ def extract_prompts(content: str) -> list[dict]:
     return prompts
 
 
+def extract_scenes(content: str) -> list[dict]:
+    """
+    Extract full scene metadata blocks from a visual prompts file.
+    Parses Characters Present, Image Reference Path, and Upload fields
+    alongside the text prompt — the fields the ref-integrity check needs.
+    """
+    scenes = []
+
+    scene_block_pattern = re.compile(
+        r"####\s*Scene\s+S(\d{2})\w*\s*[^\n]*\n(.*?)(?=\n####\s*Scene\s+S\d{2}|\n---\s*\n##\s|\Z)",
+        re.DOTALL
+    )
+
+    field_patterns = {
+        "characters": re.compile(
+            r"\*\*Characters?\s+Present:?\s*\*\*:?\s*(.*?)(?:\n\s*-\s*\*\*|\Z)", re.DOTALL | re.IGNORECASE
+        ),
+        "ref_path": re.compile(
+            r"\*\*Image\s+Reference\s+Path:?\s*\*\*:?\s*(.*?)(?:\n\s*-\s*\*\*|\Z)", re.DOTALL | re.IGNORECASE
+        ),
+        "upload": re.compile(
+            r"\*\*Upload:?\s*\*\*:?\s*(.*?)(?:\n\s*-?\s*\*\*|\n\n|\Z)", re.DOTALL | re.IGNORECASE
+        ),
+    }
+
+    for scene_match in scene_block_pattern.finditer(content):
+        scene_num = int(scene_match.group(1))
+        block = scene_match.group(2)
+
+        scene = {"scene_number": scene_num, "characters": "", "ref_path": "", "upload": ""}
+
+        for field, pattern in field_patterns.items():
+            m = pattern.search(block)
+            if m:
+                scene[field] = m.group(1).strip().split("\n")[0].strip()
+
+        scenes.append(scene)
+
+    return scenes
+
+
+def load_profiles(repo_root: str = ".") -> dict:
+    """Load character_profiles.json from the repo root."""
+    path = os.path.join(repo_root, "_assets", "cast", "character_profiles.json")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def get_phase_for_episode(episode: int, profiles: dict) -> int:
+    """Determine which phase an episode belongs to from the evolution data."""
+    evolution = profiles["robotiko"]["evolution"]
+    for phase_key, phase_data in evolution.items():
+        if episode in phase_data["episodes"]:
+            if "phase_1" in phase_key:
+                return 1
+            elif "phase_2" in phase_key:
+                return 2
+            elif "phase_3" in phase_key:
+                return 3
+    return 0
+
+
+def get_expected_ref(episode: int, scene: int, profiles: dict) -> tuple:
+    """
+    Given an episode and scene number, return (ref_id, allowed_paths, forbidden_paths).
+    Uses phase_reference_map from character_profiles.json.
+    """
+    robotiko = profiles["robotiko"]
+    ref_map = robotiko["phase_reference_map"]
+    ref_images = robotiko["reference_images"]
+
+    ep_str = str(episode)
+    ref_id = None
+
+    if ep_str in ref_map.get("episode_overrides", {}):
+        override = ref_map["episode_overrides"][ep_str]
+        if "scene_ranges" in override:
+            for r in override["scene_ranges"]:
+                if r["start"] <= scene <= r["end"]:
+                    ref_id = r["ref"]
+                    break
+        else:
+            ref_id = override.get("ref")
+
+    if ref_id is None:
+        phase = get_phase_for_episode(episode, profiles)
+        ref_id = ref_map["default_by_phase"].get(str(phase))
+
+    if not ref_id or ref_id not in ref_images:
+        return ref_id, [], []
+
+    entry = ref_images[ref_id]
+    allowed = []
+    if entry["path"]:
+        allowed.append(entry["path"])
+        allowed.extend(entry.get("alt_angles", []))
+
+    forbidden = []
+    for other_id, other_entry in ref_images.items():
+        if other_id == ref_id:
+            continue
+        if not other_entry["path"]:
+            continue
+        if ref_id == "kintsugi" and other_id == "damaged":
+            allowed.append(other_entry["path"])
+            allowed.extend(other_entry.get("alt_angles", []))
+            continue
+        forbidden.append(other_entry["path"])
+        forbidden.extend(other_entry.get("alt_angles", []))
+
+    return ref_id, allowed, forbidden
+
+
+def check_ref_integrity(scenes: list[dict], episode_number: int) -> list[str]:
+    """
+    Check that every Robotiko scene uses the phase-correct reference image.
+    Reads the phase_reference_map from character_profiles.json to determine
+    which reference file is expected, then compares against the actual
+    Image Reference Path and Upload fields.
+    """
+    errors = []
+
+    try:
+        profiles = load_profiles()
+    except (FileNotFoundError, json.JSONDecodeError, KeyError):
+        return ["  WARN [Ref Integrity] Could not load character_profiles.json or missing phase_reference_map."]
+
+    if "phase_reference_map" not in profiles.get("robotiko", {}):
+        return ["  WARN [Ref Integrity] character_profiles.json missing phase_reference_map — skipping ref check."]
+
+    robotiko_identifiers = ["robotiko", "chrome android"]
+
+    for scene in scenes:
+        chars_lower = scene["characters"].lower()
+        if not any(ident in chars_lower for ident in robotiko_identifiers):
+            continue
+
+        ref_id, allowed, forbidden = get_expected_ref(episode_number, scene["scene_number"], profiles)
+
+        if not ref_id:
+            continue
+
+        ref_path = scene["ref_path"]
+        upload = scene["upload"]
+        combined = f"{ref_path} {upload}".lower()
+
+        has_allowed = any(os.path.basename(a).lower() in combined for a in allowed) if allowed else False
+
+        for f_path in forbidden:
+            f_basename = os.path.basename(f_path).lower()
+            if f_basename in combined and not has_allowed:
+                ref_images = profiles["robotiko"]["reference_images"]
+                expected_entry = ref_images.get(ref_id, {})
+                expected_name = os.path.basename(expected_entry.get("path", "") or "none (chain/text only)")
+                errors.append(
+                    f"  FAIL [Ref Integrity] Scene S{scene['scene_number']:02d}: "
+                    f"Uses '{os.path.basename(f_path)}' but phase requires '{ref_id}' "
+                    f"(expected: {expected_name}). "
+                    f"Rule: {ref_id} ref must be used for EP{episode_number:02d} S{scene['scene_number']:02d}."
+                )
+                break
+
+    return errors
+
+
 def check_suffix(prompts: list[dict]) -> list[str]:
     """Check that every prompt ends with the mandatory suffix."""
     errors = []
@@ -160,9 +326,10 @@ def check_character_phase(prompts: list[dict], episode_number: int) -> list[str]
     if not current_phase:
         return [f"  WARN: Episode {episode_number} not mapped to any phase."]
 
+    robotiko_identifiers = ["robotiko", "chrome android"]
     robotiko_prompts = [
         p for p in prompts
-        if "robotiko" in p["text"].lower()
+        if any(ident in p["text"].lower() for ident in robotiko_identifiers)
     ]
 
     if not robotiko_prompts:
@@ -221,6 +388,9 @@ def validate_file(filepath: str) -> dict:
 
     if episode_number > 0:
         results["errors"].extend(check_character_phase(prompts, episode_number))
+
+        scenes = extract_scenes(content)
+        results["errors"].extend(check_ref_integrity(scenes, episode_number))
 
     return results
 

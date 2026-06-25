@@ -4,6 +4,46 @@
     "archetype": "The Seeker / The Student",
     "base_visual_prompt": "Retro-futuristic chrome metal body, exposed colorful analog wires (blue and red) — raw, industrial, NOT sleek, glowing blue eyes (expressive, emotionally readable), 70s sci-fi mechanical aesthetic",
     "master_ref_path": "_assets/cast/ref_robotiko_master.png",
+    "reference_images": {
+      "pristine": {
+        "path": "_assets/cast/ref_robotiko_master.png",
+        "alt_angles": [],
+        "description": "Phase 1 master — intact body, full antenna, both ears, clean wires"
+      },
+      "damaged": {
+        "path": "_assets/cast/android_damaged.png",
+        "alt_angles": [
+          "_assets/cast/android_damaged_2.png",
+          "_assets/cast/android_damaged_3.png"
+        ],
+        "description": "Phase 2 — battle-scarred, missing right ear, torso dent, shoulder scratches"
+      },
+      "kintsugi": {
+        "path": null,
+        "alt_angles": [],
+        "description": "Phase 3 — patchwork with gold-filled cracks. No dedicated ref file yet; use damaged as base + text prompt + chain refs from first gold scene"
+      }
+    },
+    "phase_reference_map": {
+      "default_by_phase": {
+        "1": "pristine",
+        "2": "damaged",
+        "3": "kintsugi"
+      },
+      "episode_overrides": {
+        "8": {
+          "ref": "damaged",
+          "note": "Phase 3 at station/soul level ONLY. Body stays @Damaged for entire episode. Visible reconstruction begins EP09. S22 (dream copies) also uses pristine ref alongside damaged — the validator allows this when both are present."
+        },
+        "9": {
+          "scene_ranges": [
+            { "start": 1, "end": 26, "ref": "damaged" },
+            { "start": 27, "end": 99, "ref": "kintsugi" }
+          ],
+          "note": "Intra-episode transition: @Damaged S01-S26, kintsugi from S27."
+        }
+      }
+    },
     "eye_color_logic": {
       "blue": "Healthy, stable, curious",
       "red": "Error state, danger, emotional overload",
@@ -71,5 +111,19 @@
       "not_a_villain": "She does nothing wrong. The tragedy is Robotiko's projection, not her actions."
     },
     "status": "VISUAL DESIGN COMPLETE — master reference image generated (ref_robochica_master.png)"
+  },
+
+  "mechanic": {
+    "name": "The Mechanic",
+    "archetype": "The Ordinary Craftsman",
+    "episodes_primary": [9],
+    "role": "A small-town Anatolian repairman. The most ordinary person in the series. NOT mystical, NOT dramatic — a working man to whom the whole drama is just a Tuesday. His function is Brechtian: he fixes things because that is his job, not because he understands the journey.",
+    "base_visual_prompt": "Old Anatolian man in his 70s, weathered deeply wrinkled face, short grey hair, faded greenish-brown canvas work coat over a dark simple shirt and worn dark trousers, rough calloused hands",
+    "master_ref_path": "_assets/cast/ref_mechanic.png",
+    "design_notes": {
+      "coat_color": "Faded greenish-brown canvas — NOT dark green (that is the Mentor's cloak).",
+      "tools": "Simple hand tools, NOT staffs or mystical objects.",
+      "scenes": "Three shots (S06, S09, S11) plus one amber-projection shot (S07 — Mentor echo projected onto the Mechanic, not a Mentor appearance)."
+    }
   }
 }

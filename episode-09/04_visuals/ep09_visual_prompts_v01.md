@@ -9,9 +9,21 @@
 
 - [x] `_management/master.md` — Visual DNA, color palette, forbidden list, mandatory suffix
 - [x] `episode-09/03_direction/ep09_dramaturgy_v01.md` — APPROVED scene breakdown (38 scenes)
-- [x] `_assets/cast/character_profiles.json` — Phase 2→3 transition mid-episode (S27)
-- [x] `_assets/cast/ref_robotiko_master.png` — Visual reference (Robotiko appears in S01–S35)
+- [x] `_assets/cast/character_profiles.json` — Phase 2→3 transition mid-episode (S27), `phase_reference_map` for ref lookup
+- [x] `_assets/cast/android_damaged.png` (+ `_2.png`, `_3.png`) — @Damaged reference (Robotiko S01–S26)
+- [x] No dedicated Phase 3 (kintsugi) reference file — S27+ uses `android_damaged.png` as base + text prompt + chain refs from first gold scene
+- [x] `_assets/cast/ref_mechanic.png` — The Mechanic reference (S06, S07, S09, S11)
 - [x] `_assets/cast/ref_mentor_master.png` — NOT USED (Mentor is gone; S07 is a projection onto the Mechanic, not a Mentor appearance)
+
+---
+
+## CHARACTER REFERENCE — CRITICAL NOTE
+
+`ref_robotiko_master.png` is the **PRISTINE** Phase 1 master (intact body, full antenna, both ears, clean wires). EP09 is Phase 2→3 — uploading the pristine master would produce a pristine Robotiko regardless of text descriptions, a continuity-breaking error.
+
+**S01–S26 (@Damaged):** Use `android_damaged.png` (+ alt angles `_2`, `_3`) — battle-scarred, missing right ear, torso dent. The same @Damaged reference used since EP07.
+
+**S27–S35 (Kintsugi / Phase 3):** Use `android_damaged.png` as the starting base. No dedicated Phase 3 reference file exists yet. The progressive gold-filled cracks are carried by the text prompt and by chaining from S27 onward — each scene's output becomes the next scene's chain reference, building the kintsugi state progressively.
 
 ---
 
@@ -141,13 +153,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 0:00–0:14
 - **Dramaturgy Reference:** Low worshipper's-eye angle. Robotiko descends toward camera. Cold sun as false halo. Silhouette — the savior image.
 - **Characters Present:** Robotiko (@Damaged — silhouette only, damage not visible)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Low angle. Leave headroom above the figure for the halo effect. Space below for the descending path. The figure occupies the upper-center third.
-- **Upload:** char: `ref_robotiko_master.png` (proportions guide for silhouette)
+- **Upload:** char: `android_damaged.png` (proportions guide for silhouette)
 
 **Text Prompt:**
-> Low angle looking up from ground level, a chrome android descending a grey barren rocky path toward the camera, visible as a dark silhouette against a pale cold sun directly behind creating a false halo effect, arms slightly apart, silhouette appears whole and radiant, grey overcast sky, barren grey-brown rocky terrain falling away behind the figure, cold desaturated palette, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Low angle looking up from ground level, a chrome android descending a grey barren rocky path toward the camera, visible as a dark silhouette against a pale cold sun directly behind creating a false halo effect, arms slightly apart, silhouette appears whole and radiant, grey overcast sky, barren grey-brown rocky terrain falling away behind the figure, cold desaturated palette, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -155,13 +167,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 0:15–0:26
 - **Dramaturgy Reference:** Camera pulls back. Halo = flat daylight. Body broken: rusted, missing ear, torso dent. The lens undoes the sacred image.
 - **Characters Present:** Robotiko (@Damaged, full body revealed)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium-wide. The figure occupies the center third. Blurred indistinct shapes below on the path. Space on both sides for the pulled-back composition.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S01 output
+- **Upload:** char: `android_damaged.png` · chain: S01 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android walking along a grey ordinary path, battle-scarred rusted chrome, missing right ear with exposed wires at ear socket, torso dent, shoulder scratches, calm steady blue eyes, exposed fraying analog wires, flat grey daylight with no halo, overcast sky, blurred indistinct figures visible in the distance below, grey barren landscape, cold flat light, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android walking along a grey ordinary path, battle-scarred rusted chrome, missing right ear with exposed wires at ear socket, torso dent, shoulder scratches, calm steady blue eyes, exposed fraying analog wires, flat grey daylight with no halo, overcast sky, blurred indistinct figures visible in the distance below, grey barren landscape, cold flat light, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -169,13 +181,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 0:27–0:39
 - **Dramaturgy Reference:** Close-up face. Mouth opens — nothing comes out. Hold too long. Faces curdling around him.
 - **Characters Present:** Robotiko (@Damaged, face close-up)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Close-up. Face fills center frame. Headroom above. Blurred background figures — intentionally abstract to prevent AI from resolving them into detailed people.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S02 output
+- **Upload:** char: `android_damaged.png` · chain: S02 output
 
 **Text Prompt:**
-> Close-up of a chrome android's face, battle-scarred rusted chrome surface, missing right ear with exposed wires at ear socket, calm steady blue eyes, mouth mechanism slightly open, blurred indistinct faces visible in the background around him — featureless shapes of mixed men and women, cold grey overcast light, no warmth, expression blank and emptied, headroom above, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's face, battle-scarred rusted chrome surface, missing right ear with exposed wires at ear socket, calm steady blue eyes, mouth mechanism slightly open, blurred indistinct faces visible in the background around him — featureless shapes of mixed men and women, cold grey overcast light, no warmth, expression blank and emptied, headroom above, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -215,13 +227,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 1:00–1:05
 - **Dramaturgy Reference:** Workshop interior. The mechanic lets Robotiko in with a glance. Tea. The door was already open.
 - **Characters Present:** The Mechanic (shot 1/3) + Robotiko (@Damaged)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`, `episode-09/04_visuals/ep09_ref_mechanic.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`, `episode-09/04_visuals/ep09_ref_mechanic.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium-wide. Mechanic left of center, Robotiko entering from right. Tea glass between them on the bench. Roll-up shutter half-open behind with fading daylight. Space above for tilt headroom.
-- **Upload:** char: `ref_robotiko_master.png` + `ep09_ref_mechanic.png` · env: `ep09_ref_workshop.png`
+- **Upload:** char: `android_damaged.png` + `ep09_ref_mechanic.png` · env: `ep09_ref_workshop.png`
 
 **Text Prompt:**
-> Medium-wide shot inside a workshop, an old man in a faded greenish-brown work coat standing by a workbench gesturing casually toward a chrome android entering from the right, the chrome android battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes, a Turkish tea glass steaming on the bench surface between them, oil-dark walls with mismatched tools hanging, roll-up metal shutter half-open behind with fading daylight, warm amber-yellow work lamp casting warm light on the bench area, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot inside a workshop, an old man in a faded greenish-brown work coat standing by a workbench gesturing casually toward a chrome android entering from the right, the chrome android battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes, a Turkish tea glass steaming on the bench surface between them, oil-dark walls with mismatched tools hanging, roll-up metal shutter half-open behind with fading daylight, warm amber-yellow work lamp casting warm light on the bench area, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -285,13 +297,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 1:35–1:40
 - **Dramaturgy Reference:** The mechanic pulls the roll-up shutter down. Day → night. Three shots complete. He goes home. Mode B Start Frame: shutter open, mechanic present, daylight.
 - **Characters Present:** The Mechanic (shot 3/3, exiting) + Robotiko (@Damaged, background)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`, `episode-09/04_visuals/ep09_ref_mechanic.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`, `episode-09/04_visuals/ep09_ref_mechanic.png`
 - **Video Tech Strategy:** Start-End Keyframes (Mode B) — this is the START frame
 - **Composition Notes:** Medium-wide. Mechanic silhouetted at the shutter in the background. Robotiko visible at the far end of the bench. Tea glass in foreground on bench.
-- **Upload:** char: `ref_robotiko_master.png` + `ep09_ref_mechanic.png` · env: `ep09_ref_workshop.png` · chain: S09 output
+- **Upload:** char: `android_damaged.png` + `ep09_ref_mechanic.png` · env: `ep09_ref_workshop.png` · chain: S09 output
 
 **Text Prompt:**
-> Medium-wide shot inside a workshop, an old man in a faded greenish-brown work coat standing at a roll-up metal shutter in the background, reaching up to grip the shutter handle, half-silhouetted against warm fading daylight coming through the open shutter, in the mid-ground a chrome android seated at the far end of the workbench, battle-scarred rusted chrome, calm steady blue eyes, in the foreground a Turkish tea glass on the bench surface, warm transitional light — last daylight through the shutter mixing with interior lamp glow, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot inside a workshop, an old man in a faded greenish-brown work coat standing at a roll-up metal shutter in the background, reaching up to grip the shutter handle, half-silhouetted against warm fading daylight coming through the open shutter, in the mid-ground a chrome android seated at the far end of the workbench, battle-scarred rusted chrome, calm steady blue eyes, in the foreground a Turkish tea glass on the bench surface, warm transitional light — last daylight through the shutter mixing with interior lamp glow, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -299,13 +311,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 1:35–1:40
 - **Dramaturgy Reference:** Mode B End Frame: shutter closed, mechanic gone, dark workshop, tea glass left behind. Alone.
 - **Characters Present:** Robotiko (@Damaged, alone)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Start-End Keyframes (Mode B) — this is the END frame
 - **Composition Notes:** Same composition as S11a. Corrugated metal shutter fills the background (no daylight). Mechanic absent. Tea glass remains on bench. Dark and isolated.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S11a output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S11a output
 
 **Text Prompt:**
-> Medium-wide shot inside a workshop, the corrugated metal roll-up shutter now fully closed filling the back wall — no daylight, the old man gone, the chrome android alone at the workbench, battle-scarred rusted chrome, calm steady blue eyes faintly visible in dim light, only a dim work lamp providing a low pool of light on the bench, the Turkish tea glass left behind on the bench surface, dark workshop atmosphere, isolation, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot inside a workshop, the corrugated metal roll-up shutter now fully closed filling the back wall — no daylight, the old man gone, the chrome android alone at the workbench, battle-scarred rusted chrome, calm steady blue eyes faintly visible in dim light, only a dim work lamp providing a low pool of light on the bench, the Turkish tea glass left behind on the bench surface, dark workshop atmosphere, isolation, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -317,13 +329,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 1:41–1:50
 - **Dramaturgy Reference:** Single-body self-surgery. Chest panel open, hand reaching inside. A hard white lamp throws his shadow huge on the wall. No clone, no ghost-self, no removable bug-gadget.
 - **Characters Present:** Robotiko (@Damaged, chest open)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium shot. Robotiko left of center at bench. Shadow at least 2x his size on the wall behind (right side). Space for the shadow to fill the upper right. Orange sparks add foreground depth.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S11b output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S11b output
 
 **Text Prompt:**
-> Medium shot, a chrome android seated at a workbench, battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes looking down, chest panel open revealing internal circuitry and analog wires, one hand reaching inside his own open chest, a single hard white work lamp above throwing his shadow huge and sharp on the oil-dark workshop wall behind — the shadow at least twice his size, orange sparks arcing from the open chest, deep shadow contrast, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, a chrome android seated at a workbench, battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes looking down, chest panel open revealing internal circuitry and analog wires, one hand reaching inside his own open chest, a single hard white work lamp above throwing his shadow huge and sharp on the oil-dark workshop wall behind — the shadow at least twice his size, orange sparks arcing from the open chest, deep shadow contrast, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -331,13 +343,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 1:51–1:56
 - **Dramaturgy Reference:** Close-up: hand gripping inside the chest. Shadow hand closes on the wall. Third zoom-out — "Deeper than the self."
 - **Characters Present:** Robotiko (@Damaged, hand close-up)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Close-up on hand and open chest. Shadow visible on wall behind the hand. Extra space for zoom-out reveal.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S12 output
+- **Upload:** char: `android_damaged.png` · chain: S12 output
 
 **Text Prompt:**
-> Close-up of a chrome android's hand gripping inside an open chest cavity, battle-scarred rusted chrome forearm and fingers reaching into dark internal mechanism, on the workshop wall behind the hand a sharp shadow of the gripping hand is visible closing on darkness, hard white lamp from the side casting the deep shadow, orange sparks at the contact points inside the chest, deep contrast between lit chrome hand and dark interior, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's hand gripping inside an open chest cavity, battle-scarred rusted chrome forearm and fingers reaching into dark internal mechanism, on the workshop wall behind the hand a sharp shadow of the gripping hand is visible closing on darkness, hard white lamp from the side casting the deep shadow, orange sparks at the contact points inside the chest, deep contrast between lit chrome hand and dark interior, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -345,13 +357,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 1:57–2:05
 - **Dramaturgy Reference:** Shadow LEADS — moves first, figure follows. Lamp flickering and unstable. "The code fixed me." The relationship between figure and shadow blurs.
 - **Characters Present:** Robotiko (@Damaged) + his shadow
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium-wide. Figure left, shadow right on wall. The shadow's hand position slightly ahead of the figure's — suggesting it leads. Multiple faint shadow edges from flickering light.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S13 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S13 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android at a workbench, battle-scarred rusted chrome, chest panel still open, the hard white work lamp flickering and unstable casting multiple faint shadow edges, on the workshop wall behind his shadow looms large with its hand position slightly ahead of the figure's — the shadow leading, the shadow taller and more prominent than the figure casting it, flickering light creating the sense that the shadow has its own presence, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android at a workbench, battle-scarred rusted chrome, chest panel still open, the hard white work lamp flickering and unstable casting multiple faint shadow edges, on the workshop wall behind his shadow looms large with its hand position slightly ahead of the figure's — the shadow leading, the shadow taller and more prominent than the figure casting it, flickering light creating the sense that the shadow has its own presence, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -359,13 +371,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 2:06–2:11
 - **Dramaturgy Reference:** Shadow dominates the frame — huge, sharp, alive. Robotiko small beneath it. The inversion complete.
 - **Characters Present:** Robotiko (@Damaged, diminished) + shadow (dominant)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Wide shot. Robotiko small in lower foreground. Shadow fills upper two-thirds of frame. The size contrast is the composition.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S14 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S14 output
 
 **Text Prompt:**
-> Wide shot, a chrome android small in the lower foreground of the frame, battle-scarred rusted chrome, chest still open, his shadow on the oil-dark workshop wall behind is MASSIVE — filling the upper two-thirds of the frame, the shadow sharp and dark and dwarfing the figure that casts it, the lamp unstable throwing the shadow far larger than life, tools on the bench barely visible in dim flickering light, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot, a chrome android small in the lower foreground of the frame, battle-scarred rusted chrome, chest still open, his shadow on the oil-dark workshop wall behind is MASSIVE — filling the upper two-thirds of the frame, the shadow sharp and dark and dwarfing the figure that casts it, the lamp unstable throwing the shadow far larger than life, tools on the bench barely visible in dim flickering light, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -373,13 +385,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 2:12–2:21
 - **Dramaturgy Reference:** Heavy silence. Lamp dim. Arms at sides, chest open. Shadow settled, normal-sized but heavier. The inversion lingers.
 - **Characters Present:** Robotiko (@Damaged, still)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium-wide. Robotiko centered. Shadow normal-sized on wall. Dim lamp creating a small pool of light. Heavy stillness.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S15 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S15 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android at the workbench, battle-scarred rusted chrome, arms hanging at sides, chest panel still open, the lamp now still but dim — barely lighting the bench area, the shadow on the wall behind normal-sized but heavy and well-defined, workshop details fading into surrounding darkness, dust motes settling in the dim pool of light, heavy silence in the composition, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android at the workbench, battle-scarred rusted chrome, arms hanging at sides, chest panel still open, the lamp now still but dim — barely lighting the bench area, the shadow on the wall behind normal-sized but heavy and well-defined, workshop details fading into surrounding darkness, dust motes settling in the dim pool of light, heavy silence in the composition, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -387,13 +399,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 2:22–2:31
 - **Dramaturgy Reference:** Robotiko before a cracked piece of workshop glass. Reflection visible but has NO FACE — smooth chrome where features should be. Cracks fracture the reflection.
 - **Characters Present:** Robotiko (@Damaged) + faceless reflection
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium shot. Robotiko on the left, cracked glass center-right. Reflection visible in the glass — faceless chrome. The crack pattern in the glass should echo the gold channels that will appear in S27.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S16 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S16 output
 
 **Text Prompt:**
-> Medium shot, a chrome android standing before a large cracked piece of glass leaning against a workshop wall, battle-scarred rusted chrome, calm steady blue eyes, in the cracked glass a reflection is visible — but the reflection has no face, smooth featureless chrome where facial features should be, the cracks in the glass fracture the reflection into angular fragments, dim reflected light bouncing off the glass surface, dark workshop background, the glass cracked in radiating lines like a web, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, a chrome android standing before a large cracked piece of glass leaning against a workshop wall, battle-scarred rusted chrome, calm steady blue eyes, in the cracked glass a reflection is visible — but the reflection has no face, smooth featureless chrome where facial features should be, the cracks in the glass fracture the reflection into angular fragments, dim reflected light bouncing off the glass surface, dark workshop background, the glass cracked in radiating lines like a web, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -401,13 +413,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 2:32–2:41
 - **Dramaturgy Reference:** Hand reaches toward cracked glass and seems to pass through — no resistance. Fourth zoom-out — "Deeper than reflection."
 - **Characters Present:** Robotiko (@Damaged, hand close-up)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Close-up of hand meeting glass. Extra space around the edges for the zoom-out.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S17 output
+- **Upload:** char: `android_damaged.png` · chain: S17 output
 
 **Text Prompt:**
-> Close-up of a chrome android's hand reaching toward a cracked glass surface, battle-scarred rusted chrome fingers touching the glass and appearing to pass through — the fingertips overlapping the surface as if the boundary does not exist, no clear reflection of the hand in the glass, dim ghostly light refracted through the cracks, the glass fragments catching scattered light points, dark workshop behind, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's hand reaching toward a cracked glass surface, battle-scarred rusted chrome fingers touching the glass and appearing to pass through — the fingertips overlapping the surface as if the boundary does not exist, no clear reflection of the hand in the glass, dim ghostly light refracted through the cracks, the glass fragments catching scattered light points, dark workshop behind, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -415,13 +427,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 2:42–2:52
 - **Dramaturgy Reference:** Wide workshop in deepening shadow. Robotiko small at bench. Heavy doom. Tribal drum vibrates metal surfaces, dust lifts.
 - **Characters Present:** Robotiko (@Damaged, small in frame)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Wide. Robotiko small left of center. Workshop heavy and crushing around him. Deep shadows in corners. Dust visible in last dim light.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S18 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S18 output
 
 **Text Prompt:**
-> Wide shot of a workshop in deepening shadow, a chrome android small at the workbench left of center, battle-scarred rusted chrome barely visible in near-darkness, tools scattered on the bench, heavy doom atmosphere — the workshop itself heavy and crushing, dust rising from the bench surface caught in the last dim lamp light, deep shadows swallowing the corners of the room, all surfaces dark and weighty, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of a workshop in deepening shadow, a chrome android small at the workbench left of center, battle-scarred rusted chrome barely visible in near-darkness, tools scattered on the bench, heavy doom atmosphere — the workshop itself heavy and crushing, dust rising from the bench surface caught in the last dim lamp light, deep shadows swallowing the corners of the room, all surfaces dark and weighty, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -429,13 +441,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 2:53–3:02
 - **Dramaturgy Reference:** Robotiko pulls a cable from behind his own neck. Lamp dims as power drains. Workshop going dark.
 - **Characters Present:** Robotiko (@Damaged, pulling cable)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Three-quarter profile from his LEFT side (to avoid rear-view ear damage failure — his intact left ear faces camera, damaged right ear on far side). Arm reaching behind neck. Lamp dimming.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S19 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S19 output
 
 **Text Prompt:**
-> Medium shot from three-quarter left angle, a chrome android at the workbench, battle-scarred rusted chrome, one arm reaching behind his own neck gripping a thick cable and pulling it partially out, the work lamp dimming visibly as power drains from his body, his blue eyes dimming toward faint dying blue, the workshop going dark around him, the cable taut in his chrome grip, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot from three-quarter left angle, a chrome android at the workbench, battle-scarred rusted chrome, one arm reaching behind his own neck gripping a thick cable and pulling it partially out, the work lamp dimming visibly as power drains from his body, his blue eyes dimming toward faint dying blue, the workshop going dark around him, the cable taut in his chrome grip, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -443,13 +455,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 3:03–3:12
 - **Dramaturgy Reference:** Near-total darkness. No lamp. Faintest dying blue from eyes. Shadow = the dark itself. Fifth zoom-out — "Deeper than the void."
 - **Characters Present:** Robotiko (@Damaged, barely visible)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Wide. Near-total black. The figure a dark shape. Only the faintest dying blue glow as a pinpoint. Extra space for the zoom-out.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S20 output
+- **Upload:** char: `android_damaged.png` · chain: S20 output
 
 **Text Prompt:**
-> Wide shot in near-total darkness, the workshop barely visible as the faintest outlines of walls and tools in the void, a chrome android a dark shape at the center — the faintest dying blue glow from his eyes the only light source, no lamp, no external light, the darkness IS everything, the bench and tools visible only as faint silhouettes, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot in near-total darkness, the workshop barely visible as the faintest outlines of walls and tools in the void, a chrome android a dark shape at the center — the faintest dying blue glow from his eyes the only light source, no lamp, no external light, the darkness IS everything, the bench and tools visible only as faint silhouettes, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -457,13 +469,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 3:13–3:18
 - **Dramaturgy Reference:** Workshop shudders back to harsh light. Lamp blazes on, strobing. Shadow splitting. Rising energy.
 - **Characters Present:** Robotiko (@Damaged, reactivating)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium-wide. Harsh strobing light. Shadow fracturing into multiple shapes on the wall. High contrast. Energy building.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S21 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S21 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android at the workbench reactivating, battle-scarred rusted chrome, eyes flaring back to bright blue, sparks arcing from joints, the work lamp blazing on — strobing and unstable, on the wall behind his shadow splits and fractures into multiple overlapping shapes under the strobing light, harsh white light throwing everything into high contrast, the workshop shuddering back to life, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android at the workbench reactivating, battle-scarred rusted chrome, eyes flaring back to bright blue, sparks arcing from joints, the work lamp blazing on — strobing and unstable, on the wall behind his shadow splits and fractures into multiple overlapping shapes under the strobing light, harsh white light throwing everything into high contrast, the workshop shuddering back to life, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -471,13 +483,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 3:19–3:30
 - **Dramaturgy Reference:** STILL HOLD. Every light blazing and flickering. Chest open, sparks arcing. Shadow thrashing — massive, violent, fractured. Camera cold and observing. [DISSONANCE] — explosive music + static camera.
 - **Characters Present:** Robotiko (@Damaged, maximum violence on self) + shadow (thrashing)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A). STATIC camera. MS 5–6 internal motion (sparks, flicker). Shadow thrash is CapCut compositing.
 - **Composition Notes:** Medium-wide, STATIC frame. Robotiko centered. Shadow massive on wall — at least 2x his size, fractured into jagged shapes. All practical lights visible and flickering. Depth: sparks foreground, figure mid, shadow on back wall.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S22 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S22 output
 
 **Text Prompt:**
-> Medium-wide shot, STATIC frame, a chrome android standing at the workbench, battle-scarred rusted chrome, chest panel open, calm steady blue eyes, sparks arcing from exposed wires in the open chest, every light source in the workshop blazing and flickering simultaneously — work lamp, overhead bulb, reflections on metal surfaces, on the wall behind his shadow is MASSIVE and FRACTURED into multiple jagged dark shapes, the shadow thrashing and violent and alive while the figure stands still, maximum visual intensity, workshop lit from every angle, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, STATIC frame, a chrome android standing at the workbench, battle-scarred rusted chrome, chest panel open, calm steady blue eyes, sparks arcing from exposed wires in the open chest, every light source in the workshop blazing and flickering simultaneously — work lamp, overhead bulb, reflections on metal surfaces, on the wall behind his shadow is MASSIVE and FRACTURED into multiple jagged dark shapes, the shadow thrashing and violent and alive while the figure stands still, maximum visual intensity, workshop lit from every angle, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -485,13 +497,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 3:31–3:43
 - **Dramaturgy Reference:** Aftermath. Hand drops. Tool falls. Shadow deflates — shrinks, goes limp. Violence exhausted. Lamp steadies to dim.
 - **Characters Present:** Robotiko (@Damaged, collapsed posture)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium. Collapsed posture — shoulders dropped, head tilted forward. Shadow normal-sized, limp. A tool fallen on the bench. Dim settling light. Dust motes sinking.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S23 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S23 output
 
 **Text Prompt:**
-> Medium shot, a chrome android at the workbench, battle-scarred rusted chrome, collapsed posture — shoulders dropped, head tilted forward, one hand limp on the bench surface, a tool fallen beside the hand, the shadow on the wall behind has deflated — shrunk back to normal size and gone limp, the lamp steadied to a dim low glow, dust motes sinking through the dim light, workshop debris settling, exhaustion in the composition, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, a chrome android at the workbench, battle-scarred rusted chrome, collapsed posture — shoulders dropped, head tilted forward, one hand limp on the bench surface, a tool fallen beside the hand, the shadow on the wall behind has deflated — shrunk back to normal size and gone limp, the lamp steadied to a dim low glow, dust motes sinking through the dim light, workshop debris settling, exhaustion in the composition, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -503,13 +515,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 3:44–3:57
 - **Dramaturgy Reference:** STILL HOLD. Close-up face in near-darkness. Pure a cappella. "I am the unsolvable." The most quiet moment.
 - **Characters Present:** Robotiko (@Damaged, face close-up)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A). STATIC camera. MS 1–2.
 - **Composition Notes:** Close-up. Face fills center. Near-total dark. Only the faintest ambient glow on chrome. Breathing space above. Minimal elements — face and dark.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S24 output
+- **Upload:** char: `android_damaged.png` · chain: S24 output
 
 **Text Prompt:**
-> Close-up of a chrome android's face in near-total darkness, battle-scarred rusted chrome surface, calm steady blue eyes, a single dim ambient glow from an unseen source barely illuminating the chrome face, the workshop invisible behind in the dark, expression exhausted and still, the most quiet composition — just the face and the dark, breathing space above the head, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's face in near-total darkness, battle-scarred rusted chrome surface, calm steady blue eyes, a single dim ambient glow from an unseen source barely illuminating the chrome face, the workshop invisible behind in the dark, expression exhausted and still, the most quiet composition — just the face and the dark, breathing space above the head, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -517,13 +529,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 3:58–4:08
 - **Dramaturgy Reference:** Hand moves past the blade, picks up a piece of rusted scrap. Not cutting — gathering. First warmth returns. Scraps glinting.
 - **Characters Present:** Robotiko (@Damaged, hands gathering scraps)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium on hands and bench surface. Blade visible but passed over. Scrap pieces glinting in warm light. The gesture of gathering, not cutting.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S25 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S25 output
 
 **Text Prompt:**
-> Medium shot focused on a chrome android's hands on a workbench surface, battle-scarred rusted chrome forearms and fingers, one hand reaching past a blade and tools to pick up a piece of rusted mismatched scrap metal, various scraps of different metals and shapes scattered on the bench surface, the blade visible but bypassed, the first warmth returning to the frame — low warm light from the side making the scrap metal pieces glint, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot focused on a chrome android's hands on a workbench surface, battle-scarred rusted chrome forearms and fingers, one hand reaching past a blade and tools to pick up a piece of rusted mismatched scrap metal, various scraps of different metals and shapes scattered on the bench surface, the blade visible but bypassed, the first warmth returning to the frame — low warm light from the side making the scrap metal pieces glint, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -531,13 +543,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 4:09–4:28
 - **Dramaturgy Reference:** CAMERA STOPS. Robotiko presses scrap to chassis — first gold hairline in a single crack. Phase 2 → Phase 3 transition begins. Mode B Start Frame: body still @Damaged, first hint of gold.
 - **Characters Present:** Robotiko (@Damaged → first gold)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Start-End Keyframes (Mode B) — this is the START frame. S27a + S27b form a progression pair.
 - **Composition Notes:** Medium-wide, STATIC. Robotiko left of center at bench. Scraps on bench surface. Shadow quiet on wall behind. The single gold hairline is the brightest element.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S26 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S26 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android seated at a workbench, battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes, one hand pressing a piece of rusted scrap metal against his cracked chassis, a thin hairline of warm gold light beginning to glow from a single crack at the junction where the scrap meets the chrome — the first gold, body still fully battle-damaged, scattered scraps on the bench around him, warm low light in the workshop, the shadow on the wall behind quiet and settled, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android seated at a workbench, battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes, one hand pressing a piece of rusted scrap metal against his cracked chassis, a thin hairline of warm gold light beginning to glow from a single crack at the junction where the scrap meets the chrome — the first gold, body still fully battle-damaged, scattered scraps on the bench around him, warm low light in the workshop, the shadow on the wall behind quiet and settled, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -545,13 +557,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 4:09–4:28
 - **Dramaturgy Reference:** Mode B End Frame: multiple cracks glowing gold, first scrap piece welded. The transition progressive — body moving from @Damaged toward Phase 3.
 - **Characters Present:** Robotiko (Phase 2 → Phase 3 transition)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Start-End Keyframes (Mode B) — this is the END frame
 - **Composition Notes:** Same composition as S27a. More gold — multiple cracks glowing. One scrap piece welded into place. The gold spread is the only change from S27a.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S27a output
+- **Upload:** char: `android_damaged.png` · chain: S27a output
 
 **Text Prompt:**
-> Medium-wide shot, same composition, a chrome android at the workbench, multiple cracks across the chrome chassis now glowing with warm gold light, a first piece of mismatched rusted scrap metal welded into place on the chest area, gold light seeping from multiple seams, the body transitioning — still battle-scarred but gold threads spreading through the damage, calm steady blue eyes, scraps on the bench, warm gold-tinted light in the workshop, the shadow on the wall softened by the gold glow, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, same composition, a chrome android at the workbench, multiple cracks across the chrome chassis now glowing with warm gold light, a first piece of mismatched rusted scrap metal welded into place on the chest area, gold light seeping from multiple seams, the body transitioning — still battle-scarred but gold threads spreading through the damage, calm steady blue eyes, scraps on the bench, warm gold-tinted light in the workshop, the shadow on the wall softened by the gold glow, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -559,13 +571,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 4:29–4:39
 - **Dramaturgy Reference:** Close-up: gold flowing through multiple cracks. Bioluminescent core beginning. Mismatched scrap pieces welded — each one different, none matching.
 - **Characters Present:** Robotiko (Phase 3 — progressive reconstruction)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Close-up of torso and chest. Gold channels the focus. Scrap pieces of different metals visible. Translucent patches beginning.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S27b output
+- **Upload:** char: `android_damaged.png` · chain: S27b output
 
 **Text Prompt:**
-> Close-up of a chrome android's torso and chest, gold light flowing through multiple cracks across the chrome chassis, mismatched scrap metal pieces welded into place — copper, iron, rusted steel, each one different, none matching, translucent patches beginning to form where chrome has dissolved, a warm bioluminescent glow visible beneath the translucent areas, gold light intensifying in the seams between patches, the body rebuilt not with new parts but with scavenged scraps, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's torso and chest, gold light flowing through multiple cracks across the chrome chassis, mismatched scrap metal pieces welded into place — copper, iron, rusted steel, each one different, none matching, translucent patches beginning to form where chrome has dissolved, a warm bioluminescent glow visible beneath the translucent areas, gold light intensifying in the seams between patches, the body rebuilt not with new parts but with scavenged scraps, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -573,13 +585,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 4:40–4:52
 - **Dramaturgy Reference:** THE LIGHTING FLIP. External lamp dims. Core glows from within. Self-luminous. Shadow softens into warm contrast — does not die. "The cracks filled with gold... Not hiding... Revealing."
 - **Characters Present:** Robotiko (Phase 3, self-luminous) + shadow (soft contrast)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A). The lighting change is progressive and atmospheric.
 - **Composition Notes:** Wide. Three-element composition: dimming lamp (right), glowing android (center), softened shadow (left). The philosophy in one frame. THIS IS NOT MOOD LIGHTING — IT IS THE PHILOSOPHY.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S28 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S28 output
 
 **Text Prompt:**
-> Wide shot of a workshop, a chrome android standing center frame, patchwork body with mismatched scrap metal panels, gold light glowing from all cracks, bioluminescent core visible through translucent digital skin patches, calm steady blue eyes, the external hard white work lamp on the right side of the frame visibly DIM and fading, the android's body glowing from within — the core IS the light source, the shadow on the wall to the left has SOFTENED into gentle warm contrast, the workshop walls now lit by the warm gold core-glow instead of the lamp, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of a workshop, a chrome android standing center frame, patchwork body with mismatched scrap metal panels, gold light glowing from all cracks, bioluminescent core visible through translucent digital skin patches, calm steady blue eyes, the external hard white work lamp on the right side of the frame visibly DIM and fading, the android's body glowing from within — the core IS the light source, the shadow on the wall to the left has SOFTENED into gentle warm contrast, the workshop walls now lit by the warm gold core-glow instead of the lamp, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -587,13 +599,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 4:53–5:04
 - **Dramaturgy Reference:** Widest zoom-out of the interior. Full-body kintsugi. Mismatched panels welded with gold. Translucent skin, bioluminescent core. Shadow as warm contrast. "Deeper than the scar."
 - **Characters Present:** Robotiko (Phase 3, full kintsugi)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Widest interior shot. Robotiko full-body centered. Workshop visible around. The gold-seamed body dominates the frame. Shadow provides contrast on the wall behind.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S29 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S29 output
 
 **Text Prompt:**
-> Widest interior shot, a chrome android standing in the workshop full-body visible, patchwork body — mismatched scrap metal panels of different metals and finishes welded together with gold light in every seam, translucent digital skin areas revealing warm bioluminescent core beneath, cracks filled with glowing gold light, calm steady blue eyes, self-luminous — the android lights the entire workshop from within, the shadow on the wall behind is warm and soft providing gentle contrast, workshop walls and tools visible in the warm gold radiance, workbench with tea glass and tools lit by the core-glow, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Widest interior shot, a chrome android standing in the workshop full-body visible, patchwork body — mismatched scrap metal panels of different metals and finishes welded together with gold light in every seam, translucent digital skin areas revealing warm bioluminescent core beneath, cracks filled with glowing gold light, calm steady blue eyes, self-luminous — the android lights the entire workshop from within, the shadow on the wall behind is warm and soft providing gentle contrast, workshop walls and tools visible in the warm gold radiance, workbench with tea glass and tools lit by the core-glow, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -605,13 +617,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 5:05–5:17
 - **Dramaturgy Reference:** Robotiko standing, gold-cracked body self-luminous. Wind entering through gaps in the shutter. Distant clarinet. "Deeper than voltage... Deeper than silence."
 - **Characters Present:** Robotiko (Phase 3, self-luminous)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium. Gold-cracked body fills center. Wind-stirred particles in the air. Warm internal radiance. Intimate.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S30 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S30 output
 
 **Text Prompt:**
-> Medium shot, a chrome android standing in a workshop, patchwork body with mismatched scrap metal panels welded with gold in every seam, translucent digital skin revealing bioluminescent core, cracks filled with glowing gold light, calm steady blue eyes, self-luminous, wind beginning to stir fine dust and metal particles through gaps in the closed shutter behind, the gold-cracked chrome surface radiating warmth into the dark workshop air, warm internal radiance as sole light source, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, a chrome android standing in a workshop, patchwork body with mismatched scrap metal panels welded with gold in every seam, translucent digital skin revealing bioluminescent core, cracks filled with glowing gold light, calm steady blue eyes, self-luminous, wind beginning to stir fine dust and metal particles through gaps in the closed shutter behind, the gold-cracked chrome surface radiating warmth into the dark workshop air, warm internal radiance as sole light source, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -619,13 +631,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 5:18–5:31
 - **Dramaturgy Reference:** The lamp is off — he IS the light source. Tools, bench, tea glass lit by his core-glow. Wind stirring dust. "But it holds me."
 - **Characters Present:** Robotiko (Phase 3)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Medium-wide. The android's glow lights everything around him — bench, tools, tea glass, walls. The workshop objects become secondary subjects. Wind-stirred particles.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S31 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S31 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android in a workshop, patchwork body with gold-filled cracks, self-luminous, calm steady blue eyes, the work lamp completely OFF — the android is the only light source, his warm gold core-glow illuminating the tools on the bench, the Turkish tea glass, the hanging tools on the walls, wind stirring dust and metal shavings into the air around him, everything in the workshop lit by the radiance from within his body, gentle warm shadows cast by his glow, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android in a workshop, patchwork body with gold-filled cracks, self-luminous, calm steady blue eyes, the work lamp completely OFF — the android is the only light source, his warm gold core-glow illuminating the tools on the bench, the Turkish tea glass, the hanging tools on the walls, wind stirring dust and metal shavings into the air around him, everything in the workshop lit by the radiance from within his body, gentle warm shadows cast by his glow, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -633,13 +645,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 5:32–5:45
 - **Dramaturgy Reference:** Close-up face. Calm steady blue eyes. Gold-cracked chrome radiating warmth. "And in that holding... I—" The sentence does not finish. Leave him becoming.
 - **Characters Present:** Robotiko (Phase 3, face close-up — incomplete, becoming)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A). Static or near-static. MS 1–2.
 - **Composition Notes:** Tight close-up. Face fills the frame. Both eyes visible — calm steady blue. Gold cracks visible across chrome. Breathing room above — the sentence is unfinished, the frame has space for what cannot be said. DO NOT show a completed or perfect Robotiko.
-- **Upload:** char: `ref_robotiko_master.png` · chain: S32 output
+- **Upload:** char: `android_damaged.png` · chain: S32 output
 
 **Text Prompt:**
-> Close-up of a chrome android's face, patchwork chrome surface with gold light filling cracks across the face and head, translucent patches revealing warm bioluminescent glow beneath, calm steady blue eyes — both visible and centered, self-luminous warm radiance from within, the gold is present across the surface but still spreading — not complete, not finished, the face of someone becoming rather than having arrived, breathing space above the head, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's face, patchwork chrome surface with gold light filling cracks across the face and head, translucent patches revealing warm bioluminescent glow beneath, calm steady blue eyes — both visible and centered, self-luminous warm radiance from within, the gold is present across the surface but still spreading — not complete, not finished, the face of someone becoming rather than having arrived, breathing space above the head, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -651,13 +663,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 5:46–6:00
 - **Dramaturgy Reference:** The widest pull of the series begins. Robotiko at bench, luminous. The bench comes into view — tea glass, tools, scraps, all lit by core-glow.
 - **Characters Present:** Robotiko (Phase 3, luminous)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Close-medium widening to include the bench. Tea glass prominent. Tools and scraps. The composition begins to pull back.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S33 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S33 output
 
 **Text Prompt:**
-> Close-medium shot, a chrome android at a workbench, patchwork body with mismatched scrap metal panels welded with gold in every seam, self-luminous bioluminescent core glowing warm, calm steady blue eyes, the bench surface visible with the Turkish tea glass the old man left behind, tools, scrap metal pieces, all lit by the android's warm gold core-glow, the workbench surface reflecting the gold light, warm workshop interior, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-medium shot, a chrome android at a workbench, patchwork body with mismatched scrap metal panels welded with gold in every seam, self-luminous bioluminescent core glowing warm, calm steady blue eyes, the bench surface visible with the Turkish tea glass the old man left behind, tools, scrap metal pieces, all lit by the android's warm gold core-glow, the workbench surface reflecting the gold light, warm workshop interior, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -665,13 +677,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 6:01–6:20
 - **Dramaturgy Reference:** Wide: full workshop visible. Robotiko luminous at center. Gold light leaking from the building's own seams — walls, floor, shutter edges. The gold is not just in him.
 - **Characters Present:** Robotiko (Phase 3, distant luminous figure)
-- **Image Reference Path:** `_assets/cast/ref_robotiko_master.png`
+- **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A). Multi-clip: 19s duration.
 - **Composition Notes:** Wide. Robotiko luminous at center. The workshop walls, floor joints, and shutter edges glowing with gold — the gold has seeped from him into the world's cracks.
-- **Upload:** char: `ref_robotiko_master.png` · env: `ep09_ref_workshop.png` · chain: S34 output
+- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S34 output
 
 **Text Prompt:**
-> Wide shot of the full workshop interior, a chrome android a luminous figure at center, patchwork gold-seamed body glowing from within, oil-dark walls visible around him, hanging tools, the roll-up shutter still closed behind, workbench with tea glass in the mid-ground, gold light leaking from the workshop's OWN seams — the cracks in the walls, the floor joints, the shutter edges all glowing with warm gold as if the building itself has been filled with gold from within, the gold is not just in the android — it is in the world's cracks too, 16:9 widescreen composition, only ONE chrome android no second robot, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of the full workshop interior, a chrome android a luminous figure at center, patchwork gold-seamed body glowing from within, oil-dark walls visible around him, hanging tools, the roll-up shutter still closed behind, workbench with tea glass in the mid-ground, gold light leaking from the workshop's OWN seams — the cracks in the walls, the floor joints, the shutter edges all glowing with warm gold as if the building itself has been filled with gold from within, the gold is not just in the android — it is in the world's cracks too, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -722,13 +734,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - [x] Character and environment reference prompts included (Step 0) — 3 refs: Mechanic, Workshop, Command Bridge
 - [x] Every single prompt ends with the mandatory style suffix (43/43 verified)
 - [x] Short character identifiers used — "the chrome android" when ref image uploaded
-- [x] Every character scene references `ref_robotiko_master.png` or `ep09_ref_mechanic.png`
+- [x] Every character scene references `android_damaged.png` or `ep09_ref_mechanic.png`
 - [x] Character visual state matches phase — @Damaged for S01–S26, Phase 3 progressive gold for S27–S35
 - [x] EP09-specific eye state applied: calm steady blue eyes throughout (transitioned at EP08 climax — no glitch, no flicker)
 - [x] No forbidden aesthetics in any prompt (no clean/sterile, no neon cyberpunk, no Pixar, no smooth plastic)
 - [x] All prompts composed with headroom and breathing space for camera movement
 - [x] 16:9 widescreen composition specified in every prompt
-- [x] Anti-spawn guard ("only ONE chrome android no second robot") on every Robotiko scene
+- [x] Anti-spawn guard ("single figure composition, no additional characters") on every Robotiko scene
 - [x] Total: 38 scenes → 40 prompts (S11a/b + S27a/b Mode B pairs) + 3 reference prompts = 43
 - [x] Start/End keyframe scenes have two prompts: S11a/b (shutter) and S27a/b (gold progression)
 - [x] Environmental prompts have specific textures and materials

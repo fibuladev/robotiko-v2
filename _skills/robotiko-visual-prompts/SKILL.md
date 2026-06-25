@@ -26,9 +26,9 @@ Read these files in this exact order:
 |---|---|---|
 | 1 | `_management/master.md` | Visual DNA (Section 3), color palette, forbidden aesthetics, mandatory suffix |
 | 2 | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` | Approved scene breakdown — this is your primary input |
-| 3 | `_assets/cast/character_profiles.json` | Character `visual_prompt_addition` for this episode's phase, `master_ref_path`, eye color logic |
-| 4 | `_assets/cast/ref_robotiko_master.png` | Visual reference image (if Robotiko appears in the episode) |
-| 5 | `_assets/cast/ref_mentor_master.png` | Visual reference image (if Mentor appears in the episode) |
+| 3 | `_assets/cast/character_profiles.json` | Character `visual_prompt_addition` for this episode's phase, `reference_images` + `phase_reference_map` for the correct ref file, eye color logic |
+| 4 | Phase-correct Robotiko reference | Look up `phase_reference_map` in character_profiles.json → determines which ref file to use (pristine, damaged, or kintsugi). For episodes with `episode_overrides` (EP08, EP09), check scene ranges. |
+| 5 | `_assets/cast/ref_mentor_master.png` | Visual reference image (if Mentor appears; EP01-07 only) |
 | 6 | `_templates/visual_prompt_template.md` | Output structure and formatting template |
 
 **If the approved dramaturgy file is missing:** STOP. The pipeline requires human-approved dramaturgy before visual prompts can be generated.
@@ -55,7 +55,7 @@ Before writing any scene prompts, identify and prepare reference images:
 - Scan the dramaturgy for episode-specific character groups (e.g., sol-liberal travelers, wedding guests, nightclub touts).
 - For each group, write a standalone prompt that clearly shows the group in a neutral composition — this becomes the character reference image.
 - The human generates this image first, then uploads it alongside every scene prompt where that group appears.
-- Robotiko and Mentor already have master references (`ref_robotiko_master.png`, `ref_mentor_master.png`). Episode-specific groups do NOT — they need per-episode reference images.
+- Robotiko has multiple reference images keyed to his phase — look up `reference_images` and `phase_reference_map` in `character_profiles.json` to determine which file to use. Phase 1 (EP01-03): `ref_robotiko_master.png`. Phase 2 (EP04-07, EP08 body): `android_damaged.png` (+ alt angles `_2`, `_3`). Phase 3 (EP09 S27+, EP10): no dedicated ref yet — use `android_damaged.png` as base + chain refs. Check `episode_overrides` for EP08 (body stays damaged) and EP09 (intra-episode transition at S27). Mentor: `ref_mentor_master.png` (EP01-07 only). Episode-specific groups do NOT have master refs — they need per-episode reference images.
 
 **Environment References:**
 - Scan the dramaturgy for locations that appear in 3+ scenes (e.g., an industrial estate, a nightclub interior, a metro/BRT line).
@@ -113,18 +113,25 @@ The prompt reads as a single flowing description, not as a bulleted list.
 
 ### Rule 3: Character Embedding
 When a character appears in a scene:
-- Use a **short identifier** — the reference image carries the visual details. Long descriptions compete with the reference image and confuse the model.
-- For Robotiko: "the chrome android" is sufficient when `ref_robotiko_master.png` is uploaded as reference.
+- The **short identifier is authoritative** — the reference image carries the visual detail. The text prompt names the subject; the uploaded reference defines what it looks like. Long descriptions compete with the reference and confuse the model.
+- For Robotiko: "a chrome android" or "the chrome android" — the phase-correct reference image (looked up via `phase_reference_map`) carries the damage state, body details, and proportions.
 - For Mentor: "an elderly figure in dark green cloak, wooden staff with glowing amber tip" when `ref_mentor_master.png` is uploaded.
 - For episode-specific groups: use a brief consistent descriptor (e.g., "three young travelers — mixed men and women with colorful scarves") when the group's reference image is uploaded.
-- Only add specific damage/state details if they differ from the reference image (e.g., "thin scratch across his cheek" for a new wound).
+- Only add specific damage/state details if they differ from the reference image (e.g., "thin scratch across his cheek" for a new wound not present in the ref).
 - Do NOT use character names ("Robotiko", "Mentor") — image generators don't know names. Describe by appearance.
 
-**Example — Robotiko with reference image uploaded:**
-> The chrome android standing at the edge of a rusted platform...
+**Example — Robotiko with phase-correct reference uploaded (Phase 2, damaged):**
+> A chrome android standing at the edge of a rusted platform...
 
 **Example — Robotiko WITHOUT reference image (fallback only):**
 > A retro-futuristic chrome android with battle-scarred chrome body, exposed analog wires, glowing blue eyes, standing at the edge of...
+
+### Rule 3b: Anti-Spawn Guard
+Image generators spawn duplicate characters. Every single-character scene needs a guard — but the phrasing depends on the tool:
+- **Nano Banana / Gemini:** End the prompt (before the style suffix) with: `single figure composition, no additional characters`
+- **Motion prompts (Kling / Veo / Seedance):** Use the motion-specific guard from the motion script skill: `Do not add extra characters. Keep everything as pictured.`
+- Do NOT write "only ONE android" or "no second robot" — these literal number/negation phrases backfire in Nano Banana, causing the tool to latch onto the concept of a second robot and generate one.
+- **Exception:** Intentional multi-figure scenes (ghost-self, dream copies) skip the guard and instead specify the exact count and each instance's distinct treatment — see the INTENTIONAL MULTI-FIGURE rule in `_memory/lessons.md`.
 
 ### Rule 4: Environmental Specificity
 - Never write generic environments ("a futuristic city", "a dark room").
@@ -197,7 +204,7 @@ Each prompt block contains:
 | **Timestamp** | From dramaturgy |
 | **Dramaturgy Reference** | 1-sentence summary of the dramaturgy's scene description |
 | **Characters Present** | List with phase-appropriate visual state noted |
-| **Image Reference Path** | `_assets/cast/ref_{character}_master.png` or N/A |
+| **Image Reference Path** | Phase-correct ref from `character_profiles.json` → `phase_reference_map`, or N/A for scenes without characters |
 | **Video Tech Strategy** | Standard / Start-End Keyframes / Extension (from dramaturgy detail blocks) |
 | **Composition Notes** | Headroom, breathing space, depth guidance |
 | **Upload** | Per-scene list of reference images to upload alongside the text prompt: character ref, environment ref, chain ref (previous scene output), special ref. Eliminates need to scroll to the Reference Image Upload Guide table. |
@@ -283,8 +290,9 @@ Before delivering the visual prompts to the human, verify:
 - [ ] Character and environment reference prompts are included at the top of the document (Step 0)
 - [ ] Every single prompt ends with the mandatory style suffix (check every one — no exceptions)
 - [ ] Short character identifiers used — reference images carry visual details (not full descriptions)
-- [ ] Every scene with a character references the correct `master_ref_path`
+- [ ] Every Robotiko scene references the phase-correct ref from `phase_reference_map` (NOT always `ref_robotiko_master.png` — that is Phase 1 only)
 - [ ] Character visual state matches the episode's phase (no pristine Robotiko in Phase 2/3)
+- [ ] Anti-spawn guard uses tool-appropriate phrasing (`single figure composition, no additional characters` for Nano Banana — NOT "only ONE android")
 - [ ] No forbidden aesthetics appear in any prompt (clean, sterile, neon cyberpunk, Pixar, smooth plastic)
 - [ ] All prompts have composition space (headroom + breathing space) for future camera movement
 - [ ] Total prompt count matches the approved dramaturgy scene count

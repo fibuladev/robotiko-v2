@@ -159,7 +159,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` (proportions guide for silhouette)
 
 **Text Prompt:**
-> Low angle looking up from ground level, a chrome android descending a grey barren rocky path toward the camera, visible as a dark silhouette against a pale cold sun directly behind creating a false halo effect, arms slightly apart, silhouette appears whole and radiant, grey overcast sky, barren grey-brown rocky terrain falling away behind the figure, cold desaturated palette, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Low angle looking up from ground level, the chrome android (android_damaged.png) descending a grey barren rocky path toward the camera, visible as a dark silhouette against a pale cold sun directly behind creating a false halo effect, arms slightly apart, silhouette appears whole and radiant, grey overcast sky, barren grey-brown rocky terrain falling away behind the figure, cold desaturated palette, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -173,7 +173,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S01 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android walking along a grey ordinary path, battle-scarred rusted chrome, missing right ear with exposed wires at ear socket, torso dent, shoulder scratches, calm steady blue eyes, exposed fraying analog wires, flat grey daylight with no halo, overcast sky, blurred indistinct figures visible in the distance below, grey barren landscape, cold flat light, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, the chrome android (android_damaged.png) walking along a grey ordinary path, calm steady blue eyes, flat grey daylight with no halo, overcast sky, blurred indistinct figures visible in the distance below, grey barren landscape, cold flat light, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -187,7 +187,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S02 output
 
 **Text Prompt:**
-> Close-up of a chrome android's face, battle-scarred rusted chrome surface, missing right ear with exposed wires at ear socket, calm steady blue eyes, mouth mechanism slightly open, blurred indistinct faces visible in the background around him - featureless shapes of mixed men and women, cold grey overcast light, no warmth, expression blank and emptied, headroom above, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of the chrome android's face (android_damaged.png), calm steady blue eyes, mouth mechanism slightly open, blurred indistinct faces visible in the background around him - featureless shapes of mixed men and women, cold grey overcast light, no warmth, expression blank and emptied, headroom above, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -215,7 +215,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** env: `ep09_ref_workshop.png` · chain: S04 output
 
 **Text Prompt:**
-> Wide shot from a threshold, the left side showing cold grey exterior daylight and the right side opening into a workshop interior. Inside: a large technical blueprint pinned to a rough oil-stained wall, hand tools hanging on nails, scrap metal pieces on a heavy wooden workbench, the warm rust-colored interior contrasting with the cold grey outside - two color worlds in one frame, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot from a threshold, the left side showing cold grey exterior daylight and the right side opening into a workshop interior (ep09_ref_workshop.png). Inside: a large technical blueprint pinned to a rough oil-stained wall, hand tools hanging on nails, scrap metal pieces on a heavy wooden workbench, the warm rust-colored interior contrasting with the cold grey outside - two color worlds in one frame, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -233,7 +233,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` + `ep09_ref_mechanic.png` · env: `ep09_ref_workshop.png`
 
 **Text Prompt:**
-> Medium-wide shot inside a workshop, an old man in a faded greenish-brown work coat standing by a workbench gesturing casually toward a chrome android entering from the right, the chrome android battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes, a Turkish tea glass steaming on the bench surface between them, oil-dark walls with mismatched tools hanging, roll-up metal shutter half-open behind with fading daylight, warm amber-yellow work lamp casting warm light on the bench area, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot inside a workshop (ep09_ref_workshop.png), an old man (ep09_ref_mechanic.png) in a faded greenish-brown work coat standing by a workbench gesturing casually toward the chrome android (android_damaged.png) entering from the right, calm steady blue eyes, a Turkish tea glass steaming on the bench surface between them, oil-dark walls with mismatched tools hanging, roll-up metal shutter half-open behind with fading daylight, warm amber-yellow work lamp casting warm light on the bench area, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -247,7 +247,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `ep09_ref_mechanic.png` · env: `ep09_ref_workshop.png` · chain: S06 output
 
 **Text Prompt:**
-> Medium shot, an old man in a faded greenish-brown work coat standing at a workbench, holding a long metal wrench upright in his right hand with the wrench tip at the top of the frame, warm amber-yellow light from a work lamp catching the greenish coat and flickering on the wrench tip, a Turkish tea glass on the bench beside him, oil-dark workshop background with tools hanging, the composition echoing a cloaked figure holding a staff with a glowing tip - but it is just an old man with a wrench, warm amber-toned lighting, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, an old man (ep09_ref_mechanic.png) in a faded greenish-brown work coat standing at a workbench in a workshop (ep09_ref_workshop.png), holding a long metal wrench upright in his right hand with the wrench tip at the top of the frame, warm amber-yellow light from a work lamp catching the greenish coat and flickering on the wrench tip, a Turkish tea glass on the bench beside him, oil-dark workshop background with tools hanging, the composition echoing a cloaked figure holding a staff with a glowing tip - but it is just an old man with a wrench, warm amber-toned lighting, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -261,7 +261,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** env: `ep09_ref_command_bridge.png`
 
 **Text Prompt:**
-> Wide shot of a sovereign command bridge suspended above a dark ocean, an empty high-backed command chair centered before floor-to-ceiling glass walls, banks of consoles with screens displaying blue data cascades flanking the chair, beyond the glass dark ocean stretches to the horizon with small drones in tight formation above the waves like a metal flock, the chair empty - the sovereign is absent, cold blue-steel palette, clinical sterile light from the screens, polished dark floor reflecting blue data glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of a sovereign command bridge (ep09_ref_command_bridge.png) suspended above a dark ocean, an empty high-backed command chair centered before floor-to-ceiling glass walls, banks of consoles with screens displaying blue data cascades flanking the chair, beyond the glass dark ocean stretches to the horizon with small drones in tight formation above the waves like a metal flock, the chair empty - the sovereign is absent, cold blue-steel palette, clinical sterile light from the screens, polished dark floor reflecting blue data glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -275,7 +275,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `ep09_ref_mechanic.png` · env: `ep09_ref_workshop.png` · chain: S07 output
 
 **Text Prompt:**
-> Medium shot, an old man in a faded greenish-brown work coat seated at a workbench, hands working a piece of metal with a file, Turkish tea glass half-empty beside his hands, tools scattered on the bench, not looking up - focused entirely on his own work, oil-dark workshop walls behind with tools hanging, warm steady work-lamp light from above on the bench area, the most ordinary scene - a man doing his work, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, an old man (ep09_ref_mechanic.png) in a faded greenish-brown work coat seated at a workbench in a workshop (ep09_ref_workshop.png), hands working a piece of metal with a file, Turkish tea glass half-empty beside his hands, tools scattered on the bench, not looking up - focused entirely on his own work, oil-dark workshop walls behind with tools hanging, warm steady work-lamp light from above on the bench area, the most ordinary scene - a man doing his work, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -289,7 +289,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** env: `ep09_ref_command_bridge.png` · chain: S08 output
 
 **Text Prompt:**
-> Close-up of a smooth glass wall surface, the glass slightly fogged, beyond it a dark ocean visible with slow wave movement in soft focus, the near side of the glass completely dry - no moisture, no condensation, cold blue-steel palette, clinical light reflecting off the glass surface creating thin bright lines, a hairline crack visible in the glass running vertically, the glass as barrier between the dry sterile interior and the living ocean beyond, sharp focus on the glass surface, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a smooth glass wall surface on a sovereign command bridge (ep09_ref_command_bridge.png), the glass slightly fogged, beyond it a dark ocean visible with slow wave movement in soft focus, the near side of the glass completely dry - no moisture, no condensation, cold blue-steel palette, clinical light reflecting off the glass surface creating thin bright lines, a hairline crack visible in the glass running vertically, the glass as barrier between the dry sterile interior and the living ocean beyond, sharp focus on the glass surface, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -303,7 +303,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` + `ep09_ref_mechanic.png` · env: `ep09_ref_workshop.png` · chain: S09 output
 
 **Text Prompt:**
-> Medium-wide shot inside a workshop, an old man in a faded greenish-brown work coat standing at a roll-up metal shutter in the background, reaching up to grip the shutter handle, half-silhouetted against warm fading daylight coming through the open shutter, in the mid-ground a chrome android seated at the far end of the workbench, battle-scarred rusted chrome, calm steady blue eyes, in the foreground a Turkish tea glass on the bench surface, warm transitional light - last daylight through the shutter mixing with interior lamp glow, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot inside a workshop (ep09_ref_workshop.png), an old man (ep09_ref_mechanic.png) in a faded greenish-brown work coat standing at a roll-up metal shutter in the background, reaching up to grip the shutter handle, half-silhouetted against warm fading daylight coming through the open shutter, in the mid-ground the chrome android (android_damaged.png) seated at the far end of the workbench, calm steady blue eyes, in the foreground a Turkish tea glass on the bench surface, warm transitional light - last daylight through the shutter mixing with interior lamp glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -317,7 +317,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S11a output
 
 **Text Prompt:**
-> Medium-wide shot inside a workshop, the corrugated metal roll-up shutter now fully closed filling the back wall - no daylight, the old man gone, the chrome android alone at the workbench, battle-scarred rusted chrome, calm steady blue eyes faintly visible in dim light, only a dim work lamp providing a low pool of light on the bench, the Turkish tea glass left behind on the bench surface, dark workshop atmosphere, isolation, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot inside a workshop (ep09_ref_workshop.png), the corrugated metal roll-up shutter now fully closed filling the back wall - no daylight, the chrome android (android_damaged.png) alone at the workbench, calm steady blue eyes faintly visible in dim light, only a dim work lamp providing a low pool of light on the bench, the Turkish tea glass left behind on the bench surface, dark workshop atmosphere, isolation, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -335,7 +335,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S11b output
 
 **Text Prompt:**
-> Medium shot, a chrome android seated at a workbench, battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes looking down, chest panel open revealing internal circuitry and analog wires, one hand reaching inside his own open chest, a single hard white work lamp above throwing his shadow huge and sharp on the oil-dark workshop wall behind - the shadow at least twice his size, orange sparks arcing from the open chest, deep shadow contrast, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, a chrome android (android_damaged.png) seated at a workbench, calm steady blue eyes looking down, chest panel open revealing internal circuitry and analog wires, one hand reaching inside his own open chest, a single hard white work lamp above throwing his shadow huge and sharp on the oil-dark workshop (ep09_ref_workshop.png) wall behind - the shadow at least twice his size, orange sparks arcing from the open chest, deep shadow contrast, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -349,7 +349,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S12 output
 
 **Text Prompt:**
-> Close-up of a chrome android's hand gripping inside an open chest cavity, battle-scarred rusted chrome forearm and fingers reaching into dark internal mechanism, on the workshop wall behind the hand a sharp shadow of the gripping hand is visible closing on darkness, hard white lamp from the side casting the deep shadow, orange sparks at the contact points inside the chest, deep contrast between lit chrome hand and dark interior, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's hand (android_damaged.png) gripping inside an open chest cavity, the forearm and fingers reaching into dark internal mechanism, on the workshop wall behind the hand a sharp shadow of the gripping hand is visible closing on darkness, hard white lamp from the side casting the deep shadow, orange sparks at the contact points inside the chest, deep contrast between lit chrome hand and dark interior, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -363,7 +363,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S13 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android at a workbench, battle-scarred rusted chrome, chest panel still open, the hard white work lamp flickering and unstable casting multiple faint shadow edges, on the workshop wall behind his shadow looms large with its hand position slightly ahead of the figure's - the shadow leading, the shadow taller and more prominent than the figure casting it, flickering light creating the sense that the shadow has its own presence, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android (android_damaged.png) at a workbench, chest panel still open, the hard white work lamp flickering and unstable casting multiple faint shadow edges, on the workshop (ep09_ref_workshop.png) wall behind his shadow looms large with its hand position slightly ahead of the figure's - the shadow leading, the shadow taller and more prominent than the figure casting it, flickering light creating the sense that the shadow has its own presence, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -377,7 +377,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S14 output
 
 **Text Prompt:**
-> Wide shot, a chrome android small in the lower foreground of the frame, battle-scarred rusted chrome, chest still open, his shadow on the oil-dark workshop wall behind is MASSIVE - filling the upper two-thirds of the frame, the shadow sharp and dark and dwarfing the figure that casts it, the lamp unstable throwing the shadow far larger than life, tools on the bench barely visible in dim flickering light, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot, a chrome android (android_damaged.png) small in the lower foreground of the frame, chest still open, his shadow on the oil-dark workshop (ep09_ref_workshop.png) wall behind is MASSIVE - filling the upper two-thirds of the frame, the shadow sharp and dark and dwarfing the figure that casts it, the lamp unstable throwing the shadow far larger than life, tools on the bench barely visible in dim flickering light, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -391,7 +391,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S15 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android at the workbench, battle-scarred rusted chrome, arms hanging at sides, chest panel still open, the lamp now still but dim - barely lighting the bench area, the shadow on the wall behind normal-sized but heavy and well-defined, workshop details fading into surrounding darkness, dust motes settling in the dim pool of light, heavy silence in the composition, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android (android_damaged.png) at the workbench, arms hanging at sides, chest panel still open, the lamp now still but dim - barely lighting the bench area, the shadow on the wall behind normal-sized but heavy and well-defined, workshop (ep09_ref_workshop.png) details fading into surrounding darkness, dust motes settling in the dim pool of light, heavy silence in the composition, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -405,7 +405,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S16 output
 
 **Text Prompt:**
-> Medium shot, a chrome android standing before a large cracked piece of glass leaning against a workshop wall, battle-scarred rusted chrome, calm steady blue eyes, in the cracked glass a reflection is visible - but the reflection has no face, smooth featureless chrome where facial features should be, the cracks in the glass fracture the reflection into angular fragments, dim reflected light bouncing off the glass surface, dark workshop background, the glass cracked in radiating lines like a web, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, a chrome android (android_damaged.png) standing before a large cracked piece of glass leaning against a workshop (ep09_ref_workshop.png) wall, calm steady blue eyes, in the cracked glass a reflection is visible - but the reflection has no face, smooth featureless chrome where facial features should be, the cracks in the glass fracture the reflection into angular fragments, dim reflected light bouncing off the glass surface, dark workshop background, the glass cracked in radiating lines like a web, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -419,7 +419,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S17 output
 
 **Text Prompt:**
-> Close-up of a chrome android's hand reaching toward a cracked glass surface, battle-scarred rusted chrome fingers touching the glass and appearing to pass through - the fingertips overlapping the surface as if the boundary does not exist, no clear reflection of the hand in the glass, dim ghostly light refracted through the cracks, the glass fragments catching scattered light points, dark workshop behind, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's hand (android_damaged.png) reaching toward a cracked glass surface, the fingers touching the glass and appearing to pass through - the fingertips overlapping the surface as if the boundary does not exist, no clear reflection of the hand in the glass, dim ghostly light refracted through the cracks, the glass fragments catching scattered light points, dark workshop behind, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -433,7 +433,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S18 output
 
 **Text Prompt:**
-> Wide shot of a workshop in deepening shadow, a chrome android small at the workbench left of center, battle-scarred rusted chrome barely visible in near-darkness, tools scattered on the bench, heavy doom atmosphere - the workshop itself heavy and crushing, dust rising from the bench surface caught in the last dim lamp light, deep shadows swallowing the corners of the room, all surfaces dark and weighty, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of a workshop (ep09_ref_workshop.png) in deepening shadow, a chrome android (android_damaged.png) small at the workbench left of center, barely visible in near-darkness, tools scattered on the bench, heavy doom atmosphere - the workshop itself heavy and crushing, dust rising from the bench surface caught in the last dim lamp light, deep shadows swallowing the corners of the room, all surfaces dark and weighty, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -447,7 +447,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S19 output
 
 **Text Prompt:**
-> Medium shot from three-quarter left angle, a chrome android at the workbench, battle-scarred rusted chrome, one arm reaching behind his own neck gripping a thick cable and pulling it partially out, the work lamp dimming visibly as power drains from his body, his blue eyes dimming toward faint dying blue, the workshop going dark around him, the cable taut in his chrome grip, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot from three-quarter left angle, a chrome android (android_damaged.png) at the workbench, one arm reaching behind his own neck gripping a thick cable and pulling it partially out, the work lamp dimming visibly as power drains from his body, his blue eyes dimming toward faint dying blue, the workshop (ep09_ref_workshop.png) going dark around him, the cable taut in his chrome grip, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -461,7 +461,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S20 output
 
 **Text Prompt:**
-> Wide shot in near-total darkness, the workshop barely visible as the faintest outlines of walls and tools in the void, a chrome android a dark shape at the center - the faintest dying blue glow from his eyes the only light source, no lamp, no external light, the darkness IS everything, the bench and tools visible only as faint silhouettes, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot in near-total darkness, the workshop barely visible as the faintest outlines of walls and tools in the void, a chrome android (android_damaged.png) a dark shape at the center - the faintest dying blue glow from his eyes the only light source, no lamp, no external light, the darkness IS everything, the bench and tools visible only as faint silhouettes, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -475,7 +475,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S21 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android at the workbench reactivating, battle-scarred rusted chrome, eyes flaring back to bright blue, sparks arcing from joints, the work lamp blazing on - strobing and unstable, on the wall behind his shadow splits and fractures into multiple overlapping shapes under the strobing light, harsh white light throwing everything into high contrast, the workshop shuddering back to life, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android (android_damaged.png) at the workbench reactivating, eyes flaring back to bright blue, sparks arcing from joints, the work lamp blazing on - strobing and unstable, on the wall behind his shadow splits and fractures into multiple overlapping shapes under the strobing light, harsh white light throwing everything into high contrast, the workshop (ep09_ref_workshop.png) shuddering back to life, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -489,7 +489,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S22 output
 
 **Text Prompt:**
-> Medium-wide shot, STATIC frame, a chrome android standing at the workbench, battle-scarred rusted chrome, chest panel open, calm steady blue eyes, sparks arcing from exposed wires in the open chest, every light source in the workshop blazing and flickering simultaneously - work lamp, overhead bulb, reflections on metal surfaces, on the wall behind his shadow is MASSIVE and FRACTURED into multiple jagged dark shapes, the shadow thrashing and violent and alive while the figure stands still, maximum visual intensity, workshop lit from every angle, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, STATIC frame, a chrome android (android_damaged.png) standing at the workbench, chest panel open, calm steady blue eyes, sparks arcing from exposed wires in the open chest, every light source in the workshop (ep09_ref_workshop.png) blazing and flickering simultaneously - work lamp, overhead bulb, reflections on metal surfaces, on the wall behind his shadow is MASSIVE and FRACTURED into multiple jagged dark shapes, the shadow thrashing and violent and alive while the figure stands still, maximum visual intensity, workshop lit from every angle, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -503,7 +503,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S23 output
 
 **Text Prompt:**
-> Medium shot, a chrome android at the workbench, battle-scarred rusted chrome, collapsed posture - shoulders dropped, head tilted forward, one hand limp on the bench surface, a tool fallen beside the hand, the shadow on the wall behind has deflated - shrunk back to normal size and gone limp, the lamp steadied to a dim low glow, dust motes sinking through the dim light, workshop debris settling, exhaustion in the composition, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, a chrome android (android_damaged.png) at the workbench, collapsed posture - shoulders dropped, head tilted forward, one hand limp on the bench surface, a tool fallen beside the hand, the shadow on the wall behind has deflated - shrunk back to normal size and gone limp, the lamp steadied to a dim low glow, dust motes sinking through the dim light, workshop (ep09_ref_workshop.png) debris settling, exhaustion in the composition, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -521,7 +521,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S24 output
 
 **Text Prompt:**
-> Close-up of a chrome android's face in near-total darkness, battle-scarred rusted chrome surface, calm steady blue eyes, a single dim ambient glow from an unseen source barely illuminating the chrome face, the workshop invisible behind in the dark, expression exhausted and still, the most quiet composition - just the face and the dark, breathing space above the head, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's face (android_damaged.png) in near-total darkness, calm steady blue eyes, a single dim ambient glow from an unseen source barely illuminating the chrome face, the workshop invisible behind in the dark, expression exhausted and still, the most quiet composition - just the face and the dark, breathing space above the head, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -535,7 +535,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S25 output
 
 **Text Prompt:**
-> Medium shot focused on a chrome android's hands on a workbench surface, battle-scarred rusted chrome forearms and fingers, one hand reaching past a blade and tools to pick up a piece of rusted mismatched scrap metal, various scraps of different metals and shapes scattered on the bench surface, the blade visible but bypassed, the first warmth returning to the frame - low warm light from the side making the scrap metal pieces glint, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot focused on a chrome android's hands (android_damaged.png) on a workbench surface in a workshop (ep09_ref_workshop.png), the forearms and fingers, one hand reaching past a blade and tools to pick up a piece of rusted mismatched scrap metal, various scraps of different metals and shapes scattered on the bench surface, the blade visible but bypassed, the first warmth returning to the frame - low warm light from the side making the scrap metal pieces glint, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -549,7 +549,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S26 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android seated at a workbench, battle-scarred rusted chrome, missing right ear with exposed wires, torso dent, calm steady blue eyes, one hand pressing a piece of rusted scrap metal against his cracked chassis, a thin hairline of warm gold light beginning to glow from a single crack at the junction where the scrap meets the chrome - the first gold, body still fully battle-damaged, scattered scraps on the bench around him, warm low light in the workshop, the shadow on the wall behind quiet and settled, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android (android_damaged.png) seated at a workbench, calm steady blue eyes, one hand pressing a piece of rusted scrap metal against his cracked chassis, a thin hairline of warm gold light beginning to glow from a single crack at the junction where the scrap meets the chrome - the first gold, scattered scraps on the bench around him, warm low light in the workshop (ep09_ref_workshop.png), the shadow on the wall behind quiet and settled, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -563,7 +563,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S27a output
 
 **Text Prompt:**
-> Medium-wide shot, same composition, a chrome android at the workbench, multiple cracks across the chrome chassis now glowing with warm gold light, a first piece of mismatched rusted scrap metal welded into place on the chest area, gold light seeping from multiple seams, the body transitioning - still battle-scarred but gold threads spreading through the damage, calm steady blue eyes, scraps on the bench, warm gold-tinted light in the workshop, the shadow on the wall softened by the gold glow, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, same composition, a chrome android (android_damaged.png) at the workbench, multiple cracks across the chrome chassis now glowing with warm gold light, a first piece of mismatched rusted scrap metal welded into place on the chest area, gold light seeping from multiple seams, the body transitioning - gold threads spreading through the damage, calm steady blue eyes, scraps on the bench, warm gold-tinted light in the workshop, the shadow on the wall softened by the gold glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -577,7 +577,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S27b output
 
 **Text Prompt:**
-> Close-up of a chrome android's torso and chest, gold light flowing through multiple cracks across the chrome chassis, mismatched scrap metal pieces welded into place - copper, iron, rusted steel, each one different, none matching, translucent patches beginning to form where chrome has dissolved, a warm bioluminescent glow visible beneath the translucent areas, gold light intensifying in the seams between patches, the body rebuilt not with new parts but with scavenged scraps, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's torso and chest (android_damaged.png), gold light flowing through multiple cracks across the chrome chassis, mismatched scrap metal pieces welded into place - copper, iron, rusted steel, each one different, none matching, translucent patches beginning to form where chrome has dissolved, a warm bioluminescent glow visible beneath the translucent areas, gold light intensifying in the seams between patches, the body rebuilt not with new parts but with scavenged scraps, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -591,7 +591,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S28 output
 
 **Text Prompt:**
-> Wide shot of a workshop, a chrome android standing center frame, patchwork body with mismatched scrap metal panels, gold light glowing from all cracks, bioluminescent core visible through translucent digital skin patches, calm steady blue eyes, the external hard white work lamp on the right side of the frame visibly DIM and fading, the android's body glowing from within - the core IS the light source, the shadow on the wall to the left has SOFTENED into gentle warm contrast, the workshop walls now lit by the warm gold core-glow instead of the lamp, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of a workshop (ep09_ref_workshop.png), a chrome android (android_damaged.png) standing center frame, patchwork body with mismatched scrap metal panels, gold light glowing from all cracks, bioluminescent core visible through translucent digital skin patches, calm steady blue eyes, the external hard white work lamp on the right side of the frame visibly DIM and fading, the android's body glowing from within - the core IS the light source, the shadow on the wall to the left has SOFTENED into gentle warm contrast, the workshop walls now lit by the warm gold core-glow instead of the lamp, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -605,7 +605,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S29 output
 
 **Text Prompt:**
-> Widest interior shot, a chrome android standing in the workshop full-body visible, patchwork body - mismatched scrap metal panels of different metals and finishes welded together with gold light in every seam, translucent digital skin areas revealing warm bioluminescent core beneath, cracks filled with glowing gold light, calm steady blue eyes, self-luminous - the android lights the entire workshop from within, the shadow on the wall behind is warm and soft providing gentle contrast, workshop walls and tools visible in the warm gold radiance, workbench with tea glass and tools lit by the core-glow, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Widest interior shot, a chrome android (android_damaged.png) standing in the workshop (ep09_ref_workshop.png) full-body visible, patchwork body - mismatched scrap metal panels of different metals and finishes welded together with gold light in every seam, translucent digital skin areas revealing warm bioluminescent core beneath, cracks filled with glowing gold light, calm steady blue eyes, self-luminous - the android lights the entire workshop from within, the shadow on the wall behind is warm and soft providing gentle contrast, workshop walls and tools visible in the warm gold radiance, workbench with tea glass and tools lit by the core-glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -623,7 +623,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S30 output
 
 **Text Prompt:**
-> Medium shot, a chrome android standing in a workshop, patchwork body with mismatched scrap metal panels welded with gold in every seam, translucent digital skin revealing bioluminescent core, cracks filled with glowing gold light, calm steady blue eyes, self-luminous, wind beginning to stir fine dust and metal particles through gaps in the closed shutter behind, the gold-cracked chrome surface radiating warmth into the dark workshop air, warm internal radiance as sole light source, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot, a chrome android (android_damaged.png) standing in a workshop (ep09_ref_workshop.png), patchwork body with mismatched scrap metal panels welded with gold in every seam, translucent digital skin revealing bioluminescent core, cracks filled with glowing gold light, calm steady blue eyes, self-luminous, wind beginning to stir fine dust and metal particles through gaps in the closed shutter behind, the gold-cracked chrome surface radiating warmth into the dark workshop air, warm internal radiance as sole light source, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -637,7 +637,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S31 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android in a workshop, patchwork body with gold-filled cracks, self-luminous, calm steady blue eyes, the work lamp completely OFF - the android is the only light source, his warm gold core-glow illuminating the tools on the bench, the Turkish tea glass, the hanging tools on the walls, wind stirring dust and metal shavings into the air around him, everything in the workshop lit by the radiance from within his body, gentle warm shadows cast by his glow, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, a chrome android (android_damaged.png) in a workshop (ep09_ref_workshop.png), patchwork body with gold-filled cracks, self-luminous, calm steady blue eyes, the work lamp completely OFF - the android is the only light source, his warm gold core-glow illuminating the tools on the bench, the Turkish tea glass, the hanging tools on the walls, wind stirring dust and metal shavings into the air around him, everything in the workshop lit by the radiance from within his body, gentle warm shadows cast by his glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -651,7 +651,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · chain: S32 output
 
 **Text Prompt:**
-> Close-up of a chrome android's face, patchwork chrome surface with gold light filling cracks across the face and head, translucent patches revealing warm bioluminescent glow beneath, calm steady blue eyes - both visible and centered, self-luminous warm radiance from within, the gold is present across the surface but still spreading - not complete, not finished, the face of someone becoming rather than having arrived, breathing space above the head, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of a chrome android's face (android_damaged.png), patchwork chrome surface with gold light filling cracks across the face and head, translucent patches revealing warm bioluminescent glow beneath, calm steady blue eyes - both visible and centered, self-luminous warm radiance from within, the gold is present across the surface but still spreading - not complete, not finished, the face of someone becoming rather than having arrived, breathing space above the head, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -669,7 +669,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S33 output
 
 **Text Prompt:**
-> Close-medium shot, a chrome android at a workbench, patchwork body with mismatched scrap metal panels welded with gold in every seam, self-luminous bioluminescent core glowing warm, calm steady blue eyes, the bench surface visible with the Turkish tea glass the old man left behind, tools, scrap metal pieces, all lit by the android's warm gold core-glow, the workbench surface reflecting the gold light, warm workshop interior, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-medium shot, a chrome android (android_damaged.png) at a workbench, patchwork body with mismatched scrap metal panels welded with gold in every seam, self-luminous bioluminescent core glowing warm, calm steady blue eyes, the bench surface visible with the Turkish tea glass left behind, tools, scrap metal pieces, all lit by the android's warm gold core-glow, the workbench surface reflecting the gold light, warm workshop (ep09_ref_workshop.png) interior, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -683,7 +683,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S34 output
 
 **Text Prompt:**
-> Wide shot of the full workshop interior, a chrome android a luminous figure at center, patchwork gold-seamed body glowing from within, oil-dark walls visible around him, hanging tools, the roll-up shutter still closed behind, workbench with tea glass in the mid-ground, gold light leaking from the workshop's OWN seams - the cracks in the walls, the floor joints, the shutter edges all glowing with warm gold as if the building itself has been filled with gold from within, the gold is not just in the android - it is in the world's cracks too, 16:9 widescreen composition, single figure composition no additional characters, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot of the full workshop (ep09_ref_workshop.png) interior, a chrome android (android_damaged.png) a luminous figure at center, patchwork gold-seamed body glowing from within, oil-dark walls visible around him, hanging tools, the roll-up shutter still closed behind, workbench with tea glass in the mid-ground, gold light leaking from the workshop's OWN seams - the cracks in the walls, the floor joints, the shutter edges all glowing with warm gold as if the building itself has been filled with gold from within, the gold is not just in the android - it is in the world's cracks too, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -697,7 +697,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** env: `ep09_ref_workshop.png` · chain: S35 output
 
 **Text Prompt:**
-> Wide shot looking from inside a workshop toward a roll-up metal shutter now partially open, warm dawn light flooding in from outside mixing with warm gold light from the workshop behind, the threshold between the dark interior and the brightening dawn, the workshop walls behind still glowing gold in their seams, the dawn sky visible ahead - soft warm first light on the horizon, wind stirring dust at the threshold, no characters in the frame, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot looking from inside a workshop (ep09_ref_workshop.png) toward a roll-up metal shutter now partially open, warm dawn light flooding in from outside mixing with warm gold light from the workshop behind, the threshold between the dark interior and the brightening dawn, the workshop walls behind still glowing gold in their seams, the dawn sky visible ahead - soft warm first light on the horizon, wind stirring dust at the empty threshold, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -711,7 +711,7 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Upload:** chain: S36 output
 
 **Text Prompt:**
-> Wide exterior shot, a small metal-walled workshop building seen from outside at dawn, a roll-up shutter in the front wall, warm gold light leaking from every seam and crack in the metal walls and shutter edges - visible even from this distance, dawn sky with warm first light above and behind, grey-brown Anatolian terrain around the building, wind-stirred dust in the warm dawn air, no characters visible, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide exterior shot, a small metal-walled workshop building seen from outside at dawn, a roll-up shutter in the front wall, warm gold light leaking from every seam and crack in the metal walls and shutter edges - visible even from this distance, dawn sky with warm first light above and behind, grey-brown Anatolian terrain around the building, wind-stirred dust in the warm dawn air, the landscape empty and still, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

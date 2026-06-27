@@ -67,7 +67,7 @@ Before writing any scene prompts, identify and prepare reference images:
 
 ### Step 1: Confirm Character Phase
 - From `character_profiles.json`, extract the `visual_prompt_addition` for this episode's phase.
-- This exact string will be embedded in every prompt where that character appears.
+- Use it ONLY to confirm the phase and pick the correct reference file — do NOT paste this string into the prompts. The short identifier + inline reference binding (Rule 2b / Rule 3) name the subject; the uploaded reference carries the detail.
 - Cross-reference with the dramaturgy header to confirm phase alignment.
 
 ### Step 2: Identify Character Appearances
@@ -111,10 +111,22 @@ Every prompt follows this internal structure (written as continuous prose, not l
 
 The prompt reads as a single flowing description, not as a bulleted list.
 
+### Rule 2b: Inline Reference Binding (Nano Banana)
+When a scene uploads reference images, **bind each reference to its element inline** — put the reference's filename in parentheses immediately after the thing it defines:
+- `inside a workshop (ep09_ref_workshop.png)` — environment ref
+- `the chrome android (android_damaged.png)` — character ref
+- `the chrome android's open chest panel (android_damaged.png)` — for a close-up, bind the same character ref
+
+Use the exact filename the human uploads (the basename in that scene's `Upload` field). The metadata `Upload` field still lists the same files for bookkeeping and the validator — the inline callout is what the model actually reads.
+
+**Why:** when several references are uploaded at once, Nano Banana otherwise guesses which upload maps to which element, and mis-binds or ignores them. The inline callout pins each reference to its target — this is what makes multi-reference generation reliable.
+
+**Do NOT also restate what the bound reference already shows.** `the chrome android (android_damaged.png)` carries the full damaged body, the missing ear, the wires; adding "battle-scarred rusted chrome, missing right ear with exposed wires" competes with the reference and degrades the output. Describe ONLY what is NOT in the reference — a new wound, or (for EP09 S27+) the emerging gold/kintsugi transformation the damaged reference does not yet show.
+
 ### Rule 3: Character Embedding
 When a character appears in a scene:
-- The **short identifier is authoritative** — the reference image carries the visual detail. The text prompt names the subject; the uploaded reference defines what it looks like. Long descriptions compete with the reference and confuse the model.
-- For Robotiko: "a chrome android" or "the chrome android" — the phase-correct reference image (looked up via `phase_reference_map`) carries the damage state, body details, and proportions.
+- The **short identifier is authoritative**, and it is **bound to its reference inline** (Rule 2b) — the reference image carries the visual detail. The text prompt names the subject and pins the file; the uploaded reference defines what it looks like. Long descriptions compete with the reference and confuse the model.
+- For Robotiko: "a chrome android (android_damaged.png)" or "the chrome android (android_damaged.png)" — the phase-correct reference (via `phase_reference_map`) carries the damage state, body details, and proportions. Bind the same file for close-ups of his hand, face, or chest.
 - For Mentor: "an elderly figure in dark green cloak, wooden staff with glowing amber tip" when `ref_mentor_master.png` is uploaded.
 - For episode-specific groups: use a brief consistent descriptor (e.g., "three young travelers — mixed men and women with colorful scarves") when the group's reference image is uploaded.
 - Only add specific damage/state details if they differ from the reference image (e.g., "thin scratch across his cheek" for a new wound not present in the ref).
@@ -230,12 +242,14 @@ Self-validation checklist at the bottom of the document.
 - Use abstract or emotional language that an image model cannot render ("feeling of existential dread")
 - Stack synonyms ("dark, gloomy, shadowy, dim, murky")
 - Write camera directions (pan, zoom, tilt) — those belong to the Motion Script
-- Use negative prompts or "do not" instructions — write what IS there, not what ISN'T
+- Use negative prompts, "do not" instructions, or name absent things ("the old man gone") — write only what IS visibly present; naming an absent "old man" can spawn one
 - Reference other scenes ("similar to S05") — each prompt must be self-contained
 - Forget the suffix — this is a termination-level error in the pipeline
 
 ### EXAMPLE (Good):
-> A retro-futuristic chrome android with pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full armor, retro-futuristic 70s mechanical aesthetic, standing on a rusted metal platform overlooking an endless desert of circuit boards and dead silicon wafers. The ground crunches with broken transistors. A single amber spotlight from above carves deep shadows across the android's chrome torso. Volumetric dust rises from the desert floor. In the far background, the skeletal remains of a massive server farm dissolve into heat haze. The sky is bruised purple and copper, like an overexposed Kodachrome slide left in the sun. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot inside a workshop (ep09_ref_workshop.png), the corrugated metal roll-up shutter fully closed filling the back wall, no daylight, the chrome android (android_damaged.png) alone at the workbench, calm steady blue eyes faintly visible in dim light, only a dim work lamp casting a low pool of light on the bench, a Turkish tea glass left behind on the bench surface, dark workshop atmosphere, isolation, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+
+**Why it works:** each reference is bound inline (`workshop` + `chrome android`); the short identifier carries the look with NO restated damage; nothing absent is named (no "the old man gone"); no redundant anti-spawn phrase — the reference plus "alone" already establish a single figure.
 
 ### EXAMPLE (Bad):
 > Robotiko standing in a desert looking cool and futuristic. The lighting is dramatic and moody. He looks amazing and powerful. 8k masterpiece.
@@ -290,6 +304,7 @@ Before delivering the visual prompts to the human, verify:
 - [ ] Character and environment reference prompts are included at the top of the document (Step 0)
 - [ ] Every single prompt ends with the mandatory style suffix (check every one — no exceptions)
 - [ ] Short character identifiers used — reference images carry visual details (not full descriptions)
+- [ ] Every uploaded reference is bound INLINE in the prompt — `element (filename.png)` — matching that scene's `Upload` field (Rule 2b); no restated detail the reference already shows
 - [ ] Every Robotiko scene references the phase-correct ref from `phase_reference_map` (NOT always `ref_robotiko_master.png` — that is Phase 1 only)
 - [ ] Character visual state matches the episode's phase (no pristine Robotiko in Phase 2/3)
 - [ ] Anti-spawn guard uses tool-appropriate phrasing (`single figure composition, no additional characters` for Nano Banana — NOT "only ONE android")

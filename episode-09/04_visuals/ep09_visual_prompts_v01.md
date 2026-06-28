@@ -585,13 +585,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 4:40–4:52
 - **Dramaturgy Reference:** THE LIGHTING FLIP. External lamp dims. Core glows from within. Self-luminous. Shadow softens into warm contrast — does not die. "The cracks filled with gold... Not hiding... Revealing."
 - **Characters Present:** Robotiko (Phase 3, self-luminous) + shadow (soft contrast)
-- **Image Reference Path:** `_assets/cast/android_damaged.png`
+- **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A). The lighting change is progressive and atmospheric.
-- **Composition Notes:** Wide. Three-element composition: dimming lamp (right), glowing android (center), softened shadow (left). The philosophy in one frame. THIS IS NOT MOOD LIGHTING — IT IS THE PHILOSOPHY.
-- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S28 output
+- **Composition Notes:** MEDIUM — not a full-body wide (this is what separates it from S30/S31). The dying work lamp is a foreground co-subject; the android framed from roughly the waist up beside it, his inner glow rising to take over; softened warm shadow on the wall. The flip = external light dying, internal light winning. Off-center. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S28 output
 
 **Text Prompt:**
-> Wide shot of a workshop (ep09_ref_workshop.png), a chrome android (android_damaged.png) standing center frame, patchwork body with mismatched scrap metal panels, gold light glowing from all cracks, bioluminescent core visible through translucent digital skin patches, calm steady blue eyes, the external hard white work lamp on the right side of the frame visibly DIM and fading, the android's body glowing from within - the core IS the light source, the shadow on the wall to the left has SOFTENED into gentle warm contrast, the workshop walls now lit by the warm gold core-glow instead of the lamp, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot in a workshop (ep09_ref_workshop.png), the white articulated work lamp prominent in the foreground arcing over the bench, its hard white light visibly DIMMING and fading out, beside it a chrome android (android_kintsugi.png) framed from the waist up, his own warm gold inner glow rising to become the only light source, a soft warm shadow cast on the concrete wall behind him, the moment the external light dies and the light from within takes over, off-center eye-level framing, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -599,13 +599,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 4:53–5:04
 - **Dramaturgy Reference:** Widest zoom-out of the interior. Full-body kintsugi. Mismatched panels welded with gold. Translucent skin, bioluminescent core. Shadow as warm contrast. "Deeper than the scar."
 - **Characters Present:** Robotiko (Phase 3, full kintsugi)
-- **Image Reference Path:** `_assets/cast/android_damaged.png`
+- **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** Widest interior shot. Robotiko full-body centered. Workshop visible around. The gold-seamed body dominates the frame. Shadow provides contrast on the wall behind.
-- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S29 output
+- **Composition Notes:** Widest interior, THREE-QUARTER from the front-left corner — match `ep09_ref_workshop.png`: room receding diagonally toward the back-right shutter, pegboard left, shelving right. Robotiko full-body standing in the RIGHT THIRD (off-center), not dead-center. Soft warm shadow on the wall behind. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S29 output
 
 **Text Prompt:**
-> Widest interior shot, a chrome android (android_damaged.png) standing in the workshop (ep09_ref_workshop.png) full-body visible, patchwork body - mismatched scrap metal panels of different metals and finishes welded together with gold light in every seam, translucent digital skin areas revealing warm bioluminescent core beneath, cracks filled with glowing gold light, calm steady blue eyes, self-luminous - the android lights the entire workshop from within, the shadow on the wall behind is warm and soft providing gentle contrast, workshop walls and tools visible in the warm gold radiance, workbench with tea glass and tools lit by the core-glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Widest three-quarter interior view of the workshop (ep09_ref_workshop.png) from the front-left corner, the room receding diagonally toward the closed roll-up shutter at the back-right, a chrome android (android_kintsugi.png) standing full-body in the right third of the frame, self-luminous - lighting the entire workshop from within, a soft warm shadow on the wall behind him, the workbench with a Turkish tea glass and tools and the wall pegboard all catching his warm gold radiance, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -617,13 +617,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 5:05–5:17
 - **Dramaturgy Reference:** Robotiko standing, gold-cracked body self-luminous. Wind entering through gaps in the shutter. Distant clarinet. "Deeper than voltage... Deeper than silence."
 - **Characters Present:** Robotiko (Phase 3, self-luminous)
-- **Image Reference Path:** `_assets/cast/android_damaged.png`
+- **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** Medium. Gold-cracked body fills center. Wind-stirred particles in the air. Warm internal radiance. Intimate.
-- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S30 output
+- **Composition Notes:** MEDIUM-CLOSE — tighter than the wides (this is what separates it). Wind-borne golden dust and metal particles are the HERO element, streaming around his glowing upper body. Intimate, off-center. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S30 output
 
 **Text Prompt:**
-> Medium shot, a chrome android (android_damaged.png) standing in a workshop (ep09_ref_workshop.png), patchwork body with mismatched scrap metal panels welded with gold in every seam, translucent digital skin revealing bioluminescent core, cracks filled with glowing gold light, calm steady blue eyes, self-luminous, wind beginning to stir fine dust and metal particles through gaps in the closed shutter behind, the gold-cracked chrome surface radiating warmth into the dark workshop air, warm internal radiance as sole light source, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-close shot, a chrome android (android_kintsugi.png) framed from the waist up at a slight angle in a workshop (ep09_ref_workshop.png), fine streams of golden dust and metal particles caught on the wind swirling through the air around his glowing body, drifting in from the gaps in the closed shutter behind, his warm gold radiance lighting the particles, the bench and dark wall soft and out of focus behind him, intimate and close, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -631,13 +631,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 5:18–5:31
 - **Dramaturgy Reference:** The lamp is off — he IS the light source. Tools, bench, tea glass lit by his core-glow. Wind stirring dust. "But it holds me."
 - **Characters Present:** Robotiko (Phase 3)
-- **Image Reference Path:** `_assets/cast/android_damaged.png`
+- **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** Medium-wide. The android's glow lights everything around him — bench, tools, tea glass, walls. The workshop objects become secondary subjects. Wind-stirred particles.
-- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S31 output
+- **Composition Notes:** SLIGHTLY HIGH angle looking down across the workbench (a fresh angle vs. the wides) — the bench objects (tea glass, tools, vise) in the foreground catch his glow and become secondary subjects. Robotiko off-center to one side. Wind-stirred particles. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S31 output
 
 **Text Prompt:**
-> Medium-wide shot, a chrome android (android_damaged.png) in a workshop (ep09_ref_workshop.png), patchwork body with gold-filled cracks, self-luminous, calm steady blue eyes, the work lamp completely OFF - the android is the only light source, his warm gold core-glow illuminating the tools on the bench, the Turkish tea glass, the hanging tools on the walls, wind stirring dust and metal shavings into the air around him, everything in the workshop lit by the radiance from within his body, gentle warm shadows cast by his glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Slightly high angle looking down across the workbench in a workshop (ep09_ref_workshop.png), a chrome android (android_kintsugi.png) at the bench off-center to one side, the work lamp completely OFF - his warm gold glow the only light, spilling across the bench and catching the Turkish tea glass, the hand tools, the steel vise and the scattered scrap, wind stirring fine dust and metal shavings into the air around him, the bench objects becoming secondary subjects in his radiance, gentle warm shadows cast by his glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -645,13 +645,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 5:32–5:45
 - **Dramaturgy Reference:** Close-up face. Calm steady blue eyes. Gold-cracked chrome radiating warmth. "And in that holding... I—" The sentence does not finish. Leave him becoming.
 - **Characters Present:** Robotiko (Phase 3, face close-up — incomplete, becoming)
-- **Image Reference Path:** `_assets/cast/android_damaged.png`
+- **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A). Static or near-static. MS 1–2.
-- **Composition Notes:** Tight close-up. Face fills the frame. Both eyes visible — calm steady blue. Gold cracks visible across chrome. Breathing room above — the sentence is unfinished, the frame has space for what cannot be said. DO NOT show a completed or perfect Robotiko.
-- **Upload:** char: `android_damaged.png` · chain: S32 output
+- **Composition Notes:** Tight close-up portrait, head and upper chest. Both eyes visible — calm steady blue. Deep cosmic nebula background (as realized in the shipped frame) — a deliberate break from the workshop shots for the transcendence beat. Breathing room above. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Upload:** char: `android_kintsugi.png` · chain: S32 output
 
 **Text Prompt:**
-> Close-up of a chrome android's face (android_damaged.png), patchwork chrome surface with gold light filling cracks across the face and head, translucent patches revealing warm bioluminescent glow beneath, calm steady blue eyes - both visible and centered, self-luminous warm radiance from within, the gold is present across the surface but still spreading - not complete, not finished, the face of someone becoming rather than having arrived, breathing space above the head, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Tight close-up portrait of a chrome android (android_kintsugi.png), head and upper chest, calm steady blue eyes both visible, lit by his own warm gold inner radiance glowing through the kintsugi cracks, set against a deep cosmic nebula background of soft stars and drifting dust, the quiet face of someone still becoming rather than arrived, breathing space above the head, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -663,13 +663,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 5:46–6:00
 - **Dramaturgy Reference:** The widest pull of the series begins. Robotiko at bench, luminous. The bench comes into view — tea glass, tools, scraps, all lit by core-glow.
 - **Characters Present:** Robotiko (Phase 3, luminous)
-- **Image Reference Path:** `_assets/cast/android_damaged.png`
+- **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** Close-medium widening to include the bench. Tea glass prominent. Tools and scraps. The composition begins to pull back.
-- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S33 output
+- **Composition Notes:** THREE-QUARTER angle from the front-left corner — match `ep09_ref_workshop.png`'s geometry: the bench recedes DIAGONALLY from the lower-left foreground toward the closed roll-up shutter at the back-right. Robotiko OFF-CENTER in the right third, body turned three-quarter toward his work — NOT facing the camera, NOT centered, NOT symmetrical. Foreground bench objects (tea glass, tools, vise) catch his glow. Eye-level, slightly low. Body detail (patchwork, gold seams, core glow, blue eyes) comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S33 output (only if S33 already uses the kintsugi ref)
 
 **Text Prompt:**
-> Close-medium shot, a chrome android (android_damaged.png) at a workbench, patchwork body with mismatched scrap metal panels welded with gold in every seam, self-luminous bioluminescent core glowing warm, calm steady blue eyes, the bench surface visible with the Turkish tea glass left behind, tools, scrap metal pieces, all lit by the android's warm gold core-glow, the workbench surface reflecting the gold light, warm workshop (ep09_ref_workshop.png) interior, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Three-quarter view from the front-left corner of a workshop (ep09_ref_workshop.png), the heavy wooden workbench receding diagonally from the lower-left foreground toward a closed roll-up metal shutter at the back-right, a chrome android (android_kintsugi.png) seated behind the bench in the right third of the frame, his body angled three-quarter toward his work rather than facing the camera, lit only by his own warm gold glow spilling across the bench, a Turkish tea glass, scattered hand tools and a steel vise on the bench surface catching the gold light in the foreground, the work lamp dark, cold dim depth receding toward the closed shutter behind him, ample empty space toward the back-right and above the figure, eye-level slightly low angle, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -677,13 +677,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 6:01–6:20
 - **Dramaturgy Reference:** Wide: full workshop visible. Robotiko luminous at center. Gold light leaking from the building's own seams — walls, floor, shutter edges. The gold is not just in him.
 - **Characters Present:** Robotiko (Phase 3, distant luminous figure)
-- **Image Reference Path:** `_assets/cast/android_damaged.png`
+- **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A). Multi-clip: 19s duration.
-- **Composition Notes:** Wide. Robotiko luminous at center. The workshop walls, floor joints, and shutter edges glowing with gold — the gold has seeped from him into the world's cracks.
-- **Upload:** char: `android_damaged.png` · env: `ep09_ref_workshop.png` · chain: S34 output
+- **Composition Notes:** Wide establishing — here the WORLD is the subject, not the android (this separates it from S30's android-focused wide). Match `ep09_ref_workshop.png` geometry. Android a small/distant luminous figure near center; gold glows from the BUILDING's own seams — wall cracks, floor joints, shutter edges. The gold-in-the-building is the new element to describe; body detail comes from `android_kintsugi.png`.
+- **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S34 output
 
 **Text Prompt:**
-> Wide shot of the full workshop (ep09_ref_workshop.png) interior, a chrome android (android_damaged.png) a luminous figure at center, patchwork gold-seamed body glowing from within, oil-dark walls visible around him, hanging tools, the roll-up shutter still closed behind, workbench with tea glass in the mid-ground, gold light leaking from the workshop's OWN seams - the cracks in the walls, the floor joints, the shutter edges all glowing with warm gold as if the building itself has been filled with gold from within, the gold is not just in the android - it is in the world's cracks too, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide establishing view of the full workshop (ep09_ref_workshop.png), a chrome android (android_kintsugi.png) a small distant luminous figure standing near the center of the room, and warm gold light now leaking from the workshop's OWN seams - the cracks in the concrete walls, the floor joints, the edges of the closed roll-up shutter all glowing with gold as if the building itself has been filled with light from within, the gold no longer only in the android but in the world's cracks too, oil-dark surfaces, hanging tools, the tea glass on the bench, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

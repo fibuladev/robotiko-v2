@@ -19,9 +19,9 @@
         "description": "Phase 2 — battle-scarred, missing right ear, torso dent, shoulder scratches"
       },
       "kintsugi": {
-        "path": null,
+        "path": "_assets/cast/android_kintsugi.png",
         "alt_angles": [],
-        "description": "Phase 3 — patchwork with gold-filled cracks. No dedicated ref file yet; use damaged as base + text prompt + chain refs from first gold scene"
+        "description": "Phase 3 — patchwork body with gold-filled cracks, translucent skin, bioluminescent core. Dedicated ref file added 2026-06-28. Use for the full-kintsugi scenes (EP09 S29 onward, and EP10); for the S27-S28 transition the body is still mostly damaged with emerging gold, so use android_damaged.png as the base and describe the new gold in text (the damaged ref stays allowed for kintsugi episodes)."
       }
     },
     "phase_reference_map": {

@@ -138,3 +138,8 @@ robotiko-v2-base files/
 # PRIVATE PLAYBOOKS (never ship in the public repo)
 # -----------------------------------------------------------------------------
 _private/
+
+# -----------------------------------------------------------------------------
+# LAUNCH STRATEGY (local-only go-to-market research — never ship)
+# -----------------------------------------------------------------------------
+_launch/

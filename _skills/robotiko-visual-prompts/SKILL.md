@@ -55,13 +55,16 @@ Before writing any scene prompts, identify and prepare reference images:
 - Scan the dramaturgy for episode-specific character groups (e.g., sol-liberal travelers, wedding guests, nightclub touts).
 - For each group, write a standalone prompt that clearly shows the group in a neutral composition — this becomes the character reference image.
 - The human generates this image first, then uploads it alongside every scene prompt where that group appears.
-- Robotiko has multiple reference images keyed to his phase — look up `reference_images` and `phase_reference_map` in `character_profiles.json` to determine which file to use. Phase 1 (EP01-03): `ref_robotiko_master.png`. Phase 2 (EP04-07, EP08 body): `android_damaged.png` (+ alt angles `_2`, `_3`). Phase 3 (EP09 S27+, EP10): no dedicated ref yet — use `android_damaged.png` as base + chain refs. Check `episode_overrides` for EP08 (body stays damaged) and EP09 (intra-episode transition at S27). Mentor: `ref_mentor_master.png` (EP01-07 only). Episode-specific groups do NOT have master refs — they need per-episode reference images.
+- Robotiko has multiple reference images keyed to his phase — look up `reference_images` and `phase_reference_map` in `character_profiles.json` to determine which file to use. Phase 1 (EP01-03): `ref_robotiko_master.png`. Phase 2 (EP04-07, EP08 body): `android_damaged.png` (+ alt angles `_2`, `_3`). Phase 3: `android_kintsugi.png` (the full patchwork/gold-cracked body — added 2026-06-28). For EP09 the body is still @Damaged through the S27 transition keyframes (first gold on a damaged body, use `android_damaged.png`), then switches to `android_kintsugi.png` from S28 onward. Check `episode_overrides` for EP08 (body stays damaged all episode) and EP09 (intra-episode transition at S27). Mentor: `ref_mentor_master.png` (EP01-07 only). Episode-specific groups do NOT have master refs — they need per-episode reference images.
 
 **Environment References:**
 - Scan the dramaturgy for locations that appear in 3+ scenes (e.g., an industrial estate, a nightclub interior, a metro/BRT line).
-- For each recurring location, write a standalone environment prompt — wide establishing shot, no characters, full spatial detail.
+- For each recurring location, write a standalone environment prompt — wide establishing shot, no characters, full spatial detail. **Make the prompt geometry-explicit:** decide and state the canonical camera position, the perspective direction, and where the key landmarks sit (e.g., "three-quarter interior, the workbench receding diagonally from front-left toward the back-right shutter, tool pegboard on the left wall, metal shelving on the right"). The geometry is a DECISION made here — not something to discover from the output later.
+- **Write an `Environment Geometry` note** beside each env-ref prompt: one short block capturing that canonical camera position, perspective direction, and landmark layout. This is the contract every scene in that location frames against. It is plain text, available at authoring time — so scenes can be framed BEFORE the env-ref image exists. This is what dissolves the "frame to an image that doesn't exist yet" ordering problem.
 - The human generates this image first, then uploads it alongside every scene prompt set in that location.
 - This ensures visual continuity: same workshop walls, same lighting fixtures, same floor texture across all scenes.
+
+**Framing Pass (after the env-ref images are generated):** open each generated environment reference, confirm it matches its `Environment Geometry` note (update the note if the real image diverged), and adjust any scene whose framing the actual image contradicts. This is the moment a scene is framed to the real pixels — a verification / refinement step, never a blocker for first-draft authoring. (When an env ref already exists up front — reused, a photo, or human-provided — you are effectively in the Framing Pass from the start: frame straight to the image.)
 
 **Why this matters:** Without reference images, Nano Banana generates different-looking characters and environments in every scene. Reference images anchor visual identity across the episode.
 
@@ -143,6 +146,7 @@ Image generators spawn duplicate characters. Every single-character scene needs 
 - **Nano Banana / Gemini:** End the prompt (before the style suffix) with: `single figure composition, no additional characters`
 - **Motion prompts (Kling / Veo / Seedance):** Use the motion-specific guard from the motion script skill: `Do not add extra characters. Keep everything as pictured.`
 - Do NOT write "only ONE android" or "no second robot" — these literal number/negation phrases backfire in Nano Banana, causing the tool to latch onto the concept of a second robot and generate one.
+- **OMIT the guard entirely when the uploaded character reference + scene context already establish a single figure** (a solo portrait reference in a clearly solo scene — e.g. EP09's kintsugi workshop shots). The phrase is then redundant noise that adds nothing; see the golden EXAMPLE below ("the reference plus 'alone' already establish a single figure"). Add the guard only when duplication is a real risk: no strong solo reference, or a scene/composition the tool tends to populate.
 - **Exception:** Intentional multi-figure scenes (ghost-self, dream copies) skip the guard and instead specify the exact count and each instance's distinct treatment — see the INTENTIONAL MULTI-FIGURE rule in `_memory/lessons.md`.
 
 ### Rule 4: Environmental Specificity
@@ -150,6 +154,18 @@ Image generators spawn duplicate characters. Every single-character scene needs 
 - Always describe specific textures, materials, depth layers, and light sources.
 - Ground the scene in the 70s Prog Rock aesthetic: analog, industrial, painterly.
 - Include foreground/midground/background layering when the dramaturgy calls for depth.
+
+### Rule 4b: Frame to the Environment Reference
+Frame every scene's **angle and composition to the geometry of its environment**, so the shot sits inside a coherent, consistent space instead of defaulting to a flat frontal portrait. Two modes, depending on whether the env-ref image exists yet:
+
+- **Image exists** (reused from a prior episode, a real photo, a human-provided ref, or already generated in the Framing Pass): **open it and read its geometry** — camera position, perspective lines, where the depth goes — and write the angle to match.
+- **Image not generated yet** (you are authoring this pass, before Step 0 images are made): frame to the location's **`Environment Geometry` note** (Step 0) — the canonical camera/landmark layout decided when the env-ref prompt was written. The geometry is text you already hold; you do not need the pixels to be spatially coherent. Verify against the real image later in the Framing Pass.
+
+- **Why it matters:** a character reference is usually a frontal portrait. If you don't name the angle, the generator turns the character to face the camera and centres them — flat, symmetrical, identical every time. Naming the angle that matches the environment breaks that default and gives the scene depth. (EP09 S34 kept coming out dead-centre and frontal until rewritten as "three-quarter view from the front-left corner, the bench receding diagonally toward the shutter" — matching `ref_workshop.png` — and it locked on the first try.)
+- **Vary within the space:** scenes in the same location must NOT clone the env-ref's exact angle. Choose deliberate, *spatially coherent* viewpoints inside the established geometry (a reverse angle, a low angle across the bench, a corner three-quarter), honouring the episode's Camera Diversity rule. The env ref establishes the room; each scene picks a considered viewpoint within it.
+- **Specify** the camera **angle** and the subject's **placement / orientation**: three-quarter vs. profile vs. frontal, off-centre (rule of thirds), eye-level / low / high, and the leading lines from the environment (e.g. "the bench recedes diagonally toward the closed shutter at the back-right").
+- **Do NOT specify camera MOVEMENT** (pan, zoom, tilt, pull-back, dolly) — that is a still image; movement belongs to the Motion Script (see DON'T list). Leave breathing room for the move instead of naming it (Rule 7).
+- **Upload the matching environment reference** so it reinforces the angle instead of fighting it — the env ref's own perspective is the strongest signal the generator has.
 
 ### Rule 5: Lighting as Storytelling
 - Lighting direction and quality must be specified in every prompt.
@@ -301,15 +317,16 @@ Self-validation checklist at the bottom of the document.
 
 Before delivering the visual prompts to the human, verify:
 
-- [ ] Character and environment reference prompts are included at the top of the document (Step 0)
+- [ ] Character and environment reference prompts are included at the top of the document (Step 0), and each recurring location has an `Environment Geometry` note (canonical camera angle + landmark layout)
 - [ ] Every single prompt ends with the mandatory style suffix (check every one — no exceptions)
 - [ ] Short character identifiers used — reference images carry visual details (not full descriptions)
 - [ ] Every uploaded reference is bound INLINE in the prompt — `element (filename.png)` — matching that scene's `Upload` field (Rule 2b); no restated detail the reference already shows
 - [ ] Every Robotiko scene references the phase-correct ref from `phase_reference_map` (NOT always `ref_robotiko_master.png` — that is Phase 1 only)
 - [ ] Character visual state matches the episode's phase (no pristine Robotiko in Phase 2/3)
-- [ ] Anti-spawn guard uses tool-appropriate phrasing (`single figure composition, no additional characters` for Nano Banana — NOT "only ONE android")
+- [ ] Anti-spawn guard uses tool-appropriate phrasing (`single figure composition, no additional characters` for Nano Banana — NOT "only ONE android"), and is OMITTED when a solo character ref + a solo scene already establish a single figure (Rule 3b)
 - [ ] No forbidden aesthetics appear in any prompt (clean, sterile, neon cyberpunk, Pixar, smooth plastic)
 - [ ] All prompts have composition space (headroom + breathing space) for future camera movement
+- [ ] Each scene's angle is framed to its environment geometry (the env-ref image if it exists, else the `Environment Geometry` note) — no default dead-centre frontal; angles vary within the established space; angle/composition only, NO camera movement (Rule 4b)
 - [ ] Total prompt count matches the approved dramaturgy scene count
 - [ ] Start/End keyframe scenes have two prompts (S{XX}a and S{XX}b)
 - [ ] Environmental prompts have specific textures and materials, not vague descriptions

@@ -155,6 +155,18 @@ The workshop seen from OUTSIDE — a small metal-and-concrete repair unit on the
 
 ---
 
+### REF 5: The Curious Onlookers (Small group — S02-S04 "Failed Messiah")
+
+**Design Brief:**
+The small group of ordinary small-town people who gather when the strange android arrives. NOT a crowd, NOT a concert audience, NOT thousands — a handful of **10-15 mixed locals**, some older, in plain everyday clothes (worn jackets, a few headscarves, caps, simple coats), a couple holding up phones. Grounded, mundane, real — ordinary people projecting meaning onto the arrival. Upload alongside S02, S03, S04 so the same faces/clothes/tone recur.
+
+**Reference Image Path:** `episode-09/04_visuals/ep09_ref_onlookers.png`
+
+**Text Prompt:**
+> Group portrait of about a dozen ordinary small-town Anatolian people standing loosely together, no main character - mixed men and women of various ages, some older with weathered faces, in plain everyday modern clothes (worn jackets, a few headscarves, caps, simple coats), two or three of them holding up phones, neutral curious expressions, standing on a grey industrial lot, flat grey overcast daylight, plain and unremarkable working people, not a crowd and not stylish, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+
+---
+
 ## GENERATED PROMPTS
 
 ---
@@ -187,7 +199,7 @@ The workshop seen from OUTSIDE — a small metal-and-concrete repair unit on the
 - **Upload:** char: `android_damaged.png` · chain: S01 output
 
 **Text Prompt:**
-> Medium-wide shot, the chrome android (android_damaged.png) walking along a grey ordinary path, calm steady blue eyes, flat grey daylight with no halo, overcast sky, blurred indistinct figures visible in the distance below, grey barren landscape, cold flat light, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot, the chrome android (android_damaged.png) walking along a grey ordinary path toward a grey industrial edge, calm steady blue eyes, flat grey daylight with no halo, overcast sky, a small loose cluster of about a dozen ordinary people gathered in the distance ahead, grey barren landscape, cold flat light, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -201,21 +213,21 @@ The workshop seen from OUTSIDE — a small metal-and-concrete repair unit on the
 - **Upload:** char: `android_damaged.png` · chain: S02 output
 
 **Text Prompt:**
-> Close-up of the chrome android's face (android_damaged.png), calm steady blue eyes, mouth mechanism slightly open, blurred indistinct faces visible in the background around him - featureless shapes of mixed men and women, cold grey overcast light, no warmth, expression blank and emptied, headroom above, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Close-up of the chrome android's face (android_damaged.png), calm steady blue eyes, mouth mechanism slightly open as if to speak but nothing comes, behind and around him a small curious group of about a dozen ordinary small-town people - mixed men and women in plain clothes, softly out of focus, watching, cold grey overcast light, no warmth, expression blank and emptied, headroom above, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
 #### Scene S04 — The Myth-Engine
 - **Timestamp:** 0:40–0:49
 - **Dramaturgy Reference:** Robotiko's POV. Raised phones, demanding faces. One face turns away into rapture — mythologizing the silence. The crowd shiny, sealed, armored.
-- **Characters Present:** Crowd (no Robotiko visible — this is his POV)
+- **Characters Present:** A small curious group (~10-15 ordinary small-town people) — no Robotiko visible (his POV)
 - **Image Reference Path:** N/A
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** POV shot. Faces fill the frame. The one rapturous face at the right edge provides the composition anchor. Mixed gender crowd.
-- **Upload:** chain: S03 output
+- **Composition Notes:** POV of a SMALL grounded group — about a dozen ordinary small-town people loosely gathered at the workshop's industrial edge. NOT a stadium, NOT a concert, NOT thousands. A couple hold up phones; most just watch. The one rapturous face provides the anchor. Mundane, real, a handful of locals.
+- **Upload:** char: `ep09_ref_onlookers.png` · chain: S03 output
 
 **Text Prompt:**
-> POV shot looking into a crowd of mixed men and women in modern clothing, raised smartphones with glowing screens held toward the camera, bright sealed hopeful faces in the front row with demanding expressions, at the right edge one face turned away looking upward in rapture - mythologizing, the crowd appears shiny and intact and armored in certainty, cold grey overcast light with phone-screen glow illuminating faces from below, shallow depth of field with front faces sharp and rear blurred, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> POV shot looking at a small curious group of about a dozen ordinary small-town Anatolian people - mixed men and women, some older, in plain everyday clothes - gathered loosely at the edge of a grey industrial lot near a workshop, two or three of them holding up phones to film, most just watching with curious and skeptical expressions, one face at the right edge turned upward in quiet rapture - projecting meaning onto the strange arrival, grey overcast daylight, just a handful of locals and not a crowd, shallow depth of field with the nearest faces sharp and the rest soft, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -601,11 +613,11 @@ The workshop seen from OUTSIDE — a small metal-and-concrete repair unit on the
 - **Characters Present:** Robotiko (Phase 3, self-luminous) + shadow (soft contrast)
 - **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A). The lighting change is progressive and atmospheric.
-- **Composition Notes:** MEDIUM — not a full-body wide (this is what separates it from S30/S31). The dying work lamp is a foreground co-subject; the android framed from roughly the waist up beside it, his inner glow rising to take over; softened warm shadow on the wall. The flip = external light dying, internal light winning. Off-center. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Composition Notes:** MEDIUM, anchored to `ep09_ref_workshop.png`'s three-quarter geometry: bench + its clamped work lamp on the LEFT, shelving on the right, shutter behind. Lamp DIMMING; the android stands in the open floor beside the bench (where the ref has clear floor), framed waist-up, becoming the light source; soft warm shadow on the concrete BACK wall. CALM STEADY BLUE EYES — the gold glow must NOT bleed into the eyes. Off-center. Body detail from `android_kintsugi.png` — do NOT re-describe it.
 - **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S28 output
 
 **Text Prompt:**
-> Medium shot in a workshop (ep09_ref_workshop.png), the white articulated work lamp prominent in the foreground arcing over the bench, its hard white light visibly DIMMING and fading out, beside it a chrome android (android_kintsugi.png) framed from the waist up, his own warm gold inner glow rising to become the only light source, a soft warm shadow cast on the concrete wall behind him, the moment the external light dies and the light from within takes over, off-center eye-level framing, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium shot inside the workshop seen from its three-quarter angle (ep09_ref_workshop.png) - the heavy bench and its clamped white work lamp on the LEFT of frame, the lamp's hard white light visibly DIMMING and fading out, and in the open floor beside the bench the chrome android (android_kintsugi.png) framed from the waist up, calm steady blue eyes, his kintsugi body glowing warm gold from within - rising to become the only light source as the lamp dies, his soft warm shadow cast on the concrete back wall, off-center, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -745,7 +757,7 @@ The workshop seen from OUTSIDE — a small metal-and-concrete repair unit on the
 
 ## QUALITY CHECKLIST
 
-- [x] Character and environment reference prompts included (Step 0) — 4 refs: Mechanic, Workshop, Command Bridge, Exterior (S36–S38 dawn pull)
+- [x] Character and environment reference prompts included (Step 0) — 5 refs: Mechanic, Workshop, Command Bridge, Exterior (S36–S38 dawn pull), Onlookers (S02–S04 small group)
 - [x] Every single prompt ends with the mandatory style suffix (43/43 verified)
 - [x] Short character identifiers used — "the chrome android" when ref image uploaded
 - [x] Every character scene references `android_damaged.png` or `ep09_ref_mechanic.png`

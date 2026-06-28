@@ -443,6 +443,57 @@ def check_character_phase(scenes: list[dict], episode_number: int, whitelist: li
     return errors
 
 
+def check_reference_first(scenes: list[dict], episode_number: int, profiles: dict = None) -> list[str]:
+    """
+    Reference-first guard — the EP09 root-cause class.
+
+    If the episode has Robotiko scenes in a phase whose DEDICATED reference image
+    is missing (path is null, or the file is not on disk), flag it. Authoring or
+    generating scenes for a body state that has no reference forces the generator
+    to conjure that state from text on the wrong base image — the 8-10x reshoot
+    tax EP09 paid for the kintsugi body before `android_kintsugi.png` existed.
+    The rule: generate the reference FIRST, then frame scenes to it.
+    """
+    if profiles is None:
+        try:
+            profiles = load_profiles()
+        except (FileNotFoundError, json.JSONDecodeError, KeyError):
+            return ["  WARN [Reference-First] Could not load character_profiles.json."]
+
+    robotiko = profiles.get("robotiko", {})
+    ref_images = robotiko.get("reference_images", {})
+    if not ref_images or "phase_reference_map" not in robotiko:
+        return ["  WARN [Reference-First] character_profiles.json missing reference_images / phase_reference_map."]
+
+    identifiers = ["robotiko", "chrome android"]
+    used_ref_ids = []
+    for scene in scenes:
+        haystack = f"{scene.get('characters', '')} {scene.get('text', '')}".lower()
+        if not any(i in haystack for i in identifiers):
+            continue
+        ref_id, _allowed, _forbidden = get_expected_ref(episode_number, scene["scene_number"], profiles)
+        if ref_id and ref_id not in used_ref_ids:
+            used_ref_ids.append(ref_id)
+
+    errors = []
+    for ref_id in used_ref_ids:
+        entry = ref_images.get(ref_id, {})
+        path = entry.get("path")
+        if not path:
+            errors.append(
+                f"  FAIL [Reference-First] EP{episode_number:02d} has '{ref_id}'-phase Robotiko scenes "
+                f"but reference_images['{ref_id}'].path is null — generate the dedicated reference image "
+                f"BEFORE authoring/generating these scenes. Conjuring a body state from text on the wrong "
+                f"base is the EP09 kintsugi root-cause class (heavy reshoots)."
+            )
+        elif not os.path.exists(path):
+            errors.append(
+                f"  FAIL [Reference-First] EP{episode_number:02d} '{ref_id}' reference is declared "
+                f"('{path}') but the file is missing on disk — generate it before generating these scenes."
+            )
+    return errors
+
+
 def validate_file(filepath: str) -> dict:
     """
     Run all validations on a visual prompts file.
@@ -485,6 +536,7 @@ def validate_file(filepath: str) -> dict:
         scenes = extract_scenes(content)
         results["errors"].extend(check_character_phase(scenes, episode_number))
         results["errors"].extend(check_ref_integrity(scenes, episode_number))
+        results["errors"].extend(check_reference_first(scenes, episode_number))
 
     return results
 

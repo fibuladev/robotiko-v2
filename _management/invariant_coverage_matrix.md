@@ -19,6 +19,7 @@ _Last updated: 2026-06-26 (EP09 Validation Backbone)._
 | Invariant | Coverage | Mechanism | Honest notes |
 |---|---|---|---|
 | Phase-correct **reference image** per scene | 🟢 Machine | `check_ref_integrity` + `phase_reference_map` ([ADR 0001](adr/0001-phase-reference-map-source-of-truth.md), [0002](adr/0002-ref-integrity-parses-reference-metadata.md)) | The reliable gate. Metadata-based, not prose. Only as correct as the source-of-truth map. |
+| **Reference-first** — the reference exists before its scenes | 🟢 Machine | `check_reference_first` ([ADR 0007](adr/0007-reference-first-or-pay-the-reshoot-tax.md)) | Fails when an episode has scenes in a phase whose dedicated reference is null / missing on disk. The EP09 kintsugi root-cause guard. |
 | Mandatory **visual suffix** on every prompt | 🟢 Machine | `check_suffix` | Exact-substring; robust. |
 | **Forbidden aesthetics** (Pixar, unreal engine, …) | 🟢 Machine | `check_forbidden_aesthetics` | Fixed term list; extend as new offenders appear. |
 | **File naming** convention | 🟢 Machine | `naming_check.py --full` | 85 checks. |

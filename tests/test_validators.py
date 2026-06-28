@@ -278,6 +278,45 @@ class TestWhitelistNarrowness(unittest.TestCase):
         self.assertTrue(vpv.check_character_phase([s], 6))
 
 
+class TestReferenceFirstGuard(unittest.TestCase):
+    """The EP09 root-cause guard: scenes in a phase whose dedicated reference image
+    is missing must FAIL — generate the reference first, then frame to it."""
+
+    def setUp(self):
+        self.profiles = vpv.load_profiles(REPO_ROOT)
+
+    def _kintsugi_scene(self):
+        # EP09 S30 is in the kintsugi scene-range (S27+).
+        return {"scene_number": 30, "label": "S30", "characters": "Robotiko (Phase 3)",
+                "text": "a chrome android", "ref_path": "", "upload": ""}
+
+    def test_passes_when_dedicated_ref_exists(self):
+        # Current state: android_kintsugi.png is registered and on disk.
+        self.assertEqual(vpv.check_reference_first([self._kintsugi_scene()], 9, self.profiles), [])
+
+    def test_catches_null_phase_ref(self):
+        # The exact EP09 root cause: kintsugi scenes but no kintsugi reference.
+        import copy
+        p = copy.deepcopy(self.profiles)
+        p["robotiko"]["reference_images"]["kintsugi"]["path"] = None
+        self.assertTrue(vpv.check_reference_first([self._kintsugi_scene()], 9, p))
+
+    def test_catches_declared_but_missing_file(self):
+        import copy
+        p = copy.deepcopy(self.profiles)
+        p["robotiko"]["reference_images"]["kintsugi"]["path"] = "_assets/cast/does_not_exist.png"
+        self.assertTrue(vpv.check_reference_first([self._kintsugi_scene()], 9, p))
+
+    def test_ignores_scene_without_robotiko(self):
+        # A non-Robotiko scene must not trip the guard even if a phase ref is null.
+        import copy
+        p = copy.deepcopy(self.profiles)
+        p["robotiko"]["reference_images"]["kintsugi"]["path"] = None
+        mech = {"scene_number": 6, "label": "S06", "characters": "The Mechanic",
+                "text": "an old man at a bench", "ref_path": "", "upload": ""}
+        self.assertEqual(vpv.check_reference_first([mech], 9, p), [])
+
+
 class TestParserCoverage(unittest.TestCase):
     """The false-green that started TAKE 05: a scene parser that silently matches
     zero blocks reports PASS over an unchecked file. Guard it forever."""

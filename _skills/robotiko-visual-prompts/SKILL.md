@@ -167,6 +167,13 @@ Frame every scene's **angle and composition to the geometry of its environment**
 - **Do NOT specify camera MOVEMENT** (pan, zoom, tilt, pull-back, dolly) — that is a still image; movement belongs to the Motion Script (see DON'T list). Leave breathing room for the move instead of naming it (Rule 7).
 - **Upload the matching environment reference** so it reinforces the angle instead of fighting it — the env ref's own perspective is the strongest signal the generator has.
 
+### Rule 4c: Base Image — lock a composition or chain a pull
+When an earlier generated frame already holds what a scene needs — a fixed composition (a threshold layout, a camera position) OR an established WORLD that must stay consistent as the camera moves — declare it as the **base image** ("Use 5.png as the base image") and describe ONLY what changes. The base carries the entire frame, so do NOT re-describe what it already shows. Two uses:
+
+- **Lock a static frame:** reuse a prior frame's exact composition and change only the light/state (EP09 S36: `5.png` as base locked the dawn-threshold on a one-line change; re-describing the exterior had made it drift).
+- **Chain a zoom-out / extra-wide pull:** use the PREVIOUS (tighter) frame as the base for the next (wider) one, then just widen the framing ("Ultra-wide shot... in the lower-centre third"). The world stays identical as the camera pulls back. EP09's dawn pull chains this way: `5.png` → S36 (base `5.png`) → S37 → S38 (base `37.png`) — a seamless consistent pull-out.
+- Stronger than an environment reference for continuity (it pins the FULL frame — camera + interior + exterior — not just the look) and keeps the prompt short. Record it in the scene's `Upload` field as `base: <frame>`.
+
 ### Rule 5: Lighting as Storytelling
 - Lighting direction and quality must be specified in every prompt.
 - Use lighting to reinforce the emotional beat:

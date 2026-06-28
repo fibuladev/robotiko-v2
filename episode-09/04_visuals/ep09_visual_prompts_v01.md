@@ -141,6 +141,20 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 
 ---
 
+### REF 4: Workshop Exterior (The Ordinary World — S36–S38 dawn pull)
+
+**Design Brief:**
+The workshop seen from OUTSIDE — a small metal-and-concrete repair unit on the edge of a grey small-town Anatolian industrial lot. This is the "ordinary world" the gold seeps into in the closing zoom-out, so it must be CONSISTENT every time. Anchor it to `5.png` (the threshold frame already shows this exterior): chain-link fence, scattered low industrial structures and a gantry in the middle distance, wet concrete apron, grey-brown scrub terrain beyond, heavy overcast sky. NOT pastoral — this is the industrial edge of a town. The overcast establishing palette warms to dawn in S37–S38.
+
+**Environment Geometry:** camera OUTSIDE at ground level (eye-level / slightly low). The unit's front wall — with its corrugated roll-up shutter — faces the camera or sits three-quarter. The industrial lot wraps around: chain-link fence and a gantry to one side, open wet concrete and grey-brown terrain beyond, a LOW horizon so the big sky fills the upper portion (room for the dawn and the zoom-out). Building sits lower-centre.
+
+**Reference Image Path:** `episode-09/04_visuals/ep09_ref_exterior.png` (generate from `5.png`'s exterior)
+
+**Text Prompt:**
+> Wide establishing exterior shot of a small metal-and-concrete repair workshop unit on the edge of a grey small-town Anatolian industrial lot, no characters. The unit's front wall faces us with a corrugated roll-up metal shutter, weathered concrete and rusted metal. Around it a chain-link fence, scattered low industrial structures and a gantry in the middle distance, a wet concrete apron, grey-brown scrub terrain beyond, a low horizon under a heavy overcast sky. Cold desaturated palette, damp and still, the ordinary industrial edge of a town, the building low-centre with big sky above, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+
+---
+
 ## GENERATED PROMPTS
 
 ---
@@ -691,13 +705,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 6:21–6:40
 - **Dramaturgy Reference:** Camera passes through or past the shutter into dawn. Workshop recedes behind. Dawn light from outside mixes with gold from within. The threshold. Wind rising.
 - **Characters Present:** None (workshop receding, dawn ahead)
-- **Image Reference Path:** N/A
+- **Image Reference Path:** base: `episode-09/04_visuals/raw/5.png` + `episode-09/04_visuals/ep09_ref_workshop.png`
 - **Video Tech Strategy:** Standard (Mode A). Multi-clip: 19s duration.
-- **Composition Notes:** Wide. Looking from inside toward the open shutter. Dawn light flooding in from outside mixing with gold light from behind. The threshold between repair and world. Wind-stirred dust.
-- **Upload:** env: `ep09_ref_workshop.png` · chain: S35 output
+- **Composition Notes:** PROVEN (36.png). `5.png` used as the BASE image — it locks the whole threshold composition (warm interior on the right, grey industrial exterior on the left). The prompt describes ONLY the change: shutter rising, dawn breaking on the industrial lot, gold spreading through the workshop's wall-seams. Do NOT re-describe the exterior — the base carries it. Body N/A (no character).
+- **Upload:** base: `5.png` (the S05 threshold frame, reused) · env: `ep09_ref_workshop.png`
 
 **Text Prompt:**
-> Wide shot looking from inside a workshop (ep09_ref_workshop.png) toward a roll-up metal shutter now partially open, warm dawn light flooding in from outside mixing with warm gold light from the workshop behind, the threshold between the dark interior and the brightening dawn, the workshop walls behind still glowing gold in their seams, the dawn sky visible ahead - soft warm first light on the horizon, wind stirring dust at the empty threshold, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Use 5.png as the base image. Wide shot, the workshop (ep09_ref_workshop.png) looking out through the corrugated roll-up shutter now rising open - catching the first warm light of dawn, warm gold light from the workshop's glowing seams behind mixing with the cool-warming dawn ahead, the threshold between the repaired interior and the ordinary world, wind stirring dust across the opening, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -705,13 +719,13 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 6:41–6:55
 - **Dramaturgy Reference:** Exterior: dawn sky. Workshop from outside — gold leaking from every seam and crack. Music dissolving into wind.
 - **Characters Present:** None (workshop exterior, dawn)
-- **Image Reference Path:** N/A
+- **Image Reference Path:** `episode-09/04_visuals/ep09_ref_exterior.png`
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** Wide exterior. Workshop in the center-lower area. Dawn sky fills the upper portion. Gold visible in the seams from outside.
-- **Upload:** chain: S36 output
+- **Composition Notes:** PROVEN (37.png). Wide exterior — the workshop unit (per `ep09_ref_exterior.png`) lower-centre, the grey industrial lot around it, dawn sky filling the upper portion. Gold visible in the unit's seams from outside. Overcast warming to first dawn light. This frame ESTABLISHES the exterior from outside; S38 then uses `37.png` as its base for the ultra-wide pull (base-image chain).
+- **Upload:** env: `ep09_ref_exterior.png` · chain: S36 output
 
 **Text Prompt:**
-> Wide exterior shot, a small metal-walled workshop building seen from outside at dawn, a roll-up shutter in the front wall, warm gold light leaking from every seam and crack in the metal walls and shutter edges - visible even from this distance, dawn sky with warm first light above and behind, grey-brown Anatolian terrain around the building, wind-stirred dust in the warm dawn air, the landscape empty and still, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide exterior shot of the small repair workshop unit (ep09_ref_exterior.png) seen from outside on the edge of the grey small-town Anatolian industrial lot at dawn, warm first light breaking over the overcast horizon and warming the cold concrete and chain-link fence, warm gold light leaking from every seam and crack in the unit's metal walls and shutter edges - visible from across the lot, the scattered industrial structures and gantry catching the dawn, wind-stirred dust in the warming air, the ordinary world beginning to glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -719,19 +733,19 @@ The Digital Solomon's sovereign command bridge — a conductor's podium over nat
 - **Timestamp:** 6:56–7:03
 - **Dramaturgy Reference:** Widest shot of the series. Workshop small in Anatolian dawn landscape. Tea glass visible through a gap. Wind. Fade to silence. LAST IMAGE = the ordinary world holding the gold, NOT his face.
 - **Characters Present:** None (landscape, workshop distant, tea glass)
-- **Image Reference Path:** N/A
+- **Image Reference Path:** base: `episode-09/04_visuals/raw/37.png` + `episode-09/04_visuals/ep09_ref_exterior.png`
 - **Video Tech Strategy:** Standard (Mode A). Very slow Zoom Out or Static. MS 1–2.
-- **Composition Notes:** Ultra-wide. Workshop lower-center third. Dawn sky fills upper two-thirds. Tea glass — a tiny but identifiable detail through a window or gap. Gold glow from the workshop seams. The gold in the building = the gold in Robotiko's cracks — transformation has seeped into the world.
-- **Upload:** chain: S37 output
+- **Composition Notes:** PROVEN (38.png). The series' widest. CHAINED PULL — `37.png` (the S37 exterior frame) used as the BASE, then widened to ultra-wide so the whole industrial lot is revealed while the unit itself stays identical. Workshop unit lower-centre third; dawn sky fills upper two-thirds; tea glass a tiny detail through the shutter gap; gold in the unit's seams. LAST IMAGE = the ordinary world holding the gold, NOT his face.
+- **Upload:** base: `37.png` (the S37 exterior frame) · env: `ep09_ref_exterior.png`
 
 **Text Prompt:**
-> Ultra-wide shot, a small metal workshop building in the lower-center third of the frame set in an Anatolian dawn landscape - grey-brown terrain, a dirt road, distant low hills, dawn sky filling the upper two-thirds with warm first light, the workshop's seams and cracks glowing with warm gold light visible even at this distance, through a small window or gap in the shutter a Turkish tea glass visible as a tiny identifiable detail, the last image is the ordinary world holding the gold - not a face, not a hero, just a building in a landscape with gold in its cracks and a tea glass inside, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Use 37.png as the base image. Ultra-wide shot, the small repair workshop unit (ep09_ref_exterior.png) in the lower-centre third of the frame on the edge of a grey small-town Anatolian industrial lot - chain-link fence, scattered industrial structures and a gantry, wet concrete, grey-brown scrub terrain beyond - the dawn sky filling the upper two-thirds with warm first light breaking over the cold landscape, the unit's seams and shutter edges glowing with warm gold visible even at this distance, through a gap in the shutter a Turkish tea glass glints as a tiny identifiable detail, the last image is the ordinary industrial world holding the gold - not a face, not a hero, just a working unit in a grey landscape with gold in its cracks and a tea glass inside, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
 ## QUALITY CHECKLIST
 
-- [x] Character and environment reference prompts included (Step 0) — 3 refs: Mechanic, Workshop, Command Bridge
+- [x] Character and environment reference prompts included (Step 0) — 4 refs: Mechanic, Workshop, Command Bridge, Exterior (S36–S38 dawn pull)
 - [x] Every single prompt ends with the mandatory style suffix (43/43 verified)
 - [x] Short character identifiers used — "the chrome android" when ref image uploaded
 - [x] Every character scene references `android_damaged.png` or `ep09_ref_mechanic.png`

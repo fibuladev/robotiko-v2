@@ -645,11 +645,11 @@ The small group of ordinary small-town people who gather when the strange androi
 - **Characters Present:** Robotiko (Phase 3, self-luminous)
 - **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** MEDIUM-CLOSE — tighter than the wides (this is what separates it). Wind-borne golden dust and metal particles are the HERO element, streaming around his glowing upper body. Intimate, off-center. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Composition Notes:** PROVEN (31.png). Wide three-quarter, full-body Robotiko standing right-of-center, wind-borne golden particles streaming around him. NOTE: visually close to S30/S32 **by design** — the still is a held becoming-moment; DIFFERENTIATION is deferred to the **MOTION SCRIPT** via distinct camera moves (Discovering Camera). Body/eyes from `android_kintsugi.png` — do NOT re-describe.
 - **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S30 output
 
 **Text Prompt:**
-> Medium-close shot, a chrome android (android_kintsugi.png) framed from the waist up at a slight angle in a workshop (ep09_ref_workshop.png), fine streams of golden dust and metal particles caught on the wind swirling through the air around his glowing body, drifting in from the gaps in the closed shutter behind, his warm gold radiance lighting the particles, the bench and dark wall soft and out of focus behind him, intimate and close, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide three-quarter view of the workshop (ep09_ref_workshop.png), a chrome android (android_kintsugi.png) standing full-body right of center, calm steady blue eyes, self-luminous, fine streams of golden dust and metal particles caught on the wind swirling through the air around his glowing body, the bench and work lamp on the left, shelving on the right, the closed shutter behind, his warm gold radiance lighting the room, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -659,11 +659,11 @@ The small group of ordinary small-town people who gather when the strange androi
 - **Characters Present:** Robotiko (Phase 3)
 - **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** SLIGHTLY HIGH angle looking down across the workbench (a fresh angle vs. the wides) — the bench objects (tea glass, tools, vise) in the foreground catch his glow and become secondary subjects. Robotiko off-center to one side. Wind-stirred particles. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
+- **Composition Notes:** PROVEN (32.png). Wide three-quarter, warmer grade — he IS the light source. Full-body Robotiko standing right-of-center; the bench objects (tea glass, tools) catch his glow; wind particles. NOTE: visually close to S30/S31 **by design** — DIFFERENTIATION is deferred to the **MOTION SCRIPT** camera move (Discovering Camera). Body/eyes from `android_kintsugi.png` — do NOT re-describe.
 - **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S31 output
 
 **Text Prompt:**
-> Slightly high angle looking down across the workbench in a workshop (ep09_ref_workshop.png), a chrome android (android_kintsugi.png) at the bench off-center to one side, the work lamp completely OFF - his warm gold glow the only light, spilling across the bench and catching the Turkish tea glass, the hand tools, the steel vise and the scattered scrap, wind stirring fine dust and metal shavings into the air around him, the bench objects becoming secondary subjects in his radiance, gentle warm shadows cast by his glow, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide three-quarter view of the workshop (ep09_ref_workshop.png), a chrome android (android_kintsugi.png) standing full-body right of center, calm steady blue eyes, the work lamp off so his warm gold inner glow is the only light source - spilling across the bench and catching the Turkish tea glass and the tools, fine wind-stirred golden dust in the air around him, shelving on the right, the closed shutter behind, deep warm radiance filling the room, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

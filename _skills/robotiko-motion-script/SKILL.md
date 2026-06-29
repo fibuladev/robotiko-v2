@@ -1,5 +1,5 @@
 # SKILL: robotiko-motion-script
-> **Version:** 2.0 | **Last Updated:** 2026-05-26
+> **Version:** 2.1 | **Last Updated:** 2026-06-30
 > **Trigger:** `"Generate motion script for EP{XX}"`
 > **Output:** `episode-{XX}/05_video/ep{XX}_motion_script_v{VV}.md`
 
@@ -62,7 +62,11 @@ Mark these moments with `[DISSONANCE]` tag in the Musical Moment field. Include 
 
 > **Two conditions must be met before this skill executes:**
 > 1. The dramaturgy for this episode must be **human-approved**.
-> 2. Selected images must exist in `episode-{XX}/04_visuals/selected/`.
+> 2. Generated scene images must exist — **either** the convention-named copies in
+>    `episode-{XX}/04_visuals/selected/` **or** the scene-numbered keepers in
+>    `episode-{XX}/04_visuals/raw/` (`1.png`, `2.png`, …). `selected/` is the preferred, tidy input;
+>    if it is empty, fall back to the numbered `raw/` keepers. Only STOP if **both** are empty.
+>    (EP05 and EP07 ran straight from `raw/` — running `select_images.py` first is optional, not required.)
 >
 > If either condition is not met, STOP. Inform the human.
 
@@ -76,12 +80,12 @@ Read these files in this exact order:
 |---|---|---|
 | 1 | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` | Approved scene breakdown, scene descriptions, mood/lighting, characters, music sync column |
 | 2 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Tempo (BPM), sections with timestamps, energy levels, instruments, mood per section |
-| 3 | `episode-{XX}/04_visuals/selected/` | Verify which selected images exist (file listing) |
+| 3 | `episode-{XX}/04_visuals/selected/` (preferred) **or** `04_visuals/raw/` (fallback) | Verify which **scene** images exist (file listing). Prefer `selected/`; if empty, use the scene-numbered `raw/` keepers (`1.png`, `2.png`, …). **Never treat reference images as scenes** — ignore any `ref_*.png` / `ep{XX}_ref_*.png` (e.g. `ref_workshop.png`, `ref_exterior.png`, `ref_onlookers.png`); they are generation references, not shots. |
 | 4 | `_management/master.md` | Episode tone, station, character phase, narrative arc |
 | 5 | `_templates/video_prompt_template.md` | Output structure and formatting template |
 
 **If the musical metadata JSON is missing:** STOP. Beat sync is impossible without temporal data.
-**If selected images are missing:** STOP. The motion script references specific image files as input assets.
+**If neither `selected/` nor the numbered `raw/` keepers exist:** STOP. The motion script references specific image files as input assets. (Reference images — `ref_*.png` — do not count; they are not scenes.)
 
 ---
 
@@ -112,11 +116,20 @@ Read these files in this exact order:
   - Energy transitions (ramp up/down in motion strength)
 - These become entries in the Beat Sync Notes table.
 
-### Step 4: Match Selected Images to Scenes
-- List all files in `04_visuals/selected/`.
-- Map each `ep{XX}_s{XX}_selected.png` to its corresponding scene in the dramaturgy.
-- If a scene has no selected image, flag it — the shot cannot be generated without an asset.
-- If a scene was flagged for Start/End keyframes in the dramaturgy, confirm that both `s{XX}a` and `s{XX}b` selected images exist (or that two separate scene images are available for the transformation).
+### Step 4: Match Scene Images to Scenes
+- List all files in `04_visuals/selected/`. **If `selected/` is empty, list `04_visuals/raw/` instead** and
+  use the scene-numbered keepers (`1.png`, `2.png`, …).
+- **Exclude reference images.** Only files whose name is a scene number (`{XX}.png`, optionally with an
+  `a`–`d` sub-clip letter like `11b.png`) are shots. Skip anything else — especially `ref_*.png` /
+  `ep{XX}_ref_*.png` (`ref_workshop.png`, `ref_exterior.png`, `ref_onlookers.png`, etc.). Reference images
+  describe the character/environment for the generator; they are **never** a scene and must not get a shot block.
+- Map each scene image to its corresponding scene in the dramaturgy (`ep{XX}_s{XX}_selected.png` → scene XX,
+  or `{XX}.png` → scene XX).
+- If a scene has no image in either folder, flag it — the shot cannot be generated without an asset.
+- If a scene was flagged for Start/End keyframes in the dramaturgy, confirm that both `s{XX}a`/`s{XX}b`
+  (or `{XX}a.png`/`{XX}b.png`) images exist (or that two separate scene images are available for the transformation).
+- In each shot's **Assets Required** field, write the path of whichever folder you actually used
+  (`selected/…` or `raw/…`) so the human knows exactly which file feeds the clip.
 
 ### Step 5: Determine Tech Strategy Per Shot
 Assign one of two video generation modes to each shot:
@@ -782,7 +795,7 @@ After human approves the motion script:
 | Situation | Action |
 |---|---|
 | Dramaturgy not approved | STOP. Cannot generate motion script without approved scene breakdown. |
-| Selected images missing | STOP. List which scenes lack selected images. Inform human. |
+| Scene images missing (both `selected/` and numbered `raw/` empty) | STOP. List which scenes lack an image in either folder. Reference images (`ref_*.png`) do not count. Inform human. |
 | Musical metadata missing | STOP. Beat sync is impossible without temporal data. |
 | Scene has no clear motion intent | Default to Mode A, Static, Motion Strength 3. Flag for human review. |
 | BPM changes mid-song | Note the tempo change in the Beat Sync Notes and adjust motion strength at the transition point. |

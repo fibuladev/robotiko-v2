@@ -628,10 +628,10 @@ The small group of ordinary small-town people who gather when the strange androi
 - **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Standard (Mode A)
 - **Composition Notes:** Widest interior, THREE-QUARTER from the front-left corner — match `ep09_ref_workshop.png`: room receding diagonally toward the back-right shutter, pegboard left, shelving right. Robotiko full-body standing in the RIGHT THIRD (off-center), not dead-center. Soft warm shadow on the wall behind. Body detail comes from `android_kintsugi.png` — do NOT re-describe it.
-- **Upload:** char: `android_kintsugi.png` · env: `ep09_ref_workshop.png` · chain: S29 output
+- **Upload:** char: `android_kintsugi.png` · env: `ref_workshop.png` · base image: `29.png` (S29 output)
 
 **Text Prompt:**
-> Widest three-quarter interior view of the workshop (ep09_ref_workshop.png) from the front-left corner, the room receding diagonally toward the closed roll-up shutter at the back-right, a chrome android (android_kintsugi.png) standing full-body in the right third of the frame, self-luminous - lighting the entire workshop from within, a soft warm shadow on the wall behind him, the workbench with a Turkish tea glass and tools and the wall pegboard all catching his warm gold radiance, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Use 29.png as the base image. Widest three-quarter interior view of the workshop (ref_workshop.png) from the front-left corner, the room receding diagonally toward the closed roll-up shutter at the back-right, a chrome android (android_kintsugi.png) standing full-body in the right third of the frame, self-luminous - lighting the entire workshop from within, a soft warm shadow on the wall behind him, the workbench with a Turkish tea glass and tools and the wall pegboard all catching his warm gold radiance, eye-level, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

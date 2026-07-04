@@ -88,7 +88,7 @@ Structural tools that connect the Turkish wisdom tradition to a global audience:
 
 The genre label "CyberAnatolian" names the civilizational basin — the ancient crossroads where dozens of cultures, languages, and traditions have layered upon one another for millennia. Anatolia belongs to all who shaped it.
 
-The cultural and philosophical source of this project, however, is specifically Turkish. The thinkers who anchor this story — Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, Mevlana — wrote in Turkish, taught in Turkish, and shaped what we now call the Turkish wisdom tradition. Their poetry and philosophy emerged from a civilization that has carried this geography for a thousand years, inheriting and transforming everything it found.
+The cultural and philosophical source of this project, however, is specifically Turkish. The thinkers who anchor this story — Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, Mevlana — lived and taught in Anatolia, and shaped what we now call the Turkish wisdom tradition. Their poetry and philosophy emerged from a civilization that has carried this geography for a thousand years, inheriting and transforming everything it found.
 
 This project does not draw ethnic or sectarian lines. It does not distinguish Sunni from Alevi, Muslim from non-believer, Turk from Kurd, Arab from Greek, Armenian from Persian. These are divisions that the sages themselves would have rejected — and that the people of these lands, who have lived together for centuries, largely reject in practice every day. Winds of division are blown from time to time, and some dream of turning those winds into storms. But there is a Turkish proverb that answers them quietly: "Yel kayadan ancak toz alır" — the wind can only take dust from the rock.
 
@@ -210,7 +210,9 @@ The Mentor speaks neither dialect. He speaks the third tongue — the language o
 
 **Episodes:** EP05-06 primarily
 **Role:** Robotiko's encounter with love. Triggers emotional overclocking.
-**Visual:** Female android, similar chrome aesthetic to Robotiko. To be developed.
+**Visual:** Female android — warm gold/copper wire aesthetic, fractal shoulder pattern, dark amber glass lens eyes set into chrome sockets. Chrome body similar to Robotiko but warmer tones.
+**Master Reference:** `_assets/cast/ref_robochica_master.png`
+**Status:** Visual design complete.
 
 ---
 

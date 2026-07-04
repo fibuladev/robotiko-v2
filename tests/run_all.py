@@ -14,6 +14,7 @@ Check groups:
   6. Motion script          — video suffix · anti-spawn guard · camera diversity quotas
   7. Character profiles     — structural validation against schema.json
   8. Validator meta-tests   — grade the graders (fixtures + both-directions proofs)
+  9. Doc reference integrity — curated docs' backtick paths exist · no hook-rot · matrix sync
 
 Dependencies: standard library only. No `pip install`, nothing to pin at the
 package level — the strongest form of dependency hygiene. The toolchain (Python
@@ -35,6 +36,7 @@ CHECK_GROUPS = [
     ("Motion script",        [sys.executable, "tests/motion_script_validator.py", "--full"]),
     ("Character profiles",   [sys.executable, "tests/character_profiles_validator.py", "--full"]),
     ("Validator meta-tests", [sys.executable, "-m", "unittest", "tests.test_validators"]),
+    ("Doc reference integrity", [sys.executable, "tests/doc_reference_check.py"]),
 ]
 
 

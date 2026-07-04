@@ -15,7 +15,7 @@ production crew and the human retaining two irreplaceable roles: creative vision
 taste (the two approval checkpoints).
 
 ### Ships in 1.0.0
-- **The full method, reproducible from the repo alone:**
+- **The method is reproducible from the repo; the films are not — renders live outside the tree:**
   - `master.md` — Universe Canon (constitution / policy-as-code: golden rules, mandatory suffixes).
   - 10 production skills in `_skills/` — musical-metadata, dramaturgy, visual-prompts, motion-script,
     episode-scaffold, naming-enforcer, youtube-packager, reels-atomizer, launch-orchestrator, capcut-editor.
@@ -25,7 +25,8 @@ taste (the two approval checkpoints).
     (cumulative damage tracked and enforced across all episodes).
   - `_templates/` — dramaturgy, visual-prompt, video-prompt templates.
 - **Enforcement / CI layer:** `tests/naming_check.py`, `tests/pipeline_integrity.py`,
-  `tests/visual_prompt_validator.py`, Claude Code PostToolUse naming hook, GitHub Actions scaffold.
+  `tests/visual_prompt_validator.py`, Claude Code PostToolUse naming hook (later removed 2026-07-04),
+  GitHub Actions scaffold.
 - **Tooling:** custom-built Google Drive MCP server (`_tools/mcp-gdrive/`, no third-party packages),
   Python episode-scaffold scripts.
 - **Dual license:**

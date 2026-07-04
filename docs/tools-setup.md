@@ -43,11 +43,12 @@ project root. That file defines the director's role, the mandatory suffixes, the
 the skill trigger table, and the file-naming convention. You do not paste it in — opening the
 project is enough.
 
-### Naming-convention hook
-A hook is configured in `.claude/settings.json` as a **PostToolUse** action on the **Write**
-tool. After any file write, it validates the new file name against the project naming convention
-(`ep{XX}_..._v{VV}` form, two-digit episode/scene numbers, `v01` never `v1`). This catches a
-mis-named output the moment it is created, before it ever reaches a commit.
+### Naming-convention enforcement
+A Claude Code PostToolUse hook once auto-checked naming after every Write; it was removed
+2026-07-04 (it never reliably fired). Naming enforcement is now the CI gate: `tests/naming_check.py --full`
+validates every file name against the project naming convention (`ep{XX}_..._v{VV}` form, two-digit
+episode/scene numbers, `v01` never `v1`), run via `tests/run_all.py` on every push/PR. Run it locally
+before committing to catch a mis-named output early.
 
 ### Reasoning-effort guidance
 Match the per-session reasoning effort to the task (per `CLAUDE.md`, "Thinking Effort Protocol"):
@@ -266,7 +267,8 @@ holding the generated PNGs, the curated selects, the WAV audio, and the final MP
    `~/.config/robotiko-mcp-gdrive/tokens.json`. Tokens expire ~hourly; re-run `npm run auth`
    when an upload fails with a token error.
 5. **Register the server:** add a `.mcp.json` at the **project root** (not inside `.claude/`)
-   pointing `node` at `_tools/mcp-gdrive/src/index.js`. The `.claude/mcp.json` path does NOT work.
+   pointing `node` at `_tools/mcp-gdrive/src/index.js`. The `.claude/mcp.json` path does NOT work. <!-- doc-ref: ignore -->
+
 6. **Test:** start a new Claude Code session; the Google Drive tools appear automatically.
    Then just ask, e.g., *"Upload EP04 selected images to Google Drive."*
 

@@ -1,7 +1,25 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-07-04 (Audit fix session — all 25+ findings resolved, 8 check groups green, commit series in progress.)
+> Last Updated: 2026-07-05 (Repo-readiness program started — 9 workstreams from the path-to-5.0 expert panel. EP09 remaining production + all EP10 files are OUT OF SCOPE.)
+
+---
+
+## CURRENT PRIORITY: REPO-READINESS PROGRAM (2026-07-05)
+> Source: 10-lens expert panel (path-to-5.0). Full roadmap: `_private/audit_2026-07/path_to_five_roadmap.md`.
+> EP10 items deferred to a dedicated session — first thoughts at `_private/ep10_first_thoughts.md`.
+> Execution model: Fable organizes/audits; mechanical work delegated to Opus 4.8 / Sonnet 5 subagents.
+
+- [ ] **WS1 — Docs match reality 1:1:** doc-rot sweep (dead hook refs, mcp scope line, matrix filename, placeholders) · architecture.md v3.0 · doc-reference lint (new, run_all group 9) · project_metadata.json sync
+- [ ] **WS2 — Validator & gate completion:** eye-canon reconciliation + glow-guard (ADR-0010) · M4 real fix (recursive PDF detect + visible skip) · pipeline state machine · approvals.json ledger (ADR-0008) · full camera-diversity check (5-clip window) · energy→motion cross-check · overlay convention (EP08) · suffix v2 doctrine (ADR-0009) · matrix completion + run_all --coverage
+- [ ] **WS-H — Reshoot honesty:** ~75-85% first-pass statement (experiential label) · S30 case study (single-frame zoom-out → Mode B end-frame rescue) into docs + lessons + motion SKILL note · new tutorial TAKE in ep09_buildalong_07
+- [ ] **WS8 — Community surface:** CODE_OF_CONDUCT, SECURITY, SUPPORT, dependabot · issue templates + config.yml + PR template one-gate fix · GOVERNANCE.md · ROADMAP.md · UNIVERSES.md + Discussions draft · good-first-issue stock · reception playbook
+- [ ] **WS7 — FORKING.md golden path:** universe constants to single config · toy-universe dry run (logged) · FORKING.md (root) · text-only first-episode walkthrough
+- [ ] **WS9 — Release engineering:** RELEASE.md runbook + golden-report git-history DECISION (ADR-0011, Fibula) · create_episode.yml PR flow + CI job summary
+- [ ] **WS6 — Telemetry:** sync QC convention + EP08 retro record · sync_probe.py · attempts.md infra (fill at EP10)
+- [ ] **WS4 — Public showcase:** README v2 (hero, watch links, destruction strip, CI proof, honesty box) · episode guide (no master.md duplication) · visual canon + curated frames (Fibula decision, <15MB) · anatomy visual trail
+- [ ] **WS5 — Method docs:** hallucinating-camera.md (with S30 case) · lesson-graduation ladder · DISSONANCE registry
+- [ ] **Closing ritual:** Fable full verification pass → expert panel re-score → 5.0 → next: HN/Reddit strategy + articles + EP10 brainstorming
 
 ---
 
@@ -59,8 +77,8 @@ and launch playbooks live in the creator's private notes (not part of the open m
 - [x] P0 fix: Extended Thinking Protocol added to CLAUDE.md (workflow rule #7)
 - [x] `tests/naming_check.py` — v1.0 implemented (full validation logic)
 - [x] `tests/visual_prompt_validator.py` — v1.0 implemented (suffix, character phase, forbidden aesthetics)
-- [x] `tests/naming_check_hook.py` — v1.0 implemented (lightweight hook for Claude Code)
-- [x] `.claude/settings.json` — PostToolUse hook configured (bash-based, no Python dependency)
+- [x] `tests/naming_check_hook.py` — v1.0 implemented (lightweight hook for Claude Code) (removed 2026-07-04 — hook never fired; CI naming_check.py --full is the real gate)
+- [x] `.claude/settings.json` — PostToolUse hook configured (bash-based, no Python dependency) (removed 2026-07-04 — hook never fired; CI naming_check.py --full is the real gate)
 - [x] `MEMORY.md` — Auto-memory file created for session continuity
 - [x] `tests/README.md` — Updated to reflect v1.0 implementations
 

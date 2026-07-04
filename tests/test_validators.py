@@ -40,6 +40,15 @@ _hspec = importlib.util.spec_from_file_location(
 phl = importlib.util.module_from_spec(_hspec)
 _hspec.loader.exec_module(phl)
 
+_dspec = importlib.util.spec_from_file_location(
+    "doc_reference_check", os.path.join(TESTS_DIR, "doc_reference_check.py")
+)
+drc = importlib.util.module_from_spec(_dspec)
+_dspec.loader.exec_module(drc)
+
+DOC_REF_BAD = os.path.join(FIXTURES, "doc_ref_BAD.md")
+DOC_REF_GOOD = os.path.join(FIXTURES, "doc_ref_GOOD.md")
+
 
 def setUpModule():
     # check_ref_integrity loads _assets/cast/character_profiles.json relative to
@@ -425,6 +434,116 @@ class TestPromptHygieneLint(unittest.TestCase):
         # Regression guard: every in-scope file stays clean after the normalization.
         for path in phl.in_scope_files(REPO_ROOT):
             self.assertEqual(phl.lint_file(path), [], f"{path} has prompt-hygiene issues")
+
+
+class TestDocReferenceExistence(unittest.TestCase):
+    """The doc-rot guard, proven both directions: a frozen doc with a dead
+    backtick path must FAIL; a clean doc (with a tolerated historical hook
+    mention, a _private/ path, a gitignored render output, and an inline-
+    suppressed anti-example) must PASS with zero findings."""
+
+    def _fails(self, findings):
+        return [m for s, m in findings if s == "FAIL"]
+
+    def test_bad_fixture_fails_on_missing_path(self):
+        findings = drc.lint_doc_file("tests/fixtures/doc_ref_BAD.md", REPO_ROOT)
+        fails = self._fails(findings)
+        self.assertTrue(fails, "BAD fixture must fail: it names a nonexistent path.")
+        self.assertTrue(
+            any("does_not_exist_xyz.py" in m for m in fails),
+            f"the dead path must be the reported failure. Got: {fails}",
+        )
+
+    def test_bad_fixture_real_path_is_not_the_failure(self):
+        # tests/run_all.py in the same fixture must not be flagged.
+        findings = drc.lint_doc_file("tests/fixtures/doc_ref_BAD.md", REPO_ROOT)
+        self.assertFalse(any("run_all.py" in m for _, m in findings))
+
+    def test_good_fixture_passes_clean(self):
+        findings = drc.lint_doc_file("tests/fixtures/doc_ref_GOOD.md", REPO_ROOT)
+        self.assertEqual(
+            findings, [],
+            f"GOOD fixture must pass with zero findings. Got: {findings}",
+        )
+
+    def test_private_and_render_paths_tolerated(self):
+        # Isolate the two gitignored-by-design cases from the whole-file pass.
+        toks = drc.extract_path_tokens(
+            "see `_private/audit/x.md` and `episode-07/06_edit/final.mp4` "
+            "and `episode-07/05_video/raw/`"
+        )
+        self.assertEqual(toks, [], f"gitignored-by-design paths must be dropped: {toks}")
+
+    def test_dotpaths_survive_extraction(self):
+        # Regression: the leading dot of .github / .claude must not be stripped.
+        toks = drc.extract_path_tokens(
+            "CI is `.github/workflows/validation_suite.yml` and `.claude/settings.json`."
+        )
+        self.assertIn(".github/workflows/validation_suite.yml", toks)
+        self.assertIn(".claude/settings.json", toks)
+
+    def test_current_tree_is_clean(self):
+        # The curated docs on disk must stay green (this is what CI enforces).
+        self.assertEqual(drc.scan_all_docs(REPO_ROOT), [])
+
+
+class TestHookRotGuard(unittest.TestCase):
+    """A present-tense claim about the removed naming hook must fire; a historical
+    mention (with a nearby removed/was/once cue) or a suppressed line must not."""
+
+    def test_catches_present_tense_hook_claim(self):
+        lines = ["The `naming_check_hook.py` PostToolUse hook fires on every Write."]
+        self.assertTrue(drc.scan_hook_claims(lines))
+
+    def test_ignores_historical_mention_same_line(self):
+        lines = ["The PostToolUse naming_check_hook was removed 2026-07-04."]
+        self.assertEqual(drc.scan_hook_claims(lines), [])
+
+    def test_ignores_historical_cue_on_adjacent_line(self):
+        # The real wrap case: trigger on one line, the 'removed' cue on the next.
+        lines = [
+            "A Claude Code PostToolUse hook (`naming_check_hook.py`) once",
+            "auto-checked naming. It was removed 2026-07-04.",
+        ]
+        self.assertEqual(drc.scan_hook_claims(lines), [])
+
+    def test_suppression_marker_silences(self):
+        lines = ["The naming_check_hook PostToolUse hook runs now. <!-- doc-ref: ignore -->"]
+        self.assertEqual(drc.scan_hook_claims(lines), [])
+
+
+class TestMatrixSync(unittest.TestCase):
+    """Every enforcement check_ function must be represented in the coverage matrix
+    or admitted as an internal helper; a new check with neither must be reported."""
+
+    def test_current_tree_is_synced(self):
+        self.assertEqual(drc.verify_matrix_sync(REPO_ROOT), [])
+
+    def test_allowlisted_helper_is_internal_only(self):
+        # check_episode is a genuine internal driver, not a standalone invariant.
+        self.assertIn("check_episode", drc.ALLOWLIST)
+
+    def test_named_checks_are_actually_in_the_matrix(self):
+        with open(os.path.join(REPO_ROOT, drc.MATRIX_PATH), encoding="utf-8") as f:
+            matrix = f.read()
+        for name in ("check_ref_integrity", "check_reference_first", "check_suffix",
+                     "check_forbidden_aesthetics", "check_character_phase"):
+            self.assertIn(name, matrix, f"{name} must have a matrix row")
+
+    def test_unrepresented_check_is_reported(self):
+        # Inject a bogus check_ function absent from matrix + allowlist -> must FAIL.
+        original = drc.collect_check_functions
+        drc.collect_check_functions = lambda root: {
+            "check_totally_unlisted_xyz": "tests/fake.py"
+        }
+        try:
+            findings = drc.verify_matrix_sync(REPO_ROOT)
+        finally:
+            drc.collect_check_functions = original
+        self.assertTrue(
+            any("check_totally_unlisted_xyz" in m for _, m in findings),
+            "an enforcement check with no matrix row and no allowlist entry must fail.",
+        )
 
 
 if __name__ == "__main__":

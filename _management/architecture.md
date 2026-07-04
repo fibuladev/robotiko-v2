@@ -1,7 +1,8 @@
 # SYSTEM ARCHITECTURE
-> **Version:** 2.1 | **Last Updated:** 2026-06-11
+> **Version:** 3.0 | **Last Updated:** 2026-07-05
 >
-> **v2.1 changelog:** Binary storage moved from the earlier S3 plan to **local disk + Google Drive via the custom MCP server** (`_tools/mcp-gdrive/`). Toolchain refreshed (Suno + BandLab, Nano Banana, Kling / Veo / Seedance 1.0, CapCut). Enforcement layer documented as a first-class subsystem: `tests/` validators + Claude Code PostToolUse naming hook + naming convention + GitHub Actions. The two human approval gates are now first-class architectural elements.
+> **v3.0 (2026-07-05):** document matches repository reality 1:1; dead hook references removed. Enforcement is now described as its actual two-layer reality — a local one-gate command `python tests/run_all.py` and the CI workflow `.github/workflows/validation_suite.yml`, both running the identical entrypoint. A write-time Claude Code PostToolUse naming hook (`tests/naming_check_hook.py` + a `.claude/settings.json` Write matcher) existed and was removed 2026-07-04 after proving inert — it never fired — so enforcement is consolidated in CI.
+> **v2.1 (2026-06-11):** Binary storage moved from the earlier S3 plan to **local disk + Google Drive via the custom MCP server** (`_tools/mcp-gdrive/`). Toolchain refreshed (Suno + BandLab, Nano Banana, Kling / Veo / Seedance 1.0, CapCut). Enforcement layer documented as a first-class subsystem. The two human approval gates are now first-class architectural elements.
 
 This is a **repo-as-studio**: a single git repository that operates as a complete film-production company for one person. Claude (via Claude Code) acts as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates). Every stage is traceable: **Output of Step N = Input of Step N+1.**
 
@@ -14,7 +15,7 @@ This is a **repo-as-studio**: a single git repository that operates as a complet
 | **Version Control** | GitHub | The brain — text, decisions, and full history of every creative choice |
 | **Binary Storage** | Local disk + Google Drive (custom MCP server) | Heavy assets (PNG, MP4, WAV) live locally and are archived to Google Drive via `_tools/mcp-gdrive/`. Git never stores raw binaries. |
 | **Automation** | GitHub Actions + Python scripts | Episode scaffolding, naming validation, pipeline integrity |
-| **Enforcement** | `tests/` validators + Claude Code PostToolUse hook | Naming, visual-prompt, and pipeline-integrity checks |
+| **Enforcement** | `tests/` validators behind one gate (`python tests/run_all.py`), run in CI by `validation_suite.yml` | Naming, visual-prompt, pipeline-integrity, hygiene, metadata, motion, character, and meta-test checks |
 | **LLM Director / Crew** | Claude (Opus) via Claude Code + VSCode | Dramaturgy, visual prompts, motion scripts, packaging, skill execution |
 | **Music Generation** | Suno (generation) + BandLab (mastering) | Audio production |
 | **Musical Metadata** | Claude (`robotiko-musical-metadata` skill) | Metadata JSON from human-provided BPM, key, and timestamped lyrics |
@@ -95,6 +96,18 @@ The DAG has exactly two blocking edges. Everything else Claude executes and deli
 | **GATE 1** | After Dramaturgy, before Visual Prompts | Scene breakdown, tone, station fidelity | Taste on narrative structure cannot be delegated |
 | **GATE 2** | After Motion Script, before Video Gen | Camera moves, tech strategy, tool/Element assignment | Video generation is the most expensive stage — approve before spend |
 
+### Pipeline state (episode lifecycle)
+
+An episode advances through a fixed sequence of stages, each producing the input for the next:
+
+```
+scaffold → lyrics / music → concept notes → dramaturgy [HUMAN GATE 1]
+   → visual prompts → images → motion script [HUMAN GATE 2]
+   → video → edit → launch → social
+```
+
+The two human gates are **gated by design, not gaps**: they are deliberate points where a person applies taste, not missing automation. Today the gate crossing is a human act of approval that Claude honors procedurally (per `pipeline_rules.md`) rather than a machine-recorded token — the invariant-coverage matrix lists both checkpoints under "gated by design." Machine linkage of approvals (a recorded, checkable approval artifact per gate) is on the roadmap, not yet built.
+
 ---
 
 ## 3. REPOSITORY STRUCTURE
@@ -112,6 +125,10 @@ robotiko-v2/
 │   ├── naming_convention.md        # File naming standards (the pipeline's foreign keys)
 │   ├── architecture.md             # This document
 │   ├── youtube_metadata_standards.md
+│   ├── invariant_coverage_matrix.md # What is Machine / Heuristic / Human / Gap enforced
+│   ├── case_study_validation_backbone.md
+│   ├── adr/                        # Architecture Decision Records (0001–0007 + README)
+│   ├── README.md
 │   └── project_metadata.json       # State — episode status + toolchain + MCP config
 │
 ├── _assets/                        # STATE — reusable creative assets
@@ -155,21 +172,32 @@ robotiko-v2/
 │   └── anatomy-of-an-episode.md
 │
 ├── scripts/
-│   └── create_episode.py           # Episode scaffolding
+│   ├── create_episode.py           # Episode scaffolding
+│   ├── select_images.py            # Curate raw → selected (visuals)
+│   └── select_videos.py            # Curate raw → selected (video)
 │
-├── tests/                          # ENFORCEMENT — CI / QA validators
-│   ├── naming_check.py
-│   ├── pipeline_integrity.py
-│   ├── visual_prompt_validator.py
-│   ├── naming_check_hook.py        # Lightweight PostToolUse hook helper
+├── tests/                          # ENFORCEMENT — CI / QA validators (stdlib only)
+│   ├── run_all.py                  # THE ONE GATE — runs all 9 check groups, non-zero on any fail
+│   ├── naming_check.py             # Filename patterns + episode-number consistency
+│   ├── pipeline_integrity.py       # No silently-skipped pipeline steps
+│   ├── visual_prompt_validator.py  # Suffix · forbidden aesthetics · character phase · ref integrity
+│   ├── prompt_hygiene_lint.py      # Scoped — model-facing prompt strings must be plain-English ASCII
+│   ├── musical_metadata_validator.py # JSON structure · vocabulary · timestamps · total_duration
+│   ├── motion_script_validator.py  # Video suffix · anti-spawn guard · camera diversity quotas
+│   ├── character_profiles_validator.py # Structural validation against character_profiles.schema.json
+│   ├── test_validators.py          # 41 grade-the-graders meta-tests
+│   ├── fixtures/                   # Frozen BROKEN/GOOD regression pair + README.md
 │   └── README.md
 │
 ├── .claude/
-│   └── settings.json               # PostToolUse naming hook (Write matcher)
+│   └── settings.json               # Session config (model). No hook — removed 2026-07-04 (never fired)
 │
 ├── .github/
-│   ├── workflows/create_episode.yml
-│   ├── ISSUE_TEMPLATE/  pull_request_template.md
+│   ├── workflows/
+│   │   ├── validation_suite.yml    # CI gate: runs `python tests/run_all.py` on every push / PR
+│   │   └── create_episode.yml      # Episode scaffolding on workflow_dispatch
+│   ├── ISSUE_TEMPLATE/             # bug_report.md  feature_request.md
+│   └── pull_request_template.md
 │
 └── episode-01/ … episode-10/
     ├── 01_lyrics/      ep{XX}_lyrics_v{VV}.md
@@ -241,12 +269,14 @@ The repo is one machine with five cooperating subsystems. Each maps to a directo
 │    phase/damage applies to a given episode). project_metadata.json =       │
 │    episode status, toolchain, MCP config, global render settings.          │
 ├─────────────────────────────────────────────────────────────────────────┤
-│ 5. ENFORCEMENT    tests/ + Claude Code PostToolUse hook + naming           │
-│                   convention + GitHub Actions                              │
-│    Guards correctness: naming_check.py, visual_prompt_validator.py,        │
-│    pipeline_integrity.py; the .claude/settings.json PostToolUse hook warns │
-│    on non-conforming filenames at write time; create_episode.yml scaffolds │
-│    in CI. naming_convention.md is the contract all of these enforce.       │
+│ 5. ENFORCEMENT    tests/ (one gate) + naming convention + GitHub Actions   │
+│    Guards correctness. `python tests/run_all.py` runs 9 check groups        │
+│    (naming, pipeline integrity, visual prompts, prompt hygiene, musical     │
+│    metadata, motion script, character profiles, meta-tests). CI runs the    │
+│    identical command via validation_suite.yml and blocks the merge on red;  │
+│    create_episode.yml scaffolds episodes on dispatch. naming_convention.md  │
+│    is the contract these enforce. (A write-time naming hook was removed     │
+│    2026-07-04 after proving inert — enforcement lives in CI.)               │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -254,13 +284,40 @@ The repo is one machine with five cooperating subsystems. Each maps to a directo
 
 ## 6. ENFORCEMENT LAYER (detail)
 
-Three layers catch errors at different moments:
+Enforcement is **two layers running one identical entrypoint** — the local pre-push
+check and CI are the same command, so a green terminal predicts a green pipeline:
 
 | When | Mechanism | Checks |
 |---|---|---|
-| **At write time** | Claude Code PostToolUse hook (`.claude/settings.json`, Write matcher) | Warns immediately if a file written under `episode-XX/` breaks the naming convention |
-| **On demand / pre-publish** | `tests/run_all.py` (one command) | `naming_check.py` (filename patterns + episode-number consistency); `visual_prompt_validator.py` (mandatory suffix, forbidden aesthetics, per-episode character-phase with subject-guard + whitelist, and metadata-based **reference integrity**); `prompt_hygiene_lint.py` (scoped — model-facing prompt strings must be plain-English ASCII; never reads canon); `pipeline_integrity.py` (no skipped steps / missing gate outputs); `test_validators.py` (grade-the-graders meta-tests) |
-| **In CI** | GitHub Actions (`.github/workflows/`) | `create_episode.yml` scaffolds episodes on dispatch; `validation_suite.yml` runs the single gate `tests/run_all.py` on every push and pull request, blocking on failure (Python + action SHAs pinned) |
+| **Locally, before you push** | `python tests/run_all.py` (one gate) | Runs all 9 check groups below in sequence; exits non-zero if any fails. Standard-library only — no `pip install`. |
+| **In CI** | GitHub Actions — [`.github/workflows/validation_suite.yml`](../.github/workflows/validation_suite.yml) | Runs the identical `python tests/run_all.py` on every push and pull request, blocking the merge on failure (Python + action SHAs pinned). [`create_episode.yml`](../.github/workflows/create_episode.yml) scaffolds episodes on `workflow_dispatch`. |
+
+**Historical note:** a write-time Claude Code PostToolUse naming hook
+(`tests/naming_check_hook.py` wired through a `.claude/settings.json` Write matcher) <!-- doc-ref: ignore -->
+once formed a third, earlier layer. It was removed 2026-07-04 after proving inert —
+it never fired — and enforcement was consolidated into the single CI gate. The doc no
+longer describes it as live.
+
+### The validation backbone
+
+`tests/run_all.py` is the whole gate. It runs **9 check groups**:
+
+1. **Naming convention** — `naming_check.py --full` (filename patterns + episode-number consistency; 85 checks)
+2. **Pipeline integrity** — `pipeline_integrity.py --full` (no silently-skipped steps / missing gate outputs)
+3. **Visual prompt sweep** — `visual_prompt_validator.py --full` (mandatory suffix, forbidden aesthetics, per-episode character-phase with subject-guard + whitelist, and metadata-based **reference integrity**)
+4. **Prompt hygiene** — `prompt_hygiene_lint.py --full` (scoped: model-facing prompt strings must be plain-English ASCII; deliberately never reads canon)
+5. **Musical metadata** — `musical_metadata_validator.py --full` (JSON structure, energy/type vocabulary, timestamp monotonicity, total_duration match)
+6. **Motion script** — `motion_script_validator.py --full` (video suffix, anti-spawn guard, camera diversity quotas)
+7. **Character profiles** — `character_profiles_validator.py --full` (structural validation against `_assets/cast/character_profiles.schema.json`)
+8. **Validator meta-tests** — `test_validators.py` — **55 grade-the-graders tests**: the suite must FAIL the frozen BROKEN fixture and PASS the GOOD one, every loosening proven in both directions, plus a parser-coverage guard against the zero-scene false-green
+9. **Doc reference integrity** — `doc_reference_check.py` (backtick-quoted repo paths in load-bearing docs must exist on disk; present-tense claims about removed components fail; coverage matrix stays in sync with the `check_` functions that exist)
+
+A green run certifies only the machine-checked invariants. The
+[`invariant_coverage_matrix.md`](invariant_coverage_matrix.md) is the honesty ledger,
+tiering every invariant as **Machine** (mechanically checked, CI blocks),
+**Heuristic** (advisory, can over/under-fire), **Human** (gated at a checkpoint), or
+**Gap** (cared about, no automated check yet). The reasoning behind the backbone lives
+in the [`adr/`](adr/) records (0001–0007).
 
 The contract is `_management/naming_convention.md` (naming) and the
 [`adr/`](adr/) + [`invariant_coverage_matrix.md`](invariant_coverage_matrix.md)
@@ -274,7 +331,7 @@ records (validation backbone).
 - **Skill execution:** human says a trigger phrase → Claude reads `_skills/{skill}/SKILL.md` → executes → commits output.
 - **File operations:** Claude reads, writes, and commits directly — no manual copy-paste.
 - **Binary archive:** Claude uploads curated assets to Google Drive through the MCP server.
-- **Guardrails:** the PostToolUse naming hook fires on every Write; the golden rules and mandatory suffixes in `CLAUDE.md` / `master.md` constrain every creative output.
+- **Guardrails:** `python tests/run_all.py` is the pre-push gate (and the identical CI gate); the golden rules and mandatory suffixes in `CLAUDE.md` / `master.md` constrain every creative output.
 
 ---
 

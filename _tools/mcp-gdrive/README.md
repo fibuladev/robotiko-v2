@@ -242,4 +242,4 @@ For EP04 (54 PNG files, ~435 MB total):
 - OAuth credentials and tokens are stored in `~/.config/`, NOT in the repo
 - `.gitignore` excludes all credential files
 - The server only accesses Google Drive — no other Google services
-- Scopes limited to `drive.file` and `drive` (read/write Drive files only)
+- Scope limited to `drive.file` only (access to files created/opened by this app; not the full Drive)

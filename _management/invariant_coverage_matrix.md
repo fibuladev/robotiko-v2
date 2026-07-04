@@ -26,6 +26,7 @@ _Last updated: 2026-07-04 (Audit Fix Session — H1/M1 validators added)._
 | No silently **skipped pipeline steps** | 🟢 Machine | `pipeline_integrity.py --full` | |
 | Scene parser actually **parses** the file | 🟢 Machine | `TestParserCoverage` meta-tests | Guards the zero-scene false-green that started TAKE 05. |
 | The **checkers themselves** are correct | 🟢 Machine | `test_validators.py` (fixtures + both-directions proofs, [ADR 0003](adr/0003-frozen-fixtures-and-meta-tests.md)) | Grade-the-graders. |
+| **Docs match disk reality** (no doc-rot) | 🟢 Machine | `doc_reference_check.py` | Curated load-bearing docs: every backtick-quoted repo path must exist; a hook-rot guard forbids re-describing the removed naming hook as live; and a matrix↔`check_` sync fails a new enforcement check that ships without a row here. Skips URLs, placeholders, `_private/`, and gitignored render outputs. |
 | Robotiko **body-state keywords** match phase | 🟡 Heuristic | `check_character_phase` + subject-guard + scene-pinned whitelist ([ADR 0004](adr/0004-triage-policy-and-check-refinements.md)) | Free-text; cannot fully attribute an adjective to a subject. Backed up by the 🟢 reference check. |
 | **Prompt strings are plain-English ASCII** (model-facing only) | 🟢 Machine | `prompt_hygiene_lint.py` ([ADR 0006](adr/0006-scoped-prompt-hygiene.md)) | Scoped to Text/Motion prompt blockquotes; non-ASCII + tradition-label decoration. |
 | **Cultural attribution** scoping (canon vs prompt) | 🟢 Machine (prompt) + 🔵 Human (canon) | `prompt_hygiene_lint.py` for prompts; canon is human-authored | Was ⚪ Gap. The lint enforces ASCII/no-label in prompt strings and deliberately never reads master.md or direction notes — canon keeps its sanctioned Turkish. |
@@ -34,7 +35,7 @@ _Last updated: 2026-07-04 (Audit Fix Session — H1/M1 validators added)._
 | Mandatory **video suffix** on motion prompts | 🟢 Machine | `motion_script_validator.py` | Exact-substring match. Pre-SKILL-v2 episodes are WARN-only. |
 | **Camera diversity** quotas | 🟢 Machine | `motion_script_validator.py` | No single move >30%, Static >=15%. Pre-SKILL-v2 episodes are WARN-only (EP06's 42% zoom-in is a known shipped issue). |
 | **Eye rule** — no glow keyword for eyes | ⚪ Gap | — (lesson + skill only) | "dark amber glass lenses…" formula is documented, not enforced. Candidate next check. |
-| EP01 visual prompts | 🔵 Human | — | EP01 visuals are a PDF (`ep01_visual_prompts.pdf`) — pre-method episode, not machine-parseable. |
+| EP01 visual prompts | 🔵 Human | — | EP01 visuals are a PDF (`episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf`) — pre-method episode, not machine-parseable. |
 
 ## Golden Rules (narrative / philosophical)
 

@@ -1,11 +1,13 @@
-# Validator Fixtures — Frozen Regression Pair
+# Validator Fixtures — Frozen Regression Pairs
 
-These two files are **frozen snapshots**, not live pipeline output. Do not "fix" them.
+These files are **frozen snapshots**, not live pipeline output. Do not "fix" them.
 
 | File | State | Must |
 |---|---|---|
 | `ep09_visual_prompts_BROKEN.md` | The real EP09 v01 ref-integrity bug, frozen | **FAIL** ref-integrity |
 | `ep09_visual_prompts_GOOD.md`   | The corrected counterpart | **PASS** every check |
+| `doc_ref_BAD.md`  | A doc naming a nonexistent backtick repo path | **FAIL** `doc_reference_check.py` |
+| `doc_ref_GOOD.md` | A clean doc (tolerated historical hook mention, `_private/` path, gitignored render output, inline-suppressed anti-example) | **PASS** `doc_reference_check.py` |
 
 ## Why they exist
 

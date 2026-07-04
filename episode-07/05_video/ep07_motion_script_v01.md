@@ -1207,6 +1207,8 @@
 | **Musical Moment** | Soulful fuzz guitar over piano — hopeful, melancholic. Fading energy. The first forward motion. |
 | **Scene Context** | Override 11: Leaves the building. Wet street. First forward steps toward the amber rift. Same retreating composition, inverted meaning — he walks INTO the opening. |
 
+> **Note (2026-07-04):** S28a-d intentionally use the same source image (28.png) without frame chaining. Unlike S05 (where the replay-effect was fixed with frame chains), S28's four clips represent the same continuous walk seen from four angles — a deliberate "coverage shooting" strategy where each clip is a self-contained take, not a sequential chain. CapCut selects the best 1-2 takes; unused clips are cut coverage.
+
 #### Clip A — S28a
 
 | Field | Value |

@@ -2,7 +2,7 @@
 
 **A 10-episode digital bildungsroman — a musical sci-fi journey exploring AI consciousness through 70s progressive rock aesthetics.**
 
-> Not the first AI film tool — an open, complete grammar for *directing* one.
+> Not the first AI film tool — an open grammar for directing one, behind a shipped multi-episode series.
 
 ROBOTIKO v2.0 is a **repo-as-studio**: a git repository that operates as a complete film-production company for one person. An LLM (Claude) works as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates). The music's structure drives the dramaturgy, the dramaturgy drives the visuals, and every stage is traceable: *Output of Step N = Input of Step N+1.*
 

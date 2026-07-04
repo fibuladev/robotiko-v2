@@ -8,6 +8,8 @@ the custom MCP server (`_tools/mcp-gdrive/`), templates (`_templates/`), the
 management/process documentation (`_management/`, `docs/`, `CONTRIBUTING.md`),
 naming conventions, pipeline rules, and configuration.
 
+Any file in this repository not explicitly covered by LICENSE-CONTENT (creative content) defaults to this MIT license.
+
 The CREATIVE CONTENT of the ROBOTIKO v2.0 universe is licensed separately under
 CC BY-NC 4.0 — see `LICENSE-CONTENT`.
 

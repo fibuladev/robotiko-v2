@@ -12,7 +12,7 @@
 - 🔵 **Human** — gated by a person at a checkpoint; no automation claimed.
 - ⚪ **Gap** — an invariant we care about with **no** automated check yet.
 
-_Last updated: 2026-07-04 (Audit Fix Session — H1/M1 validators added)._
+_Last updated: 2026-07-05 (WS2 — approval-gates-as-data: ledger, state machine, visible EP01 PDF skip)._
 
 ## Pipeline / content invariants
 
@@ -23,7 +23,9 @@ _Last updated: 2026-07-04 (Audit Fix Session — H1/M1 validators added)._
 | Mandatory **visual suffix** on every prompt | 🟢 Machine | `check_suffix` | Exact-substring; robust. |
 | **Forbidden aesthetics** (Pixar, unreal engine, …) | 🟢 Machine | `check_forbidden_aesthetics` | Fixed term list; extend as new offenders appear. |
 | **File naming** convention | 🟢 Machine | `naming_check.py --full` | 85 checks. |
-| No silently **skipped pipeline steps** | 🟢 Machine | `pipeline_integrity.py --full` | |
+| No silently **skipped pipeline steps** | 🟢 Machine | `pipeline_integrity.py --full` | Now waiver-aware and honest: a non-sequential skip (empty step N, present step N+1) FAILs unless a waiver record exists in `_management/approvals.json`. The summary names the one legacy waivered skip (episode-01, PDF-only visuals) instead of the old false "no skipped steps". |
+| **Disk vs declared** state machine | 🟢 Machine | `pipeline_integrity.py --full` (disk_declared_conflicts) vs `project_metadata.json` ([ADR 0008](adr/0008-approval-gates-as-data.md)) | Each episode's stage is read from disk and compared to the declared production flags. Disk AHEAD of the record (a step done on disk that metadata declares falsy) = FAIL. Declared-ahead is tolerated by design — render outputs are gitignored and in-progress work has no committed file yet. |
+| **Approval gates as data** (two human checkpoints) | 🟢 Machine (linkage) + 🔵 Human (the judgement) | `_management/approvals.json` consumed by `pipeline_integrity.py` ([ADR 0008](adr/0008-approval-gates-as-data.md)) | Artifacts past a gate with no ledger record = FAIL; a ledger sha256 that no longer matches disk = WARN (stale approval — a legitimate post-approval edit, made visible). The machine verifies THAT a human approved a named artifact on a date; it cannot verify the taste behind the approval — that stays 🔵 Human. |
 | Scene parser actually **parses** the file | 🟢 Machine | `TestParserCoverage` meta-tests | Guards the zero-scene false-green that started TAKE 05. |
 | The **checkers themselves** are correct | 🟢 Machine | `test_validators.py` (fixtures + both-directions proofs, [ADR 0003](adr/0003-frozen-fixtures-and-meta-tests.md)) | Grade-the-graders. |
 | **Docs match disk reality** (no doc-rot) | 🟢 Machine | `doc_reference_check.py` | Curated load-bearing docs: every backtick-quoted repo path must exist; a hook-rot guard forbids re-describing the removed naming hook as live; and a matrix↔`check_` sync fails a new enforcement check that ships without a row here. Skips URLs, placeholders, `_private/`, and gitignored render outputs. |
@@ -35,7 +37,7 @@ _Last updated: 2026-07-04 (Audit Fix Session — H1/M1 validators added)._
 | Mandatory **video suffix** on motion prompts | 🟢 Machine | `motion_script_validator.py` | Exact-substring match. Pre-SKILL-v2 episodes are WARN-only. |
 | **Camera diversity** quotas | 🟢 Machine | `motion_script_validator.py` | No single move >30%, Static >=15%. Pre-SKILL-v2 episodes are WARN-only (EP06's 42% zoom-in is a known shipped issue). |
 | **Eye rule** — no glow keyword for eyes | ⚪ Gap | — (lesson + skill only) | "dark amber glass lenses…" formula is documented, not enforced. Candidate next check. |
-| EP01 visual prompts | 🔵 Human | — | EP01 visuals are a PDF (`episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf`) — pre-method episode, not machine-parseable. |
+| EP01 visual prompts | 🔵 Human (visibly skipped) | `visual_prompt_validator.py --full` prints the skip | EP01 visuals are a PDF (`episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf`) — pre-method episode, not machine-parseable. The M4 fix makes the skip **visible**: the detector now searches the whole `04_visuals` subtree (was a one-level `os.listdir` that never saw the `selected/` PDF, so EP01 was silently dropped). The pipeline skip is waivered in `_management/approvals.json`. |
 
 ## Golden Rules (narrative / philosophical)
 

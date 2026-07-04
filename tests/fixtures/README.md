@@ -8,6 +8,7 @@ These files are **frozen snapshots**, not live pipeline output. Do not "fix" the
 | `ep09_visual_prompts_GOOD.md`   | The corrected counterpart | **PASS** every check |
 | `doc_ref_BAD.md`  | A doc naming a nonexistent backtick repo path | **FAIL** `doc_reference_check.py` |
 | `doc_ref_GOOD.md` | A clean doc (tolerated historical hook mention, `_private/` path, gitignored render output, inline-suppressed anti-example) | **PASS** `doc_reference_check.py` |
+| `pdf_only_visuals/04_visuals/selected/ep01_visual_prompts_v01.pdf` | A PDF placed in a `selected/` SUBDIR, mirroring EP01's real layout | be **found** by `visual_prompt_validator.find_pdf_visuals` (the M4 regression: the old one-level `os.listdir` never saw it) |
 
 ## Why they exist
 

@@ -23,7 +23,7 @@ meta-tests, and doc reference integrity.
 |---|---|---|
 | `run_all.py` | One command — runs all checks below, exits non-zero on any failure | v2.0 |
 | `naming_check.py` | Validates file names against `naming_convention.md` | Implemented |
-| `pipeline_integrity.py` | Ensures no pipeline steps were skipped | Implemented |
+| `pipeline_integrity.py` | Waiver-aware skipped-step detection + disk-vs-declared state machine + approval-gate ledger enforcement | v2.0 |
 | `visual_prompt_validator.py` | Visual prompt content: suffix · forbidden aesthetics · character phase · **reference integrity** | v2.0 |
 | `prompt_hygiene_lint.py` | **Scoped** — model-facing prompt strings (Text/Motion blocks only) must be plain-English ASCII; never reads canon/direction notes | v1.0 |
 | `musical_metadata_validator.py` | Validates `musical_metadata.json` structure and vocabulary compliance: required fields, energy/section-type vocabulary, timestamp monotonicity, `total_duration` match | v1.0 |
@@ -81,6 +81,10 @@ run via `tests/run_all.py` and enforced in CI.
 - **Reference integrity** — every Robotiko scene uses the phase-correct reference
   image, derived from `character_profiles.json` `phase_reference_map` (the reliable,
   metadata-based gate)
+- **PDF-only skip is visible** — `--full` searches the whole `04_visuals` subtree
+  (including `selected/` and `raw/`), so EP01's PDF-only, pre-method visuals now print
+  a clear skip line instead of being silently dropped (the M4 fix — the old one-level
+  `os.listdir` never saw the `selected/` PDF)
 
 ### prompt_hygiene_lint.py (scoped)
 - Reads ONLY the `Text Prompt` blocks in visual-prompt files and the `Motion
@@ -91,8 +95,18 @@ run via `tests/run_all.py` and enforced in CI.
 - `--fix` ASCII-normalizes the prompt blocks in place, leaving everything else untouched
 
 ### pipeline_integrity.py
-- Checks each pipeline step has its required output file
-- Flags missing steps and mandatory checkpoints
+- **Skipped steps (waiver-aware).** A non-sequential pattern (empty step N, present
+  step N+1) is a skipped step — a FAIL unless a waiver record exists in
+  `_management/approvals.json`. episode-01's PDF-only visuals stage is the one legacy
+  waivered skip; the summary names it instead of the old false "no skipped steps"
+- **Disk vs declared state machine.** Each episode's on-disk stage is compared against
+  `project_metadata.json`'s production flags; disk ahead of the declared record = FAIL
+  (declared-ahead is tolerated — render outputs are gitignored, in-progress work has no
+  committed file yet)
+- **Approval gates as data** ([ADR 0008](../_management/adr/0008-approval-gates-as-data.md)).
+  Consumes `_management/approvals.json`: artifacts past a human gate with no ledger
+  record = FAIL; a ledger sha256 that no longer matches disk = WARN (stale approval —
+  a legitimate post-approval edit, made visible)
 
 ### musical_metadata_validator.py
 - Required top-level and per-section fields present in `musical_metadata.json`

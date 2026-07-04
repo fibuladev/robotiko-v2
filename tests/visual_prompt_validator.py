@@ -583,6 +583,35 @@ def is_unfilled_template(filepath: str) -> bool:
     return any(m in text for m in TEMPLATE_MARKERS)
 
 
+def find_pdf_visuals(visuals_dir: str) -> list[str]:
+    """
+    Recursively find PDF visual-prompt files anywhere under an episode's 04_visuals
+    directory — including the selected/ and raw/ subfolders.
+
+    This is the M4 real fix. The prior code called os.listdir(visuals_dir) (one level
+    only), so EP01's PDF — which lives at episode-01/04_visuals/selected/ep01_visual_
+    prompts_v01.pdf — was NEVER seen: the branch could not fire and EP01 was skipped
+    silently, with no output line at all. os.walk sees the whole subtree, so the
+    PDF-only skip actually triggers and becomes visible.
+    """
+    pdfs = []
+    for root, _dirs, files in os.walk(visuals_dir):
+        for name in files:
+            if name.lower().endswith(".pdf") and "visual_prompts" in name.lower():
+                pdfs.append(os.path.join(root, name))
+    return sorted(pdfs)
+
+
+def pdf_skip_message(ep_dir: str, pdf_path: str) -> str:
+    """The VISIBLE skip line for a PDF-only (pre-method) episode. Asserted verbatim
+    by a meta-test so it can never silently vanish again (the M4 regression)."""
+    rel = pdf_path.replace("\\", "/")
+    return (
+        f"  Skipping {ep_dir}: PDF-only visuals ({rel}) - pre-method episode, "
+        f"declared Human-tier in the coverage matrix; not machine-parseable."
+    )
+
+
 def run_full() -> int:
     """Validate the latest visual prompts file of every episode, skipping unfilled scaffolds."""
     exit_code = 0
@@ -595,9 +624,11 @@ def run_full() -> int:
             reverse=True,
         )
         if not candidates:
-            pdf_files = [f for f in os.listdir(visuals_dir) if f.endswith(".pdf")]
+            # Search the whole 04_visuals subtree (selected/ + raw/), not just the top
+            # level — this is what makes EP01's PDF-only skip actually fire and print.
+            pdf_files = find_pdf_visuals(visuals_dir)
             if pdf_files:
-                print(f"\n  Skipping {ep_dir}: visual prompts are PDF-only ({pdf_files[0]}) — pre-method episode, not machine-parseable.")
+                print("\n" + pdf_skip_message(ep_dir, pdf_files[0]))
             continue
         filepath = os.path.join(visuals_dir, candidates[0])
         if is_unfilled_template(filepath):

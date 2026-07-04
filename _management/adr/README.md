@@ -17,6 +17,7 @@ supersedes the old one (don't rewrite history).
 | [0005](0005-single-command-ci-gate.md) | Single-command CI gate, dependencies pinned | Accepted |
 | [0006](0006-scoped-prompt-hygiene.md) | Scoped prompt hygiene: ASCII only where it's model-facing | Accepted |
 | [0007](0007-reference-first-or-pay-the-reshoot-tax.md) | Reference-first, or pay the reshoot tax | Accepted |
+| [0008](0008-approval-gates-as-data.md) | Approval gates as data, not checkboxes | Accepted |
 
 Born out of the EP09 "Validation Backbone" build-along (the reference-integrity
 bug that passed every check green). See also

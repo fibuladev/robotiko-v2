@@ -10,7 +10,6 @@ This folder contains the **source of truth** for the Robotiko universe.
 - `architecture.md` - Technical stack & data flow
 - `project_metadata.json` - Project settings, toolchain, episode status (single source of truth for status)
 - `youtube_metadata_standards.md` - YouTube metadata standards (titles, tags, description, hashtags)
-- `golden_release_report.md` - Open-source readiness audit (engineering + art assessment, market landscape)
 
 ## Usage
 

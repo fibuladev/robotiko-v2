@@ -19,7 +19,7 @@ This is what the repo is *for*. You take the pipeline, swap out the ROBOTIKO sto
 
 - `_skills/` — the production crew (dramaturgy, visual prompts, motion script, packaging, and more)
 - `scripts/` — automation, including `scripts/create_episode.py`
-- `tests/` — the three validators (naming, pipeline integrity, visual-prompt content)
+- `tests/` — eight check groups (naming convention, pipeline integrity, visual prompt sweep, prompt hygiene, musical metadata, motion script, character profiles, and validator meta-tests) behind one gate command: `python tests/run_all.py`
 - `_templates/` — episode scaffolding templates
 - `_tools/mcp-gdrive/` — the custom Google Drive MCP server (binary asset archive)
 - `_management/pipeline_rules.md` — the workflow and the two human gates
@@ -177,15 +177,10 @@ For contributions to the **open method** (path b above):
    git checkout -b feature/your-feature-name
    ```
 3. **Make focused changes.** Keep diffs small and scoped to one concern. A PR that fixes a script *and* rewrites three docs is hard to review — split it.
-4. **Run the three test scripts locally.** CI runs them too, and they must pass:
+4. **Run the single gate command:** CI runs it too, and it must pass:
    ```bash
-   python tests/naming_check.py --full
-   python tests/pipeline_integrity.py --episode 02
-   python tests/visual_prompt_validator.py --episode 02
+   python tests/run_all.py
    ```
-   - `naming_check.py` — validates file names against the naming convention (`--full` for all episodes, or `--episode NN`).
-   - `pipeline_integrity.py` — ensures no pipeline steps were skipped for an episode (`--episode NN`).
-   - `visual_prompt_validator.py` — validates visual-prompt content: mandatory suffix, character phase, no forbidden aesthetics (`--episode NN` or `--file PATH`).
 
    See [tests/README.md](tests/README.md) for full usage.
 5. **Open a PR** using the [pull request template](.github/pull_request_template.md). Fill in the checklist honestly. Reference any related issue (use the [bug report](.github/ISSUE_TEMPLATE/bug_report.md) or [feature request](.github/ISSUE_TEMPLATE/feature_request.md) templates to file one first).

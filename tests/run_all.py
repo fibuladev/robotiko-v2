@@ -10,7 +10,10 @@ Check groups:
   2. Pipeline integrity     — no silently-skipped pipeline steps
   3. Visual prompt sweep    — suffix · forbidden aesthetics · character phase · ref integrity
   4. Prompt hygiene         — model-facing prompt strings are plain-English ASCII (scoped)
-  5. Validator meta-tests   — grade the graders (fixtures + both-directions proofs)
+  5. Musical metadata       — JSON structure · energy/type vocabulary · timestamps · total_duration
+  6. Motion script          — video suffix · anti-spawn guard · camera diversity quotas
+  7. Character profiles     — structural validation against schema.json
+  8. Validator meta-tests   — grade the graders (fixtures + both-directions proofs)
 
 Dependencies: standard library only. No `pip install`, nothing to pin at the
 package level — the strongest form of dependency hygiene. The toolchain (Python
@@ -28,6 +31,9 @@ CHECK_GROUPS = [
     ("Pipeline integrity",   [sys.executable, "tests/pipeline_integrity.py", "--full"]),
     ("Visual prompt sweep",  [sys.executable, "tests/visual_prompt_validator.py", "--full"]),
     ("Prompt hygiene",       [sys.executable, "tests/prompt_hygiene_lint.py", "--full"]),
+    ("Musical metadata",     [sys.executable, "tests/musical_metadata_validator.py", "--full"]),
+    ("Motion script",        [sys.executable, "tests/motion_script_validator.py", "--full"]),
+    ("Character profiles",   [sys.executable, "tests/character_profiles_validator.py", "--full"]),
     ("Validator meta-tests", [sys.executable, "-m", "unittest", "tests.test_validators"]),
 ]
 

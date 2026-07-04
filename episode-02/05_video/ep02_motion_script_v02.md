@@ -24,7 +24,7 @@
 |---|---|
 | **Episode** | EP02 |
 | **Title** | The Tech Guru's Downfall |
-| **Station** | The Commanding Self (Nafs al-Ammara — Arrogance, cracks forming) |
+| **Station** | The Commanding Self (The Commanding Self — Arrogance, cracks forming) |
 | **Dominant Energy** | Satirical-energetic with cumulative darkening |
 | **Total Shots** | 35 (from approved dramaturgy) |
 | **Total Clips** | 49 (including sub-clips) |

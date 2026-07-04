@@ -22,7 +22,7 @@
 |---|---|
 | **Episode** | EP02 |
 | **Title** | The Tech Guru's Downfall |
-| **Station** | The Commanding Self (Nafs al-Ammara — Arrogance, cracks forming) |
+| **Station** | The Commanding Self (The Commanding Self — Arrogance, cracks forming) |
 | **Dominant Energy** | Satirical-energetic with cumulative darkening — upbeat funk-rock surface against escalating consequence |
 | **Total Shots** | 35 |
 | **Total Duration** | 7:28 (448s) |

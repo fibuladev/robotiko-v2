@@ -157,6 +157,17 @@ Decision logic:
 - Does the scene involve transformation or before/after change? → **Mode B**
 - Is it a single atmospheric moment, character portrait, or environmental shot? → **Mode A**
 
+> **Field note — wide-reveal moves invite hallucination (S30 rescue pattern):** A
+> wide-reveal move (Slow Zoom Out, Crane Up, Dolly Out) from a **single start frame**
+> asks the model to fill area beyond the source borders — and it fills it by
+> *inventing* content (set dressing, structures, props) that is not in the universe.
+> When the reveal itself matters, do NOT trust Mode A: prefer **Mode B** with an
+> existing wide frame from the episode's own `raw/` set as the **end frame**, so the
+> pull-back interpolates toward a real destination instead of extrapolating into
+> invention. EP09 S30 "Full Kintsugi" failed four Mode-A reshoots this way, then
+> succeeded first-try once an existing exterior keeper was pinned as the end frame.
+> Full case + before/after prompts: `docs/hallucinating-camera.md`.
+
 > **Note:** Mode C (Extension) has been deprecated. Video generation tools produce fixed-duration clips (5s or 10s) with no chaining capability. Scenes longer than 10s are handled through the Duration Coverage Strategy (Step 6).
 
 ### Step 6: Duration Coverage Analysis (CRITICAL)

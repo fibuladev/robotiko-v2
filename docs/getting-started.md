@@ -111,6 +111,18 @@ The two gates are not optional and never skipped. They are the entire point of t
 
 ---
 
+## What the Pipeline Does *Not* Do
+
+Set your expectations honestly before your first episode. This pipeline is a huge multiplier on time and cost — one person runs a stage-gated film crew that would otherwise take a team — but it is **not copy-paste-and-done**. The stills and clips do not fall out perfect on demand, and no amount of prompt discipline makes the generators obedient.
+
+The realistic number, from this project's own production across nine episodes, is that roughly **75-85% of shots land on the first generation** when their reference images already exist. That figure is an experiential observation from the edit bay, not instrumented telemetry — treat it as a planning heuristic, not a guarantee. The remaining shots need a reshoot or **live prompt surgery**: you catch a failure at generation time and rewrite the shot on the spot. Budget credits, and a little patience, for that tail.
+
+The canonical example is **EP09's S30 "Full Kintsugi" shot**, where a Slow Zoom Out on a single frame made the model invent set dressing that does not exist in the universe — it failed four times before a live switch to a two-frame (start + end) setup, anchored to an existing wide frame from the episode's own set, fixed it on the first retry. The full before/after prompts and the general rule they produced are written up in **[hallucinating-camera.md](hallucinating-camera.md)** — read it before your first video-generation session so the failures are expected, not alarming.
+
+The mindset that keeps this sane: discovering at generation time that a shot needs a better reference or a rewritten prompt is a **normal, healthy part of the flow**, not a sign something went wrong. The pipeline gets you 80% of the way in a fraction of the time; the last stretch is craft, and craft is iterative.
+
+---
+
 ## Expected Costs
 
 This is an honest, approximate picture. Tool pricing changes often, so where a number isn't verifiable from inside this repo, treat it as "check the tool's site" rather than gospel. None of these are sponsorships; they are simply the tools the pipeline was built against.

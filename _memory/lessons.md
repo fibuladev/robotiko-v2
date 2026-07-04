@@ -212,6 +212,7 @@ After any correction from the human:
 - **RULE:** OMNIEDIT BUDGET — Reserve 10-15% of Kling credits for OmniEdit fixes. Priority: dual-character scenes (spawn risk), Mode B clips (hard to re-gen), atmospheric shots (easiest to fix). If multiple issues exist in one clip, re-generate instead of stacking OmniEdits. (Added 2026-05-26)
 - **RULE:** GLITCH IS METAPHOR ONLY — "Glitch is Scripture" is a NARRATIVE concept. In production, AI artifacts are defects to be fixed (OmniEdit or re-gen). Never embrace visual glitches as intentional art. Maximum quality is always the production target. (Added 2026-05-26)
 - **RULE:** ART-HOUSE SHORT-FILM FORMAT (EP07→EP10) — Starting from EP07, the series adopted an art-house short-film treatment. This is a format evolution, not a correction — EP01-EP06 were produced before this approach was established. From EP07 onward, every visual prompt file must include an **ART DIRECTION LOCKS** section (see EP07's format as the template) documenting the episode-specific cinematic constraints: locked color journey, camera personality, environmental rules, what is NOT shown. This section prevents drift and ensures the art-house discipline carries through EP09 and EP10. If the visual prompts file is missing this section, add it before proceeding with image generation. (Added 2026-06-21 — EP09 visual prompts were generated without this section; it should be added during the ref-image fix pass.)
+- **RULE:** WIDE-REVEAL MOVES INVITE HALLUCINATION (S30 RESCUE PATTERN) — A wide-reveal move (Slow Zoom Out, Crane Up, Dolly Out) from a SINGLE start frame asks the model to fill area beyond the source borders, and it fills it by inventing set dressing that is not in the universe. When the reveal itself matters, do not trust Mode A: use Mode B with an existing wide frame from the episode's own raw/ set as the END frame, and rewrite the prompt as two-frame continuity ("transitions seamlessly into the wide environmental shot of end frame... exactly as pictured"). EP09 S30 "Full Kintsugi" burned 4 Mode-A reshoots on invented workshop clutter, then succeeded first-try with raw/5.png pinned as the end frame. A widening frame is an invitation to hallucinate — anchor the destination. Full case: `docs/hallucinating-camera.md`. (Added 2026-07-05, EP09 production lesson)
 
 ---
 
@@ -274,6 +275,10 @@ After any correction from the human:
   machine-checked / heuristic / human-gated / GAP. Anti-spawn phrasing, the eye-glow
   rule, and the motion video-suffix are currently GAPS — not enforced. Don't imply
   coverage you don't have. (TAKE 06)
+  *(Update 2026-07-05: anti-spawn and the motion video-suffix graduated to Machine
+  tier via `tests/motion_script_validator.py` in the 2026-07-04 audit-fix session;
+  the eye-glow rule remains the open Gap and is scheduled to close next. The rule's
+  principle stands — the matrix, not the green run, is the coverage truth.)*
 - **RULE:** WHEN YOUR OWN RULES CONTRADICT, SCOPE BY AUDIENCE — master.md REQUIRES the
   sanctioned Turkish attribution (names like Hacı Bektaş Veli, labels like "Turkish
   wisdom tradition"); production requires model-facing prompts to be plain-English
@@ -293,5 +298,6 @@ After any correction from the human:
 - **RULE:** ALTERNATIVE GUARD FORMULATIONS — Anti-spawn and other guard rules have a canonical form ("Do not add extra characters. Keep everything as pictured.") but episodes may use legitimate alternatives ("No third figure. Exactly two instances"). Validators must recognize both the standard guard and a curated list of alternatives rather than requiring the exact canonical string.
 - **RULE:** SKILL VERSION DETECTION — Pre-SKILL-v2 episodes (EP01-EP02) were produced before video suffix and anti-spawn guard rules existed. Validators must detect SKILL version from file headers and apply WARN (non-blocking) severity for pre-v2 files, FAIL (blocking) for v2+ files. This prevents legacy files from blocking CI while still surfacing issues as warnings.
 - **RULE:** SHIPPED FILE POLICY — Canon terminology corrections (e.g., station name standardization) ARE applied retroactively to shipped files to maintain a single source of truth. Cosmetic changes are NOT. The distinction: if a term contradicts master.md's canonical form, fix it everywhere; if it's just a style preference, leave shipped files alone.
+- **RULE:** EVERY SKIP BRANCH NEEDS A FIXTURE — A skip message that never prints is a silent pass. The EP01 PDF-detection fix shipped in the 2026-07-04 audit session was inert for a day because `os.listdir` never saw the PDF inside `selected/` — the "explicit skip" existed only in intention, and no test asserted the message actually appears. Every skip/waiver branch in a validator must be locked by a meta-test that (a) triggers the branch on a fixture and (b) asserts the visible output text. Fixes are subject to the same verify discipline as features. (Added 2026-07-05, from the M4 inert-fix finding)
 
 *Add new lessons below as they emerge during production.*

@@ -1,3 +1,5 @@
+> **Legacy note (2026-07-04):** This file predates the eye-glow prohibition rule. "Glowing" eye descriptions were shipped as-is. Current rule: "dark amber glass lenses."
+
 # EP02 — CONCEPT NOTES
 > **Episode:** EP02 — "The Tech Guru's Downfall"
 > **Station:** The Commanding Self (Arrogance — but cracks forming)

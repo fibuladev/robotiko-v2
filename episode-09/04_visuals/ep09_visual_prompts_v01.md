@@ -483,11 +483,11 @@ The small group of ordinary small-town people who gather when the strange androi
 - **Characters Present:** Robotiko (@Damaged, barely visible)
 - **Image Reference Path:** `_assets/cast/android_damaged.png`
 - **Video Tech Strategy:** Standard (Mode A)
-- **Composition Notes:** Wide. Near-total black. The figure a dark shape. Only the faintest dying blue glow as a pinpoint. Extra space for the zoom-out.
+- **Composition Notes:** Wide. Near-total black. The figure a dark shape. Only the faintest blue pinpoint reflected in the dark amber glass lenses. Extra space for the zoom-out.
 - **Upload:** char: `android_damaged.png` · chain: S20 output
 
 **Text Prompt:**
-> Wide shot in near-total darkness, the workshop barely visible as the faintest outlines of walls and tools in the void, a chrome android (android_damaged.png) a dark shape at the center - the faintest dying blue glow from his eyes the only light source, no lamp, no external light, the darkness IS everything, the bench and tools visible only as faint silhouettes, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Wide shot in near-total darkness, the workshop barely visible as the faintest outlines of walls and tools in the void, a chrome android (android_damaged.png) a dark shape at the center - the faintest dying blue pinpoint reflected in the dark amber glass lenses the only light source, no lamp, no external light, the darkness IS everything, the bench and tools visible only as faint silhouettes, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

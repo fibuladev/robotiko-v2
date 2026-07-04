@@ -1,7 +1,7 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-06-11 (Golden release fixes — P0+P1 executed: dual license, AUTHOR.md, EP09/10 scaffold, docs to golden, CI, private-file split.)
+> Last Updated: 2026-07-04 (Audit fix session — all 25+ findings resolved, 8 check groups green, commit series in progress.)
 
 ---
 
@@ -476,6 +476,29 @@ and launch playbooks live in the creator's private notes (not part of the open m
 ---
 
 *Update this file at the start and end of every session.*
+---
+
+## 2026-07-04 Session Summary (Blind Audit Fix — All Findings Resolved)
+**Task:** Resolve ALL findings from July 4 blind multi-agent audit (8 personas, 32 agents, final score 4.2/5). Goal: repo public-ready the moment EP10 files are added.
+**Findings resolved (25+):**
+- **H1:** Musical metadata validator created (`tests/musical_metadata_validator.py`), 16 energy values + 18 section types + timestamp monotonicity + total_duration check. EP02/EP04 `total_duration` fields added. All 9 episodes GREEN.
+- **M11:** SKILL schema alignment — 4 energy levels + 6 section types + 2 optional fields added to musical-metadata SKILL. 11 energy→MS mappings added to motion SKILL.
+- **M1:** Motion script validator created (`tests/motion_script_validator.py`), mandatory video suffix + anti-spawn guard + camera diversity quotas. SKILL version detection (pre-v2 = WARN). All 10 episodes GREEN.
+- **M2/M4:** Approval gate heuristic in pipeline_integrity.py. EP01 PDF blind spot documented.
+- **M5/M6:** Character profiles validator created (`tests/character_profiles_validator.py`). CONTRIBUTING.md updated (7→8 check groups).
+- **M8/M9:** Rule retirement convention in lessons.md. EP09 S21 + EP02 eye-glow legacy fixes.
+- **M10/M13:** master.md Robochica sync + Mevlana fact correction.
+- **M15:** "Nafs al-Ammara" → "The Commanding Self" across all EP02 files (shipped-file policy: canon corrections ARE retroactive).
+- **M12/M3/M7:** Beat sync terminology + ADR 0007 empirical claims note + director's guard in motion SKILL.
+- **L1/L2/L3:** LICENSE catch-all + README scope honesty + EP07 S28 coverage shooting note.
+- **DevOps-8/9/10/dok/drift:** create_episode.yml hardened (SHA-pinned, permissions, input validation). Broken naming hook removed. OAuth scope narrowed. Binary asset resilience section added. Scaffold drift (social_media folder) fixed. Python version standardized to 3.11+.
+**Golden report:** Removed from tracked files → `_private/audit_2026-07/june11_golden_release_report.md`.
+**EP09 motion script v02:** Em-dash cleanup + S21 eye-glow fix. Passes all validators GREEN. Tutorial TAKE 05 added (red→green demo).
+**Validation:** 8 check groups all GREEN (naming, pipeline, visual, hygiene, metadata, motion, character profiles, meta-tests).
+**Invariant coverage matrix:** Updated — 4 new Machine rows, 1 Human row, Gap rows removed.
+**Commits:** 12 thematic commits with convention prefixes.
+**Next step:** Post-fix re-audit workflow (STEP 5).
+
 ---
 
 ## 2026-06-11 Session Summary (Golden Release Audit + Base Files Sync)

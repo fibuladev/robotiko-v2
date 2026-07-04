@@ -1,3 +1,5 @@
+> **Legacy note (2026-07-04):** This file predates the eye-glow prohibition rule. "Glowing" eye descriptions were shipped as-is. Current rule: "dark amber glass lenses."
+
 # EP02 — DRAMATURGY & SCENE BREAKDOWN
 > **Version:** v01 | **Skill:** robotiko-dramaturgy
 > **Generated:** 2026-02-26
@@ -10,7 +12,7 @@
 |---|---|
 | **Episode** | EP02 |
 | **Title** | The Tech Guru's Downfall |
-| **Station** | The Commanding Self (Nafs al-Ammara — Arrogance, cracks forming) |
+| **Station** | The Commanding Self (The Commanding Self — Arrogance, cracks forming) |
 | **Tone** | Dark comedy, satirical, theatrical, kara mizah |
 | **Language** | English |
 | **Character Phase** | Phase 1: Awakening |

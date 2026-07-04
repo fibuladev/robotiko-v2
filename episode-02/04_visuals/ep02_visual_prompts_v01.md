@@ -1,3 +1,5 @@
+> **Legacy note (2026-07-04):** This file predates the eye-glow prohibition rule (lessons.md, 2026-03-23). "Glowing" eye descriptions in these prompts were shipped as-is and are not retrofitted. Current rule: use "dark amber glass lenses" formula.
+
 # EP02 — VISUAL PROMPTS (NANO BANANA)
 > **Version:** v01 | **Skill:** robotiko-visual-prompts
 > **Generated:** 2026-02-26

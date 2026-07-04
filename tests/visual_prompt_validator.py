@@ -595,6 +595,9 @@ def run_full() -> int:
             reverse=True,
         )
         if not candidates:
+            pdf_files = [f for f in os.listdir(visuals_dir) if f.endswith(".pdf")]
+            if pdf_files:
+                print(f"\n  Skipping {ep_dir}: visual prompts are PDF-only ({pdf_files[0]}) — pre-method episode, not machine-parseable.")
             continue
         filepath = os.path.join(visuals_dir, candidates[0])
         if is_unfilled_template(filepath):

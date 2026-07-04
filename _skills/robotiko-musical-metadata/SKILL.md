@@ -109,10 +109,19 @@ Map human-provided section headers to these standardized types:
 | `[Climax]` | `"climax"` | Maximum energy moment (rare — 1 per track max) |
 | `[Outro]` | `"outro"` | Closing section |
 | `[Spoken Intro]` | `"spoken_intro"` | Spoken word opening (EP03, EP08-09 style) |
+| `[Interlude]` | `"interlude"` | Brief transitional passage between sections |
+| `[Refrain]` | `"refrain"` | Recurring melodic/lyrical motif (shorter than chorus) |
+| `[Spoken]` | `"spoken"` | Non-musical spoken word passage |
+| `[Silence]` | `"silence"` | Intentional silence or near-silence |
+| `[Finale]` | `"finale"` | Grand closing section with maximum energy |
+| `[Vocal]` | `"vocal"` | Dedicated wordless vocal section (hums, cries) |
 
 **Variant types** (append to base type when needed):
 - `"outro_vocals"` — Outro with final vocal delivery
 - `"outro_whisper"` — Whispered final words (EP04, EP05 pattern)
+
+`"styles"` is an optional top-level field: additional style descriptors beyond `mood` — arrangement-level tags (e.g., "Vocals Upfront", "Minimalist Arrangement"). Used in EP08.
+`"spoken_intro_duration"` is an optional top-level field: duration of the spoken intro segment in seconds. Used in EP03.
 
 If the human provides a non-standard section name, map it to the closest type and note the original in `"notes"`.
 
@@ -134,6 +143,10 @@ If the human provides a non-standard section name, map it to the closest type an
 | `"chaotic"` | Unstructured, intense, dissonant |
 | `"fading"` | Energy decreasing, instruments dropping out |
 | `"still"` | No rhythmic pulse — spoken word, ambient |
+| `"peak"` | Full energy climax, maximum dynamics (used in EP01, EP08) |
+| `"theatrical"` | Dramatic, declamatory delivery; full vocal performance (EP02) |
+| `"epic"` | Grand, sweeping dynamics; orchestral fullness (EP02, EP03, EP04) |
+| `"slowing"` | Tempo deceleration within the section (EP03) |
 
 ---
 

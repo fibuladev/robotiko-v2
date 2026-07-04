@@ -3,6 +3,7 @@
   "tempo": 56,
   "key": "F Minor",
   "time_signature": "4/4",
+  "total_duration": 423.0,
   "mood": ["mystical", "hypnotic", "epic", "heavy", "dark"],
   "instruments": ["heavy fuzz guitar", "hammond organ", "bass", "drums"],
   "sections": [

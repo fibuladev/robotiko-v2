@@ -3,6 +3,7 @@
   "tempo": 104,
   "key": "G Major",
   "time_signature": "4/4",
+  "total_duration": 448.0,
   "mood": ["satirical", "psychedelic", "theatrical", "dark comedy", "energetic"],
   "instruments": ["anatolian psychedelic guitar", "hammond organ", "heavy fuzz electric guitar", "anthemic rock choir", "bass", "drums"],
   "sections": [

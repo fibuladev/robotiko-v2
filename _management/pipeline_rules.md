@@ -104,6 +104,7 @@ Two steps require explicit human approval before proceeding. Everything else Cla
 - **Output:** `episode-{XX}/05_video/ep{XX}_motion_script_v01.md`
   - Output includes: **Tool Assignment Summary**, **Element Registry**, **Camera Diversity Report**, **Frame Chain Map**, per-clip `| Recommended Tool |`, `| Generation Mode |`, `| Element Tags |` fields
 - **EP07+ additions:** Kling 3.0 Elements (character consistency via @Name tags), Frame Chaining (last-frame → start-frame continuity), OmniEdit budget reserve (10-15% of Kling credits)
+- **Beat sync terminology note:** "Beat sync" in this pipeline means section-level and phrase-level synchronization — aligning camera cuts, motion intensity, and visual transitions to musical section boundaries and phrase transitions. It does NOT mean frame-accurate beat-grid quantization (BPM-locked cuts on every downbeat). The musical metadata JSON provides section timestamps, not individual beat positions.
 - **⛔ MANDATORY CHECKPOINT:** Human reviews camera moves, tech strategy, tool assignments, camera diversity, and Element assignments before video generation.
 
 ### Step 8b: Supplementary Image Generation (If Required)
@@ -231,3 +232,9 @@ SCAFFOLD → LYRICS → MUSIC → METADATA JSON → CONCEPT NOTES
     → MOTION SCRIPT [✋ CHECKPOINT] → VIDEO GEN → VIDEO SELECT
     → CAPCUT GUIDE → EDIT → YOUTUBE + METADATA REVIEW + SOCIAL
 ```
+
+---
+
+## SHIPPED FILE POLICY
+
+Shipped episode files (episodes launched on YouTube) are not retroactively edited for cosmetic changes. However, **canon terminology corrections** (e.g., station name standardization) ARE applied retroactively to maintain a single source of truth. The pipeline enforces current rules on all files.

@@ -23,7 +23,9 @@ Encode the rule as data in `_assets/cast/character_profiles.json` under
 - `episode_overrides` carries the exceptions: a flat `ref` (EP08) or
   `scene_ranges` for intra-episode transitions (EP09: damaged S01–S26, kintsugi
   S27+).
-- A JSON Schema (`character_profiles.schema.json`) constrains the shape.
+- A JSON Schema (`character_profiles.schema.json`) constrains the shape. Schema is
+  structurally validated by CI (`character_profiles_validator.py`); full JSON Schema
+  draft-2020-12 validation is deferred per the stdlib-only constraint.
 
 Phase 3 (`kintsugi`) has no dedicated reference file yet; it explicitly allows
 the `damaged` reference as its base plus text/chain refs.

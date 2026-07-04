@@ -100,12 +100,26 @@ Read these files in this exact order:
 - This grid is the backbone of all timing decisions.
 
 ### Step 2: Map Energy to Motion
+
+**Terminology note:** "Beat sync" in this pipeline means section-level and phrase-level synchronization — aligning camera cuts, motion intensity, and visual transitions to musical section boundaries and phrase transitions. It does NOT mean frame-accurate beat-grid quantization (BPM-locked cuts on every downbeat). The musical metadata JSON provides section timestamps, not individual beat positions.
+
 - Energy levels from the musical metadata directly inform motion intensity:
   - `low` energy → Motion strength 1-3 (subtle breathing, slow drift)
   - `medium` energy → Motion strength 4-5 (steady cinematic movement)
   - `high` energy → Motion strength 6-8 (dynamic, purposeful movement)
   - `peak` energy → Motion strength 8-10 (maximum intensity, controlled chaos)
   - `building` energy → Motion strength ramps progressively within the section
+  - `medium-low` energy → Motion strength 2-3 (gentle drift, slow atmospheric movement)
+  - `medium-high` energy → Motion strength 5-6 (rising intensity, fuller cinematic movement)
+  - `explosive` energy → Motion strength 9-10 (maximum blast, climax-only)
+  - `theatrical` energy → Motion strength 5-7 (dramatic delivery, measured grandeur)
+  - `epic` energy → Motion strength 6-8 (sweeping dynamics, orchestral weight)
+  - `rising` energy → Motion strength ramps progressively (similar to building)
+  - `chaotic` energy → Motion strength 8-10 (unstructured intensity)
+  - `fading` energy → Motion strength ramps down progressively within the section
+  - `still` energy → Motion strength 1-2 (near-frozen, spoken word ambience)
+  - `minimal` energy → Motion strength 1 (whisper, near-silence)
+  - `slowing` energy → Motion strength ramps down with tempo deceleration
 
 ### Step 3: Identify Beat Sync Critical Points
 - Scan the musical metadata for:
@@ -418,6 +432,8 @@ After the Coverage Summary, include:
 Local variety check: ✅ All 5-clip windows contain ≥3 different moves.
 Accent move budget: Orbital ×2, Crane Up ×1 — within limits.
 ```
+
+**Director's guard:** Camera diversity quotas are a floor, not a ceiling — and never a substitute for motivation. Every camera move must first be justified by the moment it serves: what the narrative demands, what the music suggests, what the frame composition allows. A move that satisfies the quota but serves no dramatic purpose is worse than a quota violation with a justified `[DISSONANCE]` tag. The quotas prevent the monotony trap (EP06's 42% zoom-in); the director's eye prevents the checkbox trap.
 
 ---
 

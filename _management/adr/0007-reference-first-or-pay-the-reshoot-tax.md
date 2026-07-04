@@ -57,3 +57,5 @@ reference, THEN write/generate scenes against it.**
 - The honest version of this story is itself the most valuable lesson of the
   build-along (see the EP09 Part 05 framing) — the cost of skipping reference-first,
   shown live.
+
+**Note on empirical claims (2026-07-04):** The "80-90% first-pass" and "8-10x reshoot" figures are experiential observations from the director's production notes, not instrumented telemetry. No automated retry logging exists. Raw folders in `04_visuals/raw/` contain unnumbered generation attempts but are not systematically labeled. Future episodes may adopt a lightweight attempt-log convention: an `attempts.md` file in each `raw/` folder noting the attempt count per scene.

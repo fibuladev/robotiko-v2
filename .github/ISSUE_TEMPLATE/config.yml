@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question (Discussions)
+    url: https://github.com/fibuladev/robotiko-v2/discussions
+    about: General questions about using the method, running the pipeline, or forking it for your own universe. Not for bugs — use a template below.
+  - name: Support guide
+    url: https://github.com/fibuladev/robotiko-v2/blob/main/SUPPORT.md
+    about: Not sure where your question belongs? Start here.

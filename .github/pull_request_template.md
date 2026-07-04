@@ -23,8 +23,7 @@ EP___
 
 ## Testing
 <!-- How was this tested? -->
-- [ ] `python tests/naming_check.py` passed
-- [ ] `python tests/pipeline_integrity.py` passed
+- [ ] `python tests/run_all.py` passed (single gate, nine check groups — see `tests/README.md`)
 - [ ] Manual review completed
 
 ## Related issues

@@ -201,4 +201,13 @@ This project runs on a simple philosophy of **symbiosis**: a human and a crew of
 
 > *"Even if you are hurt, do not hurt others."*
 
+**Community resources.** This philosophy is backed by a few short, concrete
+documents: the enforceable version of it lives in
+[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md); how the one-person maintainer
+model actually works (what's open, what's canon-locked, response-time
+honesty) is in [GOVERNANCE.md](GOVERNANCE.md); where to bring a question is
+in [SUPPORT.md](SUPPORT.md); and the registry for universes forked from this
+method — currently empty, waiting for entry #1 — is
+[UNIVERSES.md](UNIVERSES.md).
+
 Take the pipeline. Build your universe. Teach us something new.

@@ -1,0 +1,16 @@
+version: 2
+updates:
+  # GitHub Actions used by the CI workflows. Actions are pinned to immutable
+  # commit SHAs (see .github/workflows/validation_suite.yml comments) for
+  # supply-chain safety; Dependabot proposes the SHA bump as a reviewable PR.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # The only npm surface in the repo: the custom Google Drive MCP server.
+  # See _tools/mcp-gdrive/package.json.
+  - package-ecosystem: "npm"
+    directory: "/_tools/mcp-gdrive"
+    schedule:
+      interval: "weekly"

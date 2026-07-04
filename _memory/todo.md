@@ -5,6 +5,33 @@
 
 ---
 
+## SESSION PAUSE NOTE (2026-07-05, usage limit)
+
+Committed: WS1 592055e (doc-rot sweep + architecture v3.0 + metadata sync + doc-reference
+lint, 9th check group) · WS2-gates dda0afd (approvals.json, disk/metadata state machine,
+M4 real fix, 79 meta-tests) · WS8 d7ab5b1 (community files) · WS-H e31ac0e
+(hallucinating-camera.md + S30 case; tutorial TAKE 06 is local-only, _tutorial gitignored).
+
+**IN FLIGHT when paused — 3 subagents were editing the working tree; their changes may be
+partial and UNCOMMITTED. Next session MUST start with: git status + python tests/run_all.py,
+audit the diffs, then commit thematically:**
+- W2c: motion/music validators (camera 5-clip window + accent budget + personality,
+  energy->motion heuristic, EP08 overlay convention)
+- W9: RELEASE.md runbook + ADR-0011 draft + create_episode.yml PR flow + CI job summary
+- W6: _templates/ep_sync_qc_template.md + scripts/sync_probe.py + tests/attempts_report.py
+  + pipeline_rules additions
+
+Fibula decisions RESOLVED: golden report = ADR'd transparency (finalize ADR-0011 to
+ACCEPTED after W9's sensitivity check) · curated frames = YES full set (<15MB, curation
+WITH Fibula — interactive) · episode guide = README section.
+
+Remaining waves: canon/style bundle (eye ADR-0010 + suffix v2 ADR-0009) -> WS7 fork path
+(FORKING.md + toy-universe dry-run) -> WS4/5 showcase (README v2, visual-canon, frames
+curation) -> Fable verification pass -> panel re-score. EP10 session separately
+(_private/ep10_first_thoughts.md ready).
+
+---
+
 ## CURRENT PRIORITY: REPO-READINESS PROGRAM (2026-07-05)
 > Source: 10-lens expert panel (path-to-5.0). Full roadmap: `_private/audit_2026-07/path_to_five_roadmap.md`.
 > EP10 items deferred to a dedicated session — first thoughts at `_private/ep10_first_thoughts.md`.

@@ -409,6 +409,33 @@ and launch playbooks live in the creator's private notes (not part of the open m
 
 ---
 
+## NEXT: EP09 PRODUCTION
+
+- [x] `ep09_lyrics_v01.md` — Lyrics complete (scaffolded 2026-06-11)
+- [x] `ep09_musical_metadata.json` — 22 sections, 423s, 77 BPM, E Minor
+- [x] `ep09_concept_notes.md` — Concept notes written & APPROVED
+- [x] `ep09_dramaturgy_v01.md` — 38 scenes, 423s, 14 overrides, Discovering Camera — APPROVED
+- [x] `ep09_visual_prompts_v01.md` — Visual prompts generated
+- [x] Image generation — 38 scene images + 5 ref images + 2 Mode B end-frames (11b.png, 27b.png)
+- [x] Human selects images ✅ (raw/ keepers used per SKILL.md fallback)
+- [x] `ep09_motion_script_v01.md` — 41 clips, 97.0% raw coverage, 100% effective ✅ 2026-06-30
+- [ ] **[CHECKPOINT]** Human approves motion script
+- [ ] Video generation
+- [ ] Final edit — CapCut
+
+### 2026-06-30 Session Summary (EP09 Motion Script v01)
+**Task:** Generate EP09 motion script from approved dramaturgy (38 scenes) + raw images (build-along tutorial recording — English session).
+**Deliverable:** `episode-09/05_video/ep09_motion_script_v01.md` — 41 clips (38 shots: 35 single + 3 multi-clip for S27, S35, S36).
+**Coverage:** 410s generated / 423s music = 97.0% raw, 100% effective with 13 speed ramps.
+**Tool assignment:** Kling 3.0: 38 clips (92.7%), Kling 2.5 Turbo: 2 clips (4.9%), Seedance 1.0: 1 clip (2.4%). High K3.0 ratio justified — 32/38 scenes feature Robotiko (needs Elements) + most have camera moves.
+**Key decisions:** (1) MS average 3.15 — appropriate for spoken-word pacing at 77 BPM. (2) Mode B: S11 (shutter day→night), S27a (@Damaged→first gold, Phase 2→3 transition). (3) [DISSONANCE] at S23 ("I AM THE BUG" — explosive music + Static camera). (4) Still Hold at S25 (a cappella — MS 1 after S22 MS 6 + S23 MS 5). (5) Grain Crescendo S19–S23, inverts at S38. (6) Lighting Flip at S29 (external lamp dims, core brightens — philosophy = lighting). (7) Six "Deeper Than" zoom-outs mapped to Discovering Camera. (8) Shadow compositing S12–S24 = CapCut hard-light keyframes, NOT Kling motion. (9) 2 Frame Chains: S34→S35a→S35b (workshop pullback), S36a→S36b (threshold→dawn). (10) All 5s scenes upgraded to 10s clips for coverage. (11) 0 supplementary images needed.
+**Camera diversity:** Static 29.3% (pass <30%), SZO 24.4%, SZI 19.5%. All 37 five-clip windows ≥3 types. 10 different camera moves used. Accent budget: Handheld ×1, Crane ×2.
+**Art Direction signatures:** Chrome Reflection (S17), Architecture Cage (S08/S16), Amber Pulse (S07), Still Hold (S25), Grain Crescendo (S19–S23/S38).
+**Beat sync:** 15 entries covering all major musical events.
+**Next step:** Human reviews and approves motion script → then video generation begins.
+
+---
+
 ## BACKLOG
 
 ### Skills (Content to Write)

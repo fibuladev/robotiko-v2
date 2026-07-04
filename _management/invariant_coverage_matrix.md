@@ -12,7 +12,7 @@
 - 🔵 **Human** — gated by a person at a checkpoint; no automation claimed.
 - ⚪ **Gap** — an invariant we care about with **no** automated check yet.
 
-_Last updated: 2026-06-26 (EP09 Validation Backbone)._
+_Last updated: 2026-07-04 (Audit Fix Session — H1/M1 validators added)._
 
 ## Pipeline / content invariants
 
@@ -29,9 +29,12 @@ _Last updated: 2026-06-26 (EP09 Validation Backbone)._
 | Robotiko **body-state keywords** match phase | 🟡 Heuristic | `check_character_phase` + subject-guard + scene-pinned whitelist ([ADR 0004](adr/0004-triage-policy-and-check-refinements.md)) | Free-text; cannot fully attribute an adjective to a subject. Backed up by the 🟢 reference check. |
 | **Prompt strings are plain-English ASCII** (model-facing only) | 🟢 Machine | `prompt_hygiene_lint.py` ([ADR 0006](adr/0006-scoped-prompt-hygiene.md)) | Scoped to Text/Motion prompt blockquotes; non-ASCII + tradition-label decoration. |
 | **Cultural attribution** scoping (canon vs prompt) | 🟢 Machine (prompt) + 🔵 Human (canon) | `prompt_hygiene_lint.py` for prompts; canon is human-authored | Was ⚪ Gap. The lint enforces ASCII/no-label in prompt strings and deliberately never reads master.md or direction notes — canon keeps its sanctioned Turkish. |
-| **Anti-spawn guard** phrasing (tool-aware) | ⚪ Gap | — (skill rule only) | The visual-prompts SKILL mandates the phrasing; nothing validates its presence/shape yet. Candidate next check. |
+| **Musical metadata** structure + vocabulary | 🟢 Machine | `musical_metadata_validator.py` | Required fields, energy/type vocabulary, timestamp monotonicity, total_duration match. Overlaps are WARN (intentional layering in EP08). |
+| **Anti-spawn guard** on motion prompts | 🟢 Machine | `motion_script_validator.py` | Checks standard guard + recognized alternatives ("No third figure", "Exactly two instances"). Pre-SKILL-v2 episodes are WARN-only. |
+| Mandatory **video suffix** on motion prompts | 🟢 Machine | `motion_script_validator.py` | Exact-substring match. Pre-SKILL-v2 episodes are WARN-only. |
+| **Camera diversity** quotas | 🟢 Machine | `motion_script_validator.py` | No single move >30%, Static >=15%. Pre-SKILL-v2 episodes are WARN-only (EP06's 42% zoom-in is a known shipped issue). |
 | **Eye rule** — no glow keyword for eyes | ⚪ Gap | — (lesson + skill only) | "dark amber glass lenses…" formula is documented, not enforced. Candidate next check. |
-| Mandatory **video suffix** on motion prompts | ⚪ Gap | — | No motion-script validator exists; suffix is human-checked. |
+| EP01 visual prompts | 🔵 Human | — | EP01 visuals are a PDF (`ep01_visual_prompts.pdf`) — pre-method episode, not machine-parseable. |
 
 ## Golden Rules (narrative / philosophical)
 

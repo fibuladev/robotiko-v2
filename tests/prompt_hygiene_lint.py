@@ -85,11 +85,18 @@ _TRANSLIT = {
 # ─────────────────────────────────────────────
 
 def in_scope_files(repo_root: str = ".") -> list:
-    """Every file this lint may open. By construction, only prompt-bearing files."""
-    files = []
+    """Latest version of each in-scope file per episode. By construction, only prompt-bearing files."""
+    all_files = []
     for _kind, pattern, _marker in IN_SCOPE:
-        files.extend(sorted(glob.glob(os.path.join(repo_root, pattern))))
-    return files
+        all_files.extend(sorted(glob.glob(os.path.join(repo_root, pattern))))
+    latest = {}
+    for path in all_files:
+        ep_dir = os.path.dirname(os.path.dirname(path))
+        kind = "visual" if "04_visuals" in path else "motion"
+        key = (ep_dir, kind)
+        if key not in latest or path > latest[key]:
+            latest[key] = path
+    return sorted(latest.values())
 
 
 def marker_for(path: str) -> str:

@@ -32,6 +32,7 @@ FOLDERS = [
     "05_video/raw",
     "05_video/selected",
     "06_edit",
+    "07_social_media",
 ]
 
 # template filename -> destination (relative to the episode folder)

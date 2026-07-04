@@ -286,3 +286,11 @@ The full method — pipeline, skills, templates, tests, MCP server, management d
 - **Creative content** (lyrics, dramaturgy, the ROBOTIKO universe, character designs): **CC BY-NC 4.0** (`LICENSE-CONTENT`).
 
 **What a fork inherits:** a complete, traceable AI-assisted production pipeline; 10 reusable skill definitions; `CLAUDE.md` + management docs as templates; the enforcement layer; the proof of concept — one human plus a crew of machines producing a 10-episode series. Take the method, build your own universe.
+
+---
+
+## Binary Asset Resilience
+
+Rendered assets (images, video clips, audio files, final edits) are gitignored — they live on Google Drive via the MCP server, not in the repository. Binary backup and disaster recovery is the operator's responsibility, not the pipeline's scope.
+
+The project maintainer runs a 3-copy / 2-media / 2-account setup (production Drive + personal Drive mirror on a separate Google account + portable physical disk). Fork operators should establish their own equivalent. The pipeline produces recipes and paper trails; the operator stores the renders.

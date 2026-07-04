@@ -26,7 +26,6 @@ const TOKEN_PATH = process.env.GDRIVE_TOKEN_PATH || join(CONFIG_DIR, 'tokens.jso
 // Scopes — only what we need for asset management
 const SCOPES = [
   'https://www.googleapis.com/auth/drive.file',
-  'https://www.googleapis.com/auth/drive',
 ];
 
 /**

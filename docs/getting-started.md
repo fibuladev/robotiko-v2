@@ -29,7 +29,7 @@ You need a few accounts and a little local setup. The table below is the short v
 **Local environment**
 
 - **A git client** — any recent [Git](https://git-scm.com/downloads) install. The whole studio is a git repository.
-- **Python 3.9+** — [python.org/downloads](https://www.python.org/downloads/). Used by the scaffolding script and the validator tests. No third-party packages required for scaffolding.
+- **Python 3.11+** — [python.org/downloads](https://www.python.org/downloads/). Used by the scaffolding script and the validator tests. No third-party packages required for scaffolding.
 - **Claude Code** (Anthropic) — the director and crew. Install and sign-in instructions: [docs.claude.com/en/docs/claude-code](https://docs.claude.com/en/docs/claude-code). It reads `CLAUDE.md` automatically on session start.
 
 **Creative tool accounts** (each handles one pipeline stage)

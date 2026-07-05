@@ -286,4 +286,6 @@ A transferable checklist, earned from one small bug:
 
 *Born out of the EP09 "Validation Backbone" build-along. Decisions:
 [`_management/adr/`](adr/). Coverage: [`invariant_coverage_matrix.md`](invariant_coverage_matrix.md).
-Rules: [`_memory/lessons.md`](../_memory/lessons.md) (Pipeline Validation Backbone).*
+Rules: [`_memory/lessons.md`](../_memory/lessons.md) (Pipeline Validation Backbone).
+The transferable method this bug taught — how a correction graduates from note to CI
+gate — is named in [`docs/method-lesson-graduation.md`](../docs/method-lesson-graduation.md).*

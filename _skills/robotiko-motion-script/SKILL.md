@@ -49,6 +49,8 @@ When should visual REFUSE to match music?
 
 Mark these moments with `[DISSONANCE]` tag in the Musical Moment field. Include a 1-line justification.
 
+Every tagged shot is logged in [`_management/dissonance_registry.md`](../../_management/dissonance_registry.md) — the human-readable ledger behind the machine exemption in `tests/energy_motion_check.py` (an exemption without a ledger is a loophole).
+
 ### Glitch Production Policy
 
 "Glitch is Scripture" = NARRATIVE METAPHOR. In production:

@@ -60,6 +60,9 @@ CURATED_DOCS = [
     "docs/tools-setup.md",
     "docs/skills-guide.md",
     "docs/anatomy-of-an-episode.md",
+    "docs/hallucinating-camera.md",
+    "docs/method-lesson-graduation.md",
+    "_management/dissonance_registry.md",
 ]
 
 # Extensions that mark a backtick token as a file path.

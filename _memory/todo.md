@@ -5,6 +5,29 @@
 
 ---
 
+## REPO-READINESS PROGRAM — COMPLETED (2026-07-05)
+
+10-lens final rescore: **4.22 → 4.80 (+0.58)**. 9/10 lens "kapsam-içi kalan: yok".
+All 9 workstreams delivered (16 thematic commits). Report: `_private/audit_2026-07/repo_readiness_rescore.md`.
+
+| Lens | Önceki | Yeni | Delta |
+|---|---|---|---|
+| Dramaturg | 4.6 | 4.9 | +0.3 |
+| Solution Architect | 4.6 | 4.9 | +0.3 |
+| Film Director | 4.6 | 4.9 | +0.3 |
+| AI Systems | 4.5 | 4.8 | +0.3 |
+| OS Maintainer | 4.5 | 4.8 | +0.3 |
+| Art Director | 4.5 | 4.9 | +0.4 |
+| Music Director | 4.6 | 4.9 | +0.3 |
+| DevOps | 4.4 | 4.8 | +0.4 |
+| HN Skeptic | 2.5 | 4.5 | +2.0 |
+| OSS Community | 3.4 | 4.6 | +1.2 |
+
+Remaining 0.20 to 5.0 = EP10 film + post-launch community proof + time.
+**Next:** EP10 brainstorming session + HN/Reddit strategy + pre-written articles.
+
+---
+
 ## SESSION PAUSE NOTE (2026-07-05, usage limit)
 
 Committed: WS1 592055e (doc-rot sweep + architecture v3.0 + metadata sync + doc-reference
@@ -39,16 +62,16 @@ curation) -> Fable verification pass -> panel re-score. EP10 session separately
 > EP10 items deferred to a dedicated session — first thoughts at `_private/ep10_first_thoughts.md`.
 > Execution model: Fable organizes/audits; mechanical work delegated to Opus 4.8 / Sonnet 5 subagents.
 
-- [ ] **WS1 — Docs match reality 1:1:** doc-rot sweep (dead hook refs, mcp scope line, matrix filename, placeholders) · architecture.md v3.0 · doc-reference lint (new, run_all group 9) · project_metadata.json sync
-- [ ] **WS2 — Validator & gate completion:** eye-canon reconciliation + glow-guard (ADR-0010) · M4 real fix (recursive PDF detect + visible skip) · pipeline state machine · approvals.json ledger (ADR-0008) · full camera-diversity check (5-clip window) · energy→motion cross-check · overlay convention (EP08) · suffix v2 doctrine (ADR-0009) · matrix completion + run_all --coverage
-- [ ] **WS-H — Reshoot honesty:** ~75-85% first-pass statement (experiential label) · S30 case study (single-frame zoom-out → Mode B end-frame rescue) into docs + lessons + motion SKILL note · new tutorial TAKE in ep09_buildalong_07
-- [ ] **WS8 — Community surface:** CODE_OF_CONDUCT, SECURITY, SUPPORT, dependabot · issue templates + config.yml + PR template one-gate fix · GOVERNANCE.md · ROADMAP.md · UNIVERSES.md + Discussions draft · good-first-issue stock · reception playbook
-- [ ] **WS7 — FORKING.md golden path:** universe constants to single config · toy-universe dry run (logged) · FORKING.md (root) · text-only first-episode walkthrough
-- [ ] **WS9 — Release engineering:** RELEASE.md runbook + golden-report git-history DECISION (ADR-0011, Fibula) · create_episode.yml PR flow + CI job summary
-- [ ] **WS6 — Telemetry:** sync QC convention + EP08 retro record · sync_probe.py · attempts.md infra (fill at EP10)
-- [ ] **WS4 — Public showcase:** README v2 (hero, watch links, destruction strip, CI proof, honesty box) · episode guide (no master.md duplication) · visual canon + curated frames (Fibula decision, <15MB) · anatomy visual trail
-- [ ] **WS5 — Method docs:** hallucinating-camera.md (with S30 case) · lesson-graduation ladder · DISSONANCE registry
-- [ ] **Closing ritual:** Fable full verification pass → expert panel re-score → 5.0 → next: HN/Reddit strategy + articles + EP10 brainstorming
+- [x] **WS1 — Docs match reality 1:1** ✅
+- [x] **WS2 — Validator & gate completion** ✅
+- [x] **WS-H — Reshoot honesty** ✅
+- [x] **WS8 — Community surface** ✅
+- [x] **WS7 — FORKING.md golden path** ✅
+- [x] **WS9 — Release engineering** ✅
+- [x] **WS6 — Telemetry** ✅
+- [x] **WS4 — Public showcase** ✅
+- [x] **WS5 — Method docs** ✅
+- [x] **Closing ritual:** 10-lens panel re-score completed → 4.80/5.0 → repo-readiness DONE
 
 ---
 

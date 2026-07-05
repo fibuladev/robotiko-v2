@@ -66,6 +66,7 @@ CURATED_DOCS = [
     "FORKING.md",
     "docs/fork-dry-run.md",
     "docs/text-only-first-episode.md",
+    "docs/visual-canon.md",
 ]
 
 # Extensions that mark a backtick token as a file path.

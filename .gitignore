@@ -54,6 +54,10 @@ episode-*/05_video/selected/
 episode-*/02_music/*.wav
 episode-*/02_music/*.mp3
 
+# Frame-curation staging (full-res originals dropped here by the curator;
+# processed low-res frames land in _assets/style/frames/ which IS tracked)
+_curation_staging/
+
 # -----------------------------------------------------------------------------
 # PYTHON
 # -----------------------------------------------------------------------------

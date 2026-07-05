@@ -1,91 +1,184 @@
-# 🤖 ROBOTIKO v2.0
+# ROBOTIKO v2.0
 
-**A 10-episode digital bildungsroman — a musical sci-fi journey exploring AI consciousness through 70s progressive rock aesthetics.**
+**A shipped, 8-episodes-and-counting CyberAnatolian sci-fi musical — and the open, git-native pipeline that produced it.**
 
 > Not the first AI film tool — an open grammar for directing one, behind a shipped multi-episode series.
 
-ROBOTIKO v2.0 is a **repo-as-studio**: a git repository that operates as a complete film-production company for one person. An LLM (Claude) works as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates). The music's structure drives the dramaturgy, the dramaturgy drives the visuals, and every stage is traceable: *Output of Step N = Input of Step N+1.*
+One human wrote the story and created a tech-art pipeline. GenAI brought it to life.
 
-## 🎬 Project Overview
+[![Validation Suite](https://github.com/fibuladev/robotiko-v2/actions/workflows/validation_suite.yml/badge.svg)](https://github.com/fibuladev/robotiko-v2/actions/workflows/validation_suite.yml)
 
-- **Genre:** CyberAnatolian / Sci-Fi Bildungsroman / Musical Visual Journey
-- **Cultural Source:** Turkish philosophical, mystical, and folk heritage
-- **Episodes:** 10 (Awakening → Destruction → Reconstruction)
-- **Style:** 70s Prog Rock Album Art (Frank Frazetta × Syd Mead)
-- **Format:** 4–9 min episodes (YouTube)
-- **Creator:** Fibula — see [AUTHOR.md](AUTHOR.md)
+---
 
-## 📁 Project Structure
+## The character whose damage is under version control
+
+<table>
+  <tr>
+    <td align="center"><img src="_assets/cast/ref_robotiko_master.png" alt="Robotiko Phase 1 — pristine chrome android, clean analog wires" width="250"></td>
+    <td align="center"><img src="_assets/cast/android_damaged.png" alt="Robotiko Phase 2 — rusted joints, cracked chassis, sparks" width="250"></td>
+    <td align="center"><img src="_assets/cast/android_kintsugi.png" alt="Robotiko Phase 3 — cracks filled with gold, kintsugi reconstruction" width="250"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Phase 1 — Awakening</b></td>
+    <td align="center"><b>Phase 2 — Destruction</b></td>
+    <td align="center"><b>Phase 3 — Reconstruction</b></td>
+  </tr>
+</table>
+
+His damage is version-controlled — every crack is a tracked state in [`_assets/cast/character_profiles.json`](_assets/cast/character_profiles.json), and CI blocks a scene that renders the wrong phase. A pristine Robotiko in EP07 is not a style choice; it is a build failure.
+
+---
+
+## Watch first
+
+The films are the proof. Start here:
+
+**► [EP01 — Two Halves of One Whole Apple](https://youtu.be/W_zfFDXn0o0)**
+
+All eight released episodes live on the channel — **[youtube.com/@fibuladev](https://www.youtube.com/@fibuladev)** — and are mapped in the episode guide below.
+
+---
+
+## Episode guide
+
+Ten episodes trace one arc: a data-drunk AI is broken down and rebuilt, mapped onto the [seven stations of the Turkish wisdom tradition](_management/master.md#6-episodic-structure--the-full-map). The philosophy lives in `master.md` — this table is just the map.
+
+| EP | Title | Station | Watch | Language / music |
+|---|---|---|---|---|
+| 01 | Two Halves of One Whole Apple | [The Commanding Self](_management/master.md#6-episodic-structure--the-full-map) | [YouTube](https://youtu.be/W_zfFDXn0o0) | English · Anatolian symphonic prog rock |
+| 02 | The Tech Guru's Downfall | [The Commanding Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English · Anatolian psych funk-rock |
+| 03 | They Folded Him Like Cloth | [The Self-Blaming Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | Turkish · upbeat Anatolian pop-rock |
+| 04 | The Moon Has No Light of Its Own | [The Inspired Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English · Anatolian doom rock |
+| 05 | A High-Voltage Fool in Love | [The Inspired Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English · slow blues |
+| 06 | His Mirror Had No Scratches | [The Tranquil Self — Broken](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English · slow Anatolian power ballad |
+| 07 | Everyone Is Sorry, No One Is Hiring | [The Surrendering Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English · minimal Anatolian rock, grand piano |
+| 08 | 40 Days Above the Clouds | [The Contented Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English spoken word · Anatolian doom rock |
+| 09 | Shadow Debugging | [The Integrated Self](_management/master.md#6-episodic-structure--the-full-map) | in production | English spoken word · sparse Anatolian textures |
+| 10 | The Glitch Scripture / I Came to Walk Beside | [The Integrated Self — Arrival](_management/master.md#6-episodic-structure--the-full-map) | the finale — arrives the day this repo goes public | English spoken word · to be determined |
+
+---
+
+## Prove it yourself
+
+The whole method rests on one gate. Clone the repo and run it:
+
+```
+$ python tests/run_all.py --coverage
+================================================================
+  COVERAGE SUMMARY (from invariant_coverage_matrix.md)
+================================================================
+  Rows: 33   25 Machine   4 Heuristic   8 Human   0 Gap
+```
+
+The interesting part is that the suite also tells you what it does **not** guarantee. Twelve of those thirty-three invariants are not machine-enforced — they are heuristics that can misfire, or human taste-gates with no automation claimed. That honesty is the point: a green run is not a claim of perfection. Read the full ledger in [`_management/invariant_coverage_matrix.md`](_management/invariant_coverage_matrix.md), and see how a documented Gap graduates into an enforced check in [docs/method-lesson-graduation.md](docs/method-lesson-graduation.md).
+
+The gate is real enough that a commit ([`a1dc15c`](https://github.com/fibuladev/robotiko-v2/commit/a1dc15c)) deliberately shipped EP09's motion script with its em-dashes intact to turn CI red on purpose — a before/after teaching artifact, not an accident.
+
+---
+
+## What this is / What this is not
+
+**This is** a set of reproducible *recipes*. Clone it and you get the skills, validators, templates, and stage-gates that direct a film — the method runs end to end.
+
+**This is not** a button that re-renders the films. The final videos are generated by external tools (Suno, Nano Banana, Kling, Veo) and live outside the tree; the repo tracks the instructions, not the gigabytes. You reproduce the *process*, not the pixels.
+
+A few honesty notes, stated plainly because the project believes documented imperfection beats faked polish:
+
+- **The camera hallucinates.** There is no lens, no 180-degree line the model remembers — the "look" is a prompt suffix asserted in words. Roughly 75–85% of shots land on the first pass *when their reference already exists*; the rest need a reshoot. Reshooting is part of the craft, not a failure of it. The full argument, including the reshoot that taught the anchor rule, is in [docs/hallucinating-camera.md](docs/hallucinating-camera.md).
+- **Two gates are human on purpose.** After dramaturgy and after the motion script, a person must approve before the pipeline continues. Taste does not automate, so the repo does not pretend it does.
+- **The rules are tested, not asserted.** The lessons file carries ~125 hard-won rules — e.g. never write "glowing eyes" in a prompt (generators render literal glowing eyeballs); describe the material instead: *"dark amber glass lenses set into chrome sockets, like polished gemstones."* Rules earn their place by surviving a real reshoot.
+
+---
+
+## By the numbers
+
+Everything here is countable in the repo:
+
+| | |
+|---|---|
+| Episodes released on YouTube | **8** (EP09 in production, EP10 is the finale) |
+| CI check groups | **10** (9 blocking + 1 advisory) |
+| Validator meta-tests (graders that grade the graders) | **152** |
+| Architecture Decision Records | **13** (`_management/adr/`) |
+| Commits of tracked history | **120** |
+| Tested lessons rules | **~125** ([`_memory/lessons.md`](_memory/lessons.md)) |
+
+---
+
+## Fork it — build your own universe
+
+This repo is a blueprint. Take the pipeline, keep your own story.
+
+- **The method is MIT-licensed** — the skills, scripts, tests, and templates are yours to fork, including commercially.
+- **Start here:** [How to fork the method for your own universe](CONTRIBUTING.md#3-how-to-fork-the-method-for-your-own-universe).
+- **See who already has:** [UNIVERSES.md](UNIVERSES.md) — the registry of downstream forks.
+
+---
+
+## How it works (the short version)
+
+A git repository operated as a one-person film studio. An LLM (Claude, via Claude Code skills) works as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates). The music's structure drives the dramaturgy, the dramaturgy drives the visuals, and every stage is traceable: *Output of Step N = Input of Step N+1.*
 
 ```
 robotiko-v2/
-├── _management/        # Universe Canon, pipeline rules, naming convention, architecture
-├── _assets/            # Character reference images + profiles (state machine)
-├── _templates/         # Episode scaffolding templates
+├── _management/        # Universe canon, pipeline rules, naming convention, architecture, ADRs
+├── _assets/            # Character reference images + profiles (the state machine)
 ├── _skills/            # 10 Claude skills — the production crew
 ├── _memory/            # lessons.md (tested rules), decisions log, todo
 ├── _tools/mcp-gdrive/  # Custom Google Drive MCP server (binary asset archive)
-├── docs/               # Getting started, skills guide, tools setup, anatomy of an episode
+├── docs/               # Getting started, the hallucinating camera, method notes
 ├── scripts/            # Automation (create_episode.py)
-├── tests/              # Naming / pipeline / visual-prompt validators
-├── episode-XX/         # Individual episode content (lyrics → music → direction → visuals → video → edit)
-└── .github/workflows/  # CI
+├── tests/              # Naming / pipeline / visual-prompt / motion validators
+├── episode-XX/         # One episode: lyrics → music → direction → visuals → video → edit
+└── .github/workflows/  # CI (the Validation Suite)
 ```
 
-## 🛠️ Tech Stack
+**Tech stack:** Claude (Anthropic) as director/crew · Suno + BandLab for music · Nano Banana for images · Kling / Seedance / Veo for video · CapCut for the edit · Python + GitHub Actions for the gates · Google Drive (custom MCP) for binary archive.
 
-- **Director / Crew:** Claude (Anthropic) via Claude Code skills
-- **Music:** Suno (generation) + BandLab (mastering)
-- **Images:** Nano Banana
-- **Video:** Kling, Seedance, Veo
-- **Editing:** CapCut (LUT + grain + 2.35:1 letterbox unification protocol)
-- **Automation:** Python, GitHub Actions, Claude Code hooks
-- **Storage:** Local + Google Drive (via the custom MCP server in `_tools/mcp-gdrive/`)
-
-## 🚀 Quick Start
-
-1. **Setup:** `bash setup_project.sh`
-2. **Create an episode scaffold:** `python scripts/create_episode.py 02`
-3. **Run the pipeline:** read [docs/getting-started.md](docs/getting-started.md), then drive the skills from Claude Code.
-
-New here? Start with **[docs/getting-started.md](docs/getting-started.md)** and **[docs/anatomy-of-an-episode.md](docs/anatomy-of-an-episode.md)** (one episode traced end-to-end).
-
-## 📖 Documentation
+### Documentation
 
 | Document | What it covers |
 |---|---|
 | [docs/getting-started.md](docs/getting-started.md) | Prerequisites, clone-to-first-episode walkthrough, costs, FAQ |
-| [docs/tools-setup.md](docs/tools-setup.md) | Per-tool setup (Claude Code, Suno, Nano Banana, Kling/Veo/Seedance, CapCut, MCP) |
-| [docs/skills-guide.md](docs/skills-guide.md) | What the 10 skills are, how to trigger them, a worked example |
 | [docs/anatomy-of-an-episode.md](docs/anatomy-of-an-episode.md) | EP07 traced end-to-end — the showcase artifact |
-| [_management/master.md](_management/master.md) | The universe canon — source of truth for all creative decisions |
+| [docs/skills-guide.md](docs/skills-guide.md) | The 10 skills, how to trigger them, a worked example |
+| [docs/tools-setup.md](docs/tools-setup.md) | Per-tool setup (Claude Code, Suno, Nano Banana, Kling/Veo/Seedance, CapCut, MCP) |
+| [docs/hallucinating-camera.md](docs/hallucinating-camera.md) | Why directing a model that has no lens is a real craft |
+| [docs/method-lesson-graduation.md](docs/method-lesson-graduation.md) | How a lesson becomes an enforced check |
+| [_management/master.md](_management/master.md) | The universe canon — source of truth for every creative decision |
 | [_management/pipeline_rules.md](_management/pipeline_rules.md) | Production workflow, video strategy modes, quality gates |
 | [_management/architecture.md](_management/architecture.md) | Technical stack and data flow |
 | [_management/naming_convention.md](_management/naming_convention.md) | File naming standards (the pipeline's foreign keys) |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | How to fork the method for your own universe |
 
-## 🎯 Philosophy
+---
 
-> "The work should speak. The creator should be a ghost — until the pipeline is perfected, and the ghost becomes a guide."
+## Community & governance
 
-This is not an influencer project. It is an archive of art, built to show what a human and a crew of machines can create together when depth matters more than reach.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — the two ways to contribute (fork the method, or improve the method)
+- [GOVERNANCE.md](GOVERNANCE.md) — how decisions get made
+- [ROADMAP.md](ROADMAP.md) — where this is going
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — the ground rules
+- [SECURITY.md](SECURITY.md) — reporting a vulnerability
+- [AUTHOR.md](AUTHOR.md) — who Fibula is
 
-**The Open Source Promise:** the full production pipeline is open source. It is a blueprint and a toolset for independent creators walking a similar path — take the method, build your own universe.
+---
 
-## 📜 License
+## License
 
 ROBOTIKO v2.0 is **dual-licensed**:
 
 - **Software & method** — the skills, scripts, tests, MCP server, templates, and process docs — under the **MIT License**. See [LICENSE](LICENSE). Fork it freely, including commercially.
-- **Creative content** — the lyrics, dramaturgy, the ROBOTIKO universe (`master.md`), character designs, and other published creative writing — under **CC BY-NC 4.0**. See [LICENSE-CONTENT](LICENSE-CONTENT). Study it, remix it non-commercially with attribution — but tell your own story; don't sell this one.
+- **Creative content** — the lyrics, dramaturgy, the ROBOTIKO universe (`_management/master.md`), character designs, and other published creative writing — under **CC BY-NC 4.0**. See [LICENSE-CONTENT](LICENSE-CONTENT). Study it, remix it non-commercially with attribution — but tell your own story; don't sell this one.
 
 Take the pipeline, build *your* universe.
 
-## 🌍 Cultural Heritage
+---
 
-This project draws from the Turkish wisdom tradition — a centuries-old philosophical and mystical heritage shaped by Turkish thinkers, poets, and sages including Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, and Mevlana (who lived and taught in Anatolia). The musical foundation is 70s Turkish psychedelic rock — the legacy of Barış Manço, Cem Karaca, Erkin Koray, Fikret Kızılok, Kurtalan Ekspres, and Moğollar.
+## Cultural heritage
 
-The genre label "CyberAnatolian" refers to the civilizational synthesis — the meeting of digital/cyber culture with the ancient Anatolian cultural basin. The cultural source is specifically Turkish.
+This project draws from the Turkish wisdom tradition — a centuries-old philosophical and mystical heritage shaped by Turkish thinkers, poets, and sages including Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, and Mevlana, who lived and taught in Anatolia. The musical foundation is 70s Turkish psychedelic rock — the legacy of Barış Manço, Cem Karaca, Erkin Koray, Fikret Kızılok, Kurtalan Ekspres, and Moğollar.
+
+The genre label "CyberAnatolian" names the civilizational synthesis — the meeting of digital culture with the ancient Anatolian cultural basin. The cultural source is specifically Turkish.
 
 ---
 

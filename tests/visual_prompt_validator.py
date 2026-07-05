@@ -37,6 +37,12 @@ MANDATORY_SUFFIX = universe_config.VISUAL_SUFFIX
 
 FORBIDDEN_AESTHETICS = universe_config.FORBIDDEN_AESTHETICS
 
+# Which character_profiles.json key is the protagonist, and the scene-identifier
+# strings that mark a scene as featuring them. Forked in universe_config; defaults are
+# the ROBOTIKO values. Absent key -> the phase/ref checks degrade to no-ops (never crash).
+PROTAGONIST_KEY = universe_config.PROTAGONIST_KEY
+PROTAGONIST_IDENTIFIERS = universe_config.PROTAGONIST_IDENTIFIERS
+
 # Robotiko visual state per phase. The forbidden set is per-EPISODE, not per-phase,
 # because Phase 1 is NOT uniform: EP01 is pristine, but canon (character_profiles
 # evolution.phase_1_awakening) says EP02-EP03 already carry battle damage — missing
@@ -273,10 +279,14 @@ def load_profiles(repo_root: str = ".") -> dict:
 
 
 def get_phase_for_episode(episode: int, profiles: dict) -> int:
-    """Determine which phase an episode belongs to from the evolution data."""
-    evolution = profiles["robotiko"]["evolution"]
+    """Determine which phase an episode belongs to from the evolution data. Returns 0
+    (phase unknown) when the protagonist entry or its evolution block is absent — a
+    foreign-universe cast must not crash this helper."""
+    evolution = profiles.get(PROTAGONIST_KEY, {}).get("evolution")
+    if not isinstance(evolution, dict):
+        return 0
     for phase_key, phase_data in evolution.items():
-        if episode in phase_data["episodes"]:
+        if episode in (phase_data.get("episodes", []) if isinstance(phase_data, dict) else []):
             if "phase_1" in phase_key:
                 return 1
             elif "phase_2" in phase_key:
@@ -291,9 +301,11 @@ def get_expected_ref(episode: int, scene: int, profiles: dict) -> tuple:
     Given an episode and scene number, return (ref_id, allowed_paths, forbidden_paths).
     Uses phase_reference_map from character_profiles.json.
     """
-    robotiko = profiles["robotiko"]
-    ref_map = robotiko["phase_reference_map"]
-    ref_images = robotiko["reference_images"]
+    protagonist = profiles.get(PROTAGONIST_KEY, {})
+    ref_map = protagonist.get("phase_reference_map")
+    ref_images = protagonist.get("reference_images")
+    if not isinstance(ref_map, dict) or not isinstance(ref_images, dict):
+        return None, [], []
 
     ep_str = str(episode)
     ref_id = None
@@ -351,14 +363,14 @@ def check_ref_integrity(scenes: list[dict], episode_number: int) -> list[str]:
     except (FileNotFoundError, json.JSONDecodeError, KeyError):
         return ["  WARN [Ref Integrity] Could not load character_profiles.json or missing phase_reference_map."]
 
-    if "phase_reference_map" not in profiles.get("robotiko", {}):
+    if "phase_reference_map" not in profiles.get(PROTAGONIST_KEY, {}):
         return ["  WARN [Ref Integrity] character_profiles.json missing phase_reference_map — skipping ref check."]
 
-    robotiko_identifiers = ["robotiko", "chrome android"]
+    protagonist_identifiers = PROTAGONIST_IDENTIFIERS
 
     for scene in scenes:
         chars_lower = scene["characters"].lower()
-        if not any(ident in chars_lower for ident in robotiko_identifiers):
+        if not any(ident in chars_lower for ident in protagonist_identifiers):
             continue
 
         ref_id, allowed, forbidden = get_expected_ref(episode_number, scene["scene_number"], profiles)
@@ -375,7 +387,7 @@ def check_ref_integrity(scenes: list[dict], episode_number: int) -> list[str]:
         for f_path in forbidden:
             f_basename = os.path.basename(f_path).lower()
             if f_basename in combined and not has_allowed:
-                ref_images = profiles["robotiko"]["reference_images"]
+                ref_images = profiles[PROTAGONIST_KEY]["reference_images"]
                 expected_entry = ref_images.get(ref_id, {})
                 expected_path = expected_entry.get("path")
                 expected_name = os.path.basename(expected_path) if expected_path else "text-only base / chain refs (no file)"
@@ -456,7 +468,7 @@ def load_phase_whitelist(episode_number: int, profiles: dict = None) -> list:
             profiles = load_profiles()
         except (FileNotFoundError, json.JSONDecodeError, KeyError):
             return []
-    wl = profiles.get("robotiko", {}).get("phase_keyword_whitelist", {})
+    wl = profiles.get(PROTAGONIST_KEY, {}).get("phase_keyword_whitelist", {})
     return wl.get(str(episode_number), [])
 
 
@@ -485,12 +497,12 @@ def check_character_phase(scenes: list[dict], episode_number: int, whitelist: li
     if whitelist is None:
         whitelist = load_phase_whitelist(episode_number)
 
-    robotiko_identifiers = ["robotiko", "chrome android"]
+    protagonist_identifiers = PROTAGONIST_IDENTIFIERS
     errors = []
 
     for scene in scenes:
         haystack = f"{scene.get('characters', '')} {scene.get('text', '')}".lower()
-        if not any(ident in haystack for ident in robotiko_identifiers):
+        if not any(ident in haystack for ident in protagonist_identifiers):
             continue
 
         text_lower = scene.get("text", "").lower()
@@ -528,12 +540,12 @@ def check_reference_first(scenes: list[dict], episode_number: int, profiles: dic
         except (FileNotFoundError, json.JSONDecodeError, KeyError):
             return ["  WARN [Reference-First] Could not load character_profiles.json."]
 
-    robotiko = profiles.get("robotiko", {})
-    ref_images = robotiko.get("reference_images", {})
-    if not ref_images or "phase_reference_map" not in robotiko:
+    protagonist = profiles.get(PROTAGONIST_KEY, {})
+    ref_images = protagonist.get("reference_images", {})
+    if not ref_images or "phase_reference_map" not in protagonist:
         return ["  WARN [Reference-First] character_profiles.json missing reference_images / phase_reference_map."]
 
-    identifiers = ["robotiko", "chrome android"]
+    identifiers = PROTAGONIST_IDENTIFIERS
     used_ref_ids = []
     for scene in scenes:
         haystack = f"{scene.get('characters', '')} {scene.get('text', '')}".lower()

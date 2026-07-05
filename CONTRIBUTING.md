@@ -76,6 +76,10 @@ When you fork for your own universe, **all of these are yours to replace.** They
 
 ## 3. How to Fork the Method for Your Own Universe
 
+> **In a hurry?** [FORKING.md](FORKING.md) is the checklist version of this section —
+> the exact files, the three commands, and the real durations from a timed dry run
+> against a second universe ([docs/fork-dry-run.md](docs/fork-dry-run.md)).
+
 A numbered path from clone to first episode:
 
 1. **Clone and set up.**

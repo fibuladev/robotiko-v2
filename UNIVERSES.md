@@ -4,6 +4,10 @@ A registry of projects that forked the ROBOTIKO v2.0 **method** (MIT-licensed
 — see [LICENSE](LICENSE)) to build their own concept-album universe, the way
 [CONTRIBUTING.md §1(a)](CONTRIBUTING.md#1-two-ways-to-contribute) describes.
 
+> New here? [FORKING.md](FORKING.md) is the step-by-step, and
+> [docs/fork-dry-run.md](docs/fork-dry-run.md) is the author's own timed run of it
+> against a second universe — including the one thing that broke.
+
 **This list is empty right now, by design, not by failure.** The repo goes
 public around EP10's release — this file is here from day one so the first
 fork has somewhere to be counted. Entry #1 could be yours.

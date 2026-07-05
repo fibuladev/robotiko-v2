@@ -98,8 +98,8 @@ Everything here is countable in the repo:
 |---|---|
 | Episodes released on YouTube | **8** (EP09 in production, EP10 is the finale) |
 | CI check groups | **10** (9 blocking + 1 advisory) |
-| Validator meta-tests (graders that grade the graders) | **152** |
-| Architecture Decision Records | **13** (`_management/adr/`) |
+| Validator meta-tests (graders that grade the graders) | **154** |
+| Architecture Decision Records | **12** (`_management/adr/`) |
 | Commits of tracked history | **120** |
 | Tested lessons rules | **~125** ([`_memory/lessons.md`](_memory/lessons.md)) |
 
@@ -110,7 +110,7 @@ Everything here is countable in the repo:
 This repo is a blueprint. Take the pipeline, keep your own story.
 
 - **The method is MIT-licensed** — the skills, scripts, tests, and templates are yours to fork, including commercially.
-- **Start here:** [How to fork the method for your own universe](CONTRIBUTING.md#3-how-to-fork-the-method-for-your-own-universe).
+- **Start here:** [FORKING.md — your own universe in an afternoon](FORKING.md), a checklist proven against a second universe ([the timed dry run](docs/fork-dry-run.md)). Deeper rationale in [CONTRIBUTING §3](CONTRIBUTING.md#3-how-to-fork-the-method-for-your-own-universe).
 - **See who already has:** [UNIVERSES.md](UNIVERSES.md) — the registry of downstream forks.
 
 ---

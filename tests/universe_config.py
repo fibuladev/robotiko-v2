@@ -65,6 +65,19 @@ VIDEO_SUFFIX = (
 )
 
 # ─────────────────────────────────────────────
+# PROTAGONIST BINDING (visual_prompt_validator character-phase / ref-integrity)
+# The visual-prompt checks that enforce "the protagonist renders in the phase-correct
+# body state" need to know (a) which top-level key in character_profiles.json is the
+# protagonist, and (b) the identifier strings that mark a scene as featuring them.
+# A fork with a different lead re-points these two names; the checks then either
+# enforce the fork's own phase machine or, if the key is absent, degrade to no-ops
+# (they never crash on a foreign cast). Defaults are the ROBOTIKO values.
+# ─────────────────────────────────────────────
+
+PROTAGONIST_KEY = "robotiko"
+PROTAGONIST_IDENTIFIERS = ["robotiko", "chrome android"]
+
+# ─────────────────────────────────────────────
 # FORBIDDEN AESTHETICS (visual_prompt_validator.check_forbidden_aesthetics)
 # ─────────────────────────────────────────────
 

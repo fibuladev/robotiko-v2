@@ -1,11 +1,11 @@
 # Visual Canon — the art direction, proved on disk
 
 > A cloned repo should be able to prove the art direction without opening YouTube.
-> This page is the evidence: 67 curated frames, one per decisive moment, tracked in
+> This page is the evidence: 70 curated frames, one per decisive moment, tracked in
 > the tree at [`_assets/style/frames/`](../_assets/style/frames/). Every claim below
 > is checkable against a file you already have.
 
-These are **640px evidence copies**, not render quality — 3.16 MB for the whole set,
+These are **640px evidence copies**, not render quality — 3.28 MB for the whole set,
 small enough to live under version control. The full-resolution renders are generated
 by external tools and live outside the tree (see [What this is / What this is not](../README.md)).
 What is tracked here is not the picture; it is the **proof that the rule held**.
@@ -62,33 +62,50 @@ under-delivers.
 
 <table>
   <tr>
-    <td align="center" width="20%"><img src="../_assets/style/frames/ep01/ep01_s03_cave_chamber.jpg" alt="Golden shaft of light in a vast stone chamber" width="200"></td>
-    <td align="center" width="20%"><img src="../_assets/style/frames/ep01/ep01_s53_crane_twin_wings.jpg" alt="Crane with one wing gold, one in storm-shadow" width="200"></td>
-    <td align="center" width="20%"><img src="../_assets/style/frames/ep01/ep01_s54_crane_crystal_city.jpg" alt="Mentor and Robotiko above a crystal city at dawn" width="200"></td>
-    <td align="center" width="20%"><img src="../_assets/style/frames/ep01/ep01_s55_pristine_meeting.jpg" alt="Pristine meeting, square format" width="200"></td>
-    <td align="center" width="20%"><img src="../_assets/style/frames/ep01/ep01_s69_handshake.jpg" alt="Handshake, square format" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep01/ep01_s03_cave_chamber.jpg" alt="Golden shaft of light in a vast stone chamber" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep01/ep01_s53_crane_twin_wings.jpg" alt="Crane with one wing gold, one in storm-shadow" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep01/ep01_s54_crane_crystal_city.jpg" alt="Mentor and Robotiko above a crystal city at dawn" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep01/ep01_s55_pristine_meeting.jpg" alt="Pristine meeting, square format" width="200"></td>
   </tr>
   <tr>
     <td align="center">cave chamber</td>
     <td align="center">crane / twin wings</td>
     <td align="center">crane / crystal city</td>
     <td align="center">pristine meeting</td>
+  </tr>
+  <tr>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep01/ep01_s69_handshake.jpg" alt="Handshake, square format" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep01/ep01_s51_stone_eight_intact.jpg" alt="Intact mossy stone 8 monolith in a storm-lit mountain valley, riders for scale" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep01/ep01_s71_stone_eight_cracking.jpg" alt="The stone 8 cracking, white light spilling from the fractures into the broken ground" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep01/ep01_s72_infinity_arrival.jpg" alt="Radiant white infinity symbol over cracked glowing earth, watchers below" width="200"></td>
+  </tr>
+  <tr>
     <td align="center">handshake</td>
+    <td align="center">stone eight / intact</td>
+    <td align="center">stone eight / cracking</td>
+    <td align="center">eight to infinity</td>
   </tr>
 </table>
 
-**Palette journey.** The surviving set skews warm and gold — the ancient-dawn opening
-of the chamber, the gilded crystal city. The **twin-wings crane** carries the whole
-episode in one image: one wing gold, one in storm-shadow, the 8-to-infinity duality
-stated visually before a word of it is sung.
+**Palette journey.** The set opens warm and gold — the ancient-dawn chamber, the gilded
+crystal city — and now carries its own counterweight: the storm-dark blues of the
+stone-8 valley and the white-transcendent burn of the infinity arrival. The
+**twin-wings crane** still carries the whole episode in one image: one wing gold, one
+in storm-shadow, the 8-to-infinity duality stated visually before a word of it is sung.
 
 **Rules proved.** Phase 1 pristine body (the meeting and handshake show clean chrome,
 no damage — the correct state for the opening episode). The gold-vs-shadow duality
-motif that the series will pay off nine episodes later.
+motif — and now the **8→∞ prophecy trilogy itself**: intact monolith → cracking →
+infinity, the promise the whole series is built to pay off ("The eight shall turn
+aside," planted in EP01, answered in EP10).
 
-**Honest caveat.** This set **under-represents EP01's full arc.** The cold-blue and
-cosmic frames that balance the episode did not survive curation, so the surviving
-evidence over-reads as uniformly warm. The episode is not; the sample is.
+**Honest caveat, revised (2026-07-06).** The original curation shipped without the
+stone-8 trilogy — the frames were thought lost, and this section said so. The director
+later recovered the three source images from the archive, and they entered the set as
+`s51/s71/s72`. The recovery partially repairs the arc bias flagged below: the
+storm-blue and white-cosmic poles are now represented, though the mid-episode
+cold-blue data-core frames remain absent. The correction is documented rather than
+hidden: the set was incomplete, said so, and got better.
 
 ---
 
@@ -493,13 +510,15 @@ is the lesson. So this page states its own limits rather than hiding them.
 
 ### The square frames (EP01-EP02)
 
-Every EP01 and EP02 frame on this page is **square**, not 16:9. This is not a
+Most EP01 and all EP02 frames on this page are **square**, not 16:9. This is not a
 mistake left in — it is kept deliberately. The 16:9 aspect-ratio rule was born on
 **2026-03-07** and is documented in [`_memory/lessons.md`](../_memory/lessons.md); the
 EP01-EP02 images predate it. Re-cropping or regenerating them to hide that would erase
 the evidence that the method **evolved**. The square format is itself a tracked artifact
 of the pipeline learning its own rules. Glitch is Scripture applies to the pipeline's
-own history, not only to the character's.
+own history, not only to the character's. (The exception proves the timeline: the
+recovered stone-8 trilogy — `ep01_s51/s71/s72` — is widescreen because those outro
+composites were built for the final edit, not generated as square stills.)
 
 ### These are evidence copies, not renders
 
@@ -512,9 +531,9 @@ proof, not the gigabytes. Judge the *rule*, not the pixel count.
 
 Called out in place above, collected here for honesty:
 
-- **EP01 arc bias** — the surviving frames skew warm/gold; the cold-blue and cosmic
-  frames that balance the episode did not survive curation. The sample over-reads as
-  warm; the episode is not.
+- **EP01 arc bias (partially repaired 2026-07-06)** — the original curation skewed
+  warm/gold. The recovered stone-8 trilogy (`s51/s71/s72`) restores the storm-blue and
+  white-cosmic poles; the mid-episode cold-blue data-core frames are still absent.
 - **EP04 kindred eyes** — the four figures' amber eyes do not read clearly at 640px.
   The composition survives the downscale; the ocular material does not.
 - **EP06 first crack** — the "first crack" detail in the collapse is not legible at

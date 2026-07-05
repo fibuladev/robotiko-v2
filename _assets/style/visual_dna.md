@@ -2,7 +2,7 @@
 
 > The visual contract every image and video must obey. The source of truth for
 > story and character is `_management/master.md`; this file distills the *look*.
-> This doctrine is **shown, not just asserted**, in [docs/visual-canon.md](../../docs/visual-canon.md) — 67 curated frames that prove each rule below on disk.
+> This doctrine is **shown, not just asserted**, in [docs/visual-canon.md](../../docs/visual-canon.md) — 70 curated frames that prove each rule below on disk.
 
 ---
 

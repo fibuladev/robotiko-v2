@@ -12,7 +12,7 @@
 - 🔵 **Human** — gated by a person at a checkpoint; no automation claimed.
 - ⚪ **Gap** — an invariant we care about with **no** automated check yet.
 
-_Last updated: 2026-07-05 (WS2 — camera-diversity machine enforcement (window/accent/one-move/personality), energy->motion advisory check, musical overlay convention)._
+_Last updated: 2026-07-05 (canon/style bundle — eye-glow lint closes the last original Gap (ADR-0010), style-suffix variant family (ADR-0009), Final-mix AV sync declared as Human)._
 
 ## Pipeline / content invariants
 
@@ -20,7 +20,7 @@ _Last updated: 2026-07-05 (WS2 — camera-diversity machine enforcement (window/
 |---|---|---|---|
 | Phase-correct **reference image** per scene | 🟢 Machine | `check_ref_integrity` + `phase_reference_map` ([ADR 0001](adr/0001-phase-reference-map-source-of-truth.md), [0002](adr/0002-ref-integrity-parses-reference-metadata.md)) | The reliable gate. Metadata-based, not prose. Only as correct as the source-of-truth map. |
 | **Reference-first** — the reference exists before its scenes | 🟢 Machine | `check_reference_first` ([ADR 0007](adr/0007-reference-first-or-pay-the-reshoot-tax.md)) | Fails when an episode has scenes in a phase whose dedicated reference is null / missing on disk. The EP09 kintsugi root-cause guard. |
-| Mandatory **visual suffix** on every prompt | 🟢 Machine | `check_suffix` | Exact-substring; robust. |
+| Mandatory **visual suffix** on every prompt (variant family) | 🟢 Machine | `check_suffix` (base) + `check_style_mode` (photoreal variant, [ADR 0009](adr/0009-style-suffix-v2.md)) | Base suffix is an exact substring, required always. The EP07+ photoreal modifier ("Photorealistic, not a painting") is a sanctioned variant, allowed only when the file declares a `## STYLE MODE` header; an undeclared modifier is WARN (legacy) / FAIL (version-stamped). Daylight "volumetric fog" is a documented cargo-token, not a new variant. |
 | **Forbidden aesthetics** (Pixar, unreal engine, …) | 🟢 Machine | `check_forbidden_aesthetics` | Fixed term list; extend as new offenders appear. |
 | **File naming** convention | 🟢 Machine | `naming_check.py --full` | 85 checks. |
 | No silently **skipped pipeline steps** | 🟢 Machine | `pipeline_integrity.py --full` | Now waiver-aware and honest: a non-sequential skip (empty step N, present step N+1) FAILs unless a waiver record exists in `_management/approvals.json`. The summary names the one legacy waivered skip (episode-01, PDF-only visuals) instead of the old false "no skipped steps". |
@@ -42,7 +42,8 @@ _Last updated: 2026-07-05 (WS2 — camera-diversity machine enforcement (window/
 | **One camera move per clip** | 🟢 Machine | `check_single_move` in `motion_script_validator.py` | A Camera Move value naming 2+ vocabulary moves is a combined move (conflicting model instructions). Was a docstring claim with no check behind it — now real. Pre-v2 WARN (EP01 has 4 combined values). |
 | **Episode camera personality** honored (EP07-09) | 🟡 Heuristic | `check_camera_personality` in `motion_script_validator.py` | The declared dominant move (EP07 Dolly Out, EP08 Static, EP09 Slow Zoom Out) must be among the top-3 most-used moves. Always WARN — whether the camera "feels like" its personality is artistic judgement, not arithmetic. EP10 has no single declared move; skipped. |
 | **Energy -> Motion Strength** mapping | 🟡 Heuristic | `check_energy_motion` in `energy_motion_check.py` (run_all group 10, advisory) | Each clip's MS graded against the SKILL band of its musical section (timestamp midpoint). `[DISSONANCE]` shots exempt (the tag's purpose); ramp energies widened +-1; +-1 soft tolerance by default (`--strict` for audits); pre-v2 episodes skipped. WARN everywhere — never blocks. Current advisory debt: EP07=8, EP08=11 deviations, EP09=0. |
-| **Eye rule** — no glow keyword for eyes | ⚪ Gap | — (lesson + skill only) | "dark amber glass lenses…" formula is documented, not enforced. Candidate next check. |
+| **Eye rule** — no glow keyword for eyes (model-facing) | 🟢 Machine | `check_eye_glow` (Text Prompt blockquotes) + `scan_eye_glow` (`character_profiles.json` prompt fields), [ADR 0010](adr/0010-eye-canon-reconciliation.md) | Was ⚪ Gap — the last of the three original gaps to close. A glow keyword within 3 tokens of an eye/lens word in a MODEL-FACING string. Kintsugi body gold-glow allowlisted; canon appearance (master.md) is never read (two-layer doctrine). FAIL for the live JSON + version-stamped files; WARN for shipped unstamped visual prompts (EP09 S31 "self-luminous" is the one known legacy WARN, not retrofitted). |
+| **Final-mix AV sync** (audio/video alignment) | 🔵 Human | Human sync-QC pass at pipeline_rules Step 11, recorded per episode (`_templates/ep_sync_qc_template.md`) | Declared limit: CI cannot see or hear the final mix, so it cannot certify lip/beat/cut alignment. Gated by a person at Step 11; the record is the evidence, not a green run. |
 | EP01 visual prompts | 🔵 Human (visibly skipped) | `visual_prompt_validator.py --full` prints the skip | EP01 visuals are a PDF (`episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf`) — pre-method episode, not machine-parseable. The M4 fix makes the skip **visible**: the detector now searches the whole `04_visuals` subtree (was a one-level `os.listdir` that never saw the `selected/` PDF, so EP01 was silently dropped). The pipeline skip is waivered in `_management/approvals.json`. |
 
 ## Golden Rules (narrative / philosophical)

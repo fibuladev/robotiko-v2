@@ -35,9 +35,9 @@
       "episode": "02",
       "gate": 2,
       "artifact": "episode-02/05_video/ep02_motion_script_v02.md",
-      "sha256": "3bc2b42509c59b7ae07ad5ebfa16ebdfcbd4ff2bcb0291af3dcb6a714ed5ae71",
+      "sha256": "3b6c2c26e716baf6b58ce99dd36eaa8664e7158d215eb802bad3a11753b4fdf6",
       "date": "2026-02-28",
-      "note": "motion script v02 approved (recorded in session log)."
+      "note": "motion script v02 approved (recorded in session log). sha re-baselined 2026-07-05: documentation-only legacy eye-glow header note added (ADR-0010); prompt bodies unchanged."
     },
     {
       "episode": "03",

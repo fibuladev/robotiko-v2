@@ -70,6 +70,28 @@ _mmspec = importlib.util.spec_from_file_location(
 mmv = importlib.util.module_from_spec(_mmspec)
 _mmspec.loader.exec_module(mmv)
 
+_cpspec = importlib.util.spec_from_file_location(
+    "character_profiles_validator", os.path.join(TESTS_DIR, "character_profiles_validator.py")
+)
+cpv = importlib.util.module_from_spec(_cpspec)
+_cpspec.loader.exec_module(cpv)
+
+_ncspec = importlib.util.spec_from_file_location(
+    "naming_check", os.path.join(TESTS_DIR, "naming_check.py")
+)
+nc = importlib.util.module_from_spec(_ncspec)
+_ncspec.loader.exec_module(nc)
+
+_raspec = importlib.util.spec_from_file_location(
+    "run_all", os.path.join(TESTS_DIR, "run_all.py")
+)
+ra = importlib.util.module_from_spec(_raspec)
+_raspec.loader.exec_module(ra)
+
+# Frozen style/eye fixtures (ADR-0009 / ADR-0010), both directions.
+STYLE_EYE_BAD = os.path.join(FIXTURES, "ep07_style_eye_v2_BAD.md")
+STYLE_EYE_GOOD = os.path.join(FIXTURES, "ep07_style_eye_v2_GOOD.md")
+
 DOC_REF_BAD = os.path.join(FIXTURES, "doc_ref_BAD.md")
 DOC_REF_GOOD = os.path.join(FIXTURES, "doc_ref_GOOD.md")
 
@@ -1136,6 +1158,199 @@ class TestOverlayConvention(unittest.TestCase):
             findings = mmv.validate_file(path)
             self.assertEqual([m for s, m in findings if s in ("FAIL", "ERROR")], [],
                              f"{path} must not FAIL")
+
+
+# ─────────────────────────────────────────────
+# Canon/style bundle — eye-glow (ADR-0010) + style-suffix variant (ADR-0009).
+# The detector, each check, the JSON guard, and the fixture pair, both directions.
+# ─────────────────────────────────────────────
+
+class TestEyeGlowDetector(unittest.TestCase):
+    """The shared detector eye_glow_hits: fires on glow-near-eyes, silent on the
+    canon-safe cases (kintsugi body gold-glow, lens projection 'light')."""
+
+    def test_catches_glowing_blue_eyes(self):
+        self.assertTrue(vpv.eye_glow_hits("a chrome android, glowing blue eyes, masterpiece."))
+
+    def test_catches_glowing_amber_gold_eyes(self):
+        # The 'gold' of 'amber-gold' must NOT let the body allowlist swallow the hit.
+        self.assertTrue(vpv.eye_glow_hits("female android with glowing amber-gold eyes, steady warm"))
+
+    def test_catches_self_luminous_eyes(self):
+        self.assertTrue(vpv.eye_glow_hits("calm blue eyes, self luminous, fine streams of gold"))
+
+    def test_ignores_kintsugi_body_gold_glow(self):
+        # Body gold-glow is canon and generation-safe; eyes elsewhere as lenses.
+        s = ("cracks filled with glowing gold light, calm steady blue optical lenses "
+             "set into chrome sockets")
+        self.assertEqual(vpv.eye_glow_hits(s), [])
+
+    def test_ignores_bioluminescent_core(self):
+        self.assertEqual(vpv.eye_glow_hits("translucent skin revealing a bioluminescent core beneath"), [])
+
+    def test_ignores_lens_projection_light(self):
+        # EP07 Dual Device: 'light' is not a glow keyword — must not fire.
+        self.assertEqual(vpv.eye_glow_hits("a pale light from his optical lenses reveals the horizon"), [])
+
+    def test_ignores_material_lens_idiom(self):
+        self.assertEqual(vpv.eye_glow_hits("steady blue optical lenses set into chrome sockets"), [])
+
+    def test_ignores_distant_glow_not_near_eyes(self):
+        self.assertEqual(vpv.eye_glow_hits("a sodium streetlamp glows weakly in the far distance"), [])
+
+
+class TestEyeGlowCheckSeverity(unittest.TestCase):
+    def _scene_text(self, text):
+        return [{"scene_number": 1, "label": "S01", "characters": "the chrome android",
+                 "text": text, "ref_path": "", "upload": ""}]
+
+    def test_severity_passthrough(self):
+        s = self._scene_text("the chrome android, glowing blue eyes")
+        self.assertTrue(all(sev == "FAIL" for sev, _ in vpv.check_eye_glow(s, "FAIL")))
+        self.assertTrue(all(sev == "WARN" for sev, _ in vpv.check_eye_glow(s, "WARN")))
+
+    def test_clean_scene_silent(self):
+        s = self._scene_text("the chrome android, steady blue optical lenses set into chrome sockets")
+        self.assertEqual(vpv.check_eye_glow(s, "FAIL"), [])
+
+    def test_output_is_ascii(self):
+        s = self._scene_text("the chrome android, glowing blue eyes")
+        for _sev, msg in vpv.check_eye_glow(s, "FAIL"):
+            self.assertEqual(msg, msg.encode("ascii", "ignore").decode(),
+                             "eye-glow finding must be ASCII")
+
+
+class TestStyleModeCheck(unittest.TestCase):
+    MOD = "> Photorealistic, not a painting. a chrome android, masterpiece."
+
+    def _prompts(self):
+        return [{"index": 1, "text": "Photorealistic, not a painting. a chrome android, masterpiece."}]
+
+    def test_undeclared_modifier_fires(self):
+        content = "# EP07 fixture\n" + self.MOD
+        findings = vpv.check_style_mode(content, self._prompts(), "FAIL")
+        self.assertTrue(findings)
+        self.assertTrue(all(s == "FAIL" for s, _ in findings))
+
+    def test_declared_modifier_silent(self):
+        content = "# EP07 fixture\n## STYLE MODE - Photoreal Variant (ADR-0009)\n" + self.MOD
+        self.assertEqual(vpv.check_style_mode(content, self._prompts(), "FAIL"), [])
+
+    def test_no_modifier_silent(self):
+        prompts = [{"index": 1, "text": "a chrome android on a grey path, masterpiece."}]
+        self.assertEqual(vpv.check_style_mode("# EP no mode\n", prompts, "FAIL"), [])
+
+    def test_severity_passthrough_legacy_warn(self):
+        content = "# EP legacy\n" + self.MOD
+        findings = vpv.check_style_mode(content, self._prompts(), "WARN")
+        self.assertTrue(all(s == "WARN" for s, _ in findings))
+
+
+class TestStyleEyeFixtures(unittest.TestCase):
+    """The frozen regression pair, driven through the full validate_file path."""
+
+    def test_bad_fixture_fails_both_rules(self):
+        errors = vpv.validate_file(STYLE_EYE_BAD)["errors"]
+        self.assertTrue(any("[Eye Glow]" in e for e in errors), errors)
+        self.assertTrue(any("[Style Mode]" in e for e in errors), errors)
+
+    def test_good_fixture_passes_clean(self):
+        results = vpv.validate_file(STYLE_EYE_GOOD)
+        self.assertEqual(results["errors"], [], results["errors"])
+
+    def test_good_fixture_has_prompts(self):
+        self.assertGreaterEqual(vpv.validate_file(STYLE_EYE_GOOD)["prompt_count"], 1)
+
+
+class TestCharacterProfilesEyeGlow(unittest.TestCase):
+    """The live-input guard: scan_eye_glow FAILs on a glow leak in a prompt field and
+    passes the real reconciled character_profiles.json (appearance in canon, lenses in
+    prompts)."""
+
+    def test_catches_glow_in_prompt_field(self):
+        data = {"robotiko": {"base_visual_prompt": "chrome body, glowing blue eyes, 70s aesthetic"}}
+        findings = cpv.scan_eye_glow(data)
+        self.assertTrue(findings)
+        self.assertTrue(all(s == "FAIL" for s, _ in findings))
+
+    def test_catches_glow_in_nested_visual_prompt_addition(self):
+        data = {"robotiko": {"evolution": {"p1": {"visual_prompt_addition": {
+            "ep01": "pristine chrome body, glowing steady blue eyes, no damage"}}}}}
+        self.assertTrue(cpv.scan_eye_glow(data))
+
+    def test_ignores_kintsugi_body_gold(self):
+        data = {"robotiko": {"evolution": {"p3": {"visual_prompt_addition":
+            "cracks filled with glowing gold light, calm steady blue optical lenses set into chrome sockets"}}}}
+        self.assertEqual(cpv.scan_eye_glow(data), [])
+
+    def test_real_profiles_json_is_clean(self):
+        with open(os.path.join(REPO_ROOT, "_assets", "cast", "character_profiles.json"),
+                  encoding="utf-8") as f:
+            import json as _json
+            data = _json.load(f)
+        self.assertEqual(cpv.scan_eye_glow(data), [],
+                         "the reconciled character_profiles.json must carry no eye-glow")
+
+    def test_full_validate_passes(self):
+        # The whole structural + eye-glow validator must be green on the real file.
+        self.assertEqual([f for f in cpv.validate() if f[0] in ("FAIL", "ERROR")], [])
+
+
+# ─────────────────────────────────────────────
+# Coverage summary parser (run_all --coverage) + sync_qc naming pattern.
+# ─────────────────────────────────────────────
+
+class TestCoverageSummaryParser(unittest.TestCase):
+    def setUp(self):
+        with open(ra.MATRIX_PATH, encoding="utf-8") as f:
+            self.rows = ra.parse_matrix_rows(f.read())
+
+    def test_parses_many_coverage_rows(self):
+        self.assertGreater(len(self.rows), 15, "matrix should yield many coverage rows")
+
+    def test_every_row_has_at_least_one_tier(self):
+        for name, tiers in self.rows:
+            self.assertTrue(tiers, f"row '{name}' parsed with no tier")
+
+    def test_machine_and_human_tiers_present(self):
+        all_tiers = [t for _n, ts in self.rows for t in ts]
+        self.assertIn("Machine", all_tiers)
+        self.assertIn("Human", all_tiers)
+
+    def test_final_mix_av_sync_is_human_gap_listed(self):
+        names = [n for n, ts in self.rows if any(t in ("Human", "Gap") for t in ts)]
+        self.assertTrue(any("Final-mix AV sync" in n for n in names),
+                        f"the declared AV-sync limit must be listed. Got: {names}")
+
+    def test_eye_rule_is_now_machine_not_gap(self):
+        for name, tiers in self.rows:
+            if "Eye rule" in name:
+                self.assertIn("Machine", tiers)
+                self.assertNotIn("Gap", tiers)
+
+    def test_coverage_summary_runs_ascii_and_zero(self):
+        import io, contextlib
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            rc = ra.coverage_summary()
+        out = buf.getvalue()
+        self.assertEqual(rc, 0)
+        self.assertIn("COVERAGE SUMMARY", out)
+        self.assertEqual(out, out.encode("ascii", "ignore").decode(),
+                         "coverage summary output must be ASCII")
+
+
+class TestSyncQcNamingPattern(unittest.TestCase):
+    """The sync_qc naming pattern accepts the 2-digit/v## form and rejects the
+    1-digit/v# form — the convention naming_check.py already encodes."""
+
+    def test_accepts_wellformed_sync_qc(self):
+        ok, _msg = nc.validate_file("ep09_sync_qc_v01.md")
+        self.assertTrue(ok)
+
+    def test_rejects_single_digit_forms(self):
+        ok, _msg = nc.validate_file("ep9_sync_qc_v1.md")
+        self.assertFalse(ok)
 
 
 if __name__ == "__main__":

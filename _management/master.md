@@ -145,6 +145,8 @@ The Mentor speaks neither dialect. He speaks the third tongue — the language o
 > **Every single visual prompt must end with this exact phrase — no exceptions:**
 > `"hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece."`
 
+> The base suffix is never dropped. The EP07+ art-house short-film treatment adds one sanctioned modifier ("Photorealistic, not a painting") on top of it — the variant family is documented in [ADR 0009](adr/0009-style-suffix-v2.md) and `_assets/style/visual_dna.md`.
+
 ### 3.3 Color Palette
 
 | Element | Color |
@@ -155,6 +157,8 @@ The Mentor speaks neither dialect. He speaks the third tongue — the language o
 | Robotiko's eyes | Neon Blue (healthy) / Red (error/danger) |
 | Data / Energy flows | Gold |
 | Mentor's staff tip | Glowing raw amber |
+
+> **Eyes — appearance vs. prompt language:** the colours above are on-screen *appearance* (his eyes do emit steady blue light). Model-facing prompts never say "glow" for eyes — use the material-lens idiom ("steady blue optical lenses set into chrome sockets"). Two-layer doctrine: [ADR 0010](adr/0010-eye-canon-reconciliation.md).
 
 ---
 
@@ -167,7 +171,7 @@ The Mentor speaks neither dialect. He speaks the third tongue — the language o
 **Base Visual Description:**
 - Retro-futuristic chrome metal body
 - Exposed colorful analog wires (blue and red) — raw, industrial, NOT sleek
-- Glowing blue eyes (expressive, emotionally readable)
+- Glowing blue eyes (expressive, emotionally readable) — on-screen appearance; prompts use lens language, never "glow" ([ADR 0010](adr/0010-eye-canon-reconciliation.md))
 - 70s Sci-fi mechanical aesthetic
 
 **Master Reference:** `_assets/cast/ref_robotiko_master.png`

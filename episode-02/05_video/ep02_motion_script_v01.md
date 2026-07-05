@@ -1,3 +1,5 @@
+> **Legacy note (2026-07-05):** This file predates the eye-glow prohibition rule (lessons.md, 2026-03-23). "Glowing"/"glows" eye descriptions in these motion prompts were shipped as-is and are not retrofitted. Current rule: use the "dark amber glass lenses" material-lens formula (ADR-0010).
+
 # VIDEO PRODUCTION SHEET — EP02: THE TECH GURU'S DOWNFALL
 > **Version:** v01 | **Skill:** robotiko-motion-script
 > **Generated:** 2026-02-27

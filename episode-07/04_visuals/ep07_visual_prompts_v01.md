@@ -43,6 +43,20 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 ---
 
+## STYLE MODE - Photoreal Short-Film Variant (ADR-0009)
+
+> **Note (2026-07-05):** EP07 onward is the art-house short-film treatment. Every prompt
+> in this file opens with the photoreal modifier **"Photorealistic, not a painting"** AND
+> still ends with the mandatory base suffix above. This is a sanctioned variant of the
+> style-suffix family (ADR-0009), not a contradiction: the base suffix carries the
+> Kodachrome / heavy-grain / Frazetta-meets-Syd-Mead album-art DNA, while the photoreal
+> modifier steers the render away from a literal painterly look toward the live-action
+> short-film aesthetic. The validator treats the modifier as sanctioned only because
+> this file declares its STYLE MODE here (see `tests/visual_prompt_validator.py`,
+> `check_style_mode`).
+
+---
+
 ## FORBIDDEN AESTHETICS REMINDER
 
 - Clean Apple design

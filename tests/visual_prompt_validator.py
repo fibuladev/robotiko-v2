@@ -78,6 +78,72 @@ NON_ROBOTIKO_NOUNS = {
     "wallpaper", "fog", "cloud", "clouds", "world",
 }
 
+# ─────────────────────────────────────────────
+# EYE-GLOW LINT (ADR-0010) — the two-layer eye doctrine.
+#
+# CANON (master.md) may describe Robotiko's eyes as emitting steady blue light —
+# that is on-screen APPEARANCE. But any MODEL-FACING string (Text Prompt blockquotes
+# here; prompt fields in character_profiles.json) must use the tested material-lens
+# idiom, because glow keywords near eyes empirically break generation (three failed
+# formulations documented in lessons.md — "amber eyes", "warm glow", "no glow").
+#
+# The check is deliberately narrow: a glow-family keyword within EYE_PROXIMITY word
+# tokens of an eye/lens word. Curation choices, honest by design:
+#   * "light" is NOT a glow keyword — canonical lens-PROJECTION language ("a pale
+#     light from his optical lenses", EP07's Dual Device) is generation-safe and
+#     must not be flagged. Only emissive glow verbs/adjectives count.
+#   * kintsugi BODY gold-glow ("cracks filled with glowing gold light",
+#     "bioluminescent core") is canon and generation-safe: a glow keyword bound to a
+#     body-gold noun is allowlisted, and "bioluminescent" is not itself a glow token.
+# ─────────────────────────────────────────────
+
+GLOW_WORDS = {
+    "glow", "glowing", "glows", "glowed", "aglow",
+    "luminous", "luminescent", "luminescence", "luminesce",
+    "incandescent", "radiant",
+}
+EYE_WORDS = {
+    "eye", "eyes", "lens", "lenses", "optical", "socket", "sockets", "ocular",
+}
+# A glow keyword immediately adjacent to one of these is kintsugi body-glow, not
+# eye-glow — canon and generation-safe. Narrow ±1 window so "glowing amber-gold
+# eyes" (color of the eyes) is NOT swallowed by the "gold" of "amber-gold".
+BODY_GLOW_NOUNS = {
+    "gold", "golden", "core", "cracks", "crack", "seam", "seams", "vein", "veins",
+    "kintsugi",
+}
+EYE_PROXIMITY = 3   # eye word must be within this many tokens of the glow keyword
+
+# Severity mirrors the motion-script model: a file whose header declares SKILL v2.0+
+# is FAIL-enforced; files with no version stamp (every shipped visual-prompt file,
+# authored before this rule) are WARN-only measured legacy debt and are NOT
+# retrofitted. The live input (character_profiles.json) is always FAIL — enforced in
+# character_profiles_validator.py.
+
+# ─────────────────────────────────────────────
+# STYLE-SUFFIX VARIANT FAMILY (ADR-0009)
+#
+# The base suffix (check_suffix, MANDATORY_SUFFIX) is required on every prompt,
+# always. EP07+ art-house short films ALSO open the prompt with a photoreal modifier
+# ("Photorealistic, not a painting") that co-exists with the base suffix — a
+# sanctioned variant. It is only legitimate when the file DECLARES its style mode in
+# the header (a "STYLE MODE" note citing ADR-0009). An undeclared photoreal modifier
+# is a silent contradiction with "70s album art style": WARN legacy / FAIL v2+.
+# ─────────────────────────────────────────────
+
+PHOTOREAL_MODIFIER = "photorealistic, not a painting"
+STYLE_MODE_MARKER = "style mode"
+
+
+def is_skill_v2(content: str) -> bool:
+    """True if the file's header declares SKILL v2.0+ (mirrors the motion-script
+    severity model). Version-stamped files are FAIL-enforced for the eye-glow and
+    style-mode rules; unstamped shipped files are WARN-only legacy debt."""
+    for line in content.splitlines()[:15]:
+        if "SKILL.md" in line and ("v2" in line or "v3" in line):
+            return True
+    return False
+
 
 # ─────────────────────────────────────────────
 # VALIDATORS
@@ -494,6 +560,72 @@ def check_reference_first(scenes: list[dict], episode_number: int, profiles: dic
     return errors
 
 
+def eye_glow_hits(text: str) -> list[str]:
+    """
+    Core eye-glow detector, reusable for any model-facing string (Text Prompt
+    blockquotes here, prompt fields in character_profiles.json). Returns a list of
+    offending snippets (empty == clean). A hit is a glow-family keyword within
+    EYE_PROXIMITY tokens of an eye/lens word, EXCEPT when the glow keyword is bound
+    to kintsugi body-gold (allowlisted).
+    """
+    words = re.findall(r"[a-z0-9]+", text.lower())
+    hits = []
+    for i, w in enumerate(words):
+        if w not in GLOW_WORDS:
+            continue
+        # Allowlist: kintsugi body gold-glow — glow keyword adjacent (+-1) to a
+        # body-gold noun ("glowing gold light"). Narrow so "glowing amber-gold eyes"
+        # (eye colour) is NOT exempted by the incidental "gold".
+        neighbours = words[max(0, i - 1):i + 2]
+        if any(n in BODY_GLOW_NOUNS for n in neighbours if n != w):
+            continue
+        window = words[max(0, i - EYE_PROXIMITY):i + EYE_PROXIMITY + 1]
+        if any(n in EYE_WORDS for n in window):
+            snippet = " ".join(words[max(0, i - EYE_PROXIMITY):i + EYE_PROXIMITY + 1])
+            hits.append(snippet)
+    return hits
+
+
+def check_eye_glow(scenes: list[dict], severity: str = "WARN") -> list[tuple]:
+    """
+    Scan each scene's Text Prompt blockquote (scene["text"]) for eye-glow: a glow
+    keyword next to an eye/lens word in a MODEL-FACING string (ADR-0010). Returns
+    (severity, message) tuples. ASCII output only.
+    """
+    findings = []
+    for scene in scenes:
+        for snippet in eye_glow_hits(scene.get("text", "")):
+            label = scene.get("label", f"S{scene.get('scene_number', 0):02d}")
+            findings.append((
+                severity,
+                f"  {severity} [Eye Glow] Scene {label}: glow keyword near eyes in the "
+                f"Text Prompt ('...{snippet}...'). Model-facing eye descriptions must use "
+                f"the material-lens idiom (ADR-0010); glow keywords break generation."
+            ))
+    return findings
+
+
+def check_style_mode(content: str, prompts: list[dict], severity: str = "WARN") -> list[tuple]:
+    """
+    Style-suffix variant family (ADR-0009). The base suffix stays required
+    (check_suffix). The photoreal modifier is allowed ONLY when the file declares its
+    STYLE MODE in the header; an undeclared modifier is a silent contradiction with
+    the base "70s album art style". Returns (severity, message) tuples. ASCII only.
+    """
+    if STYLE_MODE_MARKER in content.lower():
+        return []
+    findings = []
+    for prompt in prompts:
+        if PHOTOREAL_MODIFIER in prompt["text"].lower():
+            findings.append((
+                severity,
+                f"  {severity} [Style Mode] Prompt #{prompt['index']}: uses the photoreal "
+                f"modifier ('{PHOTOREAL_MODIFIER}') but the file declares no STYLE MODE "
+                f"header. The variant is sanctioned only when declared (ADR-0009)."
+            ))
+    return findings
+
+
 def validate_file(filepath: str) -> dict:
     """
     Run all validations on a visual prompts file.
@@ -532,11 +664,25 @@ def validate_file(filepath: str) -> dict:
     results["errors"].extend(check_suffix(prompts))
     results["errors"].extend(check_forbidden_aesthetics(prompts))
 
+    # Style-suffix + eye-glow severity mirrors the motion-script model: version-
+    # stamped files FAIL, unstamped shipped files WARN (measured legacy debt).
+    style_severity = "FAIL" if is_skill_v2(content) else "WARN"
+
+    # Style-suffix variant family (ADR-0009): severity-routed (FAIL -> errors, WARN
+    # -> warnings) so a legacy/undeclared modifier surfaces without blocking.
+    for sev, msg in check_style_mode(content, prompts, style_severity):
+        (results["errors"] if sev in ("FAIL", "ERROR") else results["warnings"]).append(msg)
+
     if episode_number > 0:
         scenes = extract_scenes(content)
         results["errors"].extend(check_character_phase(scenes, episode_number))
         results["errors"].extend(check_ref_integrity(scenes, episode_number))
         results["errors"].extend(check_reference_first(scenes, episode_number))
+
+        # Eye-glow lint (ADR-0010): severity-routed. FAIL for version-stamped files;
+        # WARN for shipped, unstamped files (not retrofitted; see EP02 legacy note).
+        for sev, msg in check_eye_glow(scenes, style_severity):
+            (results["errors"] if sev in ("FAIL", "ERROR") else results["warnings"]).append(msg)
 
     return results
 

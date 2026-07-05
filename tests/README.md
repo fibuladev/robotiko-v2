@@ -7,6 +7,7 @@
 
 ```bash
 python tests/run_all.py        # runs every check; exits non-zero if any fails
+python tests/run_all.py --coverage   # print the coverage summary and exit (no checks run)
 ```
 
 This is the single gate. CI runs the identical entrypoint and blocks the merge on
@@ -15,6 +16,10 @@ failure. Code is standard-library only — no `pip install`. `run_all.py` execut
 hygiene, musical metadata, motion script, character profiles, validator
 meta-tests, doc reference integrity, and energy-motion sync (advisory tier —
 its warnings are printed but never block).
+
+`--coverage` reads `_management/invariant_coverage_matrix.md` and prints a per-tier
+count (Machine / Heuristic / Human / Gap) plus every Human- and Gap-tier row by name,
+so one command answers both "did it pass" and "what do we NOT guarantee".
 
 ---
 
@@ -25,12 +30,12 @@ its warnings are printed but never block).
 | `run_all.py` | One command — runs all checks below, exits non-zero on any failure | v2.0 |
 | `naming_check.py` | Validates file names against `naming_convention.md` | Implemented |
 | `pipeline_integrity.py` | Waiver-aware skipped-step detection + disk-vs-declared state machine + approval-gate ledger enforcement | v2.0 |
-| `visual_prompt_validator.py` | Visual prompt content: suffix · forbidden aesthetics · character phase · **reference integrity** | v2.0 |
+| `visual_prompt_validator.py` | Visual prompt content: suffix · forbidden aesthetics · character phase · **reference integrity** · **eye-glow** (model-facing) · **style-suffix variant** | v2.1 |
 | `prompt_hygiene_lint.py` | **Scoped** — model-facing prompt strings (Text/Motion blocks only) must be plain-English ASCII; never reads canon/direction notes | v1.0 |
 | `musical_metadata_validator.py` | Validates `musical_metadata.json` structure and vocabulary compliance: required fields, energy/section-type vocabulary, timestamp monotonicity (unmarked overlap = FAIL), **overlay convention** (`"overlay": true` + containment), `total_duration` match | v1.1 |
 | `motion_script_validator.py` | Validates motion scripts: mandatory video suffix, anti-spawn guard, camera diversity (global quotas + **5-clip local window** + **accent budget** + **one-move-per-clip** + personality WARN) | v1.1 |
 | `energy_motion_check.py` | **Advisory tier** — cross-checks each clip's Motion Strength against the SKILL energy band of its musical section; `[DISSONANCE]` exempt, ramps widened, pre-SKILL-v2 skipped; warnings never block | v1.0 |
-| `character_profiles_validator.py` | Lightweight stdlib-only structural check of `character_profiles.json` against `schema.json` | v1.0 |
+| `character_profiles_validator.py` | Structural check of `character_profiles.json` against `schema.json` + **eye-glow guard** on model-facing prompt fields (ADR-0010) | v1.1 |
 | `test_validators.py` | Meta-tests — grade the graders (fixtures + both-directions proofs) | v1.0 |
 | `doc_reference_check.py` | **Doc-reality drift lint** — curated docs' backtick repo paths must exist on disk; no hook-rot; coverage-matrix ↔ `check_` sync | v1.0 |
 | `fixtures/` | Frozen BROKEN/GOOD + doc-ref BAD/GOOD + musical overlay GOOD/BAD regression pairs (see `fixtures/README.md`) | — |
@@ -83,6 +88,13 @@ run via `tests/run_all.py` and enforced in CI.
 - **Reference integrity** — every Robotiko scene uses the phase-correct reference
   image, derived from `character_profiles.json` `phase_reference_map` (the reliable,
   metadata-based gate)
+- **Eye-glow (model-facing)** — a glow keyword within 3 tokens of an eye/lens word in
+  a Text Prompt blockquote (ADR-0010). Kintsugi body gold-glow is allowlisted; "light"
+  (lens projection) is not a glow keyword. FAIL for version-stamped files, WARN for
+  shipped unstamped ones (measured legacy debt; canon appearance is never read)
+- **Style-suffix variant** — the base suffix stays mandatory (`check_suffix`); the
+  EP07+ photoreal modifier is allowed only when the file declares a `## STYLE MODE`
+  header (ADR-0009), else WARN (legacy) / FAIL (version-stamped)
 - **PDF-only skip is visible** — `--full` searches the whole `04_visuals` subtree
   (including `selected/` and `raw/`), so EP01's PDF-only, pre-method visuals now print
   a clear skip line instead of being silently dropped (the M4 fix — the old one-level
@@ -148,6 +160,9 @@ run via `tests/run_all.py` and enforced in CI.
 - Lightweight stdlib-only structural check of `character_profiles.json` against
   `character_profiles.schema.json` (full JSON Schema draft-2020-12 validation is
   deferred per the stdlib-only constraint)
+- **Eye-glow guard** on model-facing prompt fields (`base_visual_prompt`,
+  `visual_prompt_addition`) — reuses the visual validator's detector; the JSON is a
+  live production input, so a glow-near-eyes leak here is FAIL (ADR-0010)
 
 ### test_validators.py (meta-tests)
 - The graders, graded: the suite must FAIL the frozen BROKEN fixture and PASS the

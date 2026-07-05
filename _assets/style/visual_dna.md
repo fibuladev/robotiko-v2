@@ -25,6 +25,25 @@ Every image prompt ends with this, verbatim, no exceptions:
 hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 ```
 
+### Style-suffix variant family (ADR-0009)
+
+The suffix above is the **base** variant, required on every prompt, always. There is a
+small sanctioned family of style strings - use only these, and declare the non-base one:
+
+- **(a) base** - the classic suffix above. First used EP01. Enforced by `check_suffix`.
+- **(b) photoreal-shortfilm** - the base suffix PLUS a leading modifier
+  `Photorealistic, not a painting`. This is the EP07+ art-house short-film treatment:
+  the base suffix keeps the Kodachrome / grain / Frazetta-meets-Syd-Mead album-art DNA,
+  while the modifier steers the render away from a literal painterly look. First used
+  EP07 (8 prompts), continued EP08 (24 prompts). The base suffix is never dropped - the
+  modifier is additive. A file using it MUST carry a `## STYLE MODE` header note citing
+  ADR-0009, or `check_style_mode` flags it (WARN legacy / FAIL version-stamped).
+- **daylight + fog (honest cargo-token, not a variant).** Alpine / first-light and
+  Day-Forty daylight scenes still ship the base suffix verbatim - "volumetric fog" is
+  carried even in daylight, a known cargo-token kept for consistency, not always
+  literally rendered. No unused "daylight variant" was invented (honesty over
+  completeness). Full reasoning: [ADR 0009](../../_management/adr/0009-style-suffix-v2.md).
+
 ## MANDATORY VIDEO SUFFIX
 
 Every motion prompt ends with this, verbatim:
@@ -53,8 +72,13 @@ eyeballs. Describe eyes as a **physical material** instead:
 > brown-gold tone, reflective, catching the environment light on their smooth
 > curved surface.
 
-Robotiko's healthy eyes are steady blue (read as material/light, not a glow).
-Robochica's are amber glass lenses. See `_memory/lessons.md` (Character Design).
+Robotiko's healthy eyes are steady blue (read as material/light, not a glow):
+*"steady blue optical lenses set into chrome sockets, like polished sapphires"* -
+the blue parallel of Robochica's amber glass lenses. On screen his eyes DO emit steady
+blue light (canonical appearance); PROMPTS never say glow for eyes (two-layer doctrine,
+[ADR 0010](../../_management/adr/0010-eye-canon-reconciliation.md)). This is now
+machine-enforced on both model-facing surfaces (`character_profiles.json` prompt fields
+and Text Prompt blockquotes). See `_memory/lessons.md` (Character Design).
 
 ---
 

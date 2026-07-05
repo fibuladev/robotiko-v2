@@ -139,6 +139,7 @@ After any correction from the human:
 ## CATEGORY: CHARACTER DESIGN (Added 2026-03-23)
 
 - **RULE:** Never write "amber eyes", "glowing [color] eyes", "aura around eyes", or "no glow/no luminescence" in visual prompts. Image generators render ANY eye glow description as literal glowing eyeballs = alien/creepy. Negative instructions ("no glow") cause the generator to latch onto the keyword "glow" and apply it. **WORKING FIX (tested 2026-03-31):** Describe eyes as a PHYSICAL MATERIAL: "dark amber glass lenses set into chrome sockets, like polished gemstones — warm brown-gold tone, reflective, catching the environment light on their smooth curved surface." The key: (1) "glass lenses" = solid material, not light source, (2) "dark amber" = warm but not luminous, (3) "like polished gemstones" = gives generator a non-glowing reference object, (4) "catching the environment light" = reflective, not emissive. Three failed approaches: "amber eyes" (v1), "warm glow radiating around eyes" (v2), "no glow, no luminescence" (v3 — produced cyan glowing eyes). (Added 2026-03-23, updated 2026-03-31 with confirmed working fix)
+  - **UPDATE 2026-07-05 — this rule graduated from a documented Gap to MACHINE enforcement (ADR-0010).** A two-layer doctrine now governs eyes: CANON may describe the on-screen *appearance* (Robotiko's eyes do emit steady blue light — master.md keeps that language); but any MODEL-FACING string must use the material-lens idiom. Robotiko's blue formula parallels the proven Robochica one: "steady blue optical lenses set into chrome sockets, like polished sapphires" (flickering blue-red for the Phase-2 fracture; calm steady blue for Phase-3). The lint (`eye_glow_hits`) fires on a glow keyword within 3 tokens of an eye/lens word and runs on BOTH model-facing surfaces — `character_profiles.json` prompt fields (`scan_eye_glow`, FAIL — it is a live input) and Text Prompt blockquotes (`check_eye_glow`, FAIL for version-stamped files, WARN for shipped unstamped ones). Kintsugi body gold-glow is allowlisted; "light" (lens projection) is deliberately not a glow keyword. `character_profiles.json` and master.md were reconciled: appearance in canon, lenses in prompts.
 
 ---
 
@@ -276,9 +277,10 @@ After any correction from the human:
   rule, and the motion video-suffix are currently GAPS — not enforced. Don't imply
   coverage you don't have. (TAKE 06)
   *(Update 2026-07-05: anti-spawn and the motion video-suffix graduated to Machine
-  tier via `tests/motion_script_validator.py` in the 2026-07-04 audit-fix session;
-  the eye-glow rule remains the open Gap and is scheduled to close next. The rule's
-  principle stands — the matrix, not the green run, is the coverage truth.)*
+  tier via `tests/motion_script_validator.py` in the 2026-07-04 audit-fix session; the
+  eye-glow rule then closed too — now Machine via `check_eye_glow` / `scan_eye_glow`
+  (ADR-0010), so all three original Gaps are shut. The rule's principle stands — the
+  matrix, not the green run, is the coverage truth.)*
 - **RULE:** WHEN YOUR OWN RULES CONTRADICT, SCOPE BY AUDIENCE — master.md REQUIRES the
   sanctioned Turkish attribution (names like Hacı Bektaş Veli, labels like "Turkish
   wisdom tradition"); production requires model-facing prompts to be plain-English

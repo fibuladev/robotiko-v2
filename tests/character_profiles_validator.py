@@ -14,9 +14,56 @@ Status: IMPLEMENTED v1.0
 import os
 import sys
 import json
+import importlib.util
 
 PROFILES_PATH = "_assets/cast/character_profiles.json"
 SCHEMA_PATH = "_assets/cast/character_profiles.schema.json"
+
+# Reuse the single-source eye-glow detector from the visual-prompt validator, so the
+# JSON prompt fields and the Text Prompt blockquotes are judged by identical rules
+# (ADR-0010). character_profiles.json is a LIVE production input (it feeds EP10 and
+# any re-gen), so an eye-glow leak here is FAIL, not the WARN legacy tier.
+_VPV_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "visual_prompt_validator.py")
+_vpv_spec = importlib.util.spec_from_file_location("visual_prompt_validator", _VPV_PATH)
+_vpv = importlib.util.module_from_spec(_vpv_spec)
+_vpv_spec.loader.exec_module(_vpv)
+
+# Keys whose string values are MODEL-FACING prompt fragments (fed to the generator).
+PROMPT_BEARING_KEYS = {"base_visual_prompt", "visual_prompt_addition"}
+
+
+def _iter_prompt_strings(node, path=""):
+    """Yield (json_path, string) for every prompt-bearing field, recursively. A
+    visual_prompt_addition may be a plain string or a dict of per-episode strings."""
+    if isinstance(node, dict):
+        for key, value in node.items():
+            child = f"{path}.{key}" if path else key
+            if key in PROMPT_BEARING_KEYS:
+                if isinstance(value, str):
+                    yield child, value
+                elif isinstance(value, dict):
+                    for sub, sv in value.items():
+                        if isinstance(sv, str):
+                            yield f"{child}.{sub}", sv
+            else:
+                yield from _iter_prompt_strings(value, child)
+    elif isinstance(node, list):
+        for i, item in enumerate(node):
+            yield from _iter_prompt_strings(item, f"{path}[{i}]")
+
+
+def scan_eye_glow(data) -> list:
+    """FAIL findings for any glow-family keyword near an eye/lens word in a
+    prompt-bearing field. Kintsugi body gold-glow is allowlisted by the detector."""
+    findings = []
+    for json_path, text in _iter_prompt_strings(data):
+        for snippet in _vpv.eye_glow_hits(text):
+            findings.append((
+                "FAIL",
+                f"Eye-glow in model-facing field '{json_path}': '...{snippet}...'. "
+                f"Use the material-lens idiom (ADR-0010); glow keywords break generation."
+            ))
+    return findings
 
 
 def validate() -> list:
@@ -34,6 +81,10 @@ def validate() -> list:
 
     if not isinstance(data, dict):
         return [("FAIL", "Top-level value must be an object")]
+
+    # Content-layer guard: model-facing prompt fields must use the material-lens eye
+    # idiom, not glow keywords (ADR-0010). Structural checks continue below.
+    findings.extend(scan_eye_glow(data))
 
     top_required = schema.get("required", [])
     for key in top_required:

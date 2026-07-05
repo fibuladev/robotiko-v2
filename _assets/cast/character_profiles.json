@@ -2,7 +2,7 @@
   "robotiko": {
     "name": "Robotiko v2.0",
     "archetype": "The Seeker / The Student",
-    "base_visual_prompt": "Retro-futuristic chrome metal body, exposed colorful analog wires (blue and red) — raw, industrial, NOT sleek, glowing blue eyes (expressive, emotionally readable), 70s sci-fi mechanical aesthetic",
+    "base_visual_prompt": "Retro-futuristic chrome metal body, exposed colorful analog wires (blue and red) — raw, industrial, NOT sleek, blue optical lenses set into chrome sockets, like polished sapphires (expressive, emotionally readable), 70s sci-fi mechanical aesthetic",
     "master_ref_path": "_assets/cast/ref_robotiko_master.png",
     "reference_images": {
       "pristine": {
@@ -71,21 +71,21 @@
         "station": "The Commanding Self → The Self-Blaming Self",
         "visual_state": "Chrome body accumulates damage across Phase 1. EP01: pristine, no damage — the machine at peak arrogance. EP02: right ear missing (shrapnel scar, exposed wires at ear socket), torso dent/gouge from press machine, shoulder scratches from Congo steel. EP03: EP02 damage carries forward, plus minor cosmetic marks (bullet graze on cheek, road dust) that are temporary. Full armor intact throughout, but no longer pristine after EP01.",
         "visual_prompt_addition": {
-          "ep01": "pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full armor, retro-futuristic 70s mechanical aesthetic",
-          "ep02_ep03": "chrome body with battle scars, right ear missing with shrapnel scar and exposed wires at ear socket, torso dent from press machine, shoulder scratches, clean exposed analog wires (blue and red), glowing steady blue eyes, full armor intact, retro-futuristic 70s mechanical aesthetic"
+          "ep01": "pristine chrome body, clean exposed analog wires (blue and red), steady blue optical lenses set into chrome sockets, like polished sapphires, no damage, full armor, retro-futuristic 70s mechanical aesthetic",
+          "ep02_ep03": "chrome body with battle scars, right ear missing with shrapnel scar and exposed wires at ear socket, torso dent from press machine, shoulder scratches, clean exposed analog wires (blue and red), steady blue optical lenses set into chrome sockets, like polished sapphires, full armor intact, retro-futuristic 70s mechanical aesthetic"
         }
       },
       "phase_2_destruction": {
         "episodes": [4, 5, 6, 7],
         "station": "The Inspired Self → The Surrendering Self",
         "visual_state": "Rusted joints, sparks flying from damaged areas, glitching blue eyes (flickering between blue and red), cracked chassis with exposed internals. Each episode adds more damage. By EP07, barely holding together.",
-        "visual_prompt_addition": "rusted and cracked chrome chassis, sparks flying from joints, glitching blue-red eyes, exposed and fraying analog wires, battle-damaged retro-futuristic body"
+        "visual_prompt_addition": "rusted and cracked chrome chassis, sparks flying from joints, flickering blue-red optical lenses set into chrome sockets, exposed and fraying analog wires, battle-damaged retro-futuristic body"
       },
       "phase_3_reconstruction": {
         "episodes": [8, 9, 10],
         "station": "The Contented Self → The Integrated Self",
         "visual_state": "The pristine armor is gone. Robotiko patches himself NOT with new shining parts, but with rusted metals and scraps found along the road — a patchwork body of scavenged, mismatched repairs. Translucent digital skin in places, bioluminescent core visible through cracks. The damage is not hidden; it is worn as a badge of liberation. Glitch is scripture.",
-        "visual_prompt_addition": "patchwork chrome body repaired with mismatched rusted scrap metal, translucent digital skin revealing bioluminescent core beneath, cracks filled with glowing gold light, calm steady blue eyes, dissolved and reformed metal aesthetic",
+        "visual_prompt_addition": "patchwork chrome body repaired with mismatched rusted scrap metal, translucent digital skin revealing bioluminescent core beneath, cracks filled with glowing gold light, calm steady blue optical lenses set into chrome sockets, dissolved and reformed metal aesthetic",
         "ep08_exception": "EP08 is Phase 3 at the STATION/soul level ONLY. The BODY stays @Damaged (Phase 2) for the entire episode — no patchwork, no gold-filled cracks, no bioluminescent core, no new parts. The VISIBLE reconstruction described above begins in EP09. EP08's single visible inner-change marker is the climax eyes steadying from glitch to calm blue (not a body change). Two-beat arc: EP08 strips bare / frees the awareness; EP09 mends the body with gold."
       }
     }
@@ -114,7 +114,7 @@
     "episodes_primary": [5, 6],
     "episodes_echo": [],
     "role": "Robotiko's first encounter with love. Triggers emotional overclocking. She is not a villain — she is a mirror. What Robotiko projects onto her reveals more about him than about her.",
-    "base_visual_prompt": "Retro-futuristic chrome female android, 70s sci-fi feminine form — elegant curves in chrome plating, distinct from Robotiko but clearly from the same aesthetic universe. Exposed warm-toned analog wires (gold and copper), glowing amber-gold eyes (steady, warm), subtle scratches and minor wear marks on chrome (NOT pristine, carries her own history). Art deco-influenced head shape, slightly more elongated than Robotiko. One unique visual signature: a fractal/mandala pattern etched into her left shoulder plate, identifiable even in silhouette.",
+    "base_visual_prompt": "Retro-futuristic chrome female android, 70s sci-fi feminine form — elegant curves in chrome plating, distinct from Robotiko but clearly from the same aesthetic universe. Exposed warm-toned analog wires (gold and copper), dark amber glass lenses set into chrome sockets, like polished gemstones (steady, warm), subtle scratches and minor wear marks on chrome (NOT pristine, carries her own history). Art deco-influenced head shape, slightly more elongated than Robotiko. One unique visual signature: a fractal/mandala pattern etched into her left shoulder plate, identifiable even in silhouette.",
     "master_ref_path": "_assets/cast/ref_robochica_master.png",
     "eye_color": "amber-gold (steady, warm — carries the color of TRUTH from EP04's amber DNA, creating structural irony: Robotiko unconsciously sees the Mentor's teaching in her eyes)",
     "wire_colors": "gold and copper (warm tones, contrasting Robotiko's blue and red)",

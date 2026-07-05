@@ -29,9 +29,12 @@ import json
 import glob
 import argparse
 
-REQUIRED_TOP_LEVEL = {"track_title", "tempo", "key", "time_signature", "total_duration", "mood", "instruments", "sections"}
+REQUIRED_TOP_LEVEL = {"track_title", "total_duration", "mood", "sections"}
 
-OPTIONAL_TOP_LEVEL = {"styles", "spoken_intro_duration"}
+# Music-specific fields: required for musical projects (ROBOTIKO always populates them),
+# optional for non-musical forks where tempo/key have no meaning.
+# See FORKING.md § "Non-musical projects".
+OPTIONAL_TOP_LEVEL = {"tempo", "key", "time_signature", "instruments", "styles", "spoken_intro_duration"}
 
 REQUIRED_SECTION = {"type", "start", "end", "energy"}
 

@@ -32,6 +32,7 @@ PATTERNS = {
     "direction_brief":  r"^ep\d{2}_[a-z0-9_]+_brief\.md$",
     # Edit + packaging + social deliverables (produced by capcut-editor, youtube-packager, reels-atomizer, launch-orchestrator)
     "capcut_guide":     r"^ep\d{2}_capcut_guide_v\d{2}\.md$",
+    "sync_qc":          r"^ep\d{2}_sync_qc_v\d{2}\.md$",  # sync-QC record (pipeline_rules Step 11; template: _templates/ep_sync_qc_template.md)
     "youtube_package":  r"^ep\d{2}_youtube_package\.md$",
     "social_atomization": r"^ep\d{2}_social_atomization\.md$",
     "launch_checklist": r"^ep\d{2}_launch_checklist\.md$",

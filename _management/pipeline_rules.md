@@ -1,5 +1,5 @@
 # PRODUCTION PIPELINE & QUALITY ASSURANCE
-> **Version:** 2.5 | **Last Updated:** 2026-06-11
+> **Version:** 2.6 | **Last Updated:** 2026-07-05
 > Always refer to `_management/master.md` as the absolute source of truth.
 
 ---
@@ -91,6 +91,31 @@ Two steps require explicit human approval before proceeding. Everything else Cla
 - **Tool:** Human curates best outputs
 - **Output:** `episode-{XX}/04_visuals/selected/ep{XX}_s{XX}_selected.png`
 
+### Production Telemetry: Attempts Ledger
+
+During image generation (Step 6), log every generated scene asset in
+`episode-{XX}/04_visuals/raw/attempts.md` — **filled DURING generation, not
+reconstructed afterward** (reconstruction would be fabricated telemetry, exactly
+what this ledger exists to prevent). One row per scene:
+
+| scene_id | attempts | first_pass (y/n) | fail_reason (one phrase) |
+|---|---|---|---|
+| s01 | 1 | y | — |
+| s27 | 9 | n | no kintsugi reference (see ADR-0007) |
+
+- **attempts** = how many generations it took to land a keeper for that scene.
+- **first_pass** = did the very first generation land the keeper (y) or not (n).
+- **fail_reason** = one short phrase when first_pass is n; leave `—` when y.
+- **Mandatory from EP10 onward** — the last unproduced episode, and therefore the
+  only remaining window to measure first-pass yield for real. EP01-EP09 were
+  generated before this convention and get no retroactive ledger.
+- This is the first *instrumented* data behind the "80-90% first-pass" figure, which
+  until now is an experiential estimate from the director's production notes. See
+  `_management/adr/0007-reference-first-or-pay-the-reshoot-tax.md` (Note on empirical
+  claims) — after EP10 that claim gets its first measured data point.
+- `attempts.md` lives inside `raw/` (a naming-check skip folder) and is summarized by
+  the standalone reporter `tests/attempts_report.py`, which is NOT part of the CI gate.
+
 ---
 
 ## PHASE 4: MOTION PRODUCTION
@@ -161,6 +186,7 @@ Video generation tools produce fixed-duration clips (5s or 10s). Music sections 
 - **Output:**
   - Edit guide: `episode-{XX}/06_edit/ep{XX}_capcut_guide_v{VV}.md`
   - Final video: `episode-{XX}/06_edit/ep{XX}_final_v{VV}.mp4`
+  - Sync-QC record: `episode-{XX}/06_edit/ep{XX}_sync_qc_v01.md`
 
 #### CapCut Post-Production Protocol
 
@@ -179,6 +205,28 @@ Apply these to ALL clips before editing, to unify output from multiple AI tools 
   - [ ] Color consistency (Kodachrome warmth preserved)
   - [ ] 4K export confirmed
   - [ ] No clean/sterile aesthetics — analog decay preserved
+
+#### Sync-QC Record (Mandatory Evidence)
+
+The "Beat sync verified" checkbox above is a claim until it is measured. Every
+episode's edit produces a committed sync-QC record from the template:
+
+- **Output:** `episode-{XX}/06_edit/ep{XX}_sync_qc_v01.md`, copied from
+  `_templates/ep_sync_qc_template.md` and filled by the human once the render exists.
+- **Minimum 5 timestamped spot-checks**, sourced from the motion script's Beat Sync
+  Notes table. Each spot-check compares the target timestamp to the actual cut
+  timestamp and returns a verdict: ON-BEAT (|delta| <= 150 ms), OFF by N ms, or
+  ACCEPTED-DEVIATION (deliberate artistic offset, one-line reason). Artistic
+  deviations are legitimate; hiding them is not.
+- **Why it lives here and not in CI:** the final render is gitignored (Drive /
+  portable disk), so CI can validate the score but never the mix. This record is the
+  evidence CI cannot produce. `scripts/sync_probe.py` is an optional LOCAL helper
+  that prints measured cut-vs-boundary numbers for the table — it is not part of the
+  CI gate.
+- **Scope:**
+  - **EP01-EP07 — legacy (pre-QC-convention).** No retroactive obligation.
+  - **EP08 — optional retro record** when the render is at hand.
+  - **EP09 onward — mandatory.** The edit is not "done" without the record.
 
 ---
 

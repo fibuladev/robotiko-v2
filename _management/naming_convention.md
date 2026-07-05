@@ -55,6 +55,7 @@ ep{EPISODE_NUMBER}_s{SCENE_NUMBER}_{TYPE}_v{VERSION}.{EXTENSION}
 | File Type | Naming Pattern | Example |
 |---|---|---|
 | CapCut Guide | `ep{XX}_capcut_guide_v{XX}.md` | `ep07_capcut_guide_v01.md` |
+| Sync-QC Record | `ep{XX}_sync_qc_v{XX}.md` | `ep09_sync_qc_v01.md` |
 | YouTube Package | `ep{XX}_youtube_package.md` | `ep07_youtube_package.md` |
 | Social Atomization | `ep{XX}_social_atomization.md` | `ep02_social_atomization.md` |
 | Launch Checklist | `ep{XX}_launch_checklist.md` | `ep01_launch_checklist.md` |

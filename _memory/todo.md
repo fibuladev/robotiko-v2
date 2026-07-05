@@ -18,8 +18,10 @@ audit the diffs, then commit thematically:**
 - W2c: motion/music validators (camera 5-clip window + accent budget + personality,
   energy->motion heuristic, EP08 overlay convention)
 - W9: RELEASE.md runbook + ADR-0011 draft + create_episode.yml PR flow + CI job summary
-- W6: _templates/ep_sync_qc_template.md + scripts/sync_probe.py + tests/attempts_report.py
-  + pipeline_rules additions
+- W6: DONE (uncommitted) — _templates/ep_sync_qc_template.md + scripts/sync_probe.py +
+  tests/attempts_report.py + pipeline_rules 2.6 + capcut SKILL xref. FLAGGED for next
+  session: add "sync_qc": r"^ep\d{2}_sync_qc_v\d{2}\.md$" pattern to naming_check.py
+  (+ meta-test) BEFORE the first real EP09 sync-QC record lands, or naming gate will FAIL it.
 
 Fibula decisions RESOLVED: golden report = ADR'd transparency (finalize ADR-0011 to
 ACCEPTED after W9's sensitivity check) · curated frames = YES full set (<15MB, curation

@@ -119,6 +119,7 @@ After all clips are placed and adjusted:
   - **Drum fills/drops** — impact shots must land on the downbeat
   - **Silence/breakdowns** — visual stillness must begin exactly when music drops
 - Mark any clips that cannot be sync'd without compromising neighboring clips — flag for human decision
+- After export, record the measured spot-checks in `episode-{XX}/06_edit/ep{XX}_sync_qc_v01.md` (from `_templates/ep_sync_qc_template.md`, min 5 checks) — the committed evidence CI cannot produce, since the render is gitignored. See `_management/pipeline_rules.md` (Step 11, Sync-QC Record).
 
 ### Phase 5: Transition Strategy
 Apply transitions between shots using these rules:

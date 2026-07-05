@@ -18,6 +18,8 @@ supersedes the old one (don't rewrite history).
 | [0006](0006-scoped-prompt-hygiene.md) | Scoped prompt hygiene: ASCII only where it's model-facing | Accepted |
 | [0007](0007-reference-first-or-pay-the-reshoot-tax.md) | Reference-first, or pay the reshoot tax | Accepted |
 | [0008](0008-approval-gates-as-data.md) | Approval gates as data, not checkboxes | Accepted |
+| [0011](0011-git-history-exposure.md) | Git-history exposure of the internal golden-release report | Accepted |
+| [0012](0012-scaffold-pr-flow.md) | Episode-scaffold automation opens a PR, not a direct push | Accepted |
 
 Born out of the EP09 "Validation Backbone" build-along (the reference-integrity
 bug that passed every check green). See also

@@ -31,4 +31,33 @@ jobs:
           python-version: '3.11.9'
 
       - name: Run the full validation suite (blocks on failure)
-        run: python tests/run_all.py
+        run: |
+          # tee to a file for the summary step; pipefail keeps a red suite red.
+          set -o pipefail
+          python tests/run_all.py | tee run_all_output.txt
+
+      - name: Write check-group results to job summary
+        if: always()
+        run: |
+          {
+            echo "## Validation Suite - check groups"
+            echo ""
+            echo "| Result | Check group |"
+            echo "| --- | --- |"
+            if [ -f run_all_output.txt ]; then
+              # Parse the SUMMARY block lines: "  [PASS] Naming convention".
+              grep -E '^\s*\[(PASS|FAIL)\]' run_all_output.txt | while IFS= read -r line; do
+                status="$(echo "$line" | grep -oE '\[(PASS|FAIL)\]' | tr -d '[]')"
+                group="$(echo "$line" | sed -E 's/^\s*\[(PASS|FAIL)\]\s*//')"
+                if [ "$status" = "PASS" ]; then icon="PASS"; else icon="FAIL"; fi
+                echo "| $icon | $group |"
+              done
+              if ! grep -qE '^\s*\[(PASS|FAIL)\]' run_all_output.txt; then
+                echo "| n/a | Suite produced no per-group results (see logs) |"
+              fi
+            else
+              echo "| n/a | Suite output unavailable (run step did not start) |"
+            fi
+            echo ""
+            echo "_Full log in the job's step output. This table is derived from \`tests/run_all.py\`._"
+          } >> "$GITHUB_STEP_SUMMARY"

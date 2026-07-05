@@ -1,7 +1,31 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-07-05 (Repo-readiness program started — 9 workstreams from the path-to-5.0 expert panel. EP09 remaining production + all EP10 files are OUT OF SCOPE.)
+> Last Updated: 2026-07-06 (EP10 concept session — creative direction decided, concept notes drafted, awaiting Fibula approval.)
+
+---
+
+## EP10 CONCEPT SESSION (2026-07-06) — SUMMARY
+
+All 8 open questions from the finale panel RESOLVED with Fibula. Committed:
+- `episode-10/01_lyrics/ep10_lyrics_v01.md` — answer-poem lyrics + Suno style (canon drift #1 fixed)
+- `project_metadata.json` EP10: lyrics/music true, status in_production (drift #2 fixed)
+- `master.md` EP10 entry: sung answer-poem replaces "Spoken Word / Music TBD" (drift #3 fixed)
+- `episode-10/03_direction/ep10_concept_notes.md` — **THE DAWN WALK** full blueprint
+
+Key decisions: single continuous dawn walk (workshop → toppled-∞ meadow) · prophecy-not-arrival
+(stone 8 fell long ago, lies as ordinary ∞) · three-beat fourth wall (tea to camera → the look →
+gong = GitHub end screen) · Companion Camera = reserved-beside-space constitution + behavior set ·
+Mentor = waymark staff (single Amber Pulse) · Robochica FULLY withheld · apple withheld → twin tea
+glasses + side-by-side tracks · crane flock in Moon-Sun sky (break).
+
+### NEXT: EP10 PIPELINE
+- [ ] **Fibula approves concept notes** (gate for everything below)
+- [ ] Musical metadata JSON — "Create musical metadata for EP10" (needs final Suno track file)
+- [ ] Stone-8 location screenshot from EP01 final video @ S50-S51 (~4:11-4:16) — Fibula action
+- [ ] Dramaturgy session (SEPARATE, max effort) → human checkpoint
+- [ ] Reference-first: toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street
+- [ ] attempts.md ledger + sync-QC mandatory during production
 
 ---
 

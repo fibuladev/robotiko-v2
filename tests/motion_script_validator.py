@@ -3,8 +3,15 @@ Robotiko v2.0 — Motion Script Validator
 Validates motion script files for:
   1. Mandatory video suffix on every motion prompt
   2. Anti-spawn guard on every motion prompt
-  3. Camera diversity quotas (no single move >30%, Static >=15%)
-  4. Single camera move per clip
+  3. Global camera-diversity quotas (no single move >30%, Static >=15%)
+  4. Local camera diversity — every 5 consecutive clips use >=3 distinct moves
+  5. Accent-move budget — Orbital / Handheld / Crane Up / Crane Down <=3 uses each
+  6. One camera move per clip — no combined moves ("Pan Left + Zoom In")
+  7. Episode camera personality — declared dominant move is among the most-used (WARN)
+
+Severity model: files generated with SKILL v2.0+ FAIL on a machine rule
+(1-6); pre-v2 files WARN-only (they predate the rule). Personality (7) is
+always WARN — it is an artistic-judgement signal, not a hard gate.
 
 Dependencies: standard library only.
 
@@ -12,7 +19,7 @@ Usage:
     python tests/motion_script_validator.py --full
     python tests/motion_script_validator.py --file episode-09/05_video/ep09_motion_script_v01.md
 
-Status: IMPLEMENTED v1.0
+Status: IMPLEMENTED v1.1
 """
 
 import os
@@ -32,10 +39,44 @@ ANTI_SPAWN_ALTERNATIVES = [
     "no other figures",
 ]
 
-SCAFFOLD_MARKERS = ("auto-populated by Claude", "Do not fill manually", "[Claude generates", "{XX}")
+# Scaffold detection is STRUCTURAL placeholders only ("{XX}", "[Claude generates").
+# 2026-07-05: the prose markers ("auto-populated by Claude", "Do not fill manually")
+# were dropped — EP05's real, shipped 32-clip script keeps that template note line
+# at the top, and the coarse marker silently skipped the whole file (a false skip,
+# same shape as the EP01 PDF story). A true scaffold always carries {XX} tokens.
+SCAFFOLD_MARKERS = ("[Claude generates", "{XX}")
 
 MAX_SINGLE_MOVE_PCT = 30
 MIN_STATIC_PCT = 15
+
+# Local camera-diversity rule (SKILL "Camera Move Diversity Rule", ~line 424):
+# every window of 5 consecutive clips must use at least 3 different moves.
+WINDOW_SIZE = 5
+WINDOW_MIN_DISTINCT = 3
+
+# Accent moves are reserved for emotional peaks. SKILL says "max 2-3 uses per
+# episode" and the post-generation checklist pins it as "<=3 uses each": 2-3 is
+# the soft zone, >3 is the violation.
+ACCENT_MOVES = ("Orbital", "Handheld", "Crane Up", "Crane Down")
+ACCENT_BUDGET = 3
+
+# Approved camera-move vocabulary (SKILL "Camera Move Vocabulary").
+CAMERA_VOCAB = {
+    "Static", "Slow Zoom In", "Slow Zoom Out", "Pan Left", "Pan Right",
+    "Tilt Up", "Tilt Down", "Crane Up", "Crane Down", "Handheld",
+    "Dolly In", "Dolly Out", "Orbital",
+}
+
+# Declared dominant camera move per Episode Camera Personality (SKILL EP07-10).
+# EP10 ("The Companion Camera") has no single declared dominant move -> skipped.
+EPISODE_PERSONALITY = {
+    "07": "Dolly Out",     # THE RETREATING CAMERA
+    "08": "Static",        # THE WITNESSING CAMERA (Static + Crane)
+    "09": "Slow Zoom Out", # THE DISCOVERING CAMERA
+}
+# "Among the most-used" == within the top-N distinct move-counts. A 13-move
+# vocabulary makes rank-3 still a legitimate reading of "the camera feels like X".
+PERSONALITY_TOP_N = 3
 
 
 def is_skill_v2(content: str) -> bool:
@@ -66,6 +107,79 @@ def extract_camera_moves(content: str) -> list:
         if m:
             moves.append((i, m.group(1).strip()))
     return moves
+
+
+def _strip_annotation(move: str) -> str:
+    """Drop a trailing parenthetical annotation: 'Static (locked off)' -> 'Static'."""
+    return re.sub(r"\s*\(.*\)\s*$", "", move).strip()
+
+
+def _vocab_moves_in(value: str) -> list:
+    """All approved vocabulary moves that appear inside one Camera Move value."""
+    return sorted(m for m in CAMERA_VOCAB if m in value)
+
+
+def check_single_move(moves: list, sev: str, rel: str) -> list:
+    """One camera move per clip: a Camera Move value naming 2+ vocabulary moves
+    is a combined move ('Pan Left | Slow Zoom In') — conflicting instructions."""
+    findings = []
+    for line_num, move in moves:
+        found = _vocab_moves_in(move)
+        if len(found) >= 2:
+            findings.append((sev, f"{rel}: line {line_num} combines multiple camera moves "
+                                  f"in one clip ({' | '.join(found)}) - one move per clip"))
+    return findings
+
+
+def check_local_diversity(moves: list, sev: str, rel: str) -> list:
+    """Local variety: every WINDOW_SIZE consecutive clips must use at least
+    WINDOW_MIN_DISTINCT different moves (catches A-B-A-B monotony that the
+    global 30% quota is blind to)."""
+    findings = []
+    values = [_strip_annotation(mv) for _, mv in moves]
+    for i in range(0, len(values) - WINDOW_SIZE + 1):
+        window = values[i:i + WINDOW_SIZE]
+        distinct = len(set(window))
+        if distinct < WINDOW_MIN_DISTINCT:
+            findings.append((sev, f"{rel}: clips {i + 1}-{i + WINDOW_SIZE} use only "
+                                  f"{distinct} distinct moves ({', '.join(window)}) - "
+                                  f"every {WINDOW_SIZE} consecutive clips need >={WINDOW_MIN_DISTINCT}"))
+    return findings
+
+
+def check_accent_budget(moves: list, sev: str, rel: str) -> list:
+    """Accent moves (Orbital/Handheld/Crane Up/Crane Down) are reserved for
+    emotional peaks. SKILL says 'max 2-3 uses per episode': 2-3 is the soft
+    zone, >ACCENT_BUDGET (3) is the violation."""
+    findings = []
+    counter = Counter(_strip_annotation(mv) for _, mv in moves)
+    for accent in ACCENT_MOVES:
+        count = counter.get(accent, 0)
+        if count > ACCENT_BUDGET:
+            findings.append((sev, f"{rel}: accent move '{accent}' used {count} times - "
+                                  f"max {ACCENT_BUDGET} per episode (SKILL soft zone is 2-3)"))
+    return findings
+
+
+def check_camera_personality(episode: str, moves: list, rel: str) -> list:
+    """EP07-09 declare a camera personality with a dominant move; verify it is
+    among the most-used moves (top PERSONALITY_TOP_N). Always WARN — whether the
+    camera 'feels like' its personality is artistic judgement, not arithmetic."""
+    declared = EPISODE_PERSONALITY.get(episode)
+    if not declared or not moves:
+        return []
+    counter = Counter(_strip_annotation(mv) for _, mv in moves)
+    top = [m for m, _ in counter.most_common(PERSONALITY_TOP_N)]
+    if declared not in top:
+        return [("WARN", f"{rel}: EP{episode} personality move '{declared}' is not among "
+                         f"the top {PERSONALITY_TOP_N} used moves ({', '.join(top)}) - "
+                         f"verify the episode camera personality is honored")]
+    return []
+
+
+def episode_number_from_path(path: str) -> str:
+    m = re.search(r"ep(\d\d)_motion_script", os.path.basename(path))
+    return m.group(1) if m else ""
 
 
 def validate_file(path: str) -> list:
@@ -115,6 +229,11 @@ def validate_file(path: str) -> list:
     if static_pct < MIN_STATIC_PCT:
         findings.append((sev, f"{rel}: Static camera at {static_pct:.0f}% — minimum {MIN_STATIC_PCT}%"))
 
+    findings.extend(check_single_move(moves, sev, rel))
+    findings.extend(check_local_diversity(moves, sev, rel))
+    findings.extend(check_accent_budget(moves, sev, rel))
+    findings.extend(check_camera_personality(episode_number_from_path(path), moves, rel))
+
     return findings
 
 
@@ -137,11 +256,16 @@ def run_full(repo_root: str = ".") -> int:
         findings = validate_file(path)
         rel = os.path.relpath(path, repo_root)
         fails = [f for f in findings if f[0] in ("FAIL", "ERROR")]
+        warns = [f for f in findings if f[0] == "WARN"]
 
         if fails:
             total_fail += len(fails)
             print(f"\n  {rel}")
             for sev, msg in findings:
+                print(f"    {sev}: {msg}")
+        elif warns:
+            print(f"\n  {rel} - {len(warns)} warning(s) (pre-SKILL-v2 / advisory)")
+            for sev, msg in warns:
                 print(f"    {sev}: {msg}")
         else:
             print(f"  [OK] {rel}")

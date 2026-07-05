@@ -52,8 +52,29 @@ _pspec = importlib.util.spec_from_file_location(
 pi = importlib.util.module_from_spec(_pspec)
 _pspec.loader.exec_module(pi)
 
+_mspec = importlib.util.spec_from_file_location(
+    "motion_script_validator", os.path.join(TESTS_DIR, "motion_script_validator.py")
+)
+msv = importlib.util.module_from_spec(_mspec)
+_mspec.loader.exec_module(msv)
+
+_espec = importlib.util.spec_from_file_location(
+    "energy_motion_check", os.path.join(TESTS_DIR, "energy_motion_check.py")
+)
+emc = importlib.util.module_from_spec(_espec)
+_espec.loader.exec_module(emc)
+
+_mmspec = importlib.util.spec_from_file_location(
+    "musical_metadata_validator", os.path.join(TESTS_DIR, "musical_metadata_validator.py")
+)
+mmv = importlib.util.module_from_spec(_mmspec)
+_mmspec.loader.exec_module(mmv)
+
 DOC_REF_BAD = os.path.join(FIXTURES, "doc_ref_BAD.md")
 DOC_REF_GOOD = os.path.join(FIXTURES, "doc_ref_GOOD.md")
+
+OVERLAY_GOOD = os.path.join(FIXTURES, "musical_metadata_overlay_GOOD.json")
+OVERLAP_BAD = os.path.join(FIXTURES, "musical_metadata_overlap_BAD.json")
 
 # M4 fixture: a PDF that lives in a selected/ SUBDIR (exactly where EP01's real PDF
 # sits) — the case the old one-level os.listdir could never see.
@@ -795,6 +816,326 @@ class TestRealTreeStaysGreen(unittest.TestCase):
             self.assertTrue(os.path.isfile(path), f"ledger artifact missing: {e['artifact']}")
             self.assertEqual(pi.sha256_file(path), e["sha256"],
                              f"ledger sha != disk sha for {e['artifact']}")
+
+
+# ─────────────────────────────────────────────
+# WS2 A2.5 — camera-diversity machine enforcement, graded both directions.
+# ─────────────────────────────────────────────
+
+def _mv(seq):
+    """Turn a list of move names into the (line_num, value) shape the checks eat."""
+    return [(i + 1, m) for i, m in enumerate(seq)]
+
+
+class TestLocalDiversityWindow(unittest.TestCase):
+    """The A-B-A-B trap: alternating two moves passes the global 30% quota but
+    is exactly the monotony the local window rule exists to catch."""
+
+    def test_abab_pattern_fires(self):
+        moves = _mv(["Static", "Slow Zoom In"] * 3)  # 6 clips, only 2 distinct
+        self.assertTrue(msv.check_local_diversity(moves, "FAIL", "x.md"))
+
+    def test_three_distinct_per_window_passes(self):
+        moves = _mv(["Static", "Slow Zoom In", "Pan Left", "Static", "Slow Zoom In",
+                     "Pan Right", "Dolly In", "Static", "Tilt Up", "Slow Zoom Out"])
+        self.assertEqual(msv.check_local_diversity(moves, "FAIL", "x.md"), [])
+
+    def test_short_scripts_have_no_window(self):
+        # Fewer than WINDOW_SIZE clips: nothing to slide over, nothing to flag.
+        moves = _mv(["Static", "Static", "Static", "Static"])
+        self.assertEqual(msv.check_local_diversity(moves, "FAIL", "x.md"), [])
+
+    def test_annotation_does_not_fake_diversity(self):
+        # 'Static (locked off)' is still Static — annotations must not count
+        # as a distinct move.
+        moves = _mv(["Static", "Static (locked off)", "Static", "Slow Zoom In",
+                     "Slow Zoom In (subtle)"])
+        self.assertTrue(msv.check_local_diversity(moves, "FAIL", "x.md"))
+
+    def test_severity_passthrough(self):
+        moves = _mv(["Static", "Slow Zoom In"] * 3)
+        self.assertTrue(all(s == "WARN" for s, _ in
+                            msv.check_local_diversity(moves, "WARN", "x.md")))
+        self.assertTrue(all(s == "FAIL" for s, _ in
+                            msv.check_local_diversity(moves, "FAIL", "x.md")))
+
+
+class TestAccentBudget(unittest.TestCase):
+    """Accent moves (Orbital/Handheld/Crane) are peak-only: >3 uses fires,
+    <=3 (the SKILL's 2-3 soft zone) stays silent."""
+
+    def test_four_orbitals_fire(self):
+        moves = _mv(["Orbital"] * 4 + ["Static"] * 6)
+        findings = msv.check_accent_budget(moves, "FAIL", "x.md")
+        self.assertTrue(any("Orbital" in m for _, m in findings))
+
+    def test_three_orbitals_are_the_soft_zone(self):
+        moves = _mv(["Orbital"] * 3 + ["Static"] * 7)
+        self.assertEqual(msv.check_accent_budget(moves, "FAIL", "x.md"), [])
+
+    def test_crane_up_and_down_are_separate_budgets(self):
+        # 3x Crane Up + 3x Crane Down: neither individually exceeds the budget.
+        moves = _mv(["Crane Up"] * 3 + ["Crane Down"] * 3 + ["Static"] * 4)
+        self.assertEqual(msv.check_accent_budget(moves, "FAIL", "x.md"), [])
+
+    def test_non_accent_moves_have_no_budget(self):
+        moves = _mv(["Slow Zoom In"] * 10)
+        self.assertEqual(msv.check_accent_budget(moves, "FAIL", "x.md"), [])
+
+
+class TestSingleMoveRule(unittest.TestCase):
+    """One camera move per clip — the docstring used to claim this without
+    checking it. Now it is checked; prove both directions."""
+
+    def test_combined_move_fires(self):
+        moves = _mv(["Pan Left | Slow Zoom In"])
+        self.assertTrue(msv.check_single_move(moves, "FAIL", "x.md"))
+
+    def test_single_move_passes(self):
+        moves = _mv(["Slow Zoom In"])
+        self.assertEqual(msv.check_single_move(moves, "FAIL", "x.md"), [])
+
+    def test_parenthetical_annotation_is_not_a_second_move(self):
+        moves = _mv(["Dolly In (continuous forward motion through tunnel)"])
+        self.assertEqual(msv.check_single_move(moves, "FAIL", "x.md"), [])
+
+
+class TestCameraPersonality(unittest.TestCase):
+    """EP07-09 declare a dominant personality move; among-top-3 is honored,
+    absent-from-top-3 warns. Always WARN — artistic judgement."""
+
+    def test_declared_move_dominant_is_silent(self):
+        moves = _mv(["Dolly Out"] * 5 + ["Static"] * 4 + ["Slow Zoom In"] * 3)
+        self.assertEqual(msv.check_camera_personality("07", moves, "x.md"), [])
+
+    def test_declared_move_missing_warns(self):
+        moves = _mv(["Static"] * 5 + ["Slow Zoom In"] * 4 + ["Pan Left"] * 3
+                    + ["Tilt Up"] * 2)  # no Dolly Out anywhere
+        findings = msv.check_camera_personality("07", moves, "x.md")
+        self.assertTrue(findings)
+        self.assertTrue(all(s == "WARN" for s, _ in findings),
+                        "personality is artistic judgement — never FAIL")
+
+    def test_episode_without_declared_personality_is_skipped(self):
+        moves = _mv(["Static"] * 10)
+        self.assertEqual(msv.check_camera_personality("05", moves, "x.md"), [])
+
+
+class TestMotionScriptRealTree(unittest.TestCase):
+    """Shipped episodes stay green: EP07-09 were produced under the diversity
+    rule and must not FAIL; pre-v2 episodes may only WARN."""
+
+    LATEST = {
+        "05": "episode-05/05_video/ep05_motion_script_v01.md",
+        "07": "episode-07/05_video/ep07_motion_script_v01.md",
+        "08": "episode-08/05_video/ep08_motion_script_v01.md",
+        "09": "episode-09/05_video/ep09_motion_script_v02.md",
+        "10": "episode-10/05_video/ep10_motion_script_v01.md",
+    }
+
+    def _findings(self, ep):
+        return msv.validate_file(os.path.join(REPO_ROOT, self.LATEST[ep]))
+
+    def test_v2_episodes_have_no_fails(self):
+        for ep in ("07", "08", "09"):
+            fails = [m for s, m in self._findings(ep) if s in ("FAIL", "ERROR")]
+            self.assertEqual(fails, [], f"EP{ep} (SKILL v2) must stay green: {fails}")
+
+    def test_ep05_is_no_longer_falsely_skipped(self):
+        # EP05's real 32-clip script kept the template's "auto-populated" note
+        # line, and the coarse scaffold marker silently skipped the whole file.
+        # It must now parse and produce (pre-v2) findings — WARNs, never FAILs.
+        findings = self._findings("05")
+        self.assertTrue(findings, "EP05 must be validated, not scaffold-skipped.")
+        self.assertEqual([m for s, m in findings if s in ("FAIL", "ERROR")], [])
+
+    def test_ep10_scaffold_is_still_skipped(self):
+        # EP10 is a true scaffold (S{XX} placeholders) — must return zero findings.
+        self.assertEqual(self._findings("10"), [])
+
+
+# ─────────────────────────────────────────────
+# WS2 A2.6 — energy -> motion cross-check (advisory tier), graded both ways.
+# ─────────────────────────────────────────────
+
+def _clip(shot="S01", ts=(0.0, 10.0), ms=5, dissonance=False):
+    return {"shot": shot, "ts": ts, "ms": ms, "dissonance": dissonance}
+
+
+def _sec(start, end, energy, stype="verse"):
+    return {"start": start, "end": end, "energy": energy, "type": stype}
+
+
+class TestEnergyMotionGrader(unittest.TestCase):
+    SECTIONS = [_sec(0.0, 30.0, "low"), _sec(30.0, 60.0, "high", "chorus")]
+
+    def test_out_of_band_fires(self):
+        # MS 9 in a 'low' (1-3) section, even with +-1 tolerance -> deviation.
+        findings = emc.check_energy_motion([_clip(ms=9)], self.SECTIONS, "x.md")
+        self.assertTrue(findings)
+        self.assertTrue(all(s == "WARN" for s, _ in findings),
+                        "energy-motion is heuristic tier — WARN only, never FAIL")
+
+    def test_in_band_is_silent(self):
+        findings = emc.check_energy_motion([_clip(ms=2)], self.SECTIONS, "x.md")
+        self.assertEqual(findings, [])
+
+    def test_dissonance_exempts(self):
+        # High-energy chorus + MS 1: the sanctioned artistic refusal.
+        clip = _clip(shot="S09", ts=(30.0, 40.0), ms=1, dissonance=True)
+        self.assertEqual(emc.check_energy_motion([clip], self.SECTIONS, "x.md"), [])
+
+    def test_same_mismatch_without_tag_fires(self):
+        clip = _clip(shot="S09", ts=(30.0, 40.0), ms=1, dissonance=False)
+        self.assertTrue(emc.check_energy_motion([clip], self.SECTIONS, "x.md"))
+
+    def test_ramp_energy_widens_band(self):
+        # 'building' = 4-8; ramp +-1 plus tolerance +-1 -> 2-10. MS 2 passes.
+        sections = [_sec(0.0, 30.0, "building")]
+        self.assertEqual(emc.check_energy_motion([_clip(ms=2)], sections, "x.md"), [])
+
+    def test_gap_between_sections_is_skipped(self):
+        sections = [_sec(0.0, 5.0, "low"), _sec(50.0, 60.0, "high")]
+        # midpoint 25s falls in the gap — nothing to grade against.
+        clip = _clip(ts=(20.0, 30.0), ms=10)
+        self.assertEqual(emc.check_energy_motion([clip], sections, "x.md"), [])
+
+    def test_unmapped_energy_is_reported(self):
+        sections = [_sec(0.0, 30.0, "transcendent")]
+        findings = emc.check_energy_motion([_clip()], sections, "x.md")
+        self.assertTrue(any("unmapped energy" in m for _, m in findings))
+
+    def test_strict_mode_narrows_band(self):
+        # 'medium' = 4-5. MS 3 passes with default tolerance, fires with strict.
+        sections = [_sec(0.0, 30.0, "medium")]
+        self.assertEqual(emc.check_energy_motion([_clip(ms=3)], sections, "x.md"), [])
+        self.assertTrue(emc.check_energy_motion([_clip(ms=3)], sections, "x.md", tolerance=0))
+
+
+class TestEnergyMotionParser(unittest.TestCase):
+    SCRIPT = (
+        "# EP99 — MOTION SCRIPT\n"
+        "> **Version:** v01 | **Skill:** `_skills/robotiko-motion-script/SKILL.md` v2.0\n"
+        "\n"
+        "### SHOT S01 — First (Multi-Clip)\n"
+        "| **Timestamp** | 0:00–0:20 |\n"
+        "| **Musical Moment** | quiet hum |\n"
+        "| **Motion Strength** | 2 |\n"
+        "| **Motion Strength** | 3 |\n"
+        "\n"
+        "### SHOT S02 — Second\n"
+        "| **Timestamp** | 0:21–0:30 |\n"
+        "| **Motion Strength** | 4 |\n"
+        "| **Musical Moment** | loud chorus [DISSONANCE] justified |\n"
+        "| **Motion Strength** | 5 |\n"
+        "\n"
+        "## BEAT SYNC NOTES\n"
+        "| 0:21 | chorus [DISSONANCE] | static hold |\n"
+        "\n"
+        "### SHOT S03 — Third\n"
+        "| **Timestamp** | 0:31–0:40 |\n"
+        "| **Motion Strength** | 6 |\n"
+    )
+
+    def setUp(self):
+        self.clips = emc.extract_clips(self.SCRIPT)
+
+    def test_all_clips_parsed(self):
+        self.assertEqual(len(self.clips), 5)
+
+    def test_timestamps_shared_across_subclips(self):
+        self.assertEqual(self.clips[0]["ts"], (0.0, 20.0))
+        self.assertEqual(self.clips[1]["ts"], (0.0, 20.0))
+
+    def test_dissonance_is_shot_scoped_and_retroactive(self):
+        # The tag appears between S02's two MS rows — BOTH S02 clips are exempt.
+        s02 = [c for c in self.clips if c["shot"] == "S02"]
+        self.assertTrue(all(c["dissonance"] for c in s02))
+
+    def test_dissonance_does_not_leak_across_shots(self):
+        s01 = [c for c in self.clips if c["shot"] == "S01"]
+        self.assertTrue(all(not c["dissonance"] for c in s01))
+
+    def test_summary_table_dissonance_does_not_exempt_last_shot(self):
+        # The [DISSONANCE] mention in the Beat Sync Notes h2 section must not
+        # retroactively exempt S02 -> already covered; and must not attach to S03.
+        s03 = [c for c in self.clips if c["shot"] == "S03"]
+        self.assertTrue(s03 and all(not c["dissonance"] for c in s03))
+
+
+class TestEnergyMotionRealTree(unittest.TestCase):
+    def test_pre_v2_episodes_are_skipped(self):
+        for ep in ("02", "05"):
+            self.assertEqual(emc.validate_episode(ep, REPO_ROOT), [],
+                             f"EP{ep} is pre-SKILL-v2 — the band mapping postdates it")
+
+    def test_ep09_is_clean_at_default_tolerance(self):
+        findings = emc.validate_episode("09", REPO_ROOT)
+        self.assertEqual([m for s, m in findings if s != "WARN"], [])
+        self.assertEqual(findings, [], f"EP09 deviations appeared: {findings}")
+
+    def test_v2_episodes_never_error(self):
+        for ep in ("07", "08", "09"):
+            findings = emc.validate_episode(ep, REPO_ROOT)
+            self.assertEqual([m for s, m in findings if s == "ERROR"], [])
+            self.assertTrue(all(s == "WARN" for s, _ in findings))
+
+
+# ─────────────────────────────────────────────
+# WS2 A2.7 — overlay convention, fixtures prove both directions.
+# ─────────────────────────────────────────────
+
+class TestOverlayConvention(unittest.TestCase):
+    """Intentional layering now has a sanctioned expression ("overlay": true);
+    an unmarked overlap graduates WARN -> FAIL."""
+
+    def test_marked_overlay_fixture_passes_clean(self):
+        self.assertEqual(mmv.validate_file(OVERLAY_GOOD), [],
+                         "a marked overlay contained in its neighbor must pass")
+
+    def test_unmarked_overlap_fixture_fails(self):
+        findings = mmv.validate_file(OVERLAP_BAD)
+        fails = [m for s, m in findings if s == "FAIL"]
+        self.assertTrue(any("overlaps previous" in m for m in fails),
+                        f"unmarked overlap must FAIL (was WARN). Got: {findings}")
+
+    def test_unmarked_overlap_is_fail_not_warn(self):
+        findings = mmv.validate_file(OVERLAP_BAD)
+        self.assertEqual([m for s, m in findings if s == "WARN"], [],
+                         "the overlap must have graduated out of WARN")
+
+    def test_overlay_without_intersection_fails_containment(self):
+        # The exemption cannot be a free pass: an 'overlay' overlapping nothing
+        # is a data error wearing a flag.
+        findings = mmv.check_overlay_containment(
+            "section[2]", 50.0, 55.0, 20.0, 45.0, "x.json")
+        self.assertTrue(any("does not intersect" in m for _, m in findings))
+
+    def test_overlay_with_intersection_passes_containment(self):
+        self.assertEqual(mmv.check_overlay_containment(
+            "section[2]", 38.0, 45.0, 21.0, 45.0, "x.json"), [])
+
+    def test_overlay_as_first_section_fails(self):
+        findings = mmv.check_overlay_containment(
+            "section[0]", 0.0, 10.0, None, None, "x.json")
+        self.assertTrue(any("no preceding section" in m for _, m in findings))
+
+    def test_ep08_real_file_is_clean(self):
+        # The acceptance condition: EP08's deliberate vocal overlay no longer
+        # lives under a warning.
+        path = os.path.join(REPO_ROOT, "episode-08", "02_music",
+                            "ep08_musical_metadata.json")
+        self.assertEqual(mmv.validate_file(path), [],
+                         "EP08 must validate with ZERO findings")
+
+    def test_all_shipped_metadata_is_clean(self):
+        # The graduation to FAIL must not torch any other shipped episode.
+        import glob as _glob
+        for path in sorted(_glob.glob(os.path.join(
+                REPO_ROOT, "episode-*", "02_music", "ep*_musical_metadata.json"))):
+            findings = mmv.validate_file(path)
+            self.assertEqual([m for s, m in findings if s in ("FAIL", "ERROR")], [],
+                             f"{path} must not FAIL")
 
 
 if __name__ == "__main__":

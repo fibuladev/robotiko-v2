@@ -12,7 +12,7 @@
 - 🔵 **Human** — gated by a person at a checkpoint; no automation claimed.
 - ⚪ **Gap** — an invariant we care about with **no** automated check yet.
 
-_Last updated: 2026-07-05 (WS2 — approval-gates-as-data: ledger, state machine, visible EP01 PDF skip)._
+_Last updated: 2026-07-05 (WS2 — camera-diversity machine enforcement (window/accent/one-move/personality), energy->motion advisory check, musical overlay convention)._
 
 ## Pipeline / content invariants
 
@@ -32,10 +32,16 @@ _Last updated: 2026-07-05 (WS2 — approval-gates-as-data: ledger, state machine
 | Robotiko **body-state keywords** match phase | 🟡 Heuristic | `check_character_phase` + subject-guard + scene-pinned whitelist ([ADR 0004](adr/0004-triage-policy-and-check-refinements.md)) | Free-text; cannot fully attribute an adjective to a subject. Backed up by the 🟢 reference check. |
 | **Prompt strings are plain-English ASCII** (model-facing only) | 🟢 Machine | `prompt_hygiene_lint.py` ([ADR 0006](adr/0006-scoped-prompt-hygiene.md)) | Scoped to Text/Motion prompt blockquotes; non-ASCII + tradition-label decoration. |
 | **Cultural attribution** scoping (canon vs prompt) | 🟢 Machine (prompt) + 🔵 Human (canon) | `prompt_hygiene_lint.py` for prompts; canon is human-authored | Was ⚪ Gap. The lint enforces ASCII/no-label in prompt strings and deliberately never reads master.md or direction notes — canon keeps its sanctioned Turkish. |
-| **Musical metadata** structure + vocabulary | 🟢 Machine | `musical_metadata_validator.py` | Required fields, energy/type vocabulary, timestamp monotonicity, total_duration match. Overlaps are WARN (intentional layering in EP08). |
+| **Musical metadata** structure + vocabulary | 🟢 Machine | `musical_metadata_validator.py` | Required fields, energy/type vocabulary, timestamp monotonicity, total_duration match. An UNMARKED overlap is now a FAIL — intentional layering must carry `"overlay": true` (see next row). |
+| **Overlay convention** — sanctioned section layering | 🟢 Machine | `check_overlay_containment` in `musical_metadata_validator.py` | A section marked `"overlay": true` (EP08's vocal hum over the boardroom verse) is exempt from monotonicity but MUST genuinely intersect the preceding section's span — an overlay that overlaps nothing is a data error wearing a flag. Fixture pair proves both directions. |
 | **Anti-spawn guard** on motion prompts | 🟢 Machine | `motion_script_validator.py` | Checks standard guard + recognized alternatives ("No third figure", "Exactly two instances"). Pre-SKILL-v2 episodes are WARN-only. |
 | Mandatory **video suffix** on motion prompts | 🟢 Machine | `motion_script_validator.py` | Exact-substring match. Pre-SKILL-v2 episodes are WARN-only. |
-| **Camera diversity** quotas | 🟢 Machine | `motion_script_validator.py` | No single move >30%, Static >=15%. Pre-SKILL-v2 episodes are WARN-only (EP06's 42% zoom-in is a known shipped issue). |
+| **Camera diversity** — global quotas | 🟢 Machine | `motion_script_validator.py` | No single move >30%, Static >=15%. Pre-SKILL-v2 episodes are WARN-only (EP06's 42% zoom-in is a known shipped issue). |
+| **Camera diversity** — local 5-clip window | 🟢 Machine | `check_local_diversity` in `motion_script_validator.py` | Every 5 consecutive clips must use >=3 distinct moves — catches the A-B-A-B monotony the global quota is blind to. SKILL-v2 episodes FAIL; pre-v2 WARN (measured legacy debt: EP02=4, EP03=1, EP04=3, EP05=8, EP06=6 windows; EP07-09 clean). |
+| **Accent-move budget** (Orbital/Handheld/Crane) | 🟢 Machine | `check_accent_budget` in `motion_script_validator.py` | SKILL says "max 2-3 uses per episode": 2-3 is the soft zone, >3 is the finding. Pre-v2 WARN (EP03's Handheld x5 is known legacy). v2+ FAIL. |
+| **One camera move per clip** | 🟢 Machine | `check_single_move` in `motion_script_validator.py` | A Camera Move value naming 2+ vocabulary moves is a combined move (conflicting model instructions). Was a docstring claim with no check behind it — now real. Pre-v2 WARN (EP01 has 4 combined values). |
+| **Episode camera personality** honored (EP07-09) | 🟡 Heuristic | `check_camera_personality` in `motion_script_validator.py` | The declared dominant move (EP07 Dolly Out, EP08 Static, EP09 Slow Zoom Out) must be among the top-3 most-used moves. Always WARN — whether the camera "feels like" its personality is artistic judgement, not arithmetic. EP10 has no single declared move; skipped. |
+| **Energy -> Motion Strength** mapping | 🟡 Heuristic | `check_energy_motion` in `energy_motion_check.py` (run_all group 10, advisory) | Each clip's MS graded against the SKILL band of its musical section (timestamp midpoint). `[DISSONANCE]` shots exempt (the tag's purpose); ramp energies widened +-1; +-1 soft tolerance by default (`--strict` for audits); pre-v2 episodes skipped. WARN everywhere — never blocks. Current advisory debt: EP07=8, EP08=11 deviations, EP09=0. |
 | **Eye rule** — no glow keyword for eyes | ⚪ Gap | — (lesson + skill only) | "dark amber glass lenses…" formula is documented, not enforced. Candidate next check. |
 | EP01 visual prompts | 🔵 Human (visibly skipped) | `visual_prompt_validator.py --full` prints the skip | EP01 visuals are a PDF (`episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf`) — pre-method episode, not machine-parseable. The M4 fix makes the skip **visible**: the detector now searches the whole `04_visuals` subtree (was a one-level `os.listdir` that never saw the `selected/` PDF, so EP01 was silently dropped). The pipeline skip is waivered in `_management/approvals.json`. |
 

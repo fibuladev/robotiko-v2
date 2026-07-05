@@ -176,7 +176,8 @@
       "start": 331.0,
       "end": 338.0,
       "energy": "medium",
-      "notes": "Emotional crack — vocal hum. The breaking point in the nightmare sequence."
+      "overlay": true,
+      "notes": "Emotional crack — vocal hum. The breaking point in the nightmare sequence. Deliberate layer: rides over the tail of the boardroom verse (312-338); marked overlay so it does not advance the timeline."
     },
     {
       "type": "verse",

@@ -426,6 +426,14 @@ Use only these approved camera moves. Do not invent custom terms.
 | **Static has weight** | Static ≥15% of clips minimum | Stillness is a choice, not filler — but it must be present |
 | **Episode personality honored** | Dominant move must match the Episode Camera Personality table | See below |
 
+> **Machine-checked** by `tests/motion_script_validator.py` (via `tests/run_all.py`):
+> the 30% / 15% quotas, the 5-clip local window, one-move-per-clip, and the accent
+> budget (2-3 is the soft zone; **>3 uses of any single accent move is the violation**)
+> all FAIL a SKILL-v2 script. Personality is WARN-only — artistic judgement stays human.
+> The energy→motion mapping (Step 2) is cross-checked as an advisory tier by
+> `tests/energy_motion_check.py`: `[DISSONANCE]`-tagged shots are exempt, ramp
+> energies get a ±1 wider band, and its warnings never block.
+
 #### Camera Diversity Report (Output Section)
 
 After the Coverage Summary, include:

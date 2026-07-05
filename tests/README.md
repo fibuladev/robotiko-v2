@@ -11,9 +11,10 @@ python tests/run_all.py        # runs every check; exits non-zero if any fails
 
 This is the single gate. CI runs the identical entrypoint and blocks the merge on
 failure. Code is standard-library only — no `pip install`. `run_all.py` executes
-9 check groups: naming convention, pipeline integrity, visual prompt sweep, prompt
+10 check groups: naming convention, pipeline integrity, visual prompt sweep, prompt
 hygiene, musical metadata, motion script, character profiles, validator
-meta-tests, and doc reference integrity.
+meta-tests, doc reference integrity, and energy-motion sync (advisory tier —
+its warnings are printed but never block).
 
 ---
 
@@ -26,12 +27,13 @@ meta-tests, and doc reference integrity.
 | `pipeline_integrity.py` | Waiver-aware skipped-step detection + disk-vs-declared state machine + approval-gate ledger enforcement | v2.0 |
 | `visual_prompt_validator.py` | Visual prompt content: suffix · forbidden aesthetics · character phase · **reference integrity** | v2.0 |
 | `prompt_hygiene_lint.py` | **Scoped** — model-facing prompt strings (Text/Motion blocks only) must be plain-English ASCII; never reads canon/direction notes | v1.0 |
-| `musical_metadata_validator.py` | Validates `musical_metadata.json` structure and vocabulary compliance: required fields, energy/section-type vocabulary, timestamp monotonicity, `total_duration` match | v1.0 |
-| `motion_script_validator.py` | Validates motion scripts: mandatory video suffix, anti-spawn guard, camera diversity quotas, single camera move per clip | v1.0 |
+| `musical_metadata_validator.py` | Validates `musical_metadata.json` structure and vocabulary compliance: required fields, energy/section-type vocabulary, timestamp monotonicity (unmarked overlap = FAIL), **overlay convention** (`"overlay": true` + containment), `total_duration` match | v1.1 |
+| `motion_script_validator.py` | Validates motion scripts: mandatory video suffix, anti-spawn guard, camera diversity (global quotas + **5-clip local window** + **accent budget** + **one-move-per-clip** + personality WARN) | v1.1 |
+| `energy_motion_check.py` | **Advisory tier** — cross-checks each clip's Motion Strength against the SKILL energy band of its musical section; `[DISSONANCE]` exempt, ramps widened, pre-SKILL-v2 skipped; warnings never block | v1.0 |
 | `character_profiles_validator.py` | Lightweight stdlib-only structural check of `character_profiles.json` against `schema.json` | v1.0 |
 | `test_validators.py` | Meta-tests — grade the graders (fixtures + both-directions proofs) | v1.0 |
 | `doc_reference_check.py` | **Doc-reality drift lint** — curated docs' backtick repo paths must exist on disk; no hook-rot; coverage-matrix ↔ `check_` sync | v1.0 |
-| `fixtures/` | Frozen BROKEN/GOOD + doc-ref BAD/GOOD regression pairs (see `fixtures/README.md`) | — |
+| `fixtures/` | Frozen BROKEN/GOOD + doc-ref BAD/GOOD + musical overlay GOOD/BAD regression pairs (see `fixtures/README.md`) | — |
 
 ---
 
@@ -111,14 +113,36 @@ run via `tests/run_all.py` and enforced in CI.
 ### musical_metadata_validator.py
 - Required top-level and per-section fields present in `musical_metadata.json`
 - Energy vocabulary and section-type vocabulary compliance (SKILL-defined levels only)
-- Timestamp monotonicity (no overlaps, ordered start/end)
+- Timestamp monotonicity (ordered start/end) — an **unmarked overlap is a FAIL**
+  now that intentional layering has a sanctioned expression
+- **Overlay convention** — a section marked `"overlay": true` (a deliberate layer,
+  e.g. EP08's vocal hum riding over the boardroom verse) is exempt from
+  monotonicity, but must genuinely intersect the preceding section's span
+  (containment check); a floating overlay is a data error wearing a flag
 - `total_duration` matches the last section's end (±1s tolerance)
 
 ### motion_script_validator.py
 - Mandatory video suffix present on every motion prompt
 - Anti-spawn guard present on every motion prompt
-- Camera diversity quotas (no single move type >30%, Static >=15%)
-- Single camera move per clip
+- Global camera diversity quotas (no single move type >30%, Static >=15%)
+- **Local diversity window** — every 5 consecutive clips must use >=3 distinct
+  moves (catches A-B-A-B monotony the global quota is blind to)
+- **Accent-move budget** — Orbital / Handheld / Crane Up / Crane Down max 3 uses
+  each per episode (SKILL soft zone is 2-3; >3 is the finding)
+- **One camera move per clip** — a Camera Move value naming 2+ vocabulary moves
+  is a combined move (conflicting model instructions)
+- **Episode camera personality** (EP07-09) — declared dominant move must be among
+  the top-3 most-used; always WARN (artistic judgement)
+- Severity: SKILL-v2+ scripts FAIL on machine rules; pre-v2 scripts WARN-only
+
+### energy_motion_check.py (advisory tier)
+- For each clip with a parseable timestamp, finds its musical section (by
+  midpoint) in the episode's `musical_metadata.json` and verifies the clip's
+  Motion Strength falls in the SKILL's energy band
+- Exemptions: `[DISSONANCE]`-tagged shots (the tag's purpose), ramp/transition
+  energies (band widened ±1), pre-SKILL-v2 episodes (skipped)
+- A ±1 soft tolerance is applied by default (`--strict` disables it for audits)
+- WARN everywhere — heuristic, art-adjacent territory; warnings never block
 
 ### character_profiles_validator.py
 - Lightweight stdlib-only structural check of `character_profiles.json` against

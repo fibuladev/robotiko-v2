@@ -1,0 +1,38 @@
+{
+  "track_title": "Overlay Fixture (GOOD)",
+  "tempo": 100,
+  "key": "E Minor",
+  "time_signature": "4/4",
+  "total_duration": 60,
+  "mood": ["fixture"],
+  "instruments": ["test signal"],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 20.0,
+      "energy": "low"
+    },
+    {
+      "type": "verse",
+      "start": 21.0,
+      "end": 45.0,
+      "energy": "medium",
+      "lyrics": "A verse that carries a layered hum over its tail."
+    },
+    {
+      "type": "vocal",
+      "start": 38.0,
+      "end": 45.0,
+      "energy": "medium",
+      "overlay": true,
+      "notes": "Sanctioned layer: vocal hum riding over the verse tail (the EP08 section[21] shape). Must PASS."
+    },
+    {
+      "type": "outro",
+      "start": 46.0,
+      "end": 60.0,
+      "energy": "fading"
+    }
+  ]
+}

@@ -10,11 +10,13 @@ Check groups:
   2. Pipeline integrity     — no silently-skipped pipeline steps
   3. Visual prompt sweep    — suffix · forbidden aesthetics · character phase · ref integrity
   4. Prompt hygiene         — model-facing prompt strings are plain-English ASCII (scoped)
-  5. Musical metadata       — JSON structure · energy/type vocabulary · timestamps · total_duration
-  6. Motion script          — video suffix · anti-spawn guard · camera diversity quotas
+  5. Musical metadata       — JSON structure · energy/type vocabulary · timestamps · overlay convention · total_duration
+  6. Motion script          — video suffix · anti-spawn guard · camera diversity (global quotas + 5-clip local window + accent budget + one-move-per-clip + personality)
   7. Character profiles     — structural validation against schema.json
   8. Validator meta-tests   — grade the graders (fixtures + both-directions proofs)
   9. Doc reference integrity — curated docs' backtick paths exist · no hook-rot · matrix sync
+ 10. Energy-motion sync     — ADVISORY tier: clip Motion Strength vs the musical
+     section's energy band (heuristic; warnings are printed but never block)
 
 Dependencies: standard library only. No `pip install`, nothing to pin at the
 package level — the strongest form of dependency hygiene. The toolchain (Python
@@ -37,6 +39,7 @@ CHECK_GROUPS = [
     ("Character profiles",   [sys.executable, "tests/character_profiles_validator.py", "--full"]),
     ("Validator meta-tests", [sys.executable, "-m", "unittest", "tests.test_validators"]),
     ("Doc reference integrity", [sys.executable, "tests/doc_reference_check.py"]),
+    ("Energy-motion sync (advisory)", [sys.executable, "tests/energy_motion_check.py", "--full"]),
 ]
 
 

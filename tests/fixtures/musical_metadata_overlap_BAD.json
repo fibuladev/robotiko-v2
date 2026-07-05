@@ -1,0 +1,37 @@
+{
+  "track_title": "Unmarked Overlap Fixture (BAD)",
+  "tempo": 100,
+  "key": "E Minor",
+  "time_signature": "4/4",
+  "total_duration": 60,
+  "mood": ["fixture"],
+  "instruments": ["test signal"],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 20.0,
+      "energy": "low"
+    },
+    {
+      "type": "verse",
+      "start": 21.0,
+      "end": 45.0,
+      "energy": "medium",
+      "lyrics": "A verse whose successor overlaps it without an overlay flag."
+    },
+    {
+      "type": "vocal",
+      "start": 38.0,
+      "end": 45.0,
+      "energy": "medium",
+      "notes": "Same shape as the GOOD fixture but WITHOUT \"overlay\": true - an unmarked overlap is a data error. Must FAIL."
+    },
+    {
+      "type": "outro",
+      "start": 46.0,
+      "end": 60.0,
+      "energy": "fading"
+    }
+  ]
+}

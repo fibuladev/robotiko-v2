@@ -7,8 +7,12 @@ Checks:
   2. Required per-section fields present
   3. Energy vocabulary compliance (SKILL-defined levels only)
   4. Section type vocabulary compliance
-  5. Timestamp monotonicity (no overlaps, ordered start/end)
-  6. total_duration matches last section's end (±1s tolerance)
+  5. Timestamp monotonicity — an UNMARKED overlap is a data error (FAIL)
+  6. Overlay convention — a section marked "overlay": true is a sanctioned
+     layer (e.g. EP08's vocal hum riding over the boardroom verse): exempt
+     from monotonicity, but it MUST genuinely intersect the preceding
+     timeline section's span (containment check)
+  7. total_duration matches last section's end (±1s tolerance)
 
 Dependencies: standard library only.
 
@@ -16,7 +20,7 @@ Usage:
     python tests/musical_metadata_validator.py --full
     python tests/musical_metadata_validator.py --episode 02
 
-Status: IMPLEMENTED v1.0
+Status: IMPLEMENTED v1.1
 """
 
 import os
@@ -30,6 +34,12 @@ REQUIRED_TOP_LEVEL = {"track_title", "tempo", "key", "time_signature", "total_du
 OPTIONAL_TOP_LEVEL = {"styles", "spoken_intro_duration"}
 
 REQUIRED_SECTION = {"type", "start", "end", "energy"}
+
+# Optional per-section flag: "overlay": true marks a section that deliberately
+# rides OVER the timeline (a layered vocal, a hum) instead of advancing it.
+# Overlay sections are exempt from monotonicity but must pass containment
+# (they have to intersect the preceding timeline section's span).
+OVERLAY_FIELD = "overlay"
 
 VALID_ENERGY = {
     "minimal", "low", "medium-low", "medium", "medium-high", "high",
@@ -45,6 +55,21 @@ VALID_SECTION_TYPES = {
 }
 
 SCAFFOLD_MARKERS = ("auto-populated by Claude", "Do not fill manually", "[Claude generates", "{XX}")
+
+
+def check_overlay_containment(label: str, start, end, prev_start, prev_end, rel: str) -> list:
+    """An overlay section must genuinely intersect the span of the preceding
+    timeline section — a floating 'overlay' that overlaps nothing is a data
+    error wearing an exemption."""
+    if prev_end is None:
+        return [("FAIL", f"{rel}: {label} is marked overlay but has no preceding "
+                         f"section to overlay")]
+    intersects = start < prev_end - 0.01 and end > prev_start + 0.01
+    if not intersects:
+        return [("FAIL", f"{rel}: {label} is marked overlay ({start}-{end}) but does "
+                         f"not intersect the preceding section's span "
+                         f"({prev_start}-{prev_end}) - remove the flag or fix the timestamps")]
+    return []
 
 
 def validate_file(path: str) -> list:
@@ -82,6 +107,7 @@ def validate_file(path: str) -> list:
         findings.append(("FAIL", f"{rel}: 'sections' must be a non-empty array"))
         return findings
 
+    prev_start = None
     prev_end = None
     for i, sec in enumerate(sections):
         label = f"section[{i}]"
@@ -109,9 +135,22 @@ def validate_file(path: str) -> list:
         if end <= start:
             findings.append(("FAIL", f"{rel}: {label} end ({end}) <= start ({start})"))
 
-        if prev_end is not None and start < prev_end - 0.01:
-            findings.append(("WARN", f"{rel}: {label} start ({start}) overlaps previous section end ({prev_end})"))
+        if sec.get(OVERLAY_FIELD) is True:
+            # Sanctioned layering: exempt from monotonicity, but containment applies.
+            findings.extend(check_overlay_containment(label, start, end, prev_start, prev_end, rel))
+            # An overlay rides over the timeline; it does not advance it.
+            if prev_end is not None:
+                prev_end = max(prev_end, end)
+            continue
 
+        if prev_end is not None and start < prev_end - 0.01:
+            # Was WARN. Now that intentional layering has a sanctioned expression
+            # ("overlay": true), an unmarked overlap is a data error. (2026-07-05)
+            findings.append(("FAIL", f"{rel}: {label} start ({start}) overlaps previous "
+                                     f"section end ({prev_end}) - a deliberate layer must "
+                                     f"be marked \"overlay\": true"))
+
+        prev_start = start
         prev_end = end
 
     total_dur = data.get("total_duration")

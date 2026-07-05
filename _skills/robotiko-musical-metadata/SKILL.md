@@ -86,11 +86,28 @@ on my metal shell!
       "end": "number — end time in seconds",
       "energy": "string — energy level (see Energy Levels below)",
       "lyrics": "string — section lyrics as continuous prose (OPTIONAL — instrumental sections omit this)",
-      "notes": "string — arrangement, vocal style, performance notes (OPTIONAL)"
+      "notes": "string — arrangement, vocal style, performance notes (OPTIONAL)",
+      "overlay": "boolean — OPTIONAL, default false. See Overlay Sections below."
     }
   ]
 }
 ```
+
+### Overlay Sections
+
+`"overlay": true` marks a section that deliberately **layers over** the preceding
+section (a vocal hum, a cry riding over a verse tail) instead of advancing the
+timeline. Rules:
+
+- An overlay section is **exempt** from the no-overlap rule.
+- It **must genuinely intersect** the preceding section's span — the validator
+  (`tests/musical_metadata_validator.py`) enforces this containment; a floating
+  "overlay" that overlaps nothing is a data error.
+- An overlapping section **without** the flag is a validation **FAIL** — now that
+  intentional layering has a sanctioned expression, an unmarked overlap means a
+  timestamp mistake.
+- Canonical example: EP08 `section[21]` — the vocal hum (331-338) layered over
+  the tail of the boardroom verse (312-338).
 
 ---
 
@@ -165,7 +182,10 @@ Human provides `MM:SS` format. Convert to seconds:
 - All timestamps are `float` with `.0` decimal
 - `"start"` of section N should be ≥ `"end"` of section N-1 (no overlaps)
 - Small gaps (1-2 seconds) between sections are acceptable (breaths, transitions)
-- If human provides overlapping timestamps, flag and ask for clarification
+- If human provides overlapping timestamps, flag and ask for clarification —
+  if the overlap is a **deliberate layer** (e.g. a vocal hum over a verse tail),
+  mark the layered section `"overlay": true` (see Overlay Sections above);
+  an unmarked overlap fails validation
 
 ---
 

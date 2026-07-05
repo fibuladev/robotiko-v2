@@ -9,6 +9,8 @@ These files are **frozen snapshots**, not live pipeline output. Do not "fix" the
 | `doc_ref_BAD.md`  | A doc naming a nonexistent backtick repo path | **FAIL** `doc_reference_check.py` |
 | `doc_ref_GOOD.md` | A clean doc (tolerated historical hook mention, `_private/` path, gitignored render output, inline-suppressed anti-example) | **PASS** `doc_reference_check.py` |
 | `pdf_only_visuals/04_visuals/selected/ep01_visual_prompts_v01.pdf` | A PDF placed in a `selected/` SUBDIR, mirroring EP01's real layout | be **found** by `visual_prompt_validator.find_pdf_visuals` (the M4 regression: the old one-level `os.listdir` never saw it) |
+| `musical_metadata_overlay_GOOD.json` | A section marked `"overlay": true` contained in its neighbor's span (the EP08 section[21] vocal-hum shape) | **PASS** `musical_metadata_validator.py` with zero findings |
+| `musical_metadata_overlap_BAD.json` | The identical overlap WITHOUT the `overlay` flag | **FAIL** `musical_metadata_validator.py` (unmarked overlap = data error, graduated from WARN) |
 
 ## Why they exist
 

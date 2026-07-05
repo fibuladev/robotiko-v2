@@ -121,8 +121,8 @@ Everything here is countable in the repo:
 | CI check groups | **10** (9 blocking + 1 advisory) |
 | Validator meta-tests (graders that grade the graders) | **154** |
 | Architecture Decision Records | **12** (`_management/adr/`) |
-| Commits of tracked history | **120** |
-| Tested lessons rules | **~125** ([`_memory/lessons.md`](_memory/lessons.md)) |
+| Commits of tracked history | **126** |
+| Tested lessons rules | **125** ([`_memory/lessons.md`](_memory/lessons.md)) |
 
 ---
 

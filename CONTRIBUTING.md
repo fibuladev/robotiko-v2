@@ -90,7 +90,7 @@ A numbered path from clone to first episode:
 
 3. **Rewrite your cast.** Replace `_assets/cast/character_profiles.json` with your characters. This is a *state machine*: each character's visual state per episode (damage, transformation, mood) is tracked here, and the visual-prompt stage enforces it. Replace the reference images in `_assets/cast/` to match.
 
-4. **Set your own mandatory suffix.** In `CLAUDE.md`, replace the visual and video suffixes with your own house style. This is what gives your series a consistent look across every generated frame.
+4. **Set your own mandatory suffix.** Change the suffix in **two** places: `tests/universe_config.py` (the single source the validation gate reads — `VISUAL_SUFFIX` and `VIDEO_SUFFIX`) **and** `CLAUDE.md` (what the skills read when they generate prompts). Change only the config and the skills drift from the gate; change only `CLAUDE.md` and the gate stays red, still demanding the ROBOTIKO suffix. The same file also holds the other universe-specific gate constants (forbidden aesthetics, the anti-spawn guard) if you want to re-point those too. This is what gives your series a consistent look across every generated frame.
 
 5. **Scaffold an episode.**
    ```bash

@@ -28,6 +28,7 @@ so one command answers both "did it pass" and "what do we NOT guarantee".
 | Script | Purpose | Status |
 |---|---|---|
 | `run_all.py` | One command — runs all checks below, exits non-zero on any failure | v2.0 |
+| `universe_config.py` | **Single source** for universe-specific gate constants (mandatory suffixes, forbidden aesthetics, anti-spawn guard); the validators import from here | v1.0 |
 | `naming_check.py` | Validates file names against `naming_convention.md` | Implemented |
 | `pipeline_integrity.py` | Waiver-aware skipped-step detection + disk-vs-declared state machine + approval-gate ledger enforcement | v2.0 |
 | `visual_prompt_validator.py` | Visual prompt content: suffix · forbidden aesthetics · character phase · **reference integrity** · **eye-glow** (model-facing) · **style-suffix variant** | v2.1 |
@@ -39,6 +40,23 @@ so one command answers both "did it pass" and "what do we NOT guarantee".
 | `test_validators.py` | Meta-tests — grade the graders (fixtures + both-directions proofs) | v1.0 |
 | `doc_reference_check.py` | **Doc-reality drift lint** — curated docs' backtick repo paths must exist on disk; no hook-rot; coverage-matrix ↔ `check_` sync | v1.0 |
 | `fixtures/` | Frozen BROKEN/GOOD + doc-ref BAD/GOOD + musical overlay GOOD/BAD regression pairs (see `fixtures/README.md`) | — |
+
+---
+
+## Universe configuration
+
+The universe-specific strings the gate enforces — the mandatory **visual** and **video**
+suffixes, the **forbidden aesthetics** list, and the **anti-spawn guard** — live in one
+place: [`universe_config.py`](universe_config.py). The visual and motion validators
+import from it, and the meta-tests derive their expectations from it too, so changing a
+value there re-points the gate instead of fighting it.
+
+Forking for your own universe? Change your constants **there and only there** (and mirror
+the suffixes in `CLAUDE.md`, which is what the skills read when they generate prompts —
+see CONTRIBUTING §3 step 4). Generation-physics rules (the eye-glow keyword lists) and the
+"declare your variant in the header" mechanism deliberately stay with their checks — they
+are not universe styling. A meta-test (`TestUniverseConfigIsLive`) proves the override is
+live in both directions.
 
 ---
 

@@ -29,15 +29,19 @@ import glob
 import argparse
 from collections import Counter
 
-MANDATORY_VIDEO_SUFFIX = "Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field."
+# universe_config lives beside this file — the single source for universe-specific
+# validator constants (video suffix, anti-spawn guard, ...). Insert its directory so the
+# import resolves whether we run as a script (tests/ is sys.path[0]), as a subprocess
+# from the repo root, or loaded by path in the meta-tests (repo root is sys.path[0]).
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import universe_config
 
-ANTI_SPAWN_GUARD = "Do not add extra characters. Keep everything as pictured."
-ANTI_SPAWN_ALTERNATIVES = [
-    "No third figure",
-    "Exactly two instances",
-    "no additional characters",
-    "no other figures",
-]
+# Universe-specific values come from universe_config (fork there, not here). The
+# module-level aliases keep existing references pointing at the single source.
+MANDATORY_VIDEO_SUFFIX = universe_config.VIDEO_SUFFIX
+
+ANTI_SPAWN_GUARD = universe_config.ANTI_SPAWN_GUARD
+ANTI_SPAWN_ALTERNATIVES = universe_config.ANTI_SPAWN_ALTERNATIVES
 
 # Scaffold detection is STRUCTURAL placeholders only ("{XX}", "[Claude generates").
 # 2026-07-05: the prose markers ("auto-populated by Claude", "Do not fill manually")

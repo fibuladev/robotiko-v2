@@ -19,23 +19,23 @@ import sys
 import json
 import argparse
 
+# universe_config lives beside this file — the single source for universe-specific
+# validator constants (suffix, forbidden aesthetics, ...). Insert its directory so the
+# import resolves whether we run as a script (tests/ is sys.path[0]), as a subprocess
+# from the repo root, or loaded by path in the meta-tests (repo root is sys.path[0]).
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import universe_config
+
 # ─────────────────────────────────────────────
 # CONSTANTS
 # ─────────────────────────────────────────────
+# Universe-specific values come from universe_config (fork there, not here). The
+# module-level aliases below keep the existing references — and the meta-tests'
+# vpv.MANDATORY_SUFFIX / vpv.FORBIDDEN_AESTHETICS — pointing at the single source.
 
-MANDATORY_SUFFIX = "hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece."
+MANDATORY_SUFFIX = universe_config.VISUAL_SUFFIX
 
-FORBIDDEN_AESTHETICS = [
-    "clean apple design",
-    "pixar",
-    "generic cyberpunk neon",
-    "smooth plastic",
-    "sleek modern",
-    "cartoonish",
-    "anime style",
-    "3d render",
-    "unreal engine",
-]
+FORBIDDEN_AESTHETICS = universe_config.FORBIDDEN_AESTHETICS
 
 # Robotiko visual state per phase. The forbidden set is per-EPISODE, not per-phase,
 # because Phase 1 is NOT uniform: EP01 is pristine, but canon (character_profiles
@@ -131,7 +131,9 @@ EYE_PROXIMITY = 3   # eye word must be within this many tokens of the glow keywo
 # is a silent contradiction with "70s album art style": WARN legacy / FAIL v2+.
 # ─────────────────────────────────────────────
 
-PHOTOREAL_MODIFIER = "photorealistic, not a painting"
+# PHOTOREAL_MODIFIER is universe-specific (fork it in universe_config). STYLE_MODE_MARKER
+# is the generic "declare your variant in the header" mechanism and stays local.
+PHOTOREAL_MODIFIER = universe_config.PHOTOREAL_MODIFIER
 STYLE_MODE_MARKER = "style mode"
 
 

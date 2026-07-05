@@ -1353,5 +1353,47 @@ class TestSyncQcNamingPattern(unittest.TestCase):
         self.assertFalse(ok)
 
 
+class TestUniverseConfigIsLive(unittest.TestCase):
+    """WS7 A7.1: the suffix the gate enforces derives from tests/universe_config.py,
+    not a second hardcoded copy. This is the fork-safety proof — CONTRIBUTING §3 step 4
+    tells a forker to change the suffix, and this test guarantees that change reaches the
+    gate instead of leaving it demanding the ROBOTIKO string. Both validators, and the
+    suffix override proven both directions."""
+
+    def test_validators_derive_constants_from_config(self):
+        # No independent hardcode: the values the validators enforce ARE the config
+        # values (universe_config is reachable as an attribute of each validator, since
+        # each does `import universe_config`).
+        self.assertEqual(vpv.MANDATORY_SUFFIX, vpv.universe_config.VISUAL_SUFFIX)
+        self.assertEqual(vpv.FORBIDDEN_AESTHETICS, vpv.universe_config.FORBIDDEN_AESTHETICS)
+        self.assertEqual(msv.MANDATORY_VIDEO_SUFFIX, msv.universe_config.VIDEO_SUFFIX)
+        self.assertEqual(msv.ANTI_SPAWN_GUARD, msv.universe_config.ANTI_SPAWN_GUARD)
+
+    def test_visual_suffix_config_override_flows_to_gate_both_directions(self):
+        # Fork the single source, re-derive exactly as the module does at import, and
+        # prove the gate followed the fork in BOTH directions.
+        uc = vpv.universe_config
+        orig_cfg = uc.VISUAL_SUFFIX
+        orig_alias = vpv.MANDATORY_SUFFIX
+        custom = "my own universe suffix, cel-shaded, masterpiece."
+        try:
+            uc.VISUAL_SUFFIX = custom                    # a forker changes the one source
+            vpv.MANDATORY_SUFFIX = uc.VISUAL_SUFFIX       # re-derive (mirrors the import line)
+            # Direction 1: the forker's own suffix now PASSES under the custom config.
+            self.assertEqual(
+                vpv.check_suffix([{"index": 1, "text": f"a chrome android, {custom}"}]), [])
+            # Direction 2: the old ROBOTIKO suffix now FAILS — the gate is no longer
+            # hardcoded to it.
+            self.assertTrue(
+                vpv.check_suffix([{"index": 1, "text": f"a chrome android, {orig_cfg}"}]),
+                "under a custom config the ROBOTIKO suffix must no longer satisfy the gate")
+        finally:
+            uc.VISUAL_SUFFIX = orig_cfg
+            vpv.MANDATORY_SUFFIX = orig_alias
+        # Restored: the ROBOTIKO suffix passes again (no leaked state).
+        self.assertEqual(
+            vpv.check_suffix([{"index": 1, "text": f"a chrome android, {orig_cfg}"}]), [])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

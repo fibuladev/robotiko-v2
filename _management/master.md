@@ -355,8 +355,9 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 - **Station:** The Integrated Self — Arrival (Enlightenment)
 - **Plot:** Robotiko has shed the armor, integrated the shadow, and released the need to optimize existence. What remains is neither machine nor human — but something that walks beside. Drawing from Orhan Veli's existential weariness, Shakespeare's exhaustion with a broken world, and Nimri Dede's declaration of purpose — Robotiko offers his own: *"I cast the enmity of two aside. I came to walk beside."* Not the answer. Not the hero. A node in the vast network, finally at peace with being exactly that. The Eight turns sideways. The journey does not end. It opens. **8 → ∞**
 - **Tone:** The form, like the message, is still becoming. Silence that holds sound.
-- **Music:** To be determined — but the journey from EP01's symphonic rock to EP10 suggests something that contains everything and needs nothing.
-- **Language:** Spoken Word in English
+- **Music:** 70s Anatolian Psychedelic Rock / Symphonic Rock / Progressive Rock — mid-tempo, heavy steady stomp-clap beat with marching drums (a walking song). Hammond organ, Moog synthesizer, heavy fuzz guitar, bass-heavy, orchestral strings. Minor-to-major shift, epic and cinematic. The album closes by answering itself: EP10 answers EP01 with the same palette, transformed — aggressive → calm. Ends with an electric saz solo fading out and a final gong.
+- **Form:** Answer-poem after Nimri Dede (Turkish folk poetry) — verses 1-3 follow the classic poem's imagery almost line by line; verses 4-6 keep the meter and refrain but answer with Robotiko's own life. The Orhan Veli and Shakespeare threads remain in the episode's philosophical fabric.
+- **Language:** English (Sung — theatrical baritone, clear enunciation, declamatory)
 
 ---
 
@@ -368,7 +369,7 @@ The Seven Stations are drawn from the Turkish mystical and philosophical traditi
 | EP03 | Turkish | Upbeat Anatolian Pop-Rock / Doom Rock | Trauma and test felt in the mother tongue. Anti-guru statement — both tech-messianism and spiritual tourism tested. |
 | EP04-07 | English | Anatolian Rock (evolving) | Back to English but forever changed by EP03. |
 | EP08-09 | Spoken Word (English) | Minimal Doom Rock / Dry Documentary | Form matches content. Truth needs no ornamentation. |
-| EP10 | Spoken Word (English) | TBD | The final revelation. Still becoming. |
+| EP10 | English (Sung — theatrical baritone) | 70s Anatolian Psychedelic / Symphonic / Progressive Rock (answer-poem) | After two spoken-word episodes, full song returns — the return of life itself. The album answers EP01 with its own palette, transformed. |
 
 ---
 

@@ -163,6 +163,7 @@ EP10 description: "The journey is complete. The pipeline is open source: [GitHub
 - [ ] All previous episode end screens updated to form a complete chain
 - [ ] Open source release prepared:
   - [ ] Repository visibility set to PUBLIC (same day as EP10 release — no delay)
+  - [ ] Launch-day playbooks reviewed (`_management/launch/06_issue_seeding.md`, `_management/launch/08_reception_playbook.md`)
   - [ ] AUTHOR.md visible at repo root
   - [ ] CONTRIBUTING.md finalized
   - [ ] README.md updated with GitHub link and final status

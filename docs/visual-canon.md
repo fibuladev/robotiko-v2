@@ -32,7 +32,7 @@ and the frames prove the distinction held.
 <table>
   <tr>
     <td align="center" width="33%"><img src="../_assets/style/frames/ep07/ep07_s27_the_ember.jpg" alt="EP07 — a single warm amber glow from outside the alley reaches Robotiko on wet chrome" width="260"></td>
-    <td align="center" width="33%"><img src="../_assets/style/frames/ep08/ep08_s24_the_fire.jpg" alt="EP08 — orange-red firelight bounces off chrome at the cave mouth" width="260"></td>
+    <td align="center" width="33%"><img src="../_assets/style/frames/ep08/ep08_s24_the_fire.jpg" alt="EP08 — orange-red firelight bounces off chrome, the fire's own physics" width="260"></td>
     <td align="center" width="33%"><img src="../_assets/style/frames/ep09/ep09_s27_glitch_is_scripture.jpg" alt="EP09 — kintsugi gold flows from a crack in the chassis, self-generated" width="260"></td>
   </tr>
   <tr>
@@ -93,19 +93,16 @@ stone-8 valley and the white-transcendent burn of the infinity arrival. The
 **twin-wings crane** still carries the whole episode in one image: one wing gold, one
 in storm-shadow, the 8-to-infinity duality stated visually before a word of it is sung.
 
-**Rules proved.** Phase 1 pristine body (the meeting and handshake show clean chrome,
-no damage — the correct state for the opening episode). The gold-vs-shadow duality
-motif — and now the **8→∞ prophecy trilogy itself**: intact monolith → cracking →
-infinity, the promise the whole series is built to pay off ("The eight shall turn
-aside," planted in EP01, answered in EP10).
+**Rules proved.** Phase 1 body (the meeting and handshake show the opening-episode
+state; these pre-method renders carry some surface weathering that the later character
+state machine would flag — the damage-tracking rule was born after EP01 shipped). The
+gold-vs-shadow duality motif — and now the **8→∞ prophecy trilogy itself**: intact
+monolith → cracking → infinity, the promise the whole series is built to pay off
+("The eight shall turn aside," planted in EP01, answered in EP10).
 
-**Honest caveat, revised (2026-07-06).** The original curation shipped without the
-stone-8 trilogy — the frames were thought lost, and this section said so. The director
-later recovered the three source images from the archive, and they entered the set as
-`s51/s71/s72`. The recovery partially repairs the arc bias flagged below: the
-storm-blue and white-cosmic poles are now represented, though the mid-episode
-cold-blue data-core frames remain absent. The correction is documented rather than
-hidden: the set was incomplete, said so, and got better.
+**Coverage note.** The stone-8 trilogy (`s51/s71/s72`) adds the storm-blue and
+white-cosmic poles to the earlier warm/gold frames. The mid-episode cold-blue
+data-core frames are not represented in the set.
 
 ---
 
@@ -162,40 +159,41 @@ below.
   <tr>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s02_the_argument.jpg" alt="Packed bag, defiance, Mentor at a tea table; EP02 scarring visible" width="200"></td>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s07_airplane_companions.jpg" alt="Spiritual-tourist group, cabin fluorescent against golden clouds" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s13_dolmus_alone.jpg" alt="Alone on a dolmus, passengers leaning away, dust-bruise on his chest" width="200"></td>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s17_bus_scars.jpg" alt="Battle-scarred bot on an intercity bus, sleeping man and grandma with seeds" width="200"></td>
-    <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s22_alanya_touts.jpg" alt="Three touts fold arms around a grinning bot under neon bar signs" width="200"></td>
   </tr>
   <tr>
     <td align="center">the argument</td>
     <td align="center">airplane companions</td>
+    <td align="center">dolmuş alone</td>
     <td align="center">bus scars</td>
-    <td align="center">Alanya touts</td>
   </tr>
   <tr>
-    <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s31_running_highway.jpg" alt="Sprinting past toll signage, damage marks visible" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s22_alanya_touts.jpg" alt="Three touts fold arms around a grinning bot under neon bar signs" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s33_bridge.jpg" alt="The Bosphorus Bridge at twilight, thin as a tightrope, chrome body on the cables" width="200"></td>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s38_mentor_overpass.jpg" alt="Fourth-wall Mentor on a Metrobus overpass, amber staff, crowd carrying Robotiko" width="200"></td>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s40_sanayi_sitesi.jpg" alt="Ambulance outside a welder shop, cyberpunk towers in smog" width="200"></td>
-    <td align="center" width="25%"><img src="../_assets/style/frames/ep03/ep03_s44_grease_iv.jpg" alt="Grease IV drips into his arm, welder-turned-doctor, stray cat" width="200"></td>
   </tr>
   <tr>
-    <td align="center">running highway</td>
+    <td align="center">Alanya touts</td>
+    <td align="center">kıldan ince sırat</td>
     <td align="center">mentor overpass</td>
     <td align="center">sanayi sitesi</td>
-    <td align="center">grease IV</td>
   </tr>
 </table>
 
 **Palette journey.** Warm domestic amber (the argument at the tea table) → sterile
-cabin fluorescent → hot Mediterranean neon (the touts) → golden industrial dust →
-twilight blue-purple with a single amber staff accent (the overpass) → flat clinical
-workshop grey (the IV).
+cabin fluorescent → dusty road gold (the dolmuş, the bus) → hot Mediterranean neon
+(the touts) → twilight blue-purple, the bridge thin as a hair, a single amber staff
+accent (the overpass) → industrial night grey (the sanayi).
 
 **Rules proved.** **Damage continuity** — the EP02 scarring is visible in the opening
-argument, the highway run, and the bus, carried forward as tracked state rather than
+argument, the dolmuş, and the bus, carried forward as tracked state rather than
 forgotten between episodes. The **single amber accent** on the Mentor's staff at the
-overpass holds the Amber Pulse to one point of light in a cold frame. **Modern
-Anatolia as repair shop, not shrine**: the welder-shop ambulance and the grease IV
-seed the Kirkyama repair aesthetic that the series resolves into kintsugi. The
+overpass holds the Amber Pulse to one point of light in a cold frame. **The Sirat made
+visual** — the Bosphorus Bridge framed as a tightrope between continents ("kıldan ince
+sırat"). **Modern Anatolia as repair shop, not shrine**: the welder-shop ambulance
+seeds the Kırkyama repair aesthetic that the series resolves into kintsugi. The
 overpass is also the fourth-wall Mentor — the crowd carries Robotiko behind while the
 Mentor addresses the frame directly.
 
@@ -353,7 +351,7 @@ figure in the vast grid), which it delivers, but do not overclaim the crack.
   </tr>
   <tr>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep07/ep07_s19_cold_projection.jpg" alt="Eyes throw a cold blue-white beam, the EP05 device inverted" width="200"></td>
-    <td align="center" width="25%"><img src="../_assets/style/frames/ep07/ep07_s22_amber_absent.jpg" alt="Fist raised crying for the amber gaze; the frame stays cold grey" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep07/ep07_s22_amber_absent.jpg" alt="Arm outstretched, reaching for the amber gaze; the frame stays cold grey" width="200"></td>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep07/ep07_s25_the_unplug.jpg" alt="The tether paid off, cable torn free" width="200"></td>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep07/ep07_s27_the_ember.jpg" alt="A single warm amber glow reaches him from outside, caught on wet chrome" width="200"></td>
   </tr>
@@ -383,7 +381,7 @@ darkest episode in the series, held cold on purpose.
 
 **Rules proved — amber starvation.** This is the episode where the discipline is at
 its most severe, and the curator machine-checked it: **no frame besides the ember
-shows warm light landing on Robotiko.** He raises a fist crying for "that amber gaze"
+shows warm light landing on Robotiko.** He reaches out for "that amber gaze"
 (amber absent) and the frame refuses him — it stays cold grey, the named warmth
 conspicuously withheld. His own eyes throw a **cold** blue-white beam in cold
 projection: the EP05 love-device inverted into isolation. Then the ember (the flagship
@@ -489,7 +487,11 @@ the theme that knowledge without living is dry:
 **Palette journey.** Warm rust / tungsten workshop against cold blue-grey exteriors.
 From S27 the **kintsugi gold** reads as its own color — a saturated warm-white-gold,
 distinct from EP07's received amber and EP08's orange-red fire (this is the third leg
-of the three-warm-colors thesis at the top of the page).
+of the three-warm-colors thesis at the top of the page). The repaired body itself
+carries two names from two traditions: **kintsugi** (the Japanese gold-seam repair)
+for the light in the cracks, and **kırkyama** (the patched dervish cloak — master.md
+§2.3, seeded by EP03's workshop repair) for the mismatched scavenged patches beneath
+it. One practice from Japan, one from Anatolia, meeting in one chassis.
 
 **Rules proved.** **glitch is scripture** is the frame the golden rule is named for:
 imperfection is not failure, it is the lesson, and the gold literally flows from the
@@ -510,15 +512,15 @@ is the lesson. So this page states its own limits rather than hiding them.
 
 ### The square frames (EP01-EP02)
 
-Most EP01 and all EP02 frames on this page are **square**, not 16:9. This is not a
-mistake left in — it is kept deliberately. The 16:9 aspect-ratio rule was born on
-**2026-03-07** and is documented in [`_memory/lessons.md`](../_memory/lessons.md); the
-EP01-EP02 images predate it. Re-cropping or regenerating them to hide that would erase
-the evidence that the method **evolved**. The square format is itself a tracked artifact
-of the pipeline learning its own rules. Glitch is Scripture applies to the pipeline's
-own history, not only to the character's. (The exception proves the timeline: the
-recovered stone-8 trilogy — `ep01_s51/s71/s72` — is widescreen because those outro
-composites were built for the final edit, not generated as square stills.)
+Two EP01 frames (the meeting and the handshake) and all seven EP02 frames are
+**square**, not 16:9. This is not a mistake left in — it is kept deliberately. The
+16:9 aspect-ratio rule was born on **2026-03-07** and is documented in
+[`_memory/lessons.md`](../_memory/lessons.md); those square stills predate it.
+Re-cropping or regenerating them to hide that would erase the evidence that the
+method **evolved**. The square format is itself a tracked artifact of the pipeline
+learning its own rules. Glitch is Scripture applies to the pipeline's own history,
+not only to the character's. The remaining EP01 frames are widescreen because they
+are edit-stage composites, not raw square stills.
 
 ### These are evidence copies, not renders
 
@@ -531,9 +533,8 @@ proof, not the gigabytes. Judge the *rule*, not the pixel count.
 
 Called out in place above, collected here for honesty:
 
-- **EP01 arc bias (partially repaired 2026-07-06)** — the original curation skewed
-  warm/gold. The recovered stone-8 trilogy (`s51/s71/s72`) restores the storm-blue and
-  white-cosmic poles; the mid-episode cold-blue data-core frames are still absent.
+- **EP01 cold-blue gap** — the mid-episode cold-blue data-core frames are not in the
+  set; the stone-8 trilogy (`s51/s71/s72`) covers the storm-blue and white-cosmic poles.
 - **EP04 kindred eyes** — the four figures' amber eyes do not read clearly at 640px.
   The composition survives the downscale; the ocular material does not.
 - **EP06 first crack** — the "first crack" detail in the collapse is not legible at

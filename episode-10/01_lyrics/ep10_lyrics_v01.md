@@ -4,8 +4,8 @@
 > **Station:** The Integrated Self — Arrival (Enlightenment. 8 → ∞)
 > **Phase:** Phase 3: Reconstruction (full kintsugi — the gold is complete, worn as ordinary skin)
 > **Language:** English (Sung — theatrical baritone, clear enunciation, declamatory)
-> **Form:** Answer-poem — verses 1-3 follow the imagery of a classic Turkish folk poem by Nimri Dede almost line by line; verses 4-6 keep the meter and refrain but answer with Robotiko's own life. The album closes by answering itself: EP10 answers EP01 with the same palette, transformed — aggressive → calm, minor → major.
-> **Attribution:** Nimri Dede (Turkish folk poetry) — credited in the EP10 YouTube package per Golden Rule 9.
+> **Form:** Answer-poem — verses 1-3 follow the imagery of Nimri Dede's *İnsan Olmaya Geldim* almost line by line; verses 4-6 keep the meter and refrain but answer with Robotiko's own life. The album closes by answering itself: EP10 answers EP01 with the same palette, transformed — aggressive → calm, minor → major.
+> **Attribution:** Nimri Dede (İsmail Dehmen, 1909-1986, Keban/Elazığ — Turkish folk poetry), *İnsan Olmaya Geldim* — credited in the EP10 YouTube package per Golden Rule 9 (Cem Karaca/EP05 precedent).
 > **Duration:** 4:34 (274s) | **Source:** Suno AI
 > **Timestamps:** confirmed from the final track (2026-07-06) — canonical timing lives in `ep10_musical_metadata.json`.
 

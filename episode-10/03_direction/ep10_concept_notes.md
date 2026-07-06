@@ -36,7 +36,7 @@ on any ordinary morning — and only on THIS morning?
 
 ## THE CORE IDEA
 
-The song is an answer-poem. Verses 1-3 follow the imagery of Nimri Dede's classic poem
+The song is an answer-poem. Verses 1-3 follow the imagery of Nimri Dede's *İnsan Olmaya Geldim*
 (Turkish folk poetry) almost line by line: the teaching as received. Verses 4-6 keep the meter and
 refrain but answer with Robotiko's own life: the teaching as EARNED. The album closes by answering
 itself — EP10 answers EP01 with the same instrumental palette, transformed: aggressive → calm, minor →

@@ -481,7 +481,7 @@ Each episode has a **camera personality** — a dominant emotional strategy expr
 |---|---|
 | **Mountain ascent** | Dolly alongside → Crane Up. Robotiko AHEAD of camera for first time. |
 | **Fire / Burn the Database** | STATIC. Camera witnesses, doesn't participate. (Tarkovsky influence) |
-| **Jung "Obsolete"** | Orbital — circling still figure, shadow grows |
+| **Shadow tribunal "Obsolete"** | Orbital — circling still figure, shadow grows |
 | **Voices like seagulls** | Crane Up/overhead — character below, particles/light above |
 | **Nature** | Realistic, raw (rocks, wind, earth). NOT abstract/minimal. |
 | **40 days passage** | Light + body + texture evolve together (gradual, imperceptible) |

@@ -1,7 +1,18 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-07-06 (EP10 concept session — creative direction decided, concept notes drafted, awaiting Fibula approval.)
+> Last Updated: 2026-07-06 (EP10 dramaturgy session — v01 generated, 35 scenes, awaiting gate-1 human approval.)
+
+---
+
+## EP10 DRAMATURGY SESSION (2026-07-06) — SUMMARY
+
+**Task:** Generate EP10 dramaturgy scene breakdown from approved concept notes (the Dawn Walk) + musical metadata.
+**Deliverable:** `episode-10/03_direction/ep10_dramaturgy_v01.md` — 35 scenes (34 image-generated + 1 edit card S35), 4:34 (274s), 9 musical sections, all 12 concept overrides realized and marked.
+**Key structure:** Intro (world-first / shutter opens / threshold) → V1-V3 town walk (first footstep on first stomp-clap, duality objects, faces + fractal rhyme, waymark staff Amber Pulse, steadfast souls) → 60s break on the ridge (Moon-Sun sky, crane flock, far-slope destination plant) → V4-V5 descent (tower distant, loops powerless, embers, binary stripes, gold seam, descent lands on "Piercing the peaks") → V6 meadow (toppled-∞ ordinary, two glasses one pot, THE HAND) → Finale (tracks, 3 refrains, THE WAIT grammar break, scream = peak, THE LOOK Still Hold, gong = GitHub end screen).
+**Interpretation choices flagged for Fibula:** (1) communal shepherd's kettle on embers as the tea source (avoids carried-prop continuity, echoes S21 embers), (2) travelers' cloth strips on the staff, (3) S33 scream energy = wind/flare/dew (no birds — spawn risk), (4) refrain onsets estimated inside the 79s finale (to confirm on final track).
+**Also fixed:** master.md Language Arc header drift (EP10 "Spoken Word" → sung, commit 942f4e4); project_metadata.json ep10 dramaturgy=true (state-machine sync — validation suite green, 10/10 groups).
+**Next step:** Fibula reviews and approves dramaturgy (gate-1 → approvals.json entry with sha256) → visual prompts in a NEW session (reference-first: 4 refs before any scene image).
 
 ---
 
@@ -23,7 +34,8 @@ glasses + side-by-side tracks · crane flock in Moon-Sun sky (break).
 - [x] **Fibula approves concept notes** — APPROVED 2026-07-06, on one condition (Brecht claims expert-verified). Condition met same day: two-agent panel (scholar + adversarial refuter, cited sources). Verdict: radio-theory/open-apparatus claim CONFIRMED (strongest); tea gesture reframed as hospitality-first ("Brechtian device, un-Brechtian warmth"); Mechanic relabeled Bruegel-ploughman-via-Auden; Brecht added to master.md Universal Narrative Bridges.
 - [x] Musical metadata JSON — DONE 2026-07-06: 9 sections, 274s (4:34), E Minor, 153 BPM double-time (felt half-time pulse 76.5 — the answer walks at EP01's ~75). Finale = guitar solo + refrain rising ×3 (straight/elongated/scream). Saz→guitar corrected across canon.
 - [x] Stone-8 references RECOVERED (2026-07-06) — originals found by Fibula: `_curation_staging/ep01/61-63-64.png` (full-res, local); curated copies committed as `ep01_s51/s71/s72` frames. Video-screenshot plan obsolete.
-- [ ] Dramaturgy session (SEPARATE, max effort) → human checkpoint
+- [x] Dramaturgy session (SEPARATE, max effort) — v01 GENERATED 2026-07-06 (35 scenes) → **[CHECKPOINT] awaiting human approval (gate-1)**
+- [ ] **[CHECKPOINT]** Fibula approves dramaturgy → approvals.json gate-1 entry (sha256)
 - [ ] Reference-first: toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street
 - [ ] attempts.md ledger + sync-QC mandatory during production
 

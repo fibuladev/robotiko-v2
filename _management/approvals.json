@@ -155,9 +155,17 @@
       "episode": "10",
       "gate": 0,
       "artifact": "episode-10/03_direction/ep10_concept_notes.md",
-      "sha256": "ce8d780a5bd8b2a6818b5f5193579db69342aedc2ded7cebc00f57c2cb7126f5",
+      "sha256": "535c74b245496dfa4af2b07c3184367a3d639a8974140b8c101565e3da4812ae",
       "date": "2026-07-06",
-      "note": "step-order waiver (gate 0 = honest step-order record, NOT a human quality gate): concept notes were authored BEFORE the musical metadata JSON by design - the finale's creative-direction session ran on the delivered lyrics and Suno track while the timing JSON awaits the final audio file. The musical-metadata step is waived as a prerequisite for concept notes ONLY; it remains a hard prerequisite for dramaturgy per pipeline_rules.md."
+      "note": "step-order waiver (gate 0 = honest step-order record, NOT a human quality gate): concept notes were authored BEFORE the musical metadata JSON by design - the finale's creative-direction session ran on the delivered lyrics and Suno track while the timing JSON awaits the final audio file. The musical-metadata step is waived as a prerequisite for concept notes ONLY; it remains a hard prerequisite for dramaturgy per pipeline_rules.md. sha re-baselined 2026-07-06: Override 12 revised at the dramaturgy review per human direction (the look resolves into a head-tilt warmth + open-palm beckon; mouthless-face guard added)."
+    },
+    {
+      "episode": "10",
+      "gate": 1,
+      "artifact": "episode-10/03_direction/ep10_dramaturgy_v01.md",
+      "sha256": "e48833b9702f34ca21050a1eee27c3c07072c43a32ae317cfe3ac637b84a7158",
+      "date": "2026-07-06",
+      "note": "approved at the dramaturgy review session (35 scenes, Companion Camera). One revision requested and applied before sign-off: S34 - the look resolves into a warm head-tilt (the machine's smile; the face is mouthless by design) + open-palm beckon toward the lens, gong cuts on the offered hand. All four interpretation choices confirmed (communal kettle, staff cloth strips, S33 wind/flare energy, refrain onsets to verify at motion stage)."
     }
   ]
 }

@@ -825,17 +825,22 @@ class TestRealTreeStaysGreen(unittest.TestCase):
             self.assertIsNotNone(pi.gate_record(ledger, ep, 1), f"EP{ep} missing gate-1 record")
             self.assertIsNotNone(pi.gate_record(ledger, ep, 2), f"EP{ep} missing gate-2 record")
 
-    def test_ep10_has_only_the_step_order_waiver(self):
-        # EP10 production started 2026-07-06 (concept notes before the musical
-        # metadata JSON, by design). It must carry EXACTLY the gate-0 step-order
-        # waiver and NO gate-1/2 quality-gate records until dramaturgy and the
-        # motion script are actually approved.
+    def test_ep10_ledger_state_gate1_approved_gate2_pending(self):
+        # EP10 ledger state as of 2026-07-06: the gate-0 step-order waiver
+        # (concept notes before the musical metadata JSON, by design) PLUS the
+        # gate-1 dramaturgy approval (approved at the 2026-07-06 review, S34
+        # revision applied before sign-off). Gate-2 must stay absent until the
+        # motion script is actually approved.
         ledger = pi.load_approvals(REPO_ROOT)
         records = pi.approvals_for(ledger, "10")
-        self.assertEqual(len(records), 1, f"EP10 must have exactly one ledger record. Got: {records}")
-        self.assertEqual(records[0].get("gate"), 0, "EP10's only record must be the gate-0 step-order waiver")
-        self.assertIsNotNone(pi.episode_waiver(ledger, "10"), "EP10's record must read as a waiver")
-        self.assertIsNone(pi.gate_record(ledger, "10", 1), "EP10 must NOT have a gate-1 record yet")
+        self.assertEqual(len(records), 2, f"EP10 must have exactly two ledger records (gate-0 waiver + gate-1). Got: {records}")
+        self.assertEqual(sorted(r.get("gate") for r in records), [0, 1],
+                         "EP10's records must be the gate-0 step-order waiver and the gate-1 approval")
+        self.assertIsNotNone(pi.episode_waiver(ledger, "10"), "EP10's gate-0 record must read as a waiver")
+        gate1 = pi.gate_record(ledger, "10", 1)
+        self.assertIsNotNone(gate1, "EP10 must have a gate-1 record (dramaturgy approved 2026-07-06)")
+        self.assertEqual(gate1.get("artifact"), "episode-10/03_direction/ep10_dramaturgy_v01.md",
+                         "EP10 gate-1 must pin the dramaturgy artifact")
         self.assertIsNone(pi.gate_record(ledger, "10", 2), "EP10 must NOT have a gate-2 record yet")
 
     def test_ledger_sha_matches_disk_for_all_records(self):

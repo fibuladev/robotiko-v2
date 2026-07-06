@@ -13,6 +13,7 @@
 **Interpretation choices flagged for Fibula:** (1) communal shepherd's kettle on embers as the tea source (avoids carried-prop continuity, echoes S21 embers), (2) travelers' cloth strips on the staff, (3) S33 scream energy = wind/flare/dew (no birds — spawn risk), (4) refrain onsets estimated inside the 79s finale (to confirm on final track).
 **Also fixed:** master.md Language Arc header drift (EP10 "Spoken Word" → sung, commit 942f4e4); project_metadata.json ep10 dramaturgy=true (state-machine sync — validation suite green, 10/10 groups).
 **Next step:** Fibula reviews and approves dramaturgy (gate-1 → approvals.json entry with sha256) → visual prompts in a NEW session (reference-first: 4 refs before any scene image).
+**UPDATE (same day):** APPROVED 2026-07-06 with one revision, applied immediately — S34 "The Look" became "The Look and the Beckon": the held look resolves into a soft head tilt (the machine's smile — face verified mouthless against `android_kintsugi.png`; literal smile would invent a mouth = design break) + one open-palm beckon toward the lens; gong cuts on the offered hand. Propagated to concept notes Override 12 (+ three-beats section). Gate-1 recorded (sha256 e48833b9…); gate-0 concept sha re-baselined (535c74b2…). NEXT SESSION: "Generate visual prompts for EP10" (reference-first).
 
 ---
 
@@ -34,9 +35,10 @@ glasses + side-by-side tracks · crane flock in Moon-Sun sky (break).
 - [x] **Fibula approves concept notes** — APPROVED 2026-07-06, on one condition (Brecht claims expert-verified). Condition met same day: two-agent panel (scholar + adversarial refuter, cited sources). Verdict: radio-theory/open-apparatus claim CONFIRMED (strongest); tea gesture reframed as hospitality-first ("Brechtian device, un-Brechtian warmth"); Mechanic relabeled Bruegel-ploughman-via-Auden; Brecht added to master.md Universal Narrative Bridges.
 - [x] Musical metadata JSON — DONE 2026-07-06: 9 sections, 274s (4:34), E Minor, 153 BPM double-time (felt half-time pulse 76.5 — the answer walks at EP01's ~75). Finale = guitar solo + refrain rising ×3 (straight/elongated/scream). Saz→guitar corrected across canon.
 - [x] Stone-8 references RECOVERED (2026-07-06) — originals found by Fibula: `_curation_staging/ep01/61-63-64.png` (full-res, local); curated copies committed as `ep01_s51/s71/s72` frames. Video-screenshot plan obsolete.
-- [x] Dramaturgy session (SEPARATE, max effort) — v01 GENERATED 2026-07-06 (35 scenes) → **[CHECKPOINT] awaiting human approval (gate-1)**
-- [ ] **[CHECKPOINT]** Fibula approves dramaturgy → approvals.json gate-1 entry (sha256)
-- [ ] Reference-first: toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street
+- [x] Dramaturgy session (SEPARATE, max effort) — v01 GENERATED 2026-07-06 (35 scenes)
+- [x] **[CHECKPOINT]** Fibula approves dramaturgy — APPROVED 2026-07-06 with one revision applied same day (S34: the look resolves into a warm head-tilt + open-palm beckon; mouthless-face guard added; propagated to concept notes Override 12). Gate-1 recorded in approvals.json (sha256-pinned; gate-0 concept sha re-baselined for the Override 12 revision). All 4 interpretation choices confirmed.
+- [ ] `ep10_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) in a NEW session
+- [ ] Reference-first: toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street (BEFORE any scene image)
 - [ ] attempts.md ledger + sync-QC mandatory during production
 
 ---

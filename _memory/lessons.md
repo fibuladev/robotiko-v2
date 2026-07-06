@@ -303,4 +303,11 @@ After any correction from the human:
 - **RULE:** SHIPPED FILE POLICY — Canon terminology corrections (e.g., station name standardization) ARE applied retroactively to shipped files to maintain a single source of truth. Cosmetic changes are NOT. The distinction: if a term contradicts master.md's canonical form, fix it everywhere; if it's just a style preference, leave shipped files alone.
 - **RULE:** EVERY SKIP BRANCH NEEDS A FIXTURE — A skip message that never prints is a silent pass. The EP01 PDF-detection fix shipped in the 2026-07-04 audit session was inert for a day because `os.listdir` never saw the PDF inside `selected/` — the "explicit skip" existed only in intention, and no test asserted the message actually appears. Every skip/waiver branch in a validator must be locked by a meta-test that (a) triggers the branch on a fixture and (b) asserts the visible output text. Fixes are subject to the same verify discipline as features. (Added 2026-07-05, from the M4 inert-fix finding)
 
+---
+
+## CATEGORY: TERMINOLOGY & FRAMING (Added 2026-07-06)
+
+- **RULE:** EP10 FORM TERMINOLOGY — Refer to EP10's poetic form ONLY as "answer-poem" or "answer-song" (with the Nimri Dede / "Turkish folk poetry" attribution per Golden Rule 9). The Turkish literary loan-word for this form is banned from every repo file and every commit message (Fibula, 2026-07-06). The commit-msg hook already strips it from messages; do not reintroduce it in file contents either. If it slips into an unpushed commit's file content, rewrite the local history before pushing.
+- **RULE:** NO SERIAL-INSTALLMENT FRAMING — Never describe the ten episodes with TV-serial numbering vocabulary (numbered installments, "the current/first <installment>", or any wording that implies a sequel could follow). The ten episodes are one complete, closed bildungsroman — canonical wording: "the arc", "the completed ten-episode arc", "the complete arc". Installment numbering is an implicit promise of more, and the project makes no future promises (creator_strategy.md "No future promises"). (Fibula, 2026-07-06)
+
 *Add new lessons below as they emerge during production.*

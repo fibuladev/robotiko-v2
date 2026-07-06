@@ -68,6 +68,10 @@ back. The form arrives home together with the character.
    **GAZE DISCIPLINE: no eye contact here.** His gaze stays on the glass / just below the lens.
 2. **THE EYES (finale):** The single calm look — into the reserved beside-space, into the lens, at
    the companion he just offered tea to. The only direct look of the episode. Earned, not stolen.
+   *(Director's revision, 2026-07-06 — dramaturgy review:)* the look holds first; then, in the last
+   breath before the gong, warmth becomes gesture — a soft head tilt (the machine's smile; the face
+   is mouthless by design) and one small open-palm beckon toward the lens: *come*. The gong cuts on
+   the offered hand — beat two hands off kinetically into beat three.
 3. **THE DOOR (final gong):** Hard cut to black → GitHub end screen (white text on black, 5 seconds —
    the series' single end-screen exception). The invitation becomes real: the repository is the hand
    extended through the screen. EP01's handshake trilogy is answered — the extended hand returns, no
@@ -238,16 +242,22 @@ Then the episode's single camera-grammar break: **HE stops and waits for the cam
 Walking beside means waiting for the slower one. The camera — the viewer — catches up. They walk on
 together.
 
-### Override 12: The Look + The Gong (Finale end) ★ BEATS TWO AND THREE
+### Override 12: The Look + The Beckon + The Gong (Finale end) ★ BEATS TWO AND THREE
 The finale's vocal structure is a gift to the three-beat fourth wall: the refrain rises out of the
 guitar solo three times — straight, elongated, then a sharp rock scream (the epic peak). The scream
 is the music's summit; the look is the image's. As the solo fades after the third refrain: he turns
 his head — one calm look into the reserved beside-space, into the lens, at the companion he offered
-tea to. No smile engineering, no zoom, no music sting: the look simply lands, held against the
-fading solo. **FINAL GONG = hard cut to black** → GitHub end screen (white on black, 5s). The gong
-is the sound of the fourth wall opening. No lemniscate path reveal, no epilogue, no bow. (Exact
-refrain-to-beat mapping is dramaturgy-session work — the principle locked here: scream = peak,
-look = after the peak, in the fade.)
+tea to. The look lands and HOLDS. Then, in the last breath before the gong, warmth becomes gesture:
+a soft, unhurried head tilt — the machine's smile (the face is mouthless by design; no grin is ever
+engineered or generated) — and one open hand rising palm-up in a small beckon toward the lens:
+*come*. No zoom, no music sting; he never turns up the road ahead of the companion (a beckon-then-
+walk-away would read as "follow me" — the Twin Arrogances' grammar, not his). **FINAL GONG = hard
+cut to black on the offered hand** → GitHub end screen (white on black, 5s). The gong is the sound
+of the fourth wall opening. No lemniscate path reveal, no epilogue, no bow. (Exact refrain-to-beat
+mapping is dramaturgy-session work — the principle locked here: scream = peak, look = after the
+peak, in the fade. Revised at dramaturgy review, 2026-07-06: head-tilt warmth + open-palm beckon
+added to the look; original "no smile engineering" retired in favor of "no engineered grin, no
+invented mouth.")
 
 ---
 

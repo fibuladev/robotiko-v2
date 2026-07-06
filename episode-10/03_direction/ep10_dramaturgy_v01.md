@@ -98,7 +98,7 @@
 | **S31** | 3:45 – 3:53 | **THE WAIT** — the single camera-grammar break of the episode. Mid-meadow, he stops. Half-turns toward the open beside-space — not a look to the lens; his gaze rests at companion height, patient, the way one waits for a slower friend on a shared road — and he waits: one breath, two, while the distance closes. Then he faces the road and walks on, together. Walking beside means waiting for the slower one. | Still morning air; wind dropped for the wait | Robotiko | Between refrains — solo breathing | **YES** (O11) |
 | **S32** | 3:54 – 4:07 | **REFRAIN TWO — ELONGATED.** Wider: the meadow road ahead through monolith country, mountains gold-lit, sky enormous and ordinary at once; he at walking scale mid-frame, beside-space open at his shoulder. The land does not arrange itself into any figure or sign — it is only land, and the road is only a road (no path-shape reveal, ever). The elongated refrain stretches over the stride like held breath. | Widest warmth of the film; epic held quiet | Robotiko (small, mid-frame) | **REFRAIN 2 (elongated)** | NO |
 | **S33** | 4:08 – 4:15 | **REFRAIN THREE — THE SCREAM.** The music's summit: the third refrain tears upward into a sharp rock scream, and the world answers with aliveness instead of spectacle — he walks straight into the low sun, flare crossing the lens; a long gust sends one bright wave through the whole meadow; the grass throws off its dew in sparks of light. His stride never changes. The peak is the voice; the image just burns quietly all the way through it. | Sun flare, wind-silvered grass — maximum aliveness, zero spectacle | Robotiko | **REFRAIN 3 — ROCK SCREAM (the album's epic peak)** | **YES** (O12 — scream = peak) |
-| **S34** | 4:16 – 4:29 | **THE LOOK** — the fourth wall, beat two. **STILL HOLD.** The solo fades; his pace eases to a stop. He turns his head — one calm look into the reserved beside-space, into the lens, at the companion he offered tea to. The only direct look of the episode: no smile engineered, no push-in, no music sting — the look simply lands and is held against the fading solo. Level, patient, kind. Everything the series has to say is in how ordinary it is. | One warmth, holding; grain breathing, not crescendoing | Robotiko | Solo fading under the held look | **YES** (O12) |
+| **S34** | 4:16 – 4:29 | **THE LOOK AND THE BECKON** — the fourth wall, beat two. **STILL HOLD.** The solo fades; his pace eases to a stop. He turns his head — one calm look into the reserved beside-space, into the lens, at the companion he offered tea to. The look lands and HOLDS — level, patient, kind. Then, in the last breath before the gong, warmth becomes gesture: the machine's smile — a soft, unhurried tilt of the head (the face is mouthless by design; the tilt IS the smile) — and one open hand rises, palm up, fingers curling once in a small beckon toward the lens: *come*. No push-in, no music sting; the gong cuts on the offered hand. Everything the series has to say is in how ordinary it is. | One warmth, holding; grain breathing, not crescendoing | Robotiko | Solo fading under the held look; the beckon lands in the final bars before the gong | **YES** (O12 — revised at review 2026-07-06) |
 | **S35** | 4:30 – 4:34 | **THE GONG = THE DOOR** — the fourth wall, beat three. On the single final gong: **hard cut to black.** White text on black, five seconds — the GitHub end screen, the series' one end-screen exception. The invitation becomes real: the repository is the hand extended through the screen. EP01's handshake answered — the extended hand returns, no longer to grip but to offer. **(EDIT CARD — no image generation; sound and cut are one event.)** | White text on black | None | **FINAL GONG — the cut IS the gong** | **YES** (O12) |
 
 ---
@@ -178,14 +178,14 @@
 - **Composition Notes:** Sun low and frontal; flare permitted to cross the lens (companion squinting into the same sun). Grain stays constant — no crescendo even at the peak (no doom here).
 - **User Override:** YES (O12 — scream = peak, locked principle).
 
-### SCENE S34 — The Look (Fourth Wall, Beat Two)
+### SCENE S34 — The Look and the Beckon (Fourth Wall, Beat Two) — REVISED AT REVIEW (2026-07-06)
 - **Timestamp:** 4:16 – 4:29 (13s)
-- **Musical Moment:** The solo fading after the third refrain.
-- **Visual Description:** STILL HOLD. He eases to a stop, turns his head, and gives the episode's only direct look — into the beside-space, into the lens. Held against the fading solo.
+- **Musical Moment:** The solo fading after the third refrain; the beckon in the final bars before the gong.
+- **Visual Description:** STILL HOLD (camera). Two beats inside one held frame: (1) THE LOOK — he eases to a stop, turns his head, and gives the episode's only direct look into the lens; the look lands and holds. (2) THE BECKON — warmth becomes gesture: a soft, unhurried head tilt (the machine's smile) and one open hand rising palm-up, fingers curling once in a small beckon toward the lens — *come*. The gong cuts on the offered hand.
 - **Characters:** Robotiko.
-- **Video Tech Strategy:** Standard (Mode A) with the head-turn 5-step pattern (body locked, "slowly and deliberately turns his head toward the camera," screen-direction explicit, gaze locks into the lens) — OR Mode B (gaze-forward → gaze-at-lens, single change). **This is the series' most important single shot: budget retakes accordingly.**
-- **Composition Notes:** Medium close; companion height; beside-space now = lens position, the two finally one. No smile engineering — the calm of the lenses carries it. Preceded by S33's peak motion per the Still Hold signature (Static, MS 1-2 at motion stage). 13s duration → multi-clip or speed-ramped hold at motion stage.
-- **User Override:** YES (O12).
+- **Video Tech Strategy:** **Multi-Clip (two sub-clips), camera Static throughout (Still Hold = camera stillness; his micro-motion is the event):** S34a — body locked, head-turn 5-step pattern ("slowly and deliberately turns his head toward the camera," screen-direction explicit, gaze locks into the lens), hold. S34b — pose held from S34a end-state; single action: gentle head tilt + one open-palm beckoning hand rising toward the lens. One primary action per clip; S34b is a strong Mode B candidate (look-holding → tilted + hand raised). **This is the series' most important shot pair: budget retakes accordingly.**
+- **Composition Notes:** Medium close; companion height; beside-space now = lens position, the two finally one. **GENERATION GUARD — the face is mouthless by design (verified against `android_kintsugi.png`): never prompt a smile, grin, or mouth; the warmth is carried by the head tilt, the beckoning hand, and the held gaze. Any take that invents a mouth is a reject.** Hand rises from below frame edge — slow, small amplitude (no wave, no big gesture). Preceded by S33's peak motion per the Still Hold signature (Static, MS 1-2 at motion stage).
+- **User Override:** YES (O12 — revised per human direction at dramaturgy review, 2026-07-06: the look resolves into a warm head-tilt + open-palm beckon; a more striking close that hands beat two kinetically into beat three).
 
 ---
 
@@ -195,13 +195,13 @@
 The Integrated Self — Arrival is staged as pure ordinariness: no coronation, no recap, no transformation. Every scene passes the concept's test — *something that could happen on any ordinary morning, and only on THIS morning.* The only Moon-Sun sky, the only crane flock, the only tea offered through the screen. Arrival is expressed as attention turned fully outward (faces, bread, birds, children) and as the mentor-role transfer completed twice in objects: the staff left standing (S10), the glass left steaming (S27-S28).
 
 ### Character arc progress
-Flat by design — Robotiko changes nothing in this episode; the fourth wall does. The arc is relational: companion unacknowledged (S01-S26) → companion served (S27) → companion waited for (S31) → companion seen (S34) → companion handed the apparatus (S35). His body thesis (COLOR JOURNEY) completes silently: distinct gold in grey-blue (S01-S03) → converging (S13-S18) → indistinguishable (S30 onward). The kintsugi reads as ordinary highlights by the meadow — the lighting IS the arrival.
+Flat by design — Robotiko changes nothing in this episode; the fourth wall does. The arc is relational: companion unacknowledged (S01-S26) → companion served (S27) → companion waited for (S31) → companion seen and beckoned (S34) → companion handed the apparatus (S35). His body thesis (COLOR JOURNEY) completes silently: distinct gold in grey-blue (S01-S03) → converging (S13-S18) → indistinguishable (S30 onward). The kintsugi reads as ordinary highlights by the meadow — the lighting IS the arrival.
 
 ### Connections to Master
 - **8 → ∞ (Golden Rule 8):** paid as prophecy-not-arrival — the stone fell long ago (S25); EP01 S71-S72 keep the transformation, EP10 keeps the morning after.
 - **Numerical cipher:** 0/1 as striped daylight underfoot (S22); "2 is lost / two arise" as two glasses from one pot (S26) and two track-lines side by side (S29).
 - **Moon/Sun epigraph:** resolved in one real sky (S15) and echoed in one object — the staff's amber lit only by the sun (S10).
-- **Handshake trilogy (EP01 S68-70):** answered by the three-beat fourth wall — hand (S27), eyes (S34), door (S35).
+- **Handshake trilogy (EP01 S68-70):** answered by the three-beat fourth wall — hand (S27), eyes + beckoning hand (S34), door (S35). The hand-language arc completes: grip (EP01) → offer (S27) → beckon (S34) → the door opens (S35).
 - **Crane (EP01 S52-54):** the one-tech-wing prophecy becomes a living flock (S16).
 - **Kırkyama + kintsugi (master 2.3):** one body, both traditions — mismatched patches worn as skin, gold in the seams, in full sun almost ordinary.
 - **The Twin Arrogances (master 2.4):** both dialects spoke from above; the episode's grammar never does — the camera is never above him (Companion constitution), and the only "summit" scene is a descent (S24).
@@ -217,6 +217,7 @@ Flat by design — Robotiko changes nothing in this episode; the fourth wall doe
 2. **Cloth strips on the staff (S09):** small faded strips tied by travelers' hands — the waymark honored by the road, no tradition label. Confirm or strike.
 3. **S33 energy carriers:** wind-wave + sun flare + dew sparks, NO birds (spawn/fabrication risk at generation; the crane moment stays unique to S16). Confirm.
 4. **Refrain onsets (S30/S32/S33/S34):** estimated inside the 79s finale (metadata does not subdivide it). Locked principle honored — scream = peak, look = in the fade. Exact boundaries to be confirmed against the final track at motion-script/edit stage; scene order is timing-proof.
+5. **The machine's smile (S34 — human revision, 2026-07-06, applied):** direction asked for a warm natural smile + a "come" beckon at the final look. The beckon is adopted as written. The smile is translated to machine-native warmth — a soft head tilt — because the canonical face is **mouthless** (verified against `android_kintsugi.png`): a literal smile would force the generator to invent a mouth, breaking ten episodes of character design. Staging protects the walk-beside grammar: the look holds FIRST (the earned quiet), the tilt + beckon arrive in the last breath before the gong, and he never turns up the road ahead of the companion (a beckon-then-walk-away would read as "follow me" — the grammar of the Twin Arrogances, not his).
 
 ### Reference-first plan (generate BEFORE any scene image — ADR-0007)
 | # | Reference | Serves | Source rhyme |
@@ -232,7 +233,7 @@ Flat by design — Robotiko changes nothing in this episode; the fourth wall doe
 - **Scene count/coverage:** 34 generated scenes over 274s; longest scenes (S13-S16, S30, S32, S34 at 9-14s) will need multi-clip or speed-ramp coverage at motion stage — estimated ~42-48 clips total.
 - **attempts.md ledger MANDATORY** (`episode-10/04_visuals/raw/attempts.md`) — EP10 is the last first-pass-yield measurement window.
 - **[DISSONANCE] inventory for motion stage:** S26-S27 (full-band Verse 6 over the quiet tea act — concept thesis: epic in the music, humility on the ground). Justified here; do not "fix."
-- **What is NOT shown (hard locks honored):** stone standing/transforming; Mentor embodied; Robochica; the Mechanic; workshop interior; screen-world/virtual space; monument framing; eye contact before S34; any path-shape reveal; rain, storm, night. Amber ONLY at S10.
+- **What is NOT shown (hard locks honored):** stone standing/transforming; Mentor embodied; Robochica; the Mechanic; workshop interior; screen-world/virtual space; monument framing; eye contact before S34; any path-shape reveal; rain, storm, night; **any invented mouth on Robotiko** (the face is mouthless — warmth reads through head tilt, beckoning hand, held gaze). Amber ONLY at S10.
 
 ### Flagged for review (human attention)
 - **S02** — workshop interior must stay unreadable (pure light); verify at image stage.
@@ -242,14 +243,14 @@ Flat by design — Robotiko changes nothing in this episode; the fourth wall doe
 - **S25** — children on the stone: exact counts, modest staging, mixed (girl + boy); no reaction to Robotiko.
 - **S27** — gaze discipline is the shot; eye-contact takes are rejects.
 - **S31** — the grammar break: camera draw-level choreography lands at motion stage.
-- **S34** — the series' most important single shot; budget retakes; 13s Still Hold coverage plan.
+- **S34** — the series' most important shot pair (S34a look / S34b tilt + beckon); budget retakes; mouthless-face guard (no invented mouth, ever); 13s Still Hold coverage plan.
 - **S35** — edit/packaging deliverable (end card), not an image-gen scene.
 
 ---
 
 ## APPROVAL STATUS
-- [ ] **Human reviewed**
-- [ ] **Human approved**
-- [ ] **Ready for Visual Prompt generation**
+- [x] **Human reviewed** — 2026-07-06
+- [x] **Human approved** — 2026-07-06 (one revision requested and applied same day: S34 — the look resolves into a warm head-tilt + open-palm beckon toward the lens; see Interpretation choice 5 and the S34 detail block)
+- [x] **Ready for Visual Prompt generation**
 
-> ⛔ Visual Prompts must NOT begin until this document is approved.
+> Gate-1 recorded in `_management/approvals.json` (sha256-pinned).

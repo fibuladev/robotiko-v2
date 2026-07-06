@@ -95,7 +95,7 @@ he saw the piles of walking dead.
 He put on Noise-Canceling gear;
 "I block the hate, I block the fear!"
 "But wait! Why is it MONO here?"
-A shrapnel took away his ear...
+Eh, shrapnel took away his ear...
 
 "Guru Talks never lie!" True.
 "Viral Filters purify!" Clean.

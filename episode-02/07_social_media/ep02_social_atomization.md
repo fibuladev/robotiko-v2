@@ -62,7 +62,7 @@
 - **Scenes Included:** S31–S32
 - **Visual Peak:** S32 — THE EAR SHOT. Shrapnel strikes, headphone shatters, ear tears away. Exposed circuitry sparks blue-red. Hydraulic fluid seeps. Hand reaches toward wound for the first time. Right eye flickers to red.
 - **Musical Moment:** Theatrical whisper delivery breaks. One beat of silence after impact. Then the final chorus detonates off-screen. The clip ends in the silence before the explosion.
-- **Lyric Hook:** "A shrapnel took away his ear..."
+- **Lyric Hook:** "Eh, shrapnel took away his ear..."
 - **Caption (Instagram):** "But wait! Why is it MONO here?" Full episode — link in bio.
 - **Caption (YouTube Shorts):** ROBOTIKO v2.0 EP02 — The moment comedy became tragedy. Full episode on this channel.
 - **Hashtags:** #robotiko #robotikov2 #cyberanatolian #progrock #conceptalbum #scifi #aiart #aimusic
@@ -263,7 +263,7 @@ The moment comedy became tragedy 💥 #robotiko #shorts
 ROBOTIKO v2.0 EP02 — The moment comedy became tragedy. Full episode on this channel.
 
 "But wait! Why is it MONO here?"
-A shrapnel took away his ear...
+Eh, shrapnel took away his ear...
 
 🎶 ROBOTIKO v2.0 — The Complete Journey
 [paste playlist link]

@@ -305,6 +305,12 @@ After any correction from the human:
 
 ---
 
+## CATEGORY: MUSICAL METADATA (Added 2026-07-06)
+
+- **RULE:** BPM DETECTORS DOUBLE-COUNT HALF-TIME FEELS — Key/BPM tools (vocalremover.org etc.) read the subdivision, not the felt pulse: a slow power ballad or a heavy stomp-clap walking beat comes back at 2x its felt tempo. Symptom: the detected BPM contradicts the canon tempo language ("slow", "heavy & steady") or the mood. Treatment: keep the DETECTED value in `tempo` (it is the measurement, and downstream files may already use it), and record the felt pulse in a `styles` entry ("Half-Time Feel: detector reads NNN BPM double-time; felt pulse is NNN/2..."). Cut rhythm and beat-sync follow the FELT pulse. Confirmed cases: EP05 (122 detected / 61 felt, Anatolian blues groove), EP06 (134 detected / 67 felt, slow power ballad), EP10 (153 detected / 76.5 felt, stomp-clap walking song). Sanity check: tap-count the beat for 15 seconds and multiply by 4 before trusting the tool.
+
+---
+
 ## CATEGORY: TERMINOLOGY & FRAMING (Added 2026-07-06)
 
 - **RULE:** EP10 FORM TERMINOLOGY — Refer to EP10's poetic form ONLY as "answer-poem" or "answer-song" (with the Nimri Dede / "Turkish folk poetry" attribution per Golden Rule 9). The Turkish literary loan-word for this form is banned from every repo file and every commit message (Fibula, 2026-07-06). The commit-msg hook already strips it from messages; do not reintroduce it in file contents either. If it slips into an unpushed commit's file content, rewrite the local history before pushing.

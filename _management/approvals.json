@@ -150,6 +150,14 @@
       "sha256": "f6460d2e486ec1339b9d8b202b7bc42345e96ae4e089e26de3f9ff5156e7c7e9",
       "date": "2026-06-30",
       "note": "validator-green re-issue; content unchanged from approved v01. Approval to proceed to video generation recorded at the 2026-06-30 motion-script session; video generation in progress."
+    },
+    {
+      "episode": "10",
+      "gate": 0,
+      "artifact": "episode-10/03_direction/ep10_concept_notes.md",
+      "sha256": "7ae39e30258768770a64ca22f9b6b6c1b6bca292b01bc2d0112dc3e487a7291c",
+      "date": "2026-07-06",
+      "note": "step-order waiver (gate 0 = honest step-order record, NOT a human quality gate): concept notes were authored BEFORE the musical metadata JSON by design - the finale's creative-direction session ran on the delivered lyrics and Suno track while the timing JSON awaits the final audio file. The musical-metadata step is waived as a prerequisite for concept notes ONLY; it remains a hard prerequisite for dramaturgy per pipeline_rules.md."
     }
   ]
 }

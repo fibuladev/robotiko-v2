@@ -137,10 +137,12 @@ golden hour). No teleports, no flashbacks, no cosmic sets.
    now green with morning. The stone 8 lies TOPPLED in the grass as ∞: mossed, weathered, ordinary.
    Children play on it; a shepherd rests near it. Prophecy became furniture.
 
-**Stone-8 location reference recovery:** EP01 curated frames do not include the monolith. Recover a
-location-rhyme guide via screenshot from the EP01 final video at S50-S51 (~4:11-4:16 — intact, static
-shots). Used ONLY for mountain silhouette + stone material identity; a NEW toppled-∞ reference image
-is generated for EP10 regardless (ref-first rule).
+**Stone-8 location reference — RECOVERED (2026-07-06):** the original EP01 source images were found
+in the director's archive. Full-resolution originals live locally at `_curation_staging/ep01/`
+(61 = intact monolith, 63 = cracking, 64 = infinity; gitignored); 640px evidence copies are tracked
+at `_assets/style/frames/ep01/ep01_s51/s71/s72_*.jpg`. Use the full-res intact monolith (61) as the
+location reference — mountain silhouette + stone material identity. A NEW toppled-∞ reference image
+is still generated for EP10 (ref-first rule): the stone's STATE is new even though the place is not.
 
 ---
 
@@ -327,7 +329,8 @@ it simply breathes.
   Beat-sync matters doubly here: the stomp-clap-as-footsteps thesis is checkable.
 - **Reference-first:** generate ALL new references before authoring scenes against them —
   (1) toppled-∞ stone in meadow, (2) the crossroads + staff, (3) the ridge Moon-Sun sky,
-  (4) dawn town street. EP01 S50-51 video screenshot = location-rhyme guide only.
+  (4) dawn town street. Location-rhyme source for (1): the recovered full-res EP01 original
+  at `_curation_staging/ep01/61.png` (intact monolith — same place, new state).
 - **Eye canon (ADR-0010):** material-lens idiom in every model-facing string; `eye_glow_hits` lint
   runs on visual prompts and motion prompts. Kintsugi gold body-glow allowlisted.
 - **Musical metadata JSON before dramaturgy** — hard gate (`pipeline_rules.md:47`). Trigger:

@@ -825,10 +825,18 @@ class TestRealTreeStaysGreen(unittest.TestCase):
             self.assertIsNotNone(pi.gate_record(ledger, ep, 1), f"EP{ep} missing gate-1 record")
             self.assertIsNotNone(pi.gate_record(ledger, ep, 2), f"EP{ep} missing gate-2 record")
 
-    def test_ep10_has_no_ledger_records(self):
-        # EP10 is a scaffold; it must NOT have been given approval records.
+    def test_ep10_has_only_the_step_order_waiver(self):
+        # EP10 production started 2026-07-06 (concept notes before the musical
+        # metadata JSON, by design). It must carry EXACTLY the gate-0 step-order
+        # waiver and NO gate-1/2 quality-gate records until dramaturgy and the
+        # motion script are actually approved.
         ledger = pi.load_approvals(REPO_ROOT)
-        self.assertEqual(pi.approvals_for(ledger, "10"), [])
+        records = pi.approvals_for(ledger, "10")
+        self.assertEqual(len(records), 1, f"EP10 must have exactly one ledger record. Got: {records}")
+        self.assertEqual(records[0].get("gate"), 0, "EP10's only record must be the gate-0 step-order waiver")
+        self.assertIsNotNone(pi.episode_waiver(ledger, "10"), "EP10's record must read as a waiver")
+        self.assertIsNone(pi.gate_record(ledger, "10", 1), "EP10 must NOT have a gate-1 record yet")
+        self.assertIsNone(pi.gate_record(ledger, "10", 2), "EP10 must NOT have a gate-2 record yet")
 
     def test_ledger_sha_matches_disk_for_all_records(self):
         # Snapshot integrity: every recorded sha matches the artifact on disk today.

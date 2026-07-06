@@ -4,7 +4,7 @@
 > **Station:** The Integrated Self — Arrival (Enlightenment. 8 → ∞)
 > **Phase:** Phase 3: Reconstruction (full kintsugi — complete, worn as ordinary skin)
 > **Language:** English (Sung — theatrical baritone answer-poem; verses 1-3 receive the teaching, verses 4-6 answer with his own life)
-> **Music:** 70s Anatolian Psychedelic / Symphonic / Progressive Rock. Mid-tempo stomp-clap + marching drums — a walking song. Minor-to-major. Ends: electric saz solo fading, final gong.
+> **Music:** 70s Anatolian Psychedelic / Symphonic / Progressive Rock. Mid-tempo stomp-clap + marching drums — a walking song. Minor-to-major. Ends: electric guitar solo with the refrain rising out of it ×3 (straight → elongated → rock scream), solo fades, final gong.
 > **Camera Personality:** THE COMPANION CAMERA (defined below — the finale of the EP07→EP10 lineage)
 > **Timestamps:** TBD — musical metadata stage pending. Section labels used until then.
 > **Status:** DRAFT — awaiting Fibula approval (concept session 2026-07-06)
@@ -218,7 +218,7 @@ the stone — for the next traveler, rhyming with the staff. In EP09 he received
 abandoned glass; in EP10 he leaves one behind. The mentor-role transfer is complete: he gives warmth
 now. "Broadcasting Love across the divide" — the divide is the screen.
 
-### Override 11: The Tracks + The Wait (Finale, saz solo)
+### Override 11: The Tracks + The Wait (Finale, guitar solo)
 He rises and walks on. Low frame: **two lines of tracks in the dawn dew — one metal footprint, one
 human — side by side, same direction.** Whose human tracks, never shown; perhaps the companion's.
 Then the episode's single camera-grammar break: **HE stops and waits for the camera to draw level.**
@@ -226,10 +226,15 @@ Walking beside means waiting for the slower one. The camera — the viewer — c
 together.
 
 ### Override 12: The Look + The Gong (Finale end) ★ BEATS TWO AND THREE
-As the saz solo fades: he turns his head — one calm look into the reserved beside-space, into the
-lens, at the companion he offered tea to. No smile engineering, no zoom, no music sting: the look
-simply lands, held. **FINAL GONG = hard cut to black** → GitHub end screen (white on black, 5s).
-The gong is the sound of the fourth wall opening. No lemniscate path reveal, no epilogue, no bow.
+The finale's vocal structure is a gift to the three-beat fourth wall: the refrain rises out of the
+guitar solo three times — straight, elongated, then a sharp rock scream (the epic peak). The scream
+is the music's summit; the look is the image's. As the solo fades after the third refrain: he turns
+his head — one calm look into the reserved beside-space, into the lens, at the companion he offered
+tea to. No smile engineering, no zoom, no music sting: the look simply lands, held against the
+fading solo. **FINAL GONG = hard cut to black** → GitHub end screen (white on black, 5s). The gong
+is the sound of the fourth wall opening. No lemniscate path reveal, no epilogue, no bow. (Exact
+refrain-to-beat mapping is dramaturgy-session work — the principle locked here: scream = peak,
+look = after the peak, in the fade.)
 
 ---
 

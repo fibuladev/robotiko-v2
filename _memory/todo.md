@@ -21,7 +21,7 @@ glasses + side-by-side tracks · crane flock in Moon-Sun sky (break).
 
 ### NEXT: EP10 PIPELINE
 - [ ] **Fibula approves concept notes** (gate for everything below)
-- [ ] Musical metadata JSON — "Create musical metadata for EP10" (needs final Suno track file)
+- [x] Musical metadata JSON — DONE 2026-07-06: 9 sections, 274s (4:34), E Minor, 153 BPM double-time (felt half-time pulse 76.5 — the answer walks at EP01's ~75). Finale = guitar solo + refrain rising ×3 (straight/elongated/scream). Saz→guitar corrected across canon.
 - [x] Stone-8 references RECOVERED (2026-07-06) — originals found by Fibula: `_curation_staging/ep01/61-63-64.png` (full-res, local); curated copies committed as `ep01_s51/s71/s72` frames. Video-screenshot plan obsolete.
 - [ ] Dramaturgy session (SEPARATE, max effort) → human checkpoint
 - [ ] Reference-first: toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street

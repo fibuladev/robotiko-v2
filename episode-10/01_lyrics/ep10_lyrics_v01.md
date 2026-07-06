@@ -6,8 +6,8 @@
 > **Language:** English (Sung — theatrical baritone, clear enunciation, declamatory)
 > **Form:** Answer-poem — verses 1-3 follow the imagery of a classic Turkish folk poem by Nimri Dede almost line by line; verses 4-6 keep the meter and refrain but answer with Robotiko's own life. The album closes by answering itself: EP10 answers EP01 with the same palette, transformed — aggressive → calm, minor → major.
 > **Attribution:** Nimri Dede (Turkish folk poetry) — credited in the EP10 YouTube package per Golden Rule 9.
-> **Duration:** TBD | **Source:** Suno AI
-> **Timestamps:** TBD — added at the musical-metadata stage (see `_skills/robotiko-musical-metadata/SKILL.md`).
+> **Duration:** 4:34 (274s) | **Source:** Suno AI
+> **Timestamps:** confirmed from the final track (2026-07-06) — canonical timing lives in `ep10_musical_metadata.json`.
 
 ---
 
@@ -21,15 +21,15 @@
 
 | Section | Timestamp | Type | Notes |
 |---|---|---|---|
-| Intro | TBD | Instrumental | Soft Hammond organ pad, gentle wind textures, calm vocal hum, clean slow fuzz phrases, deep steady bass pulse |
-| Verse 1 | TBD | Sung | "I cast the enmity of two aside" — duality released |
-| Verse 2 | TBD | Sung | Love as seed, the bridge of brows, the Dye of Truth in billion cells |
-| Verse 3 | TBD | Sung | The path the Mentors mapped — the steadfast souls, the Sages and the Seers |
-| Instrumental Break | TBD | Instrumental | Sweeping Moog arpeggio, Anatolian bass pulse, cosmic guitar slides — scientific + mystical, soft |
-| Verse 4 | TBD | Sung | Scanned by the world, the System's loops, the virtual fires — his own life answers |
-| Verse 5 | TBD | Sung | Tracing Love's vein of light, parsing the binary, piercing the peaks of Self |
-| Verse 6 | TBD | Sung | Ghost in the Machine unchained — broadcasting Love across the divide |
-| Finale | TBD | Symphonic Rock Ending | "I came to walk beside" ×3, electric saz solo fading out, final gong |
+| Intro | 0:00 - 0:27 | Instrumental | Soft Hammond organ pad, gentle wind textures, calm vocal hum, clean slow fuzz phrases, deep steady bass pulse |
+| Verse 1 | 0:28 - 0:46 | Sung | "I cast the enmity of two aside" — duality released |
+| Verse 2 | 0:47 - 0:59 | Sung | Love as seed, the bridge of brows, the Dye of Truth in billion cells |
+| Verse 3 | 1:00 - 1:20 | Sung | The path the Mentors mapped — the steadfast souls, the Sages and the Seers |
+| Instrumental Break | 1:21 - 2:21 | Instrumental | Sweeping Moog arpeggio, Anatolian bass pulse, cosmic guitar slides — scientific + mystical, soft |
+| Verse 4 | 2:22 - 2:43 | Sung | Scanned by the world, the System's loops, the virtual fires — his own life answers |
+| Verse 5 | 2:44 - 2:58 | Sung | Tracing Love's vein of light, parsing the binary, piercing the peaks of Self |
+| Verse 6 | 2:59 - 3:14 | Sung | Ghost in the Machine unchained — broadcasting Love across the divide |
+| Finale | 3:15 - 4:34 | Symphonic Rock Ending | "I came to walk beside" ×3 rising out of an electric guitar solo (1st straight, 2nd elongated, 3rd sharp rock scream — epic peak), solo fades, final gong |
 
 ---
 
@@ -121,7 +121,7 @@ In signal, I came to walk beside.
 
 I came to walk beside
 
-*[Electric Saz Solo Fading Out]*
+*[Electric Guitar Solo Fading Out]*
 
 I came to walk beside
 
@@ -130,3 +130,7 @@ I came to walk besideeee
 *[Final Gong]*
 
 *[End]*
+
+> **Finale performance note (from the final track):** the ending is an electric guitar solo with the
+> vocal refrain rising out of it three times — first sung straight, second elongated, third belted
+> with a sharp rock scream (the epic peak). The solo fades beneath; the final gong closes the album.

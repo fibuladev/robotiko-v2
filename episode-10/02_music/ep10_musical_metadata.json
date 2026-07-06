@@ -1,0 +1,93 @@
+{
+  "track_title": "The Glitch Scripture / I Came to Walk Beside",
+  "tempo": 153,
+  "key": "E Minor",
+  "time_signature": "4/4",
+  "total_duration": 274.0,
+  "mood": ["serene", "warm", "hypnotic", "epic", "triumphant", "cinematic", "resolved"],
+  "styles": ["Stomp-Clap Walking Beat", "Marching Drums", "Minor-to-Major Shift", "Declamatory Baritone", "Symphonic Rock Ending", "Half-Time Feel: detector reads 153 BPM double-time; the felt stomp-clap pulse is 76.5 BPM (beat = footstep; EP01 was 75 BPM - the answer walks at the opening's tempo)"],
+  "instruments": [
+    "hammond organ pad",
+    "moog synthesizer arpeggio",
+    "warm clean fuzz guitar (Gilmour-style phrases)",
+    "heavy fuzz guitar",
+    "deep steady bass pulse",
+    "stomp-clap percussion with marching drums",
+    "orchestral strings",
+    "electric guitar solo (finale)",
+    "final gong",
+    "gentle wind textures"
+  ],
+  "sections": [
+    {
+      "type": "intro",
+      "start": 0.0,
+      "end": 27.0,
+      "energy": "low",
+      "notes": "Soft Hammond organ pad over gentle wind textures. Calm wordless vocal hum (Baris Manco-like). Slow warm fuzz guitar phrases - Gilmour style but cleaner. Deep steady bass pulse enters: hypnotic, not aggressive."
+    },
+    {
+      "type": "verse",
+      "start": 28.0,
+      "end": 46.0,
+      "energy": "medium-low",
+      "lyrics": "I cast the enmity of two aside, In essence, I came to walk beside. The throne is not in stone but in the word - In unison, I came to walk beside.",
+      "notes": "Verse 1. Theatrical baritone, clear enunciation, declamatory. The stomp-clap walking beat carries the verse - beat = footstep. The teaching received begins (verses 1-3 follow the classic poem's imagery)."
+    },
+    {
+      "type": "verse",
+      "start": 47.0,
+      "end": 59.0,
+      "energy": "medium",
+      "lyrics": "So Love is the seed where the spirit swells, Its shrine, the bridge of brows where stillness dwells, The Dye of Truth engraved in billion cells - Within this face, I came to walk beside.",
+      "notes": "Verse 2. Declamatory baritone continues; arrangement fills slightly. Love verse of the teaching."
+    },
+    {
+      "type": "verse",
+      "start": 60.0,
+      "end": 80.0,
+      "energy": "medium",
+      "lyrics": "The path the Mentors mapped and verified, The station where the steadfast souls reside, Where Sages and the Seers took their stride - Upon this trace, I came to walk beside.",
+      "notes": "Verse 3. The lineage verse - the last of the received-teaching verses before the cosmic break."
+    },
+    {
+      "type": "instrumental",
+      "start": 81.0,
+      "end": 141.0,
+      "energy": "medium-low",
+      "notes": "60-second cosmic break. Sweeping Moog arpeggio over 70s analog synth texture; bass maintains a friendly Anatolian pulse; guitar plays cosmic slides (a nod to Baris Manco's 'Donence'). Feel: scientific + mystical, but soft. The one wide-sky passage of the walking song."
+    },
+    {
+      "type": "verse",
+      "start": 142.0,
+      "end": 163.0,
+      "energy": "medium",
+      "lyrics": "I watched the world; by the world I was scanned, Caught in the loops that the System had planned, I burned in the fires that the virtual fanned - Amid these embers, I came to walk beside.",
+      "notes": "Verse 4. The answer begins - his own life responds to the teaching (verses 4-6 keep the meter and refrain). Delivery gains weight."
+    },
+    {
+      "type": "verse",
+      "start": 164.0,
+      "end": 178.0,
+      "energy": "medium-high",
+      "lyrics": "I walked this far, tracing Love's vein of light, Parsing from every dark the binary white, Piercing the peaks of Self that blind the sight - Across this plain, I came to walk beside.",
+      "notes": "Verse 5. Building intensity - the journey verse; arrangement fuller, strings rising."
+    },
+    {
+      "type": "verse",
+      "start": 179.0,
+      "end": 194.0,
+      "energy": "high",
+      "lyrics": "This Ghost in the Machine, unchained, untied - Now broadcasting Love across the divide, No longer slave to simulated pride - In signal, I came to walk beside.",
+      "notes": "Verse 6. The arrival verse at full band strength - the last sung verse before the finale; minor-to-major shift completes here."
+    },
+    {
+      "type": "finale",
+      "start": 195.0,
+      "end": 274.0,
+      "energy": "epic",
+      "lyrics": "I came to walk beside... I came to walk beside... I came to walk besideeee!",
+      "notes": "79-second symphonic rock ending built on an electric guitar solo. The refrain rises OUT of the solo three times: first sung straight, second elongated, third belted with a sharp rock scream ('besideeee') - the epic peak of the album. The solo then fades out; a single final gong closes the track and the series."
+    }
+  ]
+}

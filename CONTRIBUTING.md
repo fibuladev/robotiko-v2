@@ -56,7 +56,7 @@ These touch the **method**, not the universe. See the canon-lock rules below.
 The following are **creative content** of the ROBOTIKO universe, licensed under **CC BY-NC 4.0** (see [LICENSE-CONTENT](LICENSE-CONTENT)) — *not* open method. **Do not change these in pull requests to THIS repo.** You are free to study them, and free to remix them non-commercially with attribution in *your own* fork — but here, they are locked canon. If you believe something is genuinely broken, open an issue to discuss rather than a PR.
 
 - **`_management/master.md`** — the universe canon, the absolute source of truth. Locked.
-- **`_assets/cast/character_profiles.json`** — the character state machine. Character design and episode-by-episode visual state are final for the current season.
+- **`_assets/cast/character_profiles.json`** — the character state machine. Character design and episode-by-episode visual state are final for the completed ten-episode arc.
 - **The published episode creative files** — lyrics, dramaturgy, concept notes, visual prompts, motion scripts of released episodes.
 - **The mandatory visual suffix** — appended to every visual prompt, no exceptions:
 

@@ -1,6 +1,6 @@
 # ROBOTIKO v2.0
 
-**A shipped, 8-episodes-and-counting CyberAnatolian sci-fi musical — and the open, git-native pipeline that produced it.**
+**A shipped, 10-episode CyberAnatolian sci-fi musical — and the open, git-native pipeline that produced it.**
 
 > Not the first AI film tool — an open grammar for directing one, behind a shipped multi-episode series.
 
@@ -35,7 +35,7 @@ The films are the proof. Start here:
 
 **► [EP01 — Two Halves of One Whole Apple](https://youtu.be/W_zfFDXn0o0)**
 
-All eight released episodes live on the channel — **[youtube.com/@fibuladev](https://www.youtube.com/@fibuladev)** — and are mapped in the episode guide below.
+All ten episodes live on the channel — **[youtube.com/@fibuladev](https://www.youtube.com/@fibuladev)** — and are mapped in the episode guide below.
 
 ---
 
@@ -53,8 +53,8 @@ Ten episodes trace one arc: a data-drunk AI is broken down and rebuilt, mapped o
 | 06 | His Mirror Had No Scratches | [The Tranquil Self — Broken](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English · slow Anatolian power ballad |
 | 07 | Everyone Is Sorry, No One Is Hiring | [The Surrendering Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English · minimal Anatolian rock, grand piano |
 | 08 | 40 Days Above the Clouds | [The Contented Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English spoken word · Anatolian doom rock |
-| 09 | Shadow Debugging | [The Integrated Self](_management/master.md#6-episodic-structure--the-full-map) | in production | English spoken word · sparse Anatolian textures |
-| 10 | The Glitch Scripture / I Came to Walk Beside | [The Integrated Self — Arrival](_management/master.md#6-episodic-structure--the-full-map) | the finale — arrives the day this repo goes public | English spoken word · to be determined |
+| 09 | Shadow Debugging | [The Integrated Self](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) | English spoken word · sparse Anatolian textures |
+| 10 | The Glitch Scripture / I Came to Walk Beside | [The Integrated Self — Arrival](_management/master.md#6-episodic-structure--the-full-map) | released ([channel](https://www.youtube.com/@fibuladev)) — the finale; its release day is the day this repo went public | English · Anatolian symphonic prog rock — the answer to EP01 |
 
 ---
 
@@ -78,7 +78,7 @@ The gate is real enough that a commit ([`a1dc15c`](https://github.com/fibuladev/
 
 ## The art direction, proved on disk
 
-You don't need YouTube to check the look. 67 curated frames are tracked in the repo — one per decisive moment — and the strongest single finding is that across the last three episodes **three different warm colors carry three different meanings**: EP07's amber arrives from outside (received), EP08's fire is orange-red physics (not grace), EP09's kintsugi gold is the only warmth he makes himself.
+You don't need YouTube to check the look. 70 curated frames are tracked in the repo — one per decisive moment — and the strongest single finding is that across the last three episodes **three different warm colors carry three different meanings**: EP07's amber arrives from outside (received), EP08's fire is orange-red physics (not grace), EP09's kintsugi gold is the only warmth he makes himself.
 
 <table>
   <tr>
@@ -117,7 +117,7 @@ Everything here is countable in the repo:
 
 | | |
 |---|---|
-| Episodes released on YouTube | **8** (EP09 in production, EP10 is the finale) |
+| Episodes released on YouTube | **10** (the complete arc) |
 | CI check groups | **10** (9 blocking + 1 advisory) |
 | Validator meta-tests (graders that grade the graders) | **154** |
 | Architecture Decision Records | **12** (`_management/adr/`) |

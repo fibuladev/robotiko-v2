@@ -2,16 +2,16 @@
 
 > *"Glitch is Scripture."*
 
-## Season 1: EP01 → EP10
+## The arc: EP01 → EP10
 
-The arc this repo exists to ship. EP01-EP08 are launched on YouTube. EP09 is
-in motion-script validation. EP10 closes the season — and is the day the
-repo itself goes public (see [AUTHOR.md](AUTHOR.md) and
+The arc this repo exists to ship — and shipped: all ten episodes are on
+YouTube. EP10 closed the arc, and its release day is the day the repo
+itself went public (see [AUTHOR.md](AUTHOR.md) and
 [CONTRIBUTING.md](CONTRIBUTING.md) for what that means for forkers).
 
-There is no Season 2 committed here. What comes after EP10, if anything, is
-undecided on purpose — Season 1 is a complete bildungsroman, not a pilot for
-a franchise.
+There is no sequel committed here. What comes after EP10, if anything, is
+undecided on purpose — the ten episodes are a complete bildungsroman, not a
+pilot for a franchise.
 
 ## After EP10: open invitations, not a task list
 
@@ -30,7 +30,7 @@ pick up; some are explicitly "help wanted, no ETA."
 
 ## What the maintainer will do regardless of outside help
 
-- Ship EP09 and EP10 to close Season 1.
+- Ship EP09 and EP10 to close the arc.
 - Keep the validation suite green and the docs honest as the repo evolves.
 - Respond to [UNIVERSES.md](UNIVERSES.md) registrations and canon questions
   ([canon question template](.github/ISSUE_TEMPLATE/canon_question.md))

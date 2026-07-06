@@ -1,7 +1,17 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-07-06 (EP10 dramaturgy session — v01 generated, 35 scenes, awaiting gate-1 human approval.)
+> Last Updated: 2026-07-06 (EP10 visual prompts session — v01 generated, 40 scene prompts + 4 refs, awaiting image generation.)
+
+---
+
+## EP10 VISUAL PROMPTS SESSION (2026-07-06) — SUMMARY
+
+**Task:** Generate EP10 visual prompts from the approved dramaturgy (Gate-1, 2026-07-06).
+**Deliverable:** `episode-10/04_visuals/ep10_visual_prompts_v01.md` — 4 environment reference prompts (REF A toppled-∞ stone meadow, REF B crossroads+staff, REF C ridge Moon-Sun sky, REF D dawn town street, each with an Environment Geometry note) + **40 scene prompts** covering 34 scenes (Mode B / match-cut splits: S02a/b, S08a/b/c, S10a/b, S27a/b, S34a/b). S35 = edit card (GitHub end screen, no image). Body ref = `android_kintsugi.png` (Phase 3, chain every scene); S01-S02 exterior chains from EP09 dawn frames.
+**Disciplines enforced:** Companion Camera (reserved beside-space, never above him) · single Amber Pulse at S10 only (reflected sunlight; embers orange-red) · eye canon ADR-0010 (material-lens idiom, no glow) · **mouthless-face guard** (no smile/mouth anywhere, esp. S34) · gaze discipline (direct lens eye-contact ONLY at S34a; S27/S31 below/beside the lens) · ASCII/plain-English text prompts (ADR-0006) · ART DIRECTION LOCKS section (EP07-10 requirement) · reference-first (ADR-0007).
+**Validation:** every prompt ends with mandatory suffix + `16:9 widescreen composition` · no forbidden aesthetics · anti-spawn guard (`single figure composition, no additional characters`) on solo full-body scenes, omitted for macro/foot + intentional multi-figure (S07/S11/S12/S21/S25/S26/S28).
+**Next step:** Fibula reviews prompts → generate 4 refs + Framing Pass → scene images in Nano Banana (attempts.md ledger mandatory — last first-pass-yield window) → select → **Motion Script** (Checkpoint 2). Highest-risk shots: S16 (celestial bodies + flock), S25 (children staging), S27b (gaze), **S34a/b (most important pair — mouthless guard, only eye-contact frame)**.
 
 ---
 
@@ -37,9 +47,10 @@ glasses + side-by-side tracks · crane flock in Moon-Sun sky (break).
 - [x] Stone-8 references RECOVERED (2026-07-06) — originals found by Fibula: `_curation_staging/ep01/61-63-64.png` (full-res, local); curated copies committed as `ep01_s51/s71/s72` frames. Video-screenshot plan obsolete.
 - [x] Dramaturgy session (SEPARATE, max effort) — v01 GENERATED 2026-07-06 (35 scenes)
 - [x] **[CHECKPOINT]** Fibula approves dramaturgy — APPROVED 2026-07-06 with one revision applied same day (S34: the look resolves into a warm head-tilt + open-palm beckon; mouthless-face guard added; propagated to concept notes Override 12). Gate-1 recorded in approvals.json (sha256-pinned; gate-0 concept sha re-baselined for the Override 12 revision). All 4 interpretation choices confirmed.
-- [ ] `ep10_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) in a NEW session
-- [ ] Reference-first: toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street (BEFORE any scene image)
-- [ ] attempts.md ledger + sync-QC mandatory during production
+- [x] `ep10_visual_prompts_v01.md` — GENERATED 2026-07-06 (40 scene prompts + 4 env refs; see EP10 VISUAL PROMPTS SESSION summary above)
+- [ ] Reference-first: generate REF A-D (toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street) + Framing Pass BEFORE any scene image
+- [ ] Image generation (Nano Banana) → select → attempts.md ledger + sync-QC mandatory during production
+- [ ] `ep10_motion_script_v01.md` — after image selection (Checkpoint 2: human approval before video gen)
 
 ---
 

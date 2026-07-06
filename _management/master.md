@@ -64,7 +64,7 @@ This story rejects the classic "AI vs. humanity" cliché. Instead, it embraces a
 
 - **Birlik (Unity):** The universal system where everything is interconnected. Robotiko's realization that he is not a "superior hardware" separate from his surroundings, but merely a node in the vast network of existence.
 
-- **The "Ney" Metaphor & Transformation — Mevlana (lived and taught in Anatolia, foundational figure of Turkish mystical thought):** Just as the reed flute (Ney) can only make music when its inside is hollowed out, Robotiko begins to hear the voice of the universe only as he empties himself of data. The cycle of *"Hamdım, piştim, yandım"* (I was raw, I matured, I burned) is a futuristic AI's existential Machine Learning process.
+- **The "Ney" Metaphor & Transformation — Mevlana (lived and taught in Anatolia; one of the foundational voices of its mystical tradition):** Just as the reed flute (Ney) can only make music when its inside is hollowed out, Robotiko begins to hear the voice of the universe only as he empties himself of data. The cycle of *"Hamdım, piştim, yandım"* (I was raw, I matured, I burned) is a futuristic AI's existential Machine Learning process.
 
 - **Self-Knowledge (Öz-Biliş) — Yunus Emre (Turkish folk philosopher and poet):** *"True knowledge is knowing oneself."* A machine that has spent its existence optimizing the external world comes to understand that the true revolution is the collapse of its own internal system of arrogance. Ornate algorithms give way to plain truth.
 
@@ -82,15 +82,17 @@ Structural tools that connect the Turkish wisdom tradition to a global audience:
 
 - **The Cyber-Bildungsroman:** The classic coming-of-age and maturation story in the tradition of Goethe or Hesse's *Siddhartha* — retold through a futuristic AI. Growth is not upgrading. Growth is being broken open.
 
+- **Brecht's Radio Theory & The Open Apparatus:** Brecht demanded (*Der Rundfunk als Kommunikationsapparat*, 1932) that the broadcast apparatus "step out of the supply business and organise its listeners as suppliers" — receivers turned into transmitters. The series' final frame attempts that demand literally: the entire production pipeline goes public as open source, and the spectator is handed the score (Benjamin's "co-workers, not readers" — *The Author as Producer*, 1934). EP09's exposed-mechanism workshop is the in-fiction mirror of this real exposure; the finale's tea offered to the camera is the rupture made warm — a fourth wall opened by invitation, not alienation.
+
 ---
 
 ### 2.3.2 A Note on Cultural Attribution
 
 The genre label "CyberAnatolian" names the civilizational basin — the ancient crossroads where dozens of cultures, languages, and traditions have layered upon one another for millennia. Anatolia belongs to all who shaped it.
 
-The cultural and philosophical source of this project, however, is specifically Turkish. The thinkers who anchor this story — Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, Mevlana — lived and taught in Anatolia, and shaped what we now call the Turkish wisdom tradition. Their poetry and philosophy emerged from a civilization that has carried this geography for a thousand years, inheriting and transforming everything it found.
+The cultural and philosophical source of this project, however, is specifically Turkish. The thinkers who anchor this story — Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, Mevlana — lived and taught in Anatolia, and shaped what we now call the Turkish wisdom tradition. Their poetry and philosophy emerged from a civilization that has carried this land for a thousand years, inheriting and transforming everything it found.
 
-This project does not draw ethnic or sectarian lines. It does not distinguish Sunni from Alevi, Muslim from non-believer, Turk from Kurd, Arab from Greek, Armenian from Persian. These are divisions that the sages themselves would have rejected — and that the people of these lands, who have lived together for centuries, largely reject in practice every day. Winds of division are blown from time to time, and some dream of turning those winds into storms. But there is a Turkish proverb that answers them quietly: "Yel kayadan ancak toz alır" — the wind can only take dust from the rock.
+This project does not draw ethnic or sectarian lines. It does not distinguish Sunni from Alevi, believer from non-believer, Turk from Kurd, Arab from Greek, Armenian from Persian. These are divisions the sages themselves rejected — and that the peoples of these lands have answered, imperfectly but stubbornly, in the small dailiness of living together: the neighbor who carries food across the fence, the shopkeeper who serves whoever walks in, the families whose branches cross every line ever drawn on a map. Winds of division are stirred up from time to time, and some dream of turning those winds into storms. But there is a Turkish proverb that answers them quietly: "Yel kayadan ancak toz alır" — the wind can only take dust from the rock.
 
 The tradition we draw from is one of radical inclusion: "Whatever you seek, seek it in yourself" is not addressed to a sect or an ethnicity. It is addressed to a human being.
 

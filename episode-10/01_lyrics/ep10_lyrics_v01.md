@@ -23,7 +23,7 @@
 |---|---|---|---|
 | Intro | 0:00 - 0:27 | Instrumental | Soft Hammond organ pad, gentle wind textures, calm vocal hum, clean slow fuzz phrases, deep steady bass pulse |
 | Verse 1 | 0:28 - 0:46 | Sung | "I cast the enmity of two aside" — duality released |
-| Verse 2 | 0:47 - 0:59 | Sung | Love as seed, the bridge of brows, the Dye of Truth in billion cells |
+| Verse 2 | 0:47 - 0:59 | Sung | Love as seed, the bridge of brows, the Dye of Truth in a billion cells |
 | Verse 3 | 1:00 - 1:20 | Sung | The path the Mentors mapped — the steadfast souls, the Sages and the Seers |
 | Instrumental Break | 1:21 - 2:21 | Instrumental | Sweeping Moog arpeggio, Anatolian bass pulse, cosmic guitar slides — scientific + mystical, soft |
 | Verse 4 | 2:22 - 2:43 | Sung | Scanned by the world, the System's loops, the virtual fires — his own life answers |
@@ -62,7 +62,7 @@ In unison, I came to walk beside.
 
 So Love is the seed where the spirit swells,
 Its shrine, the bridge of brows where stillness dwells,
-The Dye of Truth engraved in billion cells—
+The Dye of Truth engraved in a billion cells—
 Within this face, I came to walk beside.
 
 ---

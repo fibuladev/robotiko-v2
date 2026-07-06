@@ -175,7 +175,7 @@ notices, he doesn't stop.
 
 ### Override 3: Faces at Dawn (V2)
 "Its shrine, the bridge of brows" — close, warm frames of ordinary faces: sleep-creased, unposed,
-lit low by sunrise. "The Dye of Truth engraved in billion cells" — a fractal rhyme cut: leaf veins /
+lit low by sunrise. "The Dye of Truth engraved in a billion cells" — a fractal rhyme cut: leaf veins /
 frost on glass / the gold seams on his forearm — same branching pattern, three scales. The truth is
 written in everything's cells, including his.
 

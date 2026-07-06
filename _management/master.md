@@ -82,7 +82,7 @@ Structural tools that connect the Turkish wisdom tradition to a global audience:
 
 - **The Cyber-Bildungsroman:** The classic coming-of-age and maturation story in the tradition of Goethe or Hesse's *Siddhartha* — retold through a futuristic AI. Growth is not upgrading. Growth is being broken open.
 
-- **Brecht's Radio Theory & The Open Apparatus:** Brecht demanded (*Der Rundfunk als Kommunikationsapparat*, 1932) that the broadcast apparatus "step out of the supply business and organise its listeners as suppliers" — receivers turned into transmitters. The series' final frame attempts that demand literally: the entire production pipeline goes public as open source, and the spectator is handed the score (Benjamin's "co-workers, not readers" — *The Author as Producer*, 1934). EP09's exposed-mechanism workshop is the in-fiction mirror of this real exposure; the finale's tea offered to the camera is the rupture made warm — a fourth wall opened by invitation, not alienation.
+- **Brecht's Radio Theory & The Open Apparatus:** Brecht demanded (*Der Rundfunk als Kommunikationsapparat*, 1932) that the broadcast apparatus "step out of the supply business and organise its listeners as suppliers." The series' final frame attempts that demand literally: the entire production pipeline goes public as open source, and the spectator is handed the tools (Benjamin's "co-workers, not readers" — *The Author as Producer*, 1934).
 
 ---
 
@@ -226,7 +226,7 @@ The Mentor speaks neither dialect. He speaks the third tongue — the language o
 
 **Core Genre:** Anatolian Psychedelic Rock / 70s Turkish Progressive Rock
 
-**Influences:** Barış Manço, Moğollar, Cem Karaca, Kurtalan Ekspres — NOT cheap melodrama, gratuitous sentimentality, or ornamental excess.
+**Influences:** Barış Manço, Moğollar, Cem Karaca, Kurtalan Ekspres, Erkin Koray, Fikret Kızılok — NOT cheap melodrama, gratuitous sentimentality, or ornamental excess.
 
 **Instrumentation (Core):** Hammond Organ, Moog Synthesizer, Heavy Fuzz Guitar (Anatolian scales), Bass-heavy, Orchestral Strings, Baritone Storyteller Vocal, Tribal/Rock Drums, Clarinet
 

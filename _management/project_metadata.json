@@ -209,11 +209,11 @@
         "lyrics": true,
         "music": true,
         "timestamp_json": true,
-        "dramaturgy": false,
+        "dramaturgy": true,
         "visuals": false,
         "video": false
       },
-      "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Next: dramaturgy session. The finale — release day = open-source go-public day."
+      "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Dramaturgy v01 generated 2026-07-06 (35 scenes: 34 image-generated + 1 edit card) — AWAITING gate-1 human approval. The finale — release day = open-source go-public day."
     }
   },
 

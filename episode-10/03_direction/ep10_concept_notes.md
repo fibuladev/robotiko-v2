@@ -87,7 +87,7 @@ properly Brechtian move.
 
 ## CHARACTER STATES
 
-### Robotiko (Phase 3 — FULL KINTSUGI, stable throughout)
+### Robotiko (Phase 3 — FULL KINTSUGI / KIRKYAMA, stable throughout)
 
 - Reference: `_assets/cast/android_kintsugi.png` (ref-first: chain from this file for every scene).
 - Model-facing body language: *"patchwork chrome body repaired with mismatched rusted scrap metal,
@@ -97,6 +97,9 @@ properly Brechtian move.
   gold-glow is allowlisted.)
 - The gold is COMPLETE and CALM — no longer spreading (EP09), no longer an event. He wears it like
   skin. In full sunlight it should read as almost ordinary — see COLOR JOURNEY.
+- Two traditions, one body: the mismatched patches are the **kırkyama** (the patched dervish cloak,
+  master.md §2.3); the gold in the seams is the **kintsugi**. Both say the same thing — the repair
+  is worn, not hidden.
 - Right ear still missing, torso dent, shoulder scratches, robochica_1-4 tattoos present on inner
   forearm (continuity) but **never featured, never lit, never framed** — see Robochica below.
 - Posture: unhurried, upright, at peace. He looks AT things (faces, bread, birds) — the first episode

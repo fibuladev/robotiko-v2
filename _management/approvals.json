@@ -155,7 +155,7 @@
       "episode": "10",
       "gate": 0,
       "artifact": "episode-10/03_direction/ep10_concept_notes.md",
-      "sha256": "95119fb1bd6621483d2186adabddc250392aa7a3a84c4eb09e664e214684d077",
+      "sha256": "51acf936bae4e8e9d21c5cba36785a5210f787a3ed0f802306d0482fec7ba1aa",
       "date": "2026-07-06",
       "note": "step-order waiver (gate 0 = honest step-order record, NOT a human quality gate): concept notes were authored BEFORE the musical metadata JSON by design - the finale's creative-direction session ran on the delivered lyrics and Suno track while the timing JSON awaits the final audio file. The musical-metadata step is waived as a prerequisite for concept notes ONLY; it remains a hard prerequisite for dramaturgy per pipeline_rules.md."
     }

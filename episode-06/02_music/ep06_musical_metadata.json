@@ -5,6 +5,7 @@
   "time_signature": "4/4",
   "total_duration": 451,
   "mood": ["bitter", "sardonic", "exhausted", "defiant", "raw", "intimate", "devastating", "power ballad"],
+  "styles": ["Half-Time Feel: detector reads 134 BPM double-time; the felt pulse of the slow power ballad is 67 BPM (canon: 'Slow Anatolian-Rock, Power Ballad', master.md). The 134 figure is kept as the measured value used consistently by the shipped edit and motion files."],
   "instruments": ["baglama", "mournful synth", "melodic electric guitar", "fuzz guitar", "atmospheric bass", "drums", "orchestral strings"],
   "sections": [
     {

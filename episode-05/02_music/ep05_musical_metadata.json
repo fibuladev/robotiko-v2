@@ -5,6 +5,7 @@
   "time_signature": "4/4",
   "total_duration": 267,
   "mood": ["tender", "erotic", "playful", "comedic", "sensual", "blues", "tragic"],
+  "styles": ["Half-Time Feel: detector reads 122 BPM double-time; the felt pulse of the Anatolian blues groove is 61 BPM (canon: 'slow blues'; the lyrics sheet's own 'head-nodding beat'). The 122 figure is kept as the measured value used consistently by the shipped edit and motion files."],
   "instruments": ["clean electric guitar with chorus effect", "bass", "light drums", "keyboard/organ"],
   "sections": [
     {

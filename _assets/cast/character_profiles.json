@@ -133,7 +133,7 @@
     "name": "The Mechanic",
     "archetype": "The Ordinary Craftsman",
     "episodes_primary": [9],
-    "role": "A small-town Anatolian repairman. The most ordinary person in the series. NOT mystical, NOT dramatic — a working man to whom the whole drama is just a Tuesday. His function is Brechtian: he fixes things because that is his job, not because he understands the journey.",
+    "role": "A small-town Anatolian repairman. The most ordinary person in the series. NOT mystical, NOT dramatic — a working man to whom the whole drama is just a Tuesday. His function is the Bruegel ploughman's (Auden, 'Musee des Beaux Arts' — suffering happens while someone else keeps working): he fixes things because that is his job, not because he understands the journey. His deadpan blocks melodrama exactly where a conventional script would milk it.",
     "base_visual_prompt": "Old Anatolian man in his 70s, weathered deeply wrinkled face, short grey hair, faded greenish-brown canvas work coat over a dark simple shirt and worn dark trousers, rough calloused hands",
     "master_ref_path": "_assets/cast/ref_mechanic.png",
     "design_notes": {

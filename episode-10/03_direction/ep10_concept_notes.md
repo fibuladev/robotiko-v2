@@ -60,8 +60,11 @@ back. The form arrives home together with the character.
 ## THE FOURTH WALL OPENS IN THREE BEATS (structural spine of the ending)
 
 1. **THE HAND (V6):** On the fallen ∞ stone, Robotiko pours two tea glasses from one pot, lifts one,
-   and extends it TOWARD THE CAMERA — offering tea to his walking companion: the viewer. A Brechtian
-   gesture — the invitation that pulls the viewer out of spectatorship and into the walk.
+   and extends it TOWARD THE CAMERA — offering tea to his walking companion: the viewer. The
+   hospitality gesture — tea offered to the companion the camera has been all along; a fourth wall
+   opened by invitation, not alienation. (In theory terms: the device is Brechtian — acknowledging
+   the camera ruptures the spectacle — but the warmth is deliberately un-Brechtian: rupture in
+   service of participation, not critical distance.)
    **GAZE DISCIPLINE: no eye contact here.** His gaze stays on the glass / just below the lens.
 2. **THE EYES (finale):** The single calm look — into the reserved beside-space, into the lens, at
    the companion he just offered tea to. The only direct look of the episode. Earned, not stolen.
@@ -70,8 +73,15 @@ back. The form arrives home together with the character.
    extended through the screen. EP01's handshake trilogy is answered — the extended hand returns, no
    longer to grip but to offer.
 
-Brecht continuity: the Mechanic was canonically Brechtian; the spectator-disruption thread has lived
-in the series since EP09. The finale crowns it.
+Theory note (expert-verified 2026-07-06): the real Brechtian payoff of this ending is structural,
+not gestural. Brecht's radio theory (*Der Rundfunk als Kommunikationsapparat*, 1932) demanded the
+apparatus "step out of the supply business and organise its listeners as suppliers" — receivers
+turned into transmitters. The GitHub end screen attempts that demand literally: the full score goes
+public, and spectators are handed the apparatus (Benjamin's "co-workers, not readers" — *The Author
+as Producer*, 1934). EP09's exposed-mechanism workshop is the in-fiction mirror of this real
+exposure. The Mechanic's deadpan belongs to an older, different lineage — Bruegel's ploughman via
+Auden's *Musée des Beaux Arts* (the drama is just a Tuesday to him) — while the door-opening is the
+properly Brechtian move.
 
 ---
 

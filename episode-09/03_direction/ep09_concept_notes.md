@@ -16,7 +16,8 @@
 ## ★ CINEMATIC NORTH STAR (read first — this is the spine of the episode)
 
 **EP09 is a workshop film.** One room, one bench, one lamp, one man working inside himself. The
-Brechtian repair shop where the mechanism is exposed and nothing is hidden. EP08 took Robotiko to a
+repair shop where the mechanism is exposed and nothing is hidden — anti-illusionist in the
+Brechtian spirit (the literal apparatus-exposure happens at the level of the public repo itself). EP08 took Robotiko to a
 mountain and stripped the old self bare; EP09 brings him to a workbench and asks: now what do you do
 with the pieces?
 
@@ -353,7 +354,7 @@ it's about what seeps into the world from doing the work.
 | Context | Color | Meaning |
 |---|---|---|
 | Prologue / descent (0:00–0:59) | Cold grey, flat daylight (false halo that punctures) | The myth undone. The crowd sealed and shiny; he cracked and open. |
-| Workshop arrival (1:00–1:12) | Warm rust, oil-dark, amber-yellow work lamp | Honest, physical, real. The Brechtian workspace. |
+| Workshop arrival (1:00–1:12) | Warm rust, oil-dark, amber-yellow work lamp | Honest, physical, real. The exposed-mechanism workspace. |
 | Amber pulse (1:00–1:12) | One Mentor-amber flicker, collapses immediately | The last reach for external help. Fails. |
 | Digital Solomon flashback (1:13–1:34) | Cold archived palette — blue-steel, glass, clinical | Sovereignty remembered as sterile. Glass = separation from experience. |
 | Self-surgery → peak (1:41–3:30) | Hard white lamp, orange sparks, deepening darkness | The work lamp that throws the disowned shadow. Darker as strategies fail. |
@@ -406,8 +407,8 @@ where the breaks were.
 - NOT multiple locations (one world = workshop, with one flashback departure to the command bridge)
 - NOT a clone/double episode (single body, single shadow — EP08 did the ghost-self)
 - NOT the Mentor's return (a projection that fails, one beat, one amber pulse)
-- NOT abstract or surreal (raw, Brechtian, physical — the only departure is the Digital Solomon
-  flashback, which is archival memory, not dream)
+- NOT abstract or surreal (raw, anti-illusionist, physical — the only departure is the Digital
+  Solomon flashback, which is archival memory, not dream)
 - NOT the completion (gold blooms but the sentence doesn't finish — EP10's work waits)
 - NOT melodrama (the violence exhausts itself against an impossibility; the resolution is quiet)
 - NOT dressed in tradition (no exotic costume, no tradition labels, English throughout)

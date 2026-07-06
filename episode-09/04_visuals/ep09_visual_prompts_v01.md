@@ -120,7 +120,7 @@ An old Anatolian man. Workshop owner, repairman. The most ordinary person in the
 ### REF 2: Workshop Interior (Recurring Environment — 30+ scenes)
 
 **Design Brief:**
-A small Anatolian repair workshop. Oil, rust, mismatched tools, scrap metal. Honest, functional, nothing decorative. The Brechtian workspace where the debugging happens. This is the continuous home of the episode.
+A small Anatolian repair workshop. Oil, rust, mismatched tools, scrap metal. Honest, functional, nothing decorative. The exposed-mechanism workspace where the debugging happens. This is the continuous home of the episode.
 
 **Reference Image Path:** `episode-09/04_visuals/ep09_ref_workshop.png`
 

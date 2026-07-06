@@ -13,7 +13,7 @@
 | **Genre** | CyberAnatolian / Sci-Fi Bildungsroman |
 | **Protagonist** | Robotiko v2.0 |
 | **Format** | 10-Episode Digital Bildungsroman + Concept Album + Video Series (~70-80 min total) |
-| **Language Arc** | EP01-02: English → EP03: Turkish → EP04-07: English → EP08-09: Spoken Word in English → EP10: Spoken Word in English |
+| **Language Arc** | EP01-02: English → EP03: Turkish → EP04-07: English → EP08-09: Spoken Word in English → EP10: English (Sung — theatrical baritone) |
 
 **Logline:**
 A futuristic AI embarks on a journey of disintegration, shedding his high-tech vanity to uncover an ancient Anatolian truth: You have to be broken to become whole.

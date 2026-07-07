@@ -103,6 +103,54 @@ alongside each prompt (`_assets/cast/reference_image_prompts.md`). When a refere
 is provided, do NOT repeat the character's physical description in the prompt — the
 reference carries it; describing it again causes over-interpretation.
 
+Reference-first is not just the character. **Every distinct camera-space gets an
+environment reference too**, and every new body-state or recurring group gets one —
+ADR-0007's original scar was a *character* reference (the EP09 kintsugi body conjured
+from text on the wrong reference, paid back at 8-10x reshoots). A location seen from
+incompatible vantages is not one space: decompose it (site-map + landmark-consistency
+test), one reference per space. Frame each scene to the reference's geometry, never to
+a default frontal portrait.
+
+### The Environment Geometry note (and its post-approval duty)
+
+Each environment reference block carries an **Environment Geometry** note. It has two
+lives. In Phase 1 it is the *generation spec* — a decision, not a discovery: where the
+camera sits, the perspective direction, where the landmarks lie ("eye-level; near loop
+toward camera; monolith mountains in the background; low horizon"). The moment the
+image is approved, that note is **rewritten in place to the ACTUAL approved pixels**
+(the "Framing Pass note" format). This rewrite is mandatory — it is the structural
+replacement for the old skippable Framing Pass. Scenes frame to the rewritten note, i.e.
+to the real image, never to the stale spec.
+
+Alongside geometry, each block records **Narrative anchors** — the story obligations the
+space must preserve (the beside-space kept open, the street that runs toward the town
+because that is the direction of desire, reserved sky room for a walking figure). Geometry
+says where the camera sits; narrative anchors say what the frame owes the story, and they
+must NOT be demoted away when the geometry is rewritten to pixels.
+
+### The two-phase reference gate (1R)
+
+Reference-first is now **structural, not a principle you can skip**. The stage is split:
+Phase 1 authors the reference prompts + Art Direction Locks + a scene->space coverage map
+and STOPS (`v01`); a human generates and approves the real images; gate **1R** records
+that approval as data in `_management/approvals.json`, sha-pinning the frozen v01; only
+then does Phase 2 write scene prompts against the approved pixels (`v02`, sentinel
+removed). See `docs/two-phase-visual-prompts.md` and `_skills/robotiko-visual-prompts/`.
+
+### The honest reproducibility stance
+
+Reference images live in `episode-{XX}/04_visuals/raw/`, which is **gitignored** — too
+large for version control, and Drive-backed as the authoritative store. What git tracks
+is the *recipe*, not the pixels:
+
+> The repo tracks the ref PROMPT + geometry note — the reproducible spec. It does not
+> track the pixels. Your fork generates its own refs from the same prompt; they will
+> differ; Phase 2 frames to YOURS. Process reproducible; assets, deliberately, not.
+
+The gate is honest about its reach: 1R attests a human approved the reference **prompts**
+(the spec the repo can hold), not the **pixels** (which never enter CI). Preventive at the
+skill layer, detective at CI — the same posture as the dramaturgy and motion-script gates.
+
 ---
 
 *Glitch is metaphor only. In production, AI artifacts are defects to fix — maximum

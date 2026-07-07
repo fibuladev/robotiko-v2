@@ -1,5 +1,5 @@
 # PRODUCTION PIPELINE & QUALITY ASSURANCE
-> **Version:** 2.6 | **Last Updated:** 2026-07-05
+> **Version:** 2.7 | **Last Updated:** 2026-07-07
 > Always refer to `_management/master.md` as the absolute source of truth.
 
 ---
@@ -11,10 +11,16 @@ Output of Step N = Input of Step N+1.
 ---
 
 ## MANDATORY CHECKPOINTS (Human Approval Required)
-Two steps require explicit human approval before proceeding. Everything else Claude executes and delivers:
+Three steps require explicit human approval before proceeding. Everything else Claude executes and delivers:
 
-1. **After Dramaturgy** → Human reviews and approves scene breakdown before visuals begin.
-2. **After Motion Script** → Human reviews camera moves and tech strategy before video generation.
+1. **After Dramaturgy (gate 1)** → Human reviews and approves the scene breakdown before visuals begin.
+2. **After Reference Authoring (gate 1R)** → Human generates and approves the episode's reference IMAGES before any scene prompt is written (the two-phase visual-prompts split; see Step 5a → 5b).
+3. **After Motion Script (gate 2)** → Human reviews camera moves and tech strategy before video generation.
+
+Each gate is recorded **as data** in `_management/approvals.json` — one entry per gate (`episode`, `gate`, `artifact`, `sha256`, `date`, `note`). The ledger certifies that a human approved a specific artifact on a date; the `sha256` pins WHICH bytes were approved, so post-approval drift is visible. `pipeline_integrity.py` consumes the file: an artifact beyond a gate with no record = FAIL.
+
+- **Honest limit of gate 1R:** it attests the human approved the reference PROMPTS and signed off the reference IMAGES generated from them. Those images live in gitignored `raw/` and are NOT machine-verifiable — preventive at the skill layer, detective at CI, the same posture as gates 1 and 2.
+- **Scope of gate 1R:** **EP10 onward** (`TWO_PHASE_FROM_EP = 10` in `tests/pipeline_integrity.py`). EP01-09 predate the two-phase split and are exempt; EP10's legacy v01 (authored pre-split) carries an artifact-pinned 1R waiver until the two-phase v02 run records the real gate. The code enforces the cutover — this note is a summary, not the rule.
 
 ---
 
@@ -70,21 +76,52 @@ Two steps require explicit human approval before proceeding. Everything else Cla
 
 ## PHASE 3: VISUAL PRODUCTION
 
-### Step 5: Visual Prompt Generation
+Visual prompts are generated in **two phases separated by a hard human gate** (the Reference Gate, 1R). The old single-pass flow wrote reference prompts and ALL scene prompts at once against a text contract, then generated the reference images afterward — a reconciliation "Framing Pass" was "never a blocker" and in practice was skipped (REF B reframe, commit `ea96c34`: the REF block was updated, 40 scenes never re-checked). The two-phase split makes reference-first (ADR-0007) structural: refs are authored and approved as real pixels BEFORE any scene is framed to them.
+
+### Step 5a: Reference Authoring (Phase 1)
 - **Input:**
-  - Approved `ep{XX}_dramaturgy.md`
-  - `_assets/cast/character_profiles.json` (mandatory — character state tracking)
-  - `_management/master.md` (visual suffix, color palette)
-- **Tool:** Claude executes `_skills/robotiko-visual-prompts/SKILL.md`
-- **Output:** `episode-{XX}/04_visuals/ep{XX}_visual_prompts.md`
+  - Approved `ep{XX}_dramaturgy_v{VV}.md` (its **location labels** are the ceiling for decomposition)
+  - `_assets/cast/character_profiles.json` (mandatory — character state, `phase_reference_map`)
+  - `_management/master.md` (visual suffix, color palette, forbidden aesthetics)
+- **Tool:** Claude executes `_skills/robotiko-visual-prompts/SKILL.md` (Phase 1)
+- **Output:** `episode-{XX}/04_visuals/ep{XX}_visual_prompts_v01.md` — a **complete Phase-1 document**: reference prompts (environments + body states + groups) + ART DIRECTION LOCKS + scene→space coverage map + Phase-1 sentinel. **Zero scene prompts, by design.**
+- **Method:**
+  - **Step 0 — Location decomposition.** Split each dramaturgy location into its distinct camera-spaces using the operational site-map + landmark-consistency test — replacing the old "a location in 3+ scenes gets one ref" heuristic that under-decomposed the EP09/EP10 town and cost the late REF E/REF F reshoots.
+  - **Enumerate every new reference** — environments AND body-state AND group refs. ADR-0007's original driver was a CHARACTER ref (the EP09 kintsugi body), so character/group refs are gated at 1R alongside environments.
+  - **Scene→space coverage map** — a table mapping every dramaturgy scene to the reference (or `ref-less`) it will frame to. This is the artifact the director validates ref coverage against the story on cheap text, AT the gate, before spending days generating. It is also the index of **which scenes to re-verify if a reference is ever edited late** (see the B-Residue Backstop below).
+  - **Rationale:** `_management/adr/0007-reference-first-or-pay-the-reshoot-tax.md` — reference-first buys back the 8-10x reshoot tax EP09 paid conjuring scenes from text against the wrong reference. Phase 1 makes it structural rather than a skippable Framing Pass.
+- **Skill:** `_skills/robotiko-visual-prompts/SKILL.md`
+
+### ⛔ MANDATORY CHECKPOINT: THE REFERENCE GATE (gate 1R)
+Between Phase 1 and Phase 2. **Phase 2 does not begin until it clears. Never skip it.** The human generates every reference image listed in the v01 document into `episode-{XX}/04_visuals/raw/` as `ep{XX}_ref_{name}.png`, iterates freely (this is the cheap place to catch a roof clash, a drifted castle, a glowing amber tip), and approves the reference SET **before any scene prompt is written.**
+
+- On approval, **gate 1R is recorded as data** in `_management/approvals.json` (`gate: "1R"`, `artifact:` the v01 path, `sha256`, `date`, `note`), **sha-pinned to the frozen v01 bytes.** From this point v01 is frozen; a later edit to it fires the existing sha-drift WARN — the honest late-ref-edit signal. `project_metadata.json` `production.visuals` moves to the half-state `"refs_approved"`. This mirrors gates 1 (dramaturgy) and 2 (motion script).
+- **Honest limit.** 1R attests the human approved the reference PROMPTS and signed off the reference IMAGES generated from them. The images live in gitignored `raw/` and are NOT machine-verifiable — preventive at the skill layer, detective at CI, same posture as gates 1/2.
+- **Scope.** EP10 onward (`TWO_PHASE_FROM_EP = 10`). EP01-09 are exempt (pre-split legacy); EP10's v01 carries an artifact-pinned 1R waiver until the two-phase v02 run records the real gate. The code (`tests/pipeline_integrity.py`) enforces the cutover.
+
+### Step 5b: Scene Authoring Against Real Pixels (Phase 2)
+- **Runs in a separate session, after gate 1R clears.**
+- **Input:**
+  - Approved reference IMAGES in `episode-{XX}/04_visuals/raw/`
+  - Frozen `ep{XX}_visual_prompts_v01.md` (references + LOCKS + coverage map)
+  - Approved `ep{XX}_dramaturgy_v{VV}.md`
+- **Tool:** Claude executes `_skills/robotiko-visual-prompts/SKILL.md` (Phase 2)
+- **Output:** `episode-{XX}/04_visuals/ep{XX}_visual_prompts_v02.md` — the complete Phase-1+2 document: references carried forward (Environment Geometry notes rewritten to the approved pixels) + all scene prompts framed to real pixels + per-space Camera Ledger. **Sentinel removed.**
+- **Method:**
+  - **Opening move = batch verification pass.** Read every approved ref PNG, walk ALL scenes against the pixels + coverage map, and collect every gap (missing space, missing character ref, decomposition split) into ONE loop-back batch before writing a single prompt. No forty-scenes-deep surprises.
+  - Every scene is born framed to a reference that already exists — the "frame to an image that does not exist yet" problem is gone.
 - **Rules:**
-  - Every prompt MUST reference character master image path if a character appears
-  - Every prompt MUST end with the mandatory visual suffix (no exceptions)
+  - Every prompt MUST bind its character/environment reference inline and MUST end with the mandatory visual suffix (no exceptions)
   - Compose with "Headroom" and "Breath" for camera movement space
   - **Skill:** `_skills/robotiko-visual-prompts/SKILL.md`
 
+### Production Rule: B-Residue Backstop (Late Reference Edits)
+> **If any environment reference is edited AFTER Phase 2 has begun, every scene mapped to that reference's space in the scene→space coverage map MUST be re-verified against the new pixels before delivery.**
+
+This is the structural fix for the exact failure that motivated the two-phase redesign: a REF block was reframed (REF B, commit `ea96c34`) and the 40 dependent scenes were never re-checked against it. The scene→space coverage map (Step 5a) is the "which scenes" index — it names precisely which scenes a given ref edit invalidates. This rule is **human-gated**: confirming that new pixels still satisfy each scene's intent is semantic, not machine-lintable; CI can only surface the v01 sha-drift WARN as a partial signal. Also lives in `_skills/robotiko-visual-prompts/SKILL.md` (section 2.8).
+
 ### Step 6: Image Generation
-- **Tool:** Nano Banana (using prompts from Step 5)
+- **Tool:** Nano Banana (using scene prompts from Step 5b)
 - **Output:** `episode-{XX}/04_visuals/raw/ep{XX}_s{XX}_v{XX}.png`
 
 ### Step 7: Image Selection
@@ -261,7 +298,7 @@ Claude reads the relevant SKILL.md before executing any workflow.
 |---|---|---|
 | `robotiko-musical-metadata` | "Create musical metadata for EP{XX}" | `ep{XX}_musical_metadata.json` |
 | `robotiko-dramaturgy` | "Create dramaturgy for EP{XX}" | `ep{XX}_dramaturgy_v01.md` |
-| `robotiko-visual-prompts` | "Generate visual prompts for EP{XX}" | `ep{XX}_visual_prompts_v01.md` |
+| `robotiko-visual-prompts` | "Generate visual prompts for EP{XX}" | `ep{XX}_visual_prompts_v01.md` (Phase 1: refs) → `_v02.md` (Phase 2: scenes) |
 | `robotiko-motion-script` | "Generate motion script for EP{XX}" | `ep{XX}_motion_script_v01.md` |
 | `robotiko-episode-scaffold` | "Scaffold EP{XX}" | Full folder structure |
 | `robotiko-naming-enforcer` | "Validate file names" | Compliance report |
@@ -276,9 +313,12 @@ Claude reads the relevant SKILL.md before executing any workflow.
 
 ```
 SCAFFOLD → LYRICS → MUSIC → METADATA JSON → CONCEPT NOTES
-    → DRAMATURGY [✋ CHECKPOINT] → VISUAL PROMPTS → IMAGE GEN → IMAGE SELECT
+    → DRAMATURGY [✋ CHECKPOINT] → REF AUTHORING / Phase 1 [✋ REFERENCE GATE 1R]
+    → SCENE AUTHORING / Phase 2 → IMAGE GEN → IMAGE SELECT
     → MOTION SCRIPT [✋ CHECKPOINT] → VIDEO GEN → VIDEO SELECT
     → CAPCUT GUIDE → EDIT → YOUTUBE + METADATA REVIEW + SOCIAL
+
+Three human checkpoints: ✋ Dramaturgy (gate 1) · ✋ Reference Gate (gate 1R, EP10 onward) · ✋ Motion Script (gate 2).
 ```
 
 ---

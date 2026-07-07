@@ -814,7 +814,7 @@ Phase-2 items:
 - [x] Ref-less scenes signed off against dramaturgy grammar (Ref-less Scene Gate: S04, S08a/b/c, S23, S27a/b, S29, S34a/b)
 - [x] Per-space Camera Ledger present; angles vary within each space; no unexplained landmark screen-side flips
 - [x] No loop-back references invented (all 6 refs are pre-existing/approved)
-- [ ] **Completeness check by the Gate-1 (dramaturgy) approver against the approved dramaturgy — PENDING FIBULA (2.6)**
+- [x] **Completeness check by the Gate-1 (dramaturgy) approver against the approved dramaturgy — Human approved 2026-07-08 (2.6): 35/35 scenes anchor the space their dramaturgy text describes; no scene mapped to another space's ref; all ref-less scenes pass their grammar check.**
 - [x] Sentinel ABSENT from v02
 - [x] Every image prompt ends with the mandatory style suffix (40/40; S35 is an edit card, no image)
 - [x] Short character identifiers bound inline `element (filename.png)` matching Upload; no restated ref detail
@@ -827,7 +827,7 @@ Phase-2 items:
 - [x] Lighting direction specified in every prompt; no prompt references another prompt
 - [x] Every Text Prompt is plain ASCII (no em-dash / non-ASCII inside blockquotes)
 - [x] EP10 LOCKS enforced: single Amber Pulse (S10b only; embers orange-red S21/S25/S26); eye canon material-lens idiom; mouthless-face guard (esp. S17/S27/S31/S34); gaze discipline (direct lens ONLY at S34a/b; below/beside at S27/S31); rear-view ear rule (S13/S14/S18/S28); no path-shape reveal (S32)
-- [ ] **"Would Fibula approve this?" — pending human completeness review**
+- [x] **"Would Fibula approve this?" — Human approved 2026-07-08.**
 
 ---
 

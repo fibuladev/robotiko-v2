@@ -554,6 +554,8 @@ Before delivering **Phase 2 (v02)**, verify all Phase-1 items carried forward, p
 - [ ] Loop-back references (if any) carry parent through-anchors + narrative anchors, add sub-spaces only, never invent a place (2.5)
 - [ ] Completeness check performed by the Gate-1 approver against the approved dramaturgy (2.6)
 - [ ] Sentinel ABSENT from v02 (2.7)
+- [ ] **Scene headers are `#### S{NN}` (FOUR hashes), NOT `###`** — `extract_scenes` requires `####\s*(?:Scene\s+)?S\d{2}`; three-hash headers parse to ZERO scenes, tripping the scenes-XOR-sentinel meta-test (and, in other contexts, a false green). Two-digit scene number + optional a/b suffix (`#### S02a`).
+- [ ] **No TEMPLATE_MARKERS anywhere in v02** (`{XX}`, `auto-populated by Claude`, `Do not fill manually`, `[Claude generates`, `Shot X: ...`) — once the sentinel is removed, ANY such marker makes the validator silently scaffold-skip the whole file (every scene goes unvalidated = false green). Write concrete filenames (`ep10_s01_selected.png`), never `{XX}`. Also: do NOT print the literal `**Text Prompt:**` marker in prose/checklists — the prompt-extractor matches it as a real (suffix-less) prompt; write "the Text-Prompt marker" without asterisks.
 - [ ] Every single prompt ends with the mandatory style suffix (check every one)
 - [ ] Short character identifiers used, bound inline `element (filename.png)` matching the `Upload` field; no restated detail the reference already shows (Rule 2b/3)
 - [ ] Every Robotiko scene references the phase-correct ref from `phase_reference_map`

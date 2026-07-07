@@ -1155,10 +1155,10 @@ class TestRefGate1R(unittest.TestCase):
     # ---- (C) disk helpers ----
 
     def test_phase2_asserted_and_latest_helpers_read_disk(self):
-        # EP10 is currently at the Phase-1 gate: v01 carries the sentinel and zero
-        # scenes, so phase-2 is NOT asserted yet (scenes are authored to v02 in Phase 2).
-        self.assertFalse(pi.phase2_asserted("10", REPO_ROOT))
-        self.assertEqual(pi.latest_visual_prompts("10", REPO_ROOT), self.EP10_V01)
+        # EP10 has cleared the Phase-1 gate (1R) and completed Phase 2: v02 carries the
+        # scene prompts and drops the sentinel, so phase-2 IS asserted and v02 is latest.
+        self.assertTrue(pi.phase2_asserted("10", REPO_ROOT))
+        self.assertEqual(pi.latest_visual_prompts("10", REPO_ROOT), self.EP10_V02)
         self.assertEqual(pi.TWO_PHASE_FROM_EP, 10)
 
 

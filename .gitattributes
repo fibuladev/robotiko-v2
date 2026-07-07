@@ -1,0 +1,11 @@
+# The pipeline's approval ledger (_management/approvals.json) sha-pins Markdown
+# deliverables (dramaturgy, motion scripts, visual prompts, concept notes) to their
+# LF-on-disk bytes, and the validator suite (tests/pipeline_integrity.py
+# sha256_file) reads the working-tree bytes. On Windows with core.autocrlf=true a
+# checkout/merge can materialize a .md file with CRLF, drifting it off its recorded
+# LF sha and firing a false gate FAIL (or tempting a re-pin to a CRLF sha that then
+# breaks Linux CI). Force LF for the sha-pinned text types so every platform sees
+# the same bytes the ledger recorded.
+*.md   text eol=lf
+*.json text eol=lf
+*.py   text eol=lf

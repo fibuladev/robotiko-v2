@@ -1,7 +1,7 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-07-07 (Two-phase visual-prompts pipeline redesign — SKILL v2.0, gate 1R, validator phase-awareness, docs, lessons + ADR-0013. EP10 Phase-2 run OUT OF SCOPE.)
+> Last Updated: 2026-07-07 (Two-phase redesign shipped + EP10 dry-run: GAP-C fix proven by a blind exam; EP10 Phase 1 done on branch test/ep10-two-phase-dryrun, gate-1R recorded, suite green. EP10 Phase 2 = next session, handoff below.)
 
 ---
 
@@ -18,7 +18,14 @@
 - **Coverage matrix** honest-gap rows (scene↔space completeness, framing-to-pixels, ref-edited-post-Phase-2 = 🔵 Human); **`project_metadata.json`** `production.visuals` made tri-state (`false | "refs_approved" | true`).
 - **`_memory/lessons.md`** REF-NOTE SYNC ≠ SCENE RECONCILIATION lesson (REFERENCE IMAGE WORKFLOW category) + **ADR-0013** "Two-phase visual prompts: scenes are framed to approved pixels" — links ADR-0007 (reference-first) + ADR-0008 (gates as data); records D3 versioning (frozen v01 + new v02, sha-drift WARN as the free GAP-B signal), D4 honest limits (1R attests ref prompts not pixels; preventive/detective; waiver-only-while-it-pins-latest), D6 declined under-segmentation lint, the corrected loop-back termination measure (unframed-scene count strictly decreasing), and the +1-session honesty. Registered in the ADR README index.
 
-**OUT OF SCOPE (next session):** EP10's actual Phase-2 production run — `ep10_visual_prompts_v02.md`: the 40 scenes framed to the approved `raw/` reference images + REF E/F recovered via loop-back. This is the new flow's first live run and belongs to a dedicated session.
+**DRY-RUN + PHASE 1 DONE (2026-07-07, branch `test/ep10-two-phase-dryrun`, commit `145e058`):** ran the new flow end-to-end as a real user. BLIND decomposition exam (context-free subagent, only dramaturgy + SKILL + the 4 approved pixels) INDEPENDENTLY demanded REF E (market edge, S11-S12) and REF F (far-edge descent, S19-S22) — GAP-C fix proven live. All mechanical claims verified: validator shows `PHASE 1 ONLY` partial pass (not false green); the gate stops the flow; the negative test FAILS CI when v02 scenes ship without a valid 1R; and the interim v01 waiver does NOT bless a v02 (panel risk R2 closed). Phase 1 authored: v01 rewritten as the Phase-1 deliverable (6 REF blocks — A-D verbatim + frozen images, E/F fresh — decomposition, LOCKS, 35-scene coverage map, sentinel, ZERO scenes). Human generated + approved all 6 ref images (REF F picked from 3 variants, shadow-retouched for S22). Real gate-1R recorded (pinned frozen v01, sha `8305fb88`), interim waiver superseded, meta-tests updated. **Suite 10/10 green.**
+
+**PHASE 2 — NEXT SESSION (dedicated, clean context; on branch `test/ep10-two-phase-dryrun`):**
+1. `git checkout test/ep10-two-phase-dryrun`. Read: SKILL.md Phase 2; the committed `ep10_visual_prompts_v01.md` (coverage map + LOCKS + 6 REF blocks); `ep10_dramaturgy_v01.md`; and OPEN all 6 approved PNGs in `episode-10/04_visuals/raw/` (Read the pixels — A stone_meadow, B crossroads, C moonsun_sky, D dawn_town, E market_edge, F far_edge).
+2. Batch-verify (Phase-2 opening move): walk all 35 scenes against the 6 real pixels + the coverage map. Coverage should be COMPLETE (E/F now exist) — no loop-back expected.
+3. Author `ep10_visual_prompts_v02.md`: all 40 scene prompts (S01-S35; sub-splits S02a/b, S08a/b/c, S10a/b, S27a/b, S34a/b; S35 = edit card, no image) framed to the real pixels. Re-anchor each to the dramaturgy (cited Shot-IDs, not paraphrase-from-image); ref-less scene grammar for S04/S08/S23/S27/S29/S31/S34; per-space camera ledger; carry the REF blocks forward with Environment Geometry notes rewritten to the approved pixels; **REMOVE the `SCENES_STATUS: PENDING_PHASE_2` sentinel.** Enforce all EP10 LOCKS (Companion Camera; single Amber Pulse S10 only, embers orange-red; eye canon ADR-0010 material-lens idiom; mouthless-face guard; gaze discipline — direct lens ONLY at S34a; ASCII/no-em-dash).
+4. Mechanical meta-test flips (required, `tests/test_validators.py` `test_phase2_asserted_and_latest_helpers_read_disk`): `assertFalse` → `assertTrue` (phase-2 now asserted via v02) AND `latest_visual_prompts` `EP10_V01` → `EP10_V02`. The ledger needs NO change — the real gate-1R is pin-agnostic and already covers v02.
+5. `py -3 tests/run_all.py` → 10/10 green. Then merge the branch to `main` (replaces the legacy single-pass v01 with the two-phase v01 + v02).
 
 ---
 

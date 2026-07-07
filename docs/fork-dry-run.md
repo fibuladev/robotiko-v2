@@ -46,7 +46,7 @@ inside the real repo.
 | 15:41 | Rewrite the cast (`_assets/cast/character_profiles.json` + its `.schema.json`, protagonist `robotiko`→`vex`) | ~3 min |
 | 15:43 | Swap suffixes in `tests/universe_config.py` **and** `CLAUDE.md` → **first run: crash** | ~2 min |
 | 15:47 | Remove the ROBOTIKO episodes; `python scripts/create_episode.py 01` | **~1 second** (scaffold) |
-| 15:53 | Author EP01 by hand (lyrics, metadata JSON, concept, dramaturgy, visual prompts, motion script) | creative |
+| 15:53 | Author EP01 by hand (lyrics, metadata JSON, concept, dramaturgy, visual prompts, motion script) — visual prompts single-pass, under the flow of the day; see FINDING #7 | creative |
 | 15:57 | Apply the foreign-universe gate adjustments → **final run: green** | ~4 min |
 
 The **method plumbing** — everything except writing the canon and authoring the six
@@ -216,6 +216,22 @@ keep the gate green until real art exists).
 in place and pipeline integrity still *passes*, but with stale-approval WARNs pointing
 at ROBOTIKO artifacts — untidy, non-blocking. The fork replaced both with its own EP01
 records (real shas) so pipeline integrity reports a clean "no stale approvals".
+
+**FINDING #7 — not a bug, a flow change dated after this run.** This dry run
+(2026-07-05) hand-authored its six visual prompts in a single pass: reference prompts
+and scene prompts together, in one file, validated together. **On 2026-07-07 the visual
+stage was split in two**, and a fork running today lands differently at that row. The
+stage now stops after Phase 1 — reference prompts, art-direction locks, a scene→space
+coverage map, and a `SCENES_STATUS: PENDING_PHASE_2` sentinel where the scenes will go —
+and the validator grades that file as an honest **partial pass** ("Phase 1 only: N ref
+prompts validated, 0 scenes pending"), which is now the green text-only target for the
+visual stage. Scene prompts are written in Phase 2, framed against the real reference
+images a human has generated and approved; the approval is **gate "1R"**, a sha-pinned
+record in `_management/approvals.json` that must exist *before any scene prompt does*
+(enforced from EP10 onward — this run's episodes predate the cutover and would be
+exempt). So a text-only fork still finishes its evening green — it just finishes at
+Phase 1 for visuals, and the log above stays as it happened, under the old flow. Full
+reasoning: [two-phase-visual-prompts.md](two-phase-visual-prompts.md).
 
 ---
 

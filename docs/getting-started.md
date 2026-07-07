@@ -93,8 +93,9 @@ The full per-stage rules, inputs, and outputs live in **[../\_management/pipelin
 | — | *(you write the concept notes)* | `ep02_concept_notes.md` — overrides and must-have shots |
 | 2 | **Create dramaturgy for EP02** | `ep02_dramaturgy.md` — scene-by-scene breakdown |
 | | **⛔ STOP — HUMAN GATE 1.** Review and approve the dramaturgy before continuing. | |
-| 3 | *Generate visual prompts for EP02* | `ep02_visual_prompts.md` |
-| — | *(you generate images in Nano Banana, then curate the keepers)* | selected PNGs |
+| 3 | *Generate visual prompts for EP02* | `ep02_visual_prompts.md` — Phase 1: reference prompts, art-direction locks, scene→space coverage map (scenes intentionally pending) |
+| | **⛔ STOP — REFERENCE GATE.** Generate the reference images, approve them, and record the approval (gate "1R") before any scene prompt is written. Phase 2 then writes the scenes against your approved images. See [two-phase-visual-prompts.md](two-phase-visual-prompts.md). | |
+| — | *(you generate scene images in Nano Banana against the approved references, then curate the keepers)* | selected PNGs |
 | 4 | **Generate motion script for EP02** | `ep02_motion_script.md` — camera moves, tool assignments, beat sync |
 | | **⛔ STOP — HUMAN GATE 2.** Review camera moves and tool assignments before any video is generated. | |
 | — | *(you generate video per the script, then curate the keepers)* | selected MP4s |
@@ -105,7 +106,7 @@ The full per-stage rules, inputs, and outputs live in **[../\_management/pipelin
 
 Before lyrics and music, an episode also needs its words and its audio: you write the lyrics, Suno generates the track, and you master it in BandLab. The metadata JSON in step 1 is built from that finished audio plus the BPM and key you read off it.
 
-The two gates are not optional and never skipped. They are the entire point of the arrangement: the machine does the labor; the human keeps the taste.
+The stops are not optional and never skipped. They are the entire point of the arrangement: the machine does the labor; the human keeps the taste. The two creative gates (dramaturgy, motion script) approve *direction*; the reference gate approves the *world* the scenes will be framed against.
 
 > New to the skills themselves? **[skills-guide.md](skills-guide.md)** explains what each one does and walks a worked example. The full trigger table also lives in **[../CLAUDE.md](../CLAUDE.md)**.
 
@@ -120,6 +121,8 @@ The realistic number, from this project's own production across nine episodes, i
 The canonical example is **EP09's S30 "Full Kintsugi" shot**, where a Slow Zoom Out on a single frame made the model invent set dressing that does not exist in the universe — it failed four times before a live switch to a two-frame (start + end) setup, anchored to an existing wide frame from the episode's own set, fixed it on the first retry. The full before/after prompts and the general rule they produced are written up in **[hallucinating-camera.md](hallucinating-camera.md)** — read it before your first video-generation session so the failures are expected, not alarming.
 
 The mindset that keeps this sane: discovering at generation time that a shot needs a better reference or a rewritten prompt is a **normal, healthy part of the flow**, not a sign something went wrong. The pipeline gets you 80% of the way in a fraction of the time; the last stretch is craft, and craft is iterative.
+
+One more expectation to set straight: the pipeline does not reproduce *images*. The repo tracks the ref PROMPT + geometry note — the reproducible spec. It does not track the pixels. Your fork generates its own refs from the same prompt; they will differ; Phase 2 frames to YOURS. Process reproducible; assets, deliberately, not.
 
 ---
 

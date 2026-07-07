@@ -277,12 +277,24 @@ checked, can over- or under-fire, treat as advisory), **Human** (gated by a pers
 at a checkpoint, no automation claimed), or **Gap** (a rule we care about with no
 automated check yet). The matrix is the coverage truth — not a green run.
 
-Three honest categories the ladder does not close:
+The honest entries the ladder does not close:
 
-- **Human gates.** The two creative checkpoints — director approval after
-  dramaturgy, and after the motion script — are gated by a person on purpose. No
-  function decides whether a scene serves the story. The ladder protects the
-  mechanical floor so the humans can spend their attention on taste.
+- **Human gates.** The creative checkpoints — director approval after dramaturgy,
+  after the motion script, and at the visual stage's reference gate — are gated by
+  a person on purpose. No function decides whether a scene serves the story. The
+  ladder protects the mechanical floor so the humans can spend their attention on
+  taste.
+- **Scene↔space completeness.** Whether every scene's reference anchors the *same
+  physical space its dramaturgy describes* — and no scene is quietly mapped to a
+  neighbor's reference — is a Human judgment made by the reference gate's approver
+  against the approved dramaturgy. The coverage map makes the check cheap; no
+  function makes it.
+- **Framing to real pixels.** The two-phase visual flow
+  ([two-phase-visual-prompts.md](two-phase-visual-prompts.md)) makes framing
+  *structural* — scenes cannot be written before the reference images exist and are
+  approved — but the judgment that a prompt genuinely matches the approved image
+  stays Human. The machine enforces the order; it cannot look at a picture and
+  certify the words fit it.
 - **Heuristics, labelled as such.** The body-state keyword check is free text and
   cannot fully attribute an adjective to a subject, so it is marked Heuristic and
   backed by the reliable, metadata-based reference gate — trusted *together*, never

@@ -107,13 +107,13 @@ A real director's note shows the character-state machine and the series philosop
 
 ## Stage 6 — Visual Prompts
 
-With the dramaturgy approved, Claude writes one image prompt per scene. The workflow is **reference-image-first**: seven empty *environment* references (waterside, street, room, transit, avenue, balcony, road) are generated before any character shot, so that every scene in a location shares one consistent space. A character reference (`android_damaged.png`, three angles) then carries Robotiko's exact damage state into each frame — the prompt only needs the short identifier "the chrome android."
+With the dramaturgy approved, the visual stage runs **reference-first, in two phases**. Phase 1 authors the *environment* references (for EP07, seven empty spaces — waterside, street, room, transit, avenue, balcony, road) plus the character reference (`android_damaged.png`, three angles) that carries Robotiko's exact damage state — **and then stops**. A human generates those references, approves them, and only then does Phase 2 write one scene prompt per shot, each *framed against the real approved pixels* rather than a text description of a space that does not exist yet. The art-direction locks (wet-grey only, cold blue-white eye-projection never amber, zero amber until S27) are declared in Phase 1 so no individual prompt can drift.
 
-Every prompt ends with the **mandatory style suffix** (no exceptions). Here is the real S10 prompt — the "plugged-in" tether motif that gets paid off at the unplug — suffix included:
+Every prompt ends with the **mandatory style suffix** (no exceptions). Here is the real S10 prompt — the "plugged-in" tether motif paid off at the unplug — suffix included:
 
 > Medium shot, cramped room at dusk dying to evening. A chrome android sits motionless at a desk before a CRT monitor, a cable visibly plugged from the wall socket into his chassis — tethered. Cold blue-white screen glow washes his face and rusted body... A wall clock on the wall. A desk lamp present but dark, switched off. Dying dusk through a small window. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
-The art-direction locks (wet-grey only, cold blue-white eye-projection never amber, zero amber until S27) are restated at the top of the file so no individual prompt can drift.
+The seam between the two phases is a third human checkpoint (the *reference gate*): scenes are not written until the references are approved. The repo tracks the reference *prompt*, not the pixels — a fork generates its own references and Phase 2 frames to those. The full reasoning is in [two-phase-visual-prompts.md](two-phase-visual-prompts.md).
 
 📄 [`../episode-07/04_visuals/ep07_visual_prompts_v01.md`](../episode-07/04_visuals/ep07_visual_prompts_v01.md)
 

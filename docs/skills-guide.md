@@ -136,6 +136,10 @@ A few notes the table can't carry:
 - **Image and video tools.** Visual prompts target **Nano Banana**; motion scripts assign per-clip video
   tools (Kling / Veo / Seedance) inside the script itself. The skills produce the *instructions*; the human
   runs the generators.
+- **Two-phase visual prompts.** The visual-prompts skill runs in two halves with a human checkpoint between:
+  Phase 1 authors the reference prompts and stops; a human generates and approves the images; Phase 2 writes
+  the scene prompts framed against those real pixels. The reasoning is in
+  [two-phase-visual-prompts.md](two-phase-visual-prompts.md).
 - **Mechanical vs. creative.** Scaffold and naming-enforcer are mechanical gates run at low effort.
   Dramaturgy and motion-script are single-shot deep syntheses run at maximum effort. The skill files say so;
   the crew obeys.

@@ -171,9 +171,9 @@
       "episode": "10",
       "gate": "1R",
       "artifact": "episode-10/04_visuals/ep10_visual_prompts_v01.md",
-      "sha256": "692d955b840920240038dc5199a869200214900f14d9dba52aa0107af5b3c7e2",
-      "date": "2026-07-06",
-      "note": "gate-1R (references approved) WAIVER, artifact-pinned to v01. EP10 v01 was authored pre-two-phase (single pass: four environment refs A-D plus 41 scene headers in one document); the four env refs were generated and approved at the 2026-07-06/07 sessions (REF B reframed to the village-exit at ea96c34). This waiver is pinned to the v01 bytes ONLY - it is superseded by the two-phase v02 run, which will carry the REAL gate-1R (references approved BEFORE scenes are framed to the approved pixels, per ADR-0013). Because it pins v01, it cannot excuse v02. Honest limit: 1R attests that a human approved the ref PROMPTS; the ref IMAGES live in gitignored raw/ and are not machine-verifiable (same posture as gates 1 and 2)."
+      "sha256": "8305fb886e96da4608815f6f18f4ca80a809e49e4f27a168a3900b931c51853b",
+      "date": "2026-07-07",
+      "note": "references approved at the Phase-1 reference gate (two-phase run, ADR-0013): six environment references A-F generated and human-approved. The Step-0 decomposition split the dawn town into three camera-spaces - REF D residential lane (S03-S08), REF E market edge (S11-S12), REF F far-edge descent (S19-S22) - so REF E and REF F were authored and generated fresh (the single-pass draft under-mapped the town onto one ref); REF A-D carried forward unchanged, their approved images frozen in raw/. Artifact-pinned to the frozen Phase-1 v01; Phase 2 authors every scene against these approved reference pixels. Honest limit: 1R attests a human approved the references; the ref IMAGES live in gitignored raw/ and are not machine-verifiable (same posture as gates 1 and 2)."
     }
   ]
 }

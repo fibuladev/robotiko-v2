@@ -1155,7 +1155,9 @@ class TestRefGate1R(unittest.TestCase):
     # ---- (C) disk helpers ----
 
     def test_phase2_asserted_and_latest_helpers_read_disk(self):
-        self.assertTrue(pi.phase2_asserted("10", REPO_ROOT))
+        # EP10 is currently at the Phase-1 gate: v01 carries the sentinel and zero
+        # scenes, so phase-2 is NOT asserted yet (scenes are authored to v02 in Phase 2).
+        self.assertFalse(pi.phase2_asserted("10", REPO_ROOT))
         self.assertEqual(pi.latest_visual_prompts("10", REPO_ROOT), self.EP10_V01)
         self.assertEqual(pi.TWO_PHASE_FROM_EP, 10)
 
@@ -1188,30 +1190,30 @@ class TestRealTreeStaysGreen(unittest.TestCase):
             self.assertIsNotNone(pi.gate_record(ledger, ep, 1), f"EP{ep} missing gate-1 record")
             self.assertIsNotNone(pi.gate_record(ledger, ep, 2), f"EP{ep} missing gate-2 record")
 
-    def test_ep10_ledger_state_gate1_approved_1r_waivered_gate2_pending(self):
-        # EP10 ledger state as of 2026-07-06/07: the gate-0 step-order waiver (concept
+    def test_ep10_ledger_state_gate1_approved_1r_references_approved_gate2_pending(self):
+        # EP10 ledger state as of 2026-07-07: the gate-0 step-order waiver (concept
         # notes before the musical metadata JSON, by design), the gate-1 dramaturgy
-        # approval, and the interim gate-1R references-approved WAIVER pinned to the
-        # v01 visual-prompts artifact (v01 was authored pre-two-phase; superseded by the
-        # future two-phase v02 run which carries the real 1R). Gate-2 must stay absent
-        # until the motion script is actually approved.
+        # approval, and the REAL gate-1R references-approved record pinned to the
+        # Phase-1 v01 visual-prompts artifact (six env refs A-F generated and approved;
+        # the two-phase run's reference gate, superseding the earlier interim waiver).
+        # Gate-2 must stay absent until the motion script is actually approved.
         ledger = pi.load_approvals(REPO_ROOT)
         records = pi.approvals_for(ledger, "10")
         self.assertEqual(len(records), 3,
-                         f"EP10 must have three ledger records (gate-0 waiver + gate-1 + gate-1R waiver). Got: {records}")
+                         f"EP10 must have three ledger records (gate-0 waiver + gate-1 + gate-1R). Got: {records}")
         self.assertEqual({r.get("gate") for r in records}, {0, 1, "1R"},
-                         "EP10's records must be the gate-0 step-order waiver, the gate-1 approval, and the gate-1R waiver")
-        self.assertIsNotNone(pi.episode_waiver(ledger, "10"), "EP10 must carry a waiver record")
+                         "EP10's records must be the gate-0 step-order waiver, the gate-1 approval, and the gate-1R reference approval")
+        self.assertIsNotNone(pi.episode_waiver(ledger, "10"), "EP10 must carry the gate-0 step-order waiver")
         gate1 = pi.gate_record(ledger, "10", 1)
         self.assertIsNotNone(gate1, "EP10 must have a gate-1 record (dramaturgy approved 2026-07-06)")
         self.assertEqual(gate1.get("artifact"), "episode-10/03_direction/ep10_dramaturgy_v01.md",
                          "EP10 gate-1 must pin the dramaturgy artifact")
         gate1r = pi.gate_record(ledger, "10", "1R")
-        self.assertIsNotNone(gate1r, "EP10 must have a gate-1R record (references approved, interim waiver)")
+        self.assertIsNotNone(gate1r, "EP10 must have a gate-1R record (references approved, two-phase run)")
         self.assertEqual(gate1r.get("artifact"), "episode-10/04_visuals/ep10_visual_prompts_v01.md",
-                         "EP10 gate-1R must be artifact-pinned to the v01 visual-prompts file")
-        self.assertIn("waiv", gate1r.get("note", "").lower(),
-                      "EP10 gate-1R must read as an interim waiver (superseded by v02)")
+                         "EP10 gate-1R must be artifact-pinned to the Phase-1 v01 visual-prompts file")
+        self.assertNotIn("waiv", gate1r.get("note", "").lower(),
+                         "EP10 gate-1R is now a real references-approved record (not a waiver): the completed two-phase Phase-1 gate")
         self.assertIsNone(pi.gate_record(ledger, "10", 2), "EP10 must NOT have a gate-2 record yet")
 
     def test_ledger_sha_matches_disk_for_all_records(self):

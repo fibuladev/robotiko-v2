@@ -3,7 +3,7 @@
   "total_episodes": 10,
   "current_phase": "EP01-EP08 launched on YouTube; EP09-10 scaffolded, awaiting pipeline",
   "open_source": true,
-  "open_source_release": "After EP10 completion (target ~2026-07-24)",
+  "open_source_release": "After EP10 completion (2026-07-28, confirmed launch T0)",
 
   "version_control": {
     "master_version": "v2.0",
@@ -210,7 +210,7 @@
         "music": true,
         "timestamp_json": true,
         "dramaturgy": true,
-        "visuals": true,
+        "visuals": "refs_approved",
         "video": false
       },
       "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Dramaturgy v01 APPROVED 2026-07-06 (gate-1 recorded; 35 scenes; S34 revised at review — head-tilt warmth + open-palm beckon, mouthless-face guard). Visual prompts v01 GENERATED 2026-07-06 (40 scene prompts + 4 env refs, reference-first). Next: generate 4 refs + Framing Pass, then scene images (Nano Banana), then motion script (Checkpoint 2). The finale — release day = open-source go-public day."

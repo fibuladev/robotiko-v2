@@ -5,6 +5,10 @@ Validates visual prompt files for:
   2. Character phase consistency (Robotiko visual state matches episode phase)
   3. Forbidden aesthetics detection
   4. Reference image integrity (phase-correct character reference per scene)
+  5. Phase state (ADR-0013): a Phase-1 deliverable (reference prompts only, scenes
+     pending behind the human ref gate) is recognized via its scene-pending sentinel
+     and partial-passed; a refs-only file with NO sentinel is caught as a false green.
+     Two-phase REF blocks also get a Reference-Image-Path lint + pseudo-scene linting.
 
 Usage:
     python tests/visual_prompt_validator.py --file episode-02/04_visuals/ep02_visual_prompts_v01.md
@@ -142,6 +146,42 @@ EYE_PROXIMITY = 3   # eye word must be within this many tokens of the glow keywo
 PHOTOREAL_MODIFIER = universe_config.PHOTOREAL_MODIFIER
 STYLE_MODE_MARKER = "style mode"
 
+# ─────────────────────────────────────────────
+# TWO-PHASE PHASE-1 SENTINEL (ADR-0013 / two-phase visual prompts)
+#
+# A Phase-1 deliverable authors the reference prompts + locks + coverage map and
+# INTENTIONALLY leaves the scene section pending behind the human ref-approval gate.
+# Such a file has REF Text Prompts (so extract_prompts finds >0) but ZERO parsed
+# scenes. Without a marker that is indistinguishable from a refs-only FALSE GREEN
+# (someone forgot to write the scenes). The sentinel below is the machine token that
+# says "this refs-only state is designed, not unfinished".
+#
+# Detection is line-anchored AND applied only AFTER fenced code blocks are stripped,
+# so a doc / template / changelog that QUOTES the token inside a ``` fence never
+# false-positives. ASCII, underscores; contains no is_unfilled_template marker and no
+# pipeline_integrity.TEMPLATE_MARKERS token by construction.
+# ─────────────────────────────────────────────
+
+SCENES_PENDING_SENTINEL = "SCENES_STATUS: PENDING_PHASE_2"
+# Line-anchored; tolerates a leading markdown blockquote marker ('> ') because the
+# live sentinel sits inside the human-facing PENDING block's blockquote (D1). Applied
+# only after strip_code_fences() so a fenced QUOTE of the token never false-positives.
+_SENTINEL_RE = re.compile(r"(?m)^\s*>?\s*SCENES_STATUS:\s*PENDING_PHASE_2\s*$")
+_FENCE_RE = re.compile(r"(?ms)^[ \t]*```.*?^[ \t]*```[ \t]*$")
+
+
+def strip_code_fences(content: str) -> str:
+    """Remove fenced code blocks (```...```) so a sentinel QUOTED inside a fence —
+    docs, the template, a changelog — never trips the Phase-1 detector. Only the live
+    document body is considered."""
+    return _FENCE_RE.sub("", content)
+
+
+def has_phase1_sentinel(content: str) -> bool:
+    """True if the Phase-1 scene-pending sentinel appears in the LIVE body (outside any
+    fenced code block). This is the single source for 'is this a Phase-1 deliverable'."""
+    return bool(_SENTINEL_RE.search(strip_code_fences(content)))
+
 
 def is_skill_v2(content: str) -> bool:
     """True if the file's header declares SKILL v2.0+ (mirrors the motion-script
@@ -269,6 +309,56 @@ def extract_scenes(content: str) -> list[dict]:
         scenes.append(scene)
 
     return scenes
+
+
+# The canonical two-phase REFERENCE-block header: "### REF A: ...", "### REF 3: ...".
+# Deliberately NARROW — a whitespace after "REF" is required, so the older
+# "### REF-ENV-01 —" format (EP04/EP05, pre-two-phase) is NOT matched and stays out of
+# scope of the two-phase ref-path lint / pseudo-scene lint (those files pass today).
+_REF_BLOCK_RE = re.compile(
+    r"(?ms)^###\s+REF\s+([A-Za-z0-9]+)\b[^\n]*\n(.*?)(?=^###\s|^##\s|\Z)"
+)
+_REF_PATH_FIELD_RE = re.compile(
+    r"\*\*Reference\s+Image\s+Path:?\s*\*\*:?\s*(.*?)(?:\n|\Z)", re.IGNORECASE
+)
+_REF_TEXT_RE = re.compile(
+    r"\*\*(?:Text\s+)?Prompt:?\s*\*\*:?\s*\n?>?\s*(.*?)(?=\n###|\n##|\n---|\Z)",
+    re.DOTALL | re.IGNORECASE,
+)
+
+
+def _extract_ref_path(field_value: str) -> str:
+    """Pull the reference image path out of a Reference-Image-Path field value.
+    Prefers the FIRST backtick-quoted token (paths are quoted) so a trailing
+    annotation — e.g. `...ref_exterior.png` (generate from `5.png`) — does not leak
+    into the path. Falls back to the first whitespace-delimited token."""
+    m = re.search(r"`([^`]+)`", field_value)
+    if m:
+        return m.group(1).strip()
+    field_value = field_value.strip()
+    return field_value.split()[0] if field_value else ""
+
+
+def extract_ref_blocks(content: str) -> list[dict]:
+    """
+    Extract the two-phase ENVIRONMENT/CHARACTER reference blocks (`### REF <id>: ...`)
+    with their Reference Image Path and Text Prompt. These are the Phase-1
+    deliverables the gate approves; scene blocks (`#### Scene S..`) are parsed
+    separately by extract_scenes(). Returns [] for pre-two-phase files that use the
+    older `### REF-ENV-01 —` header (deliberately not matched)."""
+    blocks = []
+    for m in _REF_BLOCK_RE.finditer(content):
+        ref_id = m.group(1)
+        body = m.group(2)
+        block = {"ref_id": ref_id, "label": f"REF {ref_id}", "ref_path": "", "text": ""}
+        pm = _REF_PATH_FIELD_RE.search(body)
+        if pm:
+            block["ref_path"] = _extract_ref_path(pm.group(1))
+        tm = _REF_TEXT_RE.search(body)
+        if tm:
+            block["text"] = tm.group(1).strip()
+        blocks.append(block)
+    return blocks
 
 
 def load_profiles(repo_root: str = ".") -> dict:
@@ -640,6 +730,121 @@ def check_style_mode(content: str, prompts: list[dict], severity: str = "WARN") 
     return findings
 
 
+def check_phase_state(content: str, scenes: list[dict]) -> list[tuple]:
+    """
+    Phase-aware gate (ADR-0013 / two-phase visual prompts). Kills the refs-only FALSE
+    GREEN: a file with REF Text Prompts but zero SCENE prompts used to sail through
+    every text check while checking nothing scene-level. Keyed on extract_scenes()
+    (NOT extract_prompts) because REF blocks carry **Text Prompt:** markers too — only
+    a parsed SCENE count discriminates a Phase-1 deliverable from a full document.
+
+    Returns (severity, message) tuples. Severities:
+      * "INFO" — legitimate Phase-1 deliverable (sentinel present, 0 scenes). The
+        caller runs prompt-level + pseudo-scene checks over the REF prompts and SKIPS
+        the scene-level checks. Not a failure.
+      * "FAIL" — a blocking state (stale sentinel, or refs-only false green).
+
+    Truth table (sentinel = present outside fenced code blocks):
+
+      | sentinel | scenes | outcome                                               |
+      |----------|--------|-------------------------------------------------------|
+      | yes      | 0      | INFO  — PHASE 1 ONLY partial pass                      |
+      | yes      | >0     | FAIL  — stale Phase-1 sentinel (scenes present)        |
+      | no       | 0      | FAIL  — refs-only false green (no scenes, no sentinel) |
+      | no       | >0     | (empty) — normal full validation, unchanged           |
+    """
+    has_sentinel = has_phase1_sentinel(content)
+    n = len(scenes)
+
+    if has_sentinel and n == 0:
+        return [(
+            "INFO",
+            "  PHASE 1 ONLY - Phase-1 deliverable: reference prompts validated, "
+            "0 scenes (pending Phase 2). Scene-level checks skipped by design "
+            "(scenes are framed to approved reference pixels in Phase 2)."
+        )]
+    if has_sentinel and n > 0:
+        return [(
+            "FAIL",
+            f"  FAIL [Phase State] Stale Phase-1 sentinel: {n} scene(s) are present but "
+            f"the '{SCENES_PENDING_SENTINEL}' token is still in the file. Remove the "
+            f"sentinel - this is a Phase-2 (or full) document, not a Phase-1 deliverable."
+        )]
+    if not has_sentinel and n == 0:
+        return [(
+            "FAIL",
+            "  FAIL [Phase State] No scenes parsed and no Phase-1 sentinel - a refs-only "
+            "file would pass silently (false green). Either write the scenes, or declare "
+            f"a Phase-1 deliverable with the '{SCENES_PENDING_SENTINEL}' token."
+        )]
+    return []
+
+
+# Canonical Reference-Image-Path form (D6): episode-XX/04_visuals/[raw/]epXX_ref_<name>.png
+# with the path's episode number matching the folder episode. The optional raw/ segment
+# tolerates EP10 v01's raw-less committed paths; canonical form includes raw/.
+_REF_IMAGE_PATH_RE = re.compile(
+    r"^episode-(\d{2})/04_visuals/(?:raw/)?ep\1_ref_[a-z0-9_]+\.png$"
+)
+
+
+def check_ref_image_path(ref_blocks: list[dict], episode_number: int,
+                         severity: str = "FAIL") -> list[tuple]:
+    """
+    Reference-Image-Path field lint (D6) on the two-phase REF blocks. The one cheap,
+    machine-visible guard the panel kept after declining a full under-segmentation
+    lint: a REF block's declared image path must be well-formed AND belong to this
+    episode's folder, so a mis-pointed or malformed ref path is caught on cheap text
+    before generation. Returns (severity, message) tuples. ASCII output only."""
+    findings = []
+    for b in ref_blocks:
+        path = (b.get("ref_path") or "").strip().strip("`").replace("\\", "/")
+        label = b.get("label", "REF")
+        if not path:
+            findings.append((
+                severity,
+                f"  {severity} [Ref Path] {label}: missing Reference Image Path field."
+            ))
+            continue
+        m = _REF_IMAGE_PATH_RE.match(path)
+        if not m:
+            findings.append((
+                severity,
+                f"  {severity} [Ref Path] {label}: path '{path}' does not match "
+                f"episode-XX/04_visuals/[raw/]epXX_ref_<name>.png (lowercase name, .png)."
+            ))
+            continue
+        if int(m.group(1)) != episode_number:
+            findings.append((
+                severity,
+                f"  {severity} [Ref Path] {label}: path episode number {m.group(1)} "
+                f"!= folder episode {episode_number:02d} ('{path}')."
+            ))
+    return findings
+
+
+def ref_pseudo_scenes(ref_blocks: list[dict]) -> list[dict]:
+    """Turn CHARACTER/GROUP reference blocks (a REF whose Text Prompt names the
+    protagonist) into pseudo-scenes so the eye-glow (ADR-0010) and character-phase
+    lints reach them in a Phase-1 deliverable — where there are no real scenes yet but
+    the kintsugi/body-state refs (ADR-0007's original driver) still must be clean.
+    Environment-only refs (no character in the prompt) are skipped."""
+    idents = PROTAGONIST_IDENTIFIERS
+    pseudo = []
+    for b in ref_blocks:
+        text = b.get("text", "")
+        if any(ident in text.lower() for ident in idents):
+            pseudo.append({
+                "scene_number": 0,
+                "label": b.get("label", "REF"),
+                "characters": b.get("label", "REF"),
+                "text": text,
+                "ref_path": b.get("ref_path", ""),
+                "upload": "",
+            })
+    return pseudo
+
+
 def validate_file(filepath: str) -> dict:
     """
     Run all validations on a visual prompts file.
@@ -663,18 +868,35 @@ def validate_file(filepath: str) -> dict:
     ep_match = re.search(r"ep(\d{2})", os.path.basename(filepath))
     episode_number = int(ep_match.group(1)) if ep_match else 0
 
-    # Extract prompts
+    def route(sev, msg):
+        (results["errors"] if sev in ("FAIL", "ERROR") else results["warnings"]).append(msg)
+
+    # Extract prompts, scenes and two-phase REF blocks up front — check_phase_state
+    # needs the SCENE count to discriminate a Phase-1 deliverable from a false green.
     prompts = extract_prompts(content)
+    scenes = extract_scenes(content)
+    ref_blocks = extract_ref_blocks(content)
     results["prompt_count"] = len(prompts)
 
+    # Phase-state gate (ADR-0013): BEFORE the empty-prompts guard, so a legitimate
+    # Phase-1 file is recognized and a refs-only false green is caught. INFO ->
+    # warnings (visible "PHASE 1 ONLY" partial pass); FAIL -> errors (blocks).
+    phase_findings = check_phase_state(content, scenes)
+    phase1_only = any(sev == "INFO" for sev, _ in phase_findings)
+    for sev, msg in phase_findings:
+        route(sev, msg)
+
     if not prompts:
-        results["warnings"].append(
-            "  WARN: No prompts found in file. Check formatting — "
-            "expected **Text Prompt:** or **Prompt:** markers."
+        # No REF prompts AND no scene prompts: a malformed file. (check_phase_state has
+        # already flagged the no-scenes dimension; this is the explicit prompts==[] FAIL.)
+        results["errors"].append(
+            "  FAIL: No prompts found in file (expected **Text Prompt:** or **Prompt:** "
+            "markers) - malformed visual prompts file."
         )
         return results
 
-    # Run all checks
+    # Prompt-level checks run over ALL prompts (incl. REF Text Prompts) in BOTH phases,
+    # so a Phase-1 file's reference prompts are still suffix/forbidden/style checked.
     results["errors"].extend(check_suffix(prompts))
     results["errors"].extend(check_forbidden_aesthetics(prompts))
 
@@ -685,18 +907,30 @@ def validate_file(filepath: str) -> dict:
     # Style-suffix variant family (ADR-0009): severity-routed (FAIL -> errors, WARN
     # -> warnings) so a legacy/undeclared modifier surfaces without blocking.
     for sev, msg in check_style_mode(content, prompts, style_severity):
-        (results["errors"] if sev in ("FAIL", "ERROR") else results["warnings"]).append(msg)
+        route(sev, msg)
 
     if episode_number > 0:
-        scenes = extract_scenes(content)
-        results["errors"].extend(check_character_phase(scenes, episode_number))
-        results["errors"].extend(check_ref_integrity(scenes, episode_number))
-        results["errors"].extend(check_reference_first(scenes, episode_number))
+        # Reference-Image-Path field lint (D6) on the two-phase REF blocks — both phases.
+        for sev, msg in check_ref_image_path(ref_blocks, episode_number):
+            route(sev, msg)
 
-        # Eye-glow lint (ADR-0010): severity-routed. FAIL for version-stamped files;
-        # WARN for shipped, unstamped files (not retrofitted; see EP02 legacy note).
-        for sev, msg in check_eye_glow(scenes, style_severity):
-            (results["errors"] if sev in ("FAIL", "ERROR") else results["warnings"]).append(msg)
+        if phase1_only:
+            # Phase-1 deliverable: scenes intentionally pending, so scene-level checks
+            # are skipped. The character/group REF prompts still get pseudo-scene
+            # linting (D7.4) so eye-glow and phase keywords bind to the body-state refs.
+            pseudo = ref_pseudo_scenes(ref_blocks)
+            results["errors"].extend(check_character_phase(pseudo, episode_number))
+            for sev, msg in check_eye_glow(pseudo, style_severity):
+                route(sev, msg)
+        else:
+            results["errors"].extend(check_character_phase(scenes, episode_number))
+            results["errors"].extend(check_ref_integrity(scenes, episode_number))
+            results["errors"].extend(check_reference_first(scenes, episode_number))
+
+            # Eye-glow lint (ADR-0010): severity-routed. FAIL for version-stamped files;
+            # WARN for shipped, unstamped files (not retrofitted; see EP02 legacy note).
+            for sev, msg in check_eye_glow(scenes, style_severity):
+                route(sev, msg)
 
     return results
 
@@ -791,7 +1025,15 @@ def run_full() -> int:
                 print("\n" + pdf_skip_message(ep_dir, pdf_files[0]))
             continue
         filepath = os.path.join(visuals_dir, candidates[0])
-        if is_unfilled_template(filepath):
+        # Sentinel check BEFORE the unfilled-template skip (D2): a Phase-1 deliverable
+        # (scene-pending sentinel present) must ALWAYS be validated, never silently
+        # routed into the scaffold-skip path — even if a scaffold marker lingers.
+        try:
+            with open(filepath, encoding="utf-8", errors="ignore") as fh:
+                _head = fh.read()
+        except OSError:
+            _head = ""
+        if not has_phase1_sentinel(_head) and is_unfilled_template(filepath):
             print(f"\n  Skipping (unfilled scaffold template): {filepath}")
             continue
         results = validate_file(filepath)

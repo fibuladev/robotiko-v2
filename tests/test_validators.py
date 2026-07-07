@@ -92,6 +92,13 @@ _raspec.loader.exec_module(ra)
 STYLE_EYE_BAD = os.path.join(FIXTURES, "ep07_style_eye_v2_BAD.md")
 STYLE_EYE_GOOD = os.path.join(FIXTURES, "ep07_style_eye_v2_GOOD.md")
 
+# Frozen two-phase phase-state fixtures (ADR-0013), both directions (QA's set).
+PHASE1_GOOD = os.path.join(FIXTURES, "ep10_visual_prompts_PHASE1_GOOD.md")
+NOSCENES_BAD = os.path.join(FIXTURES, "ep10_visual_prompts_NOSCENES_BAD.md")
+LYINGSENTINEL_BAD = os.path.join(FIXTURES, "ep10_visual_prompts_LYINGSENTINEL_BAD.md")
+BADSENTINEL_BAD = os.path.join(FIXTURES, "ep10_visual_prompts_BADSENTINEL_BAD.md")
+QUOTEDSENTINEL_GOOD = os.path.join(FIXTURES, "ep10_visual_prompts_QUOTEDSENTINEL_GOOD.md")
+
 DOC_REF_BAD = os.path.join(FIXTURES, "doc_ref_BAD.md")
 DOC_REF_GOOD = os.path.join(FIXTURES, "doc_ref_GOOD.md")
 
@@ -415,6 +422,250 @@ class TestParserCoverage(unittest.TestCase):
         labels = [s["label"] for s in vpv.extract_scenes(content)]
         self.assertIn("S03a", labels)
         self.assertIn("S03b", labels)
+
+    def test_every_latest_episode_is_scenes_XOR_sentinel(self):
+        """Strictly stronger than the frozen SHIPPED list: for EVERY episode's LATEST
+        visual_prompts .md, exactly one of {parsed scenes>0, Phase-1 sentinel present}
+        holds. A file with BOTH (stale sentinel) or NEITHER (refs-only false green) is
+        exactly the two states the phase-state gate FAILs — this proves the real tree
+        never sits in either. EP01 is PDF-only (no .md) and is skipped."""
+        checked = 0
+        for ep_dir in sorted(d for d in os.listdir(REPO_ROOT)
+                             if d.startswith("episode-")
+                             and os.path.isdir(os.path.join(REPO_ROOT, d))):
+            vdir = os.path.join(REPO_ROOT, ep_dir, "04_visuals")
+            if not os.path.isdir(vdir):
+                continue
+            import re as _re
+            cands = sorted((f for f in os.listdir(vdir)
+                            if _re.match(r"ep\d{2}_visual_prompts_v\d{2}\.md$", f)),
+                           reverse=True)
+            if not cands:
+                continue  # PDF-only (EP01) or no .md deliverable yet
+            content = self._read(os.path.join(ep_dir, "04_visuals", cands[0]))
+            has_scenes = len(vpv.extract_scenes(content)) > 0
+            has_sentinel = vpv.has_phase1_sentinel(content)
+            self.assertNotEqual(
+                has_scenes, has_sentinel,
+                f"{ep_dir}/{cands[0]}: expected scenes>0 XOR sentinel, got "
+                f"scenes={has_scenes} sentinel={has_sentinel} (both/neither is a "
+                f"phase-state failure).")
+            checked += 1
+        self.assertGreaterEqual(checked, 8, "the XOR sweep must cover the shipped tree")
+
+
+# ─────────────────────────────────────────────
+# Two-phase phase-state gate (ADR-0013): the sentinel detector, the truth table,
+# the ref-image-path lint, pseudo-scene linting — each graded both directions, plus
+# the five frozen fixtures through the full validate_file path.
+# ─────────────────────────────────────────────
+
+class TestSentinelDetection(unittest.TestCase):
+    """The Phase-1 sentinel is line-anchored and fence-stripped: a live sentinel (bare
+    or in the human-facing blockquote) is found; a sentinel QUOTED inside a ``` fence
+    is NOT — so docs/templates/changelogs that show the token never false-positive."""
+
+    S = vpv.SCENES_PENDING_SENTINEL
+
+    def test_finds_bare_sentinel(self):
+        self.assertTrue(vpv.has_phase1_sentinel(f"intro\n{self.S}\noutro"))
+
+    def test_finds_blockquoted_sentinel(self):
+        # The live sentinel sits inside the PENDING block's blockquote ('> ...').
+        self.assertTrue(vpv.has_phase1_sentinel(f"> STATUS: designed\n>\n> {self.S}\n"))
+
+    def test_ignores_fenced_quote_of_sentinel(self):
+        self.assertFalse(vpv.has_phase1_sentinel(f"see:\n```\n{self.S}\n```\ndone"))
+
+    def test_ignores_fenced_quote_with_language_tag(self):
+        self.assertFalse(vpv.has_phase1_sentinel(f"```markdown\n## X\n> {self.S}\n```\n"))
+
+    def test_partial_or_misspelled_token_does_not_match(self):
+        self.assertFalse(vpv.has_phase1_sentinel("SCENES_STATUS: PENDING\n"))
+        self.assertFalse(vpv.has_phase1_sentinel("SCENES_STATUS PENDING_PHASE_2\n"))
+
+
+class TestPhaseStateTruthTable(unittest.TestCase):
+    """check_phase_state keyed on the SCENE count (not extract_prompts, which counts
+    REF Text Prompts too). All four cells of the truth table, both severities."""
+
+    S = vpv.SCENES_PENDING_SENTINEL
+
+    def _scenes(self, n):
+        return [{"scene_number": i, "label": f"S{i:02d}", "text": "x"} for i in range(n)]
+
+    def test_sentinel_and_zero_scenes_is_info_partial_pass(self):
+        out = vpv.check_phase_state(f"a\n{self.S}\nb", self._scenes(0))
+        self.assertEqual([s for s, _ in out], ["INFO"])
+        self.assertIn("PHASE 1 ONLY", out[0][1])
+
+    def test_sentinel_and_scenes_is_fail_stale(self):
+        out = vpv.check_phase_state(f"a\n{self.S}\nb", self._scenes(3))
+        self.assertEqual([s for s, _ in out], ["FAIL"])
+        self.assertIn("Stale Phase-1 sentinel", out[0][1])
+
+    def test_no_sentinel_and_zero_scenes_is_fail_false_green(self):
+        out = vpv.check_phase_state("a\nb", self._scenes(0))
+        self.assertEqual([s for s, _ in out], ["FAIL"])
+        self.assertIn("false green", out[0][1])
+
+    def test_no_sentinel_and_scenes_is_silent_normal(self):
+        self.assertEqual(vpv.check_phase_state("a\nb", self._scenes(4)), [])
+
+    def test_fenced_sentinel_reads_as_no_sentinel(self):
+        # A full doc quoting the token in a fence + real scenes -> normal path.
+        self.assertEqual(
+            vpv.check_phase_state(f"```\n{self.S}\n```\n", self._scenes(4)), [])
+
+
+class TestRefImagePathLint(unittest.TestCase):
+    """check_ref_image_path (D6): a REF block's declared image path must be well-formed
+    and belong to this episode's folder. Both directions."""
+
+    def _rb(self, path):
+        return [{"ref_id": "A", "label": "REF A", "ref_path": path, "text": "x"}]
+
+    def test_canonical_path_passes(self):
+        self.assertEqual(
+            vpv.check_ref_image_path(self._rb("episode-10/04_visuals/ep10_ref_stone.png"), 10), [])
+
+    def test_raw_subdir_path_passes(self):
+        self.assertEqual(
+            vpv.check_ref_image_path(self._rb("episode-10/04_visuals/raw/ep10_ref_x.png"), 10), [])
+
+    def test_missing_path_fires(self):
+        self.assertTrue(vpv.check_ref_image_path(self._rb(""), 10))
+
+    def test_malformed_path_fires(self):
+        self.assertTrue(vpv.check_ref_image_path(self._rb("episode-10/04_visuals/ep10_bad.png"), 10))
+
+    def test_wrong_episode_number_fires(self):
+        # Path says ep09 but the folder episode is 10.
+        self.assertTrue(
+            vpv.check_ref_image_path(self._rb("episode-09/04_visuals/ep09_ref_x.png"), 10))
+
+    def test_uppercase_name_fires(self):
+        self.assertTrue(
+            vpv.check_ref_image_path(self._rb("episode-10/04_visuals/ep10_ref_Stone.png"), 10))
+
+    def test_real_ep09_and_ep10_ref_blocks_pass(self):
+        # The two shipped files that use the canonical `### REF <id>:` format — including
+        # EP09 REF 4's annotated path (first backtick token is extracted) — must pass.
+        for rel, ep in (("episode-09/04_visuals/ep09_visual_prompts_v01.md", 9),
+                        ("episode-10/04_visuals/ep10_visual_prompts_v01.md", 10)):
+            with open(os.path.join(REPO_ROOT, rel), encoding="utf-8") as f:
+                blocks = vpv.extract_ref_blocks(f.read())
+            self.assertTrue(blocks, f"{rel} must yield REF blocks")
+            self.assertEqual(vpv.check_ref_image_path(blocks, ep), [],
+                             f"{rel} ref paths must all be canonical")
+
+    def test_legacy_ref_env_format_is_out_of_scope(self):
+        # EP04/EP05 use "### REF-ENV-01 —" (no space after REF) — deliberately NOT
+        # matched, so those pre-two-phase files are not retro-linted.
+        with open(os.path.join(REPO_ROOT, "episode-04/04_visuals/ep04_visual_prompts_v01.md"),
+                  encoding="utf-8") as f:
+            self.assertEqual(vpv.extract_ref_blocks(f.read()), [])
+
+
+class TestPseudoSceneLint(unittest.TestCase):
+    """D7.4: a CHARACTER/group REF block (its Text Prompt names the protagonist) is
+    linted as a pseudo-scene, so eye-glow / phase keywords bind to body-state refs even
+    in a Phase-1 deliverable with no real scenes."""
+
+    def test_environment_ref_is_not_a_pseudo_scene(self):
+        env = [{"ref_id": "A", "label": "REF A", "ref_path": "p",
+                "text": "a green meadow, no characters, monolith mountains"}]
+        self.assertEqual(vpv.ref_pseudo_scenes(env), [])
+
+    def test_character_ref_becomes_a_pseudo_scene(self):
+        char = [{"ref_id": "K", "label": "REF K", "ref_path": "p",
+                 "text": "a chrome android, kintsugi body, calm blue optical lenses"}]
+        pseudo = vpv.ref_pseudo_scenes(char)
+        self.assertEqual(len(pseudo), 1)
+        self.assertEqual(pseudo[0]["label"], "REF K")
+
+    def test_eye_glow_in_character_ref_is_caught(self):
+        char = [{"ref_id": "K", "label": "REF K", "ref_path": "p",
+                 "text": "a chrome android with glowing blue eyes"}]
+        pseudo = vpv.ref_pseudo_scenes(char)
+        self.assertTrue(vpv.check_eye_glow(pseudo, "FAIL"))
+
+    def test_clean_material_lens_character_ref_is_silent(self):
+        char = [{"ref_id": "K", "label": "REF K", "ref_path": "p",
+                 "text": "a chrome android, steady blue optical lenses set into chrome sockets"}]
+        self.assertEqual(vpv.check_eye_glow(vpv.ref_pseudo_scenes(char), "FAIL"), [])
+
+
+class TestPhaseStateFixtures(unittest.TestCase):
+    """The five frozen fixtures (QA's set) driven through the full validate_file path.
+    Both directions: two GOOD (partial-pass / normal-pass) and three BAD."""
+
+    def test_phase1_good_partial_passes_and_is_visible(self):
+        results = vpv.validate_file(PHASE1_GOOD)
+        self.assertEqual(results["errors"], [],
+                         f"PHASE1_GOOD must not error: {results['errors']}")
+        self.assertTrue(any("PHASE 1 ONLY" in w for w in results["warnings"]),
+                        "the partial pass must be VISIBLE, not a silent green")
+        self.assertGreaterEqual(results["prompt_count"], 3,
+                                "REF prompts must be parsed and suffix-checked")
+
+    def test_noscenes_bad_fails_on_phase_state(self):
+        errors = vpv.validate_file(NOSCENES_BAD)["errors"]
+        self.assertTrue(any("[Phase State]" in e and "false green" in e for e in errors),
+                        f"refs-only false green must FAIL on phase-state: {errors}")
+
+    def test_lyingsentinel_bad_fails_on_stale_sentinel_only(self):
+        errors = vpv.validate_file(LYINGSENTINEL_BAD)["errors"]
+        self.assertTrue(any("Stale Phase-1 sentinel" in e for e in errors),
+                        f"stale sentinel must FAIL: {errors}")
+        # The scene itself is clean — the ONLY error is the stale sentinel.
+        self.assertEqual(len(errors), 1, f"only the stale-sentinel error expected: {errors}")
+
+    def test_quotedsentinel_good_passes_clean(self):
+        results = vpv.validate_file(QUOTEDSENTINEL_GOOD)
+        self.assertEqual(results["errors"], [],
+                         f"a full file quoting the sentinel in a fence must PASS: {results['errors']}")
+        self.assertFalse(any("PHASE 1 ONLY" in w for w in results["warnings"]),
+                         "fenced quote must NOT be read as a live Phase-1 sentinel")
+
+    def test_badsentinel_not_swallowed_by_scaffold_skip(self):
+        # The reorder proof: this file trips the scaffold-skip marker AND carries the
+        # sentinel. Sentinel is checked first, so the file is validated (not skipped) —
+        # and its real defect (a REF prompt missing the suffix) surfaces.
+        with open(BADSENTINEL_BAD, encoding="utf-8") as f:
+            content = f.read()
+        self.assertTrue(vpv.is_unfilled_template(BADSENTINEL_BAD),
+                        "fixture must trip is_unfilled_template (would be skipped pre-reorder)")
+        self.assertTrue(vpv.has_phase1_sentinel(content),
+                        "fixture must carry the sentinel (so the reorder validates it)")
+        errors = vpv.validate_file(BADSENTINEL_BAD)["errors"]
+        self.assertTrue(any("Suffix Missing" in e for e in errors),
+                        f"the file's real defect must surface (proving it was checked): {errors}")
+
+
+class TestHygieneScopeCoversRefPrompts(unittest.TestCase):
+    """Hygiene-scope assertion: a REF block's Text Prompt is in scope of the ASCII /
+    tradition-label prompt-hygiene lint, exactly like a scene's Text Prompt — so a
+    Phase-1 deliverable's reference prompts are not a blind spot."""
+
+    def test_nonascii_in_ref_text_prompt_is_linted(self):
+        ref_block = (
+            "### REF K: Kintsugi Body\n"
+            "**Reference Image Path:** `episode-10/04_visuals/raw/ep10_ref_k.png`\n"
+            "**Text Prompt:**\n"
+            "> a chrome android with a Hacı Bektaş etching, masterpiece.\n"
+        )
+        findings = phl.lint_content(ref_block, "Text Prompt")
+        self.assertTrue(any(k == "non-ascii" for _, k, _ in findings),
+                        "a REF Text Prompt must be in the hygiene lint's scope")
+
+    def test_clean_ref_text_prompt_is_silent(self):
+        ref_block = (
+            "### REF A: Meadow\n"
+            "**Text Prompt:**\n"
+            "> a green meadow, no characters, plain english, masterpiece.\n"
+        )
+        self.assertEqual(phl.lint_content(ref_block, "Text Prompt"), [])
 
 
 class TestPromptHygieneLint(unittest.TestCase):
@@ -797,6 +1048,118 @@ class TestGateRecordsAsData(unittest.TestCase):
         self.assertEqual(pi.gate_findings("77", scaffold, [], prod, REPO_ROOT), [])
 
 
+class TestRefGate1R(unittest.TestCase):
+    """Gate 1R (references approved) for two-phase episodes (ADR-0013). Two layers,
+    both hermetic:
+      (A) gate_findings driven by the two computed bools (phase2_asserted, has_valid_1r)
+          -- the FAIL mapping, no disk.
+      (B) resolve_1r -- the REFINED honoring rule that closes panel risk R2 (a
+          grandfather waiver must not permanently disarm the real gate): a genuine 1R is
+          pin-agnostic; a waiver counts only while it pins the current latest file. Pure,
+          so both directions are unit-testable without touching the tree."""
+
+    FULL = [True, True, True, True, True, True, False]  # past gates 1 and 2 already
+    PROD = {"lyrics": True, "timestamp_json": True, "dramaturgy": True,
+            "visuals": True, "video": True}
+    EP10_V01 = "episode-10/04_visuals/ep10_visual_prompts_v01.md"
+    EP10_V02 = "episode-10/04_visuals/ep10_visual_prompts_v02.md"
+
+    def _1r_fails(self, findings):
+        return [m for m in _sev(findings, "FAIL") if "gate-1R" in m]
+
+    def _waiver_rec(self, ep, artifact):
+        return {"episode": ep, "gate": "1R", "artifact": artifact,
+                "sha256": EP02_DRAMA_SHA, "date": "2026-01-01",
+                "note": "gate-1R WAIVER, artifact-pinned; superseded by v02"}
+
+    def _real_rec(self, ep, artifact):
+        return {"episode": ep, "gate": "1R", "artifact": artifact,
+                "sha256": EP02_DRAMA_SHA, "date": "2026-01-01",
+                "note": "references approved at the Phase-1 ref gate"}
+
+    # ---- (A) gate_findings: the bool -> FAIL mapping (hermetic) ----
+
+    def test_asserted_without_valid_1r_fails(self):
+        f = pi.gate_findings("77", self.FULL, [], self.PROD, REPO_ROOT,
+                             phase2_asserted=True, has_valid_1r=False)
+        self.assertTrue(self._1r_fails(f),
+                        f"Phase-2 asserted with no valid 1R must FAIL: {f}")
+
+    def test_asserted_with_valid_1r_passes(self):
+        f = pi.gate_findings("77", self.FULL, [], self.PROD, REPO_ROOT,
+                             phase2_asserted=True, has_valid_1r=True)
+        self.assertEqual(self._1r_fails(f), [], f"a valid 1R must satisfy the gate: {f}")
+
+    def test_phase1_refs_only_needs_no_1r_yet(self):
+        # phase2 NOT asserted (still Phase-1 / sentinel present) -> 1R not required yet.
+        f = pi.gate_findings("77", self.FULL, [], self.PROD, REPO_ROOT,
+                             phase2_asserted=False, has_valid_1r=False)
+        self.assertEqual(self._1r_fails(f), [], f"a Phase-1 file needs no 1R yet: {f}")
+
+    def test_legacy_pre_two_phase_episode_is_exempt(self):
+        # ep < TWO_PHASE_FROM_EP: single-pass, exempt even asserted with no valid 1R.
+        f = pi.gate_findings("09", self.FULL, [], self.PROD, REPO_ROOT,
+                             phase2_asserted=True, has_valid_1r=False)
+        self.assertEqual(self._1r_fails(f), [], f"pre-two-phase episodes are exempt: {f}")
+
+    def test_default_params_keep_legacy_calls_1r_free(self):
+        # The old 5-arg call signature (no phase2/1r bools) must never trip the 1R gate.
+        f = pi.gate_findings("77", self.FULL, [], self.PROD, REPO_ROOT)
+        self.assertEqual(self._1r_fails(f), [])
+
+    # ---- (B) resolve_1r: the refined honoring rule (pure) ----
+
+    def test_no_1r_record_is_not_valid(self):
+        self.assertFalse(pi.resolve_1r([], "10", self.EP10_V01))
+
+    def test_case1_ep10_today_waiver_pins_latest_v01_is_valid(self):
+        # EP10 today: latest = v01, the real ledger's waiver pins v01 -> honored -> green.
+        ledger = pi.load_approvals(REPO_ROOT)
+        self.assertTrue(pi.resolve_1r(ledger, "10", self.EP10_V01))
+        # And end-to-end against the real disk state (latest really is v01 today).
+        self.assertTrue(pi.has_valid_1r("10", ledger, REPO_ROOT))
+
+    def test_case2_clean_flow_real_1r_is_pin_agnostic(self):
+        # EP11 normal flow: Phase 1 records a REAL 1R pinned to v01; Phase 2 writes v02
+        # (scenes) -> the real 1R still satisfies the gate regardless of latest.
+        ledger = [self._real_rec("11", "episode-11/04_visuals/ep11_visual_prompts_v01.md")]
+        self.assertTrue(
+            pi.resolve_1r(ledger, "11", "episode-11/04_visuals/ep11_visual_prompts_v02.md"),
+            "a genuine 1R must be honored regardless of which file is latest")
+        # Even with no file on disk at all, a real 1R is pin-agnostic.
+        self.assertTrue(pi.resolve_1r(ledger, "11", None))
+
+    def test_case3_waiver_no_longer_pins_latest_is_NOT_valid(self):
+        # THE HOLE, now closed: a v01-pinned waiver while a v02 file is latest and NO
+        # real 1R exists -> not honored -> the gate must FAIL.
+        ledger = [self._waiver_rec("10", self.EP10_V01)]
+        self.assertFalse(
+            pi.resolve_1r(ledger, "10", self.EP10_V02),
+            "a grandfather waiver must stop counting once it no longer pins latest")
+        # Drive it through gate_findings via the computed bool to confirm the FAIL.
+        valid = pi.resolve_1r(ledger, "10", self.EP10_V02)
+        f = pi.gate_findings("10", self.FULL, ledger, self.PROD, REPO_ROOT,
+                             phase2_asserted=True, has_valid_1r=valid)
+        self.assertTrue(self._1r_fails(f), f"the superseded waiver must FAIL the gate: {f}")
+
+    def test_waiver_still_pinning_latest_is_valid(self):
+        ledger = [self._waiver_rec("10", self.EP10_V01)]
+        self.assertTrue(pi.resolve_1r(ledger, "10", self.EP10_V01))
+
+    def test_real_1r_pinned_to_v01_survives_v02_becoming_latest(self):
+        # Same shape as case 3 but with a REAL 1R instead of a waiver -> stays valid.
+        ledger = [self._real_rec("10", self.EP10_V01)]
+        self.assertTrue(pi.resolve_1r(ledger, "10", self.EP10_V02),
+                        "a real 1R (not a waiver) is not disarmed by a newer latest file")
+
+    # ---- (C) disk helpers ----
+
+    def test_phase2_asserted_and_latest_helpers_read_disk(self):
+        self.assertTrue(pi.phase2_asserted("10", REPO_ROOT))
+        self.assertEqual(pi.latest_visual_prompts("10", REPO_ROOT), self.EP10_V01)
+        self.assertEqual(pi.TWO_PHASE_FROM_EP, 10)
+
+
 class TestRealTreeStaysGreen(unittest.TestCase):
     """The whole point: today's real tree passes with the honest checks live. No
     episode may produce a FAIL against the committed ledger + metadata."""
@@ -825,22 +1188,30 @@ class TestRealTreeStaysGreen(unittest.TestCase):
             self.assertIsNotNone(pi.gate_record(ledger, ep, 1), f"EP{ep} missing gate-1 record")
             self.assertIsNotNone(pi.gate_record(ledger, ep, 2), f"EP{ep} missing gate-2 record")
 
-    def test_ep10_ledger_state_gate1_approved_gate2_pending(self):
-        # EP10 ledger state as of 2026-07-06: the gate-0 step-order waiver
-        # (concept notes before the musical metadata JSON, by design) PLUS the
-        # gate-1 dramaturgy approval (approved at the 2026-07-06 review, S34
-        # revision applied before sign-off). Gate-2 must stay absent until the
-        # motion script is actually approved.
+    def test_ep10_ledger_state_gate1_approved_1r_waivered_gate2_pending(self):
+        # EP10 ledger state as of 2026-07-06/07: the gate-0 step-order waiver (concept
+        # notes before the musical metadata JSON, by design), the gate-1 dramaturgy
+        # approval, and the interim gate-1R references-approved WAIVER pinned to the
+        # v01 visual-prompts artifact (v01 was authored pre-two-phase; superseded by the
+        # future two-phase v02 run which carries the real 1R). Gate-2 must stay absent
+        # until the motion script is actually approved.
         ledger = pi.load_approvals(REPO_ROOT)
         records = pi.approvals_for(ledger, "10")
-        self.assertEqual(len(records), 2, f"EP10 must have exactly two ledger records (gate-0 waiver + gate-1). Got: {records}")
-        self.assertEqual(sorted(r.get("gate") for r in records), [0, 1],
-                         "EP10's records must be the gate-0 step-order waiver and the gate-1 approval")
-        self.assertIsNotNone(pi.episode_waiver(ledger, "10"), "EP10's gate-0 record must read as a waiver")
+        self.assertEqual(len(records), 3,
+                         f"EP10 must have three ledger records (gate-0 waiver + gate-1 + gate-1R waiver). Got: {records}")
+        self.assertEqual({r.get("gate") for r in records}, {0, 1, "1R"},
+                         "EP10's records must be the gate-0 step-order waiver, the gate-1 approval, and the gate-1R waiver")
+        self.assertIsNotNone(pi.episode_waiver(ledger, "10"), "EP10 must carry a waiver record")
         gate1 = pi.gate_record(ledger, "10", 1)
         self.assertIsNotNone(gate1, "EP10 must have a gate-1 record (dramaturgy approved 2026-07-06)")
         self.assertEqual(gate1.get("artifact"), "episode-10/03_direction/ep10_dramaturgy_v01.md",
                          "EP10 gate-1 must pin the dramaturgy artifact")
+        gate1r = pi.gate_record(ledger, "10", "1R")
+        self.assertIsNotNone(gate1r, "EP10 must have a gate-1R record (references approved, interim waiver)")
+        self.assertEqual(gate1r.get("artifact"), "episode-10/04_visuals/ep10_visual_prompts_v01.md",
+                         "EP10 gate-1R must be artifact-pinned to the v01 visual-prompts file")
+        self.assertIn("waiv", gate1r.get("note", "").lower(),
+                      "EP10 gate-1R must read as an interim waiver (superseded by v02)")
         self.assertIsNone(pi.gate_record(ledger, "10", 2), "EP10 must NOT have a gate-2 record yet")
 
     def test_ledger_sha_matches_disk_for_all_records(self):

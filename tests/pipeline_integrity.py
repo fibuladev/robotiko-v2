@@ -77,6 +77,18 @@ IDX_VISUALS = 4   # step 5
 IDX_MOTION = 5    # step 6
 IDX_EDIT = 6      # step 7
 
+# Episodes >= this author visual prompts in TWO phases (ADR-0013): Phase 1 (references
+# approved at gate 1R) -> Phase 2 (scenes framed to the approved pixels). EP01-09 were
+# authored pre-two-phase (single pass) and are exempt from the 1R gate — a documented
+# cutover, matching the attempts-ledger "EP10 onward" idiom (no perpetual legacy WARNs).
+TWO_PHASE_FROM_EP = 10
+
+# Phase-1 scene-pending sentinel (mirrors visual_prompt_validator; TEMPLATE_MARKERS are
+# likewise duplicated in this module). Line-anchored, tolerant of the blockquote marker,
+# applied only after fenced code blocks are stripped so a fenced QUOTE never trips it.
+_SENTINEL_RE = re.compile(r"(?m)^\s*>?\s*SCENES_STATUS:\s*PENDING_PHASE_2\s*$")
+_FENCE_RE = re.compile(r"(?ms)^[ \t]*```.*?^[ \t]*```[ \t]*$")
+
 # project_metadata.json production flag -> the pipeline step index it maps to on disk.
 # "music" (Suno audio) and "concept" have no single committed artifact in this map and
 # are intentionally omitted from the disk-ahead comparison.
@@ -127,6 +139,87 @@ def episode_status(ep: str):
     if not os.path.isdir(folder):
         return None
     return [step_done(folder, step, ep) for step in PIPELINE_STEPS]
+
+
+def _numeric_ep(ep: str) -> int:
+    """Leading-digits of an episode id as an int ('10'->10, '09'->9, '77'->77);
+    -1 if none. Used only for the >= TWO_PHASE_FROM_EP cutover comparison."""
+    m = re.match(r"\d+", str(ep))
+    return int(m.group()) if m else -1
+
+
+def _has_phase1_sentinel(text: str) -> bool:
+    """True if the Phase-1 scene-pending sentinel is live (outside any fenced code
+    block). Kept self-contained so this module stays stdlib-only, matching the way
+    TEMPLATE_MARKERS is duplicated rather than cross-imported."""
+    return bool(_SENTINEL_RE.search(_FENCE_RE.sub("", text)))
+
+
+def latest_visual_prompts(ep: str, repo_root: str = ".") -> str:
+    """Repo-relative path of the LATEST ep{ep}_visual_prompts_vNN.md, or None. Returned
+    in the same forward-slash, repo-relative form the approvals ledger stores artifacts
+    in, so a waiver's pinned artifact can be compared to it directly."""
+    vdir = os.path.join(repo_root, f"episode-{ep}", "04_visuals")
+    if not os.path.isdir(vdir):
+        return None
+    cands = sorted(
+        (f for f in os.listdir(vdir)
+         if re.match(rf"ep{ep}_visual_prompts_v\d{{2}}\.md$", f)),
+        reverse=True,
+    )
+    if not cands:
+        return None
+    return f"episode-{ep}/04_visuals/{cands[0]}"
+
+
+def phase2_asserted(ep: str, repo_root: str = ".") -> bool:
+    """Conservative 'this episode has asserted its Phase-2 scenes' signal for the 1R
+    gate: the latest visual_prompts .md EXISTS and its Phase-1 sentinel is ABSENT.
+
+    Absent-sentinel (rather than parsing scene headers) is deliberate — it is immune to
+    scene-header parser evasion and treats a still-in-Phase-1 file (sentinel present) as
+    NOT asserting scenes, so a legitimate Phase-1 deliverable never trips the 1R FAIL."""
+    rel = latest_visual_prompts(ep, repo_root)
+    if rel is None:
+        return False
+    try:
+        with open(os.path.join(repo_root, rel), encoding="utf-8", errors="ignore") as f:
+            text = f.read()
+    except OSError:
+        return False
+    return not _has_phase1_sentinel(text)
+
+
+def resolve_1r(ledger: list, ep: str, latest_vp: str) -> bool:
+    """Pure resolution of the gate-1R state from the ledger + the CURRENT latest
+    visual-prompts path (repo-relative, or None). Closes panel risk R2 / plan D4 — "a
+    grandfather waiver must not permanently disarm the real gate":
+
+      * A REAL 1R record (note WITHOUT 'waiv') is a genuine references-approval and
+        satisfies the gate REGARDLESS of which file is latest. This preserves the
+        normal two-phase flow: Phase 1 records a real 1R pinned to v01, Phase 2 writes
+        v02 (scenes, no sentinel), and the v01-pinned real 1R correctly satisfies it.
+      * A WAIVER 1R record (note WITH 'waiv') is the interim grandfather clause; it is
+        honored ONLY while the artifact it pins is STILL the current latest visual-
+        prompts file. The moment a newer artifact (v02) becomes latest, the v01-pinned
+        waiver no longer pins latest, is NOT honored, and the gate FAILs until a real 1R
+        is recorded for the real run.
+
+    Kept pure (no disk) so both directions are unit-testable without touching the tree."""
+    rec = gate_record(ledger, ep, "1R")
+    if rec is None:
+        return False
+    if "waiv" not in str(rec.get("note", "")).lower():
+        return True   # genuine references-approval — pin-agnostic
+    pinned = str(rec.get("artifact", "")).replace("\\", "/")
+    return latest_vp is not None and pinned == latest_vp
+
+
+def has_valid_1r(ep: str, ledger: list, repo_root: str = ".") -> bool:
+    """The disk-aware wrapper check_episode uses: resolve the 1R state against the
+    episode's current latest visual-prompts file. Passed into gate_findings as a bool so
+    that function stays file-free (synthetic-episode meta-tests keep working)."""
+    return resolve_1r(ledger, ep, latest_visual_prompts(ep, repo_root))
 
 
 # -------------------------------------------------------------------
@@ -244,11 +337,18 @@ def disk_declared_conflicts(status, production: dict) -> list:
 # GATE ENFORCEMENT (consumes the ledger + the declared metadata)
 # -------------------------------------------------------------------
 
-def gate_findings(ep: str, status, ledger: list, production: dict, repo_root: str = ".") -> list:
-    """Findings for the two human gates:
+def gate_findings(ep: str, status, ledger: list, production: dict, repo_root: str = ".",
+                  phase2_asserted: bool = False, has_valid_1r: bool = False) -> list:
+    """Findings for the human gates:
       - artifacts beyond a gate with no ledger record  -> FAIL
       - a ledger sha256 that no longer matches disk     -> WARN (stale approval)
       - a ledger record whose artifact is missing        -> WARN
+
+    `phase2_asserted` and `has_valid_1r` are BOTH computed by check_episode from disk and
+    passed IN as bools, so this function stays file-free and the synthetic-episode
+    meta-test idiom survives: the 1R gate is driven by the two bools, never by reading
+    the tree here. `has_valid_1r` already encodes the refined honoring rule (a real 1R is
+    pin-agnostic; a waiver counts only while it pins the latest artifact — see resolve_1r).
     """
     findings = []
 
@@ -260,6 +360,24 @@ def gate_findings(ep: str, status, ledger: list, production: dict, repo_root: st
             "FAIL",
             "has artifacts past the Dramaturgy gate (visuals/motion/edit on disk) "
             "but NO gate-1 approval record in _management/approvals.json."
+        ))
+
+    # Gate 1R (References approved) — two-phase episodes only (ADR-0013). Once a
+    # two-phase episode asserts its Phase-2 scenes (latest visual_prompts .md present,
+    # Phase-1 sentinel gone), the 1R gate must be satisfied by a VALID 1R (has_valid_1r,
+    # computed by check_episode): a genuine references-approval record, OR the interim
+    # artifact-pinned waiver WHILE it still pins the latest file. A grandfather waiver
+    # that no longer pins latest does NOT count (panel risk R2). ep < TWO_PHASE_FROM_EP
+    # is exempt (documented pre-two-phase cutover). rec1r is still fetched for the
+    # sha-drift WARN below.
+    rec1r = gate_record(ledger, ep, "1R")
+    if _numeric_ep(ep) >= TWO_PHASE_FROM_EP and phase2_asserted and not has_valid_1r:
+        findings.append((
+            "FAIL",
+            "is a two-phase episode with Phase-2 scenes asserted (visual prompts on "
+            "disk, Phase-1 sentinel gone) but NO valid gate-1R (references approved): "
+            "needs a genuine 1R record, or an interim waiver that still pins the latest "
+            "visual-prompts artifact. See _management/approvals.json."
         ))
 
     # Gate 2 (Motion Script): required once a motion script exists AND video
@@ -275,8 +393,10 @@ def gate_findings(ep: str, status, ledger: list, production: dict, repo_root: st
             "record in _management/approvals.json."
         ))
 
-    # sha256 drift + missing-artifact WARNs for the records that DO exist.
-    for gate, rec in ((1, rec1), (2, rec2)):
+    # sha256 drift + missing-artifact WARNs for the records that DO exist. The 1R
+    # record is included so a late edit to the sha-pinned v01 (the GAP-B late-ref-edit
+    # case) surfaces as the same honest stale-approval WARN as gates 1 and 2.
+    for gate, rec in ((1, rec1), (2, rec2), ("1R", rec1r)):
         if rec is None:
             continue
         artifact = rec.get("artifact", "")
@@ -339,8 +459,12 @@ def check_episode(ep: str, ledger: list, metadata: dict, repo_root: str = "."):
     # 2. Disk vs declared state machine.
     findings.extend(disk_declared_conflicts(status, production))
 
-    # 3. Approval gates as data.
-    findings.extend(gate_findings(ep, status, ledger, production, repo_root))
+    # 3. Approval gates as data. phase2_asserted AND has_valid_1r are computed HERE
+    #    (they read disk) and passed as bools so gate_findings stays hermetic
+    #    (synthetic-episode friendly). has_valid_1r carries the refined honoring rule.
+    p2 = phase2_asserted(ep, repo_root)
+    valid_1r = has_valid_1r(ep, ledger, repo_root)
+    findings.extend(gate_findings(ep, status, ledger, production, repo_root, p2, valid_1r))
 
     return status, findings
 

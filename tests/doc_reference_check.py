@@ -66,6 +66,7 @@ CURATED_DOCS = [
     "FORKING.md",
     "docs/fork-dry-run.md",
     "docs/text-only-first-episode.md",
+    "docs/two-phase-visual-prompts.md",
     "docs/visual-canon.md",
 ]
 

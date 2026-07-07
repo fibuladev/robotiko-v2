@@ -166,6 +166,14 @@
       "sha256": "e48833b9702f34ca21050a1eee27c3c07072c43a32ae317cfe3ac637b84a7158",
       "date": "2026-07-06",
       "note": "approved at the dramaturgy review session (35 scenes, Companion Camera). One revision requested and applied before sign-off: S34 - the look resolves into a warm head-tilt (the machine's smile; the face is mouthless by design) + open-palm beckon toward the lens, gong cuts on the offered hand. All four interpretation choices confirmed (communal kettle, staff cloth strips, S33 wind/flare energy, refrain onsets to verify at motion stage)."
+    },
+    {
+      "episode": "10",
+      "gate": "1R",
+      "artifact": "episode-10/04_visuals/ep10_visual_prompts_v01.md",
+      "sha256": "692d955b840920240038dc5199a869200214900f14d9dba52aa0107af5b3c7e2",
+      "date": "2026-07-06",
+      "note": "gate-1R (references approved) WAIVER, artifact-pinned to v01. EP10 v01 was authored pre-two-phase (single pass: four environment refs A-D plus 41 scene headers in one document); the four env refs were generated and approved at the 2026-07-06/07 sessions (REF B reframed to the village-exit at ea96c34). This waiver is pinned to the v01 bytes ONLY - it is superseded by the two-phase v02 run, which will carry the REAL gate-1R (references approved BEFORE scenes are framed to the approved pixels, per ADR-0013). Because it pins v01, it cannot excuse v02. Honest limit: 1R attests that a human approved the ref PROMPTS; the ref IMAGES live in gitignored raw/ and are not machine-verifiable (same posture as gates 1 and 2)."
     }
   ]
 }

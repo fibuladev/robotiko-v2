@@ -42,6 +42,7 @@ ep{EPISODE_NUMBER}_s{SCENE_NUMBER}_{TYPE}_v{VERSION}.{EXTENSION}
 | Motion Script | `ep{XX}_motion_script_v{XX}.md` | `ep03_motion_script_v01.md` |
 | Raw Image | `ep{XX}_s{XX}_v{XX}.png` | `ep03_s01_v04.png` |
 | Selected Image | `ep{XX}_s{XX}_selected.png` | `ep03_s01_selected.png` |
+| Reference Image (per-episode env/body, two-phase) | `ep{XX}_ref_{name}.png` | `ep10_ref_market_edge.png` |
 | Raw Video | `ep{XX}_s{XX}_video_{tool}.mp4` | `ep03_s01_video_kling.mp4` |
 | Raw Video (sub-clip) | `ep{XX}_s{XX}{a\|b\|c\|d}_video_{tool}.mp4` | `ep02_s29c_video_kling.mp4` |
 | Selected Video | `ep{XX}_s{XX}_selected.mp4` | `ep03_s01_selected.mp4` |
@@ -68,6 +69,22 @@ ep{EPISODE_NUMBER}_s{SCENE_NUMBER}_{TYPE}_v{VERSION}.{EXTENSION}
 > few unversioned forms (`ep01_lyrics.md`, `ep01_motion_script.pdf`). These are
 > accepted by the validator for backward compatibility; all new files use the
 > versioned forms above.
+
+> **Two-phase reference images (EP10 onward):** Per-episode environment and
+> body-state reference images live in `episode-{XX}/04_visuals/raw/` as
+> `ep{XX}_ref_{name}.png` (e.g. `episode-10/04_visuals/raw/ep10_ref_lane.png`).
+> These are the Phase-1 reference set the human generates and approves at gate 1R,
+> before any scene prompt is written (see `_skills/robotiko-visual-prompts/SKILL.md`
+> and `pipeline_rules.md` Step 5a). Shared cast **master** refs instead use
+> `_assets/cast/ref_{character}_master.png` (see Asset Files below).
+>
+> **Enforcement is limited, and honestly so:** `raw/` is gitignored and is never
+> walked by `naming_check.py`, so these on-disk filenames are not CI-checked. The
+> only CI-visible guard is the Reference-Image-Path field lint (`check_ref_image_path`
+> in `tests/visual_prompt_validator.py`) on the tracked
+> `ep{XX}_visual_prompts_v{XX}.md`, which requires each `### REF` block's declared
+> path to match `episode-{XX}/04_visuals/[raw/]ep{XX}_ref_{name}.png` with the path's
+> episode number matching the folder.
 
 ---
 

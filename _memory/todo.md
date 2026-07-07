@@ -1,7 +1,24 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-07-06 (EP10 visual prompts session — v01 generated, 40 scene prompts + 4 refs, awaiting image generation.)
+> Last Updated: 2026-07-07 (Two-phase visual-prompts pipeline redesign — SKILL v2.0, gate 1R, validator phase-awareness, docs, lessons + ADR-0013. EP10 Phase-2 run OUT OF SCOPE.)
+
+---
+
+## TWO-PHASE VISUAL PROMPTS REDESIGN SESSION (2026-07-07) — COMPLETE
+
+**Task:** Redesign the visual-prompts pipeline so scenes are framed to APPROVED reference pixels, not conjured from a text contract — closing three gaps found in the shipped flow. GAP A: template / `visual_dna.md` / public docs were a generation behind the SKILL. GAP B: a late ref edit forced no scene re-verification (the REF B reframe, commit `ea96c34`, updated a block while 40 scenes went un-re-checked). GAP C: the "3+ scenes = 1 ref" heuristic under-decomposed locations (EP10's REF E/F found late). Panel-reviewed plan (7 adversarial lenses); scope = SKILL + docs + validator methodology only.
+
+**Shipped:**
+- **SKILL v2.0 — two-phase structure:** Phase 1 (reference authoring + operational decomposition test + through-anchors + REF block schema + ART DIRECTION LOCKS + scene→space coverage map + Phase-1 sentinel; ZERO scene prompts) → ⛔ HARD STOP gate 1R → Phase 2 (batch verification pass, re-anchor mandate, ref-less scene gate, per-space camera ledger, loop-back rules, completeness check; scenes framed to real pixels). Framing Pass retired (Phase 2 IS the framing pass).
+- **Template + `_assets/style/visual_dna.md`** aligned to the two-phase flow (gate divider + sentinel pre-placed, REF block schema with Narrative anchors, coverage-map + camera-ledger tables).
+- **`pipeline_rules.md`** Step 5 → 5a (references, Phase 1) ⛔ gate 1R → 5b (scenes, Phase 2) + backstop rule for late ref edits; third human checkpoint added.
+- **Validator phase-awareness:** `check_phase_state` (truth table on parsed scenes vs sentinel — kills the refs-only false green), `check_ref_image_path`, gate 1R wiring in `pipeline_integrity.py` (`TWO_PHASE_FROM_EP = 10`, artifact-pinned EP10 v01 waiver), frozen fixtures both directions.
+- **New `docs/two-phase-visual-prompts.md`** (carries the load) + `anatomy-of-an-episode.md` Stage-6 rewrite + onboarding-doc reconciliation (`text-only-first-episode`, `fork-dry-run`, `getting-started`) + the honest-reproducibility sentence (process reproducible; assets, deliberately, not).
+- **Coverage matrix** honest-gap rows (scene↔space completeness, framing-to-pixels, ref-edited-post-Phase-2 = 🔵 Human); **`project_metadata.json`** `production.visuals` made tri-state (`false | "refs_approved" | true`).
+- **`_memory/lessons.md`** REF-NOTE SYNC ≠ SCENE RECONCILIATION lesson (REFERENCE IMAGE WORKFLOW category) + **ADR-0013** "Two-phase visual prompts: scenes are framed to approved pixels" — links ADR-0007 (reference-first) + ADR-0008 (gates as data); records D3 versioning (frozen v01 + new v02, sha-drift WARN as the free GAP-B signal), D4 honest limits (1R attests ref prompts not pixels; preventive/detective; waiver-only-while-it-pins-latest), D6 declined under-segmentation lint, the corrected loop-back termination measure (unframed-scene count strictly decreasing), and the +1-session honesty. Registered in the ADR README index.
+
+**OUT OF SCOPE (next session):** EP10's actual Phase-2 production run — `ep10_visual_prompts_v02.md`: the 40 scenes framed to the approved `raw/` reference images + REF E/F recovered via loop-back. This is the new flow's first live run and belongs to a dedicated session.
 
 ---
 

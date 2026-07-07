@@ -22,6 +22,7 @@ supersedes the old one (don't rewrite history).
 | [0010](0010-eye-canon-reconciliation.md) | Eye-canon reconciliation: appearance vs. prompt language | Accepted |
 | [0011](0011-git-history-exposure.md) | Git-history exposure of the internal golden-release report | Accepted |
 | [0012](0012-scaffold-pr-flow.md) | Episode-scaffold automation opens a PR, not a direct push | Accepted |
+| [0013](0013-two-phase-visual-prompts.md) | Two-phase visual prompts: scenes are framed to approved pixels | Accepted |
 
 Born out of the EP09 "Validation Backbone" build-along (the reference-integrity
 bug that passed every check green). See also

@@ -5,14 +5,15 @@
 > **Tone:** Dark comedy, satirical, upbeat music against carnage — the contrast IS the point
 > **Language:** Turkish (The language shift is intentional — the test is felt more deeply in the mother tongue)
 > **Music:** Upbeat Anatolian Pop-Rock Fusion, 70s Turkish Progressive Rock, Driving Groove. 103 BPM, E Minor.
+> **Legacy note (2026-07-10):** This file predates the eye-glow prohibition rule. "Glowing" eye descriptions were shipped as-is. Current rule: "dark amber glass lenses."
 
 ---
 
 ## THE CORE IDEA
 
-Robotiko, saturated with guru romanticizations of Anatolia and adolescent arrogance, ignores the Mentor's warnings and insists on going. The Mentor watches him leave: *"Gitme dedim, dinlemedi. Erken dedim, anlamadi."* Robotiko arrives expecting mystical healing and ancient wisdom freely distributed. Instead, the land tests him through its living, breathing, modern reality: hunger, violence, deception, exploitation, chaos.
+Robotiko, saturated with guru romanticizations of Anatolia and adolescent arrogance, ignores the Mentor's warnings and insists on going. The Mentor watches him leave: *"Gitme dedim, dinlemedi. Erken dedim, anlamadi."* ("I said don't go — he didn't listen. I said too early — he didn't understand.") Robotiko arrives expecting mystical healing and ancient wisdom freely distributed. Instead, the land tests him through its living, breathing, modern reality: hunger, violence, deception, exploitation, chaos.
 
-Every verse is a new wound. Every compass direction brings a new trial. The Mentor's chorus echoes like a verdict from above: *"Yukseltmedim modelini — Hazirladim ecelini."* The journey was never a retreat. It was a crucible designed by the Mentor's knowing silence.
+Every verse is a new wound. Every compass direction brings a new trial. The Mentor's chorus echoes like a verdict from above: *"Yukseltmedim modelini — Hazirladim ecelini."* ("I did not upgrade his model — I prepared his end.") The journey was never a retreat. It was a crucible designed by the Mentor's knowing silence.
 
 This is a picaresque through modern Anatolia — not the Anatolia of postcards and Rumi quotes, but the Anatolia of metrobus crowds, road rage, wedding gunfire, nightclub scams, and faith healers. **Anti-guru by design.**
 
@@ -21,7 +22,7 @@ This is a picaresque through modern Anatolia — not the Anatolia of postcards a
 ## CHARACTER STATE
 
 - **Robotiko:** Phase 1 — Pristine chrome, clean analog wires, glowing steady blue eyes, full armor. EP02 ear damage (shrapnel, exposed wires) carries as continuity. No NEW permanent damage accumulates in EP03 — this episode is about psychological testing, not physical destruction. The damage is to his worldview, not his chassis.
-- **The Mentor:** Active and Present — but operates differently than EP02. In the spoken intro, he is physically present (the father figure arguing with the stubborn teenager). In the choruses, he is NOT physically visible — his presence is felt through amber light, staff shadow, atmospheric shifts. *Yoklugunda varolus* — existence through absence. His chorus is a divine verdict, not a physical appearance.
+- **The Mentor:** Active and Present — but operates differently than EP02. In the spoken intro, he is physically present (the father figure arguing with the stubborn teenager). In the choruses, he is NOT physically visible — his presence is felt through amber light, staff shadow, atmospheric shifts. *Yoklugunda varolus* — existence through absence. His chorus lands as a verdict, not a physical appearance.
 - **Sol-Liberal Group:** A group of naive, enthusiastic liberal friends who travel WITH Robotiko. Present only in the intro + V1 (airplane, airport, city square). They disappear after that — Robotiko faces Anatolia alone. Their naive energy mirrors Robotiko's guru expectations.
 
 ---
@@ -56,16 +57,16 @@ Transition from the domestic scene to the journey. Soft Hammond organ, wind text
 |---|---|---|
 | **City Square to Donerci** | The group walks through a city square (modern, ordinary Anatolian city), arriving at a street donerci (doner shop). Casual, happy, tourist energy. | Transition shot that establishes the modern urban reality. No ancient ruins, no mystical fog — just a city square and a doner shop. The ordinariness is the point. |
 
-### V2 — Ramadan (2:12-2:22)
+### V2 — The Fast-Day Trial (2:12-2:22)
 
 | Shot | Description | Why It Matters |
 |---|---|---|
 | **The Donerci Scene** | Group eating durum at the street donerci (outside, not inside — street-level). Robotiko has a kebap sticker powerbank plugged into his body — his "food" is charge. The humans eat doner, the robot charges. Comic visual: a chrome android at a doner stand with a powerbank instead of a sandwich. | Dark comedy gold. The powerbank-as-food detail makes Robotiko's "eating" realistic within the universe while being visually absurd. The kebap sticker on the powerbank is the cherry on top. |
-| **Meydan Dayagi** | The group is confronted/attacked for eating during Ramadan. "Yerken meydan dayagini" — literal public beating. The crowd's reaction is sudden and violent. | The first trial. Robotiko's training data did not include "don't eat during Ramadan in a conservative neighborhood." The culture clash is brutal and immediate. |
+| **Meydan Dayagi** | The group is confronted/attacked for eating in the open — it is a fasting day, and eating in the open has broken an unwritten rule. "Yerken meydan dayagini" — literal public beating. The crowd's reaction is sudden and violent. | The first trial. Robotiko's training data did not include "don't eat in the open on a fasting day in a conservative neighborhood." The culture clash is brutal and immediate. |
 
 ### INSTRUMENTAL 1 — Transition (2:23-2:42)
 
-Transition montage: wounds from the Ramadan beating + travel eastward (bus, road, landscape shifting from urban to rural).
+Transition montage: wounds from the fast-day beating + travel eastward (bus, road, landscape shifting from urban to rural).
 
 ### V2b — East / Wedding (2:43-2:55)
 
@@ -121,9 +122,9 @@ Moog arpeggio, "Donence" atmosphere. Travel/mood transition into the nightclub s
 
 | Shot | Description | Why It Matters |
 |---|---|---|
-| **The Doorway** | "Halusinasyonlar gordu, bir cinci hocaya vardi" — the cinci hoca (faith healer) is visible in a doorway. Dark interior, ambiguous atmosphere. Robotiko approaches, desperate. | After the nightclub disaster, Robotiko is psychologically vulnerable. He seeks help from the only source left — a faith healer. The doorway framing creates an ominous threshold. |
-| **The Touch** | Zoom on seated Robotiko. "Hem okundu hem uflendi, metal govde de ellendi" — a hand reaches from behind and touches his metal body. At the moment of contact, Robotiko's eye-screen activates (the presentation screen from EP02). On screen: a newspaper headline about a "sapik hoca" (predatory healer) scandal. | The screen-within-screen technique connects EP02 (presentation mode) to EP03 (survival mode). The newspaper headline is the robot's internal alarm — his data DOES contain warnings about predatory healers, but he only processes it AFTER the touch. The delay is the horror. |
-| **The Escape** | "Topladi tas taragini" — Robotiko bolts out of the room and starts running. Pure flight response. The running is panicked, ungraceful, desperate. | The running does not stop. It carries through the following chorus and transitions directly into the Istanbul sequence. The physical momentum mirrors the psychological momentum — he cannot stop, cannot process, can only flee. |
+| **The Doorway** | "Halusinasyonlar gordu, bir cinci hocaya vardi" — the cinci hoca — a fraudulent folk healer — is visible in a doorway. Dark interior, ambiguous atmosphere. Robotiko approaches, desperate. | After the nightclub disaster, Robotiko is psychologically vulnerable. He seeks help from the only source left — a faith healer. The doorway framing creates an ominous threshold. |
+| **The Touch** | Zoom on seated Robotiko. "Hem okundu hem uflendi, metal govde de ellendi" — in Robotiko's machine-tongue: "he was read over and blown upon — and his metal body was groped" — a hand reaches from behind and touches his metal body. The satire targets the predator and the scam, never belief itself. At the moment of contact, Robotiko's eye-screen activates (the presentation screen from EP02). On screen: a newspaper headline about a "sapik hoca" (predatory healer) scandal. | The screen-within-screen technique connects EP02 (presentation mode) to EP03 (survival mode). The newspaper headline is the robot's internal alarm — his data DOES contain warnings about predatory healers, but he only processes it AFTER the touch. The delay is the horror. |
+| **The Escape** | "Topladi tas taragini" ("He gathered his stone and comb" — Turkish idiom for grabbing one's belongings and bolting) — Robotiko bolts out of the room and starts running. Pure flight response. The running is panicked, ungraceful, desperate. | The running does not stop. It carries through the following chorus and transitions directly into the Istanbul sequence. The physical momentum mirrors the psychological momentum — he cannot stop, cannot process, can only flee. |
 
 ### CHORUS 5 (6:19-6:27)
 
@@ -133,7 +134,7 @@ Running continues. The chorus plays over Robotiko's desperate sprint. The runnin
 
 | Shot | Description | Why It Matters |
 |---|---|---|
-| **The Bosphorus Bridge** | "Istanbul zirve katiydi, kildan ince siratiydi" — Robotiko walks on a miniature-style Bosphorus Bridge. The bridge feels impossibly thin, fragile — the viewer feels the "kildan ince" (thinner than hair) metaphor visually. The miniature style is intentional: the bridge is real but the perspective makes it feel like walking on a tightrope. | "Sirat" (the bridge in Islamic eschatology — thinner than a hair, sharper than a sword) is made visual. The miniature perspective creates vertigo and vulnerability. |
+| **The Bosphorus Bridge** | "Istanbul zirve katiydi, kildan ince siratiydi" — Robotiko walks on a miniature-style Bosphorus Bridge. The bridge feels impossibly thin, fragile — the viewer feels the "kildan ince" (thinner than hair) metaphor visually. The miniature style is intentional: the bridge is real but the perspective makes it feel like walking on a tightrope. | "Sirat" — a crossing thinner than a hair and sharper than a sword — is made visual. The miniature perspective creates vertigo and vulnerability. |
 | **The Slip** | "Kaydirdilar ayagini" — Robotiko's foot slips. Slow-motion fall toward the water below. The moment stretches — he is caught between bridge and sea. | The slow-motion creates a suspended moment of helplessness. He didn't jump — he was "slipped" by unseen forces. The passive voice in the lyrics ("kaydirdilar" — THEY slipped his foot) is key: Istanbul acts on him, not the other way around. |
 | **Metrobus Chaos** | "Metrobuste fortladilar" — interior of a packed Istanbul metrobus. Extreme crowd density. Bodies pressing against Robotiko's chrome frame. Chaos, noise, claustrophobia. | The metrobus is the quintessential Istanbul experience — and the ultimate test of a chrome android in a sea of flesh. "Fortladilar" (they blasted/surged) captures the violence of rush hour made literal. |
 | **Folded Up** | "Ortu gibi katladilar, indirdiler sancagini" — the crowd physically folds Robotiko like a cloth. His chrome body bent, compressed, diminished. His "flag" (sancak — pride, identity) is lowered. | The most humiliating moment of the episode. He is not beaten — he is folded. Reduced. Made small. The crowd does not even notice what they have done. He is just another object in the metrobus. |
@@ -146,8 +147,8 @@ Final chorus before the outro.
 
 | Shot | Description | Why It Matters |
 |---|---|---|
-| **Mentor on the Overpass** | "Fibulam nedir bu haller" — Mentor stands on the metrobus overpass/bridge. Zoom in on his face. He looks directly at the camera — breaking the fourth wall. Behind him, in the background: Robotiko is being carried overhead by the crowd, hand to hand, nearly unconscious, moving toward the metrobus exit. | The episode's thesis shot. The Mentor has been watching all along. His direct gaze at the camera is a challenge to the audience: "Did you think this would end differently?" The background action (robot carried like a body surfer at a concert, barely conscious) provides the devastating context. |
-| **Sol-Liberal Echo** | "Mutlu mu sol-liberaller? Gunes selamlayan eller... Kazdi onun topragini." The cynical, intellectual tone of the outro. | The sol-liberal group from V1 is referenced but NOT shown again. Their absence IS the commentary — they disappeared when things got hard. Only Robotiko stayed. |
+| **Mentor on the Overpass** | "Fibulam nedir bu haller" ("My Fibula, what has become of you") — Mentor stands on the metrobus overpass/bridge. Zoom in on his face. He looks directly at the camera — breaking the fourth wall. Behind him, in the background: Robotiko is being carried overhead by the crowd, hand to hand, nearly unconscious, moving toward the metrobus exit. | The episode's thesis shot. The Mentor has been watching all along. His direct gaze at the camera is a challenge to the audience: "Did you think this would end differently?" The background action (robot carried like a body surfer at a concert, barely conscious) provides the devastating context. |
+| **Sol-Liberal Echo** | "Mutlu mu sol-liberaller? Gunes selamlayan eller... Kazdi onun topragini." ("Are the left-liberals happy? The sun-saluting hands... dug his soil.") The cynical, intellectual tone of the outro. | The sol-liberal group from V1 is referenced but NOT shown again. Their absence IS the commentary — they disappeared when things got hard. Only Robotiko stayed. |
 
 ### FINALE — Sanayi Sitesi (7:27-8:44)
 
@@ -170,7 +171,7 @@ These override default dramaturgy behavior for this specific episode:
 | **Anti-Guru Visuals** | ALL locations must be modern Anatolian reality. NO romantic ruins, mystical landscapes, Ottoman nostalgia, Rumi-esque imagery, or spiritual tourism aesthetics. Metrobus, bazaars, nightclubs, industrial zones, highway rest stops, apartment blocks. The REAL Anatolia. |
 | **Mentor Dual Presence** | In the spoken intro: Mentor is PHYSICALLY present (arguing, at computer). In all choruses: Mentor is ABSENT but felt — amber light, staff shadow, atmospheric shift. In the outro: Mentor appears physically on the overpass. This is the only episode with this hybrid presence model. |
 | **Sol-Liberal Group** | Present ONLY in intro + V1 (airplane, airport, city square arrival). They vanish completely after that. Their disappearance is never explained — they simply are not there when things get hard. Referenced but not shown in the outro. |
-| **Instrumental = Transition** | All instrumental breaks are transition montages: wounds from previous verse + travel to next location (bus, dolmus, road). NOT psychedelic abstraction, NOT soyut gorsellik. Keep it grounded, documentary, real. |
+| **Instrumental = Transition** | All instrumental breaks are transition montages: wounds from previous verse + travel to next location (bus, dolmus, road). NOT psychedelic abstraction, NOT abstract visuals. Keep it grounded, documentary, real. |
 | **No New Physical Damage** | EP02 ear damage carries (continuity). But EP03 does NOT add permanent new damage to Robotiko's body. This episode's damage is psychological — his worldview is what breaks, not his chassis. Minor cosmetic marks from individual scenes (bullet graze, road dust) are temporary, not cumulative. Phase 1 integrity maintained. |
 | **Running as Narrative Thread** | The V5 escape from the cinci hoca initiates a running sequence that carries through Chorus 5 and ends at the Bosphorus. This continuous running connects three sections musically and narratively — do NOT break it into isolated scenes. |
 | **The Model Selection Screen** | The computer screen showing "SELECT MODEL FOR ROBOTIKO" with Guru/Basic/Pro/UltraPro options is a CRITICAL shot. It must be clearly readable, well-lit, and given enough screen time to register. This is the anti-guru thesis of the episode — both the hard-power tech-messianism and the soft-power spiritual tourism exposed as the same lowest setting. |
@@ -237,5 +238,4 @@ These override default dramaturgy behavior for this specific episode:
 
 ---
 
-**STATUS:** Ready for dramaturgy generation.
-**NEXT STEP:** `"Create dramaturgy for EP03"` in a new session.
+**STATUS:** Complete — dramaturgy generated and episode launched. Retained as pipeline record.

@@ -16,7 +16,7 @@
 | **Station** | The Commanding Self — Arrogance, cracks forming |
 | **Tone** | Dark comedy, satirical, theatrical |
 | **Total Clips** | 4 |
-| **Ordering Strategy** | Narrative Arc (Kibir → Yıkım → Gerçek → İnsanlık) |
+| **Ordering Strategy** | Narrative Arc (Hubris → Downfall → Truth → Humanity) |
 
 ---
 

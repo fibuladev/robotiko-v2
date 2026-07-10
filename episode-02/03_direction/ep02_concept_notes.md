@@ -32,7 +32,7 @@ These are non-negotiable visual moments that MUST appear in the dramaturgy. Each
 ### INTRO — The Departure
 | Shot | Description | Why It Matters |
 |---|---|---|
-| **Robotiko as Guru** | Pristine chrome Robotiko standing at a podium or elevated platform, bathed in golden spotlight, arms spread in a messianic gesture. Behind him: data streams, holographic charts, applauding silhouettes. | Establishes the arrogance. He BELIEVES he is the answer. This is the Tech Guru at peak confidence. The image must be almost religious in composition — like a chrome evangelist. |
+| **Robotiko as Guru** | Pristine chrome Robotiko standing at a podium or elevated platform, bathed in golden spotlight, arms spread in a savior-of-the-world gesture. Behind him: data streams, holographic charts, applauding silhouettes. | Establishes the arrogance. He BELIEVES he is the answer. This is the Tech Guru at peak confidence. The image must read as a cult of personality — a chrome guru at peak self-belief. |
 | **The World Map** | A stylized retro-futuristic world map (think 70s airline poster aesthetic) with glowing route lines connecting the locations. | Establishes the "Global Collapse Tour" concept. Sets up the episodic location structure. |
 
 ### DAVOS (Verses 1-2)
@@ -45,9 +45,9 @@ These are non-negotiable visual moments that MUST appear in the dramaturgy. Each
 ### SAN FRANCISCO (Verses 3-4)
 | Shot | Description | Why It Matters |
 |---|---|---|
-| **The Startup Pitch** | Robotiko in a neon-lit alley, presenting a holographic pitch deck to a disheveled figure holding a knife. The pitch deck shows "INVEST IN ART — TOKEN $GURU." Robotiko is enthusiastic. The junkie is confused. | Silicon Valley bubble meets street reality. The absurdity is the point — he cannot distinguish a potential investor from a desperate person. His training data has no category for this. |
-| **The Leg Theft** | The junkie running away with Robotiko's detached chrome leg. Robotiko standing on one leg, still smiling, still trying to pitch. Sparks where the leg was. | First physical damage. But Robotiko DOESN'T UNDERSTAND he's been robbed — he thinks it's a "beta test of his hardware." The smile is the horror. |
-| **The Egg Man's Repair** | A street egg vendor approaches with Robotiko's leg — bought from the junkie for a boiled egg. He reattaches the leg properly, clicks it into place, and gently pats Robotiko on the head. Robotiko beams: "Excellent customer service!" | **The Lucky Break:** The egg man is Robotiko's one stroke of luck in the entire episode — a random act of kindness from a stranger who expects nothing in return. The leg goes back on perfectly. Robotiko walks away whole, unscathed, still grinning. This makes the War Zone ear scene hit infinitely harder: every other location, he gets away with it. Luck, ignorance, and privilege carry him through. Until they don't. The ear is the FIRST irreversible damage — and it lands like a hammer BECAUSE everything before it was survivable. The egg man's head pat is also the only genuine human warmth in the episode — and Robotiko categorizes it as "after-sales support." |
+| **The Startup Pitch** | Robotiko in a neon-lit alley, presenting a holographic pitch deck to a disheveled figure holding a knife. The pitch deck shows "INVEST IN ART — TOKEN $GURU." Robotiko is enthusiastic. The man is confused. | Silicon Valley bubble meets street reality. The absurdity is the point — he cannot distinguish a potential investor from a desperate person. His training data has no category for this. |
+| **The Leg Theft** | The desperate man running away with Robotiko's detached chrome leg. Robotiko standing on one leg, still smiling, still trying to pitch. Sparks where the leg was. | First physical damage. But Robotiko DOESN'T UNDERSTAND he's been robbed — he thinks it's a "beta test of his hardware." The smile is the horror. |
+| **The Egg Man's Repair** | A street egg vendor approaches with Robotiko's leg — bought from the man for a boiled egg. He reattaches the leg properly, clicks it into place, and gently pats Robotiko on the head. Robotiko beams: "Excellent customer service!" | **The Lucky Break:** The egg man is Robotiko's one stroke of luck in the entire episode — a random act of kindness from a stranger who expects nothing in return. The leg goes back on perfectly. Robotiko walks away whole, unscathed, still grinning. This makes the War Zone ear scene hit infinitely harder: every other location, he gets away with it. Luck, ignorance, and privilege carry him through. Until they don't. The ear is the FIRST irreversible damage — and it lands like a hammer BECAUSE everything before it was survivable. The egg man's head pat is also the only genuine human warmth in the episode — and Robotiko categorizes it as "after-sales support." |
 
 ### CHORUS — The Anthem of Delusion
 | Shot | Description | Why It Matters |
@@ -164,5 +164,4 @@ These override default dramaturgy behavior for this specific episode:
 
 ---
 
-**STATUS:** Ready for dramaturgy generation.
-**NEXT STEP:** `"Create dramaturgy for EP02"` → triggers `robotiko-dramaturgy` skill.
+**STATUS:** Complete — dramaturgy generated and episode launched. Retained as pipeline record.

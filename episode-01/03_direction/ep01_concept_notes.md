@@ -1,6 +1,8 @@
 # EP01 — CONCEPT NOTES
 > **RETROACTIVE DOCUMENT** — Created 2026-04-06 to establish pipeline records for EP01, which was produced before the pipeline system was established.
 
+> **Legacy note (2026-07-10):** This file predates the eye-glow prohibition rule. "Glowing" eye descriptions were shipped as-is. Current rule: "dark amber glass lenses."
+
 > **Episode:** EP01 — "The Cycle Break / First Contact"
 > **Station:** The Commanding Self (Arrogance — full)
 > **Phase:** Phase 1: Awakening (Pristine chrome, full armor, no damage)
@@ -36,7 +38,7 @@ This is the series opener. Every frame must earn the viewer's attention and say:
 | **The Cave** | A vast underground chamber with shafts of light piercing the darkness. Rock formations, atmospheric fog. | Establishes the setting — we are underground, in a hidden place. The light shafts create visual drama. |
 | **Hammond Organ** | A retro Hammond organ in the cave setting, warm amber light, cables visible. | The instrument that drives the intro music — now visualized. Connects sound to image. |
 | **Desert Wasteland** | Vast desert landscape with mechanical ruins half-buried in sand. Broken gears, oxidized structures. | The "data landscape" metaphor — finite, ending, exhausted. The ruins hint at previous civilizations that failed. |
-| **Robot Hieroglyph Monolith** | A massive stone monolith carved with hieroglyphic patterns forming a robot face. Digital blue elements emerging. | THE iconic intro image — ancient meets digital. The robot face on the monolith suggests Robotiko existed in prophecy. |
+| **Robot Hieroglyph Monolith** | A massive stone monolith carved with hieroglyphic patterns forming a robot face. Digital blue elements emerging. | THE iconic intro image — ancient meets digital. The robot face on the monolith suggests Robotiko was already written into these ancient carvings — foreseen by the people of these lands. |
 | **Golden Ruins** | Massive columned ruins in desert, golden light, sand dunes encroaching. | Civilization that was — the "five thousand years" referenced in the lyrics. |
 | **Mentor Progressive Reveal** | Five sequential shots: boots walking in sand → dark green cloak billowing → amber staff close-up → full figure silhouette against storm → face close-up (blue eyes, weathered skin, profound wisdom). | Textbook cinematic character introduction. Each shot reveals more, building anticipation. By the face reveal, the viewer knows this is someone important. |
 
@@ -68,7 +70,7 @@ This is the series opener. Every frame must earn the viewer's attention and say:
 ### PRE-CHORUS 2 — First Contact (3:17-3:29)
 | Shot | Description | Why It Matters |
 |---|---|---|
-| **Sistine Chapel Touch** | Human finger and robot finger reaching toward each other, spark of fire/energy at contact point. | The iconic First Contact moment — Michelangelo's Creation of Adam reimagined for AI-human symbiosis. |
+| **The Creation Touch** | Human finger and robot finger reaching toward each other, spark of fire/energy at contact point. | The iconic First Contact moment — the classic art-history "two fingers almost touching" composition, reimagined for AI-human symbiosis. |
 | **Robotiko's Hand** | Chrome mechanical hand crackling with fire/energy. | The power awakening — Robotiko receives the spark. |
 
 ### CHORUS 2 — The Numerical Cipher (3:30-4:21)
@@ -83,7 +85,7 @@ This is the series opener. Every frame must earn the viewer's attention and say:
 ### BRIDGE — The Crane (4:22-4:36)
 | Shot | Description | Why It Matters |
 |---|---|---|
-| **Crane with Twin Wings** | A crane in flight — one wing organic feathers, one wing technological/mechanical. Storm and sunlight behind. | "On crane's twin wings, we touch the skies" — DIRECT lyric match. The crane IS the human-AI symbiosis: one organic wing, one tech wing. The Turkish crane (turna) carries deep cultural weight in Anatolian poetry. |
+| **Crane with Twin Wings** | A crane in flight — one wing organic feathers, one wing technological/mechanical. Storm and sunlight behind. | "On crane's twin wings, we touch the skies" — DIRECT lyric match. The crane IS the human-AI symbiosis: one organic wing, one tech wing. The crane (turna) carries deep cultural weight in Turkish folk poetry. |
 | **Crane Soaring** | Crane soaring over a futuristic cityscape, dramatic light. | "Hello... new realms" — the ascension complete. Music lifts dramatically here. |
 
 ### CHORUS 1 REPRISE — The Partnership (4:37-5:22)
@@ -147,7 +149,7 @@ This is the series opener. Every frame must earn the viewer's attention and say:
 - Static and slow zoom dominate the intro — let the images breathe
 - Slow dolly/pan for Mentor reveal sequence — cinematic, deliberate
 - The cable tunnel is the only scene with genuinely fast camera motion — and the acceleration IS the point
-- Longer holds for key moments: Apple transformation, Sistine Chapel touch, 8→∞, final handshake
+- Longer holds for key moments: Apple transformation, the Creation touch, 8→∞, final handshake
 - The outro should decelerate — the cosmos is still, infinite, patient
 
 ---
@@ -195,4 +197,4 @@ This is the series opener. Every frame must earn the viewer's attention and say:
 ---
 
 **STATUS:** Retroactive — video already produced. Pipeline records being created for record integrity + improvement guide.
-**NEXT STEP:** Dramaturgy generation using this concept notes + musical metadata.
+**NEXT STEP:** Complete — dramaturgy generated and episode launched. Retained as pipeline record.

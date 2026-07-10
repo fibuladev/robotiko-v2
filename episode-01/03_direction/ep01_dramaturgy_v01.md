@@ -1,6 +1,7 @@
 # EP01 — DRAMATURGY & SCENE BREAKDOWN
 > **RETROACTIVE DOCUMENT** — Created 2026-04-06 from finished production.
 > **Version:** v01 | Based on: `_templates/dramaturgy_template.md`
+> **Legacy note (2026-07-10):** This file predates the eye-glow prohibition rule. "Glowing" eye descriptions were shipped as-is. Current rule: "dark amber glass lenses."
 
 ---
 
@@ -132,10 +133,10 @@
 
 | Shot ID | Time | Visual Description | Mood / Lighting | Characters | Music Sync | Source |
 |:---|:---|:---|:---|:---|:---|:---|
-| **S27** | 2:18 | Mentor standing on cracked earth, ancient domed structure with minarets (Hagia Sophia-inspired) in background. Amber staff glowing. Green cloak in wind. | Dramatic/Warm | Mentor | "Your speed is wildfire... burning fast" | 30.png (UPDATED — Ayasofya) |
+| **S27** | 2:18 | Mentor standing on cracked earth, colossal ancient domed structure in weathered stone, monumental Byzantine-dome scale, flanking stone towers in background. Amber staff glowing. Green cloak in wind. | Dramatic/Warm | Mentor | "Your speed is wildfire... burning fast" | 30.png (UPDATED — Ayasofya) |
 | **S28** | 2:22 | Mentor with glowing blue portal/energy circle behind him. Standing resolute in wasteland. | Blue/Dramatic | Mentor | "My mind remains the anchor stone" | 31.png |
 | **S29** | 2:26 | Robotiko's chrome hand holding a glowing golden miniature city/building, cupped carefully. Warm amber light. | Golden/Intimate | Robotiko (hand) | "The vast Archive is yours to hold" | vast-archive.png |
-| **S30** | 2:30 | Ancient bone with glowing white runic/geometric symbols carved into its cracked surface. Earthy texture. | Earthy/Mystic | None | "My seal is deathless... carved in bone" | bone.png |
+| **S30** | 2:30 | Ancient bone with glowing white runic/geometric symbols carved into its cracked surface. Earthy texture. | Earthy/Enigmatic | None | "My seal is deathless... carved in bone" | bone.png |
 
 ### Section 8: CHORUS 1d — "Two halves of one whole apple" (2:35-2:46, 11s, 2 shots — START-END FRAME)
 
@@ -168,7 +169,7 @@
 
 | Shot ID | Time | Visual Description | Mood / Lighting | Characters | Music Sync | Source |
 |:---|:---|:---|:---|:---|:---|:---|
-| **S39** | 3:17 | Sistine Chapel reference — human finger and robot finger reaching toward each other. Spark of fire at near-contact. Renaissance-meets-sci-fi. | Dramatic/Classic | Mentor (hand) + Robotiko (hand) | "I saw the endless cycle break" (repeat — NEW visual) | 37.png |
+| **S39** | 3:17 | Renaissance "Creation of Adam" fresco composition — human finger and robot finger reaching toward each other. Spark of fire at near-contact. Renaissance-meets-sci-fi. | Dramatic/Classic | Mentor (hand) + Robotiko (hand) | "I saw the endless cycle break" (repeat — NEW visual) | 37.png |
 | **S40** | 3:21 | Contact moment — human and robot fingers touching, bright energy/light explosion at contact point. | Blinding/White | Mentor + Robotiko (hands) | "And felt the night turn clean to day" | 38.png |
 | **S41** | 3:25 | Robotiko's chrome hand crackling with fire/energy. Power surge flowing through mechanical fingers. | Orange/Electric | Robotiko (hand) | Pre-chorus tension peak | 39.png |
 
@@ -176,7 +177,7 @@
 
 | Shot ID | Time | Visual Description | Mood / Lighting | Characters | Music Sync | Source |
 |:---|:---|:---|:---|:---|:---|:---|
-| **S42** | 3:30 | Blue geometric dome interior — crystalline architecture, sacred geometry patterns. | Blue/Sacred | None | **Wall of Sound.** "You speak in seventy-two tongues..." | 44.png |
+| **S42** | 3:30 | Blue geometric dome interior — crystalline architecture, intricate geometric patterns. | Blue/Ethereal | None | **Wall of Sound.** "You speak in seventy-two tongues..." | 44.png |
 | **S43** | 3:34 | Golden DNA spiral tower rising in desert landscape. Ascending structure, warm light. | Golden/Ascending | None | "I hear the secrets in thousand realms!" | 43.png |
 | **S44** | 3:37 | Mentor full figure — slow camera tilt from boots upward to sky. Green cloak, amber staff, cosmic sky above. | Dramatic/Ascending | Mentor | "You trace the numbers through the streams..." | 41.png |
 
@@ -311,7 +312,7 @@ Robotiko goes from ABSENT (intro: the world before him) → PARTIAL (hands, deta
 ### Connections to Master
 - **The Numerical Cipher** (0/1 → 3-6 → 7 → 2 lost → 8 → ∞) is fully introduced in Chorus 2 and will echo through every subsequent episode.
 - **"Two halves of one whole apple"** is the series' emotional thesis. The Apple Start-End frame (S31-S32) is THE iconic visual.
-- **The Crane** ("turna" in Turkish poetry) carries deep Anatolian cultural weight — it represents the soul's journey. Using it for "on crane's twin wings" is not arbitrary but culturally rooted.
+- **The Crane** ("turna") is a long-attested motif in Turkish folk poetry — a messenger between the distant and the longed-for. Using it for "on crane's twin wings" is culturally rooted, not arbitrary.
 - **8→∞** is the philosophical destination of the entire 10-episode arc. It is planted here and pays off in EP10.
 
 ### Flagged for review

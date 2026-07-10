@@ -31,6 +31,13 @@ sokaklarında yürür. Ancak bu topraklar anlatıldığı gibi değildir; geleni
 niyetini tartar, gidenin yükünü ölçer. Serttir, düzdür ve beklentileri affetmez.
 Bu, kötülüğün değil, yanlış ayarlanmış bir "yazılım" beklentisinin hikayesidir.
 
+(In English: EPISODE 3: ANATOLIA'S TEST — A Chrome Android (Robotiko v2.0) walks
+the streets of Anatolia hoping for spiritual enlightenment. But these lands are
+not as they are described; they weigh the intent of the one who arrives and
+measure the burden of the one who leaves. They are harsh, plain, and unforgiving
+of expectations. This is not a story of evil, but of a mis-configured "software"
+expectation.)
+
 —
 
 THE LORE

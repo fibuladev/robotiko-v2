@@ -6,7 +6,7 @@ renders spirituality as universal, lived, earned experience — never dressed in
 named tradition's costume. Two real violations slipped past every other gate before
 this one existed:
 
-  * `_management/master.md` once carried a " ...  ... "
+  * `_management/master.md` once carried a "Sufi lodges ... Halvetî ... etvârnâme"
     block — a named-tradition block in the Universe Bible itself.
   * `episode-08/02_music/ep08_musical_metadata.json` once carried "The Sufi image..."
     inside a JSON string value.
@@ -34,7 +34,7 @@ EXCLUDED: `tests/fixtures/**` (intentional bad content lives there on purpose),
 policed), and anything git does not track (gitignored or untracked).
 
 MATCHING: case-insensitive, diacritic-insensitive (NFKD-normalized before matching,
-so "", "dergâh", "" all match their plain-ASCII root form), word-ish
+so "Halvetî", "dergâh", "etvârnâme" all match their plain-ASCII root form), word-ish
 boundary (`(?<![a-z])term(?![a-z])` on the normalized line — no partial-word hits
 inside a longer unrelated word).
 
@@ -64,13 +64,13 @@ import unicodedata
 # Deliberately narrow: broad adjectives ("sacred", "divine", "mystical", "dervish",
 # "zen") stay OUT — they have sanctioned in-fiction/satire uses and remain
 # human-judged. Listed as plain-ASCII root forms; diacritic normalization (below)
-# makes each root also match its accented spellings (, dergâh, , ...).
+# makes each root also match its accented spellings (Halvetî, dergâh, etvârnâme, ...).
 # ─────────────────────────────────────────────
 
 FORBIDDEN_TERMS = [
     "sufi",
     "halveti",
-    "",
+    "etvarname",
     "tarikat",
     "dergah",
     "naqshbandi",
@@ -170,7 +170,7 @@ def in_scope_tracked_files(repo_root: str) -> list:
 # ─────────────────────────────────────────────
 
 def _normalize(line: str) -> str:
-    """Lowercase + strip combining diacritics, so ''/'dergâh'/''
+    """Lowercase + strip combining diacritics, so 'Halvetî'/'dergâh'/'etvârnâme'
     all reduce to their plain-ASCII root and match the same pattern the plain
     spelling does."""
     nfkd = unicodedata.normalize("NFKD", line)

@@ -216,11 +216,11 @@ run via `tests/run_all.py` and enforced in CI.
   some line). Excludes `tests/fixtures/**` (intentional bad content) and
   `episode-*/01_lyrics/**` (lyric sheets are untouchable shipped artifacts).
 - **Matching.** Case-insensitive, diacritic-insensitive (NFKD-normalized, so
-  `` / `dergâh` / `` match their plain-ASCII root), word-ish
+  `Halvetî` / `dergâh` / `etvârnâme` match their plain-ASCII root), word-ish
   boundary — no partial hit inside a longer unrelated word (`sufficient` never
   trips `sufi`).
 - **Terms banned.** Religion/order/sect/scripture NAMES only (`sufi`, `halveti`,
-  ``, `tarikat`, `dergah`, `naqshbandi`, `bektashi`, `mevlevi`, `sunni`,
+  `etvarname`, `tarikat`, `dergah`, `naqshbandi`, `bektashi`, `mevlevi`, `sunni`,
   `alevi`, `islamic`, `quran`/`koran`, `eschatology`/`eschatological`, `vedanta`,
   `atman`, `brahman`, `sunyata`). Broad adjectives (`sacred`, `divine`, `mystical`,
   `dervish`, `zen`) stay OUT by design — sanctioned in-fiction/satire uses remain

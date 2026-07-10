@@ -1827,9 +1827,9 @@ class TestForbiddenTermsMatching(unittest.TestCase):
         self.assertEqual([t for _l, t in hits], ["sufi"])
 
     def test_catches_diacritic_variants(self):
-        text = " lodges kept an  and met at the dergâh"
+        text = "Halvetî lodges kept an etvârnâme and met at the dergâh"
         hits = {t for _l, t in ftg.find_terms_in_text(text)}
-        self.assertEqual(hits, {"halveti", "", "dergah"})
+        self.assertEqual(hits, {"halveti", "etvarname", "dergah"})
 
     def test_word_boundary_ignores_substring_inside_longer_word(self):
         # 'sufficient' must NOT trip 'sufi'; 'islanders' must not trip anything.

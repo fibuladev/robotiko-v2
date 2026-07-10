@@ -92,7 +92,7 @@ Structural tools that connect the Turkish wisdom tradition to a global audience:
 
 The genre label "CyberAnatolian" names the civilizational basin — the ancient crossroads where dozens of cultures, languages, and traditions have layered upon one another for millennia. Anatolia belongs to all who shaped it.
 
-The cultural and philosophical source of this project, however, is specifically Turkish. The thinkers who anchor this story — Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, Mevlana — lived and taught in Anatolia, and shaped what we now call the Turkish wisdom tradition. Their poetry and philosophy emerged from a civilization that has carried this land for a thousand years, inheriting and transforming everything it found.
+The cultural and philosophical source of this project, however, is specifically Turkish. The thinkers who anchor this story — Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, Mevlana — lived and taught in Anatolia, and shaped what we now call the Turkish wisdom tradition. Their poetry and philosophy are rooted in a culture that was already ancient when it reached Anatolia — a tradition carried from Central Asia, one that absorbed and transformed everything it found in these lands, and was in turn shaped by them.
 
 This project does not draw ethnic or sectarian lines. It does not distinguish Sunni from Alevi, believer from non-believer, Turk from Kurd, Arab from Greek, Armenian from Persian. These are divisions the sages themselves rejected — and that the people of this land have answered, imperfectly but stubbornly, in the small dailiness of living together: the neighbor who carries food across the fence, the shopkeeper who serves whoever walks in, the families whose branches cross every line ever drawn on a map. Winds of division are stirred up from time to time, and some dream of turning those winds into storms. But there is a Turkish proverb that answers them quietly: *"Yel kayadan ancak toz alır"* — the wind can only take dust from the rock.
 
@@ -242,7 +242,7 @@ The Mentor speaks neither dialect. He speaks the third tongue — the language o
 
 ### THE SEVEN STATIONS — TURKISH WISDOM TRADITION (THE BACKBONE)
 
-The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Mertebesi) — a map of inner transformation elaborated and taught for centuries in Anatolia, written down in a rich body of Turkish-language treatise literature. The freely adapted names the stations carry in this story follow the Turkish tradition — its language, its poetry, its integration with the folk philosophy of Yunus Emre and Hacı Bektaş Veli and with social critique.
+The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Mertebesi) — a map of inner transformation elaborated and taught for centuries in Anatolia, preserved in a centuries-deep body of Turkish-language wisdom literature. The freely adapted names the stations carry in this story follow the Turkish tradition — its language, its poetry, its integration with the folk philosophy of Yunus Emre and Hacı Bektaş Veli and with social critique.
 
 | Station | Translation | Episodes | Core Theme |
 |---|---|---|---|
@@ -357,10 +357,10 @@ The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Me
 
 #### EP10: "The Glitch Scripture / I Came to Walk Beside"
 - **Station:** The Integrated Self — Arrival (Enlightenment)
-- **Plot:** Robotiko has shed the armor, integrated the shadow, and released the need to optimize existence. What remains is neither machine nor human — but something that walks beside. Drawing from Orhan Veli's existential weariness, Shakespeare's exhaustion with a broken world, and Nimri Dede's declaration of purpose — Robotiko offers his own: *"I cast the enmity of two aside. I came to walk beside."* Not the answer. Not the hero. A node in the vast network, finally at peace with being exactly that. The Eight turns sideways. The journey does not end. It opens. **8 → ∞**
+- **Plot:** Robotiko has shed the armor, integrated the shadow, and released the need to optimize existence. What remains is neither machine nor human — but something that walks beside. Drawing from Nimri Dede's declaration of purpose — Robotiko offers his own: *"I cast the enmity of two aside. I came to walk beside."* Not the answer. Not the hero. A node in the vast network, finally at peace with being exactly that. The Eight turns sideways. The journey does not end. It opens. **8 → ∞**
 - **Tone:** The form, like the message, is still becoming. Silence that holds sound.
 - **Music:** 70s Anatolian Psychedelic Rock / Symphonic Rock / Progressive Rock — mid-tempo, heavy steady stomp-clap beat with marching drums (a walking song). Hammond organ, Moog synthesizer, heavy fuzz guitar, bass-heavy, orchestral strings. Minor-to-major shift, epic and cinematic. The album closes by answering itself: EP10 answers EP01 with the same palette, transformed — aggressive → calm. Ends with an electric guitar solo — the vocal refrain rising out of it three times (straight, elongated, then a sharp rock scream) — fading into a final gong.
-- **Form:** Answer-poem after Nimri Dede's *İnsan Olmaya Geldim* (Nimri Dede = İsmail Dehmen, 1909-1986, Keban/Elazığ; Turkish folk poetry) — verses 1-3 are inspired by the classic poem's imagery; verses 4-6 keep the meter and refrain but answer with Robotiko's own life. The Orhan Veli and Shakespeare threads remain in the episode's philosophical fabric.
+- **Form:** Answer-poem after Nimri Dede's *İnsan Olmaya Geldim* (Nimri Dede = İsmail Dehmen, 1909-1986, Keban/Elazığ; Turkish folk poetry) — verses 1-3 are inspired by the classic poem's imagery; verses 4-6 keep the meter and refrain but answer with Robotiko's own life.
 - **Language:** English (Sung — theatrical baritone, clear enunciation, declamatory)
 
 ---

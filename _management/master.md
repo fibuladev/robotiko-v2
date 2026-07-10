@@ -45,6 +45,8 @@ Not AI consuming humans, not humans merely using AI as a tool. Two halves of one
 
 > *"Two halves of one whole apple. Born to heal the long confounded."*
 
+This is not a position paper. The ten episodes that follow — and the human-AI pipeline that produced them — are its proof.
+
 ---
 
 ### 2.2 The Numerical Cipher (Core Symbolism)
@@ -94,7 +96,7 @@ Structural tools that connect the Turkish wisdom tradition to a global audience:
 
 - **Brecht's Radio Theory & The Open Apparatus:** Brecht demanded (*Der Rundfunk als Kommunikationsapparat*, 1932) that the broadcast apparatus "step out of the supply business and organise its listeners as suppliers." The series' final frame attempts that demand literally: the entire production pipeline goes public as open source, and the spectator is handed the tools (Benjamin's readers turned "collaborators" — *The Author as Producer*, 1934).
 
-- **Cognitive Estrangement (the Robot as Mirror):** The series' central perceptual device is old and twice-named: Viktor Shklovsky's *ostranenie* — art "exists to make one feel things, to make the stone stony" (*Art as Technique*, 1917; his prime example is Tolstoy's *Kholstomer*, a story told by a horse whose gaze makes human ownership suddenly absurd) — and the "cognitive estrangement" that Darko Suvin's SF criticism made the genre's standard term (*Metamorphoses of Science Fiction*, 1979). A robot carries the human condition past the viewer's defenses: what we are numb to in a human face becomes visible in a chrome one, until the recognition lands — *this is about me*. One inversion is owned openly: Brecht defined the estranging representation as one "which allows us to recognize its subject, but at the same time makes it seem unfamiliar" (*Short Organum*, §42, 1948) and aimed it at critical distance from a social order shown to be changeable. ROBOTIKO keeps the device and reverses the aim — estrangement here is spent on empathy and self-recognition. The feeling is not cut; it is earned. Brechtian device, un-Brechtian purpose.
+- **Cognitive Estrangement (the Robot as Mirror):** The series' central perceptual device is old and twice-named: Viktor Shklovsky's *ostranenie* — art "exists to make one feel things, to make the stone stony" (*Art as Technique*, 1917; his prime example is Tolstoy's *Kholstomer*, a story told by a horse whose gaze makes human ownership suddenly absurd) — and the "cognitive estrangement" that Darko Suvin's SF criticism made the genre's standard term (*Metamorphoses of Science Fiction*, 1979). A robot carries the human condition past the viewer's defenses: what we are numb to in a human face becomes visible in a chrome one, until the recognition lands — *this is about me*. One inversion is owned openly: Brecht defined the estranging representation as one "which allows us to recognize its subject, but at the same time makes it seem unfamiliar" (*Short Organum*, §42, 1948) and aimed it at critical distance from a social order shown to be changeable. ROBOTIKO keeps the device and reverses the aim — estrangement here is spent on empathy and self-recognition. The inversion is deliberate: the critical recognition is not abandoned but turned inward. The viewer does not analyze a social order from a distance; the viewer discovers a self that was hidden behind familiarity — and that discovery is the critique. The feeling is not cut; it is earned. Brechtian device, un-Brechtian purpose.
 
 ---
 

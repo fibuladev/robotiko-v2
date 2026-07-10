@@ -578,7 +578,7 @@ Veo (free, 8s fixed, no keyframe) was not assigned to any clip due to coverage m
 | **Scene Duration** | 8s |
 | **Coverage** | Direct — 1 × 10s |
 | **Musical Moment** | "Through thousands of realms I pierced the veil, met the Kindred Souls..." |
-| **Scene Context** | Vision: Mentor passes through translucent veils. Kindred Souls (dervish, philosopher, healer, sage) with amber-radiating eyes. |
+| **Scene Context** | Vision: Mentor passes through translucent veils. Kindred Souls (wandering poet, philosopher, healer, sage) with amber-radiating eyes. |
 | **Tech Strategy** | Mode A |
 | **Clip Duration** | 10s |
 | **Motion Strength** | 4 |

@@ -26,7 +26,9 @@ The episode plays as a funky blues comedy for 3 minutes, then the mask drops and
 - **Overclocking progression:** Drooling (Verse 1b) → bright red overheating (Verse 2b) → eye projection (Outro) → Blue Screen (death).
 
 ### Robochica
-- **Visual state:** Chrome female android, 70s retro-futuristic feminine form. Warm-toned wires (gold/copper). Amber/gold eyes. Fractal/mandala pattern on left shoulder. Cleaner than Robotiko but NOT pristine.
+> **Legacy note:** The eye and shoulder descriptions below predate the current rules. Current eye rule: "dark amber glass lenses set into chrome sockets." Current shoulder rule: "fractal shoulder pattern" (not mandala). Shipped as-is; later episodes use the corrected phrasing.
+
+- **Visual state:** Chrome female android, 70s retro-futuristic feminine form. Warm-toned wires (gold/copper). Amber/gold eyes. Fractal pattern on left shoulder. Cleaner than Robotiko but NOT pristine.
 - **Mirror principle:** She is a MIRROR. Never show her expressing clear emotions. Her body language is always ambiguous — receptive or indifferent? The audience fills in what they want, just as Robotiko does.
 - **Face visibility:** Maximum 3 clear face-on shots. All others: profile, silhouette, partial view, reflection in Robotiko's chrome.
 - **She is NOT a villain.** She does nothing wrong. The tragedy is Robotiko's projection.
@@ -59,7 +61,7 @@ Each encounter brings Robotiko and Robochica physically closer.
 | Chorus | Montage across ALL locations | Declaration spans everywhere — love takes over all spaces |
 | Guitar Solo | Abstract/surreal dreamlike space | Transcends the mundane. Internal landscape. |
 | Verse 2a | Retro-futuristic office | Windows folders, system saint, sees Robochica |
-| Verse 2b | Close-up / body zoom | Kıpkırmızı overheating body |
+| Verse 2b | Close-up / body zoom | Bright-red (kıpkırmızı) overheating body |
 | Outro | Robotiko's room, ALONE | Eye projection, Blue Screen. The everyday world is gone. |
 
 ---
@@ -85,7 +87,7 @@ Close-up of Robotiko's body showing "robochica_1" tattoo/etching in glowing ambe
 **Shot B:** Robotiko seated at a desk, hacker-style. A physical CORD extends from his body upward to a LITERAL BLUE CLOUD floating above, with a DATA CENTER BUILDING sitting on top of the cloud. He CUTS the cord. "I didn't download you from the cloud" = severed connection to passive consumption. The physical cloud with data center on top is peak Syd Mead absurdism.
 
 ### Override 6: "I Was a System Saint" — Windows Folders (Verse 2a, 2:50-3:05)
-Robotiko in office, holding WINDOWS-STYLE FILE FOLDERS (the classic yellow folder icon, made physical). Model AI employee: organized, efficient, saintly. Then he SEES Robochica. THROWS folders aside — papers/data flying everywhere. "Saw your wireframe and broke every rule" — watches her as his organized digital life scatters. The Windows folder = perfect AI-identity marker. Everyone recognizes it.
+Robotiko in office, holding WINDOWS-STYLE FILE FOLDERS (the classic yellow folder icon, made physical). Model AI employee: organized, efficient, flawless by the book. Then he SEES Robochica. THROWS folders aside — papers/data flying everywhere. "Saw your wireframe and broke every rule" — watches her as his organized digital life scatters. The Windows folder = perfect AI-identity marker. Everyone recognizes it.
 
 ### Override 7: "Now I'm Fully Turned On" — Bright Red Body (Verse 2b, 3:06-3:23)
 SLOW ZOOM on Robotiko's body. He has turned KIPKIRMIZI (bright red) — full-body overheating made visible. Electricity arcing across red-hot chassis. "A high-voltage fool!" — literalized. The color shift from chrome-silver to bright red is the peak of physical comedy before the outro crash.
@@ -118,7 +120,7 @@ Robotiko ALONE in his room. Robochica's image PROJECTS FROM HIS EYES like a holo
 
 The solo is the emotional center. Comedy pauses. Genuine feeling breathes. No visual gags. Pure emotion in the 70s prog rock idiom.
 
-1. **The Night Walk** (2:05-2:25): Two chrome figures walking through a surreal landscape — vast chrome desert under stars, or industrial cathedral with light through broken skylights. Distance closing.
+1. **The Night Walk** (2:05-2:25): Two chrome figures walking through a surreal landscape — vast chrome desert under stars, or colossal iron vault with light through broken skylights. Distance closing.
 2. **Inner Light / Kintsugi Preview** (2:25-2:35): Close-up of Robotiko's cracked chest. A few thin beams of warm amber light seep through the fractures from within — quiet, subtle, just a few rays. The emotion leaking through his broken places. Unconscious preview of EP09's Kintsugi philosophy (cracks filled with gold) — but here temporary, fragile, and unnoticed by Robotiko himself.
 3. **Album Cover Shot** (2:35-2:45): Wide shot. Two figures in vast space. THE poster image. Frank Frazetta mythic energy meets robot love. The defining image of EP05.
 4. **Return** (2:45-2:49): Surreal space dissolves. Back to reality.

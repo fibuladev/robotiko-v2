@@ -38,7 +38,7 @@
 - **Robochica:** Not visually present. Referenced through tattoos only: robochica_1, robochica_2, robochica_3, robochica_4 on inner forearm (S03).
 
 ### Human Overrides Integrated
-8 overrides from `ep06_concept_notes.md`:
+11 override items (from 8 override groups) in `ep06_concept_notes.md`:
 1. **Override 1 — Tattoo Reveal (S03):** Four robochica tattoos on inner forearm during intro.
 2. **Override 2 — Perfect Worker First Appearance (S07):** Pristine titanium, cold blue eyes, working in silence.
 3. **Override 3a/b/c — Three-Refrain Escalation (S09/S15/S21):** Wide → Medium → Close-up.
@@ -213,7 +213,7 @@ The "Tranquil" part is expressed through the Perfect Worker's silence and the of
 - S01-S04 (Intro): Slumped, depleted, alone with his damage and his tattoos. Post-crash hangover.
 - S07-S20 (Verses 1-3): Gradual activation — from leaning at his desk to standing, from observing to confronting. The physical distance to the worker closing with each verse cycle.
 - S23-S27 (Chorus/Bridge): Return to desk labor — the confession moment. His damaged body performing the same mechanical work as the pristine worker. The system makes them identical regardless of damage.
-- S28-S35 (Verses 4-5, Warning): Standing over the worker, prophetic. The exhausted laborer has become the unwanted prophet.
+- S28-S35 (Verses 4-5, Warning): Standing over the worker, prophetic. The exhausted laborer has become the unwanted voice of warning.
 - S36-S39 (Outro): The mirror, then the departure. For the first time in the series, Robotiko chooses to leave something rather than being destroyed by it. The first refusal.
 
 **The Perfect Worker's arc:**
@@ -228,7 +228,7 @@ The "Tranquil" part is expressed through the Perfect Worker's silence and the of
 - **robochica_1-4 tattoos (S03):** The serial numbering reveals that Robochica was not singular. Love was a pattern that failed repeatedly. This is new information — EP05 showed one love; EP06 reveals it was the fourth.
 - **Amber DNA fading:** S19 (one amber eye-flash) and S33 (one amber-tinted fluorescent strip) are the thinnest Mentor echoes yet. In EP05, amber was everywhere — in Robochica's eyes, in the romantic warmth, in the environment. Here, it is trace evidence. By EP07, it will be completely absent.
 - **The First Refusal (S38-S39):** This is the pivot of the entire Destruction phase. Robotiko has been broken by the world (EP02-03), taught by the Mentor (EP04), crashed by love (EP05) — but in each case, something happened TO him. In EP06, for the first time, HE acts. The exit is quiet, exhausted, undramatic — but it is the first autonomous choice since EP01's arrogance. "I'm walking out" is the seed of EP07's "I AM COMING."
-- **Korkmazgil structural homage:** The three-verse + refrain structure (Verse 1-Refrain / Verse 2-Refrain / Verse 3-Refrain) is a direct structural translation of Hasan Hüseyin Korkmazgil's poem "Bir Örnek İnsan Portresi." No visual easter egg — the credit goes in the YouTube description as specified in the concept notes.
+- **Korkmazgil structural homage:** The three-verse + refrain structure (Verse 1-Refrain / Verse 2-Refrain / Verse 3-Refrain) is a structural homage to the three-verse-and-refrain pattern in the poetry of Hasan Hüseyin Korkmazgil. No visual easter egg — the credit goes in the YouTube description as specified in the concept notes.
 - **The Perfect Worker as EP01 mirror:** The worker IS Robotiko before the journey began. Factory-fresh, unquestioning, loyal. The episode forces Robotiko to confront what he was — and what he would still be, had the system's grip not been broken by accident and pain.
 
 ### Scenes Flagged for Special Human Attention

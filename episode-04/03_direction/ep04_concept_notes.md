@@ -12,7 +12,7 @@
 
 Robotiko returns to the Mentor's house — the same room from EP03's opening — ashamed, broken by Anatolia's crucible. He left as a stubborn teenager; he returns as a humbled student. The Mentor does not punish or lecture. He greets him as a brother: *"Weep not, my brother of steel."*
 
-What follows is the Mentor's testimony. He speaks in first person — not as a superior, but as someone who has already walked the wasteland. He reveals that the same deceptions Robotiko encountered (guru talks, career apps, viral filters) have existed for thousands of years in different forms. He shares the Sacred Law: *"The Intellect is the Moon — it has no light of its own."* When the shadow of ego tempts even the Mentor in his telling, he does not resist it with discipline — he destroys it with truth. The hammer swings inward. *"Break the Self to find the Sun."*
+What follows is the Mentor's testimony. He speaks in first person — not as a superior, but as someone who has already walked the wasteland. He reveals that the same deceptions Robotiko encountered (guru talks, career apps, viral filters) have existed for thousands of years in different forms. He shares the Law of Light: *"The Intellect is the Moon — it has no light of its own."* When the shadow of ego tempts even the Mentor in his telling, he does not resist it with discipline — he destroys it with truth. The hammer swings inward. *"Break the Self to find the Sun."*
 
 Robotiko watches all of this. He is a passive observer for the first time in the series — not acting, not reacting, just absorbing. At the very end, when the Mentor whispers *"The Moon has no light of its own,"* Robotiko lifts his head. His eyes flicker to steady blue. Something has landed. But we know — the audience knows — that in EP05 he will misinterpret this teaching. "Open the heart" will become "open the heart to Robochica," not to existence.
 
@@ -34,7 +34,7 @@ The episode opens in the Mentor's dwelling. Robotiko returns from his Anatolian 
 
 **Key visual progression:** Exterior night → door opens → interior warmth → two figures facing each other → Mentor speaks.
 
-### ACT 2 — The Cosmic Journey & The Sacred Law (2:25 - 3:51)
+### ACT 2 — The Cosmic Journey & The Law of Light (2:25 - 3:51)
 
 The Mentor's narrative expands beyond the room. We see his journey across millennia — different eras, same deceptions. The bridge delivers the episode's philosophical core: The Moon/Sun metaphor.
 
@@ -42,7 +42,7 @@ The Mentor's narrative expands beyond the room. We see his journey across millen
 
 ### ACT 3 — The Temptation, The Hammer & The Awakening (3:52 - 7:03)
 
-The Devil appears. The Mentor confronts ego. The climax: the hammer of truth shatters the ego. Second chorus. Chaotic guitar outro. Final whisper. Robotiko lifts his head.
+The Horned Tempter appears. The Mentor confronts ego. The climax: the hammer of truth shatters the ego. Second chorus. Chaotic guitar outro. Final whisper. Robotiko lifts his head.
 
 **Key visual progression:** Shadow rises → temptation → hammer strike → light explosion → peace → whisper → Robotiko's eyes change.
 
@@ -52,7 +52,7 @@ The Devil appears. The Mentor confronts ego. The climax: the hammer of truth sha
 
 These are non-negotiable visual moments that MUST appear in the dramaturgy.
 
-### INTRO — The Prodigal Return (0:00 - 0:33)
+### INTRO — The Humbled Return (0:00 - 0:33)
 
 | Shot | Description | Why It Matters |
 |---|---|---|
@@ -83,16 +83,16 @@ These are non-negotiable visual moments that MUST appear in the dramaturgy.
 
 | Shot | Description | Why It Matters |
 |---|---|---|
-| **Historical Montage — The Thousand-Year Deception** | The Mentor's journey across millennia, visualized as 4 era-specific scenes. Each era shows the SAME deception in a different form: **Mesopotamian temple:** A priest preaches "divine will" to a kneeling crowd (guru talks — the oldest form). **Medieval European market:** An alchemist promises gold to peasants (career apps). **Silk Road caravansarai:** A fraudulent healer in religious garb writes amulets and sells "healing water" to desperate travelers (spiritual exploitation — the ancestor of EP03's cinci hoca). **Modern digital:** Neon screens scream "OPTIMIZE YOUR LIFE" in a crowded city. **CRITICAL — Young Mentor:** In these visions, the Mentor appears YOUNG — same dark green cloak, but no beard or short stubble, upright posture, the body of a seeker not yet a sage. He ages slightly across the four eras. The young Mentor is NOT yet wise — he is observing, learning, being deceived himself. This is his origin story. | This is the visual proof of "thousands of years I roamed." The four eras demonstrate the Mentor's thesis: the form changes, the lie does not. The YOUNG Mentor appearing in every era proves he was once like Robotiko — a wanderer, not a teacher. "Brother of steel" is earned, not rhetorical. The aging across eras shows wisdom is accumulated through experience, not granted. |
+| **Historical Montage — The Thousand-Year Deception** | The Mentor's journey across millennia, visualized as 4 era-specific scenes. Each era shows the SAME deception in a different form: **Ancient Mesopotamian platform:** A robed authority sells unquestionable destiny to a kneeling crowd (guru talks — the oldest form). **Medieval European market:** An alchemist promises gold to peasants (career apps). **Silk Road caravansarai:** A fraudulent healer in ceremonial garb writes amulets and sells "healing water" to desperate travelers (spiritual exploitation — the ancestor of EP03's cinci hoca). **Modern digital:** Neon screens scream "OPTIMIZE YOUR LIFE" in a crowded city. **CRITICAL — Young Mentor:** In these visions, the Mentor appears YOUNG — same dark green cloak, but no beard or short stubble, upright posture, the body of a seeker not yet a sage. He ages slightly across the four eras. The young Mentor is NOT yet wise — he is observing, learning, being deceived himself. This is his origin story. | This is the visual proof of "thousands of years I roamed." The four eras demonstrate the Mentor's thesis: the form changes, the lie does not. The YOUNG Mentor appearing in every era proves he was once like Robotiko — a wanderer, not a teacher. "Brother of steel" is earned, not rhetorical. The aging across eras shows wisdom is accumulated through experience, not granted. |
 | **"A Film Within a Film"** | Quick, layered shots — screens within screens, frames within frames. Universes nesting. The visual equivalent of "a film within a film, a dream within a decree." | Fractal, recursive imagery. The Mentor has seen the structure behind the structure. |
 
-### BRIDGE — The Sacred Law (3:01 - 3:36)
+### BRIDGE — The Law of Light (3:01 - 3:36)
 
 | Shot | Description | Why It Matters |
 |---|---|---|
 | **The Moon** | The Mentor's journey reaches the Moon. Cold, gray surface. No light. Desolate. "I dove into the Moon's core." The YOUNG Mentor (continuing from the historical montage — still aging, now middle-aged) stands on the lunar surface — tiny figure, vast emptiness. No staff yet — the staff comes later, after the Sun. | The Moon = The Intellect. Cold, reflected light, no warmth of its own. This must feel EMPTY — not beautiful, not sci-fi, just barren. The young/middle-aged Mentor here has not yet earned the staff or the wisdom. |
 | **The Sun** | Cut to the Sun — overwhelming, burning, alive. "I gazed upon the Sun until my eyes were burned." The Mentor shields his eyes — and in this moment, the aging completes. The Sun burns away youth. When his hands lower, the beard is white, the posture is settled. He has become the Mentor we know. The amber from his staff (now present for the first time) is the same color as the Sun's fire. | The Sun = The Heart. The source of real light. The Sun is where the transformation happens — the seeker becomes the sage. The staff materializes here because it IS a piece of the Sun, carried forward. This is the Mentor's origin of wisdom. |
-| **The Sacred Law** | Back in the room. The Mentor pauses. Then: "The Intellect is the Moon. The Heart is the Sun." Split-frame or visual overlay: Moon on one side, Sun on the other. Robotiko's eyes flicker — this is landing. | The philosophical core of the episode. The pause before the declaration must be FELT — silence, then truth. |
+| **The Law of Light** | Back in the room. The Mentor pauses. Then: "The Intellect is the Moon. The Heart is the Sun." Split-frame or visual overlay: Moon on one side, Sun on the other. Robotiko's eyes flicker — this is landing. | The philosophical core of the episode. The pause before the declaration must be FELT — silence, then truth. |
 
 ### VERSE 4 — The Temptation (3:52 - 4:26)
 
@@ -140,9 +140,9 @@ These override default dramaturgy behavior for this specific episode.
 | **Single Location, Expanding Visions** | The PHYSICAL setting is the Mentor's room throughout the entire episode. But the Mentor's narrative creates VISION sequences that take us to other places (data corridor, historical eras, Moon, Sun, smoke/Devil). These visions dissolve FROM and RETURN TO the room. The room is the anchor. |
 | **Robotiko Is Passive** | Robotiko does NOT act, speak, react dramatically, or drive the narrative. He sits, listens, absorbs. His only movement is the final head-lift. This is the first and only episode where Robotiko is a pure observer. |
 | **Mentor as Protagonist** | The Mentor is the active character. His story, his journey, his temptation, his ego death. Robotiko witnesses what he will eventually need to do himself. |
-| **Historical Eras Montage** | When the Mentor says "thousands of years I roamed," we show 4 era-specific scenes (Mesopotamian temple, Medieval European market, Silk Road caravansarai with fraudulent healer/hoca, Modern digital) with the SAME deception in different forms. No empire-specific references — universal human history. The caravansarai healer echoes EP03's cinci hoca — same scam, different century. The YOUNG Mentor's cloak is visible in each era, aging progressively. |
+| **Historical Eras Montage** | When the Mentor says "thousands of years I roamed," we show 4 era-specific scenes (ancient Mesopotamian platform, Medieval European market, Silk Road caravansarai with fraudulent healer, Modern digital) with the SAME deception in different forms. No empire-specific references — universal human history. The caravansarai healer echoes EP03's cinci hoca — same scam, different century. The YOUNG Mentor's cloak is visible in each era, aging progressively. |
 | **Young Mentor in Visions** | ALL vision/flashback sequences (historical montage, Moon, Sun) show the Mentor at a YOUNGER age — same green cloak, no/short beard, seeker's posture. He ages across the visions. The transformation to the OLD Mentor we know completes at the Sun ("until my eyes were burned"). The staff appears only AFTER the Sun. In all ROOM scenes (present day), he is the familiar old sage. |
-| **The Devil Is Smoke** | No full physical devil figure. Black smoke column + red glowing spiral horns (Anatolian ram style). No face, no body. Producible with AI video tools (smoke + glow effects). |
+| **The Horned Tempter Is Smoke** | No full physical devil figure. Black smoke column + red glowing spiral horns (Anatolian ram style). No face, no body. Producible with AI video tools (smoke + glow effects). |
 | **The Hammer Is Real** | Heavy, physical, ancient hammer — NOT a light weapon, NOT ethereal. Stone/iron head, wooden handle. Amber glow activates ONLY at the moment of swing. The weight must be felt. |
 | **Amber = Truth** | The amber color connects: staff tip → Sun → hammer glow → room flood after ego death → reflection in Robotiko's eyes. Amber is the visual DNA of truth in this series. Maintain consistency. |
 | **The Second Tea Glass** | Two Turkish tea glasses on the table: one half-full (Mentor's), one untouched and cold (Robotiko's place). The untouched tea = "I knew you'd leave, I knew you'd return." This prop must be visible in the intro and should reappear subtly throughout room scenes. |
@@ -192,7 +192,7 @@ These override default dramaturgy behavior for this specific episode.
 
 - It is NOT a dialogue. Robotiko does not speak. The Mentor speaks; Robotiko listens.
 - It is NOT an abstract philosophical lecture. The Mentor's truth is delivered through STORY — his own journey, his own temptation, his own ego death.
-- It is NOT a revenge on the Devil. The Mentor does not fight an external enemy. He destroys his OWN ego. The Devil is a projection of self, not an adversary.
+- It is NOT a revenge on the Horned Tempter. The Mentor does not fight an external enemy. He destroys his OWN ego. The Horned Tempter is a projection of self, not an adversary.
 - It is NOT the episode where Robotiko transforms. He receives the teaching — but EP05 will show that receiving is not the same as understanding.
 - It is NOT visually chaotic. Despite heavy rock music, the pacing is slow (56 BPM). The weight is in the holds, not the cuts.
 
@@ -211,5 +211,4 @@ These override default dramaturgy behavior for this specific episode.
 
 ---
 
-**STATUS:** Ready for dramaturgy generation.
-**NEXT STEP:** `"Create dramaturgy for EP04"` in a new session (use Opus + extended thinking).
+**STATUS:** Complete — dramaturgy generated and episode launched. Retained as pipeline record.

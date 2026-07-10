@@ -74,7 +74,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 > **Used in:** S20
 
 **Text Prompt:**
-> Four enlightened figures standing together in warm amber light, 16:9 widescreen composition. From left to right: a whirling dervish in flowing white robes with a tall felt hat, a seated philosopher in simple brown garments with a scroll, a true healer in earth-toned robes with hands extended in blessing, and a cross-legged sage in dark meditation robes. Warm amber waves radiate around their eyes - soft golden light rippling outward from their gaze, the same warm gold as raw amber. Their postures radiate calm wisdom. Mixed men and women. Their faces are distinct and weathered, each carrying the weight of centuries. They stand against a luminous, translucent backdrop of warm amber veils. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Four enlightened figures standing together in warm amber light, 16:9 widescreen composition. From left to right: a robed wanderer mid-turn, arms open, in flowing pale garments, a seated philosopher in simple brown garments with a scroll, a healer in earth-toned robes with hands extended gently, and a cross-legged sage in dark meditation robes. Warm amber waves radiate around their eyes - soft golden light rippling outward from their gaze, the same warm gold as raw amber. Their postures radiate calm wisdom. Mixed men and women. Their faces are distinct and weathered, each carrying the weight of centuries. They stand against a luminous, translucent backdrop of warm amber veils. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 
@@ -384,14 +384,14 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 #### Scene S20 — Piercing the Veil / Kindred Souls
 - **Timestamp:** 2:42
-- **Dramaturgy Reference:** The Mentor meets the Kindred Souls — enlightened figures across ages: dervish, philosopher, healer, sage. Recognition, reunion. Amber aura = gönül gözü açık.
+- **Dramaturgy Reference:** The Mentor meets the Kindred Souls — enlightened figures across ages: wandering poet, philosopher, healer, sage. Recognition, reunion. Amber aura = the heart's eye open (gönül gözü açık).
 - **Characters Present:** Near-middle-aged Mentor (at entrance), Kindred Souls (amber-aura figures)
 - **Image Reference Path:** REF-CHAR-01 (Young Mentor — near-middle-aged) + REF-CHAR-02 (Kindred Souls)
 - **Video Tech Strategy:** Standard
 - **Composition Notes:** Subterranean chamber. Figures in semicircle. Mentor at entrance. Central amber light source. Wide for the mystical scale.
 
 **Text Prompt:**
-> A subterranean stone chamber lit by a central amber glow rising from the floor, 16:9 widescreen composition. Four enlightened figures form a semicircle around the light: a whirling dervish in flowing white robes, a philosopher seated cross-legged with a scroll, a healer with hands extended in blessing, and a sage in dark robes with closed eyes in meditation. Warm amber waves radiate softly around each figure's face. At the chamber's entrance, a near-middle-aged man in a dark green cloak stands watching them - recognized, expected, welcomed. The amber light from the center illuminates all five faces equally. Rough-hewn stone walls, ancient and timeless. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> A subterranean stone chamber lit by a central amber glow rising from the floor, 16:9 widescreen composition. Four enlightened figures form a semicircle around the light: a robed wanderer mid-turn in flowing pale garments, a philosopher seated cross-legged with a scroll, a healer with hands extended gently, and a sage in dark robes with closed eyes in meditation. Warm amber waves radiate softly around each figure's face. At the chamber's entrance, a near-middle-aged man in a dark green cloak stands watching them - recognized, expected, welcomed. The amber light from the center illuminates all five faces equally. Rough-hewn stone walls, ancient and timeless. hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 ---
 

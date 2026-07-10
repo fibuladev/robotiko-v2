@@ -27,7 +27,7 @@ In the outro, Robotiko sees the mirror between them — "mistake by mistake, fea
 - **Visual state:** Rusted and cracked chrome chassis, sparks flying from joints, glitching blue-red eyes, exposed and fraying analog wires. EP02-03-04-05 cumulative damage carries forward.
 - **Behavioral note:** Post-crash exhaustion. No comedy energy (EP05), no spiritual intensity (EP04). This is the flattest, most depleted version of Robotiko — a burned-out white collar worker whose soul has died but whose body keeps working.
 - **Tattoos:** Inner forearm now shows robochica_1, robochica_2, robochica_3, robochica_4. Visible during intro ("Love wasn't an upgrade / It was a crash"). No commentary, no close-up lingering. The serial numbering tells the story: love was never singular. It was a pattern, and every instance failed.
-- **Chorus shift:** During the chorus, Robotiko is at his office desk, doing daily work. Tükenmiş beyaz yaka. The rock anthem lyrics contrast with the visual of mechanical, soulless labor.
+- **Chorus shift:** During the chorus, Robotiko is at his office desk, doing daily work. A burned-out white-collar worker. The rock anthem lyrics contrast with the visual of mechanical, soulless labor.
 - **The exit:** Robotiko walks out. Does not look back. This is decisive, not dramatic.
 
 ### The Perfect Worker (NEW CHARACTER)
@@ -46,7 +46,7 @@ In the outro, Robotiko sees the mirror between them — "mistake by mistake, fea
 
 ## LOCATION ARCHITECTURE
 
-**Primary: the SAME retro-futuristic office from EP05** (scenes 22-23). Green CRT monitors, physical Windows folders, rows of identical workstations, tavan lambaları, Syd Mead corporate aesthetic. Same desks, same walls — but the color temperature has shifted: EP05's warm amber tones (comedy, love energy) are gone. EP06's office is cold fluorescent, steril, drained of warmth. Same space, opposite emotional register. The audience who remembers EP05's office will feel the absence of Robochica and the absence of warmth simultaneously.
+**Primary: the SAME retro-futuristic office from EP05** (scenes 22-23). Green CRT monitors, physical Windows folders, rows of identical workstations, ceiling lamps, Syd Mead corporate aesthetic. Same desks, same walls — but the color temperature has shifted: EP05's warm amber tones (comedy, love energy) are gone. EP06's office is cold fluorescent, sterile, drained of warmth. Same space, opposite emotional register. The audience who remembers EP05's office will feel the absence of Robochica and the absence of warmth simultaneously.
 
 Robotiko and the Perfect Worker occupy adjacent workstations. The camera stays in this space for the vast majority of the episode.
 
@@ -157,8 +157,8 @@ The Tranquil Self — Broken. "Tranquil" because the rebellion is quiet. "Broken
 ---
 
 ## APPROVAL STATUS
-- [ ] **Human reviewed**
-- [ ] **Human approved**
-- [ ] **Ready for Dramaturgy generation**
+- [x] **Human reviewed** — 2026-05-01
+- [x] **Human approved** — 2026-05-01
+- [x] **Ready for Dramaturgy generation** — Dramaturgy v01 generated and approved 2026-05-01
 
 > "Would Fibula approve this?"

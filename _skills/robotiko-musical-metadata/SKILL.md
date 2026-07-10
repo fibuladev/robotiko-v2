@@ -1,5 +1,5 @@
 # SKILL: robotiko-musical-metadata
-> **Version:** 1.0 | **Last Updated:** 2026-03-31
+> **Version:** 1.0
 > **Trigger:** `"Create musical metadata for EP{XX}"`
 > **Output:** `episode-{XX}/02_music/ep{XX}_musical_metadata.json`
 
@@ -236,7 +236,7 @@ Derive from human input + master.md episode description. Include 5-8 keywords th
 **Examples from existing episodes:**
 - EP02: `["satirical", "psychedelic", "theatrical", "dark comedy", "energetic"]`
 - EP03: `["joyful", "satirical", "anti-guru", "dark comedy", "upbeat", "driving groove"]`
-- EP04: `["mystical", "hypnotic", "epic", "heavy", "dark"]`
+- EP06: `["bitter", "sardonic", "exhausted", "defiant", "raw", "intimate", "devastating", "power ballad"]`
 - EP05: `["tender", "erotic", "playful", "comedic", "sensual", "blues", "tragic"]`
 
 ---

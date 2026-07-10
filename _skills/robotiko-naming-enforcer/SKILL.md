@@ -1,5 +1,5 @@
 # SKILL: robotiko-naming-enforcer
-> **Version:** 1.0 | **Last Updated:** 2026-02-24
+> **Version:** 1.0
 > **Trigger:** `"Validate file names"` or `"Validate file names for EP{XX}"`
 > **Output:** Compliance report (printed to console / chat)
 
@@ -122,9 +122,9 @@ Status: [PASS ✅ / FAIL ❌]
 ### Method A: Claude Code Manual Scan
 Claude uses Glob and file listing to scan all files, then applies the rules above.
 
-### Method B: Automated Script (Planned)
+### Method B: Automated Script
 ```
-python scripts/naming_check.py [--episode XX]
+python tests/naming_check.py [--episode XX]
 ```
 Or via GitHub Actions: `validation_suite.yml` (one gate — `tests/run_all.py`) on every push.
 

@@ -53,3 +53,14 @@ Scope the rule by audience, not by file:
   🟢 Machine — but only for prompt strings; the canon stays human-authored.
 - The lint is intentionally narrow. If a third prompt-bearing surface appears, it
   must be added to `IN_SCOPE` explicitly — silence is not coverage.
+
+**Note on figure framing (2026-07-10):** The Context section above welds the
+sanctioned Turkish-attribution label directly onto individual names
+("the names (Yunus Emre, Hacı Bektaş Veli)"). The mechanism this ADR decides
+(scope the lint by audience) is unaffected, but the wording should be read as:
+the sanctioned attribution is the tradition LABELS ("Turkish wisdom tradition",
+"Turkish folk poetry") plus anchor names such as Yunus Emre and Hacı Bektaş
+Veli — thinkers who lived and taught in Anatolia — framed geographically
+rather than by a flat ethnic label on the individual. This note does not
+change the decision; it clarifies the framing per the canon's cultural-
+attribution rule (Golden Rule 9).

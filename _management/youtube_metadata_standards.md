@@ -23,7 +23,7 @@ a series. Every standard below serves that classification goal.
 **Required: Film & Animation** (not Music)
 
 - All uploads use Film & Animation — no exceptions.
-- Category is the strongest single classification signal after the title.
+- Category is one of the strongest classification signals the uploader directly controls.
 
 ---
 

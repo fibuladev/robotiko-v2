@@ -1,5 +1,5 @@
 # SKILL: robotiko-visual-prompts
-> **Version:** 2.0 | **Last Updated:** 2026-07-07
+> **Version:** 2.0
 > **Trigger:** `"Generate visual prompts for EP{XX}"`
 > **Output (Phase 1):** `episode-{XX}/04_visuals/ep{XX}_visual_prompts_v01.md` — complete Phase-1 document (references + locks + coverage map + sentinel; zero scenes)
 > **Output (Phase 2):** `episode-{XX}/04_visuals/ep{XX}_visual_prompts_v02.md` — complete Phase-1+2 document (references carried forward + scenes framed to real pixels; sentinel removed)
@@ -337,7 +337,9 @@ When a character appears in a scene:
 > A chrome android standing at the edge of a rusted platform...
 
 **Example — Robotiko WITHOUT reference image (fallback only):**
-> A retro-futuristic chrome android with battle-scarred chrome body, exposed analog wires, glowing blue eyes, standing at the edge of...
+> A retro-futuristic chrome android with battle-scarred chrome body, exposed analog wires, steady blue optical lenses set into chrome sockets like polished sapphires, standing at the edge of...
+
+> See `_memory/lessons.md` CHARACTER DESIGN (ADR-0010) — never write "glowing [color] eyes" in a model-facing string; the eye-glow lint FAILs on it.
 
 ### Rule 3b: Anti-Spawn Guard
 Image generators spawn duplicate characters. Every single-character scene needs a guard — but the phrasing depends on the tool:
@@ -447,7 +449,7 @@ Each prompt block contains:
 | **Dramaturgy Reference** | Cited pointer to the dramaturgy Shot ID (2.2) — not a fresh paraphrase from the image |
 | **Characters Present** | List with phase-appropriate visual state noted |
 | **Image Reference Path** | Phase-correct ref from `character_profiles.json` → `phase_reference_map`, or N/A for scenes without characters |
-| **Video Tech Strategy** | Standard / Start-End Keyframes / Extension (from dramaturgy detail blocks) |
+| **Video Tech Strategy** | Standard / Start-End Keyframes (from dramaturgy detail blocks; the former Extension mode is deprecated — long scenes are handled by the motion script's Duration Coverage Strategy) |
 | **Composition Notes** | Headroom, breathing space, depth guidance; the LOCKS rules that bind this scene (gaze, beside-space, color band, budget) named where they apply (2.2) |
 | **Upload** | Per-scene list of reference images: character ref, environment ref, chain/base ref, special ref — matching the inline bindings (Rule 2b) |
 | **Text Prompt** | The full image generation prompt ending with the mandatory suffix |
@@ -478,7 +480,7 @@ The post-generation checklist at the bottom of the document.
 - Use an em-dash or non-ASCII punctuation INSIDE a Text Prompt blockquote (ADR-0006 hygiene) — plain ASCII only in prompts
 
 ### EXAMPLE (Good):
-> Medium-wide shot inside a workshop (ep09_ref_workshop.png), the corrugated metal roll-up shutter fully closed filling the back wall, no daylight, the chrome android (android_damaged.png) alone at the workbench, calm steady blue eyes faintly visible in dim light, only a dim work lamp casting a low pool of light on the bench, a Turkish tea glass left behind on the bench surface, dark workshop atmosphere, isolation, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
+> Medium-wide shot inside a workshop (ep09_ref_workshop.png), the corrugated metal roll-up shutter fully closed filling the back wall, no daylight, the chrome android (android_damaged.png) alone at the workbench, calm steady blue optical lenses set into chrome sockets, faintly catching the dim light, only a dim work lamp casting a low pool of light on the bench, a Turkish tea glass left behind on the bench surface, dark workshop atmosphere, isolation, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
 **Why it works:** each reference is bound inline (`workshop` + `chrome android`); the short identifier carries the look with NO restated damage; nothing absent is named (no "the old man gone"); no redundant anti-spawn phrase — the reference plus "alone" already establish a single figure.
 

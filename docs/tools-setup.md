@@ -11,7 +11,8 @@
 ## Overview
 
 Each tool owns one stage of the pipeline. The director (Claude Code) orchestrates the
-sequence; the human approves at two checkpoints (after dramaturgy, after motion script).
+sequence; the human approves at three checkpoints (after dramaturgy, at the reference
+gate inside the visual stage, and after the motion script).
 
 | Tool | Stage | Purpose |
 |---|---|---|
@@ -105,7 +106,9 @@ This is the single most important practice for visual consistency:
 - **Generate reference images first.** Before scene images, create a standalone reference for
   each recurring character group and each multi-scene location. Upload that reference alongside
   the text prompt for every scene where it appears. Without this, Nano Banana draws a different
-  face / different environment in every scene.
+  face / different environment in every scene. From EP10 onward this is a recorded gate (1R):
+  scene prompts are not written until the reference images are human-approved — see
+  [two-phase-visual-prompts.md](two-phase-visual-prompts.md).
 - **Previous scene as reference.** Upload the prior scene's output as an extra reference for the
   next scene — same lighting and layout carry through the image, not the text.
 - **Keep prompts brief with references.** If a detail is visible in the reference image, do NOT

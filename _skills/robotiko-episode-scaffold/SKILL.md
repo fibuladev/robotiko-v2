@@ -1,5 +1,5 @@
 # SKILL: robotiko-episode-scaffold
-> **Version:** 1.0 | **Last Updated:** 2026-02-24
+> **Version:** 1.0
 > **Trigger:** `"Scaffold EP{XX}"`
 > **Output:** Full folder structure under `episode-{XX}/`
 

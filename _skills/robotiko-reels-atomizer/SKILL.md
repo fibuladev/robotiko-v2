@@ -1,5 +1,5 @@
 # SKILL: robotiko-reels-atomizer
-> **Version:** 3.0 | **Last Updated:** 2026-05-01
+> **Version:** 3.0
 > **Trigger:** `"Atomize EP{XX} for social"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_social_atomization.md`
 
@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Break a finished episode into short-form social media content (Reels, Shorts, Stories). Each "atom" is a self-contained clip — 15 to 60 seconds — designed to capture attention, convey a fragment of the episode's essence, and drive viewers to the full video.
+Break a finished episode into short-form social media content (Reels, Shorts, Stories). Each "atom" is a self-contained clip — 7 to 60 seconds — designed to capture attention, convey a fragment of the episode's essence, and drive viewers to the full video.
 
 The atomization strategy is not random chopping. Each clip must have a narrative hook, a visual peak, and a musical completeness that makes it work as a standalone piece.
 
@@ -43,7 +43,7 @@ Scan the dramaturgy and motion script for:
 ### Step 2: Define Clip Boundaries
 Each clip must:
 - Start and end at natural musical boundaries (section starts, phrase endings, beat-aligned cuts)
-- Be between **15 and 60 seconds** (platform optimal range)
+- Be between **7 and 60 seconds** — Hook Clips target 7-15s loop-friendly length (confirmed Shorts strategy); Story/Atmosphere clips may run 20-60s
 - Contain at least one visual peak and one lyrical hook
 - Feel complete — not cut mid-phrase or mid-thought
 
@@ -51,7 +51,7 @@ Each clip must:
 
 | Type | Duration | Purpose | Best For |
 |---|---|---|---|
-| **Hook Clip** | 15-20s | Maximum impact, designed to stop scrolling | Chorus moments, visual climaxes, iconic lyrics |
+| **Hook Clip** | 7-15s | Maximum impact, loop-friendly, designed to stop scrolling | Chorus moments, visual climaxes, iconic lyrics |
 | **Story Clip** | 20-40s | A mini-narrative with setup and payoff | Verse + chorus pairs, scene transitions |
 | **Atmosphere Clip** | 30-60s | Mood piece, lets the aesthetic breathe | Instrumental sections, environmental sequences |
 | **Behind the Scenes** | 15-30s | Process reveal (optional, human-driven) | Prompt → image → video comparisons |
@@ -77,8 +77,8 @@ Each clip must:
 
 **Hashtag strategy:**
 - 5-10 hashtags per clip
-- Mix of: project tags (`#robotiko`, `#robotikov2`, `#cyberanatolian`), genre tags (`#progrock`, `#anatolianrock`), mood tags (`#scifi`, `#conceptalbum`), platform tags (`#musicvideo`)
-- **#aiart, #aimusic, #aimusicvideo used from EP01** — AI transparency from day one
+- Mix of: project tags (`#robotiko`, `#robotikov2`), film tags (`#aifilm`, `#aiscifi`, `#cinematicai`, `#scifi`), craft tags (`#aifilmmaking`, `#aiart`)
+- **#aiart used from EP01** — AI transparency from day one
 
 ---
 
@@ -105,7 +105,7 @@ For each clip:
 - **Lyric Hook:** [The key lyric or phrase, or "Instrumental" if none]
 - **Caption (Instagram):** [Ready-to-paste caption — aesthetic/poetic tone]
 - **Caption (YouTube Shorts):** [Ready-to-paste caption — descriptive/discoverable tone]
-- **Hashtags:** [Ready-to-paste hashtag string — include #aiart #aimusic]
+- **Hashtags:** [Ready-to-paste hashtag string — include #aiart]
 - **Platform Priority:** [Which platforms this clip works best on]
 - **Vertical Framing:** [Technique name — Cinematic Canvas / Pan & Scan / Split-Screen / Analog Typography]
 - **Related Video:** Link to full episode via YouTube Studio "Related Video"
@@ -167,13 +167,7 @@ Use narrative ordering when the episode has a clear arc. Use type-based ordering
 
 ## ASPECT RATIO CONSIDERATIONS
 
-YouTube episodes are 16:9. Social platforms prefer 9:16 (vertical).
-
-**Rules:**
-- For clips with center-composed subjects: 9:16 crop is usually safe.
-- For clips with wide compositions or important lateral elements: flag that a 9:16 crop may lose critical visual information.
-- Never crop a clip if it destroys the composition. Instead, suggest a letterboxed version with branded borders top/bottom.
-- Note crop safety in each clip's detail block.
+YouTube episodes are 16:9. Social platforms prefer 9:16 (vertical). Default vertical treatment is Technique 1 (Cinematic Canvas — no crop). See VERTICAL FRAMING TECHNIQUES below.
 
 ---
 
@@ -283,7 +277,7 @@ These are guidelines, not hard rules. Quality over quantity — a weak clip dama
 
 - [ ] Every clip has natural musical boundaries (no mid-phrase cuts)
 - [ ] Every clip has at least one visual peak
-- [ ] Clip durations are within 15-60 second range
+- [ ] Clip durations are within 7-60 second range (Hook Clips 7-15s, Story/Atmosphere 20-60s)
 - [ ] Two platform-specific captions written per clip (IG, Shorts)
 - [ ] Captions are under 150 characters and include a lyric or philosophical hook
 - [ ] Hashtags are relevant and within platform limits

@@ -7,7 +7,7 @@
 
 ## What This Is
 
-ROBOTIKO v2.0 is a **repo-as-studio**: a single git repository that operates as a complete film-production company for one person. The human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates). Everything between is run by Claude through [Claude Code](https://docs.claude.com/en/docs/claude-code), acting as a stage-gated production crew. The crew is defined as a set of **skills** (`_skills/`), each a small instruction file Claude reads before it works.
+ROBOTIKO v2.0 is a **repo-as-studio**: a single git repository that operates as a complete film-production company for one person. The human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (the approval gates). Everything between is run by Claude through [Claude Code](https://docs.claude.com/en/docs/claude-code), acting as a stage-gated production crew. The crew is defined as a set of **skills** (`_skills/`), each a small instruction file Claude reads before it works.
 
 The spine of the whole system is the music. Once an episode's audio exists, its structure is captured in a **musical metadata JSON** (`ep{XX}_musical_metadata.json`) — sections, timestamps, energy, mood, lyrics, instruments. That file is the *temporal source of truth*: every scene, every visual, every camera move is anchored to a timestamp in it. Nothing downstream invents its own clock.
 
@@ -18,7 +18,7 @@ lyrics → music → metadata JSON → dramaturgy → visual prompts → images
        → motion script → video → edit → package
 ```
 
-There are **two human gates** in that flow, and only two. The first is **after dramaturgy** — you approve the scene-by-scene breakdown before any visuals are made. The second is **after the motion script** — you approve camera moves, tool assignments, and tech strategy before any video is generated. Everything else, Claude executes and delivers. The rest of this guide walks you from an empty machine to your first finished episode.
+There are **two creative human gates** in that flow. The first is **after dramaturgy** — you approve the scene-by-scene breakdown before any visuals are made. The second is **after the motion script** — you approve camera moves, tool assignments, and tech strategy before any video is generated. (The visual stage adds one more, mechanical stop — the reference gate — covered in the step table below.) Everything else, Claude executes and delivers. The rest of this guide walks you from an empty machine to your first finished episode.
 
 ---
 
@@ -85,18 +85,18 @@ The episode number is always two digits in the filenames the script produces (`e
 
 Open the repo in your editor with Claude Code and drive the stages with the trigger phrases below. Each phrase tells Claude which skill to read first; it then reads the required project files and executes. Run each stage in its own clean Claude Code session — the pipeline is designed for that.
 
-The full per-stage rules, inputs, and outputs live in **[../\_management/pipeline_rules.md](../_management/pipeline_rules.md)**. The order, with the two gates marked:
+The full per-stage rules, inputs, and outputs live in **[../\_management/pipeline_rules.md](../_management/pipeline_rules.md)**. The order, with the gates marked:
 
 | # | Trigger phrase | What it produces |
 |---|---|---|
 | 1 | *Create musical metadata for EP02* | `ep02_musical_metadata.json` (the temporal source of truth) |
 | — | *(you write the concept notes)* | `ep02_concept_notes.md` — overrides and must-have shots |
-| 2 | **Create dramaturgy for EP02** | `ep02_dramaturgy.md` — scene-by-scene breakdown |
+| 2 | **Create dramaturgy for EP02** | `ep02_dramaturgy_v01.md` — scene-by-scene breakdown |
 | | **⛔ STOP — HUMAN GATE 1.** Review and approve the dramaturgy before continuing. | |
-| 3 | *Generate visual prompts for EP02* | `ep02_visual_prompts.md` — Phase 1: reference prompts, art-direction locks, scene→space coverage map (scenes intentionally pending) |
-| | **⛔ STOP — REFERENCE GATE.** Generate the reference images, approve them, and record the approval (gate "1R") before any scene prompt is written. Phase 2 then writes the scenes against your approved images. See [two-phase-visual-prompts.md](two-phase-visual-prompts.md). | |
+| 3 | *Generate visual prompts for EP02* | `ep02_visual_prompts_v01.md` — Phase 1: reference prompts, art-direction locks, scene→space coverage map (scenes intentionally pending) |
+| | **⛔ STOP — REFERENCE GATE (gate "1R", EP10 onward).** Generate the reference images, approve them, and record the approval before any scene prompt is written. Phase 2 then writes the scenes against your approved images as `ep02_visual_prompts_v02.md`. See [two-phase-visual-prompts.md](two-phase-visual-prompts.md). | |
 | — | *(you generate scene images in Nano Banana against the approved references, then curate the keepers)* | selected PNGs |
-| 4 | **Generate motion script for EP02** | `ep02_motion_script.md` — camera moves, tool assignments, beat sync |
+| 4 | **Generate motion script for EP02** | `ep02_motion_script_v01.md` — camera moves, tool assignments, beat sync |
 | | **⛔ STOP — HUMAN GATE 2.** Review camera moves and tool assignments before any video is generated. | |
 | — | *(you generate video per the script, then curate the keepers)* | selected MP4s |
 | 5 | *Edit EP02 in CapCut* | `ep02_capcut_guide_v01.md` — the edit guide you follow in CapCut |
@@ -116,7 +116,7 @@ The stops are not optional and never skipped. They are the entire point of the a
 
 Set your expectations honestly before your first episode. This pipeline is a huge multiplier on time and cost — one person runs a stage-gated film crew that would otherwise take a team — but it is **not copy-paste-and-done**. The stills and clips do not fall out perfect on demand, and no amount of prompt discipline makes the generators obedient.
 
-The realistic number, from this project's own production across nine episodes, is that roughly **75-85% of shots land on the first generation** when their reference images already exist. That figure is an experiential observation from the edit bay, not instrumented telemetry — treat it as a planning heuristic, not a guarantee. The remaining shots need a reshoot or **live prompt surgery**: you catch a failure at generation time and rewrite the shot on the spot. Budget credits, and a little patience, for that tail.
+The realistic number, from this project's own production across nine episodes, is that roughly **80-90% of shots land on the first generation** when their reference images already exist (the figure ADR-0007 records as lived observation, not telemetry). That figure is an experiential observation from the edit bay, not instrumented telemetry — treat it as a planning heuristic, not a guarantee. The remaining shots need a reshoot or **live prompt surgery**: you catch a failure at generation time and rewrite the shot on the spot. Budget credits, and a little patience, for that tail.
 
 The canonical example is **EP09's S30 "Full Kintsugi" shot**, where a Slow Zoom Out on a single frame made the model invent set dressing that does not exist in the universe — it failed four times before a live switch to a two-frame (start + end) setup, anchored to an existing wide frame from the episode's own set, fixed it on the first retry. The full before/after prompts and the general rule they produced are written up in **[hallucinating-camera.md](hallucinating-camera.md)** — read it before your first video-generation session so the failures are expected, not alarming.
 
@@ -153,8 +153,8 @@ No. The non-negotiable pieces are Claude Code (it drives everything) and a way t
 **Can I swap a tool?**
 Yes — the pipeline cares about *stages*, not brands. Any image generator can stand in for Nano Banana, any of Kling / Veo / Seedance can cover video, and the motion script's tool assignments are recommendations the human can override. If you swap something, update the toolchain notes in `_management/project_metadata.json` and adjust the relevant skill so its prompts suit the new tool.
 
-**What are the two human gates?**
-Exactly two approvals are required, and Claude will stop and wait at each. **Gate 1 is after dramaturgy** — you sign off on the scene breakdown before any visuals are made. **Gate 2 is after the motion script** — you sign off on camera moves, tool assignments, and tech strategy before any video is generated. Everything else runs without hand-holding.
+**What are the human gates?**
+Two creative approvals are required. **Gate 1 is after dramaturgy** — you sign off on the scene breakdown before any visuals are made. **Gate 2 is after the motion script** — you sign off on camera moves, tool assignments, and tech strategy before any video is generated. In the visual stage there is also a third, mechanical stop: the reference gate (gate 1R, EP10 onward), where you approve the generated reference images before scene prompts are written. Claude stops and waits at all three. Everything else runs without hand-holding.
 
 **Where do the big binary files live?**
 Not in git. The raw and selected image/video folders, plus audio, are gitignored on purpose — they're far too large for version control. The repository tracks the *recipe* (prompts, scripts, metadata, edit guides), not the renders. The binary archive lives on **Google Drive**, reached through the project's own custom MCP server in **[../\_tools/mcp-gdrive/](../_tools/mcp-gdrive/)** — a small, self-contained server with no third-party storage SDK. (There is no AWS or external bucket; any older note saying otherwise is stale.)

@@ -12,10 +12,10 @@ python tests/run_all.py --coverage   # print the coverage summary and exit (no c
 
 This is the single gate. CI runs the identical entrypoint and blocks the merge on
 failure. Code is standard-library only — no `pip install`. `run_all.py` executes
-10 check groups: naming convention, pipeline integrity, visual prompt sweep, prompt
+11 check groups: naming convention, pipeline integrity, visual prompt sweep, prompt
 hygiene, musical metadata, motion script, character profiles, validator
-meta-tests, doc reference integrity, and energy-motion sync (advisory tier —
-its warnings are printed but never block).
+meta-tests, doc reference integrity, energy-motion sync (advisory tier —
+its warnings are printed but never block), and the forbidden-terms gate.
 
 `--coverage` reads `_management/invariant_coverage_matrix.md` and prints a per-tier
 count (Machine / Heuristic / Human / Gap) plus every Human- and Gap-tier row by name,
@@ -39,7 +39,8 @@ so one command answers both "did it pass" and "what do we NOT guarantee".
 | `character_profiles_validator.py` | Structural check of `character_profiles.json` against `schema.json` + **eye-glow guard** on model-facing prompt fields (ADR-0010) | v1.1 |
 | `test_validators.py` | Meta-tests — grade the graders (fixtures + both-directions proofs) | v1.0 |
 | `doc_reference_check.py` | **Doc-reality drift lint** — curated docs' backtick repo paths must exist on disk; no hook-rot; coverage-matrix ↔ `check_` sync | v1.0 |
-| `fixtures/` | Frozen BROKEN/GOOD + doc-ref BAD/GOOD + musical overlay GOOD/BAD regression pairs (see `fixtures/README.md`) | — |
+| `forbidden_terms_gate.py` | **Forbidden-terms gate** — public prose (canon docs, direction notes, musical metadata JSON) never names a banned religion/order/sect/scripture term (case-insensitive, diacritic-insensitive, word-ish boundary); a narrow, pinned allowlist covers the one sanctioned mention | v1.0 |
+| `fixtures/` | Frozen BROKEN/GOOD + doc-ref BAD/GOOD + musical overlay GOOD/BAD + forbidden-terms BAD/GOOD regression pairs (see `fixtures/README.md`) | — |
 
 ---
 
@@ -204,6 +205,33 @@ run via `tests/run_all.py` and enforced in CI.
 - **Coverage-matrix sync.** Every `check_` function in `tests/*.py` must be
   represented in `invariant_coverage_matrix.md` or admitted as an internal helper in
   the script's `ALLOWLIST` — a new enforcement check can't ship without a ledger row
+
+### forbidden_terms_gate.py
+- **Scope.** Tracked files only (`git ls-files`, so gitignored/untracked paths never
+  enter): every top-level `*.md` (repo root, not recursive), `_management/` /
+  `docs/` / `_memory/` / `_skills/` / `_templates/` / `_assets/` / `.github/`
+  (every `*.md`, recursive — includes `_management/adr/`),
+  `episode-*/03_direction/*.md`, and `episode-*/02_music/*_musical_metadata.json`
+  (scanned as text — a forbidden term in a JSON string value appears verbatim on
+  some line). Excludes `tests/fixtures/**` (intentional bad content) and
+  `episode-*/01_lyrics/**` (lyric sheets are untouchable shipped artifacts).
+- **Matching.** Case-insensitive, diacritic-insensitive (NFKD-normalized, so
+  `` / `dergâh` / `` match their plain-ASCII root), word-ish
+  boundary — no partial hit inside a longer unrelated word (`sufficient` never
+  trips `sufi`).
+- **Terms banned.** Religion/order/sect/scripture NAMES only (`sufi`, `halveti`,
+  ``, `tarikat`, `dergah`, `naqshbandi`, `bektashi`, `mevlevi`, `sunni`,
+  `alevi`, `islamic`, `quran`/`koran`, `eschatology`/`eschatological`, `vedanta`,
+  `atman`, `brahman`, `sunyata`). Broad adjectives (`sacred`, `divine`, `mystical`,
+  `dervish`, `zen`) stay OUT by design — sanctioned in-fiction/satire uses remain
+  human-judged.
+- **Allowlist.** A narrow, pinned, in-file `file -> exact substring` mapping — a
+  hit is exempted only if its own line contains the pinned substring verbatim.
+  Seeded with one entry: the `_memory/lessons.md` rule line that names "Sufi" as
+  the rule's own object (the ban's documentation), not a used tradition label.
+- Catches the class of bug two real audit findings were: a named-tradition block in
+  `_management/master.md` and a `"Sufi"` mention inside
+  `episode-08/02_music/ep08_musical_metadata.json`'s prose.
 
 See [`_management/invariant_coverage_matrix.md`](../_management/invariant_coverage_matrix.md)
 for what is machine-checked vs. human-gated, and [`_management/adr/`](../_management/adr/)

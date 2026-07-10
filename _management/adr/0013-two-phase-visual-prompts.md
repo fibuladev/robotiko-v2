@@ -71,7 +71,7 @@ The resolved sub-decisions:
   detective at CI**, the same posture as gates 1 and 2. The EP10 v01 (authored before this
   redesign) is admitted by ONE waiver pinned to the v01 artifact and its sha. Because the
   waiver is bound to that specific artifact, it **cannot excuse the future v02** — the
-  generic episode-scoped waiver is deliberately NOT reused. A grandfather waiver can
+  generic episode-scoped waiver is deliberately NOT reused. A legacy waiver can
   therefore never permanently disarm the gate: it holds only while it pins the latest
   artifact, and the real v02 will demand its own 1R record.
 
@@ -94,7 +94,7 @@ The resolved sub-decisions:
   versus the old single pass. That is not new overhead — it is the Framing Pass debt
   finally paid on the table instead of skipped. In exchange it **buys back the ADR-0007
   reshoot tax** (EP09's 8-10x regenerations on scenes conjured from text against the wrong
-  base). One deliberate gate is cheaper than a hundred reshoots.
+  base). One deliberate gate is cheaper than the EP09-scale reshoot tax.
 
 ## Consequences
 

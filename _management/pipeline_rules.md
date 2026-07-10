@@ -1,5 +1,5 @@
 # PRODUCTION PIPELINE & QUALITY ASSURANCE
-> **Version:** 2.7 | **Last Updated:** 2026-07-07
+> **Version:** 2.7
 > Always refer to `_management/master.md` as the absolute source of truth.
 
 ---
@@ -68,7 +68,7 @@ Each gate is recorded **as data** in `_management/approvals.json` — one entry 
   - `episode-{XX}/03_direction/ep{XX}_concept_notes.md`
   - `_assets/cast/character_profiles.json` (character visual state for this episode)
 - **Tool:** Claude executes `_skills/robotiko-dramaturgy/SKILL.md`
-- **Output:** `episode-{XX}/03_direction/ep{XX}_dramaturgy.md`
+- **Output:** `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md`
 - **Format:** Scene-by-scene table with: Shot ID, Timestamp, Visual Description, Mood/Lighting, Characters, User Override flag
 - **⛔ MANDATORY CHECKPOINT:** Human reviews and approves before Phase 3 begins.
 
@@ -160,7 +160,7 @@ what this ledger exists to prevent). One row per scene:
 ### Step 8: Motion Script Generation
 - **Input:**
   - Selected images from `04_visuals/selected/`
-  - Approved `ep{XX}_dramaturgy.md`
+  - Approved `ep{XX}_dramaturgy_v{VV}.md`
   - `ep{XX}_musical_metadata.json` (for beat sync)
 - **Tool:** Claude executes `_skills/robotiko-motion-script/SKILL.md` (v2.0)
 - **Output:** `episode-{XX}/05_video/ep{XX}_motion_script_v01.md`
@@ -240,7 +240,7 @@ Apply these to ALL clips before editing, to unify output from multiple AI tools 
   - [ ] Letterbox 2.35:1 applied
   - [ ] Beat sync verified
   - [ ] Color consistency (Kodachrome warmth preserved)
-  - [ ] 4K export confirmed
+  - [ ] 1080p export confirmed (project standard — source material is AI-generated at 1080p max)
   - [ ] No clean/sterile aesthetics — analog decay preserved
 
 #### Sync-QC Record (Mandatory Evidence)
@@ -276,7 +276,7 @@ episode's edit produces a committed sync-QC record from the template:
 ### Step 12.5: YouTube Metadata Review
 - **Reference:** `_management/youtube_metadata_standards.md`
 - **Verify before upload:**
-  - [ ] Title follows `[Hook] | ROBOTIKO v2.0` format (no episode number, no genre label)
+  - [ ] Title follows `[Hook] | ROBOTIKO v2.0 EP{XX} | Cinematic AI Series` format (max 80 chars; "Cinematic AI Series" is the only genre signal)
   - [ ] Description first 3 lines = AI categorization signal
   - [ ] Tags use layered approach (no genre tags, AI + format tags present)
   - [ ] Category: Film & Animation

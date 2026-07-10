@@ -59,7 +59,7 @@
 - **Musical Moment:** [What is happening in the music at this exact moment]
 - **Visual Description:** [Full scene description]
 - **Characters:** [List with current visual state]
-- **Video Tech Strategy:** [Standard / Start-End Keyframes / Extension]
+- **Video Tech Strategy:** [Standard / Start-End Keyframes]
 - **Composition Notes:** [Headroom, breathing space for camera movement, depth]
 - **User Override:** [YES / NO]
 

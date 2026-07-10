@@ -5,8 +5,9 @@ pipeline's validation backbone — the "why", so the next contributor (or the ne
 us) inherits the reasoning instead of re-deriving it.
 
 Format: Status · Context · Decision · Consequences. One decision per file.
-ADRs are immutable once Accepted; to change a decision, add a new ADR that
-supersedes the old one (don't rewrite history).
+The decision in an Accepted ADR is never rewritten; dated clarification notes
+may be appended (see ADR-0007's "Note on empirical claims"). To change a
+decision, add a new ADR that supersedes the old one.
 
 | ADR | Title | Status |
 |---|---|---|

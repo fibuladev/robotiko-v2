@@ -1,5 +1,5 @@
 # FILE NAMING CONVENTION
-> **Version:** 2.0 | **Last Updated:** 2026-02-23
+> **Version:** 2.1
 > All files in this project must follow this convention without exception.
 > The `robotiko-naming-enforcer` skill validates compliance automatically.
 
@@ -148,7 +148,7 @@ _memory/decisions_log.md
 2. **Always two digits** for version numbers. `v1` is invalid. `v01` is correct.
 3. **No spaces** in filenames. Use underscores only.
 4. **No uppercase** in filenames except for `SKILL.md` and `CHANGELOG.md`.
-5. **Tool name in video files:** Always specify the generation tool (`kling`, `veo`).
+5. **Tool name in video files:** Always specify the generation tool (`kling`, `veo`, `seedance` — or any tool later added to `project_metadata.json`).
 6. **Musical metadata has no version suffix** — it is always the single source of truth per episode. If it needs updating, overwrite and commit with a descriptive message.
 7. **Selected files have no version suffix** — selection is a curation decision, not an iteration.
 8. **Sub-clip suffix** uses lowercase letters (a, b, c, d) appended directly to the scene number. This pattern is used for: keyframe pairs (start/end), multi-clip sub-clips, and supplementary images. Example: `ep02_s07a` (keyframe start), `ep02_s29c` (third sub-clip of scene 29).
@@ -189,6 +189,7 @@ EP{XX} - {Stage} - {Brief Description}
 | `MASTER` | Master.md updated |
 | `PIPELINE` | Pipeline rules updated |
 | `ARCH` | Architecture updated |
+| `MEMORY` | `_memory/` files updated (lessons, todo, decisions log) |
 
 **Examples:**
 ```

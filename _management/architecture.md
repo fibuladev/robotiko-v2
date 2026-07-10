@@ -1,10 +1,11 @@
 # SYSTEM ARCHITECTURE
-> **Version:** 3.0 | **Last Updated:** 2026-07-05
+> **Version:** 3.1
 >
+> **v3.1 (2026-07-10):** reconciled with the 2026-07-07 two-phase visual-prompts redesign (ADR-0013): the human-gate count is now three (adds GATE 1R), the approval ledger (`_management/approvals.json`) is documented as built rather than roadmap, the check-group count is now 11 (adds the energy-motion sync advisory check and the forbidden-terms gate), stale hard counts (grade-the-graders test count, naming-check count) were reconciled or de-hardened, and the repository-structure tree now lists `approvals.json`, `dissonance_registry.md`, and the `06_edit/` sync-QC record.
 > **v3.0 (2026-07-05):** document matches repository reality 1:1; dead hook references removed. Enforcement is now described as its actual two-layer reality — a local one-gate command `python tests/run_all.py` and the CI workflow `.github/workflows/validation_suite.yml`, both running the identical entrypoint. A write-time Claude Code PostToolUse naming hook (`tests/naming_check_hook.py` + a `.claude/settings.json` Write matcher) existed and was removed 2026-07-04 after proving inert — it never fired — so enforcement is consolidated in CI.
 > **v2.1 (2026-06-11):** Binary storage moved from the earlier S3 plan to **local disk + Google Drive via the custom MCP server** (`_tools/mcp-gdrive/`). Toolchain refreshed (Suno + BandLab, Nano Banana, Kling / Veo / Seedance 1.0, CapCut). Enforcement layer documented as a first-class subsystem. The two human approval gates are now first-class architectural elements.
 
-This is a **repo-as-studio**: a single git repository that operates as a complete film-production company for one person. Claude (via Claude Code) acts as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates). Every stage is traceable: **Output of Step N = Input of Step N+1.**
+This is a **repo-as-studio**: a single git repository that operates as a complete film-production company for one person. Claude (via Claude Code) acts as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (three approval gates). Every stage is traceable: **Output of Step N = Input of Step N+1.**
 
 ---
 
@@ -44,7 +45,13 @@ This is a **repo-as-studio**: a single git repository that operates as a complet
         DRAMATURGY ════════════════════►  ✋ HUMAN GATE 1  (approve scene breakdown)
                   │                            (Claude · robotiko-dramaturgy)
                   ▼
-        VISUAL PROMPTS                     (Claude · robotiko-visual-prompts + mandatory suffix)
+        REF AUTHORING (Phase 1)            (Claude · robotiko-visual-prompts + mandatory suffix)
+                  │
+                  ▼
+                  ══════════════════════►  ✋ HUMAN GATE 1R  (approve reference image set as real pixels)
+                  │
+                  ▼
+        SCENE AUTHORING (Phase 2)          (Claude · robotiko-visual-prompts, framed to approved pixels)
                   │
                   ▼
         IMAGE GEN                          (Nano Banana → 04_visuals/raw/)
@@ -87,13 +94,14 @@ Human listens to audio + finds BPM/Key (vocalremover.org) + timestamps lyrics
 
 Every scene, every visual, and every camera move is anchored to this JSON's timeline. The pipeline does not advance past metadata without it.
 
-### The Two Human Gates (first-class architecture)
+### The Three Human Gates (first-class architecture)
 
-The DAG has exactly two blocking edges. Everything else Claude executes and delivers autonomously.
+The DAG has exactly three blocking edges. Everything else Claude executes and delivers autonomously.
 
 | Gate | Position | Human reviews | Why it is irreplaceable |
 |---|---|---|---|
 | **GATE 1** | After Dramaturgy, before Visual Prompts | Scene breakdown, tone, station fidelity | Taste on narrative structure cannot be delegated |
+| **GATE 1R** | After Reference Authoring (Phase 1), before Scene Authoring (Phase 2) | Reference image set generated from Phase-1 prompts | The human generates and approves the reference images as real pixels before any scene prompt is written — the structural fix for the reshoot tax (ADR-0007, ADR-0013) |
 | **GATE 2** | After Motion Script, before Video Gen | Camera moves, tech strategy, tool/Element assignment | Video generation is the most expensive stage — approve before spend |
 
 ### Pipeline state (episode lifecycle)
@@ -102,11 +110,12 @@ An episode advances through a fixed sequence of stages, each producing the input
 
 ```
 scaffold → lyrics / music → concept notes → dramaturgy [HUMAN GATE 1]
-   → visual prompts → images → motion script [HUMAN GATE 2]
+   → ref authoring (Phase 1) [HUMAN GATE 1R] → scene authoring (Phase 2)
+   → images → motion script [HUMAN GATE 2]
    → video → edit → launch → social
 ```
 
-The two human gates are **gated by design, not gaps**: they are deliberate points where a person applies taste, not missing automation. Today the gate crossing is a human act of approval that Claude honors procedurally (per `pipeline_rules.md`) rather than a machine-recorded token — the invariant-coverage matrix lists both checkpoints under "gated by design." Machine linkage of approvals (a recorded, checkable approval artifact per gate) is on the roadmap, not yet built.
+The three human gates are **gated by design, not gaps**: they are deliberate points where a person applies taste, not missing automation. Machine linkage of approvals is built: each gate crossing is recorded as data in `_management/approvals.json` (episode, gate, artifact, sha256, date, note), and `pipeline_integrity.py` consumes the ledger — an artifact beyond a gate with no record fails CI. The sha256 pins which bytes were approved, so post-approval drift is visible.
 
 ---
 
@@ -127,7 +136,9 @@ robotiko-v2/
 │   ├── youtube_metadata_standards.md
 │   ├── invariant_coverage_matrix.md # What is Machine / Heuristic / Human / Gap enforced
 │   ├── case_study_validation_backbone.md
-│   ├── adr/                        # Architecture Decision Records (0001–0007 + README)
+│   ├── approvals.json               # sha256-pinned human-gate ledger (gates 1, 1R, 2)
+│   ├── dissonance_registry.md      # Ledger of sanctioned [DISSONANCE] shots
+│   ├── adr/                        # Architecture Decision Records (0001–0013 + README)
 │   ├── README.md
 │   └── project_metadata.json       # State — episode status + toolchain + MCP config
 │
@@ -177,7 +188,7 @@ robotiko-v2/
 │   └── select_videos.py            # Curate raw → selected (video)
 │
 ├── tests/                          # ENFORCEMENT — CI / QA validators (stdlib only)
-│   ├── run_all.py                  # THE ONE GATE — runs all 9 check groups, non-zero on any fail
+│   ├── run_all.py                  # THE ONE GATE — runs all 10 check groups, non-zero on any fail
 │   ├── naming_check.py             # Filename patterns + episode-number consistency
 │   ├── pipeline_integrity.py       # No silently-skipped pipeline steps
 │   ├── visual_prompt_validator.py  # Suffix · forbidden aesthetics · character phase · ref integrity
@@ -185,7 +196,7 @@ robotiko-v2/
 │   ├── musical_metadata_validator.py # JSON structure · vocabulary · timestamps · total_duration
 │   ├── motion_script_validator.py  # Video suffix · anti-spawn guard · camera diversity quotas
 │   ├── character_profiles_validator.py # Structural validation against character_profiles.schema.json
-│   ├── test_validators.py          # 41 grade-the-graders meta-tests
+│   ├── test_validators.py          # grade-the-graders meta-tests (count grows with every loosening)
 │   ├── fixtures/                   # Frozen BROKEN/GOOD regression pair + README.md
 │   └── README.md
 │
@@ -205,7 +216,7 @@ robotiko-v2/
     ├── 03_direction/   ep{XX}_concept_notes.md  ep{XX}_dramaturgy_v{VV}.md
     ├── 04_visuals/     ep{XX}_visual_prompts_v{VV}.md  raw/  selected/   (raw+selected gitignored)
     ├── 05_video/       ep{XX}_motion_script_v{VV}.md   raw/  selected/   (raw+selected gitignored)
-    ├── 06_edit/        ep{XX}_capcut_guide_v{VV}.md    (+ *.mp4 → gitignored, Drive)
+    ├── 06_edit/        ep{XX}_capcut_guide_v{VV}.md  ep{XX}_sync_qc_v{VV}.md  (+ *.mp4 → gitignored, Drive)
     └── 07_social_media/ stills/  reels/
 ```
 
@@ -270,9 +281,10 @@ The repo is one machine with five cooperating subsystems. Each maps to a directo
 │    episode status, toolchain, MCP config, global render settings.          │
 ├─────────────────────────────────────────────────────────────────────────┤
 │ 5. ENFORCEMENT    tests/ (one gate) + naming convention + GitHub Actions   │
-│    Guards correctness. `python tests/run_all.py` runs 9 check groups        │
+│    Guards correctness. `python tests/run_all.py` runs 10 check groups       │
 │    (naming, pipeline integrity, visual prompts, prompt hygiene, musical     │
-│    metadata, motion script, character profiles, meta-tests). CI runs the    │
+│    metadata, motion script, character profiles, meta-tests, doc            │
+│    reference integrity, energy-motion sync [advisory]). CI runs the        │
 │    identical command via validation_suite.yml and blocks the merge on red;  │
 │    create_episode.yml scaffolds episodes on dispatch. naming_convention.md  │
 │    is the contract these enforce. (A write-time naming hook was removed     │
@@ -289,7 +301,7 @@ check and CI are the same command, so a green terminal predicts a green pipeline
 
 | When | Mechanism | Checks |
 |---|---|---|
-| **Locally, before you push** | `python tests/run_all.py` (one gate) | Runs all 9 check groups below in sequence; exits non-zero if any fails. Standard-library only — no `pip install`. |
+| **Locally, before you push** | `python tests/run_all.py` (one gate) | Runs all 10 check groups below in sequence; exits non-zero if any fails. Standard-library only — no `pip install`. |
 | **In CI** | GitHub Actions — [`.github/workflows/validation_suite.yml`](../.github/workflows/validation_suite.yml) | Runs the identical `python tests/run_all.py` on every push and pull request, blocking the merge on failure (Python + action SHAs pinned). [`create_episode.yml`](../.github/workflows/create_episode.yml) scaffolds episodes on `workflow_dispatch`. |
 
 **Historical note:** a write-time Claude Code PostToolUse naming hook
@@ -300,17 +312,18 @@ longer describes it as live.
 
 ### The validation backbone
 
-`tests/run_all.py` is the whole gate. It runs **9 check groups**:
+`tests/run_all.py` is the whole gate. It runs **10 check groups (9 blocking + 1 advisory)**:
 
-1. **Naming convention** — `naming_check.py --full` (filename patterns + episode-number consistency; 85 checks)
+1. **Naming convention** — `naming_check.py --full` (filename patterns + episode-number consistency; count grows with the repo)
 2. **Pipeline integrity** — `pipeline_integrity.py --full` (no silently-skipped steps / missing gate outputs)
 3. **Visual prompt sweep** — `visual_prompt_validator.py --full` (mandatory suffix, forbidden aesthetics, per-episode character-phase with subject-guard + whitelist, and metadata-based **reference integrity**)
 4. **Prompt hygiene** — `prompt_hygiene_lint.py --full` (scoped: model-facing prompt strings must be plain-English ASCII; deliberately never reads canon)
 5. **Musical metadata** — `musical_metadata_validator.py --full` (JSON structure, energy/type vocabulary, timestamp monotonicity, total_duration match)
 6. **Motion script** — `motion_script_validator.py --full` (video suffix, anti-spawn guard, camera diversity quotas)
 7. **Character profiles** — `character_profiles_validator.py --full` (structural validation against `_assets/cast/character_profiles.schema.json`)
-8. **Validator meta-tests** — `test_validators.py` — **55 grade-the-graders tests**: the suite must FAIL the frozen BROKEN fixture and PASS the GOOD one, every loosening proven in both directions, plus a parser-coverage guard against the zero-scene false-green
+8. **Validator meta-tests** — `test_validators.py` — **grade-the-graders meta-tests (count grows with every loosening)**: the suite must FAIL the frozen BROKEN fixture and PASS the GOOD one, every loosening proven in both directions, plus a parser-coverage guard against the zero-scene false-green
 9. **Doc reference integrity** — `doc_reference_check.py` (backtick-quoted repo paths in load-bearing docs must exist on disk; present-tense claims about removed components fail; coverage matrix stays in sync with the `check_` functions that exist)
+10. **Energy-motion sync (advisory)** — `energy_motion_check.py` (visual motion intensity vs musical energy; exemptions ledgered in `dissonance_registry.md`)
 
 A green run certifies only the machine-checked invariants. The
 [`invariant_coverage_matrix.md`](invariant_coverage_matrix.md) is the honesty ledger,

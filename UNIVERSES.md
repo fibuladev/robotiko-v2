@@ -8,9 +8,9 @@ A registry of projects that forked the ROBOTIKO v2.0 **method** (MIT-licensed
 > [docs/fork-dry-run.md](docs/fork-dry-run.md) is the author's own timed run of it
 > against a second universe — including the one thing that broke.
 
-**This list is empty right now, by design, not by failure.** The repo goes
-public around EP10's release — this file is here from day one so the first
-fork has somewhere to be counted. Entry #1 could be yours.
+**This list is empty right now, by design, not by failure.** The repo went
+public on EP10's release day — this file has been here from day one so the
+first fork has somewhere to be counted. Entry #1 could be yours.
 
 ## What qualifies
 

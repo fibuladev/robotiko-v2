@@ -1,7 +1,7 @@
 # EPISODE 01 — FILE MANIFEST
 
 **Title:** The Cycle Break / First Contact
-**Status:** COMPLETED (video produced) + Retroactive pipeline records created 2026-04-06
+**Status:** COMPLETED — launched on YouTube 2026-04-22; retroactive pipeline records created 2026-04-06 (live status: `_management/project_metadata.json`)
 **Station:** The Commanding Self (Arrogance — full)
 **Phase:** Phase 1: Awakening (PRISTINE)
 

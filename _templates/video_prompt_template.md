@@ -7,7 +7,7 @@
 
 ## PRE-GENERATION CHECKLIST (Claude reads these before writing a single motion prompt)
 
-- [ ] `episode-{XX}/03_direction/ep{XX}_dramaturgy.md` → APPROVED scene breakdown
+- [ ] `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` → APPROVED scene breakdown
 - [ ] `episode-{XX}/04_visuals/selected/` → Selected images confirmed
 - [ ] `episode-{XX}/02_music/ep{XX}_musical_metadata.json` → Beat sync reference
 - [ ] `_management/master.md` → Tone, station, energy arc
@@ -49,7 +49,7 @@
 | 16–30s | **Multi-Clip** | ⌈duration / 10⌉ clips | Each sub-clip gets own camera move |
 | 30s+ | **Multi-Clip** | ⌈duration / 10⌉ clips | May need supplementary images |
 
-**Motion Strength Scale:** 1 = Barely breathing / 5 = Cinematic drama / 10 = Chaos and disintegration
+**Motion Strength Scale:** 1 = Barely breathing / 5 = Deliberate cinematic movement / 10 = Chaos and disintegration
 
 ---
 

@@ -17,6 +17,9 @@ Check groups:
   9. Doc reference integrity — curated docs' backtick paths exist · no hook-rot · matrix sync
  10. Energy-motion sync     — ADVISORY tier: clip Motion Strength vs the musical
      section's energy band (heuristic; warnings are printed but never block)
+ 11. Forbidden terms        — public prose (canon docs, direction notes, musical
+     metadata) never names a banned religion/order/sect/scripture term; a narrow,
+     pinned allowlist covers the one sanctioned mention (the rule that bans it)
 
 Dependencies: standard library only. No `pip install`, nothing to pin at the
 package level — the strongest form of dependency hygiene. The toolchain (Python
@@ -53,6 +56,7 @@ CHECK_GROUPS = [
     ("Validator meta-tests", [sys.executable, "-m", "unittest", "tests.test_validators"]),
     ("Doc reference integrity", [sys.executable, "tests/doc_reference_check.py"]),
     ("Energy-motion sync (advisory)", [sys.executable, "tests/energy_motion_check.py", "--full"]),
+    ("Forbidden terms",       [sys.executable, "tests/forbidden_terms_gate.py", "--full"]),
 ]
 
 

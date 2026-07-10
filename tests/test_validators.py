@@ -88,6 +88,12 @@ _raspec = importlib.util.spec_from_file_location(
 ra = importlib.util.module_from_spec(_raspec)
 _raspec.loader.exec_module(ra)
 
+_ftspec = importlib.util.spec_from_file_location(
+    "forbidden_terms_gate", os.path.join(TESTS_DIR, "forbidden_terms_gate.py")
+)
+ftg = importlib.util.module_from_spec(_ftspec)
+_ftspec.loader.exec_module(ftg)
+
 # Frozen style/eye fixtures (ADR-0009 / ADR-0010), both directions.
 STYLE_EYE_BAD = os.path.join(FIXTURES, "ep07_style_eye_v2_BAD.md")
 STYLE_EYE_GOOD = os.path.join(FIXTURES, "ep07_style_eye_v2_GOOD.md")
@@ -101,6 +107,9 @@ QUOTEDSENTINEL_GOOD = os.path.join(FIXTURES, "ep10_visual_prompts_QUOTEDSENTINEL
 
 DOC_REF_BAD = os.path.join(FIXTURES, "doc_ref_BAD.md")
 DOC_REF_GOOD = os.path.join(FIXTURES, "doc_ref_GOOD.md")
+
+FORBIDDEN_TERMS_BAD = "tests/fixtures/forbidden_terms_BAD.md"
+FORBIDDEN_TERMS_GOOD = "tests/fixtures/forbidden_terms_GOOD.md"
 
 OVERLAY_GOOD = os.path.join(FIXTURES, "musical_metadata_overlay_GOOD.json")
 OVERLAP_BAD = os.path.join(FIXTURES, "musical_metadata_overlap_BAD.json")
@@ -1779,6 +1788,212 @@ class TestUniverseConfigIsLive(unittest.TestCase):
         # Restored: the ROBOTIKO suffix passes again (no leaked state).
         self.assertEqual(
             vpv.check_suffix([{"index": 1, "text": f"a chrome android, {orig_cfg}"}]), [])
+
+
+# ─────────────────────────────────────────────
+# Forbidden-terms gate — religion/order/sect/scripture names in public prose.
+# Graded both directions: the frozen BAD/GOOD fixtures, the term-matching pattern
+# (word-ish boundary + diacritic normalization), the scope predicate, and the
+# allowlist isolation proof (same word fires here, is silenced there).
+# ─────────────────────────────────────────────
+
+class TestForbiddenTermsFrozenFixtures(unittest.TestCase):
+    """The regression pair. If either direction flips, this grader has rotted."""
+
+    def test_bad_fixture_fails(self):
+        findings = ftg.check_forbidden_terms(FORBIDDEN_TERMS_BAD, REPO_ROOT)
+        self.assertTrue(findings, "BAD fixture must not validate clean — it carries 'Sufi'.")
+        self.assertTrue(any("sufi" in m for _s, m in findings), findings)
+
+    def test_good_fixture_passes_clean(self):
+        findings = ftg.check_forbidden_terms(FORBIDDEN_TERMS_GOOD, REPO_ROOT)
+        self.assertEqual(findings, [], f"GOOD fixture must pass clean. Got: {findings}")
+
+    def test_good_fixture_is_term_adjacent_not_vacuous(self):
+        # Prove the GOOD fixture is a real proximity test, not an empty/unrelated file:
+        # it mentions 'wisdom tradition' and 'Anatolia' without naming a banned term.
+        with open(os.path.join(REPO_ROOT, FORBIDDEN_TERMS_GOOD), encoding="utf-8") as f:
+            text = f.read().lower()
+        self.assertIn("wisdom tradition", text)
+        self.assertIn("anatolia", text)
+
+
+class TestForbiddenTermsMatching(unittest.TestCase):
+    """The pure matcher: word-ish boundaries and diacritic-insensitive normalization,
+    graded directly with synthetic text — no file I/O, no scope decision."""
+
+    def test_catches_plain_term(self):
+        hits = ftg.find_terms_in_text("a line naming the Sufi tradition directly")
+        self.assertEqual([t for _l, t in hits], ["sufi"])
+
+    def test_catches_diacritic_variants(self):
+        text = " lodges kept an  and met at the dergâh"
+        hits = {t for _l, t in ftg.find_terms_in_text(text)}
+        self.assertEqual(hits, {"halveti", "", "dergah"})
+
+    def test_word_boundary_ignores_substring_inside_longer_word(self):
+        # 'sufficient' must NOT trip 'sufi'; 'islanders' must not trip anything.
+        hits = ftg.find_terms_in_text("a sufficient number of islanders gathered")
+        self.assertEqual(hits, [])
+
+    def test_case_insensitive(self):
+        hits = ftg.find_terms_in_text("SUFI, Sufi, sUfI")
+        self.assertEqual(len(hits), 3)
+
+    def test_multiple_terms_on_one_line_each_reported(self):
+        hits = ftg.find_terms_in_text("a Sunni and Alevi framing, both named directly")
+        self.assertEqual({t for _l, t in hits}, {"sunni", "alevi"})
+
+    def test_line_numbers_are_one_indexed_and_accurate(self):
+        text = "clean line one\nclean line two\na Quran reference here\nclean again"
+        hits = ftg.find_terms_in_text(text)
+        self.assertEqual(hits, [(3, "quran")])
+
+    def test_clean_text_is_silent(self):
+        text = "the broader wisdom tradition of Anatolia, the hair-thin crossing"
+        self.assertEqual(ftg.find_terms_in_text(text), [])
+
+
+class TestForbiddenTermsScope(unittest.TestCase):
+    """in_scope mirrors the SPEC scope list exactly: top-level *.md (not recursive),
+    the named directories recursively, the two episode subpaths — and explicitly
+    excludes fixtures, lyrics, and anything not on the list."""
+
+    def test_top_level_md_is_in_scope(self):
+        self.assertTrue(ftg.in_scope("README.md"))
+        self.assertTrue(ftg.in_scope("CONTRIBUTING.md"))
+
+    def test_nested_non_curated_md_is_not_top_level(self):
+        # A random nested .md outside the named dirs is not swept in just for
+        # living somewhere under the repo.
+        self.assertFalse(ftg.in_scope("episode-05/04_visuals/notes.md"))
+
+    def test_management_recursive_including_adr(self):
+        self.assertTrue(ftg.in_scope("_management/master.md"))
+        self.assertTrue(ftg.in_scope("_management/adr/0013-two-phase-visual-prompts.md"))
+
+    def test_named_directories_recursive(self):
+        for p in (
+            "docs/getting-started.md",
+            "_memory/lessons.md",
+            "_memory/todo.md",
+            "_skills/robotiko-dramaturgy/SKILL.md",
+            "_templates/some_template.md",
+            "_assets/notes/x.md",
+            ".github/workflows/notes.md",
+        ):
+            self.assertTrue(ftg.in_scope(p), f"{p} must be in scope")
+
+    def test_episode_direction_notes_in_scope(self):
+        self.assertTrue(ftg.in_scope("episode-05/03_direction/ep05_concept_notes.md"))
+        self.assertTrue(ftg.in_scope("episode-05/03_direction/ep05_dramaturgy_v01.md"))
+
+    def test_episode_direction_subfolder_not_swept(self):
+        # Only direct children of 03_direction/, not an arbitrary nested file.
+        self.assertFalse(ftg.in_scope("episode-05/03_direction/drafts/scratch.md"))
+
+    def test_musical_metadata_json_in_scope(self):
+        self.assertTrue(ftg.in_scope("episode-08/02_music/ep08_musical_metadata.json"))
+
+    def test_other_json_not_in_scope(self):
+        self.assertFalse(ftg.in_scope("_assets/cast/character_profiles.json"))
+
+    def test_fixtures_excluded(self):
+        self.assertFalse(ftg.in_scope("tests/fixtures/forbidden_terms_BAD.md"))
+        self.assertFalse(ftg.in_scope("tests/fixtures/anything_else.md"))
+
+    def test_lyrics_excluded(self):
+        self.assertFalse(ftg.in_scope("episode-05/01_lyrics/ep05_lyrics_v01.md"))
+
+    def test_private_and_launch_not_listed_so_out_of_scope(self):
+        self.assertFalse(ftg.in_scope("_private/audit/x.md"))
+        self.assertFalse(ftg.in_scope("_launch/plan.md"))
+
+    def test_gitignored_files_never_reach_scope_via_tracked_files(self):
+        # Structural proof: the live scanner only ever calls in_scope() on
+        # git-tracked paths (in_scope_tracked_files), so a gitignored file's
+        # scope-membership is moot -- it is never offered to in_scope() at all.
+        tracked = ftg.tracked_files(REPO_ROOT)
+        self.assertNotIn("_private/audit/x.md", tracked)
+        self.assertFalse(any(t.startswith("episode-05/04_visuals/raw/") for t in tracked),
+                         "gitignored raw/ renders must not be tracked")
+
+
+class TestForbiddenTermsAllowlistIsolation(unittest.TestCase):
+    """The allowlist mechanism, proven both directions with synthetic lines (no file
+    I/O): the pinned substring suppresses ITS line only; the identical banned word on
+    another line in the SAME file still fires. This is the isolation proof the SPEC
+    requires -- allowlisting must be narrow, never a whole-file or whole-word pass."""
+
+    def test_pinned_line_is_suppressed_same_word_elsewhere_still_fires(self):
+        lines = [
+            "intro line, nothing here",
+            'The word "Sufi" is FORBIDDEN anywhere in the project, per this rule.',
+            "elsewhere in the same file: a Sufi lodge is described directly",
+        ]
+        text = "\n".join(lines)
+        hits = ftg.find_terms_in_text(text)
+        self.assertEqual([t for _l, t in hits], ["sufi", "sufi"],
+                         "both raw mentions must be found before allowlisting")
+
+        allow = [{"substring": 'The word "Sufi" is FORBIDDEN anywhere in the project'}]
+        filtered = ftg.filter_allowlisted(hits, lines, allow)
+        self.assertEqual(filtered, [(3, "sufi")],
+                         "line 2 (the rule's own mention) is suppressed; line 3 still fires")
+
+    def test_allowlist_is_per_file_not_global(self):
+        # The same pinned substring in a DIFFERENT file's ALLOWLIST entry must not
+        # suppress a hit in a file that has no entry of its own.
+        findings = ftg.check_forbidden_terms(FORBIDDEN_TERMS_BAD, REPO_ROOT)
+        self.assertTrue(findings, "a file with no ALLOWLIST entry must not be silenced "
+                                   "by another file's allowlisted substring")
+
+    def test_no_allow_entries_returns_hits_unchanged(self):
+        hits = [(1, "sufi"), (2, "islamic")]
+        self.assertEqual(ftg.filter_allowlisted(hits, ["a", "b"], []), hits)
+
+
+class TestForbiddenTermsSeededAllowlistEntry(unittest.TestCase):
+    """The real, live seed: _memory/lessons.md's rule line naming 'Sufi' as the rule's
+    own object. The real file must pass -- proving the seeded entry actually pins the
+    real line, not a stale/typo'd substring that silently allows nothing."""
+
+    def test_lessons_md_allowlist_entry_is_registered(self):
+        self.assertIn("_memory/lessons.md", ftg.ALLOWLIST)
+
+    def test_pinned_substring_matches_the_real_line_in_lessons_md(self):
+        entry = ftg.ALLOWLIST["_memory/lessons.md"][0]
+        with open(os.path.join(REPO_ROOT, "_memory", "lessons.md"), encoding="utf-8") as f:
+            lines = f.read().splitlines()
+        matches = [ln for ln in lines if entry["substring"] in ln]
+        self.assertEqual(len(matches), 1,
+                         f"the pinned substring must match exactly one real line. Got: {matches}")
+
+    def test_real_lessons_md_passes_the_gate(self):
+        findings = ftg.check_forbidden_terms("_memory/lessons.md", REPO_ROOT)
+        self.assertEqual(findings, [],
+                         f"the one 'Sufi' mention in lessons.md is the rule's own "
+                         f"object and must be allowlisted. Got: {findings}")
+
+
+class TestForbiddenTermsRunner(unittest.TestCase):
+    """The CLI-facing entry points return the right exit-code shape (0 clean, 1 dirty)
+    -- exercised directly against the frozen fixtures via check_forbidden_terms, the
+    same function run_full/run_file call per file."""
+
+    def test_bad_fixture_would_exit_nonzero(self):
+        findings = ftg.check_forbidden_terms(FORBIDDEN_TERMS_BAD, REPO_ROOT)
+        self.assertTrue(len(findings) > 0)
+
+    def test_good_fixture_would_exit_zero(self):
+        findings = ftg.check_forbidden_terms(FORBIDDEN_TERMS_GOOD, REPO_ROOT)
+        self.assertEqual(len(findings), 0)
+
+    def test_missing_file_is_silent_not_a_crash(self):
+        # check_forbidden_terms is scope-agnostic and tolerant of a bad path (mirrors
+        # doc_reference_check's curated-doc-not-found handling one layer up).
+        self.assertEqual(
+            ftg.check_forbidden_terms("tests/fixtures/does_not_exist_xyz.md", REPO_ROOT), [])
 
 
 if __name__ == "__main__":

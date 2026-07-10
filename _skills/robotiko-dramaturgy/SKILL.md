@@ -1,5 +1,5 @@
 # SKILL: robotiko-dramaturgy
-> **Version:** 1.0 | **Last Updated:** 2026-02-24
+> **Version:** 1.0
 > **Trigger:** `"Create dramaturgy for EP{XX}"`
 > **Output:** `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md`
 
@@ -129,7 +129,7 @@ For complex scenes that will likely need Start/End keyframe video strategy, prov
 - Musical moment description
 - Full visual description
 - Characters with current visual state
-- Suggested video tech strategy (Standard / Start-End / Extension)
+- Suggested video tech strategy (Standard / Start-End Keyframes — Extension is deprecated; scenes longer than one clip are covered by the motion script's Duration Coverage Strategy)
 - Composition notes (headroom, depth, breathing space)
 - User override flag
 
@@ -201,9 +201,9 @@ Before delivering the dramaturgy to the human, verify:
 
 After human approves the dramaturgy:
 1. The dramaturgy becomes the input for `_skills/robotiko-visual-prompts/SKILL.md`
-2. Each scene in the breakdown table will be converted to a standalone image generation prompt
-3. The mandatory visual suffix will be appended to each prompt
-4. Image generation begins (Nano Banana)
+2. Phase 1 authors the episode's reference prompts (environments, body states, groups); the human generates and approves the reference images at gate 1R
+3. Phase 2 converts each scene in the breakdown table to a standalone prompt framed to the approved reference pixels, each ending with the mandatory visual suffix
+4. Scene image generation begins (Nano Banana)
 
 **The dramaturgy is the foundation. If it is weak, everything built on it will be weak.**
 

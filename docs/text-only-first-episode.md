@@ -18,8 +18,9 @@ universe before it stopped.
 - **Claude Code** — the director and crew. It reads [`CLAUDE.md`](../CLAUDE.md) on
   session start.
 - **A public-domain song** — a recording you can legally listen to and reference. Public
-  audio archives (e.g. pre-1929 recordings, or works released under a permissive
-  licence) are full of them. You need to be able to *hear* it, because the pipeline is
+  audio archives (e.g. recordings old enough to have entered the public domain in your
+  country — the cutoff differs by jurisdiction and, for sound recordings, is stricter
+  than for written works — or works released under a permissive licence) are full of them. You need to be able to *hear* it, because the pipeline is
   driven by the song's structure.
 - **A free BPM/key finder** — the musical-metadata skill points at one
   ([vocalremover.org/key-bpm-finder](https://vocalremover.org/key-bpm-finder)); any
@@ -96,24 +97,33 @@ against pixels. Full reasoning: [two-phase-visual-prompts.md](two-phase-visual-p
 Tonight you can do Phase 1 in full and for free: Claude emits the reference prompts
 (each ending in your mandatory `VISUAL_SUFFIX`), the locks, the coverage map, and a
 sentinel that marks the scenes as intentionally pending. The visual sweep validates that
-Phase-1 file as a **partial pass** — "Phase 1 only: N reference prompts validated, 0
-scenes (pending)" — checking the suffix, forbidden aesthetics, and phase-correct
+Phase-1 file as a **partial pass** — "PHASE 1 ONLY - Phase-1 deliverable: reference prompts validated,
+0 scenes (pending Phase 2)" — checking the suffix, forbidden aesthetics, and phase-correct
 character state on the reference prompts. What you **cannot** do for free is Phase 2: the
 scene prompts wait for real reference images, and generating those images is the first
 paid step. So on the zero-cost path, the visual stage's honest finish line is a green
 **Phase-1** deliverable, not a full scene list.
 
-### Stage 4 — Motion script → **HUMAN GATE 2**
+### Stage 4 — Motion script (the second honest wall)
 
 Trigger: **"Generate motion script for EP01."** Skill:
 [`_skills/robotiko-motion-script/SKILL.md`](../_skills/robotiko-motion-script/SKILL.md).
 
-Claude writes the shot list: camera move per clip, tool assignments, beat sync, each
-motion prompt ending in your `VIDEO_SUFFIX` and carrying the anti-spawn guard. The
-motion-script validator enforces the camera-diversity rules (no single move over 30%,
-a `Static` floor, local variety, an accent-move budget, one move per clip). **Then you
-stop again** — the second mandatory gate — and approve the camera language before any
-video would be made.
+Here the free path hits its second honest wall. The motion-script skill's prerequisite
+is that **scene images already exist** — the numbered keepers in
+`episode-{XX}/04_visuals/selected/` or `raw/`. On the zero-cost path they do not: Phase 2
+was never written, and no image was ever generated. Triggered as-is, the crew reads its
+prerequisite and **STOPs, correctly** — it will not author a shot list against images
+that aren't there. (There is no Gate 2 to reach tonight, because there is nothing to
+approve past it.)
+
+So the zero-cost finish line is **three text artifacts and Gate 1**: the musical
+metadata JSON, the approved dramaturgy, and a green Phase-1 visual deliverable. If you
+want to study what a full motion script looks like — camera move per clip, tool
+assignments, beat sync, the `VIDEO_SUFFIX` and anti-spawn guard on every prompt, the
+camera-diversity rules the validator enforces — read a shipped one
+([`../episode-07/05_video/ep07_motion_script_v01.md`](../episode-07/05_video/ep07_motion_script_v01.md))
+rather than generating a hollow one against images that do not exist.
 
 ---
 
@@ -123,11 +133,12 @@ video would be made.
 python tests/run_all.py
 ```
 
-Four text artifacts — the visual one green at its Phase-1 finish line — both gates
-recorded, and, on a clean episode, a green gate. You have proven the *process* end to
-end and paid nothing. What you do **not** have is a watchable film: no images, no
-clips, no edit — and, honestly stated, no scene prompts either, because those are now
-written in Phase 2 against real reference images. That is deliberate, and it is worth
+Three text artifacts — the musical metadata JSON, the approved dramaturgy, and the
+visual deliverable green at its Phase-1 finish line — with Gate 1 recorded and the whole
+suite passing. You have proven the *process* end to end and paid nothing. What you do
+**not** have is a watchable film: no images, no clips, no edit — no motion script
+either (its skill stopped for want of scene images), and, honestly stated, no scene
+prompts, because those are now written in Phase 2 against real reference images. That is deliberate, and it is worth
 saying in the method's own words: *the repo tracks the ref PROMPT + geometry note — the
 reproducible spec. It does not track the pixels. Your fork generates its own refs from
 the same prompt; they will differ; Phase 2 frames to YOURS. Process reproducible;

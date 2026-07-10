@@ -8,7 +8,7 @@ pipeline. Read this guide to understand what a skill is, how one is built, what 
 how a single trigger phrase walks an episode from music to a stage-gated, reviewable deliverable.
 
 Related reading: [`../_skills/README.md`](../_skills/README.md) for the short index,
-[`../_management/pipeline_rules.md`](../_management/pipeline_rules.md) for the full pipeline and the two
+[`../_management/pipeline_rules.md`](../_management/pipeline_rules.md) for the full pipeline and its
 human gates, and [`../CLAUDE.md`](../CLAUDE.md) for the trigger-phrase table the crew obeys at session start.
 
 ---
@@ -51,7 +51,7 @@ the exact file the stage must produce.
 
 ```
 # SKILL: robotiko-dramaturgy
-> Version: 1.0 | Last Updated: 2026-02-24
+> Version: 1.0
 > Trigger: "Create dramaturgy for EP{XX}"
 > Output: episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md
 ```
@@ -113,14 +113,14 @@ revisions increment to `v02`, `v03`; each version is a complete document, never 
 
 ## 3. The Ten Skills
 
-The full crew, in pipeline order. Triggers and outputs are taken verbatim from each
+The full crew, in pipeline order. Triggers and outputs follow each
 [`../_skills/`](../_skills/) `SKILL.md` header.
 
 | Skill | Trigger phrase | Key inputs | Output |
 |---|---|---|---|
 | [`robotiko-musical-metadata`](../_skills/robotiko-musical-metadata/SKILL.md) | `"Create musical metadata for EP{XX}"` | Human-provided BPM, key, timestamped lyrics; `master.md` for inference | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` |
 | [`robotiko-dramaturgy`](../_skills/robotiko-dramaturgy/SKILL.md) | `"Create dramaturgy for EP{XX}"` | `master.md`, `musical_metadata.json`, `concept_notes.md`, `character_profiles.json` | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` |
-| [`robotiko-visual-prompts`](../_skills/robotiko-visual-prompts/SKILL.md) | `"Generate visual prompts for EP{XX}"` | Approved dramaturgy, `master.md`, `character_profiles.json`, master reference images | `episode-{XX}/04_visuals/ep{XX}_visual_prompts_v{VV}.md` |
+| [`robotiko-visual-prompts`](../_skills/robotiko-visual-prompts/SKILL.md) | `"Generate visual prompts for EP{XX}"` | Approved dramaturgy, `master.md`, `character_profiles.json`, master reference images | `..._visual_prompts_v01.md` (Phase 1: references) → `..._v02.md` (Phase 2: scenes) |
 | [`robotiko-motion-script`](../_skills/robotiko-motion-script/SKILL.md) | `"Generate motion script for EP{XX}"` | Approved dramaturgy, `musical_metadata.json`, selected images, `master.md` | `episode-{XX}/05_video/ep{XX}_motion_script_v{VV}.md` |
 | [`robotiko-episode-scaffold`](../_skills/robotiko-episode-scaffold/SKILL.md) | `"Scaffold EP{XX}"` | `architecture.md`, `naming_convention.md`, `project_metadata.json` | Full folder structure under `episode-{XX}/` |
 | [`robotiko-naming-enforcer`](../_skills/robotiko-naming-enforcer/SKILL.md) | `"Validate file names"` (or `"Validate file names for EP{XX}"`) | `naming_convention.md` | Compliance report (printed to chat) |
@@ -191,26 +191,30 @@ work and asks the project's standing question: *"Would Fibula approve this?"*
 
 **5. The human-approval gate follows.**
 
-Dramaturgy is one of the two mandatory checkpoints. The document is delivered with its approval checkboxes
+Dramaturgy is one of the two mandatory creative checkpoints. The document is delivered with its approval checkboxes
 *unticked*. Nothing downstream moves until a human reviews the scene breakdown and approves it. Only then
 does the approved dramaturgy become the primary input to
-[`../_skills/robotiko-visual-prompts/SKILL.md`](../_skills/robotiko-visual-prompts/SKILL.md), which converts
-each scene row into a standalone Nano Banana image prompt.
+[`../_skills/robotiko-visual-prompts/SKILL.md`](../_skills/robotiko-visual-prompts/SKILL.md), which first
+authors the episode's reference prompts (Phase 1), stops at the reference gate for
+human-approved images, and then converts each scene row into a Nano Banana image prompt
+framed against those approved pixels (Phase 2).
 
 > The dramaturgy is the foundation. If it is weak, everything built on it will be weak.
 
 ---
 
-## 5. The Two Gates and the Two Suffixes
+## 5. The Gates and the Two Suffixes
 
-### Two mandatory human gates
+### Human approval gates
 
-Two stages — and only two — require explicit human approval before the pipeline may continue. Everything
-else the crew executes and delivers autonomously. Per
+Two stages require explicit human approval of **direction** before the pipeline may continue — dramaturgy
+and the motion script. From EP10 onward a third, mechanical checkpoint sits inside the visual stage: the
+reference gate. Everything else the crew executes and delivers autonomously. Per
 [`../_management/pipeline_rules.md`](../_management/pipeline_rules.md):
 
-1. **After Dramaturgy** — the human reviews and approves the scene breakdown before any visual work begins.
-2. **After Motion Script** — the human reviews camera moves, tool assignments, and video strategy before any
+1. **After Dramaturgy (gate 1)** — the human reviews and approves the scene breakdown before any visual work begins.
+2. **At the Reference Gate (gate 1R, EP10 onward)** — the human approves the generated reference images before any scene prompt is written.
+3. **After Motion Script (gate 2)** — the human reviews camera moves, tool assignments, and video strategy before any
    video is generated.
 
 These gates are where human authorship is asserted. The crew can propose an entire episode's direction in

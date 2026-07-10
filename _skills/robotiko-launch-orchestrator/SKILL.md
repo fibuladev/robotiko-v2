@@ -1,5 +1,5 @@
 # SKILL: robotiko-launch-orchestrator
-> **Version:** 2.1 | **Last Updated:** 2026-05-01
+> **Version:** 2.1
 > **Trigger:** `"Orchestrate EP{XX} launch"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_launch_checklist.md`
 
@@ -26,7 +26,7 @@ Coordinate the complete launch sequence for a finished episode — from pre-laun
 
 | # | File | What to Extract |
 |---|---|---|
-| 1 | `episode-{XX}/07_social_media/ep{XX}_youtube_package.md` | Title, description, chapters, tags, thumbnail guidance |
+| 1 | `episode-{XX}/07_social_media/ep{XX}_youtube_package.md` | Title, description, tags, thumbnail guidance |
 | 2 | `episode-{XX}/07_social_media/ep{XX}_social_atomization.md` | Clip list, captions, hashtags, release schedule |
 | 3 | `_management/project_metadata.json` | Episode status, previous episode status (for playlist linking) |
 | 4 | `_management/master.md` | Episode context for cross-referencing narrative continuity |
@@ -41,12 +41,12 @@ The output is a comprehensive checklist organized in launch phases:
 
 ```
 ## PRE-LAUNCH VERIFICATION
-- [ ] Final video export confirmed (4K, correct aspect ratio, audio sync verified)
+- [ ] Final video export confirmed (1080p, correct aspect ratio, audio sync verified)
 - [ ] YouTube package reviewed and approved
 - [ ] Social atomization clips reviewed and approved
 - [ ] Thumbnail created based on youtube_package.md guidance
 - [ ] Episode title and description proofread (no typos, correct episode number)
-- [ ] Chapter timestamps verified against actual video timeline
+- [ ] Description verified to contain NO timestamps/chapters (continuous-piece rule)
 - [ ] Tags are within YouTube's 500 character limit
 - [ ] Previous episode's end screen updated to link to this episode (if applicable)
 - [ ] Playlist updated to include this episode
@@ -111,7 +111,7 @@ After each episode launch, check if a banner/About section update is due:
 | After Episode | Banner Update | About Update |
 |---------------|--------------|--------------|
 | EP03 | Banner v2 — subtle cracks visible | Phase 2 About text |
-| EP06 | Banner v3 — near-monochrome, fragmenting | Phase 3 About text (reveals "one human + AI") |
+| EP06 | Banner v3 — near-monochrome, fragmenting | Phase 3 About text (expands on the "one human + AI" process — transparency has been explicit since EP01) |
 | EP08 | Banner v4 — dark with golden light in cracks | — |
 | EP10 | Banner v5 — full Kintsugi, gold light from within | Phase 4 About text + open source link |
 
@@ -129,7 +129,7 @@ Before launching, verify these narrative continuity items:
 |---|---|
 | **Previous episode end screen** | Does the previous episode's end screen link to this one? |
 | **Playlist order** | Is this episode in the correct position in the playlist? |
-| **Description consistency** | Does the "About ROBOTIKO v2.0" section match other episodes? |
+| **Description consistency** | Does the description follow the current 3-section template (hook / lore / credits) used by other episodes? |
 | **Character state progression** | Does the thumbnail/visual represent the correct phase? |
 | **Narrative spoilers** | Does the description avoid spoiling future episodes? |
 
@@ -155,7 +155,7 @@ EP10 is the series finale. The launch orchestration for EP10 includes additional
 ## OPEN SOURCE NOTE
 
 All episode descriptions may include: "The full production pipeline will be open source after the finale."
-EP10 description: "The journey is complete. The pipeline is open source: [GitHub link]"
+EP10 description: "The ten-episode arc is complete. The pipeline is open source: [GitHub link]"
 
 ## EP10 SPECIAL — SERIES FINALE
 - [ ] All 10 episodes verified in playlist (correct order)

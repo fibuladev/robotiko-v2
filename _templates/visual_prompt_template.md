@@ -286,7 +286,7 @@ Do not paraphrase or re-case it.
   their pace, unremarkable and belonging."]
 - **Characters Present:** [List with phase-appropriate visual state noted]
 - **Image Reference Path:** [Phase-correct ref from `phase_reference_map`, or N/A for no characters]
-- **Video Tech Strategy:** [Standard / Start-End Keyframes / Extension — from dramaturgy detail blocks]
+- **Video Tech Strategy:** [Standard / Start-End Keyframes — from dramaturgy detail blocks]
 - **Composition Notes:** [Headroom, breathing space, depth; AND name the ART DIRECTION LOCKS rules that
   bind this scene where they apply (SKILL 2.2) — gaze discipline, beside-space, active color band,
   spent/unspent budget, mouthless-face guard. Frame the angle to the ref geometry (Rule 4b); vary

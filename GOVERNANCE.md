@@ -61,10 +61,10 @@ that's the one gate, enforced identically in CI.
 **Branch protection** — the intended rule on `main` is that the
 `validation_suite` CI check is required to pass before merge. That's a
 GitHub repository setting, not something enforceable from inside the repo
-itself, so it can't be verified by reading a file here. It will be evidenced
-in a RELEASE.md written at go-public, once the setting is live and can be
-screenshotted or confirmed against the actual branch protection API — not
-claimed in advance of that.
+itself, so it can't be verified by reading a file here. It is evidenced in
+[RELEASE.md §3](RELEASE.md): the branch-protection API check runs at
+go-public, once the setting is live and can be confirmed against the actual
+branch protection API — not claimed in advance of that.
 
 ## Bus factor
 

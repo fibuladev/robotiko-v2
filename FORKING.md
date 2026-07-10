@@ -366,7 +366,7 @@ when your canon hit an assumption the method made for ROBOTIKO. That is how the 
 gets more general.
 
 > **ROBOTIKO canon is not your ceiling — the method is your floor.** The story here is
-> one universe the pipeline happened to grow up around. The suffix, the cast, the eight
+> one universe the pipeline happened to grow up around. The suffix, the cast, the seven
 > stations, the prog-rock aesthetic — all of it is yours to throw away. What is worth
 > keeping is the machine underneath: the stages, the two gates, and a single gate
 > command that stays honest about what it does and does not guarantee. Take that.

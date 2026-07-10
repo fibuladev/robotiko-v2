@@ -26,7 +26,7 @@
 
 ### Subject Details (Robotiko Phase 1)
 - Chrome/silver metallic body, highly reflective
-- Blue optical sensors (NOT glowing — describe as: "pale blue glass lenses set into chrome sockets, like polished sapphires, reflecting ambient light")
+- Blue optical sensors (NOT glowing — describe as: "steady blue optical lenses set into chrome sockets, like polished sapphires, reflecting ambient light")
 - Smooth, undamaged surface — no battle scars, no rust, no patina
 - Slight rim lighting from behind (cool blue) to separate from dark background
 - Posture: still, composed, perhaps slightly upward gaze — the arrogance of certainty
@@ -90,7 +90,7 @@ This is Banner v1. Future versions:
 | v2 | EP04-05 | Subtle cracks visible on chrome surface |
 | v3 | EP06-07 | Near-monochrome, fragmenting, mixed eye colors |
 | v4 | EP08-09 | Dark with golden light seeping through cracks |
-| v5 | EP10+ | Full Kintsugi — cracked but whole, gold light from within |
+| v5 | EP10 (release day onward) | Full Kintsugi — cracked but whole, gold light from within |
 
 Each banner update aligns with a YouTube About section update at the same phase boundary.
 

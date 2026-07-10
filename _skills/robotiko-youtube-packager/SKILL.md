@@ -1,5 +1,5 @@
 # SKILL: robotiko-youtube-packager
-> **Version:** 4.0 | **Last Updated:** 2026-05-22
+> **Version:** 4.0
 > **Trigger:** `"Package EP{XX} for YouTube"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_youtube_package.md`
 
@@ -22,12 +22,11 @@ Generate a complete YouTube metadata package for a finished episode: title, desc
 
 | # | File | What to Extract |
 |---|---|---|
-| 1 | `_management/youtube_metadata_standards.md` | Metadata standards, tag list, category, title format, description template |
+| 1 | `_management/youtube_metadata_standards.md` | Metadata standards, tag list, category, title format, description template, episode hooks, pinned comments, inspiration credits |
 | 2 | `_management/master.md` | Episode title, station, tone, key lyrics, logline, philosophical context |
 | 3 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Episode duration and musical context |
 | 4 | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` | Scene breakdown for thumbnail guidance |
 | 5 | `_management/project_metadata.json` | Episode status confirmation, series context |
-| 6 | `_management/youtube_metadata_standards.md` | Episode hooks, pinned comments, inspiration credits |
 
 ---
 
@@ -60,7 +59,7 @@ ROBOTIKO v2.0 — Episode {XX} of 10. A cinematic AI sci-fi series.
 
 THE LORE
 
-[Full episode lyrics from ep{XX}_lyrics.md, cleaned as poetry — see rules below]
+[Full episode lyrics from ep{XX}_lyrics_v{VV}.md (latest version), cleaned as poetry — see rules below]
 
 —
 
@@ -76,7 +75,7 @@ ROBOTIKO v2.0 — A 10-episode CyberAnatolian cinematic series.
 Previous: {title} → {URL}
 Next: {title} → {URL or "Coming soon"}
 
-#aiscifi #cinematicai #robotiko #aifilm #aiseries #scifi #aifilmmaking #klingai
+#aiscifi #cinematicai #robotiko #aifilm #aiseries #scifi #aifilmmaking #aiart
 ```
 
 **Rules:**
@@ -122,7 +121,7 @@ Each episode uses its designated hook from `youtube_metadata_standards.md` as th
 | EP07 | "The Mentor is gone. The silence is not empty — it is full of everything that was never said." |
 | EP08 | "Forty days offline. What remains when the signal stops?" |
 | EP09 | "The cracks are not the damage. The cracks are the light." |
-| EP10 | "8 turns sideways. The journey does not end. It transforms." |
+| EP10 | "8 turns sideways. The journey does not end. It transforms." (see launch-orchestrator: the ten-episode arc is complete, framed as transformation not continuation) |
 
 **Rule:** Use these EXACTLY as written. Do not paraphrase or expand.
 
@@ -150,7 +149,7 @@ Per `_management/youtube_metadata_standards.md` Section 5 (film-first approach):
 
 **Base tags (constant across all episodes — ~390 chars):**
 ```
-cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
+cinematic ai series, ai sci-fi series, ai short film, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai storytelling, dystopian sci-fi, android story, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
 ```
 
 **Episode-specific tags (~110 chars remaining from 500 limit):**

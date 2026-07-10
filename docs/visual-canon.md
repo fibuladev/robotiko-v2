@@ -18,7 +18,7 @@ How the set was built: vision agents selected candidates against four roles — 
 journey, signature moment, character phase, rule proof — from the director's own
 pre-selection, and the director approved the final cut. Where the surviving set
 under-delivers on a claim, this page says so out loud rather than picking a flattering
-frame. Documented imperfection beats faked polish. Glitch is Scripture.
+frame. Documented imperfection beats faked polish.
 
 ---
 
@@ -37,7 +37,7 @@ and the frames prove the distinction held.
   </tr>
   <tr>
     <td align="center"><b>EP07 · received amber</b><br>Arrives from <i>outside</i>, once. The ember at the alley threshold — the only frame in the darkest episode where warm light lands on his body.</td>
-    <td align="center"><b>EP08 · orange-red fire</b><br>Physics, not grace. The flames read orange-red; the warm bounce on chrome is the fire's own light, not the Mentor's amber.</td>
+    <td align="center"><b>EP08 · orange-red fire</b><br>Physics, not a gift. The flames read orange-red; the warm bounce on chrome is the fire's own light, not the Mentor's amber.</td>
     <td align="center"><b>EP09 · self-generated gold</b><br>Kintsugi. The one warmth he makes himself — a saturated warm-white-gold flowing from the crack, distinct from both.</td>
   </tr>
 </table>
@@ -176,23 +176,24 @@ below.
   </tr>
   <tr>
     <td align="center">Alanya touts</td>
-    <td align="center">kıldan ince sırat</td>
+    <td align="center">the hair-thin crossing</td>
     <td align="center">mentor overpass</td>
     <td align="center">sanayi sitesi</td>
   </tr>
 </table>
 
 **Palette journey.** Warm domestic amber (the argument at the tea table) → sterile
-cabin fluorescent → dusty road gold (the dolmuş, the bus) → hot Mediterranean neon
-(the touts) → twilight blue-purple, the bridge thin as a hair, a single amber staff
-accent (the overpass) → industrial night grey (the sanayi).
+cabin fluorescent → dusty road gold (the dolmuş — the shared minibus — and the intercity
+bus) → hot Mediterranean neon (the touts) → twilight blue-purple, the bridge thin as a
+hair, a single amber staff accent (the overpass) → industrial night grey (the sanayi
+sitesi, the industrial workshop district).
 
 **Rules proved.** **Damage continuity** — the EP02 scarring is visible in the opening
 argument, the dolmuş, and the bus, carried forward as tracked state rather than
 forgotten between episodes. The **single amber accent** on the Mentor's staff at the
-overpass holds the Amber Pulse to one point of light in a cold frame. **The Sirat made
-visual** — the Bosphorus Bridge framed as a tightrope between continents ("kıldan ince
-sırat"). **Modern Anatolia as repair shop, not shrine**: the welder-shop ambulance
+overpass holds the Amber Pulse to one point of light in a cold frame. **The hair-thin
+crossing made visual** — the Bosphorus Bridge framed as a tightrope between continents,
+thinner than a hair. **Modern Anatolia as repair shop, not shrine**: the welder-shop ambulance
 seeds the Kırkyama repair aesthetic that the series resolves into kintsugi. The
 overpass is also the fourth-wall Mentor — the crowd carries Robotiko behind while the
 Mentor addresses the frame directly.
@@ -205,8 +206,8 @@ Mentor addresses the frame directly.
   <tr>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep04/ep04_s01_return_under_stars.jpg" alt="Sparks dripping from a cracked shoulder toward one warm window" width="200"></td>
     <td align="center" width="25%"><img src="../_assets/style/frames/ep04/ep04_s03_ashamed_return.jpg" alt="Doorway shame, two tea glasses, amber-tipped staff" width="200"></td>
-    <td align="center" width="25%"><img src="../_assets/style/frames/ep04/ep04_s16_first_deception.jpg" alt="Torch-lit Mesopotamian temple, young Mentor watching a priest from shadow" width="200"></td>
-    <td align="center" width="25%"><img src="../_assets/style/frames/ep04/ep04_s20_kindred_souls.jpg" alt="Dervish, philosopher, healer, sage seen through translucent veils" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep04/ep04_s16_first_deception.jpg" alt="Torch-lit ancient Mesopotamian hall, young Mentor watching a robed official from shadow" width="200"></td>
+    <td align="center" width="25%"><img src="../_assets/style/frames/ep04/ep04_s20_kindred_souls.jpg" alt="Wanderer, philosopher, healer, sage seen through translucent veils" width="200"></td>
   </tr>
   <tr>
     <td align="center">return under stars</td>
@@ -489,15 +490,15 @@ From S27 the **kintsugi gold** reads as its own color — a saturated warm-white
 distinct from EP07's received amber and EP08's orange-red fire (this is the third leg
 of the three-warm-colors thesis at the top of the page). The repaired body itself
 carries two names from two traditions: **kintsugi** (the Japanese gold-seam repair)
-for the light in the cracks, and **kırkyama** (the patched dervish cloak — master.md
-§2.3, seeded by EP03's workshop repair) for the mismatched scavenged patches beneath
-it. One practice from Japan, one from Anatolia, meeting in one chassis.
+for the light in the cracks, and **kırkyama** (the patched cloak of Anatolia's wandering
+sages — master.md §2.3, seeded by EP03's workshop repair) for the mismatched scavenged
+patches beneath it. One practice from Japan, one from Anatolia, meeting in one chassis.
 
 **Rules proved.** **glitch is scripture** is the frame the golden rule is named for:
 imperfection is not failure, it is the lesson, and the gold literally flows from the
-crack. **full kintsugi** ties directly to the S30 reshoot case study in the README —
-the external lamp goes dark and he lights the room **from within**, warmth
-self-generated for the first time. **i am the bug** is a registered **[DISSONANCE]**
+crack. **full kintsugi** ties directly to the S30 reshoot case study in
+[docs/hallucinating-camera.md](hallucinating-camera.md) — the external lamp goes dark
+and he lights the room **from within**, warmth self-generated for the first time. **i am the bug** is a registered **[DISSONANCE]**
 moment (see [`_management/dissonance_registry.md`](../_management/dissonance_registry.md)):
 he stands still while his shadow does the thrashing. The pull begins seats him in his
 own gold glow beside the Mechanic's abandoned tea glass — the mentor role quietly
@@ -507,8 +508,8 @@ transferring.
 
 ## Honesty section
 
-The pipeline's first golden rule is *Glitch is Scripture* — imperfection, documented,
-is the lesson. So this page states its own limits rather than hiding them.
+This page follows the project's honesty discipline — imperfection, documented, is more
+useful than faked polish — so it states its own limits rather than hiding them.
 
 ### The square frames (EP01-EP02)
 
@@ -518,8 +519,7 @@ Two EP01 frames (the meeting and the handshake) and all seven EP02 frames are
 [`_memory/lessons.md`](../_memory/lessons.md); those square stills predate it.
 Re-cropping or regenerating them to hide that would erase the evidence that the
 method **evolved**. The square format is itself a tracked artifact of the pipeline
-learning its own rules. Glitch is Scripture applies to the pipeline's own history,
-not only to the character's. The remaining EP01 frames are widescreen because they
+learning its own rules — kept as history, honestly documented. The remaining EP01 frames are widescreen because they
 are edit-stage composites, not raw square stills.
 
 ### These are evidence copies, not renders

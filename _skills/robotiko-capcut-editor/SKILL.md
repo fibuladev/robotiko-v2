@@ -1,5 +1,5 @@
 # SKILL: robotiko-capcut-editor
-> **Version:** 1.0 | **Last Updated:** 2026-03-09
+> **Version:** 1.0
 > **Trigger:** `"Edit EP{XX} in CapCut"`
 > **Output:** `episode-{XX}/06_edit/ep{XX}_capcut_guide_v{VV}.md`
 
@@ -7,7 +7,9 @@
 
 ## PURPOSE
 
-Generate an episode-specific CapCut editing guide that walks the human through the complete post-production assembly: from importing raw clips to exporting the final 4K video. The guide translates the motion script's shot sequence into a concrete timeline map with exact timestamps, speed ramp values, beat sync checkpoints, transition decisions, and effect settings.
+Generate an episode-specific CapCut editing guide that walks the human through the complete post-production assembly: from importing raw clips to exporting the final 1080p video. The guide translates the motion script's shot sequence into a concrete timeline map with exact timestamps, speed ramp values, beat sync checkpoints, transition decisions, and effect settings.
+
+Final delivery is 1080p — the AI-generated source material is 1080p native, and upscaling adds no information.
 
 This skill bridges the gap between video generation (Phase 4) and final delivery (Phase 6). It ensures every episode receives the same cinematic post-production treatment regardless of which AI tools generated the clips.
 
@@ -80,7 +82,7 @@ Read these files in this exact order:
 The generated guide walks the human through these phases in order:
 
 ### Phase 1: Project Setup
-- Create new CapCut project: **4K (3840×2160), 24fps, 16:9**
+- Create new CapCut project: **1080p (1920×1080), 24fps, 16:9**
 - Import the episode's audio track to the main audio timeline
 - Import all selected video clips from `05_video/selected/`
 - Run **Auto Beat Detection** on the audio track to generate beat markers
@@ -179,7 +181,7 @@ Apply these effects to specific clips only — NOT globally:
 1. **Full preview:** Watch the entire timeline at 1× speed with audio. Note any issues.
 2. **Run QA checklist** (see Post-Generation Checklist below).
 3. **Export settings:**
-   - Resolution: **4K (3840×2160)**
+   - Resolution: **1080p (1920×1080)**
    - Frame rate: **24fps**
    - Codec: **H.265 (HEVC)**
    - Bitrate: **35-60 Mbps** (higher for complex scenes)
@@ -273,7 +275,7 @@ Per-clip special effects:
 ### 10. Export Settings
 | Setting | Value |
 |---------|-------|
-| Resolution | 4K (3840×2160) |
+| Resolution | 1080p (1920×1080) |
 | Frame Rate | 24fps |
 | Codec | H.265 (HEVC) |
 | Bitrate | 35-60 Mbps |
@@ -289,9 +291,8 @@ Pre-export verification (see Post-Generation Checklist).
 CapCut Pro supports .cube LUT import. A Kodachrome LUT is essential for the unified 70s analog color palette.
 
 ### Recommended Free Sources
-- **FilterGrade** — Free Kodachrome Film Emulation pack (.cube format)
-- **Lutify.me** — Free Kodachrome 64 emulation
-- **SmallHD** — Free Cinema LUT pack (includes warm film stock emulations)
+- Sources that offered free Kodachrome-style .cube LUTs at time of writing (verify availability): **FilterGrade**, **Lutify.me**, **SmallHD**
+- Any Kodachrome 64 emulation in .cube format works
 
 ### What to Look For
 - **Kodachrome 64** emulation: warm, saturated, golden highlights, rich reds
@@ -329,7 +330,7 @@ After applying: the image should have warm amber highlights, slightly saturated 
 | **Sync** | Auto Beat Detection | Beat markers from audio | Enable on audio track |
 | **Keyframe** | Position, Scale, Opacity | Ken Burns if needed | Rarely used |
 | **Layers** | Adjustment Layer | Global effects carrier | Spans full timeline |
-| **Export** | 4K H.265 | Final delivery | 35-60 Mbps, 24fps |
+| **Export** | 1080p H.265 | Final delivery | 35-60 Mbps, 24fps |
 
 ### FORBIDDEN Effects (Break Aesthetic)
 
@@ -367,7 +368,7 @@ Before delivering the CapCut guide to the human, verify:
 - [ ] **Film grain:** 10-15% specified
 - [ ] **Letterbox:** 2.35:1 specified
 - [ ] **Color reference:** A specific clip is recommended as the Color Match reference
-- [ ] **Export settings:** 4K, H.265, 35-60 Mbps, 24fps
+- [ ] **Export settings:** 1080p, H.265, 35-60 Mbps, 24fps
 - [ ] **No forbidden effects:** No modern/trendy/digital effects anywhere in the guide
 - [ ] **Sub-clips ordered:** Multi-clip scenes have sub-clips in correct sequence
 - [ ] **Veo clips flagged:** Any Veo clips (~8s native) have adjustment notes

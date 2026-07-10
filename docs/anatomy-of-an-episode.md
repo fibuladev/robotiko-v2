@@ -10,9 +10,9 @@ The through-line to watch for:
 
 > **Musical metadata (section + energy + timestamp)** → scene timestamps → motion strength → camera move → beat-synced cut.
 
-And two places where a human must say *yes* before the machine continues — the **two mandatory gates**.
+And the places where a human must say *yes* before the machine continues — the two mandatory creative gates (dramaturgy and motion script), plus, from EP10 onward, the reference gate inside the visual stage.
 
-The canonical stage order and the two gates live in [`../_management/pipeline_rules.md`](../_management/pipeline_rules.md). The two mandatory style/motion suffixes live in [`../CLAUDE.md`](../CLAUDE.md).
+The canonical stage order and the gates live in [`../_management/pipeline_rules.md`](../_management/pipeline_rules.md). The two mandatory style/motion suffixes live in [`../CLAUDE.md`](../CLAUDE.md).
 
 ---
 
@@ -107,13 +107,15 @@ A real director's note shows the character-state machine and the series philosop
 
 ## Stage 6 — Visual Prompts
 
-With the dramaturgy approved, the visual stage runs **reference-first, in two phases**. Phase 1 authors the *environment* references (for EP07, seven empty spaces — waterside, street, room, transit, avenue, balcony, road) plus the character reference (`android_damaged.png`, three angles) that carries Robotiko's exact damage state — **and then stops**. A human generates those references, approves them, and only then does Phase 2 write one scene prompt per shot, each *framed against the real approved pixels* rather than a text description of a space that does not exist yet. The art-direction locks (wet-grey only, cold blue-white eye-projection never amber, zero amber until S27) are declared in Phase 1 so no individual prompt can drift.
+With the dramaturgy approved, the visual stage runs **reference-first**. EP07 used the pipeline's earlier single-pass form of that discipline: the *environment* references (seven empty spaces — waterside, street, room, transit, avenue, balcony, road) and the character reference (`android_damaged.png`, three angles, carrying Robotiko's exact damage state) were authored and generated **first**, and every scene prompt was then framed against them rather than against a text description of a space that does not exist yet. But reference authoring and scene authoring lived in **one pass and one document** — there was no hard stop between them. The art-direction locks (wet-grey only, cold blue-white eye-projection never amber, zero amber until S27) are declared up front so no individual prompt can drift.
+
+The formal **two-phase split** — Phase 1 authors the references and *stops* at a recorded human checkpoint (the reference gate, gate 1R), a human generates and approves the images, and only then does Phase 2 write the scene prompts framed against the approved pixels — was adopted **afterward, from exactly this kind of experience** (ADR-0013, EP10 onward). EP07 predates it. See [two-phase-visual-prompts.md](two-phase-visual-prompts.md).
 
 Every prompt ends with the **mandatory style suffix** (no exceptions). Here is the real S10 prompt — the "plugged-in" tether motif paid off at the unplug — suffix included:
 
 > Medium shot, cramped room at dusk dying to evening. A chrome android sits motionless at a desk before a CRT monitor, a cable visibly plugged from the wall socket into his chassis — tethered. Cold blue-white screen glow washes his face and rusted body... A wall clock on the wall. A desk lamp present but dark, switched off. Dying dusk through a small window. 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
 
-The seam between the two phases is a third human checkpoint (the *reference gate*): scenes are not written until the references are approved. The repo tracks the reference *prompt*, not the pixels — a fork generates its own references and Phase 2 frames to those. The full reasoning is in [two-phase-visual-prompts.md](two-phase-visual-prompts.md).
+Either way, the repo tracks the reference *prompt*, not the pixels — a fork generates its own references and frames its scenes to those. From EP10 onward the reference gate makes that seam a recorded third human checkpoint (gate 1R); on EP07 it was an in-pass discipline rather than a logged stop.
 
 📄 [`../episode-07/04_visuals/ep07_visual_prompts_v01.md`](../episode-07/04_visuals/ep07_visual_prompts_v01.md)
 
@@ -200,7 +202,7 @@ The package also carries the transparency line ("A human wrote the lyrics, shape
 
 - **Traceability.** One artifact — the musical metadata JSON — is the temporal source of truth. Its `section / energy / timestamp` triple drives scene timestamps in the dramaturgy, motion strength and camera move in the motion script, and the beat-synced cuts in the edit. A refrain at 109.0s in the JSON becomes "Dolly Out, rung 1" in the dramaturgy, "motion strength 4, Dolly Out" in the motion script, and a hard cut landing on the vocal entry in CapCut. The chain is auditable end to end.
 
-- **Two human gates.** Direction is committed at exactly two points — **after dramaturgy** and **after the motion script** — and the machine refuses to proceed past either without explicit approval. The gates sit precisely where a mistake gets exponentially more expensive to undo (story → 49 clips; plan → render credits).
+- **Human gates.** Direction is committed at two creative points — **after dramaturgy** and **after the motion script** — and the machine refuses to proceed past either without explicit approval. From EP10 onward a third, mechanical checkpoint sits inside the visual stage: the reference gate (gate 1R), where the human approves the generated reference images before any scene prompt is written. The gates sit precisely where a mistake gets exponentially more expensive to undo (story → 49 clips; plan → render credits).
 
 - **Multi-tool visual coherence.** A reference-first workflow (seven environment plates + a three-angle character Element) holds one consistent world and one consistent character across Nano Banana stills and Kling/Veo/Seedance video, then a single LUT-led adjustment layer in CapCut unifies the grade. Different tools, one film.
 

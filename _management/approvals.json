@@ -5,15 +5,22 @@
     "1": "Dramaturgy approval - human sign-off before visual prompts begin",
     "2": "Motion script approval - human sign-off before video generation begins"
   },
-  "entry_schema": ["episode", "gate", "artifact", "sha256", "date", "note"],
+  "entry_schema": [
+    "episode",
+    "gate",
+    "artifact",
+    "sha256",
+    "date",
+    "note"
+  ],
   "approvals": [
     {
       "episode": "01",
       "gate": 1,
       "artifact": "episode-01/03_direction/ep01_dramaturgy_v01.md",
-      "sha256": "f091a5051ec6269e94068701cbcd9bdecb10240ddb1d3276d4e2b134f02aabb9",
+      "sha256": "4d860020af899d5c772f376108085d912ace350a7913c8864f3cfbb7a475db32",
       "date": "2026-04-22",
-      "note": "pre-method episode; dramaturgy retroactive; visual prompts stage waived - PDF-only (episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf). legacy - reconstructed from session log (launch date used)."
+      "note": "pre-method episode; dramaturgy retroactive; visual prompts stage waived - PDF-only (episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf). legacy - reconstructed from session log (launch date used). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "01",
@@ -27,9 +34,9 @@
       "episode": "02",
       "gate": 1,
       "artifact": "episode-02/03_direction/ep02_dramaturgy_v01.md",
-      "sha256": "626619ac4159398f8969b395b7d7d9ee4d631fb7bac759a3482f755f3f24a9ee",
+      "sha256": "3d8a9c4d1ec370145f76f67c71180812e1822c5e176cc981c6ffd42c551820b6",
       "date": "2026-02-26",
-      "note": "approved (recorded in _memory/todo.md session log)."
+      "note": "approved (recorded in _memory/todo.md session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "02",
@@ -43,9 +50,9 @@
       "episode": "03",
       "gate": 1,
       "artifact": "episode-03/03_direction/ep03_dramaturgy_v01.md",
-      "sha256": "6efd0733554dcfa1b23c5490d1b0aa52a4400393a2dab8f2a138579ecc6adc5c",
+      "sha256": "a0dc9715779038e02f34e62ab24dd122af6b8d842368ddbb7aa842945318ce7b",
       "date": "2026-03-10",
-      "note": "approved (recorded in session log)."
+      "note": "approved (recorded in session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "03",
@@ -59,25 +66,25 @@
       "episode": "04",
       "gate": 1,
       "artifact": "episode-04/03_direction/ep04_dramaturgy_v01.md",
-      "sha256": "23c9fc645e31c4315091b11c9b599d4c68cba85c99bef3b3b9e91906c2e9ec05",
+      "sha256": "952088abf47ea258ae3dc8e80c5a405d1dd64ccc930162a7864b8e8b6c4469e4",
       "date": "2026-03-23",
-      "note": "approved (recorded in session log)."
+      "note": "approved (recorded in session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "04",
       "gate": 2,
       "artifact": "episode-04/05_video/ep04_motion_script_v01.md",
-      "sha256": "245992b588c63db351e3c88adcd1495df66f133a2f9eea3a7e7b09f69487a472",
+      "sha256": "a34037d89a337d64daf67c97db320e1c541205106d46f5f574a0d5ae0d598a73",
       "date": "2026-03-31",
-      "note": "motion script approved (recorded in session log; 17 videos generated, quality confirmed)."
+      "note": "motion script approved (recorded in session log; 17 videos generated, quality confirmed). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "05",
       "gate": 1,
       "artifact": "episode-05/03_direction/ep05_dramaturgy_v01.md",
-      "sha256": "bbede7b0356faab0eebb8f770082108e4ff23d6244fef18bbc40e59ca168a02c",
+      "sha256": "9e85c9d860e7b779a95da93787b07b09fa93cd219dd1d748fd5cc6b11e52a35c",
       "date": "2026-03-31",
-      "note": "approved (recorded in session log; 32 scenes, 267s)."
+      "note": "approved (recorded in session log; 32 scenes, 267s). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "05",
@@ -91,9 +98,9 @@
       "episode": "06",
       "gate": 1,
       "artifact": "episode-06/03_direction/ep06_dramaturgy_v01.md",
-      "sha256": "cdcdbafb129757a0e85ce0ce08b7b095a7259eaadb7639bdc831cae42d38e9e5",
+      "sha256": "f048c04df9ab9cb4ea97cb76583d7c231415bb782e915a2294ba52a81323f301",
       "date": "2026-05-01",
-      "note": "approved (recorded in session log; 43 scenes, 8 overrides)."
+      "note": "approved (recorded in session log; 43 scenes, 8 overrides). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "06",
@@ -107,9 +114,9 @@
       "episode": "07",
       "gate": 1,
       "artifact": "episode-07/03_direction/ep07_dramaturgy_v01.md",
-      "sha256": "0d91fb7c3feb84e7e0ae3e0f3595d47df5458c4ae869622b9001830f5c987b3a",
+      "sha256": "26283e22e0e52b96f70651613528c646897ff6281b662aaaff6c47555a8b29d9",
       "date": "2026-05-30",
-      "note": "approved (recorded in session log; 29 scenes, Retreating Camera)."
+      "note": "approved (recorded in session log; 29 scenes, Retreating Camera). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "07",
@@ -123,9 +130,9 @@
       "episode": "08",
       "gate": 1,
       "artifact": "episode-08/03_direction/ep08_dramaturgy_v01.md",
-      "sha256": "af26f6640c045bc7174415aa30f7f28e1202251ac5fcf5205b7b0571a619e5f0",
+      "sha256": "f742005bc5afc47a353fa7dfca3faf45471de23ed6c75c9de74923c1a4aadd07",
       "date": "2026-06-04",
-      "note": "approved (recorded in session log; 33 scenes, Witnessing Camera)."
+      "note": "approved (recorded in session log; 33 scenes, Witnessing Camera). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "08",
@@ -139,9 +146,9 @@
       "episode": "09",
       "gate": 1,
       "artifact": "episode-09/03_direction/ep09_dramaturgy_v01.md",
-      "sha256": "116951b1cec5626b41fec8b9053556052278add4e74d7d611be7dbe3e3e92579",
+      "sha256": "6ba168cd83ebb59f43987d76b2a1fd926c546e2ffdde0d7ab96a5adaa6d293aa",
       "date": "2026-06-24",
-      "note": "legacy - reconstructed from session log (approved; dramaturgy approval date not explicitly recorded, placed before the 2026-06-30 motion-script session)."
+      "note": "legacy - reconstructed from session log (approved; dramaturgy approval date not explicitly recorded, placed before the 2026-06-30 motion-script session). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "09",
@@ -155,7 +162,7 @@
       "episode": "10",
       "gate": 0,
       "artifact": "episode-10/03_direction/ep10_concept_notes.md",
-      "sha256": "535c74b245496dfa4af2b07c3184367a3d639a8974140b8c101565e3da4812ae",
+      "sha256": "d3982ff6bd044367a8e66577e40055eb8f056ac8ed8af61ef43820dc682690f6",
       "date": "2026-07-06",
       "note": "step-order waiver (gate 0 = honest step-order record, NOT a human quality gate): concept notes were authored BEFORE the musical metadata JSON by design - the finale's creative-direction session ran on the delivered lyrics and Suno track while the timing JSON awaits the final audio file. The musical-metadata step is waived as a prerequisite for concept notes ONLY; it remains a hard prerequisite for dramaturgy per pipeline_rules.md. sha re-baselined 2026-07-06: Override 12 revised at the dramaturgy review per human direction (the look resolves into a head-tilt warmth + open-palm beckon; mouthless-face guard added)."
     },
@@ -163,9 +170,9 @@
       "episode": "10",
       "gate": 1,
       "artifact": "episode-10/03_direction/ep10_dramaturgy_v01.md",
-      "sha256": "e48833b9702f34ca21050a1eee27c3c07072c43a32ae317cfe3ac637b84a7158",
+      "sha256": "80e59ab41c3602ea99497f729345b566889659f800fa00c5c0b95a95b542dad3",
       "date": "2026-07-06",
-      "note": "approved at the dramaturgy review session (35 scenes, Companion Camera). One revision requested and applied before sign-off: S34 - the look resolves into a warm head-tilt (the machine's smile; the face is mouthless by design) + open-palm beckon toward the lens, gong cuts on the offered hand. All four interpretation choices confirmed (communal kettle, staff cloth strips, S33 wind/flare energy, refrain onsets to verify at motion stage)."
+      "note": "approved at the dramaturgy review session (35 scenes, Companion Camera). One revision requested and applied before sign-off: S34 - the look resolves into a warm head-tilt (the machine's smile; the face is mouthless by design) + open-palm beckon toward the lens, gong cuts on the offered hand. All four interpretation choices confirmed (communal kettle, staff cloth strips, S33 wind/flare energy, refrain onsets to verify at motion stage). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "10",

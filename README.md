@@ -105,7 +105,7 @@ See the full evidence — every episode, the palette journeys, and the honest ca
 
 A few honesty notes, stated plainly because the project believes documented imperfection beats faked polish:
 
-- **The camera hallucinates.** There is no lens, no 180-degree line the model remembers — the "look" is a prompt suffix asserted in words. Roughly 75–85% of shots land on the first pass *when their reference already exists*; the rest need a reshoot. Reshooting is part of the craft, not a failure of it. The full argument, including the reshoot that taught the anchor rule, is in [docs/hallucinating-camera.md](docs/hallucinating-camera.md).
+- **The camera hallucinates.** There is no lens, no 180-degree line the model remembers — the "look" is a prompt suffix asserted in words. Roughly 80–90% of shots land on the first pass *when their reference already exists*; the rest need a reshoot. Reshooting is part of the craft, not a failure of it. The full argument, including the reshoot that taught the anchor rule, is in [docs/hallucinating-camera.md](docs/hallucinating-camera.md).
 - **Two gates are human on purpose.** After dramaturgy and after the motion script, a person must approve before the pipeline continues. Taste does not automate, so the repo does not pretend it does.
 - **The rules are tested, not asserted.** The lessons file carries ~125 hard-won rules — e.g. never write "glowing eyes" in a prompt (generators render literal glowing eyeballs); describe the material instead: *"dark amber glass lenses set into chrome sockets, like polished gemstones."* Rules earn their place by surviving a real reshoot.
 
@@ -118,10 +118,10 @@ Everything here is countable in the repo:
 | | |
 |---|---|
 | Episodes released on YouTube | **10** (the complete arc) |
-| CI check groups | **10** (9 blocking + 1 advisory) |
+| CI check groups | **11** (10 blocking + 1 advisory) |
 | Validator meta-tests (graders that grade the graders) | **154** |
-| Architecture Decision Records | **12** (`_management/adr/`) |
-| Commits of tracked history | **126** |
+| Architecture Decision Records | **13** (`_management/adr/`) |
+| Commits of tracked history | **160+** (run `git rev-list --count HEAD`) |
 | Tested lessons rules | **125** ([`_memory/lessons.md`](_memory/lessons.md)) |
 
 ---
@@ -197,9 +197,9 @@ Take the pipeline, build *your* universe.
 
 ## Cultural heritage
 
-This project draws from the Turkish wisdom tradition — a centuries-old philosophical and mystical heritage shaped by Turkish thinkers, poets, and sages including Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, and Mevlana, who lived and taught in Anatolia. The musical foundation is 70s Turkish psychedelic rock — the legacy of Barış Manço, Cem Karaca, Erkin Koray, Fikret Kızılok, Kurtalan Ekspres, and Moğollar.
+This project draws from the Turkish wisdom tradition — a centuries-old philosophical and contemplative heritage shaped by thinkers, poets, and sages who lived and taught in Anatolia: Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, and Mevlana. The musical foundation is 70s Turkish psychedelic rock — the legacy of Barış Manço, Cem Karaca, Erkin Koray, Fikret Kızılok, Kurtalan Ekspres, and Moğollar.
 
-The genre label "CyberAnatolian" names the civilizational synthesis — the meeting of digital culture with the ancient Anatolian cultural basin. The cultural source is specifically Turkish.
+The genre label "CyberAnatolian" names the civilizational synthesis — the meeting of digital culture with the ancient Anatolian cultural basin. The cultural source is the Turkish tradition of these lands — its wisdom literature and its 70s rock.
 
 ---
 

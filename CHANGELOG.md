@@ -1,25 +1,26 @@
 # CHANGELOG
 > All notable changes to ROBOTIKO v2.0 are documented here.
 > Format: [VERSION] — DATE — Description
+> Note: 0.3.x point releases were assigned by scope, not chronology, so version order does not always track date order.
 
 ---
 
-## [1.0.0] — TBD (target ~2026-07-02) — Open Source Release (EP10 Release Day)
+## [1.0.0] — TBD (target 2026-07-28) — Open Source Release (EP10 Release Day)
 
 > **Status: PREPARED — not yet released.** The public release ships on EP10 release day,
-> when the repository goes public. Date is a target, not yet locked.
+> when the repository goes public.
 
-The first complete, reproducible, open-source methodology for LLM-directed serialized music
-cinema — a git repository operating as a one-person film studio, with Claude as a stage-gated
-production crew and the human retaining two irreplaceable roles: creative vision (inputs) and
-taste (the two approval checkpoints).
+A complete, reproducible, open-source methodology for LLM-directed music cinema — a ten-episode
+closed arc produced by a git repository operating as a one-person film studio, with Claude as a
+stage-gated production crew and the human retaining two irreplaceable roles: creative vision
+(inputs) and taste (the two approval checkpoints).
 
 ### Ships in 1.0.0
 - **The method is reproducible from the repo; the films are not — renders live outside the tree:**
   - `master.md` — Universe Canon (constitution / policy-as-code: golden rules, mandatory suffixes).
   - 10 production skills in `_skills/` — musical-metadata, dramaturgy, visual-prompts, motion-script,
     episode-scaffold, naming-enforcer, youtube-packager, reels-atomizer, launch-orchestrator, capcut-editor.
-  - `_memory/lessons.md` — 60+ dated, tested generative-film-grammar rules (a self-improving knowledge base).
+  - `_memory/lessons.md` — ~125 dated, tested generative-film-grammar rules (a self-improving knowledge base).
   - `_memory/decisions_log.md` — architectural decision records.
   - `character_profiles.json` + `project_metadata.json` — explicit multi-episode character state machine
     (cumulative damage tracked and enforced across all episodes).
@@ -132,7 +133,7 @@ taste (the two approval checkpoints).
 
 ### Notes
 - EP01–EP07 launched on YouTube (channel @fibuladev): EP01 (Apr 22), EP02 (May 1), EP03 (May 13),
-  EP04 (May 19), EP05, EP06, EP07.
+  EP04 (May 19), EP05, EP06, EP07. (Launch dates recorded retroactively, through June 2026.)
 
 ---
 

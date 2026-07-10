@@ -27,7 +27,7 @@ its world from long text — the same long text, subtly different every time.
 
 That principle already has a name and a scar. It is
 [ADR-0007, "reference-first, or pay the reshoot tax"](../_management/adr/0007-reference-first-or-pay-the-reshoot-tax.md),
-and it was written in blood on EP09: the kintsugi body-state and the workshop location
+and it was earned the hard way on EP09: the kintsugi body-state and the workshop location
 were prompted before their references existed, and nearly every gold-body scene had to
 be regenerated 8-10 times to claw back a consistency the reference would have given for
 free. The reshoot tax, paid in full, once. The full climb of that lesson from incident

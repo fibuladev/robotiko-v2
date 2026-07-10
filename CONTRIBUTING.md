@@ -19,7 +19,7 @@ This is what the repo is *for*. You take the pipeline, swap out the ROBOTIKO sto
 
 - `_skills/` — the production crew (dramaturgy, visual prompts, motion script, packaging, and more)
 - `scripts/` — automation, including `scripts/create_episode.py`
-- `tests/` — nine check groups (naming convention, pipeline integrity, visual prompt sweep, prompt hygiene, musical metadata, motion script, character profiles, validator meta-tests, and doc reference integrity) behind one gate command: `python tests/run_all.py`
+- `tests/` — ten check groups (naming convention, pipeline integrity, visual prompt sweep, prompt hygiene, musical metadata, motion script, character profiles, validator meta-tests, doc reference integrity, and an advisory energy-motion check) behind one gate command: `python tests/run_all.py`
 - `_templates/` — episode scaffolding templates
 - `_tools/mcp-gdrive/` — the custom Google Drive MCP server (binary asset archive)
 - `_management/pipeline_rules.md` — the workflow and the two human gates
@@ -203,7 +203,7 @@ This project runs on a simple philosophy of **symbiosis**: a human and a crew of
 - **Attribution and respect.** Credit the work you build on. Honor the dual license. When you fork the method, tell *your own* story — don't sell this one.
 - **Be welcoming.** Assume good faith, explain generously, and help newcomers find the main path: take the method, build their universe.
 
-> *"Even if you are hurt, do not hurt others."*
+> *"Even if you are hurt, do not hurt others."* — a saying of the Turkish wisdom tradition, traditionally attributed to Hacı Bektaş Veli, rendered here in English by the project.
 
 **Community resources.** This philosophy is backed by a few short, concrete
 documents: the enforceable version of it lives in

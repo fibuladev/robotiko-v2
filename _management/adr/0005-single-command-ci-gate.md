@@ -24,8 +24,8 @@ guarantee has to survive any contributor and any forgotten step.
   item.)
 - **Dependencies pinned.**
   - The project code is **standard-library only** — no `pip install`, nothing to
-    pin at the package level. This is the strongest dependency hygiene: the
-    smallest possible attack surface.
+    pin at the package level. This is strong dependency hygiene: a minimal
+    third-party attack surface.
   - The Python toolchain is pinned to an exact patch (`3.11.9`).
   - GitHub Actions are pinned to **immutable commit SHAs** (with the human-readable
     version in a trailing comment): `actions/checkout@…34e1148` (v4.3.1),

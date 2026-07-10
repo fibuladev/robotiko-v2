@@ -56,7 +56,7 @@ The full production pipeline is open source.
 ROBOTIKO v2.0 — A 10-episode CyberAnatolian cinematic series.
 
 Previous: {Previous episode title} → {URL}
-Next: {Next episode title} → {URL or "Coming soon"}
+Next: {Next episode title} → {URL} (EP01-EP09 only — omit this line for EP10; the ten-episode arc is complete)
 
 #aiscifi #cinematicai #robotiko #aifilm #aiseries #scifi #aifilmmaking #klingai
 ```

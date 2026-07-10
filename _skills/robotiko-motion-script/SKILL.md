@@ -1,5 +1,5 @@
 # SKILL: robotiko-motion-script
-> **Version:** 2.1 | **Last Updated:** 2026-06-30
+> **Version:** 2.1
 > **Trigger:** `"Generate motion script for EP{XX}"`
 > **Output:** `episode-{XX}/05_video/ep{XX}_motion_script_v{VV}.md`
 
@@ -271,7 +271,7 @@ Before the shot-by-shot section, define ALL Elements used in this episode:
 | Element Name | Description | Reference Images | Episodes Active |
 |---|---|---|---|
 | @Damaged | Robotiko EP07 state (missing ear, torso dent, forearm tattoos) | android_damaged.png, android_damaged_2.png, android_damaged_3.png | EP07 |
-| @Crane | Turna (crane bird) companion | crane_ref_01.png, crane_ref_02.png | EP10 |
+| @Crane | Turna (crane bird) — a wild migrating flock crossing the sky, historical/example only | crane_ref_01.png, crane_ref_02.png | (none — see EP10 Camera Personality) |
 ```
 
 #### Angles 2.0 Protocol
@@ -288,7 +288,7 @@ For each Element, generate 12 reference angles from the master reference photo:
 2. **Max 2 Elements per clip** — Kling 3.0 supports up to 2 named Elements in a single generation.
 3. **Tag format in motion prompt** — Reference by @Name: "The @Damaged chrome android walks through rain..."
 4. **Element state must match episode phase** — Do NOT use @Pristine references for EP07+. Check `character_profiles.json` for current phase.
-5. **Test with single Element first** — EP07 uses only @Damaged (single character, single state). Multi-Element (EP10: @Damaged + @Crane) requires separate testing.
+5. **Test with single Element first** — EP07 uses only @Damaged (single character, single state). EP10 uses a single full-kintsugi body reference Element; the crane flock (S16) is background wildlife, not a named Element paired with the character.
 
 #### Progressive Transformation (EP08+)
 
@@ -300,7 +300,7 @@ For episodes where character appearance evolves across the episode (EP08: 40 day
 - Switch Element tag at phase transitions
 - This creates gradual visual evolution without per-clip inconsistency
 
-> ⚠️ This strategy is PLANNED but UNTESTED. Test during EP08 production. If results are poor, fall back to single Element + descriptive prompts for evolution.
+> Outcome not recorded in this file as of this revision — if EP08 production settled on Phase-Staged Elements or fell back to single Element + descriptive prompts, record the result here before reusing this strategy for a future episode.
 
 ### Generation Mode Field
 
@@ -414,7 +414,7 @@ Use only these approved camera moves. Do not invent custom terms.
 - **One camera move per shot.** Never combine "Pan Left + Zoom In" in a single shot — that creates conflicting instructions for the video model.
 - **Motion direction should follow musical energy.** Zoom in during builds, zoom out during releases.
 - **Static is not lazy.** A well-composed static shot with subtle atmospheric breathing (fog, sparks, light flicker) is often more powerful than an unmotivated camera move.
-- **Match the station's emotional weight.** EP01-02 (Awakening) can be more dynamic. EP07-08 (Dark Night / Silence) should be restrained. EP09-10 (Integration) can be contemplative.
+- **Match the station's emotional weight.** EP01-03 (Awakening) can be more dynamic. EP07 (The Dark Night) and EP08 should be restrained. EP09-10 (Reconstruction) can be contemplative.
 
 ### Camera Move Diversity Rule (v2.0)
 
@@ -491,7 +491,7 @@ Each episode has a **camera personality** — a dominant emotional strategy expr
 
 | Aspect | Detail |
 |---|---|
-| **Philosophy** | Parça → Bütün (close-up broken → zoom out reveals gold-filled) |
+| **Philosophy** | Fragment → Whole (close-up on the broken part → zoom out reveals the gold-filled whole) |
 | **Camera = scientist** | Cold, observing, documentary. But observation reveals beauty. |
 | **Primary move** | Slow Zoom Out — NOT retreat (that's EP07). Here it means "understanding widens." |
 | **Climax Still Hold** | "Glitch is Scripture" line = camera stops. Long Static. Words carry. |
@@ -501,13 +501,11 @@ Each episode has a **camera personality** — a dominant emotional strategy expr
 
 | Aspect | Detail |
 |---|---|
-| **Turna (Crane bird)** | Arrives mid-episode. Robotiko mounts turna, flies to world locations. |
-| **Pre-turna** | Camera alongside on ground (walking WITH, not observing FROM) |
-| **With turna** | Aerial sequences, location transitions, flight. |
-| **Camera = fellow traveler** | Not observing FROM outside — existing WITH the character. |
-| **8→∞ moment** | Crane Up (camera rises) while world OPENS (character doesn't shrink) |
+| **Camera = fellow traveler** | Camera walks alongside Robotiko on the ground for the whole episode — never observing from outside, never above him. No high-angle, no crane-down on Robotiko. |
+| **Crane flock (S16)** | A real migrating flock crosses the Moon-Sun sky once — wild birds, not a companion or mount. No aerial sequences, no flight, no world-location travel. Crane moves (the camera technique) may serve sky/landscape shots only. |
+| **8→∞ moment** | World OPENS around him (character doesn't shrink); the camera does not rise above him to show it. |
 | **Final frame** | Camera stops. Robotiko continues. Open ending = infinite. |
-| **Elements** | @Robotiko + @Crane as named Elements. |
+| **Elements** | Full-kintsugi body reference (`android_kintsugi.png`). |
 | **MS average** | ~4-5. Flowing, confident, unhurried. |
 
 ---
@@ -560,7 +558,7 @@ Musical context belongs in the **Musical Moment** field. Narrative context belon
 - Include narrative commentary ("the only honest light in EP02", "this is Tuesday")
 - Add speed ramp technical notes ("0.71× slowdown will make...") — that's post-production info
 - Include audience/viewer direction ("the audience needs time to read")
-- Write poetic metaphors the tool cannot render ("approaching the sermon", "a congregation drawn to the preacher")
+- Write poetic metaphors the tool cannot render ("approaching the speech", "a crowd drawn to the speaker")
 - Add timing cues (BPM, "on the downbeat", "at ~1:31") — the tool doesn't know the timeline
 - Repeat the visual description from the dramaturgy or visual prompt
 - Request impossible physics (an AI video model cannot rotate a subject 360° from a single still image)
@@ -607,7 +605,7 @@ In scenes with multiple characters (2+ people), follow these rules strictly:
 > Extreme close-up on a glowing red light marker on a charred, burnt map. The red light pulses slowly and hypnotically. The surrounding paper is heavily textured with ashes and decay. Cinematic 35mm film style, heavy film grain, shallow depth of field, Kodachrome colors, 16:9. Do not add extra characters. Keep everything as pictured.
 
 ### EXAMPLE (Bad — narrative/musical contamination):
-> Slow zoom in toward Robotiko's face as the Hammond organ swell builds. The slowdown to 0.71× will make the approach feel reverential — a congregation drawn to the preacher in suspended time.
+> Slow zoom in toward Robotiko's face as the Hammond organ swell builds. The slowdown to 0.71× will make the approach feel weighty — a crowd drawn to the speaker in suspended time.
 
 ### EXAMPLE (Bad — vague and empty):
 > Camera moves in. Robotiko is standing there looking broken. Make it look cinematic and epic. The atmosphere should feel emotional.

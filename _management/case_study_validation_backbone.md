@@ -202,16 +202,18 @@ for reasons that have nothing to do with your code.
 The last piece was the most interesting, because our own rules pointed in opposite
 directions.
 
-- **master.md requires** the sanctioned Turkish cultural attribution — names like
-  Hacı Bektaş Veli, labels like "Turkish wisdom tradition." This is the soul of the
-  project. It is *mandatory* in the canon.
+- **master.md requires** the sanctioned cultural attribution — the project's
+  philosophy credited to the Turkish wisdom tradition, its literature to Turkish
+  folk poetry, and historical figures framed geographically ("lived and taught in
+  Anatolia"). This attribution is the soul of the project. It is *mandatory* in
+  the canon.
 - **Production requires** the strings we feed to image and video generators to be
   plain-English ASCII (the basic English character set, no accented or non-Latin
   letters). Non-ASCII characters tokenize unpredictably, and cultural labels bleed
   attribution into the generated picture.
 
-A naïve "no non-ASCII anywhere" lint would punish the canon — flag the very names the
-project is built to honor. Doing nothing leaves real leaks (EP03's prompts carried
+A naïve "no non-ASCII anywhere" lint would punish the canon — flag the very attribution
+the project is built to carry. Doing nothing leaves real leaks (EP03's prompts carried
 Turkish characters; em-dashes were everywhere). The contradiction looks irreconcilable
 only until you notice it isn't about *files* — it's about **audience**: who reads the
 string.

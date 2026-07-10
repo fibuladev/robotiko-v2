@@ -1,8 +1,13 @@
 # Cinematography for a Hallucinating Camera
 
-> A field manual for directing image-to-video generation. Written for a filmmaker
-> who knows the classical grammar — lens, blocking, coverage, the 180-degree line —
-> and now has to get a film out of a model that has never heard of any of it.
+> A field manual for directing image-to-video generation — written for anyone who has
+> to get a film out of a model that dreams. No film school is assumed and none is
+> needed: this pipeline exists to put production tools in anyone's hands, and a viewer
+> with raw visual instinct can outdo a trained director here, because the model never
+> went to film school either. The classical terms — lens, blocking, coverage, the
+> 180-degree line — appear below as vocabulary this page teaches in passing: useful
+> shorthand if you already carry it, a free glossary if you don't, an entry requirement
+> never.
 
 You do not have a camera. You have a machine that dreams a short motion out of a
 single still, and it dreams badly the moment you ask it for something the still
@@ -69,8 +74,11 @@ to *withhold from its imagination*.
 
 ## 2. Translation Table — Classical Grammar Into This Medium
 
-Your training still applies, but every term has to be re-pointed. The intent
-survives; the mechanism changes completely.
+If you carry classical training, it still applies — every term just has to be
+re-pointed. If you have never used these terms, read the table as a glossary you pick
+up in passing: the middle column says what each tool did on a film set; the right
+column is the only part this medium cares about. The intent survives; the mechanism
+changes completely.
 
 | Classical tool | What it did | The equivalent here |
 |---|---|---|
@@ -207,8 +215,9 @@ PRIOR FRAME AS THE BASE IMAGE rules in `_memory/lessons.md`.
 
 You will not get every shot on the first generation. Across nine episodes on this
 project, the experiential rule of thumb — an observation from the edit bay, not
-instrumented telemetry — is that roughly **75-85% of shots land on the first
-pass** when their references already exist. The rest need a reshoot or live prompt
+instrumented telemetry — is that roughly **80-90% of shots land on the first
+pass** when their references already exist (the figure ADR-0007 records as lived
+observation, not telemetry). The rest need a reshoot or live prompt
 surgery of exactly the kind S30 got. When references were *missing* — EP09's
 gold-body scenes were written against the wrong (damaged) base before the Kintsugi
 reference existed — that first-pass rate collapsed and nearly every shot needed a
@@ -263,11 +272,12 @@ worth being precise about what that is not.
   cut for free.
 - **The machine has no taste.** It cannot tell an earned Still Hold from a lazy one,
   or a motivated Dolly In from a quota-filling one. That judgment is the one thing
-  it will never supply, which is exactly why the two human approval gates in this
-  pipeline (see `docs/getting-started.md`) sit where they do.
+  it will never supply, which is exactly why the human approval gates in this
+  pipeline — dramaturgy, the visual reference gate, and the motion script (see
+  `docs/getting-started.md`) — sit where they do.
 
 Direct within these limits honestly and the medium is extraordinary: a one-person
-crew producing cinematic motion at a scale no small team could shoot. Pretend the
+crew producing cinematic motion at a scale it could never have shot alone. Pretend the
 limits are not there — ask the frame to reveal what the still never held — and the
 camera will dream you something that was never in the film. The whole craft is
 knowing the difference.

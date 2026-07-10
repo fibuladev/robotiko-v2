@@ -113,6 +113,14 @@ ALLOWLIST = {
                       "label the way the two audit-caught violations did.",
         },
     ],
+    "_management/master.md": [
+        {
+            "substring": "It does not distinguish Sunni from Alevi, believer from non-believer",
+            "reason": "Sec 2.3.2 rejection list — the line REJECTS these as dividing "
+                      "lines ('does not distinguish'), naming them as the object of "
+                      "a negation, not using them as tradition labels.",
+        },
+    ],
 }
 
 # ─────────────────────────────────────────────

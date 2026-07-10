@@ -146,8 +146,9 @@ what this ledger exists to prevent). One row per scene:
 - **Mandatory from EP10 onward** — the last unproduced episode, and therefore the
   only remaining window to measure first-pass yield for real. EP01-EP09 were
   generated before this convention and get no retroactive ledger.
-- This is the first *instrumented* data behind the "80-90% first-pass" figure, which
-  until now is an experiential estimate from the director's production notes. See
+- This is the first *instrumented* data behind the "65-70% image first-pass / ~80%
+  video first-pass" figures, which until now are experiential estimates from the
+  director's production notes. See
   `_management/adr/0007-reference-first-or-pay-the-reshoot-tax.md` (Note on empirical
   claims) — after EP10 that claim gets its first measured data point.
 - `attempts.md` lives inside `raw/` (a naming-check skip folder) and is summarized by

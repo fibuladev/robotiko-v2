@@ -94,8 +94,8 @@ and generated **before the reference images for those new elements existed**.
 `android_kintsugi.png` did not exist yet — so every gold-body scene was conjured
 from long text on the *damaged* reference, the wrong base. The result: roughly 8-10
 regenerations per scene, nearly every scene rescued by hand, where EP01-EP08 had
-hit 80-90% first-pass because their references were ready. That gap is the reshoot
-tax, paid in full, once.
+hit ~65-70% image first-pass because their references were ready. That gap is the
+reshoot tax, paid in full, once.
 
 ### (2) The dated rule
 
@@ -144,7 +144,7 @@ reference-first as the pipeline's first principle, and the choice to enforce it 
 `check_reference_first`.
 
 Crucially, the ADR is **honest about its own evidence**. Its 2026-07-04 note states
-plainly that the "80-90% first-pass" and "8-10x reshoot" figures are experiential
+plainly that the "65-70% image first-pass / ~80% video first-pass" and "8-10x reshoot" figures are experiential
 observations from the director's production notes, **not instrumented telemetry** —
 no automated retry logging exists. The economics that motivate the whole rule are
 labelled as lived experience, not measured fact. An ADR that inflates its evidence

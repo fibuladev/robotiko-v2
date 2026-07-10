@@ -8,7 +8,7 @@
 
 EP09 needed far more visual reshooting than any prior episode — nearly every
 scene had to be rescued by hand (8-10 regenerations each), where EP01-EP08 hit
-roughly 80-90% first-pass. A retrospective found a single root cause, not many.
+roughly 65-70% first-pass for images. A retrospective found a single root cause, not many.
 
 EP09 is the most visually-novel episode in the series: it introduces the **Phase 3
 kintsugi body** (never rendered before), a **new location** (the workshop interior
@@ -51,11 +51,12 @@ reference, THEN write/generate scenes against it.**
 
 - The kintsugi-class root cause cannot recur silently — CI blocks an episode that
   has scenes for a body state with no reference.
-- New episodes front-load reference generation, restoring the 80-90% first-pass
-  rate. The reshoot tax was a one-time cost of new visual territory + an inverted
-  order, not a property of the pipeline.
+- New episodes front-load reference generation, restoring the ~65-70% image
+  first-pass rate (~80% for video from approved images). The reshoot tax was a
+  one-time cost of new visual territory + an inverted order, not a property of
+  the pipeline.
 - The honest version of this story is itself the most valuable lesson of the
   build-along (see the EP09 Part 05 framing) — the cost of skipping reference-first,
   shown live.
 
-**Note on empirical claims (2026-07-04):** The "80-90% first-pass" and "8-10x reshoot" figures are experiential observations from the director's production notes, not instrumented telemetry. No automated retry logging exists. Raw folders in `04_visuals/raw/` contain unnumbered generation attempts but are not systematically labeled. Future episodes may adopt a lightweight attempt-log convention: an `attempts.md` file in each `raw/` folder noting the attempt count per scene.
+**Note on empirical claims (2026-07-10):** The "65-70% image first-pass" and "~80% video first-pass" figures are experiential observations from the director's production notes, not instrumented telemetry — image generation is where the universe is created (dense prompts + reference images can confuse the tools); video generation from a strong image is far more predictable. No automated retry logging exists yet. Raw folders in `04_visuals/raw/` contain unnumbered generation attempts but are not systematically labeled. EP10 adopts a mandatory attempts ledger (`attempts.md` in each `raw/` folder) so the number starts being measured.

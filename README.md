@@ -105,7 +105,7 @@ See the full evidence — every episode, the palette journeys, and the honest ca
 
 A few honesty notes, stated plainly because the project believes documented imperfection beats faked polish:
 
-- **The camera hallucinates.** There is no lens, no 180-degree line the model remembers — the "look" is a prompt suffix asserted in words. Roughly 80–90% of shots land on the first pass *when their reference already exists*; the rest need a reshoot. Reshooting is part of the craft, not a failure of it. The full argument, including the reshoot that taught the anchor rule, is in [docs/hallucinating-camera.md](docs/hallucinating-camera.md).
+- **The camera hallucinates.** There is no lens, no 180-degree line the model remembers — the "look" is a prompt suffix asserted in words. Image generation is the hard part — roughly 65–70% of visual prompts land on the first try; the rest need retries or prompt revision because the dense scene detail can confuse the tools. Video generation from a strong image is far more forgiving (~80% first-pass). The dramaturgy keeps you on course throughout, so retries converge fast. The full argument is in [docs/hallucinating-camera.md](docs/hallucinating-camera.md).
 - **Two gates are human on purpose.** After dramaturgy and after the motion script, a person must approve before the pipeline continues. Taste does not automate, so the repo does not pretend it does.
 - **The rules are tested, not asserted.** The lessons file carries ~125 hard-won rules — e.g. never write "glowing eyes" in a prompt (generators render literal glowing eyeballs); describe the material instead: *"dark amber glass lenses set into chrome sockets, like polished gemstones."* Rules earn their place by surviving a real reshoot.
 

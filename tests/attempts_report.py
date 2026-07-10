@@ -1,8 +1,8 @@
 """
 Robotiko v2.0 - Attempts-ledger reporter (STANDALONE - not part of run_all.py).
 
-The "80-90% first-pass" figure for image generation has always been experiential -
-a number from the director's production notes, never instrumented. The attempts
+The "65-70% image first-pass / ~80% video first-pass" figures have always been
+experiential - numbers from the director's production notes, never instrumented. The attempts
 ledger (`episode-{XX}/04_visuals/raw/attempts.md`, schema in
 `_management/pipeline_rules.md`) is where that number finally gets measured, one
 generated scene at a time, DURING production. EP10 is the first episode with a

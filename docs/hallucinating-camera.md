@@ -213,12 +213,16 @@ PRIOR FRAME AS THE BASE IMAGE rules in `_memory/lessons.md`.
 
 ### On reshoots — the honest number
 
-You will not get every shot on the first generation. Across nine episodes on this
-project, the experiential rule of thumb — an observation from the edit bay, not
-instrumented telemetry — is that roughly **80-90% of shots land on the first
-pass** when their references already exist (the figure ADR-0007 records as lived
-observation, not telemetry). The rest need a reshoot or live prompt
-surgery of exactly the kind S30 got. When references were *missing* — EP09's
+You will not get every shot on the first generation. Image generation is where the
+universe is created — dense prompts carrying scene detail, character state,
+symbolic weight, plus reference images fed alongside. That complexity can confuse
+generation tools. Across nine episodes, the experiential rule of thumb — an
+observation from the edit bay, not instrumented telemetry — is that roughly
+**65–70% of image prompts land on the first try**. The rest need a retry or prompt
+revision: simplify the prompt, swap a few words, drop a detail the tool
+misreads. Video generation from a strong approved image is a different story —
+the universe is already built, it just flows — roughly **~80% first-pass**
+(the figure ADR-0007 records as lived observation, not telemetry). When references were *missing* — EP09's
 gold-body scenes were written against the wrong (damaged) base before the Kintsugi
 reference existed — that first-pass rate collapsed and nearly every shot needed a
 manual rescue, at eight-to-ten regenerations each. The tax is real and it is

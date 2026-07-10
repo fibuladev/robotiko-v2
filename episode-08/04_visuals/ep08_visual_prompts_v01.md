@@ -121,7 +121,7 @@ establishing shot, no characters. Save to: `episode-08/04_visuals/raw/`
 
 ---
 
-### ENV-01: The Sacred Mountain
+### ENV-01: The Ancient Mountain
 **Filename:** `ep08_ref_env_mountain.png`
 **Used in:** S01, S02, S03, S04, S05, S06, S24, S25, S32, S33
 **Generate ref:** None required — standalone.

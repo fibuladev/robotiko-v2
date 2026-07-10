@@ -14,9 +14,9 @@
 ## ★ CINEMATIC NORTH STAR (read first — this is the spine of the episode)
 
 **EP08 is a 40-day inner-retreat film.** The chosen-silence, withdraw-into-the-wilderness motif is one
-of the oldest and most universal in human spiritual life — it recurs across nearly every tradition, and
+of the oldest and most universal in human spiritual life — it recurs across cultures (quarantine, retreat, fast — a pattern found everywhere from folk ritual to philosophical practice), and
 we keep it exactly that broad: archetypal, never dressed in any single tradition's vocabulary or
-costume. For the first time in the whole series the world is **raw nature** — a sacred mountain and a
+costume. For the first time in the whole series the world is **raw nature** — an ancient mountain and a
 cave, not a human-made space. EP07 pivoted us from "music video, a tick above" to "art-house short
 film"; EP08 lives fully in that mode. The story moves from *outside* to *inside*: every previous episode
 set Robotiko **against** something (the system, the city, love, the noise). Here he is against nothing —
@@ -30,11 +30,11 @@ only himself, and at the end, not even that.
    the mountain's moods turn. The 55-second guitar solo (2:36–3:31) is the canvas where this passage
    first breathes. We never count days on screen with numbers — we *feel* them in the changing light.
 
-3. **THE WORLD — A SACRED MOUNTAIN + A CAVE (mythic, universal, raw).** One location with an internal
+3. **THE WORLD — AN ANCIENT MOUNTAIN + A CAVE (mythic, universal, raw).** One location with an internal
    architecture: the **ascent path** → the **summit / plateau** → the **cave (the retreat chamber)** →
    the **fire site** → the **sitting place**. Real rock, real wind, real earth, real fire — Tarkovsky's
    weight and patience (*Stalker*, *Andrei Rublev*), **not** abstract minimalism. The mountain is
-   placeless and timeless; it could be any sacred peak in any age. The only departure from this raw
+   placeless and timeless; it could be any ancient peak in any age. The only departure from this raw
    world is the dream sequence (see #7).
 
 4. **THE BODY DOES NOT TRANSFORM — the awareness does.** Robotiko stays **@Damaged (Phase 2)** the
@@ -84,10 +84,10 @@ only himself, and at the end, not even that.
     appears **only in the dream** (the melting staff = ungraspable memory). The outro **dissolves into
     silence**, not wind — a deliberate contrast with EP07's wind-out ending.
 
-11. **MYSTICISM — EMBEDDED, EARNED, UNIVERSAL — NEVER A COSTUME.** The retreat is felt through
+11. **THE INNER JOURNEY — EMBEDDED, EARNED, UNIVERSAL — NEVER A COSTUME.** The retreat is felt through
     atmosphere, breath, fire, and the bird — never through literal religious iconography or exotic
     decoration (Golden Rules: avoid "cathedral" / religious triggers; we use raw nature instead). The
-    psychological layer carries equal weight: the three dreams are the shadow work. The mysticism must
+    psychological layer carries equal weight: the three dreams are the shadow work. The contemplative depth must
     feel *lived*, not *worn*.
 
 ---
@@ -181,7 +181,7 @@ remains, when the label falls away, is not nothing.** It is the witness. The one
 
 ## LOCATION ARCHITECTURE
 
-**Discipline:** One world — a sacred mountain and its cave — with an internal geography that gives the
+**Discipline:** One world — an ancient mountain and its cave — with an internal geography that gives the
 film rhythm (the ascent, the summit, the cave, the fire, the sitting place all recur). Time moves
 through light, not cuts to new places. The dream sequence is the single, deliberate break from the raw
 mountain into an interior dreamscape. Raw and real everywhere except the dreams.
@@ -217,7 +217,7 @@ per EP07's unplug lesson). Music cuts to a heavy distortion impact; a heavy brea
 silence. The full payoff of EP07's planted tether — small plug then, the whole organ now.
 
 ### Override 2: The Vow (Chorus 1 — static, ritualistic)
-On the summit/plateau, the 40-day vow declared as a hypnotic, repetitive mantra. **Static witnessing
+On the summit/plateau, the 40-day vow declared as a hypnotic, repetitive refrain. **Static witnessing
 camera.** The body and the breath, framed against vast rock and sky — *just the frame and breath.* No
 camera movement; the stillness is the point.
 
@@ -295,7 +295,7 @@ The mountain holds in warm, fading light. Hope that is melancholic. The bridge i
 |---|---|
 | **Inner Transformation Only** | The body stays @Damaged (Phase 2) for the entire episode. No kintsugi, no patchwork, no glowing core. Visual reconstruction is EP09. |
 | **Raw Nature, Not Abstraction** | Real rock, wind, earth, fire — Tarkovsky's weight, not surreal minimalism. The dreams are the only surreal space. |
-| **Universal, Never a Costume** | The 40-day retreat is a universal human motif. No tradition-specific or exotic vocabulary, no literal religious iconography. Mysticism is *lived*, not *worn*. |
+| **Universal, Never a Costume** | The 40-day retreat is a universal human motif. No tradition-specific or exotic vocabulary, no literal religious iconography. The inner journey is *lived*, not *worn*. |
 | **The Witnessing Camera** | The camera bears witness. Static at vow and fire; with him only on the ascent (where he leads, ahead of the camera); orbital in the boardroom dream. MS ~3.5–4.5. |
 | **The Cable Rip Close-Up** | The decisive act is shot tight and visceral. Music cuts to distortion impact; the silence after is a wound, not peace. |
 | **Fire Is a Crucible for the Self** | The fire burns the old self symbolically; it does not change the body. Orange-red, never amber. Static camera. |

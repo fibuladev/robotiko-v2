@@ -6,8 +6,8 @@
 > **Language:** English (Sung — theatrical baritone answer-poem; verses 1-3 receive the teaching, verses 4-6 answer with his own life)
 > **Music:** 70s Anatolian Psychedelic / Symphonic / Progressive Rock. Mid-tempo stomp-clap + marching drums — a walking song. Minor-to-major. Ends: electric guitar solo with the refrain rising out of it ×3 (straight → elongated → rock scream), solo fades, final gong.
 > **Camera Personality:** THE COMPANION CAMERA (defined below — the finale of the EP07→EP10 lineage)
-> **Timestamps:** TBD — musical metadata stage pending. Section labels used until then.
-> **Status:** DRAFT — awaiting Fibula approval (concept session 2026-07-06)
+> **Timestamps:** See `ep10_musical_metadata.json` — 9 sections, 274s, confirmed 2026-07-06.
+> **Status:** APPROVED 2026-07-06
 
 ---
 
@@ -101,7 +101,7 @@ properly Brechtian move.
   gold-glow is allowlisted.)
 - The gold is COMPLETE and CALM — no longer spreading (EP09), no longer an event. He wears it like
   skin. In full sunlight it should read as almost ordinary — see COLOR JOURNEY.
-- Two traditions, one body: the mismatched patches are the **kırkyama** (the patched dervish cloak,
+- Two traditions, one body: the mismatched patches are the **kırkyama** (the patched cloak,
   master.md §2.3); the gold in the seams is the **kintsugi**. Both say the same thing — the repair
   is worn, not hidden.
 - Right ear still missing, torso dent, shoulder scratches, robochica_1-4 tattoos present on inner
@@ -377,15 +377,14 @@ walks alongside. External amber → internal gold (EP09) → gold indistinguisha
 
 ### Station
 **The Integrated Self — Arrival.** Not a summit: a road. The arrival never says "I am enlightened";
-it says "I came to walk beside" — the only humble closing. In the language of the Turkish wisdom
-tradition, the seventh station is not won by ascending but by returning to the ordinary world and
+it says "I came to walk beside" — the only humble closing. In this story's rendering, the seventh station is not won by ascending but by returning to the ordinary world and
 serving in it. The Twin Arrogances (hard and soft dialects) both spoke from above; the Mentor's
 third tongue — the language of those who walk beside, not above — is now Robotiko's native language.
 
 ### To the world (there is no EP11)
 The episode's last frame is the repository. Release day = repo public, AUTHOR.md visible (signed
 "I came to walk beside"), git log as closing credits, no pinned comment — first silence from the
-creator. The series does not end; it changes hands. 8 → ∞.
+creator. The arc does not end — it opens. It changes hands. 8 → ∞.
 
 ---
 
@@ -403,6 +402,6 @@ creator. The series does not end; it changes hands. 8 → ∞.
 
 ## APPROVAL STATUS
 
-- [ ] Concept notes approved by Fibula
-- [ ] Musical metadata JSON created (separate step — requires final Suno track)
-- [ ] Dramaturgy session (SEPARATE session, after both above)
+- [x] Concept notes approved by Fibula — 2026-07-06
+- [x] Musical metadata JSON created — 2026-07-06
+- [x] Dramaturgy session completed — 2026-07-06

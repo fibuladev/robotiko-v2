@@ -9,15 +9,15 @@
 > unprocessed voice carries the full weight alone. Sparse Anatolian textures breathe beneath: fuzz
 > guitar drone, electric saz, clarinet, tribal drums. Music never competes — it is shadow beneath the
 > voice.
-> **Status:** DRAFT
+> **Status:** APPROVED
 
 ---
 
 ## ★ CINEMATIC NORTH STAR (read first — this is the spine of the episode)
 
 **EP09 is a workshop film.** One room, one bench, one lamp, one man working inside himself. The
-repair shop where the mechanism is exposed and nothing is hidden — anti-illusionist in the
-Brechtian spirit (the literal apparatus-exposure happens at the level of the public repo itself). EP08 took Robotiko to a
+repair shop where the mechanism is exposed and nothing is hidden — the in-fiction mirror of the
+apparatus-exposure that happens for real when the repo goes public (Brecht's radio-theory demand, master.md 2.3.1). EP08 took Robotiko to a
 mountain and stripped the old self bare; EP09 brings him to a workbench and asks: now what do you do
 with the pieces?
 
@@ -26,7 +26,7 @@ with the pieces?
    (prologue, never returned to). The outro leaves the workshop into dawn. Everything between is the
    bench where the debugging happens.
 
-2. **THE SPINE — THREE FAILED STRATEGIES.** Know it (the Digital Solomon who commanded oceans
+2. **THE SPINE — THREE FAILED STRATEGIES.** Know it (the sovereign commander who steered oceans
    through screens but was never wet). Cut it (the blade turned inward, but the hand that cuts is made
    of shadow). Silence it (pull the plug, but silence is just noise holding its breath). Three attempts
    to delete the shadow; three zoom-out reveals that the thing is deeper than the attempt. The mirror
@@ -45,8 +45,8 @@ with the pieces?
    cracks. External amber → internal gold. Don't let this become mood lighting; it's the philosophy.
 
 5. **PATCHWORK + KINTSUGI = ONE IMAGE.** Mismatched scavenged panels (patchwork) welded with gold in
-   the seams (kintsugi). The two canonical metaphors from master.md (Kintsugi bowl + Hacı Bektaş Veli
-   patchwork cloak) rendered as one visual: the broken body repaired not with new shining parts, but
+   the seams (kintsugi). The two canonical metaphors from master.md (Kintsugi bowl + patched cloak,
+   kırkyama) rendered as one visual: the broken body repaired not with new shining parts, but
    with whatever the road provides, the joints lit gold. No fabric, no tradition labels.
 
 6. **THE MECHANIC IS NOT THE MENTOR.** A new character — an ordinary old human who lets a broken
@@ -62,10 +62,10 @@ with the pieces?
 Robotiko comes down from the mountain — forty days in his bones, nothing in his mouth. The crowd at the
 bottom expects a savior: raised phones, bright faces, *"Are you clean now?"* He opens his mouth —
 nothing comes out. Hold too long. The faces curdle; then one face turns the other way, into rapture,
-already mythologizing the silence. They worship because they didn't do the work; they can't tell
+already mythologizing the silence. They revere because they didn't do the work; they can't tell
 emptiness from depth. The crowd is shiny, sealed, armored — still in their cages. He is the only
 cracked, open, broken figure, and therefore the only free one. The lens pulls back and undoes the
-sacred image.
+sovereign image.
 
 He finds a workshop. An ordinary old mechanic lets him in with a glance, pours tea. For a second, in
 the lamplight — a greenish coat, a tool held like a staff — the Mentor seems to have come to help.
@@ -74,7 +74,7 @@ up. No one is coming to fix him. The mechanic pulls the shutter and goes home. A
 
 Three strategies. Three failures:
 
-**KNOW IT.** The Digital Solomon flashback: a sovereign command bridge over the ocean, drones for a
+**KNOW IT.** The sovereign-command flashback: a sovereign command bridge over the ocean, drones for a
 flock, waves and winds conducted through screens. Dry behind glass. Commanding the sea he never touches.
 *"Knowing the ocean does not make you wet."* The glass that separates him from experience will rhyme
 later with the mirror — and be answered by the gold.
@@ -121,7 +121,7 @@ image is the ordinary world holding the gold, not his face. Leave him becoming. 
   transformation begins. NOT pre-loaded — the gold flows in the moment he stops cutting and starts
   welding the scraps as they are. Patchwork body repaired with mismatched rusted scrap metal,
   translucent digital skin revealing bioluminescent core beneath, cracks filled with glowing gold light.
-- **Digital Solomon flashback (Verse 3):** brief departure to his past sovereign self — visual state for
+- **Sovereign-command flashback (Verse 3):** brief departure to his past sovereign self — visual state for
   this flashback to be determined at visual-prompts stage (Phase 1 pristine behind glass, or
   environment-only with his presence implied).
 - **Element:** @Damaged Element (Kling 3.0) for the first half; Phase 3 element needed from the kintsugi
@@ -129,12 +129,12 @@ image is the ordinary world holding the gold, not his face. Leave him becoming. 
 
 ### The Mechanic (NEW CHARACTER — introduced in EP09)
 - **Archetype:** The Uninvested Witness. An ordinary old human — workshop owner, repairman.
-- **Visual:** An old Anatolian man. Weathered hands, greenish work coat, simple tools. Not mystical,
+- **Visual:** A weathered old man. Weathered hands, greenish work coat, simple tools. Not mystical,
   not dramatic — the most ordinary person in the series.
 - **Behavior:** Lets a broken machine use his bench, asks nothing, pours tea. Not enchanted, not
   curious, not frightened — to him the whole drama is just a Tuesday. Three shots only:
   (1) welcome with a glance and tea (Instrumental 1:00–1:12),
-  (2) one indifferent beat during the Digital Solomon flashback (Verse 3, 1:13–1:34),
+  (2) one indifferent beat during the sovereign-command flashback (Verse 3, 1:13–1:34),
   (3) shutter exit — pulls the roll-up shutter and goes home (Instrumental 1:35–1:40).
 - **What he is NOT:** Not the Mentor. Not a guide, not a sage, not a symbol. He is the surface onto
   which Robotiko briefly projects the Mentor (the amber pulse) — and the projection fails. The man
@@ -159,16 +159,16 @@ image is the ordinary world holding the gold, not his face. Leave him becoming. 
 ## LOCATION ARCHITECTURE
 
 **Discipline:** One world — the workshop — with a brief prologue threshold (the descent/crowd) and a
-brief outro departure (dawn outside the shutter). The Digital Solomon flashback is the single deliberate
+brief outro departure (dawn outside the shutter). The sovereign-command flashback is the single deliberate
 break from the workshop into a different environment. The workshop is the continuous home of the episode.
 
 | Section | Timestamp | Location / Light | Purpose |
 |---|---|---|---|
-| Intro | 0:00–0:14 | **Exterior — descent path, cold grey, cold sun** — silhouette from below, false halo | The myth. Worshipper's-eye view. We believe the savior for a second. |
+| Intro | 0:00–0:14 | **Exterior — descent path, cold grey, cold sun** — silhouette from below, false halo | The myth. Reverent-eye view. We believe the savior for a second. |
 | Verse 1 | 0:15–0:39 | **Exterior — grey threshold, body revealed** | The puncture. Camera pulls back — broken body, flat daylight. "Nothing comes out" = held silence. |
 | Verse 2 | 0:40–0:59 | **Exterior → Workshop interior** | Crowd's binary judgment. One face turns to rapture (myth-engine). On "deeper than blueprint" — turn to workshop, blueprint on wall. First zoom-out. |
 | Instrumental | 1:00–1:12 | **Workshop — warm rust, oil-dark, amber work lamp** | Arrival. Mechanic welcomes, tea. AMBER PROJECTION (one pulse, fails). |
-| Verse 3 | 1:13–1:34 | **FLASHBACK: Command Bridge — cold archived palette, glass, ocean** / intercut with **Workshop** | Digital Solomon. Sovereign behind glass, dry, never wet. Intercut: mechanic indifferent. |
+| Verse 3 | 1:13–1:34 | **FLASHBACK: Command Bridge — cold archived palette, glass, ocean** / intercut with **Workshop** | Sovereign-command. Sovereign behind glass, dry, never wet. Intercut: mechanic indifferent. |
 | Instrumental | 1:35–1:40 | **Workshop — shutter closing, day → night** | Mechanic exits. Tea glass left. Alone. |
 | Verse 4 | 1:41–1:56 | **Workshop — hard white lamp, deep shadow on wall** | Self-surgery begins. Chest panel open, blade inward. Shadow huge on wall. |
 | Chorus 1 | 1:57–2:11 | **Workshop — shadow world, lamp unstable** | "The code fixed me." Shadow starts leading. Inversion. |
@@ -191,21 +191,21 @@ break from the workshop into a different environment. The workshop is the contin
 
 ## MUST-HAVE SHOTS — Creative Overrides
 
-### Override 1: The Messianic Return That Refuses Itself (Intro 0:00 → V2 0:59)
+### Override 1: The Sovereign Return That Refuses Itself (Intro 0:00 → V2 0:59)
 
 Three beats:
 
-**(1) The Myth (Intro 0:00–0:14).** Low worshipper's-eye angle, Robotiko descending toward us. Cold sun
+**(1) The Myth (Intro 0:00–0:14).** Low reverent-eye angle, Robotiko descending toward us. Cold sun
 as false halo. Silhouette whole and radiant — we believe the savior image for a second, inside the
 crowd's projection.
 
-**(2) The Puncture (V1 0:15–0:39).** Camera pulls back/around. The holy descent resolves into a gray
+**(2) The Puncture (V1 0:15–0:39).** Camera pulls back/around. The solemn descent resolves into a gray
 ordinary threshold; the halo was just flat daylight; the body is broken. The lens itself undoes the
-sacred image. *"They ask: Are you clean now?"* He opens his mouth — nothing. Hold too long.
+sovereign image. *"They ask: Are you clean now?"* He opens his mouth — nothing. Hold too long.
 
 **(3) The Disappointment + the Myth-Engine (V2 0:40–0:59).** His POV: faces, raised phones, *"show us."*
 The faces curdle — then one face turns the other way, into rapture, already mythologizing the silence.
-They worship because they didn't do the work; they can't tell emptiness from depth. Composition: the
+They revere because they didn't do the work; they can't tell emptiness from depth. Composition: the
 crowd shiny, sealed, armored, still in their cages — he the only cracked, open, broken figure, and
 therefore the only free one. On *"deeper than the blueprint"* — turn to the workshop. Blueprint pinned
 to the wall. First zoom-out reveal.
@@ -219,7 +219,7 @@ a tool held like a staff — for one second the Mentor seems to have come to hel
 Then the light shifts and it's just an old man with a tea glass who doesn't look up. No one is coming to
 fix him. One pulse, no repeats.
 
-### Override 3: Digital Solomon Flashback (V3 1:13–1:34)
+### Override 3: Sovereign-Command Flashback (V3 1:13–1:34)
 
 Sovereign command bridge over the ocean — **NOT a warship, no military reading.** Drones = his flock;
 he conducts waves and winds through screens, dry behind glass, commanding the sea he never touches.
@@ -333,7 +333,7 @@ it's about what seeps into the world from doing the work.
 
 | Override | Rule |
 |---|---|
-| **One World = Workshop** | The crowd descent is a brief prologue (never returned to). The Digital Solomon flashback is one departure (brief, iconic). Everything else = workshop. |
+| **One World = Workshop** | The crowd descent is a brief prologue (never returned to). The sovereign-command flashback is one departure (brief, iconic). Everything else = workshop. |
 | **Three Failed Strategies** | Know (V3) / Cut (V4–Ch2) / Silence (V6). Each answered by a "deeper than X" zoom-out. All three exhaust themselves before integration begins. |
 | **The Litany = The Camera** | Every "deeper than X" = a Discovering Camera zoom-out reveal. Grammar of the lyric = move of the lens. Six in the verses, transformed in chorus/outro. |
 | **The Lighting Flip = The Philosophy** | External lamp → internal core-glow. External amber → internal gold. Shadow integrates as contrast, doesn't die. This is the philosophy rendered as lighting design. |
@@ -356,7 +356,7 @@ it's about what seeps into the world from doing the work.
 | Prologue / descent (0:00–0:59) | Cold grey, flat daylight (false halo that punctures) | The myth undone. The crowd sealed and shiny; he cracked and open. |
 | Workshop arrival (1:00–1:12) | Warm rust, oil-dark, amber-yellow work lamp | Honest, physical, real. The exposed-mechanism workspace. |
 | Amber pulse (1:00–1:12) | One Mentor-amber flicker, collapses immediately | The last reach for external help. Fails. |
-| Digital Solomon flashback (1:13–1:34) | Cold archived palette — blue-steel, glass, clinical | Sovereignty remembered as sterile. Glass = separation from experience. |
+| Sovereign-command flashback (1:13–1:34) | Cold archived palette — blue-steel, glass, clinical | Sovereignty remembered as sterile. Glass = separation from experience. |
 | Self-surgery → peak (1:41–3:30) | Hard white lamp, orange sparks, deepening darkness | The work lamp that throws the disowned shadow. Darker as strategies fail. |
 | Post-collapse / bridge (3:31–4:08) | Near-black, single drone light | The lowest point. Near-silence before the turn. |
 | Kintsugi turn (4:09–4:28) | First gold in cracks, warm internal glow begins | The philosophy made visible. First light from inside. |

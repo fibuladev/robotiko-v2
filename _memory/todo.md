@@ -1,7 +1,24 @@
 # TODO — ACTIVE TASKS
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
-> Last Updated: 2026-07-07 (Two-phase redesign shipped + EP10 dry-run: GAP-C fix proven by a blind exam; EP10 Phase 1 done on branch test/ep10-two-phase-dryrun, gate-1R recorded, suite green. EP10 Phase 2 = next session, handoff below.)
+
+---
+
+## ACTIVE: PUBLIC-DOCUMENT AUDIT (2026-07-09) — launch-critical
+
+**Task:** Audit ALL public (tracked, non-code) documents before the EP10 open-source release. Hunting: religious references (forbidden), ethnic attribution where geographic framing is required, source-indefensible claims, mission-contradicting tone (anti-democratization), cross-file contradictions, stale date/version stamps, overreaching absolutes.
+**Method:** Expert panels (advocate + adversarial examiner + judge, primary sources) for contested claims — cultural attribution (Seven Stations framing reversal + per-figure verification), the "philosophical" terminology question, and the estrangement/alienation theory question (Brecht vs. Shklovsky vs. Suvin) — plus a repo-wide date-stamp audit and a 15-group sentence-level sweep.
+**Known focus points going in:** master.md Seven-Stations header block (religious-order attribution introduced by the 2026-07-06 terminology sweep — to be reversed); README.md Cultural-heritage figure labels; lessons.md TERMINOLOGY rule ~line 320 (same reversal); docs/hallucinating-camera.md audience framing (gatekeeping vs. democratization mission); stale "Last Updated" stamps (master.md, lessons.md, decisions_log.md).
+**Deliverable:** findings + sourced rewording proposals → Fibula approval gate → apply → suite green → commit. NO file changes before approval.
+
+- [x] Session-start mandatory reads
+- [x] Public-file inventory (notebooklm_brief.md + creator_strategy.md confirmed gitignored = out of public scope)
+- [x] Audit orchestration launched (3 panels + 2 scans + 15 sweep groups, read-only)
+- [x] Orchestration complete (25/26 first pass; estrangement judge re-run after a session-limit failure)
+- [x] Findings report generated: `_private/audit_2026-07/public_doc_audit_2026-07-10.md` (286 deduped findings: 15 critical / 79 major / rest minor + 2 panel verdicts + date-stamp policy) — presented to Fibula
+- [x] [HUMAN GATE] Fibula approved (2026-07-10) — decisions: lyrics/attested quotes untouchable; history rewrite authorized (order-name wording + one commit message must vanish); sha re-baseline OK; date policy Option C; forbidden-terms validator added; frame-asset rename ("hair-thin crossing"); answer-poem source claim softened to "inspired by"
+- [x] Batches B2-B6 applied (root/docs/mgmt/skills/memory — Opus 4.8 + Sonnet 5 subagents, diffs reviewed) + forbidden-terms gate shipped (check group 11, 31 meta-tests green). Working tree ~65 modified files, NOTHING COMMITTED yet.
+- [ ] **RESUME HERE (next session)** — full continuation plan: `_private/audit_2026-07/handoff/SESSION_HANDOFF_2026-07-10.md` (order: estrangement judge re-run → C.5 summary to Fibula; B1 master.md batch; B7 episodes completeness check; residuals; approvals re-baseline; suite 11/11; thematic commits; history rewrite + force push)
 
 ---
 
@@ -20,7 +37,7 @@
 
 **DRY-RUN + PHASE 1 DONE (2026-07-07, branch `test/ep10-two-phase-dryrun`, commit `145e058`):** ran the new flow end-to-end as a real user. BLIND decomposition exam (context-free subagent, only dramaturgy + SKILL + the 4 approved pixels) INDEPENDENTLY demanded REF E (market edge, S11-S12) and REF F (far-edge descent, S19-S22) — GAP-C fix proven live. All mechanical claims verified: validator shows `PHASE 1 ONLY` partial pass (not false green); the gate stops the flow; the negative test FAILS CI when v02 scenes ship without a valid 1R; and the interim v01 waiver does NOT bless a v02 (panel risk R2 closed). Phase 1 authored: v01 rewritten as the Phase-1 deliverable (6 REF blocks — A-D verbatim + frozen images, E/F fresh — decomposition, LOCKS, 35-scene coverage map, sentinel, ZERO scenes). Human generated + approved all 6 ref images (REF F picked from 3 variants, shadow-retouched for S22). Real gate-1R recorded (pinned frozen v01, sha `8305fb88`), interim waiver superseded, meta-tests updated. **Suite 10/10 green.**
 
-**PHASE 2 — DONE (2026-07-07, branch `test/ep10-two-phase-dryrun`):** Authored `ep10_visual_prompts_v02.md` — the complete Phase-1+2 document. Batch verification (Phase-2 opening move): all 6 approved PNGs read pixel-by-pixel; all 35 scenes walked against pixels + coverage map -> COMPLETE, no loop-back. All 6 Environment Geometry notes rewritten to the ACTUAL approved pixels (A: monolith towers LEFT-bg, near loop foreground, sun from right; B: staff near-center, Y-fork tracks, dish LEFT hillside, cyan retrofit line, NO houses; C: Moon LEFT / Sun RIGHT, valley+town below, ridge path lower-right; D: curving lane, dish RIGHT, geraniums LEFT; E: oven+simit cart+samovar RIGHT, dog-bowl foreground, green-plaster house LEFT; F: shutter stripes RIGHT, brazier foreground, glass tower horizon center-right). All 40 scene prompts framed to real pixels (S01-S35; sub-splits S02a/b, S08a/b/c, S10a/b, S27a/b, S34a/b; S35 = edit card, no image). Per-space Camera Ledger (angles vary within each space, landmark screen-sides consistent). Ref-less Scene Gate (S04/S08/S23/S27/S29/S34 signed off vs dramaturgy grammar). Sentinel REMOVED. All EP10 LOCKS enforced (Companion Camera; single Amber Pulse S10b only, embers orange-red; eye canon material-lens; mouthless-face guard esp. S17/S27/S31/S34; gaze discipline — direct lens ONLY at S34a/b; rear-view ear rule S13/S14/S18/S28; no path-shape reveal S32; ASCII prompts). Meta-test flipped (`test_phase2_asserted_and_latest_helpers_read_disk`: assertTrue + EP10_V02). `project_metadata.json` visuals "refs_approved" -> true. **Suite 10/10 green; v02 is actually validated (46 prompts: 6 refs + 40 scenes), no scaffold-skip.**
+**PHASE 2 — DONE (2026-07-07, branch `test/ep10-two-phase-dryrun`):** Authored `ep10_visual_prompts_v02.md` — the complete Phase-1+2 document. Batch verification (Phase-2 opening move): all 6 approved PNGs read pixel-by-pixel; all 35 scenes walked against pixels + coverage map -> COMPLETE, no loop-back. All 6 Environment Geometry notes rewritten to the ACTUAL approved pixels (A: monolith towers LEFT-bg, near loop foreground, sun from right; B: staff near-center, Y-fork tracks, dish LEFT hillside, cyan retrofit line, NO houses; C: Moon LEFT / Sun RIGHT, valley+town below, ridge path lower-right; D: curving lane, dish RIGHT, geraniums LEFT; E: oven+sesame-ring bread cart+samovar RIGHT, dog-bowl foreground, green-plaster house LEFT; F: shutter stripes RIGHT, brazier foreground, glass tower horizon center-right). All 40 scene prompts framed to real pixels (S01-S35; sub-splits S02a/b, S08a/b/c, S10a/b, S27a/b, S34a/b; S35 = edit card, no image). Per-space Camera Ledger (angles vary within each space, landmark screen-sides consistent). Ref-less Scene Gate (S04/S08/S23/S27/S29/S34 signed off vs dramaturgy grammar). Sentinel REMOVED. All EP10 LOCKS enforced (Companion Camera; single Amber Pulse S10b only, embers orange-red; eye canon material-lens; mouthless-face guard esp. S17/S27/S31/S34; gaze discipline — direct lens ONLY at S34a/b; rear-view ear rule S13/S14/S18/S28; no path-shape reveal S32; ASCII prompts). Meta-test flipped (`test_phase2_asserted_and_latest_helpers_read_disk`: assertTrue + EP10_V02). `project_metadata.json` visuals "refs_approved" -> true. **Suite 10/10 green; v02 is actually validated (46 prompts: 6 refs + 40 scenes), no scaffold-skip.**
 
 **Two false-green traps hit + fixed live (now lessons + SKILL Phase-2 checklist):** (1) scene headers MUST be `#### S{NN}` (4 hashes) or `extract_scenes` parses zero; (2) a sentinel-less v02 must contain NO TEMPLATE_MARKERS (`{XX}` etc.) or the sweep silently scaffold-skips the whole file, and never print the literal Text-Prompt marker in prose (false-positive prompt match).
 
@@ -82,10 +99,10 @@ glasses + side-by-side tracks · crane flock in Moon-Sun sky (break).
 
 ## REPO-READINESS PROGRAM — COMPLETED (2026-07-05)
 
-10-lens final rescore: **4.22 → 4.80 (+0.58)**. 9/10 lens "kapsam-içi kalan: yok".
+10-lens final rescore: **4.22 → 4.80 (+0.58)**. 9/10 lenses report "in-scope remaining: none".
 All 9 workstreams delivered (16 thematic commits). Report: `_private/audit_2026-07/repo_readiness_rescore.md`.
 
-| Lens | Önceki | Yeni | Delta |
+| Lens | Before | After | Delta |
 |---|---|---|---|
 | Dramaturg | 4.6 | 4.9 | +0.3 |
 | Solution Architect | 4.6 | 4.9 | +0.3 |
@@ -307,14 +324,14 @@ and launch playbooks live in the creator's private notes (not part of the open m
 
 ### 2026-03-07 Session Summary (EP03 Brainstorming + Concept Notes)
 **Task:** Brainstorm creative direction for EP03 dramaturgy before writing.
-**Key decisions:** Spoken intro = Mentor-Robotiko argument in house + model selection screen (anti-guru thesis). Sol-liberal group only in intro+V1. Locations: East=village wedding, North=Trabzon road rage, South=Alanya nightclub scam, Istanbul=miniature bridge + metrobus. Finale=sanayi sitesi kaynakci with grease IV. Mentor in chorus=amber light presence only. EP02 ear damage carries, no new permanent damage. Instrumental breaks=transition montages.
+**Key decisions:** Spoken intro = Mentor-Robotiko argument in house + model selection screen (anti-guru thesis). Left-liberal group only in intro+V1. Locations: East=village wedding, North=Trabzon road rage, South=Alanya nightclub scam, Istanbul=miniature bridge + metrobus. Finale=industrial-estate welder with grease IV. Mentor in chorus=amber light presence only. EP02 ear damage carries, no new permanent damage. Instrumental breaks=transition montages.
 **Deliverable:** `episode-03/03_direction/ep03_concept_notes.md` — complete with all must-have shots, creative overrides, mood notes.
 **Next step:** Create dramaturgy v01 in a new session.
 
 ### 2026-03-10 Session Summary (EP03 Dramaturgy v01)
 **Task:** Generate EP03 dramaturgy scene breakdown from approved concept notes + musical metadata.
 **Deliverable:** `episode-03/03_direction/ep03_dramaturgy_v01.md` — 40 scenes, 8:44 (524s), full coverage.
-**Key structure:** 5 spoken intro scenes (argument + model screen), 6 geographic trial locations (city/east/north/south/cinci hoca/Istanbul), 5 finale scenes (sanayi sitesi + grease IV). Mentor hybrid presence (physical bookends, amber atmospheric in choruses). Sol-liberal group intro+V1 only.
+**Key structure:** 5 spoken intro scenes (argument + model screen), 6 geographic trial locations (city/east/north/south/occult-charlatan den/Istanbul), 5 finale scenes (industrial estate + grease IV). Mentor hybrid presence (physical bookends, amber atmospheric in choruses). Left-liberal group intro+V1 only.
 **Flagged for review:** S04 text legibility, S23 receipt comedy balance, S33-S34 miniature bridge, S38 two-plane composition.
 **Next step:** Human reviews and approves dramaturgy → then visual prompts in a new session.
 
@@ -346,14 +363,14 @@ and launch playbooks live in the creator's private notes (not part of the open m
 ### 2026-03-22 Session Summary (EP04 Dramaturgy v01)
 **Task:** Generate EP04 dramaturgy scene breakdown from approved concept notes + musical metadata.
 **Deliverable:** `episode-04/03_direction/ep04_dramaturgy_v01.md` — 44 scenes, 7:03 (423s), full coverage.
-**Key structure:** 3-act structure (Return & Testimony / Cosmic Journey & Sacred Law / Temptation, Hammer & Awakening). Robotiko fully passive — only movement is final head-lift (S44). Mentor as sole protagonist. Historical montage across 4 eras (S16-S19) with Young Mentor aging. S20 = Piercing the Veil / Kindred Souls (aydınlanmış figürler, amber gözler — gönül gözü açık). S21 = Film-within-film (iç içe çerçevelerde aldatan/aldatılan döngüsü, S16-S19 yankıları, Mentor tek uyanık figür). Moon/Sun transformation (S22-S23) with staff materialization. Devil = black smoke + spiral horns (S27-S29). Hammer scene (S31-S34): real, heavy, amber glow only at swing. Second tea glass as emotional anchor (6 appearances). Amber = truth color DNA (staff → Kindred Souls' eyes → Sun → TRUTH → hammer → eyes).
+**Key structure:** 3-act structure (Return & Testimony / Cosmic Journey & Sacred Law / Temptation, Hammer & Awakening). Robotiko fully passive — only movement is final head-lift (S44). Mentor as sole protagonist. Historical montage across 4 eras (S16-S19) with Young Mentor aging. S20 = Piercing the Veil / Kindred Souls (enlightened figures, amber eyes — inner sight open). S21 = Film-within-film (nested frames showing the deceiver/deceived cycle, echoes of S16-S19, Mentor the only awake figure). Moon/Sun transformation (S22-S23) with staff materialization. Devil = black smoke + spiral horns (S27-S29). Hammer scene (S31-S34): real, heavy, amber glow only at swing. Second tea glass as emotional anchor (6 appearances). Amber = truth color DNA (staff → Kindred Souls' eyes → Sun → TRUTH → hammer → eyes).
 **Flagged for review:** S04 tea glass detail, S16-S19 Young Mentor consistency, S20 Kindred Souls amber eyes + reference image, S21 nested frames readability, S23 Sun transformation, S27-S28 smoke+horns, S34 ego shatter, S44 eye color change.
 **Next step:** Human reviews and approves dramaturgy → then visual prompts in a new session.
 
 ### 2026-03-23 Session Summary (EP04 Visual Prompts v01)
 **Task:** Generate EP04 visual prompts from approved dramaturgy (44 scenes).
 **Deliverable:** `episode-04/04_visuals/ep04_visual_prompts_v01.md` — 48 prompts (44 scenes, 4 keyframe pairs: S03, S30, S34, S44) + 4 reference images.
-**Reference images created:** (1) REF-ENV-01: Mentor's Room interior, (2) REF-CHAR-01: Young Mentor (clean-shaven, for vision sequences), (3) REF-CHAR-02: Kindred Souls (dervish, philosopher, healer, sage with amber eyes), (4) REF-ENV-02: Sunlit Moon Surface.
+**Reference images created:** (1) REF-ENV-01: Mentor's Room interior, (2) REF-CHAR-01: Young Mentor (clean-shaven, for vision sequences), (3) REF-CHAR-02: Kindred Souls (wandering ascetic, philosopher, healer, sage with amber eyes), (4) REF-ENV-02: Sunlit Moon Surface.
 **Key tracking:** Young Mentor aging across S16-S34 (clean-shaven → stubble → thin beard → fuller beard → middle-aged). Staff chronology correct (no staff in visions S16-S33, born at S34, present in room S35+). Amber DNA maintained throughout. Devil = smoke + horns only. Robotiko passive (Phase 2: rusted, cracked, sparking, glitching). Only movement = S44 head-lift.
 **Validation:** 52 prompts with suffix ✅, 52 with 16:9 ✅, no "pristine" in prompts ✅, no character names in prompts ✅.
 **Next step:** Human generates reference images first → then scene images in Nano Banana → select → motion script in new session.
@@ -517,11 +534,11 @@ and launch playbooks live in the creator's private notes (not part of the open m
 - [x] **EP08 LAUNCHED on YouTube** ✅ 2026-06-17
 
 ### 2026-06-04 Session Summary (EP08 Concept Notes)
-**Task:** Discuss and write EP08 "40 Days Offline" concept notes (The Contented Self — the most mystical episode).
+**Task:** Discuss and write EP08 "40 Days Offline" concept notes (The Contented Self — the most inward, contemplative episode).
 **Deliverable:** `episode-08/03_direction/ep08_concept_notes.md` — APPROVED. EP07 format.
-**Locked creative direction:** (1) NO physical Phase 2→3 transformation in EP08 — body stays @Damaged the whole episode; the transformation is inner/consciousness only; visible reconstruction (gold-filled cracks, patchwork, bioluminescent core) begins EP09. Two-beat arc: EP08 strips bare → EP09 mends with gold. (2) World = mythic/universal sacred mountain + cave, raw nature (first time in the series), Tarkovsky weight, not abstract. (3) Cable rip (1:41) = decisive act, close-up, visceral. (4) Fire (5:51) = psychological crucible, not a body change; orange-red, never amber; static camera. (5) "Cast it off" (7:01) = jacket-removal gesture (no body change); discarded armor laid beside the empty cage. (6) Climax = the self watching its own liberation (seated @Damaged body watches a luminous soul-bird fly free); the only visible inner-change marker = eyes steady from glitch to calm blue. (7) "The Price of the Machine" (5:39) = commodification wound — model names / API costs / billing rain like acid, "burning the hand" burns hand and core; this wound ignites the fire. (8) Witnessing Camera; color journey cold grey → orange-red fire → warm Day-Forty daylight; amber only in dream (melting staff = memory); outro dissolves to silence (not wind). (9) Three dreams: Mentor (memory only, melting amber staff), Robochica (pixelating face), boardroom of selves ("Obsolete," orbital camera).
+**Locked creative direction:** (1) NO physical Phase 2→3 transformation in EP08 — body stays @Damaged the whole episode; the transformation is inner/consciousness only; visible reconstruction (gold-filled cracks, patchwork, bioluminescent core) begins EP09. Two-beat arc: EP08 strips bare → EP09 mends with gold. (2) World = mythic/universal archetypal mountain + cave, raw nature (first time in the series), Tarkovsky weight, not abstract. (3) Cable rip (1:41) = decisive act, close-up, visceral. (4) Fire (5:51) = psychological crucible, not a body change; orange-red, never amber; static camera. (5) "Cast it off" (7:01) = jacket-removal gesture (no body change); discarded armor laid beside the empty cage. (6) Climax = the self watching its own liberation (seated @Damaged body watches a luminous soul-bird fly free); the only visible inner-change marker = eyes steady from glitch to calm blue. (7) "The Price of the Machine" (5:39) = commodification wound — model names / API costs / billing rain like acid, "burning the hand" burns hand and core; this wound ignites the fire. (8) Witnessing Camera; color journey cold grey → orange-red fire → warm Day-Forty daylight; amber only in dream (melting staff = memory); outro dissolves to silence (not wind). (9) Three dreams: Mentor (memory only, melting amber staff), Robochica (pixelating face), boardroom of selves ("Obsolete," orbital camera).
 **Notes corrected:** `character_profiles.json` gained an `ep08_exception` clarification (EP08 inner / EP09 visual) and had non-English/orientalist wording cleaned. `ep08_pipeline_session_prompt.md` transformation lines fixed.
-**Lessons added:** EP08 body stays @Damaged; 40-day retreat = universal motif; "Sufi" forbidden (orientalist veneer); no non-English words in repo deliverables.
+**Lessons added:** EP08 body stays @Damaged; 40-day retreat = universal motif; the tradition-label ban added as an editorial framing choice (see lessons.md TERMINOLOGY rule); no non-English words in repo deliverables.
 **Next step:** Dramaturgy v01 in a NEW session (clean context per workflow).
 
 ### 2026-06-04 Session 3 Summary (EP08 Visual Prompts v01)

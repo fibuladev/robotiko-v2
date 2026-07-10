@@ -1,7 +1,6 @@
 # DECISIONS LOG
 > Key architectural and creative decisions made during production.
 > This file serves as both memory and documentation for open source users.
-> Last Updated: 2026-02-23
 
 ---
 
@@ -17,7 +16,7 @@ When a significant decision is made:
 
 ### Legacy universe file → master.md
 - **Decision:** Renamed the legacy universe file to `master.md` and removed all explicit religious references.
-- **Reason:** Project will be open source. Universal language ensures broader accessibility. The philosophical depth is preserved through the Turkish wisdom tradition (Yunus Emre, Pir Sultan Abdal, Hacı Bektaş, Mevlana) without framing them as religious doctrine.
+- **Reason:** Project will be open source. Universal language ensures broader accessibility. The philosophical depth is preserved through the Turkish wisdom tradition — the voices that shaped it: Yunus Emre, Pir Sultan Abdal, Hacı Bektaş Veli, Mevlana — without framing them as religious doctrine.
 
 ### Musical Metadata Format
 - **Decision:** All-in-one JSON produced by Claude via `_skills/robotiko-musical-metadata/SKILL.md`. Human provides BPM + Key (from vocalremover.org) + timestamped lyrics. No separate timestamped lyrics file needed.
@@ -79,7 +78,7 @@ When a significant decision is made:
   - Channel name: **Fibula** (creator identity, not project name — allows future projects)
   - AUTHOR.md approved — appears only on EP10 release day when repo goes public
   - No timestamps in YouTube descriptions (cinematic integrity — "do not skip")
-  - No end screens except EP10 GitHub link (silence after music is sacred)
+  - No end screens except EP10 GitHub link (the silence after the music is deliberately left untouched)
   - Repository goes public on EP10 release day — no delay
   - AI transparency from EP01 — no hiding, no phased reveal
   - Inspiration credits at episode level, not project level (Cem Karaca → EP05, Korkmazgil → EP06)
@@ -103,6 +102,12 @@ When a significant decision is made:
 ### EP06 — Korkmazgil Easter Egg (Future)
 - **Decision:** Korkmazgil portrait visible OUTSIDE the sterile workspace — corridor or street wall as Robotiko exits.
 - **Reason:** EP06 inspired by "Bir Ornek Insan Portresi." Poet exists outside the machine. To be integrated during EP06 dramaturgy.
+
+---
+
+## 2026-06+ — DECISIONS MOVED TO ADRs
+
+From late June 2026 onward, architectural decisions are recorded as Architecture Decision Records in `_management/adr/` (see its README index). This log remains as the pre-ADR history.
 
 ---
 

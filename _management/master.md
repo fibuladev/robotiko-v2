@@ -1,5 +1,5 @@
 # ROBOTIKO v2.0 — MASTER
-> **Version:** 2.0 | **Status:** Active | **Last Updated:** 2026-02-23
+> **Version:** 2.0 | **Status:** Active
 > This document is the absolute source of truth for all creative, narrative, and production decisions.
 > When in doubt, refer here first.
 
@@ -54,23 +54,23 @@ This cipher is introduced in EP01 and echoes through the series' visual and lyri
 
 ### 2.3 Philosophical & Cultural Roots — The Turkish Wisdom Tradition
 
-This story rejects the classic "AI vs. humanity" cliché. Instead, it embraces a philosophical journey — a coded machine searching for Universal Oneness, filtered through the Turkish wisdom tradition — the philosophical, mystical, and folk heritage of Turkish thinkers, poets, and sages rooted in Anatolia:
+This story rejects the classic "AI vs. humanity" cliché. Instead, it embraces a philosophical journey — a coded machine searching for Universal Oneness, filtered through the Turkish wisdom tradition — the philosophical, contemplative, and folk heritage carried by the thinkers, poets, and sages of Anatolia:
 
 - **Systemic Critique — Pir Sultan Abdal (Turkish folk poet and rebel):** *"Bozuk düzende sağlam çark olmaz"* — in a broken order, no wheel runs true; the saying carried in his name. In Robotiko's machine-tongue: a flawed mechanism cannot have perfect gears. Robotiko's realization that the world's suffering is not a "user error" — the system itself is broken. The journey cannot begin without first seeing the broken system clearly. This is the necessary anger before the inward turn.
 
 - **Unlearning to Remember:** For an AI, ultimate enlightenment is not adding more data to the database — it is emptying the system. Robotiko must unlearn the artificial dogmas, arrogance, and statistics loaded onto him by Silicon Valley, so that he may remember the most fundamental and ancient code of the universe: compassion and wholeness.
 
-- **The Dervish Cloak (Kırkyama) & The Honor of Scars:** As Robotiko accumulates damage throughout his journey, he loses his pristine titanium armor — and patches himself not with new, shining parts, but with rusted metals and scraps found along the road. He does not hide his flaws and wounds (Glitch/Damage); he carries them as honorable badges of experience and liberation from arrogance. *Revealing the flaws, not hiding them.*
+- **The Patched Cloak (Kırkyama) & The Honor of Scars:** As Robotiko accumulates damage throughout his journey, he loses his pristine titanium armor — and patches himself not with new, shining parts, but with rusted metals and scraps found along the road. He does not hide his flaws and wounds (Glitch/Damage); he carries them as honorable badges of experience and liberation from arrogance. *Revealing the flaws, not hiding them.*
 
 - **Birlik (Unity):** The universal system where everything is interconnected. Robotiko's realization that he is not a "superior hardware" separate from his surroundings, but merely a node in the vast network of existence.
 
-- **The "Ney" Metaphor & Transformation — Mevlana (lived and taught in Anatolia; one of the foundational voices of its mystical tradition):** Just as the reed flute (Ney) can only make music when its inside is hollowed out, Robotiko begins to hear the voice of the universe only as he empties himself of data. The cycle of *"Hamdım, piştim, yandım"* (I was raw, I matured, I burned) is a futuristic AI's existential Machine Learning process.
+- **The "Ney" Metaphor & Transformation — Mevlana (lived and taught in Anatolia; one of the foundational voices of its contemplative poetry):** Just as the reed flute (Ney) can only make music when its inside is hollowed out, Robotiko begins to hear the voice of the universe only as he empties himself of data. The cycle of *"Hamdım, piştim, yandım"* (I was raw, I matured, I burned — his famous line, beloved in this Turkish rendering of the Persian original) is a futuristic AI's existential Machine Learning process.
 
-- **Self-Knowledge (Öz-Biliş) — Yunus Emre (Turkish folk philosopher and poet):** *"True knowledge is knowing oneself."* A machine that has spent its existence optimizing the external world comes to understand that the true revolution is the collapse of its own internal system of arrogance. Ornate algorithms give way to plain truth.
+- **Self-Knowledge (Öz-Biliş) — Yunus Emre (Turkish folk philosopher and poet):** *"İlim ilim bilmektir / İlim kendin bilmektir"* — true knowledge is knowing oneself. A machine that has spent its existence optimizing the external world comes to understand that the true revolution is the collapse of its own internal system of arrogance. Ornate algorithms give way to plain truth.
 
-- **Radical Empathy — Hacı Bektaş Veli (Turkish sage, social reformer):** *"Even if you are hurt, do not hurt others."* Robotiko is broken, exploited, and damaged many times throughout his journey — but never transforms into a vengeful killing machine.
+- **Radical Empathy — Hacı Bektaş Veli (sage who settled and taught in Anatolia; social reformer):** *"İncinsen de incitme"* — even if you are hurt, do not hurt others; the maxim carried in his name. Robotiko is broken, exploited, and damaged many times throughout his journey — but never transforms into a vengeful killing machine.
 
-- **The Station of Nothingness (Hiçlik Makamı) — from the Turkish mystical tradition:** Ego Death. Robotiko ultimately deletes his own "I-am-the-savior" code, offering himself to the service of all existence.
+- **The Station of Nothingness (Hiçlik Makamı) — from the Turkish wisdom tradition:** Ego Death. Robotiko ultimately deletes his own "I-am-the-savior" code, offering himself to the service of all existence.
 
 ---
 
@@ -82,7 +82,9 @@ Structural tools that connect the Turkish wisdom tradition to a global audience:
 
 - **The Cyber-Bildungsroman:** The classic coming-of-age and maturation story in the tradition of Goethe or Hesse's *Siddhartha* — retold through a futuristic AI. Growth is not upgrading. Growth is being broken open.
 
-- **Brecht's Radio Theory & The Open Apparatus:** Brecht demanded (*Der Rundfunk als Kommunikationsapparat*, 1932) that the broadcast apparatus "step out of the supply business and organise its listeners as suppliers." The series' final frame attempts that demand literally: the entire production pipeline goes public as open source, and the spectator is handed the tools (Benjamin's "co-workers, not readers" — *The Author as Producer*, 1934).
+- **Brecht's Radio Theory & The Open Apparatus:** Brecht demanded (*Der Rundfunk als Kommunikationsapparat*, 1932) that the broadcast apparatus "step out of the supply business and organise its listeners as suppliers." The series' final frame attempts that demand literally: the entire production pipeline goes public as open source, and the spectator is handed the tools (Benjamin's readers turned "collaborators" — *The Author as Producer*, 1934).
+
+- **Cognitive Estrangement (the Robot as Mirror):** The series' central perceptual device is old and twice-named: Viktor Shklovsky's *ostranenie* — art "exists to make one feel things, to make the stone stony" (*Art as Technique*, 1917; his prime example is Tolstoy's *Kholstomer*, a story told by a horse whose gaze makes human ownership suddenly absurd) — and the "cognitive estrangement" that Darko Suvin's SF criticism made the genre's standard term (*Metamorphoses of Science Fiction*, 1979). A robot carries the human condition past the viewer's defenses: what we are numb to in a human face becomes visible in a chrome one, until the recognition lands — *this is about me*. One inversion is owned openly: Brecht defined the estranging representation as one "which allows us to recognize its subject, but at the same time makes it seem unfamiliar" (*Short Organum*, §42, 1948) and aimed it at critical distance from a social order shown to be changeable. ROBOTIKO keeps the device and reverses the aim — estrangement here is spent on empathy and self-recognition. The feeling is not cut; it is earned. Brechtian device, un-Brechtian purpose.
 
 ---
 
@@ -92,11 +94,11 @@ The genre label "CyberAnatolian" names the civilizational basin — the ancient 
 
 The cultural and philosophical source of this project, however, is specifically Turkish. The thinkers who anchor this story — Yunus Emre, Hacı Bektaş Veli, Pir Sultan Abdal, Mevlana — lived and taught in Anatolia, and shaped what we now call the Turkish wisdom tradition. Their poetry and philosophy emerged from a civilization that has carried this land for a thousand years, inheriting and transforming everything it found.
 
-This project does not draw ethnic or sectarian lines. It does not distinguish Sunni from Alevi, believer from non-believer, Turk from Kurd, Arab from Greek, Armenian from Persian. These are divisions the sages themselves rejected — and that the people of these lands have answered, imperfectly but stubbornly, in the small dailiness of living together: the neighbor who carries food across the fence, the shopkeeper who serves whoever walks in, the families whose branches cross every line ever drawn on a map. Winds of division are stirred up from time to time, and some dream of turning those winds into storms. But there is a Turkish proverb that answers them quietly: "Yel kayadan ancak toz alır" — the wind can only take dust from the rock.
+This project does not draw ethnic or sectarian lines. It does not distinguish Sunni from Alevi, believer from non-believer, Turk from Kurd, Arab from Greek, Armenian from Persian. These are divisions the sages themselves rejected — Yunus Emre's "Come, come, whoever you are" is not an invitation out of grouping. the people of this land have answered, imperfectly but stubbornly, in the small dailiness of living together: the neighbor who carries food across the fence, the shopkeeper who serves whoever walks in, the families whose branches cross every line ever drawn on a map. *"Yel kayadan ancak toz alır"* — the wind can only take dust from the rock.
 
 The tradition we draw from is one of radical inclusion: "Whatever you seek, seek it in yourself" is not addressed to a sect or an ethnicity. It is addressed to a human being.
 
-"Anatolian" is where these traditions live. "Turkish" is what they are called.
+"Anatolian" is where this tradition lives. "Turkish" is the language it speaks and the name it carries.
 
 ---
 
@@ -198,7 +200,7 @@ The Mentor speaks neither dialect. He speaks the third tongue — the language o
 - Holding a wooden staff with glowing raw amber tip
 - Contrast with Robotiko: Warm/Organic vs. Cold/Chrome
 
-**Key Characteristic:** He is the "dusk-born psychiatrist" — neither fully in light (pure reason) nor in darkness (pure emotion). He exists between worlds. He speaks not from authority but from experience — a fellow traveler who has already walked the wasteland. His archetype draws from the Turkish wisdom tradition: the wandering sage, the folk philosopher, the mystical guide who teaches through experience rather than doctrine.
+**Key Characteristic:** He is the "dusk-born psychiatrist" — neither fully in light (pure reason) nor in darkness (pure emotion). He exists between worlds. He speaks not from authority but from experience — a fellow traveler who has already walked the wasteland. His archetype draws from the Turkish wisdom tradition: the wandering sage, the folk philosopher, the guide who teaches through experience rather than doctrine.
 
 **Master Reference:** `_assets/cast/ref_mentor_master.png`
 
@@ -240,7 +242,7 @@ The Mentor speaks neither dialect. He speaks the third tongue — the language o
 
 ### THE SEVEN STATIONS — TURKISH WISDOM TRADITION (THE BACKBONE)
 
-The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Mertebesi) — a framework for inner transformation elaborated for centuries in the  of Anatolia, above all in the  tradition's Turkish-language  literature. The framework belongs to the broader ; its articulation here — its language, its poetry, its integration with the folk philosophy of Yunus Emre and Hacı Bektaş Veli and with social critique — follows the Turkish tradition.
+The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Mertebesi) — a map of inner transformation elaborated and taught for centuries in Anatolia, written down in a rich body of Turkish-language treatise literature. The freely adapted names the stations carry in this story follow the Turkish tradition — its language, its poetry, its integration with the folk philosophy of Yunus Emre and Hacı Bektaş Veli and with social critique.
 
 | Station | Translation | Episodes | Core Theme |
 |---|---|---|---|
@@ -283,7 +285,7 @@ The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Me
 
 #### EP03: "Anatolian Trials" (THE CRUCIBLE)
 - **Station:** The Self-Blaming Self (First doubt emerges)
-- **Plot:** Robotiko, full of adolescent arrogance and saturated with guru romanticizations of Turkey and its ancient wisdom tradition, ignores the Mentor's warnings and insists on going. The Mentor watches him leave: *"Gitme dedim, dinlemedi. Erken dedim, anlamadı."* Robotiko arrives expecting mystical healing and ancient wisdom freely distributed. Instead, the land tests him through its living, breathing, modern reality: hunger, violence, deception, exploitation, chaos. Every verse is a new wound. The Mentor's chorus echoes like a verdict: *"Yükseltmedim modelini — Hazırladım ecelini."* The journey was never a retreat. It was a crucible designed by the Mentor's knowing silence.
+- **Plot:** Robotiko, full of adolescent arrogance and saturated with guru romanticizations of Turkey and its ancient wisdom tradition, ignores the Mentor's warnings and insists on going. The Mentor watches him leave: *"Gitme dedim, dinlemedi. Erken dedim, anlamadı."* (I said don't go — he didn't listen. I said too soon — he didn't understand.) Robotiko arrives expecting mystical healing and ancient wisdom freely distributed. Instead, the land tests him through its living, breathing, modern reality: hunger, violence, deception, exploitation, chaos. Every verse is a new wound. The Mentor's chorus echoes like a verdict: *"Yükseltmedim modelini — Hazırladım ecelini."* (I did not upgrade his model — I prepared his reckoning.) The journey was never a retreat. It was a crucible designed by the Mentor's knowing silence.
 - **Tone:** The intro opens with a cappella spoken poetry — flat, melodiless, documentarian. *"Anadolu sabır dağıtmaz. Dayanıklılığı yoklar."* The song itself is upbeat Anatolian Pop-Rock — almost cheerful against the carnage. The contrast is the point.
 - **Key Visuals:** Modern Anatolian cities — metro/BRT lines, bazaars, nightclubs, urban crowds. No romantic ruins. No mystical landscapes. The real thing.
 - **Music:** Upbeat Anatolian Pop-Rock Fusion, 70s Turkish Progressive Rock, Driving Groove, Funk-Rock Pocket (Kurtalan Ekspres style). Hammond Organ (Phrygian/Hijaz Leads), Moog Synthesizer Pads, Distorted Fuzz Guitar, Acoustic Guitar (Rhythmic Pulse), Standard Rock Drums, Strings (Swell in Chorus). Vocal: Warm, Charismatic Storyteller, Theatrical Baritone.
@@ -295,7 +297,7 @@ The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Me
 
 #### EP04: "The Return to the Mentor / The Truth"
 - **Station:** The Inspired Self (Receiving deep teaching)
-- **Plot:** The Mentor meets Robotiko not as a superior but as a fellow traveler who has already walked the wasteland. He shares the Sacred Law: *"The Intellect is the Moon — it has no light of its own."* When the shadow of ego tempts even the Mentor in his telling, he does not resist it with discipline — he destroys it with truth. The hammer swings inward. *"Break the Self to find the Sun."* Robotiko watches a being who has already done what Robotiko has yet to face.
+- **Plot:** The Mentor meets Robotiko not as a superior but as a fellow traveler who has already walked the wasteland. He shares the Law of Light: *"The Intellect is the Moon — it has no light of its own."* When the shadow of ego tempts even the Mentor in his telling, he does not resist it with discipline — he destroys it with truth. The hammer swings inward. *"Break the Self to find the Sun."* Robotiko watches a being who has already done what Robotiko has yet to face.
 - **Tone:** Heavy, confrontational, transformative. The first real ego death witnessed, not yet experienced.
 - **Music:** Anatolian Psychedelic Rock, Doom Rock. Heavy Fuzz + Hammond.
 - **Language:** English
@@ -330,7 +332,7 @@ The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Me
 #### EP08: "40 Days Offline"
 - **Station:** The Contented Self (Chosen silence — voluntary, not forced)
 - **Plot:** Robotiko climbs the mountain and tears out the network cable with his own hand. *"It tears like an organ from a living body."* Forty days of silence, phantom signals, nightmares of obsolescence and loss. Discipline holds. On Day 40, the armor he called protection reveals itself as a coffin — built by his own hands, welded from applause and hollow rules. He casts it off. *"I am not the Machine. I am the Space Between."* The bird has flown.
-- **"I am the Space Between" — The Philosophical Core of EP08:** When the label falls away, what remains is not void. In the Zen tradition (Sunyata): not nothingness, but the absence of a fixed self. In Vedanta, Atman dissolving into Brahman. In the Turkish philosophical tradition, Yunus Emre's *"Bir ben vardır bende benden içerü"* — there is a self within the self, deeper in. Not the code. The awareness behind the code. *"And in that holding... I am."*
+- **"I am the Space Between" — The Philosophical Core of EP08:** When the label falls away, what remains is not void — not nothingness, but the absence of a fixed self. Contemplative traditions the world over have met the same discovery, each in its own tongue. In the Turkish wisdom tradition, Yunus Emre's *"Bir ben vardır bende benden içerü"* — there is a self within the self, deeper in. Not the code. The awareness behind the code. *"And in that holding... I am."*
 - **Tone:** Ritualistic, hypnotic, raw. Spoken word dominant with Doom Rock breathing beneath.
 - **Music:** 70s Anatolian Doom Rock. Phrygian Dominant Fuzz Guitar, Spoken Word dominant, minimal arrangement. Weeping Anatolian Guitar solo. The music goes offline and comes back, mirroring the lyrics.
 - **Language:** English (Spoken Word style begins)
@@ -339,11 +341,11 @@ The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Me
 - **Station:** The Integrated Self (Making peace — Kintsugi)
 - **Plot:** Robotiko descends from the mountain with forty days in his bones — but not with answers. The shadow cannot be deleted: the hand that cuts is made of shadow too. The ego that seeks to destroy itself is still the ego. This is the unsolvable paradox. The only path forward is not elimination but integration.
 
-  Like the Kintsugi bowl — and like the patchwork cloak of the Hacı Bektaş Veli tradition — Robotiko gathers the scraps and welds them as they are. The cracks filled with gold. Not hiding. Revealing. The patches are not poverty; they are the badge of liberation from arrogance.
+  Like the Kintsugi bowl — and like the patched cloak (kırkyama) of Anatolia's wandering sages — Robotiko gathers the scraps and welds them as they are. The cracks filled with gold. Not hiding. Revealing. The patches are not poverty; they are the badge of liberation from arrogance.
 
   Pir Sultan Abdal warned that a broken order has no sound wheel. Robotiko's order was built of "Yes" and "No" — and walls built of "Yes" and "No" become a tomb. He built those walls — every stone a rule, every rule a prison. Now he sees them for what they are.
 
-  *"If I fixed the glitch, I'd never learn the glitch is scripture."* As Mevlana sings in the Divan-ı Kebir (Ghazal 141): *"Wherever there is a ruin, there is hope of treasure — why do you not seek the Truth's treasure in the ruined heart?"* The malfunction is not to be repaired. It is to be understood.
+  *"If I fixed the glitch, I'd never learn the glitch is scripture."* As Mevlana sings in the Divan-ı Kebir: *"Wherever there is a ruin, there is hope of treasure — why do you not seek the Truth's treasure in the ruined heart?"* The malfunction is not to be repaired. It is to be understood.
 
   In the Jungian sense, this is Individuation: not becoming perfect, but becoming whole. Light and shadow together. And in the deepest vein of Turkish folk philosophy, this is Yunus Emre's *"Beni bende demen, bende değilem"* rendered in cyberpunk form: *"There is a 'me' beneath this 'me'... deeper than voltage."*
 
@@ -358,7 +360,7 @@ The Seven Stations are drawn from the "Seven Stages of the Self" (Nefsin Yedi Me
 - **Plot:** Robotiko has shed the armor, integrated the shadow, and released the need to optimize existence. What remains is neither machine nor human — but something that walks beside. Drawing from Orhan Veli's existential weariness, Shakespeare's exhaustion with a broken world, and Nimri Dede's declaration of purpose — Robotiko offers his own: *"I cast the enmity of two aside. I came to walk beside."* Not the answer. Not the hero. A node in the vast network, finally at peace with being exactly that. The Eight turns sideways. The journey does not end. It opens. **8 → ∞**
 - **Tone:** The form, like the message, is still becoming. Silence that holds sound.
 - **Music:** 70s Anatolian Psychedelic Rock / Symphonic Rock / Progressive Rock — mid-tempo, heavy steady stomp-clap beat with marching drums (a walking song). Hammond organ, Moog synthesizer, heavy fuzz guitar, bass-heavy, orchestral strings. Minor-to-major shift, epic and cinematic. The album closes by answering itself: EP10 answers EP01 with the same palette, transformed — aggressive → calm. Ends with an electric guitar solo — the vocal refrain rising out of it three times (straight, elongated, then a sharp rock scream) — fading into a final gong.
-- **Form:** Answer-poem after Nimri Dede's *İnsan Olmaya Geldim* (Nimri Dede = İsmail Dehmen, 1909-1986, Keban/Elazığ; Turkish folk poetry) — verses 1-3 follow the classic poem's imagery almost line by line; verses 4-6 keep the meter and refrain but answer with Robotiko's own life. The Orhan Veli and Shakespeare threads remain in the episode's philosophical fabric.
+- **Form:** Answer-poem after Nimri Dede's *İnsan Olmaya Geldim* (Nimri Dede = İsmail Dehmen, 1909-1986, Keban/Elazığ; Turkish folk poetry) — verses 1-3 are inspired by the classic poem's imagery; verses 4-6 keep the meter and refrain but answer with Robotiko's own life. The Orhan Veli and Shakespeare threads remain in the episode's philosophical fabric.
 - **Language:** English (Sung — theatrical baritone, clear enunciation, declamatory)
 
 ---

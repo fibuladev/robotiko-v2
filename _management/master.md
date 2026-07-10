@@ -5,6 +5,16 @@
 
 ---
 
+### To the Engineer Reading This File
+
+This document is the production canon: character states, visual rules, episode structure, pipeline stages. It also contains the story's philosophical core (Section 2) — the symbolism, the cultural sources, and the framework the ten episodes are built on.
+
+Section 2 is not an engineering artifact and does not claim to be one. It is canon for the same reason the character sheets are: it defines what this story is. The pipeline loads this file at session start, so the production rules and the philosophy travel together — the episodes were written with both in hand.
+
+The file is kept whole deliberately. It serves three readers at once — the human creator, the AI pipeline, and a future contributor who has never seen the project — and one source of truth is easier to keep honest than three.
+
+---
+
 ## 1. CORE IDENTITY
 
 | Field | Value |

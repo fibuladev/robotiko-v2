@@ -151,7 +151,7 @@ body-state or a new crowd is a Phase-1 obligation like any location.
 
 Phase 1 ends at a hard human checkpoint. The pipeline will not write a scene prompt
 until a human has generated the references into
-[`../episode-10/04_visuals/raw/`](../episode-10/04_visuals/raw/), iterated on them
+`episode-10/04_visuals/raw/` (gitignored production output), iterated on them
 freely, approved them, and recorded that approval.
 
 The approval is **data, not a checkbox**. It lands as a record in

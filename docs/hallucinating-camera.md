@@ -164,7 +164,8 @@ demonstration of the medium's core failure and its cleanest fix.
 (`episode-09/05_video/ep09_motion_script_v01.md`), is the widest interior reveal of
 the episode — the fully-mended android, gold in its seams, self-luminous, revealed
 in its workshop. The plan was **Mode A** (a single start frame,
-`episode-09/04_visuals/raw/30.png`) with a **Slow Zoom Out** and this prompt:
+`episode-09/04_visuals/raw/30.png` — `raw/` is gitignored production output, the
+files are not in the public tree) with a **Slow Zoom Out** and this prompt:
 
 > Full body: the @Kintsugi chrome android standing in the workshop — mismatched
 > scavenged panels welded with gold in the seams, translucent digital skin

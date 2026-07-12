@@ -67,10 +67,10 @@ $ python tests/run_all.py --coverage
 ================================================================
   COVERAGE SUMMARY (from invariant_coverage_matrix.md)
 ================================================================
-  Rows: 33   25 Machine   4 Heuristic   8 Human   0 Gap
+  Rows: 40   29 Machine   4 Heuristic   12 Human   1 Gap
 ```
 
-The interesting part is that the suite also tells you what it does **not** guarantee. Twelve of those thirty-three invariants are not machine-enforced — they are heuristics that can misfire, or human taste-gates with no automation claimed. That honesty is the point: a green run is not a claim of perfection. Read the full ledger in [`_management/invariant_coverage_matrix.md`](_management/invariant_coverage_matrix.md), and see how a documented Gap graduates into an enforced check in [docs/method-lesson-graduation.md](docs/method-lesson-graduation.md).
+The interesting part is that the suite also tells you what it does **not** guarantee. Seventeen of those forty invariants are not machine-enforced — four are heuristics that can misfire, twelve are human taste-gates with no automation claimed, and one is an acknowledged Gap. That honesty is the point: a green run is not a claim of perfection. Read the full ledger in [`_management/invariant_coverage_matrix.md`](_management/invariant_coverage_matrix.md), and see how a documented Gap graduates into an enforced check in [docs/method-lesson-graduation.md](docs/method-lesson-graduation.md).
 
 The gate is real enough that a commit ([`a1dc15c`](https://github.com/fibuladev/robotiko-v2/commit/a1dc15c)) deliberately shipped EP09's motion script with its em-dashes intact to turn CI red on purpose — a before/after teaching artifact, not an accident.
 
@@ -119,7 +119,7 @@ Everything here is countable in the repo:
 |---|---|
 | Episodes released on YouTube | **10** (the complete arc) |
 | CI check groups | **11** (10 blocking + 1 advisory) |
-| Validator meta-tests (graders that grade the graders) | **154** |
+| Validator meta-tests (graders that grade the graders) | **227** |
 | Architecture Decision Records | **13** (`_management/adr/`) |
 | Commits of tracked history | **160+** (run `git rev-list --count HEAD`) |
 | Tested lessons rules | **125** ([`_memory/lessons.md`](_memory/lessons.md)) |

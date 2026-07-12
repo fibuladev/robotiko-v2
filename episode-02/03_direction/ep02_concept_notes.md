@@ -4,7 +4,7 @@
 > **Episode:** EP02 — "The Tech Guru's Downfall"
 > **Station:** The Commanding Self (Arrogance — but cracks forming)
 > **Phase:** Phase 1: Awakening (Pristine chrome, full armor, no damage yet)
-> **Tone:** Dark comedy, satirical, theatrical, kara mizah (black humor)
+> **Tone:** Dark comedy, satirical, theatrical, black humor
 > **Language:** English
 > **Music:** Anatolian Psychedelic Rock, Funk-Rock Pocket. 104 BPM, G Major.
 
@@ -146,7 +146,7 @@ These override default dramaturgy behavior for this specific episode:
 
 - It is NOT a lecture about global inequality. The satire does the work.
 - It is NOT exploitation porn. The suffering is implied by Robotiko's blindness to it, never shown gratuitously.
-- It is NOT angry. It is disappointed — and funny. The kara mizah tradition: laughing because the alternative is screaming.
+- It is NOT angry. It is disappointed — and funny. The black-humor tradition: laughing because the alternative is screaming.
 - It is NOT Robotiko being evil. He genuinely wants to help. His training data is the problem, not his intention. That is what makes it tragic comedy, not villain origin story.
 - It is NOT the episode where Robotiko learns. He will NOT learn here. The cracks form, but awareness comes later (EP03). This is the setup, not the payoff.
 

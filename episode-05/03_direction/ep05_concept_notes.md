@@ -90,7 +90,7 @@ Close-up of Robotiko's body showing "robochica_1" tattoo/etching in glowing ambe
 Robotiko in office, holding WINDOWS-STYLE FILE FOLDERS (the classic yellow folder icon, made physical). Model AI employee: organized, efficient, flawless by the book. Then he SEES Robochica. THROWS folders aside — papers/data flying everywhere. "Saw your wireframe and broke every rule" — watches her as his organized digital life scatters. The Windows folder = perfect AI-identity marker. Everyone recognizes it.
 
 ### Override 7: "Now I'm Fully Turned On" — Bright Red Body (Verse 2b, 3:06-3:23)
-SLOW ZOOM on Robotiko's body. He has turned KIPKIRMIZI (bright red) — full-body overheating made visible. Electricity arcing across red-hot chassis. "A high-voltage fool!" — literalized. The color shift from chrome-silver to bright red is the peak of physical comedy before the outro crash.
+SLOW ZOOM on Robotiko's body. He has turned bright red — full-body overheating made visible. Electricity arcing across red-hot chassis. "A high-voltage fool!" — literalized. The color shift from chrome-silver to bright red is the peak of physical comedy before the outro crash.
 
 ### Override 8: "If We Don't Sync" — Eye Projection (Outro, 3:24-4:02)
 Robotiko ALONE in his room. Robochica's image PROJECTS FROM HIS EYES like a hologram/projection emanating outward. **EP03 callback:** Same technique as cinci hoca eye projection scene, different meaning — cinci hoca used it for deception, Robotiko uses it involuntarily for obsession. "Beyond repair..." — the projection flickers, distorts, dies. Blue Screen floods the room. The dying projection = love fading from "real" to "memory" to "nothing."

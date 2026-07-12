@@ -222,21 +222,20 @@ Pin immediately after video goes live. Exact text. No additions, no emojis.
 
 ## 5. THUMBNAIL GUIDANCE
 
-**Recommended scene:** S29 — "I Am Not the Machine!" Climax (7:07)
-The @Damaged android stands defiant — arms raised, face forward, full-band explosion moment. Phase 3 translucent digital skin beginning to show through cracked chrome. Dawn light breaking from behind. The "Space Between" moment — the cage is visible but he has already left it.
+**Recommended scene:** S30 — Dual-Figure Climax (7:18)
+The solid @Damaged android — body still fully in Phase 2 damage, no Phase 3 body markers — seated in the foreground, its translucent ghost-self rising above it. Dawn light breaking from behind. The single visible marker of inner change: the eyes, steadied to calm blue. The "Space Between" moment — the cage is visible but he has already left it.
 
-**Why S29:**
-- **Face and eyes directly face the viewer** — strongest mobile thumbnail read.
-- **"40 Days Above the Clouds" + defiant pose = perfect marriage.** The title evokes the ancient retreat; the thumbnail shows what 40 days of silence produces — liberation.
-- **Dramatic gesture** — arms raised creates dynamic composition, contrasts with EP07's hands-in-pockets surrender.
+**Why S30:**
+- **The episode's true climax** — the only dual-figure composition in the series, and the shot the dramaturgy itself names as the heart of the episode.
+- **"40 Days Above the Clouds" + the ghost-self rising = perfect marriage.** The title evokes the ancient retreat; the thumbnail shows what 40 days of silence produces — liberation.
 - **Dawn light from behind** — first warm light in the series since EP05. Signals the turn from destruction to reconstruction.
-- **Phase 3 translucency visible** — the new body state is readable, signaling transformation.
+- **Continuity-correct** — the body stays @Damaged/Phase 2 for the entire episode; only the eyes steady to calm blue. No Phase 3 body markers appear.
 
-**Alternative 1:** S26 — Day Forty Sunrise (6:29). Robotiko in sunrise light, calm face, warm gold palette. Face visible, intimate. First warm thumbnail since EP05 — would create strong contrast in the playlist grid. But less dramatic than S29.
+**Alternative 1:** S26 — Day Forty Sunrise (6:29). Robotiko in sunrise light, calm face, warm gold palette. Face visible, intimate. First warm thumbnail since EP05 — would create strong contrast in the playlist grid. But less dramatic than S30.
 
 **Alternative 2:** S08a — The Vow Close-Up (2:00). Extreme close-up, face forward, cold grey palette, vow delivery. Intense eyes, damaged chrome fills the frame. Strongest close-up option but locked in the cold-grey first act — doesn't signal the episode's transformation arc.
 
-**Alternative 3:** S30 — Dual-Figure Climax (7:18). Solid @Damaged seated in foreground, translucent ghost-self ascending above. Visually unique — the only dual-figure composition in the series. But the wider framing makes the face smaller at mobile thumbnail size.
+**Alternative 3:** S29 — "I Am Not the Machine!" Climax (7:07). The @Damaged android stands defiant — arms raised, face forward, full-band explosion moment. Dramatic gesture and strongest direct-to-camera face read. But it precedes the episode's actual climax and does not carry the ghost-self reveal.
 
 **Color emphasis:** Transitional — cold grey base with warm dawn breaking through. Not full sunrise warmth (that's EP09+), but the first crack of light after EP07's near-monochrome darkness. Boost chrome reflections and any warm highlight for visibility on white YouTube grid.
 

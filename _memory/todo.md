@@ -2,6 +2,8 @@
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
 
+> Note for public readers: any _private/... path referenced in the session summaries below is a gitignored working file — part of the production process, not part of the public repo.
+
 ---
 
 ## ACTIVE: PUBLIC-DOCUMENT AUDIT (2026-07-09) — launch-critical

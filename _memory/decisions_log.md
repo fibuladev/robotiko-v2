@@ -94,7 +94,7 @@ When a significant decision is made:
   - Social content derived from episode material via reels-atomizer skill
 
 ### EP05 — Cem Karaca Inspiration Credit
-- **Original plan (2026-03-31):** Worn vintage Cem Karaca "Delikanlı Sevdası" concert poster composited onto the wall of Robotiko's room in S26-S27 as a discoverable easter egg honoring the song that inspired EP05.
+- **Original plan (2026-03-31):** Worn vintage Cem Karaca "Delikanlı Sevdası" (a Cem Karaca song) concert poster composited onto the wall of Robotiko's room in S26-S27 as a discoverable easter egg honoring the song that inspired EP05.
 - **Revision (2026-04-06):** Poster plan dropped. Inspiration credit moved to (1) YouTube description — explicit "Inspired by Cem Karaca — Delikanlı Sevdası" line, (2) optional outro credit card at end of episode showing song title and artist name. In-scene poster abandoned.
 - **Reason for revision:** Nano Banana / Gemini 2.5 Flash Image refused both generation and compositing of real public figures — policy blocks editing workflows too, not just generation. Manual Photoshop perspective warp attempted but did not achieve the required lighting/grain integration across S26-S29. Flux Kontext via fal.ai was identified as a technical alternative but requires learning curve and cost not justified by the reach of a peripheral easter egg (~5% of audience would notice).
 - **Why the new plan is stronger:** YouTube description + outro credit reaches 100% of viewers. It transforms the reference from a hidden easter egg into an honest, visible act of gratitude — which better matches the intent (the song is an inspirational debt, not a hidden wink). Cem Karaca's legacy is honored openly rather than secretly.

@@ -11,7 +11,7 @@
 ## PHASE 1: PRE-LAUNCH VERIFICATION (April 20-21)
 
 ### Video
-- [x] Final video export confirmed (`ep01_final_v01.mp4` on D: drive — ready to upload)
+- [x] Final video export confirmed (`ep01_final_v01.mp4` — ready to upload)
 - [x] 4K resolution, 16:9 aspect ratio, audio sync verified
 - [x] CapCut grade applied: Kodachrome LUT, film grain, 2.35:1 letterbox
 

@@ -801,6 +801,12 @@ Before delivering the motion script to the human, verify:
 - [ ] Director's Notes section identifies visual signature moments
 - [ ] Approval checkboxes are present at the bottom
 
+**Cross-Doc Audit (v2.1, added 2026-07-12 after the EP10 post-approval audit):**
+- [ ] Every `[DISSONANCE]` tag uses the literal token `[DISSONANCE]` (the machine exemption in `tests/energy_motion_check.py` matches the exact string) and has a same-day row in `_management/dissonance_registry.md`
+- [ ] Every guard the dramaturgy's scene DETAIL BLOCKS demand (silhouette preservation, frame-lock, celestial stability, gaze discipline) is implemented as prevention language in the corresponding motion prompt — a detection note in the OmniEdit table is not a substitute
+- [ ] Frame chains are real chains: the downstream clip starts from the upstream clip's LAST frame. If every shot in a proposed chain has its own approved keeper and its own framing, it is not a chain — drop it and let the shared reference carry continuity
+- [ ] Any late human override (raw review / motion stage) is swept UPSTREAM the same day: dramaturgy, visual prompts, and this script's own summary tables receive a dated override note so no stale guard can reject the approved take
+
 **Final:**
 - [ ] Ask yourself: **"Would Fibula approve this?"**
 

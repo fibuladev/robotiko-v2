@@ -35,9 +35,9 @@
       "episode": "02",
       "gate": 1,
       "artifact": "episode-02/03_direction/ep02_dramaturgy_v01.md",
-      "sha256": "3d8a9c4d1ec370145f76f67c71180812e1822c5e176cc981c6ffd42c551820b6",
+      "sha256": "012981cf84e00989ce4fbee626fb6e53006b65590f9cd40d3bfe95e06f992af5",
       "date": "2026-02-26",
-      "note": "approved (recorded in _memory/todo.md session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
+      "note": "approved (recorded in _memory/todo.md session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved). sha re-baselined 2026-07-12: line-ending normalization - pin recomputed from the LF bytes git stores and fresh clones receive (.gitattributes); content unchanged."
     },
     {
       "episode": "02",
@@ -51,9 +51,9 @@
       "episode": "03",
       "gate": 1,
       "artifact": "episode-03/03_direction/ep03_dramaturgy_v01.md",
-      "sha256": "a0dc9715779038e02f34e62ab24dd122af6b8d842368ddbb7aa842945318ce7b",
+      "sha256": "9307d6f2bc3d300a9c75e2673b14d0a8657e67264feede7b6091a8f7767f260d",
       "date": "2026-03-10",
-      "note": "approved (recorded in session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
+      "note": "approved (recorded in session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved). sha re-baselined 2026-07-12: line-ending normalization - pin recomputed from the LF bytes git stores and fresh clones receive (.gitattributes); content unchanged."
     },
     {
       "episode": "03",
@@ -67,9 +67,9 @@
       "episode": "04",
       "gate": 1,
       "artifact": "episode-04/03_direction/ep04_dramaturgy_v01.md",
-      "sha256": "952088abf47ea258ae3dc8e80c5a405d1dd64ccc930162a7864b8e8b6c4469e4",
+      "sha256": "485b9fe3a47f7308bc2e18f6f7f4c3c44cc93e052777c8ef3745d5704dce1e00",
       "date": "2026-03-23",
-      "note": "approved (recorded in session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
+      "note": "approved (recorded in session log). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved). sha re-baselined 2026-07-12: line-ending normalization - pin recomputed from the LF bytes git stores and fresh clones receive (.gitattributes); content unchanged."
     },
     {
       "episode": "04",
@@ -83,17 +83,17 @@
       "episode": "05",
       "gate": 1,
       "artifact": "episode-05/03_direction/ep05_dramaturgy_v01.md",
-      "sha256": "9e85c9d860e7b779a95da93787b07b09fa93cd219dd1d748fd5cc6b11e52a35c",
+      "sha256": "dc403bc9e46b140432459a28d57ba6d44cd1a06c8d5008553d143c3710fa26bb",
       "date": "2026-03-31",
-      "note": "approved (recorded in session log; 32 scenes, 267s). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
+      "note": "approved (recorded in session log; 32 scenes, 267s). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved). sha re-baselined 2026-07-12: line-ending normalization - pin recomputed from the LF bytes git stores and fresh clones receive (.gitattributes); content unchanged."
     },
     {
       "episode": "05",
       "gate": 2,
       "artifact": "episode-05/05_video/ep05_motion_script_v01.md",
-      "sha256": "9089690fa09e5379281c56818a840d57f1c25b83d0d2d12cfa5302140b51b6e4",
+      "sha256": "a0a7dcf4e27252895e9334d805ba41e601db3a13bf060e6473bc178bfe1d24dc",
       "date": "2026-04-05",
-      "note": "legacy - reconstructed from session log (motion-script approval date not explicitly recorded; placed after the 2026-03-31 dramaturgy approval and before EP06 direction)."
+      "note": "legacy - reconstructed from session log (motion-script approval date not explicitly recorded; placed after the 2026-03-31 dramaturgy approval and before EP06 direction). sha re-baselined 2026-07-12: line-ending normalization - pin recomputed from the LF bytes git stores and fresh clones receive (.gitattributes); content unchanged."
     },
     {
       "episode": "06",

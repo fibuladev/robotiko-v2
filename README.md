@@ -72,7 +72,7 @@ $ python tests/run_all.py --coverage
 
 The interesting part is that the suite also tells you what it does **not** guarantee. Seventeen of those forty invariants are not machine-enforced — four are heuristics that can misfire, twelve are human taste-gates with no automation claimed, and one is an acknowledged Gap. That honesty is the point: a green run is not a claim of perfection. Read the full ledger in [`_management/invariant_coverage_matrix.md`](_management/invariant_coverage_matrix.md), and see how a documented Gap graduates into an enforced check in [docs/method-lesson-graduation.md](docs/method-lesson-graduation.md).
 
-The gate is real enough that a commit ([`b7f2155`](https://github.com/fibuladev/robotiko-v2/commit/b7f2155)) deliberately shipped EP09's motion script with its em-dashes intact to turn CI red on purpose — a before/after teaching artifact, not an accident.
+The gate is real enough that a commit ([`d1a9162`](https://github.com/fibuladev/robotiko-v2/commit/d1a9162)) deliberately shipped EP09's motion script with its em-dashes intact to turn CI red on purpose — a before/after teaching artifact, not an accident.
 
 ---
 

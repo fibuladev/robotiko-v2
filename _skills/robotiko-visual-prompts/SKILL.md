@@ -19,7 +19,7 @@ Each scene prompt is a single, self-contained text prompt an image model can exe
 
 ## THE TWO-PHASE ARCHITECTURE (Read This First)
 
-The old skill wrote reference prompts and ALL scene prompts in one pass, against a text contract, and generated the reference images afterward. A "Framing Pass" was supposed to reconcile scenes to the real pixels — but it was explicitly "never a blocker," so in practice it was skipped (see the REF B reframe, 2026-07-07 / commit `cd291eb`: the REF block was updated, and 40 scenes were never re-checked against it). Reference-first was a principle (ADR-0007) that nothing structurally enforced.
+The old skill wrote reference prompts and ALL scene prompts in one pass, against a text contract, and generated the reference images afterward. A "Framing Pass" was supposed to reconcile scenes to the real pixels — but it was explicitly "never a blocker," so in practice it was skipped (see the REF B reframe, 2026-07-07 / commit `9790a71`: the REF block was updated, and 40 scenes were never re-checked against it). Reference-first was a principle (ADR-0007) that nothing structurally enforced.
 
 The two-phase split makes reference-first structural:
 
@@ -109,7 +109,7 @@ When one dramaturgy location legitimately decomposes into sibling references (la
 
 **Checklist line every sibling set must pass:** *"no cross-ref typology clash (roofs, materials, horizon)."*
 
-**Worked failure — the REF B / REF D roof clash.** In EP10 the crossroads ref (REF B) came back with **flat roofs** while the town ref (REF D) established **tile roofs** — a roof-typology clash that would have read as two different places one cut apart. It was caught and resolved at the image stage by removing the houses from REF B entirely, reframing it as the village *exit* onto open highland (REF B reframe, 2026-07-07 / commit `cd291eb`). The through-anchor check exists to catch this on text, before the pixels, not after.
+**Worked failure — the REF B / REF D roof clash.** In EP10 the crossroads ref (REF B) came back with **flat roofs** while the town ref (REF D) established **tile roofs** — a roof-typology clash that would have read as two different places one cut apart. It was caught and resolved at the image stage by removing the houses from REF B entirely, reframing it as the village *exit* onto open highland (REF B reframe, 2026-07-07 / commit `9790a71`). The through-anchor check exists to catch this on text, before the pixels, not after.
 
 ---
 
@@ -261,7 +261,7 @@ One row per scene per space. If two scenes in the same space put the same landma
 When the batch verification pass (2.1) reveals a missing reference, loop back — a compressed Phase 1 for that one reference:
 
 1. **Author the reference prompt** → the human generates it → approves it → record a dated 1R-note or ledger note for it.
-2. **The new reference must carry its parent location's through-anchors AND narrative anchors** (1.2, 1.4) and be **checked against the dramaturgy's location text.** A loop-back reference **may add a sub-space** of a place the dramaturgy already names; it **may NOT invent a new place** the dramaturgy does not have. *(Cautionary case: a loop-back or regeneration that drifts into a "European castle" the story never had — REF B's first-generation drift, 2026-07-07 / commit `cd291eb` — is a reject, corrected back to the village exit the dramaturgy calls for.)*
+2. **The new reference must carry its parent location's through-anchors AND narrative anchors** (1.2, 1.4) and be **checked against the dramaturgy's location text.** A loop-back reference **may add a sub-space** of a place the dramaturgy already names; it **may NOT invent a new place** the dramaturgy does not have. *(Cautionary case: a loop-back or regeneration that drifts into a "European castle" the story never had — REF B's first-generation drift, 2026-07-07 / commit `9790a71` — is a reject, corrected back to the village exit the dramaturgy calls for.)*
 3. **Termination.** The measure is the **count of not-yet-framed scenes**, which strictly decreases with each loop-back; the bound is the total scene count. Decomposition may SPLIT a space and thereby GROW the reference set — so the space count is NOT a valid termination measure — but every loop-back frames at least one previously-unframed scene, and the unframed-scene set only shrinks. The loop terminates.
 
 ---

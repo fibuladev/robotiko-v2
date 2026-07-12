@@ -16,6 +16,11 @@ here are the ones measured in that run, not estimates.
 > part only you can do: writing your canon and directing your first episode (or the
 > minutes the skills spend doing it with you).
 
+**What will it cost to run?** The original's complete ten-episode production bill —
+every subscription, every month, every price change — is disclosed in
+[`_management/cost.md`](_management/cost.md): roughly **€1,200** in ordinary consumer
+subscriptions. No API billing, no credit packs, no enterprise contracts.
+
 ---
 
 ## The three commands

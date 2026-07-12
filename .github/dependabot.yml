@@ -7,6 +7,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # PR opening paused until the public release; raised back to the
+    # default at launch so update PRs land in the open repo.
+    open-pull-requests-limit: 0
 
   # The only npm surface in the repo: the custom Google Drive MCP server.
   # See _tools/mcp-gdrive/package.json.
@@ -14,3 +17,6 @@ updates:
     directory: "/_tools/mcp-gdrive"
     schedule:
       interval: "weekly"
+    # PR opening paused until the public release; raised back to the
+    # default at launch so update PRs land in the open repo.
+    open-pull-requests-limit: 0

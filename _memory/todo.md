@@ -6,6 +6,12 @@
 
 ---
 
+## SESSION NOTE (2026-07-13)
+
+Launch plan revised in private working files. Public docs: gate-count consistency pass — all current-truth prose now says three human gates (commit `370229b`), suite 11/11 green.
+
+---
+
 ## OPEN-SOURCE READINESS SWEEP (2026-07-12) — COMPLETE (repo public-ready except EP09/EP10 episode files)
 
 **Task:** Final pre-public hygiene pass across the entire tracked repo (302 files; episode-09/10 excluded — still in production), covering private residue, English-only, banned terms, and general public-readiness optics.

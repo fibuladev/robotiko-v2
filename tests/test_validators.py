@@ -1199,19 +1199,16 @@ class TestRealTreeStaysGreen(unittest.TestCase):
             self.assertIsNotNone(pi.gate_record(ledger, ep, 1), f"EP{ep} missing gate-1 record")
             self.assertIsNotNone(pi.gate_record(ledger, ep, 2), f"EP{ep} missing gate-2 record")
 
-    def test_ep10_ledger_state_gate1_approved_1r_references_approved_gate2_pending(self):
-        # EP10 ledger state as of 2026-07-07: the gate-0 step-order waiver (concept
-        # notes before the musical metadata JSON, by design), the gate-1 dramaturgy
-        # approval, and the REAL gate-1R references-approved record pinned to the
-        # Phase-1 v01 visual-prompts artifact (six env refs A-F generated and approved;
-        # the two-phase run's reference gate, superseding the earlier interim waiver).
-        # Gate-2 must stay absent until the motion script is actually approved.
+    def test_ep10_ledger_state_all_gates_approved(self):
+        # EP10 ledger state as of 2026-07-12: gate-0 step-order waiver, gate-1
+        # dramaturgy approval, gate-1R references-approved record, and gate-2
+        # motion-script approval (37 clips, Companion Camera, MS avg 3.03).
         ledger = pi.load_approvals(REPO_ROOT)
         records = pi.approvals_for(ledger, "10")
-        self.assertEqual(len(records), 3,
-                         f"EP10 must have three ledger records (gate-0 waiver + gate-1 + gate-1R). Got: {records}")
-        self.assertEqual({r.get("gate") for r in records}, {0, 1, "1R"},
-                         "EP10's records must be the gate-0 step-order waiver, the gate-1 approval, and the gate-1R reference approval")
+        self.assertEqual(len(records), 4,
+                         f"EP10 must have four ledger records (gate-0 waiver + gate-1 + gate-1R + gate-2). Got: {records}")
+        self.assertEqual({r.get("gate") for r in records}, {0, 1, "1R", 2},
+                         "EP10's records must be the gate-0 step-order waiver, gate-1, gate-1R, and gate-2 approvals")
         self.assertIsNotNone(pi.episode_waiver(ledger, "10"), "EP10 must carry the gate-0 step-order waiver")
         gate1 = pi.gate_record(ledger, "10", 1)
         self.assertIsNotNone(gate1, "EP10 must have a gate-1 record (dramaturgy approved 2026-07-06)")
@@ -1223,7 +1220,10 @@ class TestRealTreeStaysGreen(unittest.TestCase):
                          "EP10 gate-1R must be artifact-pinned to the Phase-1 v01 visual-prompts file")
         self.assertNotIn("waiv", gate1r.get("note", "").lower(),
                          "EP10 gate-1R is now a real references-approved record (not a waiver): the completed two-phase Phase-1 gate")
-        self.assertIsNone(pi.gate_record(ledger, "10", 2), "EP10 must NOT have a gate-2 record yet")
+        gate2 = pi.gate_record(ledger, "10", 2)
+        self.assertIsNotNone(gate2, "EP10 must have a gate-2 record (motion script approved 2026-07-12)")
+        self.assertEqual(gate2.get("artifact"), "episode-10/05_video/ep10_motion_script_v01.md",
+                         "EP10 gate-2 must pin the motion script artifact")
 
     def test_ledger_sha_matches_disk_for_all_records(self):
         # Snapshot integrity: every recorded sha matches the artifact on disk today.

@@ -182,6 +182,14 @@
       "sha256": "8305fb886e96da4608815f6f18f4ca80a809e49e4f27a168a3900b931c51853b",
       "date": "2026-07-07",
       "note": "references approved at the Phase-1 reference gate (two-phase run, ADR-0013): six environment references A-F generated and human-approved. The Step-0 decomposition split the dawn town into three camera-spaces - REF D residential lane (S03-S08), REF E market edge (S11-S12), REF F far-edge descent (S19-S22) - so REF E and REF F were authored and generated fresh (the single-pass draft under-mapped the town onto one ref); REF A-D carried forward unchanged, their approved images frozen in raw/. Artifact-pinned to the frozen Phase-1 v01; Phase 2 authors every scene against these approved reference pixels. Honest limit: 1R attests a human approved the references; the ref IMAGES live in gitignored raw/ and are not machine-verifiable (same posture as gates 1 and 2)."
+    },
+    {
+      "episode": "10",
+      "gate": 2,
+      "artifact": "episode-10/05_video/ep10_motion_script_v01.md",
+      "sha256": "d5b02c75bc9e8178d190fbc9817919c06f7f2740eae24a12a9d046bd17783511",
+      "date": "2026-07-12",
+      "note": "approved at the motion-script session (37 clips, Companion Camera, MS avg 3.03). Two revisions applied at review: (1) Chain 2 S25-S26 removed - distinct compositions, not chainable; (2) S34b mouthless-face guard removed and replaced with intentional friendly gentle smile (override from visual prompts stage, 34b_1.png pick). Approval to proceed to video generation confirmed."
     }
   ]
 }

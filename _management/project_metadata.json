@@ -211,9 +211,9 @@
         "timestamp_json": true,
         "dramaturgy": true,
         "visuals": true,
-        "video": false
+        "video": "in_progress"
       },
-      "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Dramaturgy v01 APPROVED 2026-07-06 (gate-1 recorded; 35 scenes; S34 revised at review — head-tilt warmth + open-palm beckon, mouthless-face guard). Visual prompts v02 COMPLETE 2026-07-08 (two-phase: 6 env refs approved + 40 scene prompts framed to pixels). Raw images REVIEWED 2026-07-12 (40/40 scenes approved; S13/S20 prompt fixes applied; S34b pick = 34b_1.png with intentional smile override). Next: motion script (Checkpoint 2). The finale — release day = open-source go-public day."
+      "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Dramaturgy v01 APPROVED 2026-07-06 (gate-1 recorded; 35 scenes; S34 revised at review — head-tilt warmth + open-palm beckon, mouthless-face guard). Visual prompts v02 COMPLETE 2026-07-08 (two-phase: 6 env refs approved + 40 scene prompts framed to pixels). Raw images REVIEWED 2026-07-12 (40/40 scenes approved; S13/S20 prompt fixes applied; S34b pick = 34b_1.png with intentional smile override). Motion script v01 GENERATED 2026-07-12 (37 clips, Companion Camera, MS avg 3.03, validator-green). AWAITING human approval (Checkpoint 2). The finale — release day = open-source go-public day."
     }
   },
 

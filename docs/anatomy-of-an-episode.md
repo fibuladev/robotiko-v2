@@ -10,7 +10,7 @@ The through-line to watch for:
 
 > **Musical metadata (section + energy + timestamp)** → scene timestamps → motion strength → camera move → beat-synced cut.
 
-And the places where a human must say *yes* before the machine continues — the two mandatory creative gates (dramaturgy and motion script), plus, from EP10 onward, the reference gate inside the visual stage.
+And the places where a human must say *yes* before the machine continues — the three mandatory creative gates: dramaturgy, the reference gate (1R, two-phase episodes, EP10 onward), and the motion script.
 
 The canonical stage order and the gates live in [`../_management/pipeline_rules.md`](../_management/pipeline_rules.md). The two mandatory style/motion suffixes live in [`../CLAUDE.md`](../CLAUDE.md).
 

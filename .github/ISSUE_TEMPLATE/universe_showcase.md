@@ -8,7 +8,7 @@ assignees: ''
 
 <!--
 This is the main path this repo is built for: fork the method (MIT), keep
-the two human gates, swap the canon for your own story. See UNIVERSES.md
+the three human gates, swap the canon for your own story. See UNIVERSES.md
 and CONTRIBUTING.md §1(a) if you haven't yet.
 
 No PR needed to build your universe. This issue is just to register it so

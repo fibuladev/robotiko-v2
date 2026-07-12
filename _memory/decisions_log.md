@@ -32,6 +32,7 @@ When a significant decision is made:
 ### Two Mandatory Human Checkpoints
 - **Decision:** Only two hard stops requiring human approval: after Dramaturgy and after Motion Script.
 - **Reason:** Everything else Claude executes and delivers. Over-checking creates friction. Under-checking risks wasted generation costs. These two points are where human creative judgment is irreplaceable.
+- **Update (2026-07):** The checkpoint count became **three** with the addition of the Reference Gate (1R) — the human approves the reference images before Phase-2 scene prompts are authored (two-phase episodes, EP10 onward; ADR-0013). EP01-09 are grandfathered. The two checkpoints above remain unchanged; 1R is a third hard stop, not a replacement.
 
 ### Workflow Philosophy — "Would Fibula approve this?"
 - **Decision:** Claude self-validates every output with this question before delivery.

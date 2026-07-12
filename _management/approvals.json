@@ -1,8 +1,9 @@
 {
-  "_comment": "Human-approval ledger for the two mandatory pipeline gates (see ADR 0008). Gate 1 = dramaturgy approved before visual prompts begin. Gate 2 = motion script approved before video generation begins. This is an HONEST record: it certifies that a human approved a specific artifact on a date. The sha256 pins WHICH bytes were approved so post-approval drift is visible; it CANNOT verify that the taste behind the approval was sound. pipeline_integrity.py consumes this file: artifacts beyond a gate with no record here = FAIL; a sha256 that no longer matches disk = WARN (post-approval em-dash cleanups are legitimate, the WARN just makes them visible).",
+  "_comment": "Human-approval ledger for the three mandatory pipeline gates (see ADR 0008, ADR 0013). Gate 1 = dramaturgy approved before visual prompts begin. Gate 1R = reference images approved before Phase-2 scene prompts begin (two-phase episodes, EP10 onward). Gate 2 = motion script approved before video generation begins. This is an HONEST record: it certifies that a human approved a specific artifact on a date. The sha256 pins WHICH bytes were approved so post-approval drift is visible; it CANNOT verify that the taste behind the approval was sound. pipeline_integrity.py consumes this file: artifacts beyond a gate with no record here = FAIL; a sha256 that no longer matches disk = WARN (post-approval em-dash cleanups are legitimate, the WARN just makes them visible).",
   "schema_version": "1.0",
   "gates": {
     "1": "Dramaturgy approval - human sign-off before visual prompts begin",
+    "1R": "References approval - human sign-off on reference images before Phase-2 scene prompts begin (two-phase episodes, EP10 onward, ADR-0013)",
     "2": "Motion script approval - human sign-off before video generation begins"
   },
   "entry_schema": [

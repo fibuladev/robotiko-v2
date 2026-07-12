@@ -88,13 +88,15 @@ nothing hidden downstream.
 
 ---
 
-## The two human gates — where taste enters
+## The three human gates — where taste enters
 
-The method is not the point; the *gates* are. Two approvals are mandatory and never
+The method is not the point; the *gates* are. Three approvals are mandatory and never
 automated, per [`_management/pipeline_rules.md`](_management/pipeline_rules.md):
 
 1. **After dramaturgy** — you approve the scene-by-scene breakdown before any visuals.
-2. **After the motion script** — you approve camera moves and tech strategy before any
+2. **At the reference gate (1R, two-phase episodes, EP10 onward)** — you approve the
+   reference images before any Phase-2 scene prompt is written.
+3. **After the motion script** — you approve camera moves and tech strategy before any
    video.
 
 Everything between them, the crew (Claude, via the `_skills/`) executes. Remove the

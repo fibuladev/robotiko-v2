@@ -109,9 +109,10 @@ After any correction from the human:
 
 ## CATEGORY: WORKFLOW
 
-- **RULE:** Two mandatory checkpoints exist. Never skip them:
+- **RULE:** Three mandatory checkpoints exist. Never skip them:
   1. Dramaturgy must be human-approved before visual prompts begin.
-  2. Motion script must be human-approved before video generation begins.
+  2. Reference Gate (1R, two-phase episodes, EP10 onward): reference images must be human-approved before Phase-2 scene prompts begin.
+  3. Motion script must be human-approved before video generation begins.
 - **RULE:** Always ask "Would Fibula approve this?" before delivering any output.
 - **RULE:** If a task goes wrong mid-execution: STOP, re-plan, inform human, then continue.
 - **RULE:** THINKING EFFORT — match the per-session reasoning effort (low / medium / high / extra high / max) to the task. **Single-shot deep synthesis → max** (dramaturgy, motion script: one irreversible pass reconciles music + arc + camera across the whole episode). **Iterative / conversational creative work → high** (concept notes, brainstorming, discussion — depth comes from back-and-forth, and high stays responsive). **Mechanical work → low/medium** (YouTube packaging, naming validation, file ops). Max never lowers quality — it only costs time/tokens — so spend it where one pass carries the most weight. Budget priority when constrained: Dramaturgy > Motion Script > Visual Prompts. (Added 2026-06-04 — full table in CLAUDE.md "Thinking Effort Protocol".)

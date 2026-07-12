@@ -79,8 +79,9 @@ When the human gives a trigger phrase, read the relevant SKILL.md before doing a
 - For visual prompts: Does every prompt end with the mandatory suffix? Is character state correct?
 - For motion scripts: Are camera moves approved? Is beat sync noted?
 
-### 5. Two Mandatory Human Checkpoints
+### 5. Three Mandatory Human Checkpoints
 - **After Dramaturgy:** Human must approve before visual prompts begin. Never skip this.
+- **At the Reference Gate (1R — two-phase episodes, EP10 onward):** Human must approve the reference images before Phase-2 scene prompts begin. Never skip this.
 - **After Motion Script:** Human must approve before video generation begins. Never skip this.
 
 ### 6. Autonomous Execution
@@ -186,14 +187,16 @@ MEMORY - {Brief Description}
 | **Genre** | CyberAnatolian / Sci-Fi Bildungsroman |
 | **Current Phase** | See [`_management/project_metadata.json`](_management/project_metadata.json) — single source of truth for status |
 | **IDE** | VSCode + Claude Code |
-| **Communication** | Turkish with human, English for all files and commits |
+| **Communication** | Human's own language for chat (Turkish for the original author), English for all files and commits |
 
 ---
 
 ## COMMUNICATION RULE
 
-**Always communicate with the human in Turkish.**
-**All files, commits, and code are written in English.**
+**Communicate with the human in the human's own language.**
+(For the original author, Fibula, that language is Turkish.)
+**All files, commits, and code are written in English — regardless of the
+conversation language, so the repo stays universally readable.**
 
 **Exception — build-along tutorial recording sessions:** when the session is an on-camera build-along
 recording (you are working from a `_tutorial/ep09_buildalong_*.md` part file, or the human says you are

@@ -38,7 +38,7 @@ time this repo never promised.
   repo is the canonical home of one specific, authored story, and a
   crowd-edited canon stops being that story. If you want to change the
   canon, fork it — your fork's canon is entirely yours.
-- **Creative direction** — the two human approval gates
+- **Creative direction** — the three human approval gates
   (`_management/pipeline_rules.md`), the mandatory suffixes, the golden
   rules in `CLAUDE.md`. These are the taste layer. They don't get voted on.
 

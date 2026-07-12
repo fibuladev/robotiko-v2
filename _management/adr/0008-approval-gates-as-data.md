@@ -78,3 +78,13 @@ The same session also fixes M4's inert PDF detection (recursive search into
   log, not contemporaneous signatures, and are labelled as such in each note.
 - Dates and sha256 are a snapshot taken at ledger creation; going forward, a genuine
   post-approval edit will surface as the WARN by design.
+
+## Addendum (2026-07)
+
+A **third** human gate — the **Reference Gate (1R)** — was later added by
+[ADR 0013](0013-two-phase-visual-prompts.md) for two-phase episodes (EP10 onward): the
+human approves the reference images before any Phase-2 scene prompt is authored. It is
+recorded in the same `_management/approvals.json` ledger described above (gate `"1R"`)
+and enforced by the same `pipeline_integrity.py` machinery. The two-gate description in
+this ADR reflects the pipeline as it stood at decision time; the gate-as-data mechanism
+was designed to extend to exactly this kind of addition, and did so without schema change.

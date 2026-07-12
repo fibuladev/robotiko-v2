@@ -22,7 +22,7 @@ This is what the repo is *for*. You take the pipeline, swap out the ROBOTIKO sto
 - `tests/` — ten check groups (naming convention, pipeline integrity, visual prompt sweep, prompt hygiene, musical metadata, motion script, character profiles, validator meta-tests, doc reference integrity, and an advisory energy-motion check) behind one gate command: `python tests/run_all.py`
 - `_templates/` — episode scaffolding templates
 - `_tools/mcp-gdrive/` — the custom Google Drive MCP server (binary asset archive)
-- `_management/pipeline_rules.md` — the workflow and the two human gates
+- `_management/pipeline_rules.md` — the workflow and the three human gates
 - `_management/naming_convention.md` — file-naming standards (the pipeline's foreign keys)
 - `_management/architecture.md` — technical stack and data flow
 - `docs/` — getting-started, skills, and tools-setup guides
@@ -104,8 +104,9 @@ A numbered path from clone to first episode:
 
 6. **Drive the skills.** From Claude Code, run the pipeline stage by stage using the trigger phrases in `CLAUDE.md` and [docs/skills-guide.md](docs/skills-guide.md): musical metadata → dramaturgy → visual prompts → motion script → packaging. Each stage's output is the next stage's input.
 
-7. **Keep the two human gates.** They are part of the method, not optional decoration. Per [`_management/pipeline_rules.md`](_management/pipeline_rules.md):
+7. **Keep the three human gates.** They are part of the method, not optional decoration. Per [`_management/pipeline_rules.md`](_management/pipeline_rules.md):
    - **After Dramaturgy** — the human reviews and approves the scene breakdown before visuals begin.
+   - **At the Reference Gate (1R, two-phase episodes, EP10 onward)** — the human approves the reference images before Phase-2 scene prompts are authored.
    - **After Motion Script** — the human reviews camera moves and tech strategy before video generation begins.
 
    These gates are where taste enters the machine. Removing them turns a directed film into noise. Keep them.

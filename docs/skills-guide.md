@@ -191,7 +191,7 @@ work and asks the project's standing question: *"Would Fibula approve this?"*
 
 **5. The human-approval gate follows.**
 
-Dramaturgy is one of the two mandatory creative checkpoints. The document is delivered with its approval checkboxes
+Dramaturgy is one of the three mandatory creative checkpoints. The document is delivered with its approval checkboxes
 *unticked*. Nothing downstream moves until a human reviews the scene breakdown and approves it. Only then
 does the approved dramaturgy become the primary input to
 [`../_skills/robotiko-visual-prompts/SKILL.md`](../_skills/robotiko-visual-prompts/SKILL.md), which first

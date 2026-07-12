@@ -6,7 +6,18 @@
 
 ---
 
-## ACTIVE: PUBLIC-DOCUMENT AUDIT (2026-07-09) — launch-critical
+## OPEN-SOURCE READINESS SWEEP (2026-07-12) — COMPLETE (repo public-ready except EP09/EP10 episode files)
+
+**Task:** Final pre-public sweep of the ENTIRE tracked repo (302 files; episode-09/10 files excluded — still in production). Five parallel audit agents (_memory / _management / root+.github / docs+skills+tools+tests / episodes 01-08) against: private residue, English-only, banned terms, launch-strategy leakage, private-path confusion, hostile-reader optics.
+**Criticals found & fixed:** resolved; details in private working files.
+**Warnings fixed:** EP08 YT-package thumbnail scene S29→S30 + Phase-2 continuity language; EP05 "KIPKIRMIZI" + EP02 "kara mizah" de-Turkished; EP01 "D: drive" dropped; lessons.md forbidden framework-name self-contradiction generalized; CONTRIBUTING/RELEASE check-group counts → 11; project_metadata current_phase refreshed; docs raw/-path caveats; todo.md public-reader note.
+**Remote hygiene:** completed.
+**Deliberate keeps:** recorded in private working files.
+**Suite:** 11/11 green throughout. Remaining for go-public: EP09/EP10 completion + RELEASE.md §7 launch-day sequence (incl. 7.8 live-check, 7.9 gitignore check, 7.11 PR-refs purge).
+
+---
+
+## PUBLIC-DOCUMENT AUDIT (2026-07-09) — COMPLETE (closed 2026-07-12; independently re-verified by the sweep above)
 
 **Task:** Audit ALL public (tracked, non-code) documents before the EP10 open-source release. Hunting: religious references (forbidden), ethnic attribution where geographic framing is required, source-indefensible claims, mission-contradicting tone (anti-democratization), cross-file contradictions, stale date/version stamps, overreaching absolutes.
 **Method:** Expert panels (advocate + adversarial examiner + judge, primary sources) for contested claims — cultural attribution (Seven Stations framing reversal + per-figure verification), the "philosophical" terminology question, and the estrangement/alienation theory question (Brecht vs. Shklovsky vs. Suvin) — plus a repo-wide date-stamp audit and a 15-group sentence-level sweep.
@@ -20,7 +31,7 @@
 - [x] Findings report generated: `_private/audit_2026-07/public_doc_audit_2026-07-10.md` (286 deduped findings: 15 critical / 79 major / rest minor + 2 panel verdicts + date-stamp policy) — presented to Fibula
 - [x] [HUMAN GATE] Fibula approved (2026-07-10) — decisions: lyrics/attested quotes untouchable; history rewrite authorized (order-name wording + one commit message must vanish); sha re-baseline OK; date policy Option C; forbidden-terms validator added; frame-asset rename ("hair-thin crossing"); answer-poem source claim softened to "inspired by"
 - [x] Batches B2-B6 applied (root/docs/mgmt/skills/memory — Opus 4.8 + Sonnet 5 subagents, diffs reviewed) + forbidden-terms gate shipped (check group 11, 31 meta-tests green). Working tree ~65 modified files, NOTHING COMMITTED yet.
-- [ ] **RESUME HERE (next session)** — full continuation plan: `_private/audit_2026-07/handoff/SESSION_HANDOFF_2026-07-10.md` (order: estrangement judge re-run → C.5 summary to Fibula; B1 master.md batch; B7 episodes completeness check; residuals; approvals re-baseline; suite 11/11; thematic commits; history rewrite + force push)
+- [x] Continuation completed in follow-up sessions (B1 master.md, B7 episodes, approvals re-baseline 2026-07-10, thematic commits, history rewrite + force push — evidence: clean tree at 2026-07-12 session start, suite 11/11, re-baseline notes across approvals.json). Closed 2026-07-12: the full-repo readiness sweep (block above) independently re-verified every tracked surface clean on the same rule set.
 
 ---
 

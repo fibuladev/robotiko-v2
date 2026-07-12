@@ -13,7 +13,8 @@
 **Warnings fixed:** EP08 YT-package thumbnail scene S29→S30 + Phase-2 continuity language; EP05 "KIPKIRMIZI" + EP02 "kara mizah" de-Turkished; EP01 "D: drive" dropped; lessons.md forbidden framework-name self-contradiction generalized; CONTRIBUTING/RELEASE check-group counts → 11; project_metadata current_phase refreshed; docs raw/-path caveats; todo.md public-reader note.
 **Remote hygiene:** completed.
 **Deliberate keeps:** recorded in private working files.
-**Suite:** 11/11 green throughout. Remaining for go-public: EP09/EP10 completion + RELEASE.md §7 launch-day sequence (incl. 7.8 live-check, 7.9 gitignore check, 7.11 PR-refs purge).
+**Suite:** 11/11 green throughout.
+**Phase 2 (same day):** the art-repo editorial line applied across skills, standards and packaging files; suite green in a fresh clone.
 
 ---
 

@@ -2,6 +2,7 @@
 > **Version:** v01 | Skill: `_skills/robotiko-motion-script/SKILL.md` v2.1
 > Generated from approved dramaturgy (2026-07-06, gate-1 recorded) + visual prompts v02 (2026-07-08) + musical metadata (final track).
 > Scene images verified: 40/40 in `episode-10/04_visuals/raw/` (selected/ empty; raw keepers used per SKILL prerequisite).
+> **Revision (2026-07-12, same day as approval):** post-approval independent audit fixes, human-approved -- S02/S15/S16 image-fidelity guards, Chain 1 removed (distinct compositions), S34b smile-forming wording + cross-document override sync, literal [DISSONANCE] tags + S29 tagged + registry rows, refrain-onset caveat, credit-budget note. Gate-2 sha re-baselined in `_management/approvals.json`.
 
 ---
 
@@ -84,10 +85,12 @@
 
 **Kling 2.5 Turbo (3):** S08a, S08b, S29
 
-### OmniEdit Reserve
+### Credit Budget & OmniEdit Reserve
+
+Per-clip Kling credit costs vary by mode and duration; exact totals are tracked in production at generation time. Policy: keep >=15% of Kling 3.0 credits as retake buffer on top of the 10-15% OmniEdit reserve below. Kling 2.5 Turbo carries the 3 budget clips (S08a, S08b, S29).
 
 10-15% of Kling 3.0 credits reserved. Priority scenes:
-1. **S34a/S34b** -- the series' most important shot pair (mouthless guard, gaze discipline)
+1. **S34a/S34b** -- the series' most important shot pair (gaze discipline; S34a mouthless, S34b intentional smile override -- friendly gentle, never uncanny)
 2. **S27** -- fourth-wall gaze discipline (eyes below the lens, no eye contact)
 3. **S25** -- multi-figure spawn risk (children + shepherd + arriving android)
 4. **S02** -- Mode B silhouette-to-doorway transition quality
@@ -149,7 +152,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> A workshop roll-up shutter rises steadily from within, warm gold interior light expanding across grey-blue threshold stones, a patchwork chrome silhouette appearing in the widening doorway against the glow. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> A workshop roll-up shutter rises steadily from within, warm gold interior light expanding across grey-blue threshold stones, a patchwork chrome silhouette appearing in the widening doorway against the glow. The doorway stays pure unreadable warm light and the figure stays a featureless dark silhouette against it -- do not resolve the interior or the silhouette into detail. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None
 
@@ -564,9 +567,9 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> The @Kintsugi chrome android walks a ridge line between a pale full Moon on one side and the newly risen Sun on the other, small and unhurried, both celestial bodies in the same dawn sky, subtle grass waves at his feet. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Kintsugi chrome android walks a ridge line between a pale full Moon on one side and the newly risen Sun on the other, small and unhurried, both celestial bodies in the same dawn sky, subtle grass waves at his feet. The Moon and the Sun stay fixed in position and scale; as the frame widens, extend only open sky and grass -- no new objects, structures, or celestial bodies. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
-**Frame Chain:** <-- Chain 1 start
+**Frame Chain:** None
 
 ---
 
@@ -592,9 +595,9 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The @Kintsugi chrome android lifts his head to watch a flock of migrating cranes crossing the dawn sky in a loose V formation, the flock moving steadily across the frame, subtle grass waves around his feet, sky occupying most of the composition. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Kintsugi chrome android lifts his head to watch the flock of migrating cranes already pictured crossing the dawn sky in a loose V formation, the flock moving steadily across the frame, subtle grass waves around his feet, sky occupying most of the composition. The Moon and the Sun stay fixed in position and scale; no new birds or objects appear. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
-**Frame Chain:** <-- S15 (last frame) -- Chain 1 continues
+**Frame Chain:** None
 
 ---
 
@@ -622,7 +625,7 @@
 **Motion Prompt:**
 > Close profile of the @Kintsugi chrome android at the ridge, dawn sky reflected on patched chrome, calm steady blue optical lenses tracking the last of a departing flock, wind pressing grass in slow waves around his feet. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
-**Frame Chain:** <-- S16 (last frame) -- Chain 1 ends (3 clips)
+**Frame Chain:** None
 
 ---
 
@@ -857,7 +860,7 @@
 | **Timestamp** | 3:05-3:09 |
 | **Scene Duration** | 4s |
 | **Coverage** | Direct -- 1 x 5s |
-| **Musical Moment** | "Now broadcasting Love across the divide" -- full band over a quiet act **[DISSONANCE -- intentional: the epic lives in the music, the humility in the tea]** |
+| **Musical Moment** | "Now broadcasting Love across the divide" -- full band over a quiet act **[DISSONANCE]** -- intentional: the epic lives in the music, the humility in the tea |
 | **Scene Context** | He sits on the fallen loop and pours tea from the communal kettle into two glasses side by side on the stone; the shepherd does not stir |
 | **Tech Strategy** | Mode A |
 | **Generation Mode** | Standard |
@@ -885,7 +888,7 @@
 | **Timestamp** | 3:10-3:14 |
 | **Scene Duration** | 4s |
 | **Coverage** | Direct -- 1 x 5s |
-| **Musical Moment** | "In signal, I came to walk beside" -- minor-to-major complete **[DISSONANCE -- intentional: full band climax over an intimate, quiet offering]** |
+| **Musical Moment** | "In signal, I came to walk beside" -- minor-to-major complete **[DISSONANCE]** -- intentional: full band climax over an intimate, quiet offering |
 | **Scene Context** | Fourth wall beat one: he extends one tea glass toward the camera; GAZE ON THE GLASS, BELOW THE LENS -- no eye contact; second glass stays for the next traveler |
 | **Tech Strategy** | Mode B |
 | **Generation Mode** | Mode B |
@@ -942,7 +945,7 @@
 | **Timestamp** | 3:24-3:32 |
 | **Scene Duration** | 8s |
 | **Coverage** | Direct -- 1 x 10s |
-| **Musical Moment** | Guitar solo climbing |
+| **Musical Moment** | Guitar solo climbing **[DISSONANCE]** -- intentional: the epic peak lives in the solo; the frame lies still in the grass with the quiet evidence -- two tracks, side by side |
 | **Scene Context** | Low frame at grass height: two lines of tracks side by side -- one patched metal tread, one bare human footprint -- same direction, same stride; the human never shown |
 | **Tech Strategy** | Mode A |
 | **Generation Mode** | Standard |
@@ -1126,7 +1129,7 @@
 **Camera Move:** Static (STILL HOLD)
 
 **Motion Prompt:**
-> The @Kintsugi chrome android holds his direct gaze into the camera lens with a friendly gentle smile, his head tilting gently to one side, one open hand rising palm-up toward the lens in a warm welcoming gesture, unhurried. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The @Kintsugi chrome android holds his direct gaze into the camera lens, a friendly gentle smile forming as his head tilts gently to one side, one open hand rising palm-up toward the lens in a warm welcoming gesture, unhurried. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 **Frame Chain:** None (Mode B handles the transition via start/end frames)
 
@@ -1166,13 +1169,15 @@
 | 4:29 | Final bars before the gong | The beckon -- head tilt + palm-up hand; gong cuts on the offered hand | S34b |
 | 4:30 | Final gong -- single strike | Hard cut to black -- edit card (S35) | S35 |
 
+> Refrain onsets inside the 79s finale (3:33 / 3:45 / 3:54 / 4:08 / 4:16) are estimates -- the musical metadata does not subdivide the finale. Confirm against the final track at the edit stage (dramaturgy interpretation choice 4); the scene order is timing-proof.
+
 ---
 
 ## FRAME CHAIN MAP
 
 | Chain | Clips | Location | Notes |
 |---|---|---|---|
-| Chain 1 | S15 --> S16 --> S17 | Ridge / Moon-Sun sky | 3-clip max; cosmic passage continuity; S15 speed-ramp last frame --> S16 static --> S17 slow zoom in |
+| ~~Chain 1~~ | ~~S15 --> S16 --> S17~~ | ~~removed~~ | Removed at the 2026-07-12 audit: three distinct approved compositions (wide ridge walk / sky-dominant flock / close profile -- different framings, SKILL "when NOT to use"), each generating from its own raw keeper (15/16/17.png), which the chain's last-frame-as-start-frame protocol would discard. Moon-Sun sky continuity is carried by the shared `ep10_ref_moonsun_sky.png` reference. |
 | ~~Chain 2~~ | ~~S25 --> S26~~ | ~~removed~~ | S25 and S26 are distinct compositions (no kettle in S25, Robotiko not seated); chain not viable |
 
 > S34a --> S34b is NOT frame-chained -- S34b uses Mode B (34.png start + 34b.png end), which handles the transition via defined keyframes rather than chaining from a video's last frame. The composition continuity is assured by both clips sharing 34.png as their visual anchor.
@@ -1254,8 +1259,9 @@
 |---|---|---|---|
 | S26 | high (full band V6) | 2 | The epic lives in the music; the humility lives in the tea. He pours quietly while the album roars -- concept thesis from the dramaturgy. |
 | S27 | high (minor-to-major complete) | 2 | Same principle: the climactic harmonic resolution underlies the quietest physical gesture -- a glass offered through the screen. |
+| S29 | epic (finale, solo climbing) | 2 | The solo rages while the camera rests at grass height on the proof of companionship -- two track-lines, side by side. The evidence is quiet because it does not need to argue. |
 
-> Both [DISSONANCE] moments are logged for the exemption registry in `_management/dissonance_registry.md`. They are not errors -- they are the episode's artistic core.
+> All three [DISSONANCE] moments are logged in the exemption registry, `_management/dissonance_registry.md` (EP10 rows added 2026-07-12). They are not errors -- they are the episode's artistic core.
 
 ### Camera Personality Compliance
 

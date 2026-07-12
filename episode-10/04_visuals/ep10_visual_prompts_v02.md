@@ -27,7 +27,7 @@ EP10 is **Phase 3, full kintsugi, stable from frame one** — no damage progress
 - **The kintsugi reference carries the body detail** (patchwork chrome, gold-filled seams, translucent skin over the bioluminescent core, calm steady blue optical lenses, missing right ear, torso dent). Per the reference-brevity rule, prompts use the short identifier **"the chrome android (android_kintsugi.png)"** and do NOT restate that detail. Describe only what is NOT in the reference (a new light state, a gaze direction, a pose).
 - **S01-S02 exterior:** chain from EP09's dawn-exterior lineage (`ep09_ref_exterior.png` / EP09 final dawn frame family) so the workshop and industrial-edge town read identically to EP09's last frames.
 - **Eye canon (ADR-0010):** material-lens idiom ONLY in every Text Prompt — `calm steady blue optical lenses set into chrome sockets, like polished sapphires`. Never "glow" within reach of an eye/lens word. Kintsugi **body** gold-glow is allowlisted (seams may read gold); the eyes never do.
-- **Mouthless-face guard (verified against `android_kintsugi.png`):** the face has NO mouth. Never prompt a smile, grin, teeth, or mouth in any scene — warmth (esp. S34) is carried by head tilt, beckoning hand, and the held gaze. Any take that invents a mouth is a reject.
+- **Mouthless-face guard (verified against `android_kintsugi.png`):** the face has NO mouth. Never prompt a smile, grin, teeth, or mouth in any scene — warmth (esp. S34) is carried by head tilt, beckoning hand, and the held gaze. Any take that invents a mouth is a reject. **S34b EXCEPTION (human override, 2026-07-12 raw review): the approved S34b pick (34b_1.png) carries an intentional friendly gentle smile; the guard stands for S34a and every other shot.**
 - **Rear-view ear rule:** for any behind-the-head framing, angle from his LEFT (intact ear toward camera) — the missing right ear does not render from a direct rear. Applied to S13, S14, S18, S28.
 
 ---
@@ -76,7 +76,7 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 - **The single Amber Pulse — S10b ONLY.** Reflected sunlight on the staff's raw amber tip; a warm glint, never a light source. NO amber anywhere else in the episode. Embers (S21, S25-S26) are **orange-red**, never amber.
 - **Environmental rules — one road, one dawn.** Continuous geography, continuous time (pre-dawn grey-blue -> early golden hour). No flashbacks, no cosmic sets, no teleports, no rain/storm/night. CyberAnatolian texture stays background, never foregrounded.
 - **Body — full kintsugi from frame one, stable.** No damage progression, no transformation beats. Chain from `android_kintsugi.png`.
-- **What is NOT shown:** the stone 8 standing or transforming; the Mentor embodied or projected; Robochica in any form; the Mechanic; the workshop interior (S02 doorway stays pure unreadable light); any screen-world / virtual space; any monument framing of the infinity stone; eye contact before S34; any lemniscate / path-shape reveal; **any invented mouth on Robotiko**.
+- **What is NOT shown:** the stone 8 standing or transforming; the Mentor embodied or projected; Robochica in any form; the Mechanic; the workshop interior (S02 doorway stays pure unreadable light); any screen-world / virtual space; any monument framing of the infinity stone; eye contact before S34; any lemniscate / path-shape reveal; **any invented mouth on Robotiko** (S34b production override excepted, 2026-07-12).
 - **Gaze discipline:** the ONLY direct look into the lens is S34a (held into S34b). S27 (the offered hand) and S31 (the wait) keep the gaze BELOW / BESIDE the lens — any eye-contact take there is a reject.
 - **Composition for motion:** every frame leaves headroom + the open beside-space + fore/background depth for the motion stage; cuts land on the felt stomp-clap pulse (76.5 BPM, beat = footstep). No camera-movement words in prompts (angle/placement only).
 
@@ -302,7 +302,7 @@ These scenes have no environment reference. Each is checked against its dramatur
 | S27a/b | fourth-wall (hand + glass), A-anchored | **GAZE: eyes on the glass, BELOW the lens — NO eye contact** (reject any eye-contact take); mouthless face (no mouth/smile); second glass left on the stone; steam between hand and lens |
 | S29 | tracks-only, A-anchored | two track-lines side by side (metal tread + bare human foot), same direction/stride; low grass-height; the human never shown; empty meadow around the tracks (no spawned figure) |
 | S34a | fourth-wall (the look), A-anchored | **GAZE: the ONLY direct look into the lens in the episode**; level, patient, kind; mouthless face (warmth without a mouth); Still Hold (no camera-move words) |
-| S34b | fourth-wall (tilt + beckon), A-anchored | gaze held into the lens (from S34a); soft head tilt = the machine's smile (mouthless — NO mouth/teeth); one open palm-up hand rising, fingers curling once in a small beckon; no big wave |
+| S34b | fourth-wall (tilt + beckon), A-anchored | gaze held into the lens (from S34a); soft head tilt = the machine's smile (mouthless — NO mouth/teeth) [OVERRIDDEN 2026-07-12 at raw review -- intentional friendly gentle smile on the approved pick; see gate-2 note]; one open palm-up hand rising, fingers curling once in a small beckon; no big wave |
 
 ---
 
@@ -779,7 +779,7 @@ These scenes have no environment reference. Each is checked against its dramatur
 - **Characters Present:** Robotiko
 - **Image Reference Path:** `_assets/cast/android_kintsugi.png`
 - **Video Tech Strategy:** Multi-Clip / Mode B candidate — pose held from S34a end-state; single action: head tilt + palm-up beckon
-- **Composition Notes:** Gaze held into the lens (from S34a). **The head tilt IS the smile — MOUTHLESS, no mouth/teeth/grin** (a literal smile would invent a mouth = design break; hard reject). One open hand rising palm-up from the lower frame edge, small amplitude (no wave). The series' final image before the gong/door.
+- **Composition Notes:** Gaze held into the lens (from S34a). **The head tilt IS the smile — MOUTHLESS, no mouth/teeth/grin** (a literal smile would invent a mouth = design break; hard reject). [OVERRIDDEN 2026-07-12 at raw review -- intentional friendly gentle smile on the approved pick; see gate-2 note] One open hand rising palm-up from the lower frame edge, small amplitude (no wave). The series' final image before the gong/door.
 - **Upload:** `android_kintsugi.png`; env: `ep10_ref_stone_meadow.png` (anchor); base: 34a.png (S34a output)
 - **Text Prompt:**
 > Fourth-wall medium close shot at companion height in a green meadow at morning, the chrome android (android_kintsugi.png) holding his direct gaze into the camera lens with his calm steady blue optical lenses set into chrome sockets, his head tilted gently to one side as the machine warmth, the mouthless face carrying no mouth and no smile, one open hand rising palm-up into the lower frame with the fingers curling once in a small beckon toward the lens, morning gold complete, unhurried and ordinary, 16:9 widescreen composition, hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece.
@@ -826,7 +826,7 @@ Phase-2 items:
 - [x] Total image-prompt count matches dramaturgy: 40 (34 scenes + sub-splits; S35 edit card, no image)
 - [x] Lighting direction specified in every prompt; no prompt references another prompt
 - [x] Every Text Prompt is plain ASCII (no em-dash / non-ASCII inside blockquotes)
-- [x] EP10 LOCKS enforced: single Amber Pulse (S10b only; embers orange-red S21/S25/S26); eye canon material-lens idiom; mouthless-face guard (esp. S17/S27/S31/S34); gaze discipline (direct lens ONLY at S34a/b; below/beside at S27/S31); rear-view ear rule (S13/S14/S18/S28); no path-shape reveal (S32)
+- [x] EP10 LOCKS enforced: single Amber Pulse (S10b only; embers orange-red S21/S25/S26); eye canon material-lens idiom; mouthless-face guard (esp. S17/S27/S31/S34) (S34b override 2026-07-12); gaze discipline (direct lens ONLY at S34a/b; below/beside at S27/S31); rear-view ear rule (S13/S14/S18/S28); no path-shape reveal (S32)
 - [x] **"Would Fibula approve this?" — Human approved 2026-07-08.**
 
 ---

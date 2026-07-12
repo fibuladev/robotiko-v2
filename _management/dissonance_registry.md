@@ -87,17 +87,50 @@ Sub-clip mentions and summary-table rows are deduplicated to the parent shot.
 - **Verdict:** VERIFIED — tagged in the shot title, Scene Context, and a dedicated `[DISSONANCE]` note in the shot block, and named in the script's Camera Diversity and Director's Notes summaries.
 - **Note on flavor:** Unlike EP08's total stillness (Static + MS 1-2, the "body has given up" template), S23 refuses via a locked *camera* while the frame itself is at MS 5 — the energy is redirected inward, not removed. Both are legitimate dissonance; they are not the same gesture.
 
+### EP10 — S26 · "Two Glasses, One Pot"
+
+- **Source:** [`episode-10/05_video/ep10_motion_script_v01.md`](../episode-10/05_video/ep10_motion_script_v01.md) (shot block)
+- **Timestamp:** 3:05–3:09
+- **Camera / MS:** Slow Zoom In · MS 2
+- **What the music does:** Verse 6 at full band, high energy — "Now broadcasting Love across the divide."
+- **What the frame does instead:** He sits on the fallen stone loop and quietly pours tea into two glasses; the shepherd sleeps.
+- **Justification (from the script):** "The epic lives in the music; the humility lives in the tea. He pours quietly while the album roars — concept thesis from the dramaturgy."
+- **Verdict:** VERIFIED — tagged in the shot's Musical Moment field and listed in the script's [DISSONANCE] Inventory.
+
+### EP10 — S27 · "The Hand"
+
+- **Source:** [`episode-10/05_video/ep10_motion_script_v01.md`](../episode-10/05_video/ep10_motion_script_v01.md) (shot block, Mode B)
+- **Timestamp:** 3:10–3:14
+- **Camera / MS:** Static · MS 2
+- **What the music does:** The minor-to-major shift completes at full band.
+- **What the frame does instead:** The quietest physical gesture of the series — one tea glass extended toward the lens, gaze below the lens.
+- **Justification (from the script):** "The climactic harmonic resolution underlies the quietest physical gesture — a glass offered through the screen."
+- **Verdict:** VERIFIED — tagged in the shot's Musical Moment field and listed in the script's [DISSONANCE] Inventory.
+
+### EP10 — S29 · "The Tracks"
+
+- **Source:** [`episode-10/05_video/ep10_motion_script_v01.md`](../episode-10/05_video/ep10_motion_script_v01.md) (shot block)
+- **Timestamp:** 3:24–3:32
+- **Camera / MS:** Static · MS 2
+- **What the music does:** Epic finale, electric guitar solo climbing.
+- **What the frame does instead:** A locked grass-height macro of two parallel track-lines (patched metal tread + bare human footprint); nothing moves but light.
+- **Justification (from the script):** "The solo rages while the camera rests at grass height on the proof of companionship — two track-lines, side by side."
+- **Verdict:** VERIFIED — tagged in the shot's Musical Moment field and listed in the script's [DISSONANCE] Inventory.
+- **Note on flavor:** The tag was added at the 2026-07-12 post-approval audit — the shot was designed still from the dramaturgy on, but shipped untagged; the audit closed the gap the same day the registry gained these rows.
+
 ---
 
 ## Scope of this sweep
 
 Built from a `DISSONANCE` sweep across `episode-*/05_video/*.md` and
-`episode-*/03_direction/*.md`. As of this writing, the tag appears only in EP08
-(S09, S10) and EP09 (S23) — the two episodes whose camera personalities (EP08 the
-Witnessing Camera, EP09 the Discovering Camera) are built to hold still while the
-music rages. No other episode carries a sanctioned dissonance moment. When a future
-script adds one, it earns a row here on the same terms: a real tagged shot block, a
-quoted justification, and a verdict.
+`episode-*/03_direction/*.md`. As of this writing, the tag appears in EP08
+(S09, S10), EP09 (S23), and EP10 (S26, S27, S29) — the episodes whose camera
+personalities (EP08 the Witnessing Camera, EP09 the Discovering Camera, EP10 the
+Companion Camera — the finale's thesis: the epic lives in the music, the humility
+on the ground) are built to hold still while the music rages. No other episode
+carries a sanctioned dissonance moment. When a future script adds one, it earns a
+row here on the same terms: a real tagged shot block, a quoted justification, and
+a verdict.
 
 ---
 

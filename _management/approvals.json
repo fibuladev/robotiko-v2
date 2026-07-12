@@ -171,9 +171,9 @@
       "episode": "10",
       "gate": 1,
       "artifact": "episode-10/03_direction/ep10_dramaturgy_v01.md",
-      "sha256": "80e59ab41c3602ea99497f729345b566889659f800fa00c5c0b95a95b542dad3",
+      "sha256": "b02809f91a1ed9f745838fac91a69df6f6bd15419c655e5fabaad44234749b41",
       "date": "2026-07-06",
-      "note": "approved at the dramaturgy review session (35 scenes, Companion Camera). One revision requested and applied before sign-off: S34 - the look resolves into a warm head-tilt (the machine's smile; the face is mouthless by design) + open-palm beckon toward the lens, gong cuts on the offered hand. All four interpretation choices confirmed (communal kettle, staff cloth strips, S33 wind/flare energy, refrain onsets to verify at motion stage). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
+      "note": "approved at the dramaturgy review session (35 scenes, Companion Camera). One revision requested and applied before sign-off: S34 - the look resolves into a warm head-tilt (the machine's smile; the face is mouthless by design) + open-palm beckon toward the lens, gong cuts on the offered hand. All four interpretation choices confirmed (communal kettle, staff cloth strips, S33 wind/flare energy, refrain onsets to verify at motion stage). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved). sha re-baselined 2026-07-12: dated S34b smile-override production notes added at the post-approval motion-script audit; guard text unchanged elsewhere (Fibula-approved)."
     },
     {
       "episode": "10",
@@ -187,9 +187,9 @@
       "episode": "10",
       "gate": 2,
       "artifact": "episode-10/05_video/ep10_motion_script_v01.md",
-      "sha256": "d5b02c75bc9e8178d190fbc9817919c06f7f2740eae24a12a9d046bd17783511",
+      "sha256": "2501f4b0a7086ae3cb46493c03493316a08ea373c5cc667c68cb1c7b71771f9e",
       "date": "2026-07-12",
-      "note": "approved at the motion-script session (37 clips, Companion Camera, MS avg 3.03). Two revisions applied at review: (1) Chain 2 S25-S26 removed - distinct compositions, not chainable; (2) S34b mouthless-face guard removed and replaced with intentional friendly gentle smile (override from visual prompts stage, 34b_1.png pick). Approval to proceed to video generation confirmed."
+      "note": "approved at the motion-script session (37 clips, Companion Camera, MS avg 3.03). Two revisions applied at review: (1) Chain 2 S25-S26 removed - distinct compositions, not chainable; (2) S34b mouthless-face guard removed and replaced with intentional friendly gentle smile (override from visual prompts stage, 34b_1.png pick). Approval to proceed to video generation confirmed. sha re-baselined 2026-07-12 (same day): post-approval independent audit fixes applied in place and human-approved - S02/S15/S16 image-fidelity guards, Chain 1 S15-S17 removed (not a real chain), S34b smile-forming wording + upstream override sync, literal [DISSONANCE] tags + S29 tagged + registry rows, refrain-onset caveat, credit-budget note (Fibula-approved)."
     }
   ]
 }

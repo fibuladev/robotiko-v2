@@ -38,6 +38,15 @@
 
 ---
 
+## EP10 MOTION SCRIPT INDEPENDENT AUDIT SESSION (2026-07-12) — COMPLETE
+
+**Task:** Independent post-approval audit of `ep10_motion_script_v01.md` (approved same day, Checkpoint 2) — cross-document consistency, [DISSONANCE] tag literalness, frame-chain validity, late-override sweep.
+**Findings W1-W5 fixed in place on v01 (human-approved same day):** S02/S15/S16 image-fidelity guards added to motion prompts; Chain 1 (S15->S16->S17) removed as not a real chain (three distinct approved compositions, each from its own raw keeper); S34b smile-forming wording fixed and swept upstream (dramaturgy, visual prompts v02, motion script's own summary tables); [DISSONANCE] tags made literal on S26/S27 + S29 newly tagged; refrain-onset caveat + credit-budget note added.
+**Also:** S08 static sub-clips (Kling 2.5 Turbo) accepted as-is by the human. `_management/dissonance_registry.md` gained 3 EP10 rows. SKILL.md gained a Cross-Doc Audit checklist (v2.1). `_memory/lessons.md` gained 3 rules. Gate-2 sha re-baselined by the reviewer in `_management/approvals.json`.
+**Next:** Video generation.
+
+---
+
 ## TWO-PHASE VISUAL PROMPTS REDESIGN SESSION (2026-07-07) — COMPLETE
 
 **Task:** Redesign the visual-prompts pipeline so scenes are framed to APPROVED reference pixels, not conjured from a text contract — closing three gaps found in the shipped flow. GAP A: template / `visual_dna.md` / public docs were a generation behind the SKILL. GAP B: a late ref edit forced no scene re-verification (the REF B reframe, commit `ea96c34`, updated a block while 40 scenes went un-re-checked). GAP C: the "3+ scenes = 1 ref" heuristic under-decomposed locations (EP10's REF E/F found late). Panel-reviewed plan (7 adversarial lenses); scope = SKILL + docs + validator methodology only.

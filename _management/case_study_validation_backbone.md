@@ -252,8 +252,9 @@ check is honestly labelled a heuristic — free text can't fully attribute an ad
 to a subject — and it's backed by the reliable check, not trusted alone. Some rules
 remain explicit **gaps**: the anti-spawn phrasing, the no-glow eye rule, the motion
 video-suffix. They are named as unchecked, not quietly implied to be covered. And the
-two creative checkpoints — director approval after dramaturgy and after the motion
-script — are gated by a person on purpose. We don't pretend to automate taste.
+creative checkpoints — director approval after dramaturgy, at the visual stage's
+reference gate, and after the motion script — are gated by a person on purpose. We
+don't pretend to automate taste.
 
 **The cost of leaving it:** a coverage matrix that overclaims is its own false green.
 The moment the docs imply a rule is enforced when it isn't, people stop watching for

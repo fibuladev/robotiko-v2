@@ -2,7 +2,7 @@
 
 Welcome. ROBOTIKO v2.0 is two things at once:
 
-1. **A method** — a one-person, LLM-directed film-production pipeline. A git repo that operates as a complete studio: an LLM works as a stage-gated production crew, and the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates).
+1. **A method** — a one-person, LLM-directed film-production pipeline. A git repo that operates as a complete studio: an LLM works as a stage-gated production crew, and the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (three approval gates).
 2. **A universe** — the ROBOTIKO story: its canon, characters, lyrics, dramaturgy, and finished episodes.
 
 This distinction is the heart of the project, and it shapes how you contribute. The **method is open** (MIT) and meant to be taken and reused. The **universe is canon** (CC BY-NC 4.0) and not for editing here. Most people who arrive will want to do the first thing: **fork the method and build their own universe.** That is the point, and it is celebrated.

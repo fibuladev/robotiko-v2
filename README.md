@@ -106,7 +106,7 @@ See the full evidence — every episode, the palette journeys, and the honest ca
 A few honesty notes, stated plainly because the project believes documented imperfection beats faked polish:
 
 - **The camera hallucinates.** There is no lens, no 180-degree line the model remembers — the "look" is a prompt suffix asserted in words. This is not a "generate prompts, copy-paste, get images" pipeline. **Image generation is the hard part** — that is where the universe is created. Roughly 65–70% of visual prompts land on the first try; the remaining 30–35% will cost you time, because scene-driven prompts carry dense detail (character state, symbolic weight, camera framing, emotional tone) plus reference images, and that density can confuse generation tools. **Video generation is far more forgiving** (~80% first-pass) — the universe is already built in the image; the video just sets it in motion. The good news: concept notes and dramaturgy give you a rock-solid frame — there is no risk of drifting away from the story. The shots that need a retry usually resolve within a few attempts: simplify the prompt, swap a few words, or drop a detail the tool is misinterpreting. The result is a scene that matches the story you set out to tell — your vision, not the tool's guess. These figures are experiential observations, not instrumented telemetry — the repo says so openly. The full argument is in [docs/hallucinating-camera.md](docs/hallucinating-camera.md).
-- **Two gates are human on purpose.** After dramaturgy and after the motion script, a person must approve before the pipeline continues. Taste does not automate, so the repo does not pretend it does.
+- **Three gates are human on purpose.** After dramaturgy, after reference authoring, and after the motion script, a person must approve before the pipeline continues — and each approval is recorded in [`_management/approvals.json`](_management/approvals.json) with a sha256 of the approved artifact, so post-approval drift stays visible. Taste does not automate, so the repo does not pretend it does.
 - **The rules are tested, not asserted.** The lessons file carries ~125 hard-won rules — e.g. never write "glowing eyes" in a prompt (generators render literal glowing eyeballs); describe the material instead: *"dark amber glass lenses set into chrome sockets, like polished gemstones."* Rules earn their place by surviving a real reshoot.
 
 ---
@@ -140,7 +140,7 @@ This repo is a blueprint. Take the pipeline, keep your own story.
 
 ## How it works (the short version)
 
-A git repository operated as a one-person film studio. An LLM (Claude, via Claude Code skills) works as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (two approval gates). The music's structure drives the dramaturgy, the dramaturgy drives the visuals, and every stage is traceable: *Output of Step N = Input of Step N+1.*
+A git repository operated as a one-person film studio. An LLM (Claude, via Claude Code skills) works as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (three approval gates). The music's structure drives the dramaturgy, the dramaturgy drives the visuals, and every stage is traceable: *Output of Step N = Input of Step N+1.*
 
 ```
 robotiko-v2/

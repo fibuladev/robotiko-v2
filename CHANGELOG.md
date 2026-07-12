@@ -13,7 +13,7 @@
 A complete, reproducible, open-source methodology for LLM-directed music cinema — a ten-episode
 closed arc produced by a git repository operating as a one-person film studio, with Claude as a
 stage-gated production crew and the human retaining two irreplaceable roles: creative vision
-(inputs) and taste (the two approval checkpoints).
+(inputs) and taste (the three approval checkpoints).
 
 ### Ships in 1.0.0
 - **The method is reproducible from the repo; the films are not — renders live outside the tree:**

@@ -134,10 +134,22 @@ bed: a consistent *distance ladder* that makes isolation legible through scale
 alone, never through a performance.
 
 The whole grammar exists to set up a single reversal. The episode is engineered so
-that its **first and only Dolly In** lands on the two words *"I AM COMING."* One
-forward push, in an entire film of retreat. Because the pattern was built with
-discipline, breaking it *means* something — the will asserting itself, rendered as
-pure camera direction with no dialogue doing the work.
+that its **first and only Dolly In** lands on the two words *"I AM COMING."* The
+distinction is one of grammar, not of pixels: slow lens-zooms appear through the
+episode — local pushes of *attention* inside a scene — and the generation tool
+sometimes lends even a scripted zoom a drift of parallax. (In the plugged-in room
+it also kept dissolving the monitor's rejection text into unreadable glyphs — so
+two of the four clips ship with a textless, light-only screen, the camera drifting
+through the room and closing on the android's face instead: the rejection is
+carried by the face that read it. The sequence's final clip then lands the text
+clean — *Application Rejected*, readable, no glyphs — and the camera slowly pulls
+back out of the room: even the post-fix ends in retreat.) But the five-refrain
+distance ladder — the spine of the film — only ever climbs away, and the motion
+script enforces the reversal as grammar (Camera Diversity Report: Dolly In ×1,
+"EP07: exactly 1"). The shipped film honors the design: each refrain pulls one rung
+more distant, and the camera advances exactly once — on those two words. Because
+the pattern was built with discipline, breaking it *means* something — the will
+asserting itself, rendered as pure camera direction with no dialogue doing the work.
 
 **Lesson for you:** in a medium where any move is one prompt away, restraint is the
 scarce resource. A move withheld for six minutes hits harder than any move you

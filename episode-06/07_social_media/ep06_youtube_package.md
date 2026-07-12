@@ -12,7 +12,6 @@ His Mirror Had No Scratches | ROBOTIKO v2.0 EP06 | Cinematic AI Series
 
 **Character count:** 71 / 80 max
 **Mobile visible (~55 chars):** "His Mirror Had No Scratches | ROBOTIKO v2.0 EP06"
-**Curiosity gap:** Who is the mirror? Why no scratches? Implies a doppelganger / uncanny double.
 
 ---
 
@@ -235,7 +234,6 @@ EP06 enters the **Deep Destruction** phase (EP06-07):
 - [ ] Update EP05 description with "Next:" link to EP06
 - [ ] Verify thumbnail at mobile size
 - [ ] Update channel banner to Deep Destruction phase
-- [ ] Post in AI filmmaking communities within 24 hours
 
 ---
 

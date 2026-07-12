@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Generate a complete YouTube metadata package for a finished episode: title, description, tags, thumbnail guidance, and end screen recommendations. All metadata standards are defined in `_management/youtube_metadata_standards.md` — this skill implements those standards.
+Generate a complete YouTube metadata package for a finished episode: title, description, thumbnail guidance, and end screen recommendations. All metadata standards are defined in `_management/youtube_metadata_standards.md` — this skill implements those standards.
 
 ---
 
@@ -22,7 +22,7 @@ Generate a complete YouTube metadata package for a finished episode: title, desc
 
 | # | File | What to Extract |
 |---|---|---|
-| 1 | `_management/youtube_metadata_standards.md` | Metadata standards, tag list, category, title format, description template, episode hooks, pinned comments, inspiration credits |
+| 1 | `_management/youtube_metadata_standards.md` | Metadata standards, category, title format, description template, episode hooks, pinned comments, inspiration credits |
 | 2 | `_management/master.md` | Episode title, station, tone, key lyrics, logline, philosophical context |
 | 3 | `episode-{XX}/02_music/ep{XX}_musical_metadata.json` | Episode duration and musical context |
 | 4 | `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` | Scene breakdown for thumbnail guidance |
@@ -36,10 +36,10 @@ Generate a complete YouTube metadata package for a finished episode: title, desc
 **Format:** `[Curiosity Hook] | ROBOTIKO v2.0 EP{XX} | Cinematic AI Series`
 
 **Rules:**
-- Maximum 80 characters (mobile truncation at ~55-60 chars; search indexes full title)
+- Maximum 80 characters
 - Episode number included: `EP01`, `EP02`, etc. — always 2 digits, no dot
-- "Cinematic AI Series" = discovery keyword for AI film community
-- Hook creates a curiosity gap — question, contradiction, or mystery
+- "Cinematic AI Series" = the fixed series descriptor that closes every title
+- Hook — the episode's one-line dramatic phrase (question, contradiction, or mystery)
 - "ROBOTIKO v2.0" in the middle — series brand anchor
 - Do not use clickbait or misleading titles — the art speaks for itself
 
@@ -49,7 +49,7 @@ The Tech Guru's Downfall | ROBOTIKO v2.0 EP02 | Cinematic AI Series
 ```
 
 ### 2. Video Description
-**Structure (3-section format — AI categorization signal + lore + credits/cross-links):**
+**Structure (3-section format — hook + lore + credits/cross-links):**
 ```
 {Episode-specific dramatic hook from youtube_metadata_standards.md — exact text}
 ROBOTIKO v2.0 — Episode {XX} of 10. A cinematic AI sci-fi series.
@@ -79,11 +79,11 @@ Next: {title} → {URL or "Coming soon"}
 ```
 
 **Rules:**
-- **First 3 lines = Hook + Classification + Series Entry Point.** Line 1: dramatic hook (CTR driver, visible in search results). Line 2: "cinematic AI sci-fi series" reinforces title keyword. Line 3: playlist link orients new viewers.
+- **First 3 lines = Hook + Series Descriptor + Series Entry Point.** Line 1: dramatic hook. Line 2: "cinematic AI sci-fi series" — the series descriptor. Line 3: playlist link orients new viewers.
 - Opening hook is the episode's single-sentence hook from `youtube_metadata_standards.md` — NOT a custom-written hook.
 - **Cross-links required:** Previous and Next episode links in every description. Update previous episode's description when a new episode goes live.
 - **Lore section rules (critical):**
-  - Always prefix with `THE LORE` header — NOT "Lyrics:" (avoids YouTube music classification signal)
+  - Always prefix with `THE LORE` header — NOT "Lyrics:"
   - Strip ALL musical structure markers (`[Intro]`, `[Verse 1]`, `[Chorus 1]`, `[Bridge]`, `(Cymbal Crash)`, `(Full Band)`, etc.)
   - **Identify rhyme scheme (AAB tercets, ABAB, couplets, etc.) and preserve it through punctuation:**
     - Within-stanza pause: semicolon (;) or comma (,)
@@ -102,7 +102,6 @@ Next: {title} → {URL or "Coming soon"}
 - **NO "About ROBOTIKO" block** — channel About section handles project identity
 - Credits block is embedded in the description template above
 - **#aiart used from EP01** — AI transparency from day one
-- **NO genre hashtags** (#progrock, #psychedelicrock, etc.) — see youtube_metadata_standards.md Section 6
 - Inspiration credits (e.g., EP05: Cem Karaca, EP06: Korkmazgil) only when specified in youtube_metadata_standards.md
 - Keep description a **literary document**, not marketing copy
 
@@ -144,38 +143,17 @@ Each episode has a cryptic pinned comment — a breadcrumb for curious viewers. 
 
 **Rule:** Pin this comment immediately after the video goes live. Use the exact text — no additions, no emojis.
 
-### 5. Tags
-Per `_management/youtube_metadata_standards.md` Section 5 (film-first approach):
-
-**Base tags (constant across all episodes — ~390 chars):**
-```
-cinematic ai series, ai sci-fi series, ai short film, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai storytelling, dystopian sci-fi, android story, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
-```
-
-**Episode-specific tags (~110 chars remaining from 500 limit):**
-```
-[episode hook keywords], [character names], [location names if applicable]
-```
-
-**Rules:**
-- Maximum 500 characters total (YouTube limit).
-- No misleading or unrelated tags.
-- **NO music-signal tags** — concept album, rock opera, ai music, cyberanatolian, genai, animated series permanently removed.
-- **NO "4K" tag** — we output 1080p.
-- Tool tags (kling ai, suno ai, veo ai) capture tool-community search traffic.
-
-### 6. Thumbnail Guidance
+### 5. Thumbnail Guidance
 Claude does not generate the thumbnail image but provides:
 - **Recommended scene:** Which scene (by Shot ID) would make the strongest thumbnail — the hero shot from the dramaturgy
 - **NO text on thumbnail.** Episode number only, bottom-left corner. No title, no quotes, no overlays.
-- **Color emphasis:** Dominant color that should be boosted for YouTube grid visibility
+- **Color emphasis:** Dominant color of the chosen frame
 - **Composition note:** Rule of thirds placement suggestion
 - **Progression check:** Side-by-side with previous episode thumbnails, does the visual arc show? (Pristine → cracked → dark → gold)
 
-### 7. End Screen Recommendations
+### 6. End Screen Recommendations
 - **Next episode:** Link to EP{XX+1} if available
 - **Playlist:** Link to full ROBOTIKO v2.0 playlist
-- **Subscribe CTA:** Brief, non-generic call to action aligned with the project's tone
 
 ---
 
@@ -195,10 +173,7 @@ Claude does not generate the thumbnail image but provides:
 - [ ] Description Line 3 = playlist link
 - [ ] Description has NO timestamps/chapters
 - [ ] Cross-links present: previous + next episode + playlist
-- [ ] Tags use film-first approach: no music signals, Tier 1-5 base + episode-specific
-- [ ] Tags are within 500 character limit
 - [ ] Category: Film & Animation (not Music)
-- [ ] Hashtags: first 3 are `#aiscifi #cinematicai #robotiko` (no music-signal hashtags)
 - [ ] Thumbnail guidance references a specific scene from the dramaturgy
 - [ ] Thumbnail has NO text (only episode number bottom-left)
 - [ ] Pinned comment matches youtube_metadata_standards.md exactly

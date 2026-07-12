@@ -137,11 +137,6 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 
 **Total:** ~450 characters (within 500 limit) ✅
 
-**TAG STRATEGY (all episodes):**
-- ✅ Film-first approach per `_management/youtube_metadata_standards.md` Section 5
-- ✅ Genre tags REMOVED (progressive rock, psychedelic rock, etc.)
-- ✅ AI-generated tags ADDED for correct categorization
-
 ---
 
 ## 5. THUMBNAIL GUIDANCE

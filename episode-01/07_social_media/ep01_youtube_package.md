@@ -131,12 +131,6 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 
 Characters: ~340 / 500 max ✅
 
-**TAG STRATEGY (all episodes):**
-- ✅ Film-first approach per `_management/youtube_metadata_standards.md` Section 5
-- ✅ Genre tags REMOVED (progressive rock, psychedelic rock, etc.)
-- ✅ AI-generated tags ADDED for correct categorization
-- Base tags remain constant; episode-specific tags change per episode
-
 ---
 
 ## 5. THUMBNAIL GUIDANCE
@@ -152,7 +146,7 @@ Characters: ~340 / 500 max ✅
 
 ## 6. END SCREEN RECOMMENDATIONS
 
-Per `youtube_metadata_standards.md` Section 10: **No end screens EP01-EP09.**
+Per `youtube_metadata_standards.md` Section 7: **No end screens EP01-EP09.**
 
 - **Previous episode:** N/A (first episode)
 - **Next episode:** EP02 — "The Tech Guru's Downfall" → [EP02 URL]

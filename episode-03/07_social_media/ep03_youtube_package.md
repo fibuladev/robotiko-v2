@@ -233,11 +233,6 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 
 Characters: ~430 / 500 max ✅
 
-**TAG STRATEGY (all episodes):**
-- ✅ Film-first approach per `_management/youtube_metadata_standards.md` Section 5
-- ✅ Genre tags REMOVED (progressive rock, psychedelic rock, etc.)
-- ✅ AI-generated tags ADDED for correct categorization
-
 ---
 
 ## 5. THUMBNAIL GUIDANCE
@@ -260,7 +255,7 @@ Characters: ~430 / 500 max ✅
 
 ## 6. END SCREEN
 
-Per `youtube_metadata_standards.md` Section 10: **No end screens EP01-EP09.**
+Per `youtube_metadata_standards.md` Section 7: **No end screens EP01-EP09.**
 
 - **Previous episode:** EP02 — "The Tech Guru's Downfall" → [EP02 URL]
 - **Next episode:** EP04 — [EP04 Title] → [EP04 URL when available]
@@ -274,48 +269,9 @@ Per `youtube_metadata_standards.md` Section 10: **No end screens EP01-EP09.**
 - **Language:** Turkish
 - **Altered content disclosure:** Yes
 - **Comments:** Allow all (moderation on)
-- **Subtitles:** None (intentional — Turkish-only creates mystery and engagement for international viewers; encourages comments, rewatching, community translation)
+- **Subtitles:** None (intentional — the Turkish-only experience is part of the episode's design; the language barrier is the point)
 - **Visibility:** Scheduled for [DATE] at 20:00 CET
 - **Export reminder:** 16:9 canvas from CapCut (NOT 2.35:1)
-
----
-
-## 8. EP03 INSTAGRAM STRATEGY — TURKISH MARKET
-
-EP03 is the only Turkish-language episode. This is a one-time opportunity to reach Turkish audiences on Instagram.
-
-### Hashtag Strategy (3-Tier)
-
-**Tier 1 — High-volume Turkish discovery (keşfet entry):**
-```
-#kesfet #kesfetteyiz #türkiye #istanbul #anadolu
-```
-
-**Tier 2 — Mid-volume niche (right audience):**
-```
-#yapayzeka #aiart #kisafilm #animasyon #scifi #bilimkurgu #robotik #dijitalsanat #yapayzekafilmi
-```
-
-**Tier 3 — Low-volume specific (community):**
-```
-#türkkısafilm #anadolurock #metrobüs #istanbulhayatı
-```
-
-**Combined EP03 Instagram hashtags (paste — replaces standard set for this episode only):**
-```
-#robotiko #cyberanatolian #conceptalbum #aiart #aimusic #genai #kesfet #kesfetteyiz #türkiye #istanbul #anadolu #yapayzeka #kisafilm #animasyon #scifi #bilimkurgu #dijitalsanat #yapayzekafilmi #türkkısafilm #metrobüs
-```
-
-### Instagram Posting Rules (EP03 Only)
-
-- **Caption language:** Turkish (Instagram's language detection routes to Turkish feeds)
-- **Location tag:** İstanbul (Turkish keşfet is location-weighted)
-- **Posting time:** 19:00–21:00 Turkey time (UTC+3) — Turkish peak engagement
-- **Note:** Standard episodes use English captions + 18:00 CEST. EP03 is the exception.
-
-### Why This Is EP03-Only
-
-Other 9 episodes are in English. This Turkish strategy does NOT carry forward. When "Atomize EP03 for social" runs, apply these rules to all EP03 clips instead of the standard English hashtag/caption set.
 
 ---
 

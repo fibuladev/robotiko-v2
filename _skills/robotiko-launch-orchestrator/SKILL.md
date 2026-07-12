@@ -26,8 +26,8 @@ Coordinate the complete launch sequence for a finished episode — from pre-laun
 
 | # | File | What to Extract |
 |---|---|---|
-| 1 | `episode-{XX}/07_social_media/ep{XX}_youtube_package.md` | Title, description, tags, thumbnail guidance |
-| 2 | `episode-{XX}/07_social_media/ep{XX}_social_atomization.md` | Clip list, captions, hashtags, release schedule |
+| 1 | `episode-{XX}/07_social_media/ep{XX}_youtube_package.md` | Title, description, thumbnail guidance |
+| 2 | `episode-{XX}/07_social_media/ep{XX}_social_atomization.md` | Clip list, captions, hashtags |
 | 3 | `_management/project_metadata.json` | Episode status, previous episode status (for playlist linking) |
 | 4 | `_management/master.md` | Episode context for cross-referencing narrative continuity |
 
@@ -47,7 +47,6 @@ The output is a comprehensive checklist organized in launch phases:
 - [ ] Thumbnail created based on youtube_package.md guidance
 - [ ] Episode title and description proofread (no typos, correct episode number)
 - [ ] Description verified to contain NO timestamps/chapters (continuous-piece rule)
-- [ ] Tags are within YouTube's 500 character limit
 - [ ] Previous episode's end screen updated to link to this episode (if applicable)
 - [ ] Playlist updated to include this episode
 - [ ] project_metadata.json status updated to "ready_for_launch"
@@ -60,9 +59,8 @@ The output is a comprehensive checklist organized in launch phases:
 - [ ] Video uploaded to YouTube (unlisted first for review)
 - [ ] Title pasted from youtube_package.md
 - [ ] Description pasted from youtube_package.md (NO timestamps)
-- [ ] Tags added from youtube_package.md
 - [ ] Thumbnail uploaded (NO text — episode number bottom-left only)
-- [ ] End screen configured (next episode / playlist / subscribe)
+- [ ] End screen configured (next episode / playlist)
 - [ ] Cards added at key moments (if applicable)
 - [ ] Visibility set to "Scheduled" or "Public" per launch plan
 - [ ] Premiere settings configured (if using premiere)
@@ -73,19 +71,11 @@ The output is a comprehensive checklist organized in launch phases:
 
 ```
 ## SOCIAL MEDIA ROLLOUT
-- [ ] Clip 1 posted on launch day (T+1h after video goes public)
+- [ ] Clip 1 posted
   - [ ] Instagram Reels
   - [ ] YouTube Shorts
   - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
-- [ ] Clip 2 scheduled for T+24h
-  - [ ] Instagram Reels
-  - [ ] YouTube Shorts
-  - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
-- [ ] Clip 3 scheduled for T+48h
-  - [ ] Instagram Reels
-  - [ ] YouTube Shorts
-  - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
-- [ ] Clip 4 (if exists) scheduled for T+5 days
+- [ ] Remaining clips posted (in the order chosen in social_atomization.md)
   - [ ] Instagram Reels
   - [ ] YouTube Shorts
   - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
@@ -139,9 +129,9 @@ Before launching, verify these narrative continuity items:
 
 | Strategy | When to Use |
 |---|---|
-| **Instant Publish** | When momentum is important (e.g., following a recent previous episode) |
-| **Scheduled Premiere** | When community anticipation is high and live chat engagement is desired |
-| **Unlisted + Soft Launch** | When the human wants to test with a small audience first |
+| **Instant Publish** | When you want the episode live immediately. |
+| **Scheduled Premiere** | When you want a premiere with a countdown and live chat. |
+| **Unlisted + Soft Launch** | When you want to review privately before going public. |
 
 Claude suggests a strategy based on the episode's position in the series, but the human has final authority on timing.
 
@@ -163,7 +153,6 @@ EP10 description: "The ten-episode arc is complete. The pipeline is open source:
 - [ ] All previous episode end screens updated to form a complete chain
 - [ ] Open source release prepared:
   - [ ] Repository visibility set to PUBLIC (same day as EP10 release — no delay)
-  - [ ] Launch-day playbooks reviewed (`_management/launch/06_issue_seeding.md`, `_management/launch/08_reception_playbook.md`)
   - [ ] AUTHOR.md visible at repo root
   - [ ] CONTRIBUTING.md finalized
   - [ ] README.md updated with GitHub link and final status
@@ -186,7 +175,7 @@ The output document contains:
 1. **Episode Launch Header** — Episode number, title, planned launch date
 2. **Pre-Launch Verification Checklist** — All items from Phase 1
 3. **YouTube Upload Checklist** — All items from Phase 2
-4. **Social Media Rollout Checklist** — All items from Phase 3 with schedule
+4. **Social Media Rollout Checklist** — All items from Phase 3
 5. **Post-Launch Checklist** — All items from Phase 4
 6. **Cross-Episode Continuity Checks** — Table from above
 7. **Launch Timing Recommendation** — Claude's suggested strategy with rationale
@@ -198,7 +187,7 @@ The output document contains:
 
 - [ ] All four launch phases are present in the checklist
 - [ ] YouTube package content is correctly referenced (not duplicated — linked)
-- [ ] Social atomization schedule is correctly referenced
+- [ ] Social atomization clips are correctly referenced
 - [ ] Cross-episode continuity checks are included
 - [ ] EP10 special handling is included (if applicable)
 - [ ] No broken file references in the checklist

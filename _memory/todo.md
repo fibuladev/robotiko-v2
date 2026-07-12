@@ -150,11 +150,11 @@ All 9 workstreams delivered (16 thematic commits). Report: `_private/audit_2026-
 | Art Director | 4.5 | 4.9 | +0.4 |
 | Music Director | 4.6 | 4.9 | +0.3 |
 | DevOps | 4.4 | 4.8 | +0.4 |
-| HN Skeptic | 2.5 | 4.5 | +2.0 |
+| External Skeptic | 2.5 | 4.5 | +2.0 |
 | OSS Community | 3.4 | 4.6 | +1.2 |
 
 Remaining 0.20 to 5.0 = EP10 film + post-launch community proof + time.
-**Next:** EP10 brainstorming session + HN/Reddit strategy + pre-written articles.
+**Next:** EP10 brainstorming session + launch outreach prepared (private working files).
 
 ---
 
@@ -210,9 +210,8 @@ curation) -> Fable verification pass -> panel re-score. EP10 session separately
 EP01 launched on YouTube 2026-04-22; EP02-EP07 followed on the weekly cadence.
 Channel (@fibuladev) and Instagram set up; per-episode YouTube packages, social
 atomization, launch checklists, and walkthroughs are in each `episode-XX/07_social_media/`.
-Strategy pivot (2026-04-21): pre-launch teasers dropped; Instagram is a post-launch
-Reels funnel to YouTube, not an independent growth channel. Detailed community-sharing
-and launch playbooks live in the creator's private notes (not part of the open method).
+Detailed community-sharing and launch playbooks live in the creator's private notes
+(not part of the open method).
 
 ---
 
@@ -688,7 +687,7 @@ and launch playbooks live in the creator's private notes (not part of the open m
 - **M5/M6:** Character profiles validator created (`tests/character_profiles_validator.py`). CONTRIBUTING.md updated (7→8 check groups).
 - **M8/M9:** Rule retirement convention in lessons.md. EP09 S21 + EP02 eye-glow legacy fixes.
 - **M10/M13:** master.md Robochica sync + Mevlana fact correction.
-- **M15:** "Nafs al-Ammara" → "The Commanding Self" across all EP02 files (shipped-file policy: canon corrections ARE retroactive).
+- **M15:** a legacy religious-psychology loan-term → "The Commanding Self" across all EP02 files (shipped-file policy: canon corrections ARE retroactive).
 - **M12/M3/M7:** Beat sync terminology + ADR 0007 empirical claims note + director's guard in motion SKILL.
 - **L1/L2/L3:** LICENSE catch-all + README scope honesty + EP07 S28 coverage shooting note.
 - **DevOps-8/9/10/dok/drift:** create_episode.yml hardened (SHA-pinned, permissions, input validation). Broken naming hook removed. OAuth scope narrowed. Binary asset resilience section added. Scaffold drift (social_media folder) fixed. Python version standardized to 3.11+.
@@ -719,4 +718,4 @@ and launch playbooks live in the creator's private notes (not part of the open m
 **Phase 2.8 — Privacy split:** 10 strategy/analytics/Turkish working files moved to gitignored `_private/` (youtube_strategy v01/v02, analytics baseline, pre-launch calendar, social setup guide, weekly release template, three session-prompt notes, EP05 Turkish brief). `youtube_strategy` split → public method-only `youtube_metadata_standards.md` (skill/template references rewired). Turkish flavor words translated to English in method files. (EP03 Turkish lyrics kept — intentional.)
 **Phase 3 — Docs to golden:** rewrote `docs/getting-started.md`, `docs/skills-guide.md`, `docs/tools-setup.md`; NEW `docs/anatomy-of-an-episode.md` (EP07 end-to-end showcase); full `CONTRIBUTING.md`; `architecture.md` v2.1 (S3→Google Drive/MCP); `CHANGELOG.md` current + prepared 1.0.0; visual DNA at `_assets/style/visual_dna.md`. Parallelized with subagents + a fresh-eyes newcomer review.
 **Phase 4 — Engineering:** `.github/workflows/naming_check.yml` runs all three validators on push/PR; rewrote `pipeline_integrity.py` (real skipped-step detector, ignores scaffold templates); extended `naming_check.py` patterns (capcut_guide/youtube_package/social/PDF/legacy); `visual_prompt_validator.py` `--full` + N/A-placeholder skip. All three pass on the full tree.
-**Out of scope (future):** EP01 retroactive creative chain; EP09/EP10 production; banner art; HN/Reddit launch execution.
+**Out of scope (future):** EP01 retroactive creative chain; EP09/EP10 production; banner art; launch execution.

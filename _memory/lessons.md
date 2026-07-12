@@ -186,18 +186,6 @@ After any correction from the human:
 
 ---
 
-## CATEGORY: SOCIAL MEDIA & REELS (Added 2026-04-20)
-
-- **RULE:** Photo/still posts on Instagram are ineffective for discovery — max 10 views across all photo posts on a 0-follower account. Algorithm deprioritizes static feed posts. **Strategy: Reels only, fewer but higher impact.** Every post should be a Reel with motion content. Do not waste posting slots on static image posts.
-- **RULE:** Reel performance hierarchy (confirmed by data): Transformation/reveal scenes > static scenes > still images. "What happens next?" curiosity drives retention. Choose Reel clips that create a question in the first frame.
-- **RULE:** Character/figure presence in the first frames is critical for retention. Viewers scrolling through Reels look for a subject to anchor their attention — if the first 1-2 seconds show only abstract visuals, objects, or scenery without a recognizable figure, they have no reason to stay. Prioritize clips where Robotiko, Mentor, or another character is visible from the opening frame. Object-only scenes (hands, apple, symbols) can work but lose the instant human/figure recognition that stops the scroll.
-- **RULE:** Algorithm test window is ~48 hours. If quality signals (skip rate, completion rate) are strong, algorithm pushes to wider audience. If not, distribution stops. First 48 hours are critical — optimize hook, not volume.
-- **RULE:** At 0 followers, geographic targeting is impossible. Algorithm serves content globally (India 37%, Turkey 5%). Accept this — audience targeting comes with follower growth and engagement patterns.
-- **RULE:** STRATEGIC PIVOT (2026-04-21): Pre-launch teaser campaigns do NOT work at 0 followers. 13 days of daily posting = 0 followers, <200 total views, 0 profile-to-follow conversion. Teasers ("tomorrow", "coming soon", countdowns) assume an existing audience — they excite people who already care. At zero audience, only DISCOVERY works: post-launch clips that stand on their own, hook cold viewers, and funnel them to YouTube. Instagram = post-episode Reel funnel to YouTube, NOT an independent growth platform. YouTube is the main ship.
-- **RULE:** Existing dead posts should be archived, not deleted. Keep only Reels with motion content visible on the profile. When a new viewer arrives post-launch, the profile should look curated and quality-first, not cluttered with low-engagement photo posts.
-
----
-
 ## CATEGORY: YOUTUBE UPLOAD (Added 2026-04-22)
 
 - **RULE:** ALL episodes use 2.35:1 letterbox (confirmed — EP01-EP03 already published this way, EP04+ continues). YouTube End Screens are NOT used. Apply letterbox via CapCut Player → Ratio → 2.35:1. LUT color bleed on black bars is acceptable/managed. This is the project's cinematic standard — do not suggest removing it.

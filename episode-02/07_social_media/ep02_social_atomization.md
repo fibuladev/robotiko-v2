@@ -44,10 +44,9 @@
 - **Caption (Instagram):** He burned the fuel to preach "Emissions Low!" Full episode — link in bio.
 - **Caption (YouTube Shorts):** ROBOTIKO v2.0 EP02 — A Tech Guru flies private to Davos to save the planet. Full episode on this channel.
 - **Hashtags:** #robotiko #robotikov2 #cyberanatolian #progrock #conceptalbum #darkcomedy #aiart #aimusic
-- **Platform Priority:** Reels + Shorts (launch day hook — maximum reach)
+- **Platform Priority:** Reels, Shorts
 - **Vertical Framing:** Cinematic Canvas
 - **Related Video:** Link to EP02 full episode via YouTube Studio "Related Video"
-- **Release:** T+1h (launch day, immediately after main video goes public)
 - **CapCut Steps:**
   1. Open Cinematic Canvas template project (see setup guide below)
   2. Replace video on timeline with EP02 final video
@@ -66,10 +65,9 @@
 - **Caption (Instagram):** "But wait! Why is it MONO here?" Full episode — link in bio.
 - **Caption (YouTube Shorts):** ROBOTIKO v2.0 EP02 — The moment comedy became tragedy. Full episode on this channel.
 - **Hashtags:** #robotiko #robotikov2 #cyberanatolian #progrock #conceptalbum #scifi #aiart #aimusic
-- **Platform Priority:** Reels + Shorts (strongest viral candidate — transformation/reveal moment)
+- **Platform Priority:** Reels, Shorts
 - **Vertical Framing:** Cinematic Canvas
 - **Related Video:** Link to EP02 full episode via YouTube Studio "Related Video"
-- **Release:** T+24h
 - **CapCut Steps:**
   1. Duplicate Cinematic Canvas template project
   2. Replace video on timeline with EP02 final video
@@ -88,10 +86,9 @@
 - **Caption (Instagram):** "Such a powerful work-out rig!" Full episode — link in bio.
 - **Caption (YouTube Shorts):** ROBOTIKO v2.0 EP02 — The Congo mine. He sees a gym. The world sees something else. Full episode on this channel.
 - **Hashtags:** #robotiko #robotikov2 #cyberanatolian #progrock #conceptalbum #darkcomedy #satire #aiart #aimusic
-- **Platform Priority:** Reels + Shorts (deepens the narrative — contrast between perception and reality)
+- **Platform Priority:** Reels, Shorts
 - **Vertical Framing:** Cinematic Canvas
 - **Related Video:** Link to EP02 full episode via YouTube Studio "Related Video"
-- **Release:** T+48h
 - **CapCut Steps:**
   1. Duplicate Cinematic Canvas template project
   2. Replace video on timeline with EP02 final video
@@ -110,37 +107,15 @@
 - **Caption (Instagram):** The only honest light in the whole episode. Full episode — link in bio.
 - **Caption (YouTube Shorts):** ROBOTIKO v2.0 EP02 — A stolen leg, a boiled egg, and the only honest moment. Full episode on this channel.
 - **Hashtags:** #robotiko #robotikov2 #cyberanatolian #progrock #conceptalbum #scifi #visualalbum #aiart #aimusic
-- **Platform Priority:** Reels + Shorts (re-engagement — emotional warmth after 5 days of dark clips)
+- **Platform Priority:** Reels, Shorts
 - **Vertical Framing:** Cinematic Canvas
 - **Related Video:** Link to EP02 full episode via YouTube Studio "Related Video"
-- **Release:** T+5 days
 - **CapCut Steps:**
   1. Duplicate Cinematic Canvas template project
   2. Replace video on timeline with EP02 final video
   3. Trim to 1:20–1:39
   4. Verify text overlays match clip duration
   5. Export → 1080×1920, 30fps
-
----
-
-## RELEASE SCHEDULE
-
-**Strategy:** Narrative Arc Ordering — clips follow the episode's emotional arc.
-
-| Date | Clip | Timing | Platform | Action |
-|------|------|--------|----------|--------|
-| Launch day | Clip 1 — "The Guru Speaks" | T+1h after video goes public | IG Reels + YT Shorts | Post + Related Video link |
-| Launch +1 day | Clip 2 — "The Shrapnel" | 18:00 CEST | IG Reels + YT Shorts | Post + Related Video link |
-| Launch +2 days | Clip 3 — "The World Has Plans" | 18:00 CEST | IG Reels + YT Shorts | Post + Related Video link |
-| Launch +5 days | Clip 4 — "The Egg Vendor" | 18:00 CEST | IG Reels + YT Shorts | Post + Related Video link |
-
-**Posting times:** 18:00 CEST (European evening prime + US East Coast afternoon)
-
-**Why this order:**
-1. **T+1h: Arrogance** — The hook. Davos hypocrisy + gasket comedy. Stops the scroll.
-2. **T+24h: The Turn** — The most viral moment. Ear loss = transformation/reveal (highest algorithm signal). Posts while 48-hour algorithm window is still open.
-3. **T+48h: The Depth** — Congo mine exploitation. Deepens the narrative beyond comedy. Shifts tone.
-4. **T+5d: The Warmth** — Re-engagement before EP03. The egg vendor is the emotional anchor. Drives return traffic to the full episode.
 
 ---
 
@@ -197,7 +172,7 @@ Each clip has ready-to-paste text for both platforms. Follow the steps in order.
 
 ---
 
-### CLIP 1 — "The Guru Speaks" (T+1h)
+### CLIP 1 — "The Guru Speaks"
 
 #### YouTube Shorts
 
@@ -249,7 +224,7 @@ He burned the fuel to preach "Emissions Low!" Full episode — link in bio.
 
 ---
 
-### CLIP 2 — "The Shrapnel" (T+24h / Launch +1 day, 18:00 CEST)
+### CLIP 2 — "The Shrapnel"
 
 #### YouTube Shorts
 
@@ -284,7 +259,7 @@ Eh, shrapnel took away his ear...
 
 ---
 
-### CLIP 3 — "The World Has Plans" (T+48h / Launch +2 days, 18:00 CEST)
+### CLIP 3 — "The World Has Plans"
 
 #### YouTube Shorts
 
@@ -319,7 +294,7 @@ While Boss scraps off his shoulder steel!
 
 ---
 
-### CLIP 4 — "The Egg Vendor" (T+5 days, 18:00 CEST)
+### CLIP 4 — "The Egg Vendor"
 
 #### YouTube Shorts
 
@@ -365,7 +340,6 @@ The only honest light in the whole episode. Full episode — link in bio.
 - [x] #aiart included in all hashtags ✅
 - [x] Vertical framing technique specified for each clip ✅
 - [x] Related Video bridge specified for every Short ✅
-- [x] Release schedule follows narrative arc ordering ✅
 - [x] No clip relies on full video context to make sense ✅
 - [x] Every clip contains narrative content (no pure aesthetic clips) ✅
 - [x] **"Would Fibula approve this?"** ✅

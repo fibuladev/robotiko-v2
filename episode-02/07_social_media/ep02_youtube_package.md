@@ -170,11 +170,6 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 
 Characters: ~370 / 500 max ✅
 
-**TAG STRATEGY (all episodes):**
-- ✅ Film-first approach per `_management/youtube_metadata_standards.md` Section 5
-- ✅ Genre tags REMOVED (progressive rock, psychedelic rock, satirical rock, etc.)
-- ✅ AI-generated tags ADDED for correct categorization
-
 ---
 
 ## 5. THUMBNAIL GUIDANCE
@@ -190,7 +185,7 @@ Characters: ~370 / 500 max ✅
 
 ## 6. END SCREEN RECOMMENDATIONS
 
-Per `youtube_metadata_standards.md` Section 10: **No end screens EP01-EP09.**
+Per `youtube_metadata_standards.md` Section 7: **No end screens EP01-EP09.**
 
 - **Previous episode:** EP01 — "Two Halves of One Whole Apple" → https://youtu.be/W_zfFDXn0o0
 - **Next episode:** EP03 — [EP03 Title] → [EP03 URL]

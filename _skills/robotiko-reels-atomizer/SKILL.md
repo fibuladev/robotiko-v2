@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Break a finished episode into short-form social media content (Reels, Shorts, Stories). Each "atom" is a self-contained clip — 7 to 60 seconds — designed to capture attention, convey a fragment of the episode's essence, and drive viewers to the full video.
+Break a finished episode into short-form social media content (Reels, Shorts, Stories). Each "atom" is a self-contained clip — 7 to 60 seconds — that conveys a fragment of the episode's essence and points to the full video.
 
 The atomization strategy is not random chopping. Each clip must have a narrative hook, a visual peak, and a musical completeness that makes it work as a standalone piece.
 
@@ -43,7 +43,7 @@ Scan the dramaturgy and motion script for:
 ### Step 2: Define Clip Boundaries
 Each clip must:
 - Start and end at natural musical boundaries (section starts, phrase endings, beat-aligned cuts)
-- Be between **7 and 60 seconds** — Hook Clips target 7-15s loop-friendly length (confirmed Shorts strategy); Story/Atmosphere clips may run 20-60s
+- Be between **7 and 60 seconds** — Hook Clips target 7-15s loop-friendly length; Story/Atmosphere clips may run 20-60s
 - Contain at least one visual peak and one lyrical hook
 - Feel complete — not cut mid-phrase or mid-thought
 
@@ -51,34 +51,23 @@ Each clip must:
 
 | Type | Duration | Purpose | Best For |
 |---|---|---|---|
-| **Hook Clip** | 7-15s | Maximum impact, loop-friendly, designed to stop scrolling | Chorus moments, visual climaxes, iconic lyrics |
+| **Hook Clip** | 7-15s | A single high-impact moment, loop-friendly | Chorus moments, visual climaxes, iconic lyrics |
 | **Story Clip** | 20-40s | A mini-narrative with setup and payoff | Verse + chorus pairs, scene transitions |
 | **Atmosphere Clip** | 30-60s | Mood piece, lets the aesthetic breathe | Instrumental sections, environmental sequences |
 | **Behind the Scenes** | 15-30s | Process reveal (optional, human-driven) | Prompt → image → video comparisons |
 
 **Rule:** Every clip must contain narrative content. Pure aesthetic clips with no story function are not used. The ROBOTIKO brand tells stories — even atmosphere clips must carry meaning, not just texture.
 
-### Step 4: Write Caption and Hashtags per Clip
+### Step 4: Write the Caption
 
 **Caption rules:**
-- Maximum 150 characters for the primary hook line
+- Maximum 150 characters for the primary line
 - Include a key lyric quote or philosophical fragment
-- End with a CTA: link to full video or "Link in bio"
-- Tone must match the episode's station — no generic hype language
+- Point to the full episode (link to the full video)
+- Tone must match the episode's station — poetic and contemplative, no generic hype language
 
-**Platform-specific caption tone:**
-
-| Platform | Tone | Example |
-|----------|------|---------|
-| **Instagram Reels** | Aesthetic, poetic, contemplative. Let the visual do the heavy lifting. | "Two halves of one whole apple. 🎬 Full episode — link in bio." |
-| **YouTube Shorts** | Descriptive, discoverability-focused. Include series context. | "ROBOTIKO v2.0 EP01 — The journey begins. Full episode on this channel." |
-
-**Rule:** Write BOTH captions for each clip — one per platform. Do not use a single generic caption across platforms.
-
-**Hashtag strategy:**
-- 5-10 hashtags per clip
-- Mix of: project tags (`#robotiko`, `#robotikov2`), film tags (`#aifilm`, `#aiscifi`, `#cinematicai`, `#scifi`), craft tags (`#aifilmmaking`, `#aiart`)
-- **#aiart used from EP01** — AI transparency from day one
+**Hashtags:**
+- Include `#aiart` from EP01 — AI transparency / disclosure, from day one.
 
 ---
 
@@ -103,8 +92,7 @@ For each clip:
 - **Visual Peak:** [Description of the strongest visual moment]
 - **Musical Moment:** [What the music is doing — energy, instruments, mood]
 - **Lyric Hook:** [The key lyric or phrase, or "Instrumental" if none]
-- **Caption (Instagram):** [Ready-to-paste caption — aesthetic/poetic tone]
-- **Caption (YouTube Shorts):** [Ready-to-paste caption — descriptive/discoverable tone]
+- **Caption:** [Ready-to-paste caption — poetic/contemplative tone, matches the episode's station]
 - **Hashtags:** [Ready-to-paste hashtag string — include #aiart]
 - **Platform Priority:** [Which platforms this clip works best on]
 - **Vertical Framing:** [Technique name — Cinematic Canvas / Pan & Scan / Split-Screen / Analog Typography]
@@ -136,32 +124,14 @@ Include a one-time CapCut setup guide in every atomization output. This goes aft
 5. Export → 1080×1920, 30fps, MP4
 ```
 
-### Release Schedule Suggestion
+### Clip Ordering
 
-Aligned with the project's weekly release rhythm (target ~Tuesday):
+Two ways to order a set of clips:
 
-- **Tuesday (Release day):** Hook Clip → maximum reach. Post alongside YouTube premiere.
-- **Thursday (+2 days):** Story Clip + detail still image (different visual angle from release day)
-- **Sunday (+5 days):** Atmosphere Clip as IG Story teaser for next week's episode
-- **Ongoing:** Behind the Scenes (if available) → community building
+- **Type-based:** Hook → Story → Atmosphere. Use when the episode is more thematic than sequential.
+- **Narrative-arc:** Follow the episode's own emotional arc. For episodes with strong narrative progression (e.g., EP02's arrogance → damage arc), the clips can trace the arc — the peak state, the turn, the world that deepens it, the human moment — instead of grouping by type.
 
-### Alternative: Narrative Arc Ordering
-For episodes with strong narrative progression (e.g., EP02's arrogance → damage arc), clips can follow the episode's emotional arc instead of type-based ordering:
-
-| Timing | Narrative Function | Example |
-|--------|-------------------|---------|
-| T+1h (launch day) | Peak state — the hook | Arrogance at its highest |
-| T+24h | Impact — the turn | First irreversible damage |
-| T+48h | Depth — the world | Context that deepens meaning |
-| T+5d | Warmth — re-engagement | The human moment, drives return traffic |
-
-Use narrative ordering when the episode has a clear arc. Use type-based ordering (Hook → Story → Atmosphere) when the episode is more thematic than sequential.
-
-**Posting times (CET/Bratislava):**
-- Instagram: 18:00-19:00
-- YouTube Shorts: Same day as Reels, no specific time
-
-**Weekly rhythm target:** ~65 minutes total effort per week
+Choose whichever ordering best serves the episode's story.
 
 ---
 
@@ -251,7 +221,7 @@ Best for: Opening or closing seconds of a clip. Can be combined with Technique 1
 
 ## RELATED VIDEO BRIDGE
 
-After uploading each Short to YouTube, use YouTube Studio's "Related Video" feature to link the Short directly to the full episode. This creates a direct funnel from Shorts Feed → Episode.
+After uploading each Short to YouTube, use YouTube Studio's "Related Video" feature to link the Short directly to the full episode, so a viewer can reach the full piece.
 
 **Checklist per Short:**
 - [ ] Short uploaded to YouTube
@@ -278,12 +248,11 @@ These are guidelines, not hard rules. Quality over quantity — a weak clip dama
 - [ ] Every clip has natural musical boundaries (no mid-phrase cuts)
 - [ ] Every clip has at least one visual peak
 - [ ] Clip durations are within 7-60 second range (Hook Clips 7-15s, Story/Atmosphere 20-60s)
-- [ ] Two platform-specific captions written per clip (IG, Shorts)
-- [ ] Captions are under 150 characters and include a lyric or philosophical hook
-- [ ] Hashtags are relevant and within platform limits
+- [ ] Caption written per clip (poetic/contemplative, includes a lyric or philosophical fragment)
+- [ ] Captions are under 150 characters
 - [ ] #aiart included in hashtags
 - [ ] 9:16 crop safety is noted for each clip
-- [ ] Release schedule suggestion is included
+- [ ] Clip ordering noted (narrative-arc or type-based)
 - [ ] No clip relies on context from the full video to make sense
 - [ ] Related Video bridge configured for every Short
 - [ ] Vertical framing technique specified for each clip

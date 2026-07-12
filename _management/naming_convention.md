@@ -61,7 +61,6 @@ ep{EPISODE_NUMBER}_s{SCENE_NUMBER}_{TYPE}_v{VERSION}.{EXTENSION}
 | Social Atomization | `ep{XX}_social_atomization.md` | `ep02_social_atomization.md` |
 | Launch Checklist | `ep{XX}_launch_checklist.md` | `ep01_launch_checklist.md` |
 | Walkthrough | `ep{XX}_walkthrough.md` | `ep01_walkthrough.md` |
-| External Promotion | `ep{XX}_external_promotion.md` | `ep01_external_promotion.md` |
 | Direction Brief (one-off) | `ep{XX}_{topic}_brief.md` | `ep05_visual_prompt_generation_brief.md` |
 | PDF Export | `ep{XX}_{deliverable}(_v{XX}).pdf` | `ep01_visual_prompts_v01.pdf` |
 

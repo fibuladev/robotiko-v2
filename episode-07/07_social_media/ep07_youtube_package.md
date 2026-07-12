@@ -12,7 +12,6 @@ Everyone Is Sorry, No One Is Hiring | ROBOTIKO v2.0 EP07 | Cinematic AI Series
 
 **Character count:** 80 / 80 max
 **Mobile visible (~55 chars):** "Everyone Is Sorry, No One Is Hiring | ROBOTIKO v2.0 EP07"
-**Curiosity gap:** Who's sorry? Who's not hiring? Combined with an android thumbnail — a robot experiencing unemployment? Brutally relatable, immediately intriguing.
 
 ---
 
@@ -273,7 +272,6 @@ EP07 enters **Phase 3** of the About section (EP07-EP09). The new line:
 - [ ] Update EP06 description with "Next: Everyone Is Sorry, No One Is Hiring → {EP07_URL}"
 - [ ] Verify thumbnail at mobile size
 - [ ] Verify banner is Deep Destruction phase
-- [ ] Post in AI filmmaking communities within 24 hours
 
 ---
 

@@ -42,7 +42,6 @@
 
 ### Files
 - [x] project_metadata.json EP01 status updated to "pre_launch"
-- [ ] All pre-launch calendar posts completed (Days 1-6 done, Days 7-13 in progress)
 
 ---
 
@@ -79,18 +78,6 @@
 | 19:45 | Final check | YouTube | Scheduled video visible, everything in order |
 | **20:00** | **VIDEO GOES PUBLIC** | **YouTube** | The Cycle Breaks. |
 | 20:01 | Pin comment | YouTube | "Count the numbers. They will return." |
-| 20:15 | Hook Clip (Clip 1) | IG Reels + YT Shorts | "Mentor Arrival" — lead social clip |
-| 20:30 | Community post | YouTube | Link to video + episode hook text |
-| 21:00 | Story share | Instagram | Share the Reel to Stories with "Episode 1 is live" |
-| Evening | Monitor engagement | All platforms | Respond selectively (1 in 10 rule) |
-
-### Engagement Rules (Launch Day)
-- Respond to ~1 in 10 comments
-- No debate, no defense
-- If asked "What is this?": "A 10-episode concept album and video series. CyberAnatolian prog rock."
-- If asked "Is this AI?": "Yes. One human and AI tools. Pipeline goes open source after EP10."
-- Heart/like thoughtful comments silently
-- Do NOT post in other people's comments sections to promote
 
 ---
 
@@ -99,11 +86,9 @@
 ### Immediate (Evening of April 22)
 - [ ] Verify video is playing correctly (no processing issues)
 - [ ] Verify pinned comment is visible
-- [ ] Check analytics: premiere viewers, initial retention curve
 - [ ] Note any technical issues in `_memory/lessons.md`
 
 ### Day After (April 23)
-- [ ] Post Clip 2 — "The Handshake" (IG Reels) per atomization schedule
 - [ ] project_metadata.json EP01 status updated to "completed"
 - [ ] Episode folder completeness check:
   - [ ] `01_lyrics/` ✅
@@ -116,13 +101,6 @@
 - [ ] Google Drive backup verified (all binary assets)
 - [ ] Naming convention validated: "Validate file names for EP01"
 - [ ] Commit: "EP01 - Launch - Episode published and verified"
-
-### Week After (April 23-27)
-Follow social atomization release schedule:
-- [ ] Apr 23 (Wed): Clip 2 — "The Handshake" → IG Reels
-- [ ] Apr 24 (Thu): Clip 3 — "The Arrival" → IG Reels + YT Shorts
-- [ ] Apr 25 (Fri): Clip 5 — "The Eight Turns" → IG Reels + YT Shorts
-- [ ] Apr 27 (Sun): Clip 4 — "Crane's Wings" → IG Reel + IG Story (teaser for EP02)
 
 ---
 
@@ -144,8 +122,7 @@ Follow social atomization release schedule:
 
 **Rationale:**
 - 0 subscribers — premiere live chat would be empty, defeating the purpose
-- 20:00 CET catches European evening prime time + US East Coast afternoon (14:00 EST)
-- Direct publish is cleaner — premiere can be used for later episodes when audience exists (EP03+)
+- Direct publish is cleaner — premiere can be used for later episodes (EP03+)
 
 ---
 

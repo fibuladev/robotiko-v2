@@ -12,7 +12,6 @@
 
 **Character count:** 68 / 80 max
 **Mobile visible (~55 chars):** "40 Days Above the Clouds | ROBOTIKO v2.0 EP08"
-**Curiosity gap:** Double-layered — literal mountain retreat above the clouds AND rising above cloud computing. The 40-day number resonates as an ancient archetype of transformation; the "clouds" bridge the physical summit and the digital infrastructure left behind. An android on a mountain for 40 days — why?
 
 ---
 
@@ -323,7 +322,6 @@ EP08 remains in **Phase 3** of the About section (EP07-EP09). The line:
 - [ ] Update EP07 description with "Next: 40 Days Above the Clouds → {EP08_URL}"
 - [ ] Verify thumbnail at mobile size
 - [ ] Verify banner phase (Deep Destruction or transitional — see Section 8)
-- [ ] Post in AI filmmaking communities within 24 hours
 
 ---
 

@@ -35,7 +35,7 @@
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — "Two halves of one whole apple." Full episode on this channel.`
 - **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #psychedelicrock #aiart #aimusic #genai`
-- **Platform Priority:** ALL — this is the lead clip
+- **Platform Priority:** Reels, Shorts
 - **Aspect Ratio Note:** Apple transformation is center-composed. 9:16 crop safe — subject stays centered.
 
 ---
@@ -52,7 +52,7 @@
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — The handshake that begins a 10-episode journey. Full episode on this channel.`
 - **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #scifi #70srock #aiart #aimusic #genai`
-- **Platform Priority:** Reels + Shorts (universally impactful)
+- **Platform Priority:** Reels, Shorts
 - **Aspect Ratio Note:** Hands meeting is center-composed. 9:16 crop safe.
 
 ---
@@ -69,7 +69,7 @@
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — "Five thousand years of crown and gain." The Mentor arrives. Full episode on this channel.`
 - **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #70srock #aiart #aimusic #genai`
-- **Platform Priority:** Reels + Shorts (cinematic build-up works better in longer format)
+- **Platform Priority:** Reels, Shorts
 - **Aspect Ratio Note:** Mentor is vertically composed (standing figure). 9:16 crop works well — may even be BETTER than 16:9 for the silhouette reveal.
 
 ---
@@ -86,7 +86,7 @@
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — The bridge: "Five thousand years I've waited... now enough." Full episode on this channel.`
 - **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #anatolianrock #psychedelicrock #aiart #aimusic #genai`
-- **Platform Priority:** Reels + Stories (mood piece — let the aesthetic breathe)
+- **Platform Priority:** Reels, Stories
 - **Aspect Ratio Note:** Crane in flight is wide composition. 9:16 crop WILL lose wing tips. Use letterboxed version with dark borders top/bottom for vertical platforms. Or crop to crane body center.
 
 ---
@@ -103,28 +103,8 @@
 
 - **Caption (YouTube Shorts):** `ROBOTIKO v2.0 EP01 — "Trust me — the eight shall turn aside." Full episode on this channel.`
 - **Hashtags:** `#robotiko #cyberanatolian #progrock #conceptalbum #scifi #70srock #aiart #aimusic #genai`
-- **Platform Priority:** Reels + Shorts (short, punchy, maximum impact)
+- **Platform Priority:** Reels, Shorts
 - **Aspect Ratio Note:** Cosmic/nebula scenes are wide but abstract. 9:16 center crop is safe — no critical lateral elements lost.
-
----
-
-## RELEASE SCHEDULE
-
-Aligned with the weekly release rhythm:
-
-| Day | Date | Clip | Platform | Time (CET) |
-|-----|------|------|----------|-------------|
-| **Launch day** | Tue, Apr 22 | Clip 1 — "Two Halves" (THE HOOK) | IG Reels + YT Shorts | 18:15 (15 min after YT premiere) |
-| +1 | Wed, Apr 23 | Clip 2 — "The Handshake" | IG Reels | 18:00 |
-| +2 | Thu, Apr 24 | Clip 3 — "The Arrival" | IG Reels + YT Shorts | 18:00 |
-| +3 | Fri, Apr 25 | Clip 5 — "The Eight Turns" | IG Reels + YT Shorts | 19:00 |
-| +5 | Sun, Apr 27 | Clip 4 — "Crane's Wings" | IG Reel + IG Story (teaser for EP02) | 18:00 |
-
-**Logic:**
-- Day 1: Lead hook for maximum reach alongside YouTube premiere
-- Day 2-3: Second hook + story clip for depth
-- Day 4: Short punchy clip for continued momentum
-- Day 5: Atmosphere clip as week-end sustained presence + bridge to EP02
 
 ---
 
@@ -152,7 +132,6 @@ All clips must be exported from the final EP01 edit (`ep01_final_v{VV}.mp4`):
 - [x] Hashtags relevant, within limits ✅
 - [x] #aiart included ✅
 - [x] 9:16 crop safety noted for each clip ✅
-- [x] Release schedule included ✅
 - [x] No clip relies on full video context ✅
 - [x] "Would Fibula approve this?" ✅
 

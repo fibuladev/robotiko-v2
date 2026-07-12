@@ -272,17 +272,16 @@ episode's edit produces a committed sync-QC record from the template:
 
 ### Step 12: YouTube Packaging
 - **Tool:** Claude executes `_skills/robotiko-youtube-packager/SKILL.md`
-- **Output:** Title, description, tags, thumbnail guidance, cross-links
+- **Output:** Title, description, thumbnail guidance, cross-links
 
 ### Step 12.5: YouTube Metadata Review
 - **Reference:** `_management/youtube_metadata_standards.md`
 - **Verify before upload:**
-  - [ ] Title follows `[Hook] | ROBOTIKO v2.0 EP{XX} | Cinematic AI Series` format (max 80 chars; "Cinematic AI Series" is the only genre signal)
-  - [ ] Description first 3 lines = AI categorization signal
-  - [ ] Tags use layered approach (no genre tags, AI + format tags present)
+  - [ ] Title follows `[Hook] | ROBOTIKO v2.0 EP{XX} | Cinematic AI Series` format (max 80 chars)
+  - [ ] Description first 3 lines = hook + series descriptor + series entry point
   - [ ] Category: Film & Animation
   - [ ] Cross-links: previous + next episode + playlist in description
-  - [ ] Pinned comment matches youtube_metadata_standards.md (Section 12) exactly
+  - [ ] Pinned comment matches youtube_metadata_standards.md (Section 9) exactly
 
 ### Step 13: Social Media Atomization
 - **Tool:** Claude executes `_skills/robotiko-reels-atomizer/SKILL.md`

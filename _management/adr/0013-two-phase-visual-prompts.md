@@ -19,7 +19,7 @@ Three gaps compounded:
   the public docs were a generation behind the SKILL; the story they told no longer
   matched what the skill did.
 - **GAP B — a late ref edit forced no scene re-verification.** The REF B reframe
-  (2026-07-07 / commit `ea96c34`) rewrote a reference block's note while the 40 scenes
+  (2026-07-07 / commit `27f375b`) rewrote a reference block's note while the 40 scenes
   bound to that space were never re-checked against it. Editing a note is not the same
   as reconciling the scenes.
 - **GAP C — locations were under-decomposed.** Step 0's "3+ scenes = 1 ref" heuristic

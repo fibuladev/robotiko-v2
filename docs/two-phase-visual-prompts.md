@@ -51,7 +51,7 @@ walk the scenes and fix any that the pixels contradict. On paper, correct. In pr
 it was marked "never a blocker," and a step that never blocks is a step that gets
 skipped.
 
-The clearest case is dated **2026-07-07**, commit **`ea96c34`** on EP10. Reference B —
+The clearest case is dated **2026-07-07**, commit **`27f375b`** on EP10. Reference B —
 a crossroads with the Mentor's waymark staff — was generated and drifted from its
 authoring note: the first generation came back with a glowing amber tip and a *European
 castle* in the background; a later edit fixed the amber and removed the houses so the

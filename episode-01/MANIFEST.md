@@ -24,11 +24,11 @@
   - Numbered: `1.png` through `66.png` (with gaps at 25-29, 52, 54 — numbering skips, not missing)
   - Variants: `32.1-32.3.png`, `44.1-44.2.png`, `57.1-57.4.png`
   - Named: `chorus1a.png`, `chorus1b.png`, `vast-archive.png`, `bone.png`, `pulse.png`, `ignite.png`, `2-lost.png`, `reprise1a.png`, `ch1reprise-d.png`, `intlude.png`, `ultimate.png`, `ulti.png`, `mends.png`, `outro1.png`, `outro2.png`
-- `selected/ep01_visual_prompts_v01.pdf` — Original visual prompts (pre-pipeline PDF format, unreadable by tools)
+- `selected/` — no repo artifact. The original visual prompts were a personal pre-pipeline working PDF, kept private (not in the public repo). The visual-prompts stage is waived in the approvals ledger (`_management/approvals.json`).
 
 ### 05_video/
 - `ep01_motion_script_v01.md` — **RETROACTIVE** (created 2026-04-06). 78 shots with motion prompts, tool assignments, RE-SHOOT flags.
-- `selected/ep01_motion_script.pdf` — Original motion script (pre-pipeline PDF format, unreadable by tools)
+- `selected/` — no repo artifact. The original motion script was a personal pre-pipeline working PDF, kept private (not in the public repo); the retroactive `ep01_motion_script_v01.md` above is the repo artifact.
 
 ---
 
@@ -53,8 +53,7 @@
 
 ## LEGACY FILES (Pre-Pipeline)
 
-The following files predate the pipeline system and are kept for reference:
-- `04_visuals/selected/ep01_visual_prompts_v01.pdf` — Original prompts (PDF)
-- `05_video/selected/ep01_motion_script.pdf` — Original motion script (PDF)
-
-These have been superseded by the retroactive `.md` files created 2026-04-06.
+EP01's original working documents predate the pipeline system. They were personal
+pre-pipeline PDFs — the visual prompts and the motion script — kept private (not in the
+public repo). They were superseded by the retroactive `.md` reconstructions created
+2026-04-06 (`ep01_dramaturgy_v01.md`, `ep01_motion_script_v01.md`), which are the repo artifacts.

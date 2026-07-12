@@ -134,13 +134,7 @@ first love blue screen, robot love, android love story, chrome android, robochic
 
 ---
 
-## 7. END SCREEN
-
-Per youtube_metadata_standards.md: **No end screens EP01-EP09.**
-
----
-
-## 8. OUTRO CREDIT CARD (Cem Karaca)
+## 7. OUTRO CREDIT CARD (Cem Karaca)
 
 After S32's Fade to Black (at ~4:29), insert a 3-second text card:
 
@@ -156,7 +150,7 @@ CEM KARACA
 
 ---
 
-## 9. POST-PUBLISH CHECKLIST
+## 8. POST-PUBLISH CHECKLIST
 
 - [ ] Pin comment immediately (exact text from Section 3)
 - [ ] Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
@@ -167,7 +161,7 @@ CEM KARACA
 
 ---
 
-## 10. RETROACTIVE UPDATE REQUIRED
+## 9. RETROACTIVE UPDATE REQUIRED
 
 When EP05 goes live, update EP04's description to add:
 ```

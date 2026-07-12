@@ -159,17 +159,7 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 
 ---
 
-## 6. END SCREEN
-
-- **Next episode:** EP05 (when available)
-- **Playlist:** "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series"
-- **Subscribe CTA:** "Subscribe to walk beside."
-
-**Note:** End Screens may not display properly with 2.35:1 letterbox. If YouTube blocks end screen elements, use Cards instead (tap-to-link during final 20s).
-
----
-
-## 7. UPLOAD SETTINGS
+## 6. UPLOAD SETTINGS
 
 | Setting | Value |
 |---------|-------|
@@ -182,7 +172,7 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 
 ---
 
-## 8. POST-UPLOAD CHECKLIST
+## 7. POST-UPLOAD CHECKLIST
 
 - [ ] Video uploaded and scheduled
 - [ ] Title: "The Moon Has No Light of Its Own | ROBOTIKO v2.0 EP04 | Cinematic AI Series"
@@ -194,7 +184,6 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 - [ ] Added to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
 - [ ] Pinned comment ready: "The Mentor is not teaching. He is remembering."
 - [ ] Previous episode (EP03) description updated with EP04 link
-- [ ] End screen / Cards configured
 
 ---
 

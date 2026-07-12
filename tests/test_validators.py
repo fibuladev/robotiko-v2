@@ -437,7 +437,8 @@ class TestParserCoverage(unittest.TestCase):
         visual_prompts .md, exactly one of {parsed scenes>0, Phase-1 sentinel present}
         holds. A file with BOTH (stale sentinel) or NEITHER (refs-only false green) is
         exactly the two states the phase-state gate FAILs — this proves the real tree
-        never sits in either. EP01 is PDF-only (no .md) and is skipped."""
+        never sits in either. EP01 has no visuals .md (stage waived — working PDF kept
+        private) and is skipped."""
         checked = 0
         for ep_dir in sorted(d for d in os.listdir(REPO_ROOT)
                              if d.startswith("episode-")
@@ -450,7 +451,7 @@ class TestParserCoverage(unittest.TestCase):
                             if _re.match(r"ep\d{2}_visual_prompts_v\d{2}\.md$", f)),
                            reverse=True)
             if not cands:
-                continue  # PDF-only (EP01) or no .md deliverable yet
+                continue  # waived (EP01) or no .md deliverable yet
             content = self._read(os.path.join(ep_dir, "04_visuals", cands[0]))
             has_scenes = len(vpv.extract_scenes(content)) > 0
             has_sentinel = vpv.has_phase1_sentinel(content)
@@ -864,21 +865,31 @@ class TestMatrixSync(unittest.TestCase):
 # ─────────────────────────────────────────────
 
 class TestPdfOnlySkipVisible(unittest.TestCase):
-    """The audit found EP01 was silently skipped: its PDF lives in 04_visuals/selected/
-    but the detector only listed the top level, so the skip branch never fired and no
-    line printed at all. Lock BOTH: the recursive detector finds a subdir PDF, and the
-    exact skip-message text so it can never silently vanish again."""
+    """The audit found EP01 was silently skipped: a pre-method PDF-only visuals stage
+    lived in 04_visuals/selected/ but the detector only listed the top level, so the
+    skip branch never fired and no line printed at all. The recursive detector is the
+    machinery that keeps ANY such subdir PDF visible; the SYNTHETIC fixture below proves
+    that skip branch both directions. EP01's own original working PDF was a personal
+    pre-pipeline document, moved to private storage,
+    so the public tree now carries NO visuals artifact for EP01 — the stage is waived
+    (see _management/approvals.json). Lock BOTH: the detector finds a subdir PDF in the
+    fixture, and the real EP01 tree is the waived-empty state."""
 
     def test_finds_pdf_in_selected_subdir_fixture(self):
         found = vpv.find_pdf_visuals(PDF_SUBDIR_VISUALS)
         self.assertTrue(found, "recursive detector must find the PDF in selected/.")
         self.assertTrue(found[0].endswith("ep01_visual_prompts_v01.pdf"))
 
-    def test_finds_ep01_real_pdf_in_repo_tree(self):
-        # The real regression: episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf
+    def test_ep01_real_tree_is_waived_empty(self):
+        # EP01's visual-prompts stage ran on a personal
+        # pre-pipeline working PDF, kept private (not in the public repo). The public
+        # tree carries no visuals artifact for EP01, so the detector finds nothing here.
+        # The skip branch itself is still proven — by the synthetic fixture above — and
+        # the stage's visibility now lives in the approvals waiver + pipeline_integrity
+        # summary, not in a personal file committed to the repo.
         found = vpv.find_pdf_visuals(os.path.join(REPO_ROOT, "episode-01", "04_visuals"))
-        self.assertTrue(found, "EP01's real PDF (in selected/) must be found.")
-        self.assertTrue(any("ep01_visual_prompts_v01.pdf" in p for p in found))
+        self.assertEqual(found, [],
+                         "EP01's public tree carries no visuals PDF (stage waived; working PDF is private).")
 
     def test_top_level_only_would_have_missed_it(self):
         # Prove the subdir is why the old code failed: nothing matches at the top level.
@@ -1190,7 +1201,7 @@ class TestRealTreeStaysGreen(unittest.TestCase):
         metadata = pi.load_metadata(REPO_ROOT)
         _status, findings = pi.check_episode("01", ledger, metadata, REPO_ROOT)
         waivered = [m for m in _sev(findings, "WARN") if "WAIVERED" in m]
-        self.assertTrue(waivered, "EP01's PDF-only skip must appear as a waivered WARN.")
+        self.assertTrue(waivered, "EP01's waived visual-prompts skip must appear as a waivered WARN.")
 
     def test_every_progressed_episode_has_both_gate_records(self):
         # EP01-EP09 all have artifacts past both gates -> both records must resolve.

@@ -186,14 +186,12 @@ Two chrome android faces inches apart. Damaged and cracked on the left, pristine
 
 ---
 
-## 7. CROSS-LINKS & END SCREEN
+## 7. CROSS-LINKS
 
 **Cross-links (in description):**
 - Previous: `A High-Voltage Fool in Love → {EP05_URL}`
 - Next: `Coming soon` (update when EP07 goes live)
 - Playlist: `{PLAYLIST_URL}` in first 3 lines
-
-**End screen:** None (per youtube_metadata_standards.md — no end screens EP01-EP09)
 
 **Retroactive update:** When EP06 goes live, update EP05's description to add:
 ```

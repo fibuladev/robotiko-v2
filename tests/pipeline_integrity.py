@@ -12,8 +12,9 @@ Three things this checker enforces:
   1. SKIPPED STEPS (honest, waiver-aware). A non-sequential pattern (an empty step N
      with a present step N+1) is a skipped step. It is a FAIL unless a legacy waiver
      record exists in the approvals ledger. episode-01 is the one legacy case: its
-     visual-prompts stage is a PDF (episode-01/04_visuals/selected/...), so step 5
-     reads empty while step 6 (Motion Script) is present. That skip PASSES only
+     visual-prompts stage ran on a personal pre-pipeline working PDF, kept private (not
+     in the public repo), so step 5 reads empty while step 6 (Motion Script) is present.
+     That skip PASSES only
      because approvals.json carries a waiver for it; the identical pattern in a new
      episode with no waiver FAILS. The old summary printed "no skipped steps" while
      its own checkboxes showed one — that contradiction is gone.
@@ -266,7 +267,7 @@ def gate_record(ledger: list, ep: str, gate: int):
 
 def episode_waiver(ledger: list, ep: str):
     """A waiver is any ledger record for the episode whose note declares a waiver
-    (the word 'waiv'). episode-01's gate-1 record carries the PDF-only visuals waiver."""
+    (the word 'waiv'). episode-01's gate-1 record carries the waived visual-prompts stage waiver."""
     for e in approvals_for(ledger, ep):
         if "waiv" in str(e.get("note", "")).lower():
             return e

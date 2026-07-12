@@ -146,7 +146,7 @@ The chosen thumbnail is a scene choice — pick the frame that best represents t
 
 **Pinned comment:** the exact text from Section 9. No additions, no emojis.
 
-**End screen:** none for EP01–EP09 (single exception: EP10 GitHub link).
+**End screen:** YouTube end screens are not used in this project — the 2.35:1 letterbox leaves no safe zone for them. The EP10 finale instead closes with an in-video end card (S35), built at the edit stage.
 
 **Playlist:** `ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series` — chronological, updated on upload day.
 

@@ -7,7 +7,7 @@
 
 ## PURPOSE
 
-Generate a complete YouTube metadata package for a finished episode: title, description, thumbnail guidance, and end screen recommendations. All metadata standards are defined in `_management/youtube_metadata_standards.md` — this skill implements those standards.
+Generate a complete YouTube metadata package for a finished episode: title, description, thumbnail guidance, and cross-link guidance. All metadata standards are defined in `_management/youtube_metadata_standards.md` — this skill implements those standards.
 
 ---
 
@@ -151,9 +151,10 @@ Claude does not generate the thumbnail image but provides:
 - **Composition note:** Rule of thirds placement suggestion
 - **Progression check:** Side-by-side with previous episode thumbnails, does the visual arc show? (Pristine → cracked → dark → gold)
 
-### 6. End Screen Recommendations
-- **Next episode:** Link to EP{XX+1} if available
-- **Playlist:** Link to full ROBOTIKO v2.0 playlist
+### 6. Cross-Links
+- **Previous / Next episode:** cross-link lines carried in the description (Section 2), updated retroactively as episodes go live.
+- **Playlist:** link to the full ROBOTIKO v2.0 playlist.
+- **End screen:** none. YouTube end screens are not used in this project (the 2.35:1 letterbox leaves no safe zone for them). The EP10 finale instead closes with an in-video end card (S35), built at the edit stage.
 
 ---
 
@@ -189,8 +190,8 @@ Claude does not generate the thumbnail image but provides:
 |---|---|
 | Final edit does not exist | STOP. Cannot package an unfinished episode. |
 | Musical metadata missing | Generate package without chapter markers. Flag the omission. |
-| Previous episode not yet published | Note in end screen section that "Next Episode" link is pending. |
-| Episode is EP10 (final) | Adjust end screen to reference playlist and series retrospective instead of next episode. |
+| Previous episode not yet published | Note in the cross-links that the "Next" link is pending. |
+| Episode is EP10 (final) | No "Next" cross-link; reference the playlist and the series retrospective instead. |
 
 ---
 

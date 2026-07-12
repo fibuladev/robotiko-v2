@@ -47,7 +47,7 @@ The output is a comprehensive checklist organized in launch phases:
 - [ ] Thumbnail created based on youtube_package.md guidance
 - [ ] Episode title and description proofread (no typos, correct episode number)
 - [ ] Description verified to contain NO timestamps/chapters (continuous-piece rule)
-- [ ] Previous episode's end screen updated to link to this episode (if applicable)
+- [ ] Previous episode's description updated with a "Next" cross-link to this episode (if applicable)
 - [ ] Playlist updated to include this episode
 - [ ] project_metadata.json status updated to "ready_for_launch"
 ```
@@ -60,7 +60,7 @@ The output is a comprehensive checklist organized in launch phases:
 - [ ] Title pasted from youtube_package.md
 - [ ] Description pasted from youtube_package.md (NO timestamps)
 - [ ] Thumbnail uploaded (NO text — episode number bottom-left only)
-- [ ] End screen configured (next episode / playlist)
+> Note: YouTube end screens are not used in this project (2.35:1 letterbox). The EP10 finale closes with an in-video end card (S35), built at the edit stage — not a YouTube end screen.
 - [ ] Cards added at key moments (if applicable)
 - [ ] Visibility set to "Scheduled" or "Public" per launch plan
 - [ ] Premiere settings configured (if using premiere)
@@ -117,7 +117,7 @@ Before launching, verify these narrative continuity items:
 
 | Check | Description |
 |---|---|
-| **Previous episode end screen** | Does the previous episode's end screen link to this one? |
+| **Previous episode cross-link** | Does the previous episode's description link to this one? |
 | **Playlist order** | Is this episode in the correct position in the playlist? |
 | **Description consistency** | Does the description follow the current 3-section template (hook / lore / credits) used by other episodes? |
 | **Character state progression** | Does the thumbnail/visual represent the correct phase? |
@@ -150,7 +150,7 @@ EP10 description: "The ten-episode arc is complete. The pipeline is open source:
 ## EP10 SPECIAL — SERIES FINALE
 - [ ] All 10 episodes verified in playlist (correct order)
 - [ ] Series retrospective description written (optional)
-- [ ] All previous episode end screens updated to form a complete chain
+- [ ] All previous episode descriptions cross-linked to form a complete chain
 - [ ] Open source release prepared:
   - [ ] Repository visibility set to PUBLIC (same day as EP10 release — no delay)
   - [ ] AUTHOR.md visible at repo root
@@ -202,8 +202,8 @@ The output document contains:
 |---|---|
 | YouTube package missing | STOP. Cannot orchestrate without upload metadata. |
 | Social atomization missing | Proceed with YouTube-only launch, but flag that social rollout is blocked. |
-| Previous episode not yet published | Flag in continuity checks. End screen linking is blocked until previous episode is live. |
-| This is EP01 (first episode) | No previous episode to link to. Skip "previous episode end screen" checks. |
+| Previous episode not yet published | Flag in continuity checks. Cross-link updates are blocked until the previous episode is live. |
+| This is EP01 (first episode) | No previous episode to link to. Skip "previous episode cross-link" checks. |
 | This is EP10 (series finale) | Include EP10 Special section. Trigger open source release review. |
 
 ---

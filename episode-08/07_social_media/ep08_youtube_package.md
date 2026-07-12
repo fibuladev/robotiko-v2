@@ -262,14 +262,12 @@ The solid @Damaged android — body still fully in Phase 2 damage, no Phase 3 bo
 
 ---
 
-## 7. CROSS-LINKS & END SCREEN
+## 7. CROSS-LINKS
 
 **Cross-links (in description):**
 - Previous: `Everyone Is Sorry, No One Is Hiring → {EP07_URL}`
 - Next: `Coming soon` (update when EP09 goes live)
 - Playlist: `{PLAYLIST_URL}` in first 3 lines
-
-**End screen:** None (per youtube_metadata_standards.md — no end screens EP01-EP09)
 
 **Retroactive update:** When EP08 goes live, update EP07's description to add:
 ```

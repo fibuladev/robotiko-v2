@@ -144,17 +144,7 @@ Characters: ~340 / 500 max ✅
 
 ---
 
-## 6. END SCREEN RECOMMENDATIONS
-
-Per `youtube_metadata_standards.md` Section 7: **No end screens EP01-EP09.**
-
-- **Previous episode:** N/A (first episode)
-- **Next episode:** EP02 — "The Tech Guru's Downfall" → [EP02 URL]
-- **Playlist:** Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
-
----
-
-## 7. ADDITIONAL SETTINGS
+## 6. ADDITIONAL SETTINGS
 
 - **Category:** Film & Animation
 - **Language:** English

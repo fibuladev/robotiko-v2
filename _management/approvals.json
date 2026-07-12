@@ -21,7 +21,7 @@
       "artifact": "episode-01/03_direction/ep01_dramaturgy_v01.md",
       "sha256": "4d860020af899d5c772f376108085d912ace350a7913c8864f3cfbb7a475db32",
       "date": "2026-04-22",
-      "note": "pre-method episode; dramaturgy retroactive; visual prompts stage waived - PDF-only (episode-01/04_visuals/selected/ep01_visual_prompts_v01.pdf). legacy - reconstructed from session log (launch date used). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
+      "note": "pre-method episode; dramaturgy retroactive; visual prompts stage waived - the stage ran on a personal pre-pipeline working PDF, kept private (not in the public repo). legacy - reconstructed from session log (launch date used). sha re-baselined 2026-07-10: public-doc audit (Fibula-approved)."
     },
     {
       "episode": "01",

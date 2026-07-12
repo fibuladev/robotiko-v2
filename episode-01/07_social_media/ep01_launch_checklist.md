@@ -53,10 +53,7 @@
 - [ ] Description pasted from youtube_package.md
 - [ ] Tags added from youtube_package.md
 - [ ] Thumbnail uploaded
-- [ ] End screen configured:
-  - [ ] Playlist: "ROBOTIKO v2.0 — The Complete Journey"
-  - [ ] Subscribe button
-  - [ ] (No "next episode" — EP02 not yet published)
+- [ ] Added to playlist: "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series"
 - [ ] Visibility: **Scheduled** for 20:00 CET (no premiere — direct publish)
 
 ### Pre-Publish Review (10:00 CET)
@@ -64,7 +61,6 @@
 - [ ] Verify: title renders correctly
 - [ ] Verify: description formatting (line breaks, links)
 - [ ] Verify: thumbnail displays well on grid (mobile + desktop)
-- [ ] Verify: end screen elements positioned correctly
 - [ ] Verify: audio sync is correct in uploaded version
 
 ---
@@ -74,7 +70,7 @@
 | Time (CET) | Action | Platform | Details |
 |-------------|--------|----------|---------|
 | 09:00 | Upload video | YouTube | Scheduled for 20:00 (no premiere) |
-| 10:00 | Pre-publish review | YouTube | Check title, description, thumbnail, end screen |
+| 10:00 | Pre-publish review | YouTube | Check title, description, thumbnail |
 | 19:45 | Final check | YouTube | Scheduled video visible, everything in order |
 | **20:00** | **VIDEO GOES PUBLIC** | **YouTube** | The Cycle Breaks. |
 | 20:01 | Pin comment | YouTube | "Count the numbers. They will return." |
@@ -108,7 +104,7 @@
 
 | Check | Status |
 |-------|--------|
-| Previous episode end screen | N/A — EP01 is the first episode |
+| Previous episode cross-link | N/A — EP01 is the first episode |
 | Playlist order | EP01 is first and only entry |
 | Description consistency | First episode — sets the template for all following |
 | Character state progression | Robotiko is PRISTINE (Phase 1) — thumbnail must show clean chrome |

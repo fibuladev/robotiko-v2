@@ -15,7 +15,7 @@ Two things change that make direct push the wrong shape at go-public:
 
 1. **Branch protection is about to be real.** Go-public sets a required-status
    rule on `main` (the `validation_suite` check) and disallows force-push
-   (`GOVERNANCE.md`, evidenced in `RELEASE.md` §3). A workflow that pushes
+   (`GOVERNANCE.md`, evidenced in the release runbook (private) §3). A workflow that pushes
    directly to `main` either has to be exempted from that protection - punching
    a hole in the exact guarantee we are advertising - or it breaks. Neither is
    acceptable.

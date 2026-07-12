@@ -62,12 +62,11 @@ ep{EPISODE_NUMBER}_s{SCENE_NUMBER}_{TYPE}_v{VERSION}.{EXTENSION}
 | Launch Checklist | `ep{XX}_launch_checklist.md` | `ep01_launch_checklist.md` |
 | Walkthrough | `ep{XX}_walkthrough.md` | `ep01_walkthrough.md` |
 | Direction Brief (one-off) | `ep{XX}_{topic}_brief.md` | `ep05_visual_prompt_generation_brief.md` |
-| PDF Export | `ep{XX}_{deliverable}(_v{XX}).pdf` | `ep01_visual_prompts_v01.pdf` |
 
 > **Legacy note:** EP01 (the first episode) predates strict versioning and uses a
-> few unversioned forms (`ep01_lyrics.md`, `ep01_motion_script.pdf`). These are
-> accepted by the validator for backward compatibility; all new files use the
-> versioned forms above.
+> few unversioned forms (`ep01_lyrics.md`). These are accepted by the validator for
+> backward compatibility; all new files use the versioned forms above. EP01's original
+> pre-pipeline working documents were personal PDFs, kept private (not in the public repo).
 
 > **Two-phase reference images (EP10 onward):** Per-episode environment and
 > body-state reference images live in `episode-{XX}/04_visuals/raw/` as

@@ -103,10 +103,9 @@ cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi
 
 ---
 
-## 6. END SCREEN
+## 6. CROSS-LINKS
 
-Per `youtube_metadata_standards.md` §10: **No end screens EP01-EP09.**
-EP10 only: GitHub repository link.
+YouTube end screens are not used in this project (2.35:1 letterbox); the EP10 finale closes with an in-video end card (S35), built at the edit stage.
 
 - **Playlist:** "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series"
 - **Cross-link notes:** {previous/next episode update reminders}

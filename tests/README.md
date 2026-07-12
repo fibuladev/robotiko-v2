@@ -115,9 +115,12 @@ run via `tests/run_all.py` and enforced in CI.
   EP07+ photoreal modifier is allowed only when the file declares a `## STYLE MODE`
   header (ADR-0009), else WARN (legacy) / FAIL (version-stamped)
 - **PDF-only skip is visible** — `--full` searches the whole `04_visuals` subtree
-  (including `selected/` and `raw/`), so EP01's PDF-only, pre-method visuals now print
-  a clear skip line instead of being silently dropped (the M4 fix — the old one-level
-  `os.listdir` never saw the `selected/` PDF)
+  (including `selected/` and `raw/`), so a pre-method PDF-only visuals stage prints a
+  clear skip line instead of being silently dropped (the M4 fix — the old one-level
+  `os.listdir` never saw a subdir PDF). EP01's own pre-pipeline visuals PDF is now
+  personal working material, kept private; its stage is waived
+  in `_management/approvals.json` and named in the pipeline-integrity summary, and the
+  detector is proven by the synthetic fixture `fixtures/pdf_only_visuals/`
 
 ### prompt_hygiene_lint.py (scoped)
 - Reads ONLY the `Text Prompt` blocks in visual-prompt files and the `Motion
@@ -130,7 +133,7 @@ run via `tests/run_all.py` and enforced in CI.
 ### pipeline_integrity.py
 - **Skipped steps (waiver-aware).** A non-sequential pattern (empty step N, present
   step N+1) is a skipped step — a FAIL unless a waiver record exists in
-  `_management/approvals.json`. episode-01's PDF-only visuals stage is the one legacy
+  `_management/approvals.json`. episode-01's waived visual-prompts stage is the one legacy
   waivered skip; the summary names it instead of the old false "no skipped steps"
 - **Disk vs declared state machine.** Each episode's on-disk stage is compared against
   `project_metadata.json`'s production flags; disk ahead of the declared record = FAIL

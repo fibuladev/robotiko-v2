@@ -79,7 +79,7 @@ When a significant decision is made:
   - Channel name: **Fibula** (creator identity, not project name — allows future projects)
   - AUTHOR.md approved — appears only on EP10 release day when repo goes public
   - No timestamps in YouTube descriptions (cinematic integrity — "do not skip")
-  - No end screens except EP10 GitHub link (the silence after the music is deliberately left untouched)
+  - No YouTube end screens at all (the silence after the music is deliberately left untouched); the EP10 GitHub pointer is an in-video end card (S35) built at the edit stage, not a YouTube end screen
   - Repository goes public on EP10 release day — no delay
   - AI transparency from EP01 — no hiding, no phased reveal
   - Inspiration credits at episode level, not project level (Cem Karaca → EP05, Korkmazgil → EP06)

@@ -62,7 +62,7 @@ that's the one gate, enforced identically in CI.
 `validation_suite` CI check is required to pass before merge. That's a
 GitHub repository setting, not something enforceable from inside the repo
 itself, so it can't be verified by reading a file here. It is evidenced in
-[RELEASE.md §3](RELEASE.md): the branch-protection API check runs at
+the release runbook (kept private) §3: the branch-protection API check runs at
 go-public, once the setting is live and can be confirmed against the actual
 branch protection API — not claimed in advance of that.
 

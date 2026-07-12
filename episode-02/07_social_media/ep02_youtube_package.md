@@ -183,24 +183,14 @@ Characters: ~370 / 500 max ✅
 
 ---
 
-## 6. END SCREEN RECOMMENDATIONS
-
-Per `youtube_metadata_standards.md` Section 7: **No end screens EP01-EP09.**
-
-- **Previous episode:** EP01 — "Two Halves of One Whole Apple" → https://youtu.be/W_zfFDXn0o0
-- **Next episode:** EP03 — [EP03 Title] → [EP03 URL]
-- **Playlist:** Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
-
----
-
-## 7. ADDITIONAL SETTINGS
+## 6. ADDITIONAL SETTINGS
 
 - **Category:** Film & Animation
 - **Language:** English
 - **Visibility:** Published May 1, 2026 at 20:00 CEST
 - **Comments:** Allow all (moderation on)
 - **Altered content disclosure:** Yes
-- **Export reminder:** 16:9 canvas from CapCut (NOT 2.35:1 — see lessons.md for LUT color bleed and end screen issues)
+- **Export reminder:** 16:9 canvas from CapCut (see lessons.md for LUT color bleed on the letterbox bars)
 
 ---
 

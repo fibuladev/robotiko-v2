@@ -214,14 +214,12 @@ The @Damaged android stands alone on a wet waterside at night, hands in pockets,
 
 ---
 
-## 7. CROSS-LINKS & END SCREEN
+## 7. CROSS-LINKS
 
 **Cross-links (in description):**
 - Previous: `His Mirror Had No Scratches → {EP06_URL}`
 - Next: `Coming soon` (update when EP08 goes live)
 - Playlist: `{PLAYLIST_URL}` in first 3 lines
-
-**End screen:** None (per youtube_metadata_standards.md — no end screens EP01-EP09)
 
 **Retroactive update:** When EP07 goes live, update EP06's description to add:
 ```

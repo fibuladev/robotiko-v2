@@ -8,13 +8,10 @@
 
 ## OPEN-SOURCE READINESS SWEEP (2026-07-12) — COMPLETE (repo public-ready except EP09/EP10 episode files)
 
-**Task:** Final pre-public sweep of the ENTIRE tracked repo (302 files; episode-09/10 files excluded — still in production). Five parallel audit agents (_memory / _management / root+.github / docs+skills+tools+tests / episodes 01-08) against: private residue, English-only, banned terms, launch-strategy leakage, private-path confusion, hostile-reader optics.
-**Criticals found & fixed:** resolved; details in private working files.
-**Warnings fixed:** EP08 YT-package thumbnail scene S29→S30 + Phase-2 continuity language; EP05 "KIPKIRMIZI" + EP02 "kara mizah" de-Turkished; EP01 "D: drive" dropped; lessons.md forbidden framework-name self-contradiction generalized; CONTRIBUTING/RELEASE check-group counts → 11; project_metadata current_phase refreshed; docs raw/-path caveats; todo.md public-reader note.
-**Remote hygiene:** completed.
-**Deliberate keeps:** recorded in private working files.
-**Suite:** 11/11 green throughout.
-**Phase 2 (same day):** the art-repo editorial line applied across skills, standards and packaging files; suite green in a fresh clone.
+**Task:** Final pre-public hygiene pass across the entire tracked repo (302 files; episode-09/10 excluded — still in production), covering private residue, English-only, banned terms, and general public-readiness optics.
+**Result:** All findings resolved; anything sensitive kept in private working files rather than the public tree. Two durable engineering lessons carried forward as method: commit-sha pointers are rewrite-mortal and must be re-mapped by commit-message key after any history rewrite; approval-ledger sha256 pins must be computed from git-stored (LF) bytes, not a Windows working copy, and verified against a fresh clone.
+**Suite:** 11/11 green throughout, including a fresh-clone verification pass.
+**Remaining for go-public:** EP09/EP10 completion + the final launch-day sequence (private).
 
 ---
 
@@ -30,7 +27,7 @@
 - [x] Audit orchestration launched (3 panels + 2 scans + 15 sweep groups, read-only)
 - [x] Orchestration complete (25/26 first pass; estrangement judge re-run after a session-limit failure)
 - [x] Findings report generated: `_private/audit_2026-07/public_doc_audit_2026-07-10.md` (286 deduped findings: 15 critical / 79 major / rest minor + 2 panel verdicts + date-stamp policy) — presented to Fibula
-- [x] [HUMAN GATE] Fibula approved (2026-07-10) — decisions: lyrics/attested quotes untouchable; history rewrite authorized (order-name wording + one commit message must vanish); sha re-baseline OK; date policy Option C; forbidden-terms validator added; frame-asset rename ("hair-thin crossing"); answer-poem source claim softened to "inspired by"
+- [x] [HUMAN GATE] Fibula approved (2026-07-10) — decisions: lyrics/attested quotes untouchable; history cleanup authorized; sha re-baseline OK; date policy Option C; forbidden-terms validator added; frame-asset rename ("hair-thin crossing"); answer-poem source claim softened to "inspired by"
 - [x] Batches B2-B6 applied (root/docs/mgmt/skills/memory — Opus 4.8 + Sonnet 5 subagents, diffs reviewed) + forbidden-terms gate shipped (check group 11, 31 meta-tests green). Working tree ~65 modified files, NOTHING COMMITTED yet.
 - [x] Continuation completed in follow-up sessions (B1 master.md, B7 episodes, approvals re-baseline 2026-07-10, thematic commits, history rewrite + force push — evidence: clean tree at 2026-07-12 session start, suite 11/11, re-baseline notes across approvals.json). Closed 2026-07-12: the full-repo readiness sweep (block above) independently re-verified every tracked surface clean on the same rule set.
 
@@ -119,7 +116,7 @@ All 8 open questions from the finale panel RESOLVED with Fibula. Committed:
 
 Key decisions: single continuous dawn walk (workshop → toppled-∞ meadow) · prophecy-not-arrival
 (stone 8 fell long ago, lies as ordinary ∞) · three-beat fourth wall (tea to camera → the look →
-gong = GitHub end screen) · Companion Camera = reserved-beside-space constitution + behavior set ·
+gong = GitHub in-video end card, S35) · Companion Camera = reserved-beside-space constitution + behavior set ·
 Mentor = waymark staff (single Amber Pulse) · Robochica FULLY withheld · apple withheld → twin tea
 glasses + side-by-side tracks · crane flock in Moon-Sun sky (break).
 
@@ -171,14 +168,14 @@ partial and UNCOMMITTED. Next session MUST start with: git status + python tests
 audit the diffs, then commit thematically:**
 - W2c: motion/music validators (camera 5-clip window + accent budget + personality,
   energy->motion heuristic, EP08 overlay convention)
-- W9: RELEASE.md runbook + ADR-0011 draft + create_episode.yml PR flow + CI job summary
+- W9: release runbook (private) + release-engineering decision record + create_episode.yml PR flow + CI job summary
 - W6: DONE (uncommitted) — _templates/ep_sync_qc_template.md + scripts/sync_probe.py +
   tests/attempts_report.py + pipeline_rules 2.6 + capcut SKILL xref. FLAGGED for next
   session: add "sync_qc": r"^ep\d{2}_sync_qc_v\d{2}\.md$" pattern to naming_check.py
   (+ meta-test) BEFORE the first real EP09 sync-QC record lands, or naming gate will FAIL it.
 
-Fibula decisions RESOLVED: golden report = ADR'd transparency (finalize ADR-0011 to
-ACCEPTED after W9's sensitivity check) · curated frames = YES full set (<15MB, curation
+Fibula decisions RESOLVED: release-engineering posture documented via ADR after W9's
+sensitivity check · curated frames = YES full set (<15MB, curation
 WITH Fibula — interactive) · episode guide = README section.
 
 Remaining waves: canon/style bundle (eye ADR-0010 + suffix v2 ADR-0009) -> WS7 fork path
@@ -692,7 +689,7 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - **M12/M3/M7:** Beat sync terminology + ADR 0007 empirical claims note + director's guard in motion SKILL.
 - **L1/L2/L3:** LICENSE catch-all + README scope honesty + EP07 S28 coverage shooting note.
 - **DevOps-8/9/10/dok/drift:** create_episode.yml hardened (SHA-pinned, permissions, input validation). Broken naming hook removed. OAuth scope narrowed. Binary asset resilience section added. Scaffold drift (social_media folder) fixed. Python version standardized to 3.11+.
-**Golden report:** Removed from tracked files → `_private/audit_2026-07/june11_golden_release_report.md`.
+**Golden report:** kept in private working files (`_private/audit_2026-07/june11_golden_release_report.md`).
 **EP09 motion script v02:** Em-dash cleanup + S21 eye-glow fix. Passes all validators GREEN. Tutorial TAKE 05 added (red→green demo).
 **Validation:** 8 check groups all GREEN (naming, pipeline, visual, hygiene, metadata, motion, character profiles, meta-tests).
 **Invariant coverage matrix:** Updated — 4 new Machine rows, 1 Human row, Gap rows removed.
@@ -716,7 +713,7 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 **Task:** Execute the P0/P1 roadmap from `golden_release_report.md` so the repo audits at 5/5 for open source.
 **Phase 1 — Legal/identity:** Dual license created — `LICENSE` (MIT, method) + `LICENSE-CONTENT` (CC BY-NC 4.0, creative content); `AUTHOR.md` at root (made-in-2026, Suno+BandLab, Kling/Seedance/Veo, "one person working alongside the machines"); creator name set to **Can Yalcin** everywhere; README rewritten (license + docs sections, legacy source-file refs purged).
 **Phase 2 — Completeness:** `create_episode.py` fixed (episode-only placeholder substitution, `--dry-run`, English comments, ASCII output) and used to scaffold episode-09 + episode-10; canonical `ep09_lyrics_v01.md` committed (timestamps TBD); master reference images confirmed (`ref_mentor_master.png`, `ref_robochica_master.png`) + `reference_image_prompts.md` written; status single-source-of-truth (project_metadata = live tracker; master §8 + CLAUDE.md point to it; EP01-07 launched, EP08 video gen, EP09-10 scaffolded); personal `.ps1` tools moved out of the tree; secrets/PII swept (personal email/entity-id removed from setup_project.sh).
-**Phase 2.8 — Privacy split:** 10 strategy/analytics/Turkish working files moved to gitignored `_private/` (youtube_strategy v01/v02, analytics baseline, pre-launch calendar, social setup guide, weekly release template, three session-prompt notes, EP05 Turkish brief). `youtube_strategy` split → public method-only `youtube_metadata_standards.md` (skill/template references rewired). Turkish flavor words translated to English in method files. (EP03 Turkish lyrics kept — intentional.)
+**Phase 2.8 — Privacy split:** strategy/analytics/planning working files kept in private working files, not the public tree. `youtube_strategy` split → public method-only `youtube_metadata_standards.md` (skill/template references rewired). Turkish flavor words translated to English in method files. (EP03 Turkish lyrics kept — intentional.)
 **Phase 3 — Docs to golden:** rewrote `docs/getting-started.md`, `docs/skills-guide.md`, `docs/tools-setup.md`; NEW `docs/anatomy-of-an-episode.md` (EP07 end-to-end showcase); full `CONTRIBUTING.md`; `architecture.md` v2.1 (S3→Google Drive/MCP); `CHANGELOG.md` current + prepared 1.0.0; visual DNA at `_assets/style/visual_dna.md`. Parallelized with subagents + a fresh-eyes newcomer review.
 **Phase 4 — Engineering:** `.github/workflows/naming_check.yml` runs all three validators on push/PR; rewrote `pipeline_integrity.py` (real skipped-step detector, ignores scaffold templates); extended `naming_check.py` patterns (capcut_guide/youtube_package/social/PDF/legacy); `visual_prompt_validator.py` `--full` + N/A-placeholder skip. All three pass on the full tree.
 **Out of scope (future):** EP01 retroactive creative chain; EP09/EP10 production; banner art; launch execution.

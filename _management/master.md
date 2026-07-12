@@ -22,7 +22,7 @@ The file is kept whole deliberately. It serves three readers at once — the hum
 | **Title** | Robotiko v2.0 |
 | **Genre** | CyberAnatolian / Sci-Fi Bildungsroman |
 | **Protagonist** | Robotiko v2.0 |
-| **Format** | 10-Episode Digital Bildungsroman + Concept Album + Video Series (~70-80 min total) |
+| **Format** | 10-Episode Digital Bildungsroman + Concept Album + Video Series (total runtime 69:51) |
 | **Language Arc** | EP01-02: English → EP03: Turkish → EP04-07: English → EP08-09: Spoken Word in English → EP10: English (Sung — theatrical baritone) |
 
 **Logline:**

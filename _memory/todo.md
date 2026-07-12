@@ -22,6 +22,22 @@
 
 ---
 
+## EP10 RAW IMAGE REVIEW SESSION (2026-07-12) — COMPLETE
+
+**Task:** Systematic QA review of all 47 EP10 raw image candidates (41 scene images + 6 env references) against visual prompts, dramaturgy, and series canon.
+**Method:** 4 parallel QA subagents (batches of ~10 images each), full checklist: Phase 3 kintsugi stability, eye canon, mouthless-face guard, style DNA, Mentor absence, Dawn Walk art direction, gaze discipline, anti-spawn, generation defects.
+**Results:** 27 APPROVE / 13 DISCUSS / 1 RESHOOT (S20). Joint review with Fibula resolved all DISCUSS items.
+**Fixes applied:**
+- S03: Nano Banana color temperature fix (grey-blue shift)
+- S13: Nano Banana rail-track artifact removal + prompt updated (rail joins → mortar lines and gutter edges; rear-view phrasing strengthened)
+- S20: Nano Banana re-generation + right-side crop (CapCut warm grade pending) + prompt updated (ref as inspiration, illegible screen content, warm full morning, no streetlights)
+- S27b: Nano Banana lemon garnish removal (plain Turkish tea)
+- S34b: 34b_1.png selected (superior beckoning hand gesture + warmer smile)
+- S34b smile: Fibula creative override — intentional gentle smile on the mouthless face for the series' final beckoning frame
+**Final: 40/40 scenes approved. Next: motion script (Checkpoint 2, separate session).**
+
+---
+
 ## TWO-PHASE VISUAL PROMPTS REDESIGN SESSION (2026-07-07) — COMPLETE
 
 **Task:** Redesign the visual-prompts pipeline so scenes are framed to APPROVED reference pixels, not conjured from a text contract — closing three gaps found in the shipped flow. GAP A: template / `visual_dna.md` / public docs were a generation behind the SKILL. GAP B: a late ref edit forced no scene re-verification (the REF B reframe, commit `ea96c34`, updated a block while 40 scenes went un-re-checked). GAP C: the "3+ scenes = 1 ref" heuristic under-decomposed locations (EP10's REF E/F found late). Panel-reviewed plan (7 adversarial lenses); scope = SKILL + docs + validator methodology only.

@@ -8,7 +8,7 @@
 
 ## SESSION NOTE (2026-07-13)
 
-Launch plan revised in private working files. Public docs: gate-count consistency pass — all current-truth prose now says three human gates (commit `370229b`), suite 11/11 green.
+Launch plan revised in private working files. Public docs: gate-count consistency pass — all current-truth prose now says three human gates (commit `eb187a2`), suite 11/11 green.
 
 ---
 

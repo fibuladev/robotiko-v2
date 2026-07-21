@@ -118,12 +118,41 @@ artifact past a human gate has an honest approval record.
 
 ---
 
+## The full chain — one episode, start to finish
+
+Each stage is one trigger phrase in Claude Code; each reads the previous stage's
+output automatically. The manual steps are marked — they are where your writing,
+your generators, and your taste enter.
+
+0. **Lyrics & music** *(manual, before the pipeline)* — write your lyrics, generate
+   the track, master it (the original used Suno + BandLab). The pipeline starts
+   from finished audio.
+1. **`"Scaffold EP{XX}"`** — creates the seven-stage folder tree. Idempotent: safe
+   to re-run, never overwrites existing work.
+2. **`"Create musical metadata for EP{XX}"`** — the song becomes a timestamped JSON
+   skeleton. You provide BPM, key, and section timestamps read off your track.
+3. **Concept notes** *(manual)* — your vision on the record: must-have shots, mood,
+   the through-lines to protect.
+4. **`"Create dramaturgy for EP{XX}"`** — scene-by-scene visual breakdown.
+   **⛔ Gate 1 — review and approve before any image work begins.**
+5. **`"Generate visual prompts for EP{XX}"`** — one prompt per scene, anchored to
+   the approved dramaturgy. Pauses at the **reference gate (1R)**: approve the
+   reference images on the record before a single scene prompt is written.
+6. **Image generation** *(manual)* — run the prompts through your generator against
+   the approved references; curate the keepers.
+7. **`"Generate motion script for EP{XX}"`** — camera moves, motion intensity, tool
+   assignments, beat sync.
+   **⛔ Gate 2 — review and approve before any video credits are spent.**
+8. **Video generation** *(manual)* — render clips per the script; curate the keepers.
+9. **`"Edit EP{XX} in CapCut"`** — scene-by-scene edit guide with beat-sync markers.
+10. **`"Package EP{XX} for YouTube"`** — title, description, tags, timestamps.
+
+Full per-stage rules live in [`_management/pipeline_rules.md`](_management/pipeline_rules.md);
+the worked walkthrough is [docs/getting-started.md](docs/getting-started.md).
+
 ## Keep the gate green
 
-Drive the pipeline stage by stage with the trigger phrases in
-[`CLAUDE.md`](CLAUDE.md) and [docs/skills-guide.md](docs/skills-guide.md): musical
-metadata → dramaturgy → **gate 1** → visual prompts → motion script → **gate 2** →
-edit. Each stage's output is the next stage's input. Then run the one gate:
+Then run the one gate:
 
 ```bash
 python tests/run_all.py

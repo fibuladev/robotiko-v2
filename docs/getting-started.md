@@ -91,6 +91,7 @@ The full per-stage rules, inputs, and outputs live in **[../\_management/pipelin
 
 | # | Trigger phrase | What it produces |
 |---|---|---|
+| 0 | *(you write the lyrics; the track is generated and mastered — Suno + BandLab in the original. The pipeline starts from finished audio)* | `ep02_lyrics_v01.md` + the mastered track |
 | 1 | *Create musical metadata for EP02* | `ep02_musical_metadata.json` (the temporal source of truth) |
 | — | *(you write the concept notes)* | `ep02_concept_notes.md` — overrides and must-have shots |
 | 2 | **Create dramaturgy for EP02** | `ep02_dramaturgy_v01.md` — scene-by-scene breakdown |

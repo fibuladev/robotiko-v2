@@ -5,7 +5,7 @@
 
 ---
 
-## [1.0.0] — TBD (target 2026-07-28) — Open Source Release (EP10 Release Day)
+## [1.0.0] — TBD (target 2026-08-04) — Open Source Release (EP10 Release Day)
 
 > **Status: PREPARED — not yet released.** The public release ships on EP10 release day,
 > when the repository goes public.

@@ -58,8 +58,8 @@ instead of €72.00. The subtotal reflects the actual payments (4 × €72 + 1 �
   subscriptions, no API usage billing. Everything in the repo was built within these
   monthly plans.
 - **Billing cycles.** As of July 2026 the Claude Max subscription is running on the
-  June payment; if the launch window (July 28) requires another cycle, that payment
-  is not yet reflected here.
+  June payment; if the launch window (early August) requires another cycle, that
+  payment is not yet reflected here.
 - **What is NOT counted:** hardware (a consumer PC), electricity, internet — and the
   human's time. Roughly eight months of steady evening work — one to two hours most
   weeknights: writing, listening, approving, rejecting, re-approving. Weekends stayed

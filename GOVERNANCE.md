@@ -6,11 +6,13 @@ Stated plainly, because vague governance docs are worse than none.
 
 There is one maintainer: Can Yalcin (Fibula). There is no team, no core
 group, no committee. Decisions about the pipeline and the story are made by
-one person, and that person is also, most weeks, in active production on an
-episode. Your PR may sit for a week because that week I'm shooting a film,
-not reviewing one. This isn't a rotation problem to be fixed — it's the
-actual shape of the project, stated up front so nobody waits on a response
-time this repo never promised.
+one person — and that person has a full-time day job and a life outside
+this repo. The ten-episode arc is complete; what remains is maintenance,
+and maintenance happens in evenings and weekends. Your PR may sit for a
+week because that week belonged to the day job, not to this repo. This
+isn't a rotation problem to be fixed — it's the actual shape of the
+project, stated up front so nobody waits on a response time this repo
+never promised.
 
 ## What's open to contribution
 

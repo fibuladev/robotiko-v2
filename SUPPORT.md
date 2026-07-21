@@ -48,6 +48,6 @@ Do not use any of the above for a credential or vulnerability report — see
 
 ## Response time
 
-One maintainer, who is also in active production on the series. Best-effort,
-not instant. See [GOVERNANCE.md](GOVERNANCE.md) for the honest version of
-that tradeoff.
+One maintainer, working on this in personal time around a full-time day
+job. Best-effort, not instant. See [GOVERNANCE.md](GOVERNANCE.md) for the
+honest version of that tradeoff.

@@ -69,9 +69,10 @@ through:
   public, say so in the first line and the maintainer will move it private.
 
 All complaints will be reviewed and investigated promptly and fairly. As a
-solo maintainer also in active production (see [GOVERNANCE.md](GOVERNANCE.md)),
-response time is best-effort, not guaranteed-instant — but conduct reports
-are treated as higher priority than routine issues.
+solo maintainer working on this in personal time around a day job (see
+[GOVERNANCE.md](GOVERNANCE.md)), response time is best-effort, not
+guaranteed-instant — but conduct reports are treated as higher priority
+than routine issues.
 
 All maintainers are obligated to respect the privacy and security of the
 reporter of any incident.

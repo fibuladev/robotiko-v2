@@ -54,12 +54,12 @@ issue in `_tools/mcp-gdrive/`, please use
 for private reporting rather than a public issue. This lets us discuss and
 fix it before it's public.
 
-**Response target — stated plainly**: this is a solo-maintained project, and
-the maintainer is frequently in active production on episodes (shooting,
-editing, generating). Response is best-effort, aimed at within a week, not
-guaranteed on any fixed SLA. There is no security team behind this — there
-is one person. If you don't hear back in two weeks, a follow-up comment on
-the advisory is welcome and won't be seen as impatient.
+**Response target — stated plainly**: this is a solo-maintained project,
+kept up in personal time around a full-time day job. Response is
+best-effort, aimed at within a week, not guaranteed on any fixed SLA.
+There is no security team behind this — there is one person. If you don't
+hear back in two weeks, a follow-up comment on the advisory is welcome and
+won't be seen as impatient.
 
 ## Supported versions
 

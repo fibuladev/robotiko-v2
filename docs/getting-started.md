@@ -18,7 +18,7 @@ lyrics → music → metadata JSON → dramaturgy → visual prompts → images
        → motion script → video → edit → package
 ```
 
-There are **two creative human gates** in that flow. The first is **after dramaturgy** — you approve the scene-by-scene breakdown before any visuals are made. The second is **after the motion script** — you approve camera moves, tool assignments, and tech strategy before any video is generated. (The visual stage adds one more, mechanical stop — the reference gate — covered in the step table below.) Everything else, Claude executes and delivers. The rest of this guide walks you from an empty machine to your first finished episode.
+There are **three human gates** in that flow. The first is **after dramaturgy** — you approve the scene-by-scene breakdown before any visuals are made. The second sits **inside the visual stage** — the reference gate, where you approve the reference images as real pixels before any scene prompt is written (covered in the step table below). The third is **after the motion script** — you approve camera moves, tool assignments, and tech strategy before any video is generated. Everything else, Claude executes and delivers. The rest of this guide walks you from an empty machine to your first finished episode.
 
 ---
 
@@ -111,7 +111,7 @@ An episode starts with its words and its audio: you write the lyrics, Suno gener
 
 The concept-notes step needs no special trigger — plain words work. From the build-along session, verbatim: *"I'll give you my concept notes for EP09. Write them into episode-09/03_direction/ep09_concept_notes.md under 'Must-Have Shots (Override)' and 'Mood'. Here they are: — Must-have: [your shots] — Mood: [your mood direction]"*
 
-The stops are not optional and never skipped. They are the entire point of the arrangement: the machine does the labor; the human keeps the taste. The two creative gates (dramaturgy, motion script) approve *direction*; the reference gate approves the *world* the scenes will be framed against.
+The stops are not optional and never skipped. They are the entire point of the arrangement: the machine does the labor; the human keeps the taste. All three gates are human: the dramaturgy and motion-script gates approve *direction*; the reference gate approves the *world* the scenes will be framed against.
 
 > New to the skills themselves? **[skills-guide.md](skills-guide.md)** explains what each one does and walks a worked example. The full trigger table also lives in **[../CLAUDE.md](../CLAUDE.md)**.
 
@@ -159,7 +159,7 @@ No. The non-negotiable pieces are Claude Code (it drives everything) and a way t
 Yes — the pipeline cares about *stages*, not brands. Any image generator can stand in for Nano Banana, any of Kling / Veo / Seedance can cover video, and the motion script's tool assignments are recommendations the human can override. If you swap something, update the toolchain notes in `_management/project_metadata.json` and adjust the relevant skill so its prompts suit the new tool.
 
 **What are the human gates?**
-Two creative approvals are required. **Gate 1 is after dramaturgy** — you sign off on the scene breakdown before any visuals are made. **Gate 2 is after the motion script** — you sign off on camera moves, tool assignments, and tech strategy before any video is generated. In the visual stage there is also a third, mechanical stop: the reference gate (gate 1R, EP10 onward), where you approve the generated reference images before scene prompts are written. Claude stops and waits at all three. Everything else runs without hand-holding.
+Three human approvals are required. **Gate 1 is after dramaturgy** — you sign off on the scene breakdown before any visuals are made. **Gate 1R sits inside the visual stage** (EP10 onward) — you approve the generated reference images as real pixels before scene prompts are written. **Gate 2 is after the motion script** — you sign off on camera moves, tool assignments, and tech strategy before any video is generated. Claude stops and waits at all three. Everything else runs without hand-holding.
 
 **Where do the big binary files live?**
 Not in git. The raw and selected image/video folders, plus audio, are gitignored on purpose — they're far too large for version control. The repository tracks the *recipe* (prompts, scripts, metadata, edit guides), not the renders. The binary archive lives on **Google Drive**, reached through the project's own custom MCP server in **[../\_tools/mcp-gdrive/](../_tools/mcp-gdrive/)** — a small, self-contained server with no third-party storage SDK. (There is no AWS or external bucket; any older note saying otherwise is stale.)

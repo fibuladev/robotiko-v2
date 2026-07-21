@@ -208,8 +208,9 @@ framed against those approved pixels (Phase 2).
 ### Human approval gates
 
 Two stages require explicit human approval of **direction** before the pipeline may continue — dramaturgy
-and the motion script. From EP10 onward a third, mechanical checkpoint sits inside the visual stage: the
-reference gate. Everything else the crew executes and delivers autonomously. Per
+and the motion script. From EP10 onward a third human checkpoint sits inside the visual stage: the
+reference gate, where the human approves the reference images as real pixels — taste on the *world*, not
+a formality. Everything else the crew executes and delivers autonomously. Per
 [`../_management/pipeline_rules.md`](../_management/pipeline_rules.md):
 
 1. **After Dramaturgy (gate 1)** — the human reviews and approves the scene breakdown before any visual work begins.

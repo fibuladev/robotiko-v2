@@ -79,6 +79,10 @@ When you fork for your own universe, **all of these are yours to replace.** They
 > **In a hurry?** [FORKING.md](FORKING.md) is the checklist version of this section —
 > the exact files, the three commands, and the real durations from a timed dry run
 > against a second universe ([docs/fork-dry-run.md](docs/fork-dry-run.md)).
+> Prefer watching? The pipeline was recorded live as a build-along series
+> (*Building an AI Film Studio*, on
+> [youtube.com/@fibuladev](https://www.youtube.com/@fibuladev)) — optional
+> background; the sessions go far deeper than day-to-day use requires.
 
 A numbered path from clone to first episode:
 

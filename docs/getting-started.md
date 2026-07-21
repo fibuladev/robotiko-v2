@@ -85,6 +85,8 @@ The episode number is always two digits in the filenames the script produces (`e
 
 Open the repo in your editor with Claude Code and drive the stages with the trigger phrases below. Each phrase tells Claude which skill to read first; it then reads the required project files and executes. Run each stage in its own clean Claude Code session — the pipeline is designed for that.
 
+Every stage below was also recorded live as a build-along series (*Building an AI Film Studio*, on [youtube.com/@fibuladev](https://www.youtube.com/@fibuladev)) — optional viewing that shows the reasoning behind each stage in far more detail than you need to run it. The table is the workflow; the videos are the commentary track.
+
 The full per-stage rules, inputs, and outputs live in **[../\_management/pipeline_rules.md](../_management/pipeline_rules.md)**. The order, with the gates marked:
 
 | # | Trigger phrase | What it produces |

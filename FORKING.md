@@ -21,6 +21,13 @@ every subscription, every month, every price change — is disclosed in
 [`_management/cost.md`](_management/cost.md): roughly **€1,200** in ordinary consumer
 subscriptions. No API billing, no credit packs, no enterprise contracts.
 
+> **Optional viewing.** The pipeline was recorded live as a build-along series —
+> *Building an AI Film Studio*, on
+> [youtube.com/@fibuladev](https://www.youtube.com/@fibuladev). It is background,
+> not prerequisite: on camera every prompt is spelled out in far more detail than
+> day-to-day use requires. To fork, you need this checklist and one trigger phrase
+> per stage ([docs/skills-guide.md](docs/skills-guide.md)) — the skills do the rest.
+
 ---
 
 ## The three commands

@@ -138,6 +138,14 @@ This repo is a blueprint. Take the pipeline, keep your own story.
 
 ---
 
+## Watch it being built (optional)
+
+The pipeline itself was recorded live: **Building an AI Film Studio**, a build-along series on [youtube.com/@fibuladev](https://www.youtube.com/@fibuladev), shows EP09 produced from an empty folder to a finished film — real sessions with the bugs, the fixes, and the reasoning left in.
+
+One thing to know before pressing play: the sessions show far more detail than the pipeline requires. On camera every prompt is spelled out and every decision reasoned aloud — that is the point of the recording, not the cost of using the method. In normal operation each stage is one trigger phrase ([docs/skills-guide.md](docs/skills-guide.md)) and the skills do the rest. Watch the series to understand *why* the pipeline is shaped the way it is; use [FORKING.md](FORKING.md) to actually run it.
+
+---
+
 ## How it works (the short version)
 
 A git repository operated as a one-person film studio. An LLM (Claude, via Claude Code skills) works as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (three approval gates). The music's structure drives the dramaturgy, the dramaturgy drives the visuals, and every stage is traceable: *Output of Step N = Input of Step N+1.*

@@ -91,7 +91,7 @@ The full per-stage rules, inputs, and outputs live in **[../\_management/pipelin
 
 | # | Trigger phrase | What it produces |
 |---|---|---|
-| 0 | *(you write the lyrics; the track is generated and mastered — Suno + BandLab in the original. The pipeline starts from finished audio)* | `ep02_lyrics_v01.md` + the mastered track |
+| 0 | *(you write the lyrics and produce your track — Suno + BandLab in the original. The audio itself stays outside the repo; what enters the pipeline is text: the lyrics file, plus the BPM, key, and section timestamps you read off the track)* | `ep02_lyrics_v01.md` |
 | 1 | *Create musical metadata for EP02* | `ep02_musical_metadata.json` (the temporal source of truth) |
 | — | *(you write the concept notes)* | `ep02_concept_notes.md` — overrides and must-have shots |
 | 2 | **Create dramaturgy for EP02** | `ep02_dramaturgy_v01.md` — scene-by-scene breakdown |
@@ -107,7 +107,9 @@ The full per-stage rules, inputs, and outputs live in **[../\_management/pipelin
 | 7 | *Atomize EP02 for social* | platform-specific short clips |
 | 8 | *Orchestrate EP02 launch* | launch checklist |
 
-Before lyrics and music, an episode also needs its words and its audio: you write the lyrics, Suno generates the track, and you master it in BandLab. The metadata JSON in step 1 is built from that finished audio plus the BPM and key you read off it.
+An episode starts with its words and its audio: you write the lyrics, Suno generates the track, and you master it in BandLab. The audio is never committed — the metadata JSON in step 1 is built from the BPM, key, and section timestamps you read off the finished track. The track itself comes back only at the CapCut edit stage.
+
+The concept-notes step needs no special trigger — plain words work. From the build-along session, verbatim: *"I'll give you my concept notes for EP09. Write them into episode-09/03_direction/ep09_concept_notes.md under 'Must-Have Shots (Override)' and 'Mood'. Here they are: — Must-have: [your shots] — Mood: [your mood direction]"*
 
 The stops are not optional and never skipped. They are the entire point of the arrangement: the machine does the labor; the human keeps the taste. The two creative gates (dramaturgy, motion script) approve *direction*; the reference gate approves the *world* the scenes will be framed against.
 

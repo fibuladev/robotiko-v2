@@ -125,14 +125,20 @@ output automatically. The manual steps are marked — they are where your writin
 your generators, and your taste enter.
 
 0. **Lyrics & music** *(manual, before the pipeline)* — write your lyrics, generate
-   the track, master it (the original used Suno + BandLab). The pipeline starts
-   from finished audio.
+   the track, master it (the original used Suno + BandLab). The audio itself never
+   enters the repo: the pipeline reads text — the lyrics file, and in step 2 the
+   BPM, key, and timestamps you read off the track. The track returns at the edit
+   stage.
 1. **`"Scaffold EP{XX}"`** — creates the seven-stage folder tree. Idempotent: safe
    to re-run, never overwrites existing work.
 2. **`"Create musical metadata for EP{XX}"`** — the song becomes a timestamped JSON
    skeleton. You provide BPM, key, and section timestamps read off your track.
 3. **Concept notes** *(manual)* — your vision on the record: must-have shots, mood,
-   the through-lines to protect.
+   the through-lines to protect. No special trigger — plain words work:
+   > *"I'll give you my concept notes for EP{XX}. Write them into
+   > episode-{XX}/03_direction/ep{XX}_concept_notes.md under 'Must-Have Shots
+   > (Override)' and 'Mood'. Here they are: — Must-have: [your shots] —
+   > Mood: [your mood direction]"*
 4. **`"Create dramaturgy for EP{XX}"`** — scene-by-scene visual breakdown.
    **⛔ Gate 1 — review and approve before any image work begins.**
 5. **`"Generate visual prompts for EP{XX}"`** — one prompt per scene, anchored to

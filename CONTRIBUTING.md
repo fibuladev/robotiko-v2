@@ -106,7 +106,7 @@ A numbered path from clone to first episode:
    ```
    This creates the full `episode-01/` folder structure (lyrics → music → direction → visuals → video → edit).
 
-6. **Drive the skills.** Lyrics and finished audio come first — the metadata stage reads your mastered track. Then, from Claude Code, run the pipeline stage by stage using the trigger phrases in `CLAUDE.md` and [docs/skills-guide.md](docs/skills-guide.md): musical metadata → dramaturgy → visual prompts → motion script → packaging. Each stage's output is the next stage's input. The complete numbered chain, manual steps included, is in [FORKING.md](FORKING.md#the-full-chain--one-episode-start-to-finish).
+6. **Drive the skills.** Lyrics and your finished track come first — the metadata stage reads the BPM, key, and timestamps you take from the track, not the audio itself. Then, from Claude Code, run the pipeline stage by stage using the trigger phrases in `CLAUDE.md` and [docs/skills-guide.md](docs/skills-guide.md): musical metadata → dramaturgy → visual prompts → motion script → packaging. Each stage's output is the next stage's input. The complete numbered chain, manual steps included, is in [FORKING.md](FORKING.md#the-full-chain--one-episode-start-to-finish).
 
 7. **Keep the three human gates.** They are part of the method, not optional decoration. Per [`_management/pipeline_rules.md`](_management/pipeline_rules.md):
    - **After Dramaturgy** — the human reviews and approves the scene breakdown before visuals begin.

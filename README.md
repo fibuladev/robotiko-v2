@@ -150,7 +150,7 @@ One thing to know before pressing play: the sessions show far more detail than t
 
 A git repository operated as a one-person film studio. An LLM (Claude, via Claude Code skills) works as a stage-gated production crew; the human keeps exactly two irreplaceable powers — creative vision (the inputs) and taste (three approval gates). The music's structure drives the dramaturgy, the dramaturgy drives the visuals, and every stage is traceable: *Output of Step N = Input of Step N+1.*
 
-The full chain, one episode: **lyrics & music** (manual — the pipeline starts from finished audio) → `"Scaffold EP{XX}"` → `"Create musical metadata for EP{XX}"` → **concept notes** (manual) → `"Create dramaturgy for EP{XX}"` → **⛔ gate 1** → `"Generate visual prompts for EP{XX}"` → **⛔ reference gate** → **image generation** (manual) → `"Generate motion script for EP{XX}"` → **⛔ gate 2** → **video generation** (manual) → `"Edit EP{XX} in CapCut"` → `"Package EP{XX} for YouTube"`. The step-by-step walkthrough is [docs/getting-started.md](docs/getting-started.md).
+The full chain, one episode: **lyrics & music** (manual — the audio stays outside the repo; only the lyrics and the timings you read off the track enter the pipeline) → `"Scaffold EP{XX}"` → `"Create musical metadata for EP{XX}"` → **concept notes** (manual) → `"Create dramaturgy for EP{XX}"` → **⛔ gate 1** → `"Generate visual prompts for EP{XX}"` → **⛔ reference gate** → **image generation** (manual) → `"Generate motion script for EP{XX}"` → **⛔ gate 2** → **video generation** (manual) → `"Edit EP{XX} in CapCut"` → `"Package EP{XX} for YouTube"`. The step-by-step walkthrough is [docs/getting-started.md](docs/getting-started.md).
 
 ```
 robotiko-v2/

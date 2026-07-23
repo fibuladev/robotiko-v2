@@ -180,6 +180,7 @@ at the project level. Include one only when the episode has a documented credit:
 |---|---|
 | 05 | Inspired by the spirit of Cem Karaca's "Delikanlı Sevdası". |
 | 06 | Inspired by Hasan Hüseyin Korkmazgil's "Bir Örnek İnsan Portresi". |
+| 10 | Answer-poem after Nimri Dede's "İnsan Olmaya Geldim" (Turkish folk poetry). |
 
 Other episodes have no inspiration credit. Do not invent one.
 

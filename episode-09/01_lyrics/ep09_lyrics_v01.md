@@ -4,6 +4,7 @@
 > **Station:** The Integrated Self (Kintsugi — making peace with flaws)
 > **Phase:** Phase 3: Reconstruction (the body mends with gold — visible kintsugi begins)
 > **Language:** English (Spoken Word — dry, unprocessed)
+> **Attribution:** Yunus Emre (13th-14th c. — Turkish folk poetry), "Bir ben vardır bende benden içeri" — the outro renders the line in machine register ("There is a 'me' beneath this 'me'... deeper than voltage"); credited in the EP09 YouTube package per Golden Rule 9 (EP05/EP10 precedent).
 > **Duration:** TBD | **Source:** Suno AI
 > **Timestamps:** TBD — added at the musical-metadata stage (see `_skills/robotiko-musical-metadata/SKILL.md`).
 

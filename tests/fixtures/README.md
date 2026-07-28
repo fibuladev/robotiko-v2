@@ -13,6 +13,8 @@ These files are **frozen snapshots**, not live pipeline output. Do not "fix" the
 | `musical_metadata_overlap_BAD.json` | The identical overlap WITHOUT the `overlay` flag | **FAIL** `musical_metadata_validator.py` (unmarked overlap = data error, graduated from WARN) |
 | `ep07_style_eye_v2_BAD.md`  | Version-stamped (SKILL v2.0) file with the photoreal modifier but NO declared style mode, plus an eye-glow Text Prompt | **FAIL** both `check_style_mode` (ADR-0009) and `check_eye_glow` (ADR-0010) |
 | `ep07_style_eye_v2_GOOD.md` | Same, but it declares its style mode (modifier sanctioned) and describes eyes with the material-lens idiom | **PASS** every check |
+| `capcut_guide_BAD.md`  | The real EP09 v01 gap-propagation bug, frozen: Scene Dur values 1s short of their timestamp span, a genuine 1s timestamp gap (S01->S02), and a wrong Speed value (S04) | **FAIL** `capcut_guide_validator.py` (Scene Dur mismatch, timestamp gap, speed mismatch) |
+| `capcut_guide_GOOD.md` | Contiguous timestamps, Scene Dur matching each span exactly, correct speed/trim values | **PASS** `capcut_guide_validator.py` with zero findings |
 
 ## Why they exist
 

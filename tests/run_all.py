@@ -12,12 +12,13 @@ Check groups:
   4. Prompt hygiene         — model-facing prompt strings are plain-English ASCII (scoped)
   5. Musical metadata       — JSON structure · energy/type vocabulary · timestamps · overlay convention · total_duration
   6. Motion script          — video suffix · anti-spawn guard · camera diversity (global quotas + 5-clip local window + accent budget + one-move-per-clip + personality)
-  7. Character profiles     — structural validation against schema.json
-  8. Validator meta-tests   — grade the graders (fixtures + both-directions proofs)
-  9. Doc reference integrity — curated docs' backtick paths exist · no hook-rot · matrix sync
- 10. Energy-motion sync     — ADVISORY tier: clip Motion Strength vs the musical
+  7. CapCut guide           — Scene Dur = Timestamp span · contiguity · total = music duration · speed/trim correctness
+  8. Character profiles     — structural validation against schema.json
+  9. Validator meta-tests   — grade the graders (fixtures + both-directions proofs)
+ 10. Doc reference integrity — curated docs' backtick paths exist · no hook-rot · matrix sync
+ 11. Energy-motion sync     — ADVISORY tier: clip Motion Strength vs the musical
      section's energy band (heuristic; warnings are printed but never block)
- 11. Forbidden terms        — public prose (canon docs, direction notes, musical
+ 12. Forbidden terms        — public prose (canon docs, direction notes, musical
      metadata) never names a banned religion/order/sect/scripture term; a narrow,
      pinned allowlist covers the one sanctioned mention (the rule that bans it)
 
@@ -52,6 +53,7 @@ CHECK_GROUPS = [
     ("Prompt hygiene",       [sys.executable, "tests/prompt_hygiene_lint.py", "--full"]),
     ("Musical metadata",     [sys.executable, "tests/musical_metadata_validator.py", "--full"]),
     ("Motion script",        [sys.executable, "tests/motion_script_validator.py", "--full"]),
+    ("CapCut guide",         [sys.executable, "tests/capcut_guide_validator.py", "--full"]),
     ("Character profiles",   [sys.executable, "tests/character_profiles_validator.py", "--full"]),
     ("Validator meta-tests", [sys.executable, "-m", "unittest", "tests.test_validators"]),
     ("Doc reference integrity", [sys.executable, "tests/doc_reference_check.py"]),

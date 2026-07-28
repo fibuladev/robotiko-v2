@@ -94,6 +94,12 @@ _ftspec = importlib.util.spec_from_file_location(
 ftg = importlib.util.module_from_spec(_ftspec)
 _ftspec.loader.exec_module(ftg)
 
+_cgspec = importlib.util.spec_from_file_location(
+    "capcut_guide_validator", os.path.join(TESTS_DIR, "capcut_guide_validator.py")
+)
+cgv = importlib.util.module_from_spec(_cgspec)
+_cgspec.loader.exec_module(cgv)
+
 # Frozen style/eye fixtures (ADR-0009 / ADR-0010), both directions.
 STYLE_EYE_BAD = os.path.join(FIXTURES, "ep07_style_eye_v2_BAD.md")
 STYLE_EYE_GOOD = os.path.join(FIXTURES, "ep07_style_eye_v2_GOOD.md")
@@ -117,6 +123,11 @@ OVERLAP_BAD = os.path.join(FIXTURES, "musical_metadata_overlap_BAD.json")
 # M4 fixture: a PDF that lives in a selected/ SUBDIR (exactly where EP01's real PDF
 # sits) — the case the old one-level os.listdir could never see.
 PDF_SUBDIR_VISUALS = os.path.join(FIXTURES, "pdf_only_visuals", "04_visuals")
+
+# Frozen CapCut guide fixtures: the real EP09 v01 gap-propagation bug (Scene Dur
+# computed 1s short of its timestamp span), both directions.
+CAPCUT_GOOD = os.path.join(FIXTURES, "capcut_guide_GOOD.md")
+CAPCUT_BAD = os.path.join(FIXTURES, "capcut_guide_BAD.md")
 
 
 def setUpModule():
@@ -2005,6 +2016,221 @@ class TestForbiddenTermsRunner(unittest.TestCase):
         # doc_reference_check's curated-doc-not-found handling one layer up).
         self.assertEqual(
             ftg.check_forbidden_terms("tests/fixtures/does_not_exist_xyz.md", REPO_ROOT), [])
+
+
+# ─────────────────────────────────────────────
+# CapCut guide validator — the real EP09 v01 gap-propagation bug, frozen. Both
+# directions, plus the false-green parser-coverage guard.
+# ─────────────────────────────────────────────
+
+class TestCapcutGuideFrozenFixtures(unittest.TestCase):
+    """The regression pair. If either direction flips, a grader has rotted."""
+
+    def test_bad_fixture_fails_on_scene_dur_mismatch(self):
+        findings = cgv.validate_file(CAPCUT_BAD, REPO_ROOT)
+        fails = [m for s, m in findings if s == "FAIL"]
+        self.assertTrue(
+            any("Scene Dur" in m and "gap-propagation bug" in m for m in fails),
+            f"the 1s-short Scene Dur must FAIL as the gap-propagation bug. Got: {fails}",
+        )
+
+    def test_bad_fixture_fails_on_timestamp_gap(self):
+        findings = cgv.validate_file(CAPCUT_BAD, REPO_ROOT)
+        fails = [m for s, m in findings if s == "FAIL"]
+        self.assertTrue(
+            any("timestamp gap" in m for m in fails),
+            f"the S01->S02 1s timestamp gap must FAIL. Got: {fails}",
+        )
+
+    def test_good_fixture_has_zero_fail_findings(self):
+        findings = cgv.validate_file(CAPCUT_GOOD, REPO_ROOT)
+        fails = [m for s, m in findings if s == "FAIL"]
+        self.assertEqual(fails, [], f"GOOD fixture must carry zero FAILs. Got: {fails}")
+
+    def test_good_fixture_has_zero_findings_at_all(self):
+        # Stronger than "no FAIL": the GOOD fixture is clean enough to carry no
+        # WARN either (every row's duration already matches its clip, or is
+        # explained by a correct speed/trim value).
+        self.assertEqual(
+            cgv.validate_file(CAPCUT_GOOD, REPO_ROOT), [],
+            "GOOD fixture must validate with zero findings of any severity.",
+        )
+
+    def test_good_fixture_is_not_vacuous(self):
+        # Guard against the GOOD fixture silently parsing to zero rows (a green
+        # that means "nothing checked", not "everything passed").
+        with open(CAPCUT_GOOD, encoding="utf-8") as f:
+            rows = cgv.parse_timeline_table(f.read())
+        self.assertGreaterEqual(len(rows), 4)
+
+
+class TestCapcutGuideSpeedBothDirections(unittest.TestCase):
+    """The speed check (speed == clip_dur / scene_dur, +-0.02), graded both ways
+    through the SAME shot shape: BAD's S04 (0.50x, wrong) fires, GOOD's S03
+    (0.80x, correct) stays silent -- proof the check discriminates rather than
+    always firing or always passing."""
+
+    def test_wrong_speed_value_fails(self):
+        findings = cgv.validate_file(CAPCUT_BAD, REPO_ROOT)
+        fails = [m for s, m in findings if s == "FAIL"]
+        self.assertTrue(
+            any("S04" in m and "Speed" in m for m in fails),
+            f"S04's 0.50x must FAIL against the expected 0.71x. Got: {fails}",
+        )
+
+    def test_correct_speed_value_passes(self):
+        findings = cgv.validate_file(CAPCUT_GOOD, REPO_ROOT)
+        speed_fails = [m for s, m in findings if s == "FAIL" and "Speed" in m]
+        self.assertEqual(
+            speed_fails, [],
+            f"S03's 0.80x (clip_dur/scene_dur = 8/10) must not FAIL. Got: {speed_fails}",
+        )
+
+
+class TestCapcutGuideIsolation(unittest.TestCase):
+    """Each row-level rule fires when it should and stays silent when it
+    shouldn't -- graded directly against parse_timeline_table + validate_file,
+    isolating one defect per row so a check can't hide behind another."""
+
+    def _rows(self, content):
+        return cgv.parse_timeline_table(content)
+
+    HEADER = (
+        "| Shot | Timestamp | Clip File | Scene Dur | Clip Dur | Speed | Trim |\n"
+        "|------|-----------|-----------|-----------|----------|-------|------|\n"
+    )
+
+    def test_scene_dur_mismatch_fires_in_isolation(self):
+        # Only the Scene Dur is wrong; contiguity, speed and trim are all clean.
+        content = self.HEADER + "| S01 | 0:00–0:10 | 1.mp4 | 9s | 10s | — | trim 1s |\n"
+        rows = self._rows(content)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["scene_dur"], 9)
+        self.assertEqual(rows[0]["ts_end"] - rows[0]["ts_start"], 10)
+
+    def test_matching_scene_dur_and_span_is_silent(self):
+        content = self.HEADER + "| S01 | 0:00–0:10 | 1.mp4 | 10s | 10s | — | — |\n"
+        rows = self._rows(content)
+        self.assertEqual(rows[0]["scene_dur"], rows[0]["ts_end"] - rows[0]["ts_start"])
+
+    def test_contiguous_rows_have_no_gap(self):
+        content = self.HEADER + (
+            "| S01 | 0:00–0:10 | 1.mp4 | 10s | 10s | — | — |\n"
+            "| S02 | 0:10–0:20 | 2.mp4 | 10s | 10s | — | — |\n"
+        )
+        rows = self._rows(content)
+        self.assertEqual(rows[0]["ts_end"], rows[1]["ts_start"],
+                         "no gap: S02 must start exactly where S01 ends")
+
+    def test_gapped_rows_are_detected_as_non_contiguous(self):
+        content = self.HEADER + (
+            "| S01 | 0:00–0:10 | 1.mp4 | 10s | 10s | — | — |\n"
+            "| S02 | 0:11–0:21 | 2.mp4 | 10s | 10s | — | — |\n"
+        )
+        rows = self._rows(content)
+        self.assertNotEqual(rows[0]["ts_end"], rows[1]["ts_start"],
+                            "a real 1s gap must be visible to the contiguity check")
+
+    def test_trim_computed_correctly_matches(self):
+        content = self.HEADER + "| S01 | 0:00–0:06 | 1.mp4 | 6s | 10s | — | trim 4s |\n"
+        row = self._rows(content)[0]
+        self.assertEqual(row["trim"], row["clip_dur"] - row["scene_dur"])
+
+    def test_trim_computed_incorrectly_mismatches(self):
+        content = self.HEADER + "| S01 | 0:00–0:06 | 1.mp4 | 6s | 10s | — | trim 1s |\n"
+        row = self._rows(content)[0]
+        self.assertNotEqual(row["trim"], row["clip_dur"] - row["scene_dur"])
+
+
+class TestCapcutGuideParserCoverage(unittest.TestCase):
+    """The 'green that checked nothing' guard: a Timeline Map table must
+    actually parse non-zero rows on every shipped guide that carries one
+    (curated list, current table convention); a shipped guide that predates
+    the convention must never return a SILENT empty pass -- validate_file must
+    surface the honest 'no Timeline Map table found' WARN instead. Across the
+    full glob, every file must satisfy one of the two -- never neither."""
+
+    # Guides on the current "Timeline Map" table convention (EP09's corrected
+    # v01 among them -- the file the real bug and this validator both trace to).
+    SHIPPED_WITH_TABLE = [
+        "episode-04/06_edit/ep04_capcut_guide_v01.md",
+        "episode-05/06_edit/ep05_capcut_guide_v01.md",
+        "episode-07/06_edit/ep07_capcut_guide_v01.md",
+        "episode-08/06_edit/ep08_capcut_guide_v01.md",
+        "episode-09/06_edit/ep09_capcut_guide_v01.md",
+    ]
+
+    # Pre-convention guides (EP01/02/03/06): a different, older table shape.
+    # These must not parse rows (they carry no Timeline Map header at all) but
+    # must never be swallowed as a silent clean pass.
+    LEGACY_NO_TABLE = [
+        "episode-01/06_edit/ep01_capcut_guide_v01.md",
+        "episode-02/06_edit/ep02_capcut_guide_v01.md",
+        "episode-03/06_edit/ep03_capcut_guide_v01.md",
+        "episode-06/06_edit/ep06_capcut_guide_v01.md",
+    ]
+
+    def _read(self, rel):
+        with open(os.path.join(REPO_ROOT, rel), encoding="utf-8") as f:
+            return f.read()
+
+    def test_every_shipped_guide_with_timeline_map_parses(self):
+        for rel in self.SHIPPED_WITH_TABLE:
+            rows = cgv.parse_timeline_table(self._read(rel))
+            self.assertGreater(
+                len(rows), 0,
+                f"{rel} parsed ZERO rows -- the timing checks would silently "
+                "pass over nothing.",
+            )
+
+    def test_ep09_guide_actually_parses(self):
+        # The file the real bug and this validator both trace back to.
+        rows = cgv.parse_timeline_table(
+            self._read("episode-09/06_edit/ep09_capcut_guide_v01.md"))
+        self.assertGreaterEqual(len(rows), 30)
+
+    def test_legacy_guides_surface_an_honest_warn_not_a_silent_pass(self):
+        for rel in self.LEGACY_NO_TABLE:
+            findings = cgv.validate_file(os.path.join(REPO_ROOT, rel), REPO_ROOT)
+            self.assertTrue(findings, f"{rel} must not return a silent empty pass")
+            self.assertTrue(
+                any("no Timeline Map table found" in m for _s, m in findings),
+                f"{rel} must surface the explicit no-table WARN. Got: {findings}",
+            )
+
+    def test_every_glob_matched_file_parses_or_honestly_warns(self):
+        # The strong, glob-driven form: for every shipped guide, either the
+        # table parses non-zero rows, or validate_file surfaces the explicit
+        # "no Timeline Map" WARN -- never a silent, uninspected green.
+        import glob as _glob
+        pattern = os.path.join(REPO_ROOT, "episode-*", "06_edit", "ep*_capcut_guide_v*.md")
+        files = sorted(_glob.glob(pattern))
+        self.assertGreaterEqual(len(files), 9, "expected at least the 9 shipped guides")
+        for path in files:
+            rel = os.path.relpath(path, REPO_ROOT)
+            rows = cgv.parse_timeline_table(self._read(rel))
+            findings = cgv.validate_file(path, REPO_ROOT)
+            has_warn = any("no Timeline Map table found" in m for _s, m in findings)
+            self.assertTrue(
+                rows or has_warn,
+                f"{rel}: zero rows AND no honest warning -- a silent false green.",
+            )
+
+
+class TestCapcutGuideRealTreeStaysGreen(unittest.TestCase):
+    """The whole point: today's real tree must not FAIL. Guides with the
+    Timeline Map convention are fully checked; legacy guides only WARN."""
+
+    def test_no_shipped_guide_fails(self):
+        import glob as _glob
+        pattern = os.path.join(REPO_ROOT, "episode-*", "06_edit", "ep*_capcut_guide_v*.md")
+        for path in sorted(_glob.glob(pattern)):
+            findings = cgv.validate_file(path, REPO_ROOT)
+            fails = [m for s, m in findings if s in ("FAIL", "ERROR")]
+            self.assertEqual(
+                fails, [],
+                f"{os.path.relpath(path, REPO_ROOT)} must not FAIL. Got: {fails}",
+            )
 
 
 if __name__ == "__main__":

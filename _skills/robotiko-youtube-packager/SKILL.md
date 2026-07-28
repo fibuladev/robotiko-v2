@@ -138,7 +138,7 @@ Each episode has a cryptic pinned comment — a breadcrumb for curious viewers. 
 | EP06 | "The bathroom stall hasn't changed since the 1970s. Only the uniform." |
 | EP07 | "Listen to what is not played." |
 | EP08 | "40 is not arbitrary." |
-| EP09 | "Kintsugi. Look it up." |
+| EP09 | "Kintsugi. Look it up. Yamalı hırka. Look deeper." |
 | EP10 | No pinned comment. First silence from the creator. |
 
 **Rule:** Pin this comment immediately after the video goes live. Use the exact text — no additions, no emojis.

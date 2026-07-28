@@ -201,7 +201,7 @@ Pin immediately after the video goes live. Exact text — no additions, no emoji
 | 06 | "The bathroom stall hasn't changed since the 1970s. Only the uniform." |
 | 07 | "Listen to what is not played." |
 | 08 | "40 is not arbitrary." |
-| 09 | "Kintsugi. Look it up." |
+| 09 | "Kintsugi. Look it up. Yamalı hırka. Look deeper." |
 | 10 | No pinned comment. First silence from the creator. |
 
 ---

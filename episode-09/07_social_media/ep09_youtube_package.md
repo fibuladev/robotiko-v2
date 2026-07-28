@@ -151,10 +151,12 @@ shadow debugging, kintsugi android, spoken word sci-fi, glitch is scripture, sha
 ## 4. PINNED COMMENT
 
 ```
-Kintsugi. Look it up.
+Kintsugi. Look it up. Yamalı hırka. Look deeper.
 ```
 
 Pin immediately after video goes live. Exact text. No additions, no emojis.
+
+**Why the two-term form:** kintsugi is the shorthand the global eye reads at a glance; yamalı hırka (the patched cloak) is the root — the searchable door to the mother-tongue meaning. The four-beat structure mirrors the episode's "Deeper than..." refrain. (Human decision, 2026-07-28.)
 
 ---
 
@@ -251,7 +253,7 @@ EP09 remains in **Phase 3** of the About section (EP07-EP09). The credits line n
 - [ ] Replace {PLAYLIST_URL} and {EP08_URL} with actual URLs
 
 ### Post-publish
-- [ ] Pin comment: "Kintsugi. Look it up."
+- [ ] Pin comment: "Kintsugi. Look it up. Yamalı hırka. Look deeper."
 - [ ] Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
 - [ ] Update EP08 description with "Next: The Glitch Is Scripture → {EP09_URL}"
 - [ ] Update banner to v4 (Kintsugi)

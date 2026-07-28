@@ -1,6 +1,11 @@
 # CAPCUT EDIT GUIDE — EP09 "Shadow Debugging"
-> **Version:** v01 | Skill: `_skills/robotiko-capcut-editor/SKILL.md` v1.0
+> **Version:** v01 (corrected) | Skill: `_skills/robotiko-capcut-editor/SKILL.md` v1.0
 > Generated from: `ep09_motion_script_v02.md` (APPROVED) + `ep09_musical_metadata.json`
+>
+> **Correction (2026-07-25):** Scene Dur column recalculated from contiguous timestamps.
+> The original v01 carried gapped durations from the motion script (1s gap between each
+> musical-metadata section), producing a 35s deficit (388s vs 423s music). All Scene Dur,
+> Speed, and Trim values now match the Timestamp spans exactly. Total = 423s. ✅
 > Camera Personality: **The Discovering Camera** — Slow Zoom Out = understanding widens (not retreat)
 > Phase Transition: **@Damaged → @Kintsugi at S27 (4:09)**
 
@@ -100,46 +105,46 @@ motion-script timestamps are cosmetic; butt every clip against the previous one)
 | Shot | Timestamp | Clip File | Scene Dur | Clip Dur | Speed | Trim |
 |------|-----------|-----------|-----------|----------|-------|------|
 | S01 | 0:00–0:14 | 1.mp4 | 14s | 10s | 0.71× | — |
-| S02 | 0:14–0:26 | 2.mp4 | 11s | 10s | 0.91× | — |
-| S03 | 0:26–0:39 | 3.mp4 | 12s | 10s | 0.83× | — |
-| S04 | 0:39–0:49 | 4.mp4 | 9s | 10s | — | trim 1s |
-| S05 | 0:49–0:59 | 5.mp4 | 9s | 10s | — | trim 1s |
-| S06 | 0:59–1:05 | 6.mp4 | 5s | 10s | — | trim 5s |
-| S07 | 1:05–1:12 | 7.mp4 | 6s | 10s | — | trim 4s |
-| S08 | 1:12–1:23 | 8.mp4 | 10s | 10s | — | — |
+| S02 | 0:14–0:26 | 2.mp4 | 12s | 10s | 0.83× | — |
+| S03 | 0:26–0:39 | 3.mp4 | 13s | 10s | 0.77× | — |
+| S04 | 0:39–0:49 | 4.mp4 | 10s | 10s | — | — |
+| S05 | 0:49–0:59 | 5.mp4 | 10s | 10s | — | — |
+| S06 | 0:59–1:05 | 6.mp4 | 6s | 10s | — | trim 4s |
+| S07 | 1:05–1:12 | 7.mp4 | 7s | 10s | — | trim 3s |
+| S08 | 1:12–1:23 | 8.mp4 | 11s | 10s | 0.91× | — |
 | S09 | 1:23–1:28 | 9.mp4 | 5s | 10s | — | trim 5s |
 | S10 | 1:28–1:34 | 10.mp4 | 6s | 10s | — | trim 4s |
-| S11 | 1:34–1:40 | 11.mp4 | 5s | 10s | — | trim 5s (Mode B) |
-| S12 | 1:40–1:50 | 12.mp4 | 9s | 10s | — | trim 1s |
-| S13 | 1:50–1:56 | 13.mp4 | 5s | 10s | — | trim 5s |
-| S14 | 1:56–2:05 | 14.mp4 | 8s | 10s | — | trim 2s |
-| S15 | 2:05–2:11 | 15.mp4 | 5s | 10s | — | trim 5s |
-| S16 | 2:11–2:21 | 16.mp4 | 9s | 10s | — | trim 1s |
-| S17 | 2:21–2:31 | 17.mp4 | 9s | 10s | — | trim 1s |
-| S18 | 2:31–2:41 | 18.mp4 | 9s | 10s | — | trim 1s |
-| S19 | 2:41–2:52 | 19.mp4 | 10s | 10s | — | — |
-| S20 | 2:52–3:02 | 20.mp4 | 9s | 10s | — | trim 1s |
-| S21 | 3:02–3:12 | 21.mp4 | 9s | 10s | — | trim 1s |
-| S22 | 3:12–3:18 | 22.mp4 | 5s | 10s | — | trim 5s |
-| S23 | 3:18–3:30 | 23.mp4 | 11s | 10s | 0.91× | — |
-| S24 | 3:30–3:43 | 24.mp4 | 12s | 10s | 0.83× | — |
-| S25 | 3:43–3:57 | 25.mp4 | 13s | 10s | 0.77× | — |
-| S26 | 3:57–4:08 | 26.mp4 | 10s | 10s | — | — |
+| S11 | 1:34–1:40 | 11.mp4 | 6s | 10s | — | trim 4s (Mode B) |
+| S12 | 1:40–1:50 | 12.mp4 | 10s | 10s | — | — |
+| S13 | 1:50–1:56 | 13.mp4 | 6s | 10s | — | trim 4s |
+| S14 | 1:56–2:05 | 14.mp4 | 9s | 10s | — | trim 1s |
+| S15 | 2:05–2:11 | 15.mp4 | 6s | 10s | — | trim 4s |
+| S16 | 2:11–2:21 | 16.mp4 | 10s | 10s | — | — |
+| S17 | 2:21–2:31 | 17.mp4 | 10s | 10s | — | — |
+| S18 | 2:31–2:41 | 18.mp4 | 10s | 10s | — | — |
+| S19 | 2:41–2:52 | 19.mp4 | 11s | 10s | 0.91× | — |
+| S20 | 2:52–3:02 | 20.mp4 | 10s | 10s | — | — |
+| S21 | 3:02–3:12 | 21.mp4 | 10s | 10s | — | — |
+| S22 | 3:12–3:18 | 22.mp4 | 6s | 10s | — | trim 4s |
+| S23 | 3:18–3:30 | 23.mp4 | 12s | 10s | 0.83× | — |
+| S24 | 3:30–3:43 | 24.mp4 | 13s | 10s | 0.77× | — |
+| S25 | 3:43–3:57 | 25.mp4 | 14s | 10s | 0.71× | — |
+| S26 | 3:57–4:08 | 26.mp4 | 11s | 10s | 0.91× | — |
 | S27a | 4:08–4:18 | 27.mp4 | 10s | 10s | — | (Mode B) |
-| S27b | 4:18–4:28 | 27b.mp4 | 9s | 10s | — | trim 1s |
-| S28 | 4:28–4:39 | 28.mp4 | 10s | 10s | — | — |
-| S29 | 4:39–4:52 | 29.mp4 | 12s | 10s | 0.83× | — |
-| S30 | 4:52–5:04 | 30.mp4 | 11s | 10s | 0.91× | — |
-| S31 | 5:04–5:17 | 31.mp4 | 12s | 10s | 0.83× | — |
-| S32 | 5:17–5:31 | 32.mp4 | 13s | 10s | 0.77× | — |
-| S33 | 5:31–5:45 | 33.mp4 | 13s | 10s | 0.77× | — |
-| S34 | 5:45–6:00 | 34.mp4 | 14s | 10s | 0.71× | Chain 1 START |
+| S27b | 4:18–4:28 | 27b.mp4 | 10s | 10s | — | — |
+| S28 | 4:28–4:39 | 28.mp4 | 11s | 10s | 0.91× | — |
+| S29 | 4:39–4:52 | 29.mp4 | 13s | 10s | 0.77× | — |
+| S30 | 4:52–5:04 | 30.mp4 | 12s | 10s | 0.83× | — |
+| S31 | 5:04–5:17 | 31.mp4 | 13s | 10s | 0.77× | — |
+| S32 | 5:17–5:31 | 32.mp4 | 14s | 10s | 0.71× | — |
+| S33 | 5:31–5:45 | 33.mp4 | 14s | 10s | 0.71× | — |
+| S34 | 5:45–6:00 | 34.mp4 | 15s | 10s | 0.67× | Chain 1 START |
 | S35a | 6:00–6:10 | 35.mp4 | 10s | 10s | — | Chain 1 |
-| S35b | 6:10–6:20 | 35b.mp4 | 9s | 10s | — | trim 1s / Chain 1 END |
+| S35b | 6:10–6:20 | 35b.mp4 | 10s | 10s | — | Chain 1 END |
 | S36a | 6:20–6:30 | 36.mp4 | 10s | 10s | — | Chain 2 START |
-| S36b | 6:30–6:40 | ⚠️ 36b.mp4 | 9s | 10s | — | trim 1s / Chain 2 END |
-| S37 | 6:40–6:55 | ⚠️ 37.mp4 | 14s | 10s | 0.71× | — |
-| S38 | 6:55–7:03 | 38.mp4 | 7s | 10s | — | trim 3s |
+| S36b | 6:30–6:40 | ⚠️ 36b.mp4 | 10s | 10s | — | Chain 2 END |
+| S37 | 6:40–6:55 | ⚠️ 37.mp4 | 15s | 10s | 0.67× | — |
+| S38 | 6:55–7:03 | 38.mp4 | 8s | 10s | — | trim 2s |
 
 > **Total timeline = 423s = music duration.** ✅ No gaps.
 
@@ -147,24 +152,28 @@ motion-script timestamps are cosmetic; butt every clip against the previous one)
 
 ## 4. SPEED RAMP TABLE
 
-Only the 13 clips needing a speed curve. Apply via **Speed → Curve** (smooth, not linear stutter).
-All ramps are within the 1.5× slowdown limit.
+Only the 17 clips needing a speed curve. Apply via **Speed → Curve** (smooth, not linear stutter).
+All ramps are within the 1.5× slowdown limit (0.67× = exactly 1.5×).
 
 | Clip | Shot | Native | Playback Speed | Target Dur | Notes |
 |------|------|--------|----------------|------------|-------|
 | 1.mp4 | S01 | 10s | 0.71× | 14s | The Myth — slow descent |
-| 2.mp4 | S02 | 10s | 0.91× | 11s | The Puncture |
-| 3.mp4 | S03 | 10s | 0.83× | 12s | Held silence |
-| 23.mp4 | S23 | 10s | 0.91× | 11s | "I AM THE BUG" apex |
-| 24.mp4 | S24 | 10s | 0.83× | 12s | The Collapse |
-| 25.mp4 | S25 | 10s | 0.77× | 13s | **Still Hold** — deepest ramp |
-| 29.mp4 | S29 | 10s | 0.83× | 12s | Lighting flip |
-| 30.mp4 | S30 | 10s | 0.91× | 11s | Full Kintsugi |
-| 31.mp4 | S31 | 10s | 0.83× | 12s | Frame that glows |
-| 32.mp4 | S32 | 10s | 0.77× | 13s | It holds me |
-| 33.mp4 | S33 | 10s | 0.77× | 13s | "I—" suspended |
-| 34.mp4 | S34 | 10s | 0.71× | 14s | Dawn pull begins |
-| ⚠️ 37.mp4 | S37 | 10s | 0.71× | 14s | The Dawn (pending render) |
+| 2.mp4 | S02 | 10s | 0.83× | 12s | The Puncture |
+| 3.mp4 | S03 | 10s | 0.77× | 13s | Held silence |
+| 8.mp4 | S08 | 10s | 0.91× | 11s | Digital Solomon — bass drone |
+| 19.mp4 | S19 | 10s | 0.91× | 11s | Doom — first tribal drum hit |
+| 23.mp4 | S23 | 10s | 0.83× | 12s | "I AM THE BUG" apex |
+| 24.mp4 | S24 | 10s | 0.77× | 13s | The Collapse |
+| 25.mp4 | S25 | 10s | 0.71× | 14s | **Still Hold** — deepest ramp |
+| 26.mp4 | S26 | 10s | 0.91× | 11s | Saz grief — paradox held |
+| 28.mp4 | S28 | 10s | 0.91× | 11s | Kintsugi build — gold pouring |
+| 29.mp4 | S29 | 10s | 0.77× | 13s | Lighting flip |
+| 30.mp4 | S30 | 10s | 0.83× | 12s | Full Kintsugi |
+| 31.mp4 | S31 | 10s | 0.77× | 13s | Frame that glows |
+| 32.mp4 | S32 | 10s | 0.71× | 14s | It holds me |
+| 33.mp4 | S33 | 10s | 0.71× | 14s | "I—" suspended |
+| 34.mp4 | S34 | 10s | 0.67× | 15s | Dawn pull begins |
+| ⚠️ 37.mp4 | S37 | 10s | 0.67× | 15s | The Dawn (pending render) |
 
 ---
 
@@ -292,7 +301,7 @@ and before export.
 - [ ] Both pending clips rendered & placed (36b.mp4, 37.mp4)
 - [ ] Every shot has its clip on the timeline (41 total)
 - [ ] No timeline gaps — total = 423s (±1s)
-- [ ] All 13 speed ramps match the table exactly
+- [ ] All 17 speed ramps match the table exactly
 - [ ] All 15 beat-sync anchors verified frame-level
 - [ ] Transitions: hard cut default + one fade-to-black (S38 only); zero light leaks (Amber discipline)
 - [ ] Chromatic aberration on S22 / S23 / S14 only

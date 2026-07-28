@@ -209,6 +209,11 @@ rewritten for two-frame continuity (quoted verbatim; it names the end frame as
 model had nothing left to invent — the widening frame now had a known place to
 travel *to*, so it interpolated between two truths instead of fabricating one.
 
+**Watch this case on camera:** [one of the four failed Mode A generations, and the
+Mode B rescue](https://youtu.be/r9VQNRv57dY) — the invented set dressing appears as
+the frame widens, marked in red as it happens. (A note on terms: Mode A/B counts
+*keyframes*; the Omni character reference is present in both generations.)
+
 **The pattern (memorize this):**
 
 > A widening frame is an invitation to hallucinate. When the reveal matters, do not

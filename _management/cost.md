@@ -69,5 +69,17 @@ instead of €72.00. The subtotal reflects the actual payments (4 × €72 + 1 �
 
 ---
 
+## Context
+
+AI video generation platforms typically run on a credit economy — a fixed
+monthly allocation where a single 10-second 1080p clip can consume a third of
+the budget. At those rates, ~485 clips would require years of subscription time
+or five-figure credit purchases. This pipeline's cost stays low not because the
+tools are cheap, but because it decides what to generate before anything renders,
+and reference-anchored prompts raise first-pass yield so fewer generations are
+wasted.
+
+---
+
 *Costs are disclosed in the same spirit as the AI-transparency stance: from day one,
 nothing about how this was made is hidden.*

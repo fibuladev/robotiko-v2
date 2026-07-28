@@ -6,6 +6,28 @@
 
 ---
 
+## SESSION NOTE (2026-07-25) — EP09 CAPCUT SYNC BUG: FIXED + VALIDATOR ADDED
+
+EP09 montajında 35s senkron kaybı tespit edildi — kök neden: musical metadata'daki 1s section gap'leri motion script'e olduğu gibi taşındı (EP01-08'de doğru şekilde kapatılıyordu, EP09-10'da regresyon). CapCut guide timestamps'ı bitişik yaptı ama Scene Dur sütununu güncellemedi → 41 sahneden 35'i 1s kısa.
+
+**Yapılanlar:**
+- [x] EP09 CapCut guide düzeltildi: Scene Dur, Speed (13→17 ramp), Trim sütunları yeniden hesaplandı
+- [x] `capcut_guide_validator.py` yazıldı: Scene Dur = Timestamp span, contiguity, total = music duration, speed/trim doğruluğu
+- [x] Validator `run_all.py`'ye eklendi (12/12 green)
+- [x] EP10 motion script aynı gap'a sahip — CapCut guide oluşturulurken dikkat edilecek
+- [x] Lesson kaydedildi: "CLOSE THE METADATA GAPS IN MOTION SCRIPTS"
+- [x] **(2026-07-28 completion)** Grade-the-graders debt closed before commit: frozen fixtures (`capcut_guide_GOOD/BAD.md`) + 18 meta-tests (both-directions speed proof, isolation, parser coverage, legacy-WARN honesty test) + invariant coverage matrix row. Legacy finding: EP01/02/03/06 guides predate the Timeline Map format → explicit WARN, never silent pass. Suite 12/12 green (245 meta-tests).
+
+**EP10 NOT:** Motion script gap'leri EP10'da da var. CapCut guide oluşturulurken timestamps bitişik yapılacak VE Scene Dur = Timestamp span olacak. Validator otomatik yakalayacak.
+
+---
+
+## SESSION NOTE (2026-07-24) — SUNO DOCUMENTATION PACKAGE: RESOLVED (minimal scope)
+
+Discussion session on documenting the music leg (Suno → BandLab → YouTube). Key finding: the `01_lyrics/epXX_lyrics.md` files already ARE the verbatim Suno lyrics-box inputs (production annotations included — verified line-by-line on EP01). Decisions: NO per-episode `epXX_suno_generation.md` files, NO music craft doc, NO Suno/BandLab share links (YouTube stays the sole canonical link) — the repo does not aim to teach Suno usage. Only deliverable landed: music rights sentence in AUTHOR.md (paid-plan commercial rights + forker warning) merged into the tool-credit litany, plus signature fix (Can Yalçın / Bratislava, 2026). Commit `6fd31a0`, suite 11/11 green, pushed.
+
+---
+
 ## SESSION NOTE (2026-07-13)
 
 Launch plan revised in private working files. Public docs: gate-count consistency pass — all current-truth prose now says three human gates (commit `eb187a2`), suite 11/11 green.

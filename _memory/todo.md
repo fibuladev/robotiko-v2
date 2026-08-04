@@ -6,6 +6,45 @@
 
 ---
 
+## SESSION NOTE (2026-08-04) — EP10 CAPCUT GUIDE v01 GENERATED
+
+All 37 EP10 clips rendered (`05_video/raw/`). CapCut guide written: `episode-10/06_edit/ep10_capcut_guide_v01.md`. Suite 12/12 green, CapCut validator clean.
+
+**Two structural findings:**
+1. **Gap closure (the EP09 bug, prevented not repeated).** Motion script carried the 1s metadata gaps → 34s deficit across 35 scenes. Closed by extending each scene to the next scene's start; all 35 scene STARTS preserved, so all 9 musical section boundaries (28/47/60/81/142/164/179/195s) still land on scene starts and all 15 beat-sync anchors survive. Total = 274s exactly.
+2. **Rendered clips ≠ motion script's nominal durations.** Measured every file with ffprobe: clips came back at 3.04s / 5.04s / 6.04s / 7.04s / 8.04s / 9.04s / 10.04s / 11.04s, not the planned 5s/10s. Result: **28 speed ramps instead of the planned 5** (max 1.41×, limit 1.5×) + 5 trims. Both lessons written to `_memory/lessons.md`.
+
+**Open decisions for Fibula (in the guide's PRE-FLIGHT):**
+- [ ] `34b.mp4` (S34b — The Beckon, the series' final shot) rendered at **720p** while everything else is 1080p. Re-render at 1080p, or accept?
+- [ ] S35 end-card text — never written down anywhere; text proposed in §8, needs approval
+- [ ] `10b.mp4` confirmed as the S10 keeper (named after its end keyframe; no `10.mp4` exists)
+- [ ] Refrain onsets (3:33 / 3:45 / 3:54 / 4:08 / 4:16) are motion-script estimates — confirm against the final track before locking S30–S34b
+
+**Creative calls made in the guide:** zero transitions (no dissolve — one continuous walk; no light leak — Amber Pulse discipline, S10 is the only amber; **no fade to black** — the gong is a hard cut, "sound and cut are one event"). Zero chromatic aberration (no damage in EP10). Grain constant, no crescendo. Color reference = S30, with the pre-dawn→morning journey explicitly protected from Color Match flattening.
+
+**Next:** the edit itself → export → `ep10_sync_qc_v01.md` (min 5 spot-checks).
+
+---
+
+## SESSION NOTE (2026-08-01) — DEV.TO ARTICLE DRAFTS: REVIEWED + FIXES APPLIED
+
+4 dev.to article drafts ("Directing AI Films" series) deep-reviewed by 5 parallel agents against the repo tree. Findings: 4 STALE numbers, 2 RISKY phrasings, 2 duplicate anecdotes, 1 compliance note, 3 MISSING (experiential — accepted). All fixes applied to the English drafts + `docs/method-lesson-graduation.md` (stale gap example). Turkish copies created for Fibula's deep read. AWAITING Fibula's final text approval of both English and Turkish versions before marking APPROVED.
+
+**Fixes applied:**
+- [x] Coverage matrix: 40/29 → 41/30 Machine (Articles 1 + 4)
+- [x] Meta-test count: 227 → 245 (Article 1)
+- [x] Rule count: ~125 → ~135 (Article 3)
+- [x] "AI film" phrasing removed (Articles 2 + 3)
+- [x] "sha256 fingerprint" consistency (Article 4)
+- [x] "Retreating Camera" named + cross-reference added (Article 4)
+- [x] EP09 S30 duplicate compressed (Article 4)
+- [x] Stale eye-rule gap example removed (docs/method-lesson-graduation.md)
+- [x] Turkish copies created + numbers synced (4 files in _private/launch_strategy/)
+
+**Status:** AWAITING Fibula's final read of English + Turkish drafts.
+
+---
+
 ## SESSION NOTE (2026-07-25) — EP09 CAPCUT SYNC BUG: FIXED + VALIDATOR ADDED
 
 EP09 montajında 35s senkron kaybı tespit edildi — kök neden: musical metadata'daki 1s section gap'leri motion script'e olduğu gibi taşındı (EP01-08'de doğru şekilde kapatılıyordu, EP09-10'da regresyon). CapCut guide timestamps'ı bitişik yaptı ama Scene Dur sütununu güncellemedi → 41 sahneden 35'i 1s kısa.

@@ -15,7 +15,7 @@ All 37 EP10 clips rendered (`05_video/raw/`). CapCut guide written: `episode-10/
 2. **Rendered clips ≠ motion script's nominal durations.** Measured every file with ffprobe: clips came back at 3.04s / 5.04s / 6.04s / 7.04s / 8.04s / 9.04s / 10.04s / 11.04s, not the planned 5s/10s. Result: **28 speed ramps instead of the planned 5** (max 1.41×, limit 1.5×) + 5 trims. Both lessons written to `_memory/lessons.md`.
 
 **Open decisions for Fibula (in the guide's PRE-FLIGHT):**
-- [ ] `34b.mp4` (S34b — The Beckon, the series' final shot) rendered at **720p** while everything else is 1080p. Re-render at 1080p, or accept?
+- [x] **`34b.mp4` RESOLVED (2026-08-04): 720p keeper ACCEPTED.** Kling could not execute the open-palm beckon (read it as presenter-style arm movement); the keeper was generated with Google (Veo/Gemini), which got the gesture right. Gesture wins over pixels on the series' final shot. Probing surfaced two things the resolution question was hiding: the clip is **1.9 Mbps** (vs 11.5 on its neighbour) and it is the **only clip in the episode with an audio track** — must be detached/muted or synthetic ambience plays under the final gong. Guide PRE-FLIGHT §1 rewritten with the three mitigations (mute, match the S34a/S34b pair to each other, push S34b grain to ~15%). Two lessons recorded (Kling gesture failure; Google clips carry audio).
 - [ ] S35 end-card text — never written down anywhere; text proposed in §8, needs approval
 - [ ] `10b.mp4` confirmed as the S10 keeper (named after its end keyframe; no `10.mp4` exists)
 - [ ] Refrain onsets (3:33 / 3:45 / 3:54 / 4:08 / 4:16) are motion-script estimates — confirm against the final track before locking S30–S34b

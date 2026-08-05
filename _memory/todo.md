@@ -6,6 +6,17 @@
 
 ---
 
+## SESSION NOTE (2026-08-05b) — EP10 FINAL EDIT ASSEMBLED BY FIBULA
+
+**The CapCut edit is done — by hand, by ear.** Fibula assembled the final timeline personally; the guide served as blueprint but was not applied 1:1 — several clips slowed or trimmed differently, tuned to the beat by ear. This is the intended division of labor (guide = score, human = performance) and the deviations are deliberate artistic calls, not errors. `10b.mp4` = S10 keeper confirmed verbally. Refrain-onset estimates resolved by ear at the edit.
+
+**Remaining for EP10 delivery:**
+- [ ] Export per guide §10 — 1080p, 24fps, H.265, 35–60 Mbps → `ep10_final_v01.mp4` (E: MEDIA partition; ~275s with the 5s E card)
+- [ ] **`ep10_sync_qc_v01.md`** after export — min 5 timestamped spot-checks from guide §5 (recommend #1 first footstep 0:28, #4 Amber Pulse 1:06, #12 refrain 1, #14 scream, #17 gong cut). Where the edit deliberately deviates from guide timestamps, verdict = ACCEPTED-DEVIATION + one-line reason — that is exactly what the category exists for.
+- [ ] Then: "Package EP10 for YouTube" (separate session) → launch-day sequence (private runbook)
+
+---
+
 ## SESSION NOTE (2026-08-05) — EP10 S34b RE-RENDER APPROVED + END-CARD VARIANTS
 
 **S34b final keeper = Seedance 2.0 via Dreamina (re-render 2026-08-05).** ffprobe: 1920×1080, 13.5 Mbps (neighbour 34.mp4 is 11.5), 24fps, **no audio track**, 5.04s. Art-director review PASSED: character continuity with S34a holds (patchwork, copper patches, antenna, blue lenses, kintsugi seams, meadow + toppled-∞ ring + mist all match), framing is a legitimate same-axis punch-in, approved smile override reads friendly-not-uncanny, gesture arc = gather → open palm offered to the lens (EP01's handshake answered). All three old Google-keeper problems (720p / 1.9 Mbps / audio under the gong) are gone.
@@ -26,8 +37,8 @@ All 37 EP10 clips rendered (`05_video/raw/`). CapCut guide written: `episode-10/
 **Open decisions for Fibula (in the guide's PRE-FLIGHT):**
 - [x] **`34b.mp4` RESOLVED (2026-08-04): 720p keeper ACCEPTED.** Kling could not execute the open-palm beckon (read it as presenter-style arm movement); the keeper was generated with Google (Veo/Gemini), which got the gesture right. Gesture wins over pixels on the series' final shot. Probing surfaced two things the resolution question was hiding: the clip is **1.9 Mbps** (vs 11.5 on its neighbour) and it is the **only clip in the episode with an audio track** — must be detached/muted or synthetic ambience plays under the final gong. Guide PRE-FLIGHT §1 rewritten with the three mitigations (mute, match the S34a/S34b pair to each other, push S34b grain to ~15%). Two lessons recorded (Kling gesture failure; Google clips carry audio).
 - [x] S35 end-card text — **RESOLVED 2026-08-05: `endcard_E.png`** (THIS SERIES IS OPEN SOURCE. / one film told in ten episodes / URL), 5s card, export 275s
-- [ ] `10b.mp4` confirmed as the S10 keeper (named after its end keyframe; no `10.mp4` exists)
-- [ ] Refrain onsets (3:33 / 3:45 / 3:54 / 4:08 / 4:16) are motion-script estimates — confirm against the final track before locking S30–S34b
+- [x] `10b.mp4` confirmed as the S10 keeper — **CONFIRMED by Fibula 2026-08-05** ("evet, tam olarak böyle")
+- [x] Refrain onsets — **RESOLVED at the edit 2026-08-05**: Fibula locked S30–S34b boundaries by ear against the final track during the CapCut session
 
 **Creative calls made in the guide:** zero transitions (no dissolve — one continuous walk; no light leak — Amber Pulse discipline, S10 is the only amber; **no fade to black** — the gong is a hard cut, "sound and cut are one event"). Zero chromatic aberration (no damage in EP10). Grain constant, no crescendo. Color reference = S30, with the pre-dawn→morning journey explicitly protected from Color Match flattening.
 

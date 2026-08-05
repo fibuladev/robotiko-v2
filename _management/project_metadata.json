@@ -17,7 +17,7 @@
     "lyrics_music": "Suno AI",
     "musical_metadata": "Claude (robotiko-musical-metadata skill, from human BPM/Key/timestamped lyrics)",
     "image_generation": "Nano Banana",
-    "video_generation": ["Kling", "Veo", "Seedance 1.0"],
+    "video_generation": ["Kling", "Veo", "Seedance 1.0", "Seedance 2.0 (Dreamina)"],
     "editing": "CapCut",
     "llm_director": "Claude (Opus)",
     "version_control": "GitHub",
@@ -213,7 +213,7 @@
         "visuals": true,
         "video": true
       },
-      "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Dramaturgy v01 APPROVED 2026-07-06 (gate-1 recorded; 35 scenes; S34 revised at review — head-tilt warmth + open-palm beckon, mouthless-face guard). Visual prompts v02 COMPLETE 2026-07-08 (two-phase: 6 env refs approved + 40 scene prompts framed to pixels). Raw images REVIEWED 2026-07-12 (40/40 scenes approved; S13/S20 prompt fixes applied; S34b pick = 34b_1.png with intentional smile override). Motion script v01 APPROVED 2026-07-12 (gate-2 recorded; 37 clips, Companion Camera, MS avg 3.03, validator-green). Video generation COMPLETE 2026-08-04 (37/37 clips rendered in 05_video/raw/). CapCut guide v01 generated 2026-08-04 (metadata gaps closed, timeline = 274s, clip durations measured from the rendered files). Next: the edit, then the sync-QC record. The finale — release day = open-source go-public day."
+      "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Dramaturgy v01 APPROVED 2026-07-06 (gate-1 recorded; 35 scenes; S34 revised at review — head-tilt warmth + open-palm beckon, mouthless-face guard). Visual prompts v02 COMPLETE 2026-07-08 (two-phase: 6 env refs approved + 40 scene prompts framed to pixels). Raw images REVIEWED 2026-07-12 (40/40 scenes approved; S13/S20 prompt fixes applied; S34b pick = 34b_1.png with intentional smile override). Motion script v01 APPROVED 2026-07-12 (gate-2 recorded; 37 clips, Companion Camera, MS avg 3.03, validator-green). Video generation COMPLETE 2026-08-04 (37/37 clips rendered in 05_video/raw/; S34b re-rendered 2026-08-05 with Seedance 2.0 via Dreamina — 1080p keeper, art-director review passed). CapCut guide v01 generated 2026-08-04 (metadata gaps closed, timeline = 274s, clip durations measured from the rendered files). Next: the edit, then the sync-QC record. The finale — release day = open-source go-public day."
     }
   },
 

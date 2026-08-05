@@ -6,6 +6,15 @@
 
 ---
 
+## SESSION NOTE (2026-08-05) — EP10 S34b RE-RENDER APPROVED + END-CARD VARIANTS
+
+**S34b final keeper = Seedance 2.0 via Dreamina (re-render 2026-08-05).** ffprobe: 1920×1080, 13.5 Mbps (neighbour 34.mp4 is 11.5), 24fps, **no audio track**, 5.04s. Art-director review PASSED: character continuity with S34a holds (patchwork, copper patches, antenna, blue lenses, kintsugi seams, meadow + toppled-∞ ring + mist all match), framing is a legitimate same-axis punch-in, approved smile override reads friendly-not-uncanny, gesture arc = gather → open palm offered to the lens (EP01's handshake answered). All three old Google-keeper problems (720p / 1.9 Mbps / audio under the gong) are gone.
+**One watch item:** Dreamina "Ai" watermark top-left (x 36–95, y 50–90 px) — sits fully under the 2.35:1 letterbox top bar (131 px) with ~40 px margin; verify in export preview. Lesson recorded.
+**Timeline updated in guide:** S34 internal boundary moved 4:23 → **4:24** (S34a holds its full 8.04s — the look gains a second; S34b runs 5.04s → 6s at gentle 0.84× and the offered palm lands on the gong). Ramp count 28 → 29, trims 5 → 3. Validator green.
+**End card:** 3 finished 1920×1080 PNGs rendered to `episode-10/05_video/raw/` — `endcard_A.png` (THE FULL SCORE IS PUBLIC., Georgia), `endcard_B.png` (*I came to walk beside.*, Palatino italic), `endcard_C.png` (8 → ∞, Segoe UI Light); all with the URL in Consolas at 75% white. Guide §8 has the pick-one recipe. **AWAITING Fibula's pick.**
+
+---
+
 ## SESSION NOTE (2026-08-04) — EP10 CAPCUT GUIDE v01 GENERATED
 
 All 37 EP10 clips rendered (`05_video/raw/`). CapCut guide written: `episode-10/06_edit/ep10_capcut_guide_v01.md`. Suite 12/12 green, CapCut validator clean.

@@ -369,20 +369,26 @@ The gong strikes → **hard cut to black** → white text on black → out. Buil
    appears with the black and leaves with it.
 3. **Exclude S35 from the Adjustment Layer** — no LUT, no grain, no vignette on the card. Pure black,
    pure white. The letterbox stays (it is the project format).
-4. **Don't build the text in CapCut** — three finished 1920×1080 card PNGs are ready in
-   `episode-10/05_video/raw/` (rendered 2026-08-05, typography locked, centered inside the 2.35:1 band).
-   Pick one, drag it onto the timeline at 4:30, set its duration, done:
+4. **Don't build the text in CapCut** — finished 1920×1080 card PNGs are ready in
+   `episode-10/05_video/raw/` (typography locked, centered inside the 2.35:1 band).
+   Pick one, drag it onto the timeline at 4:30, set its duration, done.
 
-   | File | Line | Voice |
+   **The card must explain itself to a stranger** (director's note, 2026-08-05): a viewer who has never
+   heard of the project sees this card cold on YouTube. Art alone doesn't tell them what the URL is or
+   why they should care. The solution is a three-tier hierarchy — the poem keeps the top (the episode's
+   voice), a plain-English line in the middle carries the meaning, the door sits at the bottom:
+
+   | File | Structure | Reading load |
    |---|---|---|
-   | `endcard_A.png` | **THE FULL SCORE IS PUBLIC.** (Georgia serif) + URL (Consolas mono) | The Brecht payoff — the apparatus handed over, stated plainly |
-   | `endcard_B.png` | ***I came to walk beside.*** (Palatino italic) + URL (Consolas mono) | The refrain's last breath — the URL becomes the poem's next line |
-   | `endcard_C.png` | **8 → ∞** (Segoe UI Light glyphs) + URL (Consolas mono) | The series' entire arc in three characters — no words at all |
+   | `endcard_D.png` | ***I came to walk beside.*** / Every prompt, script and decision behind this film is public. / URL | 10 words — comfortable at 4s |
+   | `endcard_E.png` | **THIS SERIES IS OPEN SOURCE.** / Story, prompts, pipeline — the complete making of ten films. / URL | 12 words — comfortable at 4–5s |
+   | `endcard_F.png` | ***I came to walk beside.*** / One human wrote the story and built the pipeline. GenAI brought it to life. All of it is open source. / URL | 18 words — **needs the 5s card** |
 
-   All three share the same grammar: one statement in the episode's voice, then the door in terminal
-   monospace — the card is the exact seam where the film ends and the repository begins, and the type
-   says so. URL sits at 75% white so the statement leads. **Pick one — your call.** (If a wording tweak
-   is wanted, the render commands are one-line ffmpeg `drawtext` calls — ask and it's re-rendered.)
+   *(The first-round variants A/B/C — single art line + URL, no explanation — remain in the same folder
+   if the cryptic-poetic direction is preferred after all.)*
+
+   The URL sits at 65% white so the statement leads; the middle tier at 85%. **Pick one — your call.**
+   (Any wording tweak is a one-line ffmpeg `drawtext` re-render — ask.)
 
 > **Card length:** the concept notes say 5s; the music leaves 4s (the gong lands at 4:30, the track ends
 > at 4:34). Two honest options: hold the card 4s and end with the audio (export = 274s, what this guide

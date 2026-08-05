@@ -69,10 +69,11 @@ Several clips came back at 1916×1080, 1920×1076 or 1924×1076 instead of exact
 project these leave hairline black edges. **Fix once, globally:** select all clips → Scale to ~101% so
 every frame fills. The 2.35:1 letterbox then crops the residue anyway.
 
-### 5. S35 end-card text needs your approval
+### 5. S35 end card — ✅ RESOLVED (2026-08-05): `endcard_E.png` picked
 
-The card is specified everywhere as "GitHub end screen, white text on black" but its exact wording has
-never been written down. Proposed text in §8 — **your call before export.**
+Fibula's pick after two design rounds: **E — "THIS SERIES IS OPEN SOURCE."** The headline opens the
+door correctly for a stranger; whoever walks in finds the poem, the story and the engineering on their
+own. Build spec in §8. E's reading load (19 words) means **use the 5s card** — see §8's card-length note.
 
 **Audio:** the final EP10 WAV lives on Google Drive (fibuladev account); only the metadata JSON is local.
 
@@ -359,11 +360,11 @@ Seedance 2.0 re-render matches its neighbour technically. Only the §9 color-pai
 
 **The one thing you build by hand:**
 
-### S35 — THE EDIT CARD (4:30–4:34)
+### S35 — THE EDIT CARD (4:30–4:35 — the last second rides past the audio)
 
 The gong strikes → **hard cut to black** → white text on black → out. Build it on the timeline:
 
-1. Black background clip, 4s, starting exactly at **4:30** (the gong's attack frame — verify frame by
+1. Black background clip, **5s**, starting exactly at **4:30** (the gong's attack frame — verify frame by
    frame; this cut is the album's final gesture).
 2. White text, centered, no animation — **no fade in, no fade out, no motion-graphics preset.** The card
    appears with the black and leaves with it.
@@ -378,26 +379,28 @@ The gong strikes → **hard cut to black** → white text on black → out. Buil
    why they should care. The solution is a three-tier hierarchy — the poem keeps the top (the episode's
    voice), a plain-English line in the middle carries the meaning, the door sits at the bottom:
 
-   | File | Structure | Reading load |
-   |---|---|---|
-   | `endcard_D.png` | ***I came to walk beside.*** / One film, ten episodes — every prompt and decision behind it is public. / URL | 17 words — 4s workable, 5s comfortable |
-   | `endcard_E.png` | **THIS SERIES IS OPEN SOURCE.** / Story, prompts, pipeline — the complete making of one film told in ten episodes. / URL | 19 words — **prefer the 5s card** |
-   | `endcard_F.png` | ***I came to walk beside.*** / One human wrote the story and built the pipeline. GenAI brought it to life. All of it is open source. / URL | 23 words — **needs the 5s card** |
+   **✅ THE CARD IS PICKED (Fibula, 2026-08-05): `endcard_E.png`**
 
-   > **"One film told in ten episodes"** (director's wording, 2026-08-05): the middle line deliberately
-   > reframes the series as a single long-form film — it signals character continuity and a complete arc
-   > to a stranger, and it is the honest claim (one story, one protagonist, 8 → ∞). The headline keeps
-   > "SERIES" (what the YouTube viewer *thinks* they watched); the middle line upgrades it.
+   > **THIS SERIES IS OPEN SOURCE.**
+   > Story, prompts, pipeline — the complete making of one film told in ten episodes.
+   > `github.com/fibuladev/robotiko-v2`
 
-   *(The first-round variants A/B/C — single art line + URL, no explanation — remain in the same folder
-   if the cryptic-poetic direction is preferred after all.)*
+   Rationale (director's words): *the headline opens the door the right way — whoever steps inside will
+   find the poem, the story and the engineering for themselves.* The middle line carries the
+   **"one film told in ten episodes"** reframe: character continuity + complete arc + long-form claim in
+   one phrase; the headline keeps "SERIES" (what the viewer thinks they watched) and the line upgrades it.
 
-   The URL sits at 65% white so the statement leads; the middle tier at 85%. **Pick one — your call.**
+   19 words → **use the 5s card** (see card-length note below). Drag `endcard_E.png` onto the timeline at
+   4:30, duration 5s, done. *(Variants A–D and F remain in the same folder as archive — D was the
+   runner-up: the poem-led version of the same grammar.)*
+
+   The URL sits at 65% white so the statement leads; the middle tier at 85%.
    (Any wording tweak is a one-line ffmpeg `drawtext` re-render — ask.)
 
-> **Card length:** the concept notes say 5s; the music leaves 4s (the gong lands at 4:30, the track ends
-> at 4:34). Two honest options: hold the card 4s and end with the audio (export = 274s, what this guide
-> assumes), or let it run 5s over the gong's decay tail (export = 275s). Either is fine — decide before export.
+> **Card length — RESOLVED with the E pick: 5s.** The gong lands at 4:30, the track ends at 4:34; the
+> card runs 4:30–4:35, riding the gong's decay and holding one breath beyond it. **Export = 275s** (the
+> final second is silent black-with-text — intentional). The 274s timeline in §3 is unchanged; only the
+> card's tail extends past the audio.
 
 ---
 
@@ -473,7 +476,7 @@ This is the last episode of the series — do not lose the timeline.
 - [ ] Global scale ≈101% — no hairline black edges from the odd frame sizes
 - [ ] **Dreamina "Ai" watermark invisible in export preview** at 4:24–4:30 (sits under the top letterbox bar — Pre-Flight §1)
 - [ ] S34a/S34b pair matched to each other: no color step at the 4:24 cut (different generators)
-- [ ] S35 card: hard cut on the gong, text approved, excluded from the Adjustment Layer, no animation
+- [ ] S35 card = `endcard_E.png` (PICKED 2026-08-05): hard cut on the gong at 4:30, 5s duration (export 275s), excluded from the Adjustment Layer, no animation
 - [ ] Zero transitions: no dissolve, no light leak, **no fade to black**
 - [ ] Zero chromatic aberration, zero freeze frames
 - [ ] Export: 1080p, H.265, 35–60 Mbps, 24fps

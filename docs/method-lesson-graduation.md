@@ -299,10 +299,10 @@ The honest entries the ladder does not close:
   cannot fully attribute an adjective to a subject, so it is marked Heuristic and
   backed by the reliable, metadata-based reference gate — trusted *together*, never
   alone.
-- **Named gaps.** Some rules are simply not enforced yet — the no-glow eye rule, for
-  one — and the matrix names them as gaps rather than implying coverage that does
-  not exist. A gap you have named is a backlog item; a gap you have hidden is a blind
-  spot with a badge of safety.
+- **Named gaps.** Some rules are simply not enforced yet, and the matrix names
+  them as gaps rather than implying coverage that does not exist. A gap you
+  have named is a backlog item; a gap you have hidden is a blind spot with a
+  badge of safety.
 
 The point of the whole method is not to automate judgement. It is to mechanize
 everything that *isn't* judgement, so that when a green run comes back, it certifies

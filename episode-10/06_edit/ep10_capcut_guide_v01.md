@@ -380,9 +380,14 @@ The gong strikes → **hard cut to black** → white text on black → out. Buil
 
    | File | Structure | Reading load |
    |---|---|---|
-   | `endcard_D.png` | ***I came to walk beside.*** / Every prompt, script and decision behind this film is public. / URL | 10 words — comfortable at 4s |
-   | `endcard_E.png` | **THIS SERIES IS OPEN SOURCE.** / Story, prompts, pipeline — the complete making of ten films. / URL | 12 words — comfortable at 4–5s |
-   | `endcard_F.png` | ***I came to walk beside.*** / One human wrote the story and built the pipeline. GenAI brought it to life. All of it is open source. / URL | 18 words — **needs the 5s card** |
+   | `endcard_D.png` | ***I came to walk beside.*** / One film, ten episodes — every prompt and decision behind it is public. / URL | 17 words — 4s workable, 5s comfortable |
+   | `endcard_E.png` | **THIS SERIES IS OPEN SOURCE.** / Story, prompts, pipeline — the complete making of one film told in ten episodes. / URL | 19 words — **prefer the 5s card** |
+   | `endcard_F.png` | ***I came to walk beside.*** / One human wrote the story and built the pipeline. GenAI brought it to life. All of it is open source. / URL | 23 words — **needs the 5s card** |
+
+   > **"One film told in ten episodes"** (director's wording, 2026-08-05): the middle line deliberately
+   > reframes the series as a single long-form film — it signals character continuity and a complete arc
+   > to a stranger, and it is the honest claim (one story, one protagonist, 8 → ∞). The headline keeps
+   > "SERIES" (what the YouTube viewer *thinks* they watched); the middle line upgrades it.
 
    *(The first-round variants A/B/C — single art line + URL, no explanation — remain in the same folder
    if the cryptic-poetic direction is preferred after all.)*

@@ -8,7 +8,7 @@ This project taught me something I could not have learned from a deployment log:
 
 The repository is open. Take it. Build yours. Tell your story. Teach us new things.
 
-Can Yalçın
+Can Yalçın  
 Bratislava, 2026
 
 I came to walk beside.

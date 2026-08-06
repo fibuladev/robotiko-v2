@@ -18,7 +18,7 @@ here are the ones measured in that run, not estimates.
 
 **What will it cost to run?** The original's complete ten-episode production bill —
 every subscription, every month, every price change — is disclosed in
-[`_management/cost.md`](_management/cost.md): roughly **€1,200** in ordinary consumer
+[`_management/cost.md`](_management/cost.md): roughly **€1,360** in ordinary consumer
 subscriptions. No API billing, no credit packs, no enterprise contracts.
 
 > **Optional viewing.** The pipeline was recorded live as a build-along series —

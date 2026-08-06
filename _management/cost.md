@@ -46,7 +46,7 @@ KLING was not renewed for August — video generation wrapped with the July cycl
 > Combined total uses an indicative rate of 1 EUR ≈ 1.08 USD (2026 average range).
 > The per-currency subtotals above are the exact, auditable figures.
 
-**The headline: the entire series — roughly €1,350.**
+**The headline: the entire series — roughly €1,360.**
 
 ---
 

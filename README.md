@@ -124,7 +124,7 @@ Everything here is countable in the repo:
 | Commits of tracked history | **160+** (run `git rev-list --count HEAD`) |
 | Tested lessons rules | **125** ([`_memory/lessons.md`](_memory/lessons.md)) |
 | Total runtime, ten episodes | **69:51** (sum of the ten musical-metadata durations) |
-| Full production cost | **≈ €1,210** in consumer subscriptions — disclosed line by line in [`_management/cost.md`](_management/cost.md) |
+| Full production cost | **≈ €1,360** in consumer subscriptions — disclosed line by line in [`_management/cost.md`](_management/cost.md) |
 
 ---
 

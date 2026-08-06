@@ -1,5 +1,5 @@
 # ROBOTIKO v2.0 — PRODUCTION COST
-> **Status:** Final (as of July 2026, public-repo readiness)
+> **Status:** Final (as of August 2026, launch)
 > This document discloses the full production cost of the project — every subscription,
 > every month, every price change. The project is transparent about being AI-made;
 > it is equally transparent about what being AI-made costs.
@@ -22,15 +22,16 @@ a similar project, this is the real number.
 
 | Tool | Role in the Pipeline | Period | Monthly | Months | Subtotal |
 |---|---|---|---|---|---|
-| **Claude Max 5x** | The direction & automation layer — Claude Code: dramaturgy, visual prompts, motion scripts, validators, packaging, this very file | Feb – Jun 2026 | €110.70 | 5 | **€553.50** |
+| **Claude Max 5x** | The direction & automation layer — Claude Code: dramaturgy, visual prompts, motion scripts, validators, packaging, this very file | Feb – Jul 2026 | €110.70 | 6 | **€664.20** |
 | **KLING AI Premier** | Primary video generation (image-to-video, Elements, Omni references) | Mar – Jul 2026 | €72.00 (Jul: €87.00)* | 5 | **€375.00** |
-| **Suno AI** | Music generation — all ten songs | Dec 2025 – Jul 2026 | $12.30 | 8 | **$98.40** |
-| **BandLab** | Audio editing & mastering — artifact cleanup, patch fixes, final masters (stem separation itself happens in Suno) | Feb – Jul 2026 | $14.95 | 6 | **$89.70** |
-| **Google AI Plus (200GB)** | Image generation (Nano Banana) + the 200GB Drive storage behind the pipeline's binary/asset sync | Dec 2025 – Jul 2026 | €7.99 | 8 | **€63.92** |
-| **CapCut Pro** | Video editing; includes 1,200 Seedance credits (auxiliary video generation) | Feb – Jul 2026 | €7.50 | 6 | **€45.00** |
+| **Suno AI** | Music generation — all ten songs | Dec 2025 – Aug 2026 | $12.30 | 9 | **$110.70** |
+| **BandLab** | Audio editing & mastering — artifact cleanup, patch fixes, final masters (stem separation itself happens in Suno) | Feb – Aug 2026 | $14.95 | 7 | **$104.65** |
+| **Google AI Plus (200GB)** | Image generation (Nano Banana) + the 200GB Drive storage behind the pipeline's binary/asset sync | Dec 2025 – Aug 2026 | €7.99 | 9 | **€71.91** |
+| **CapCut Pro** | Video editing; includes 1,200 Seedance credits (auxiliary video generation) | Feb – Aug 2026 | €7.50 | 7 | **€52.50** |
 
 \* *KLING repriced the Premier tier in July 2026: the final month was billed at €87.00
-instead of €72.00. The subtotal reflects the actual payments (4 × €72 + 1 × €87).*
+instead of €72.00. The subtotal reflects the actual payments (4 × €72 + 1 × €87).
+KLING was not renewed for August — video generation wrapped with the July cycle.*
 
 ---
 
@@ -38,14 +39,14 @@ instead of €72.00. The subtotal reflects the actual payments (4 × €72 + 1 �
 
 | Currency | Total |
 |---|---|
-| EUR subscriptions | **€1,037.42** |
-| USD subscriptions | **$188.10** |
-| **Combined (approx.)** | **≈ €1,210 / ≈ $1,310** |
+| EUR subscriptions | **€1,163.61** |
+| USD subscriptions | **$215.35** |
+| **Combined (approx.)** | **≈ €1,360 / ≈ $1,470** |
 
 > Combined total uses an indicative rate of 1 EUR ≈ 1.08 USD (2026 average range).
 > The per-currency subtotals above are the exact, auditable figures.
 
-**The headline: the entire series — roughly €1,200.**
+**The headline: the entire series — roughly €1,350.**
 
 ---
 
@@ -57,9 +58,9 @@ instead of €72.00. The subtotal reflects the actual payments (4 × €72 + 1 �
 - **No extra purchases.** No credit top-ups, no plan upgrades beyond the listed
   subscriptions, no API usage billing. Everything in the repo was built within these
   monthly plans.
-- **Billing cycles.** As of July 2026 the Claude Max subscription is running on the
-  June payment; if the launch window (early August) requires another cycle, that
-  payment is not yet reflected here.
+- **Billing cycles.** The launch-window cycle (August 2026) is paid and reflected for
+  every tool still in use. KLING is the one exception: production's video generation
+  wrapped with the July cycle, so no August payment was needed.
 - **What is NOT counted:** hardware (a consumer PC), electricity, internet — and the
   human's time. Roughly eight months of steady evening work — one to two hours most
   weeknights: writing, listening, approving, rejecting, re-approving. Weekends stayed

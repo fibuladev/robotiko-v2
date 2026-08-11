@@ -529,6 +529,14 @@ The full-resolution renders are produced by external tools (Suno, Nano Banana, K
 Veo) and live outside the git tree by design; the repo tracks the instructions and the
 proof, not the gigabytes. Judge the *rule*, not the pixel count.
 
+The full-resolution images that *are* in the tree — the character reference masters in
+[`_assets/cast/`](../_assets/cast/) — are the other half of that same rule. They are
+**inputs**: reproducing the process means feeding the generation tools the same
+full-resolution references the originals used, so they ship whole. The frames on this
+page are **outputs**, so they ship as 640px proof, and the finished films — the
+deliverable — are public on YouTube. Inputs ship full, outputs ship as proof, the
+product ships on screen.
+
 ### Where the surviving set under-delivers
 
 Called out in place above, collected here for honesty:

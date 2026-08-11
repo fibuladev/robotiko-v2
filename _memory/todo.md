@@ -84,7 +84,7 @@ EP09 montajında 35s senkron kaybı tespit edildi — kök neden: musical metada
 
 ## SESSION NOTE (2026-07-24) — SUNO DOCUMENTATION PACKAGE: RESOLVED (minimal scope)
 
-Discussion session on documenting the music leg (Suno → BandLab → YouTube). Key finding: the `01_lyrics/epXX_lyrics.md` files already ARE the verbatim Suno lyrics-box inputs (production annotations included — verified line-by-line on EP01). Decisions: NO per-episode `epXX_suno_generation.md` files, NO music craft doc, NO Suno/BandLab share links (YouTube stays the sole canonical link) — the repo does not aim to teach Suno usage. Only deliverable landed: music rights sentence in AUTHOR.md (paid-plan commercial rights + forker warning) merged into the tool-credit litany, plus signature fix (Can Yalçın / Bratislava, 2026). Commit `1a3ee2f`, suite 11/11 green, pushed.
+Discussion session on documenting the music leg (Suno → BandLab → YouTube). Key finding: the `01_lyrics/epXX_lyrics.md` files already ARE the verbatim Suno lyrics-box inputs (production annotations included — verified line-by-line on EP01). Decisions: NO per-episode `epXX_suno_generation.md` files, NO music craft doc, NO Suno/BandLab share links (YouTube stays the sole canonical link) — the repo does not aim to teach Suno usage. Only deliverable landed: music rights sentence in AUTHOR.md (paid-plan commercial rights + forker warning) merged into the tool-credit litany, plus signature fix (Can Yalçın / Bratislava, 2026). Commit `45931dd`, suite 11/11 green, pushed.
 
 ---
 

@@ -6,6 +6,16 @@
 
 ---
 
+## SESSION NOTE (2026-08-12) — VISUAL CANON RATIONALE + POINTER MAINTENANCE
+
+`docs/visual-canon.md` gains the input/output resolution rationale: inputs —
+the `_assets/cast/` reference masters — ship full because reproduction
+requires them; the 70 frames are outputs, shipped as 640px proof; the
+finished films are the deliverable, public on YouTube. Commit reference
+pointers refreshed. Suite 12/12 green.
+
+---
+
 ## SESSION NOTE (2026-08-05b) — EP10 FINAL EDIT ASSEMBLED BY FIBULA
 
 **The CapCut edit is done — by hand, by ear.** Fibula assembled the final timeline personally; the guide served as blueprint but was not applied 1:1 — several clips slowed or trimmed differently, tuned to the beat by ear. This is the intended division of labor (guide = score, human = performance) and the deviations are deliberate artistic calls, not errors. `10b.mp4` = S10 keeper confirmed verbally. Refrain-onset estimates resolved by ear at the edit.

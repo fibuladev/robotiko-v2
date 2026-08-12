@@ -131,7 +131,7 @@ The Still Hold: Robotiko stops in the full-morning meadow and turns one calm loo
 
 **Alternative 1:** S27 — The Hand (3:10). The tea glass extended toward the lens, steam in morning light. The series' most quotable gesture, but the gaze is deliberately down (below the lens) — weaker eye contact at grid size.
 
-**Alternative 2:** S15 — The Moon-Sun Sky (1:45). Both celestial bodies in one dawn sky, Robotiko small on the ridge line between them. The series' epigraph resolved — iconic, but a distant figure (fails the face-visible rule). Better suited as banner v5 source material than as the thumbnail.
+**Alternative 2:** S15 — The Moon-Sun Sky (1:45). Both celestial bodies in one dawn sky, Robotiko small on the ridge line between them. The series' epigraph resolved — iconic, but a distant figure (fails the face-visible rule). Considered as banner source material; not used (see §8 — the channel keeps its single launch banner).
 
 **Alternative 3:** S10 — The Amber Pulse (1:06). Hand on the Mentor's staff, sunrise catching the amber tip. Emotionally dense, but the meaning needs series context; weak cold-viewer click.
 
@@ -177,9 +177,11 @@ Next: I Came to Walk Beside → {EP10_URL}
 
 EP10 release day completes the visual arc and opens the repo:
 
-- **Banner v5** — creator strategy trigger: "EP10 release day." Source material suggestion: S15 Moon-Sun ridge sky or S32 wide meadow-road (the widest warmth of the film).
+- **Banner** — the channel keeps its launch banner (chrome android head, eyes foreground) as the single banner across all ten episodes. YouTube's all-device safe-area crop reduces the banner to a wide horizontal strip; the head-and-eyes composition is the one that survives that crop intact, so it carries the whole series rather than a phased arc. `_assets/banners/banner_v1_spec.md` remains the only banner spec, now read as the series' permanent one.
 - **About → Phase 4** — final state of the channel About text.
 - **AUTHOR.md** becomes visible with the public repo — no channel action needed, but the About section may now link the repo directly.
+- **Channel Links section** — add the GitHub repo link (https://github.com/fibuladev/robotiko-v2).
+- **About contact field** — set the business-inquiries email (fibuladev@gmail.com).
 - Credits line is present tense everywhere: "The full production pipeline is open source."
 
 ---
@@ -206,7 +208,9 @@ EP10 release day completes the visual arc and opens the repo:
 - [ ] **Do NOT pin a comment** — first silence from the creator
 - [ ] Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
 - [ ] Update EP09 description with "Next: I Came to Walk Beside → {EP10_URL}"
-- [ ] Banner v5 live; About Phase 4 live
+- [ ] About Phase 4 live (banner unchanged — single banner across the series)
+- [ ] GitHub repo link added to channel Links section
+- [ ] Business-inquiries email (fibuladev@gmail.com) set in About contact field
 - [ ] Verify end-card and description repo links resolve from a logged-out browser
 - [ ] Verify thumbnail at mobile size
 

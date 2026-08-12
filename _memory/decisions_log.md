@@ -112,4 +112,14 @@ From late June 2026 onward, architectural decisions are recorded as Architecture
 
 ---
 
+## 2026-08-12 — Single Banner Across the Series
+
+### Channel Banner — Arc Retired in Favor of One Composition
+- **Decision:** The YouTube channel keeps its launch banner (chrome android head, eyes foreground) as the single banner across all ten episodes. Supersedes the "Living Evolution" banner-phase plan recorded under 2026-02-23 FOUNDATION DECISIONS ("Banner evolves every 2-3 episodes to reflect Robotiko's arc").
+- **Reason:** YouTube's all-device safe-area crop reduces any banner to a wide horizontal strip. The head-and-eyes composition is the one that survives that crop intact; the figure/body compositions planned for v2-v5 do not. One strong composition, proven against the platform's own crop, carries the series better than a phased arc.
+- **Status:** `_assets/banners/banner_v1_spec.md` remains the only banner spec ever produced — it is now the series' permanent banner rather than a Phase-1-only asset. The banner-evolution table (`creator_strategy.md`, `robotiko-launch-orchestrator/SKILL.md`) stays in place as the designed mechanism, available to forks that want an evolving banner.
+- **Superseding note:** per this log's convention, the 2026-02-23 entry above is left intact; this entry is the current word on the channel banner.
+
+---
+
 *Add new decisions below as production progresses.*

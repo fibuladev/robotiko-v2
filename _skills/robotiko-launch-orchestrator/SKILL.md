@@ -109,6 +109,14 @@ If a banner update is due after this episode's launch, flag it as an action item
 Banner specs: `_assets/banners/banner_v{N}_spec.md`
 ```
 
+**Production reality:** in ROBOTIKO's own run, the channel kept a single banner
+across all ten episodes rather than phasing through this table. YouTube's
+all-device safe-area crop reduces the banner to a wide horizontal strip, and
+one strong head-and-eyes composition (the launch banner) outperformed a
+phased arc — figure/full-body compositions lose too much to the crop to read
+at any phase. The table above remains the designed mechanism, live for forks
+that want an evolving banner.
+
 ---
 
 ## CROSS-EPISODE CONTINUITY CHECKS
@@ -161,7 +169,7 @@ EP10 description: "The ten-episode arc is complete. The pipeline is open source:
   - [ ] All skills reviewed for reusability
   - [ ] _management/master.md locked (final version)
   - [ ] Announcement post drafted for all platforms
-- [ ] Banner v5 uploaded (full Kintsugi)
+- [ ] Banner reviewed (ROBOTIKO run: single banner retained by decision)
 - [ ] About section updated to Phase 4 (includes open source link)
 - [ ] Final project_metadata.json update: all episodes marked "completed"
 - [ ] EP10 has NO pinned comment — first silence from the creator

@@ -82,7 +82,7 @@ Wide cinematic banner composition, 2560x1440 aspect ratio. Right side: a pristin
 
 ## BANNER EVOLUTION REFERENCE
 
-This is Banner v1. Future versions:
+This spec was originally designed as Banner v1 of a five-stage evolving arc:
 
 | Phase | Episodes | Banner Change |
 |-------|----------|---------------|
@@ -92,7 +92,13 @@ This is Banner v1. Future versions:
 | v4 | EP08-09 | Dark with golden light seeping through cracks |
 | v5 | EP10 (release day onward) | Full Kintsugi — cracked but whole, gold light from within |
 
-Each banner update aligns with a YouTube About section update at the same phase boundary.
+**Decision (2026-08-12): single banner, series-wide.** This composition is the
+one banner the channel runs for all ten episodes — see `_memory/decisions_log.md`
+(2026-08-12 entry) for the full reasoning: YouTube's all-device safe-area crop
+reduces the banner to a wide horizontal strip, and this head-and-eyes
+composition is the one that survives it; the v2-v5 figure/body compositions
+above were never produced. The table stays here as the designed mechanism,
+available to forks that want an evolving banner.
 
 ---
 

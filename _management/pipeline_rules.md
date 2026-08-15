@@ -76,7 +76,7 @@ Each gate is recorded **as data** in `_management/approvals.json` — one entry 
 
 ## PHASE 3: VISUAL PRODUCTION
 
-Visual prompts are generated in **two phases separated by a hard human gate** (the Reference Gate, 1R). The old single-pass flow wrote reference prompts and ALL scene prompts at once against a text contract, then generated the reference images afterward — a reconciliation "Framing Pass" was "never a blocker" and in practice was skipped (REF B reframe, commit `a98acbc`: the REF block was updated, 40 scenes never re-checked). The two-phase split makes reference-first (ADR-0007) structural: refs are authored and approved as real pixels BEFORE any scene is framed to them.
+Visual prompts are generated in **two phases separated by a hard human gate** (the Reference Gate, 1R). The old single-pass flow wrote reference prompts and ALL scene prompts at once against a text contract, then generated the reference images afterward — a reconciliation "Framing Pass" was "never a blocker" and in practice was skipped (REF B reframe, commit `60cabd2`: the REF block was updated, 40 scenes never re-checked). The two-phase split makes reference-first (ADR-0007) structural: refs are authored and approved as real pixels BEFORE any scene is framed to them.
 
 ### Step 5a: Reference Authoring (Phase 1)
 - **Input:**
@@ -118,7 +118,7 @@ Between Phase 1 and Phase 2. **Phase 2 does not begin until it clears. Never ski
 ### Production Rule: B-Residue Backstop (Late Reference Edits)
 > **If any environment reference is edited AFTER Phase 2 has begun, every scene mapped to that reference's space in the scene→space coverage map MUST be re-verified against the new pixels before delivery.**
 
-This is the structural fix for the exact failure that motivated the two-phase redesign: a REF block was reframed (REF B, commit `a98acbc`) and the 40 dependent scenes were never re-checked against it. The scene→space coverage map (Step 5a) is the "which scenes" index — it names precisely which scenes a given ref edit invalidates. This rule is **human-gated**: confirming that new pixels still satisfy each scene's intent is semantic, not machine-lintable; CI can only surface the v01 sha-drift WARN as a partial signal. Also lives in `_skills/robotiko-visual-prompts/SKILL.md` (section 2.8).
+This is the structural fix for the exact failure that motivated the two-phase redesign: a REF block was reframed (REF B, commit `60cabd2`) and the 40 dependent scenes were never re-checked against it. The scene→space coverage map (Step 5a) is the "which scenes" index — it names precisely which scenes a given ref edit invalidates. This rule is **human-gated**: confirming that new pixels still satisfy each scene's intent is semantic, not machine-lintable; CI can only surface the v01 sha-drift WARN as a partial signal. Also lives in `_skills/robotiko-visual-prompts/SKILL.md` (section 2.8).
 
 ### Step 6: Image Generation
 - **Tool:** Nano Banana (using scene prompts from Step 5b)

@@ -94,13 +94,13 @@ EP09 montajında 35s senkron kaybı tespit edildi — kök neden: musical metada
 
 ## SESSION NOTE (2026-07-24) — SUNO DOCUMENTATION PACKAGE: RESOLVED (minimal scope)
 
-Discussion session on documenting the music leg (Suno → BandLab → YouTube). Key finding: the `01_lyrics/epXX_lyrics.md` files already ARE the verbatim Suno lyrics-box inputs (production annotations included — verified line-by-line on EP01). Decisions: NO per-episode `epXX_suno_generation.md` files, NO music craft doc, NO Suno/BandLab share links (YouTube stays the sole canonical link) — the repo does not aim to teach Suno usage. Only deliverable landed: music rights sentence in AUTHOR.md (paid-plan commercial rights + forker warning) merged into the tool-credit litany, plus signature fix (Can Yalçın / Bratislava, 2026). Commit `45931dd`, suite 11/11 green, pushed.
+Discussion session on documenting the music leg (Suno → BandLab → YouTube). Key finding: the `01_lyrics/epXX_lyrics.md` files already ARE the verbatim Suno lyrics-box inputs (production annotations included — verified line-by-line on EP01). Decisions: NO per-episode `epXX_suno_generation.md` files, NO music craft doc, NO Suno/BandLab share links (YouTube stays the sole canonical link) — the repo does not aim to teach Suno usage. Only deliverable landed: music rights sentence in AUTHOR.md (paid-plan commercial rights + forker warning) merged into the tool-credit litany, plus signature fix (Can Yalçın / Bratislava, 2026). Commit `7e5690d`, suite 11/11 green, pushed.
 
 ---
 
 ## SESSION NOTE (2026-07-13)
 
-Launch plan revised in private working files. Public docs: gate-count consistency pass — all current-truth prose now says three human gates (commit `b1c64aa`), suite 11/11 green.
+Launch plan revised in private working files. Public docs: gate-count consistency pass — all current-truth prose now says three human gates (commit `49c0035`), suite 11/11 green.
 
 ---
 
@@ -158,7 +158,7 @@ Launch plan revised in private working files. Public docs: gate-count consistenc
 
 ## TWO-PHASE VISUAL PROMPTS REDESIGN SESSION (2026-07-07) — COMPLETE
 
-**Task:** Redesign the visual-prompts pipeline so scenes are framed to APPROVED reference pixels, not conjured from a text contract — closing three gaps found in the shipped flow. GAP A: template / `visual_dna.md` / public docs were a generation behind the SKILL. GAP B: a late ref edit forced no scene re-verification (the REF B reframe, commit `a98acbc`, updated a block while 40 scenes went un-re-checked). GAP C: the "3+ scenes = 1 ref" heuristic under-decomposed locations (EP10's REF E/F found late). Panel-reviewed plan (7 adversarial lenses); scope = SKILL + docs + validator methodology only.
+**Task:** Redesign the visual-prompts pipeline so scenes are framed to APPROVED reference pixels, not conjured from a text contract — closing three gaps found in the shipped flow. GAP A: template / `visual_dna.md` / public docs were a generation behind the SKILL. GAP B: a late ref edit forced no scene re-verification (the REF B reframe, commit `60cabd2`, updated a block while 40 scenes went un-re-checked). GAP C: the "3+ scenes = 1 ref" heuristic under-decomposed locations (EP10's REF E/F found late). Panel-reviewed plan (7 adversarial lenses); scope = SKILL + docs + validator methodology only.
 
 **Shipped:**
 - **SKILL v2.0 — two-phase structure:** Phase 1 (reference authoring + operational decomposition test + through-anchors + REF block schema + ART DIRECTION LOCKS + scene→space coverage map + Phase-1 sentinel; ZERO scene prompts) → ⛔ HARD STOP gate 1R → Phase 2 (batch verification pass, re-anchor mandate, ref-less scene gate, per-space camera ledger, loop-back rules, completeness check; scenes framed to real pixels). Framing Pass retired (Phase 2 IS the framing pass).
@@ -198,7 +198,7 @@ Launch plan revised in private working files. Public docs: gate-count consistenc
 **Deliverable:** `episode-10/03_direction/ep10_dramaturgy_v01.md` — 35 scenes (34 image-generated + 1 edit card S35), 4:34 (274s), 9 musical sections, all 12 concept overrides realized and marked.
 **Key structure:** Intro (world-first / shutter opens / threshold) → V1-V3 town walk (first footstep on first stomp-clap, duality objects, faces + fractal rhyme, waymark staff Amber Pulse, steadfast souls) → 60s break on the ridge (Moon-Sun sky, crane flock, far-slope destination plant) → V4-V5 descent (tower distant, loops powerless, embers, binary stripes, gold seam, descent lands on "Piercing the peaks") → V6 meadow (toppled-∞ ordinary, two glasses one pot, THE HAND) → Finale (tracks, 3 refrains, THE WAIT grammar break, scream = peak, THE LOOK Still Hold, gong = GitHub end screen).
 **Interpretation choices flagged for Fibula:** (1) communal shepherd's kettle on embers as the tea source (avoids carried-prop continuity, echoes S21 embers), (2) travelers' cloth strips on the staff, (3) S33 scream energy = wind/flare/dew (no birds — spawn risk), (4) refrain onsets estimated inside the 79s finale (to confirm on final track).
-**Also fixed:** master.md Language Arc header drift (EP10 "Spoken Word" → sung, commit 0536d6f); project_metadata.json ep10 dramaturgy=true (state-machine sync — validation suite green, 10/10 groups).
+**Also fixed:** master.md Language Arc header drift (EP10 "Spoken Word" → sung, commit be2a115); project_metadata.json ep10 dramaturgy=true (state-machine sync — validation suite green, 10/10 groups).
 **Next step:** Fibula reviews and approves dramaturgy (gate-1 → approvals.json entry with sha256) → visual prompts in a NEW session (reference-first: 4 refs before any scene image).
 **UPDATE (same day):** APPROVED 2026-07-06 with one revision, applied immediately — S34 "The Look" became "The Look and the Beckon": the held look resolves into a soft head tilt (the machine's smile — face verified mouthless against `android_kintsugi.png`; literal smile would invent a mouth = design break) + one open-palm beckon toward the lens; gong cuts on the offered hand. Propagated to concept notes Override 12 (+ three-beats section). Gate-1 recorded (sha256 e48833b9…); gate-0 concept sha re-baselined (535c74b2…). NEXT SESSION: "Generate visual prompts for EP10" (reference-first).
 
@@ -256,9 +256,9 @@ Remaining 0.20 to 5.0 = EP10 film + post-launch community proof + time.
 
 ## SESSION PAUSE NOTE (2026-07-05, usage limit)
 
-Committed: WS1 40def70 (doc-rot sweep + architecture v3.0 + metadata sync + doc-reference
-lint, 9th check group) · WS2-gates 128a770 (approvals.json, disk/metadata state machine,
-M4 real fix, 79 meta-tests) · WS8 e3cd13d (community files) · WS-H 3dc446b
+Committed: WS1 c895b7b (doc-rot sweep + architecture v3.0 + metadata sync + doc-reference
+lint, 9th check group) · WS2-gates e752b42 (approvals.json, disk/metadata state machine,
+M4 real fix, 79 meta-tests) · WS8 4e954c1 (community files) · WS-H 8890ce5
 (hallucinating-camera.md + S30 case; tutorial TAKE 06 is local-only, _tutorial gitignored).
 
 **IN FLIGHT when paused — 3 subagents were editing the working tree; their changes may be

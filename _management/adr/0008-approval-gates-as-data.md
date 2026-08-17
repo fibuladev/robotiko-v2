@@ -88,3 +88,17 @@ recorded in the same `_management/approvals.json` ledger described above (gate `
 and enforced by the same `pipeline_integrity.py` machinery. The two-gate description in
 this ADR reflects the pipeline as it stood at decision time; the gate-as-data mechanism
 was designed to extend to exactly this kind of addition, and did so without schema change.
+
+---
+
+**Update (2026-08-18):** Three points where the text above has been overtaken, recorded
+rather than rewritten. (1) **The gate count is three, not two:** gate `1R` (references
+approved) was added by [ADR 0013](0013-two-phase-visual-prompts.md), as the Addendum
+already establishes, and the `gates` map in `_management/approvals.json` now defines
+exactly `1`, `1R` and `2`. (2) **EP10 is no longer a scaffold** and does carry entries:
+four of them - gate `1` (dramaturgy, 2026-07-06), gate `1R` (references, 2026-07-07),
+gate `2` (motion script, 2026-07-12), plus one gate `0` record dated 2026-07-06. (3)
+That gate `0` id is defined by no ADR, so it is defined here: it is a **step-order
+waiver record, not a human quality gate**. EP10's concept notes were authored before the
+musical metadata JSON by design, and the entry records that deviation honestly - which
+is why it sits outside the `gates` map of human checkpoints.

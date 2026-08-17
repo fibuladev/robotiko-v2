@@ -39,3 +39,13 @@ the `damaged` reference as its base plus text/chain refs.
 - New episodes add an override entry instead of re-teaching the rule.
 - Risk: the map can drift from production reality. Mitigated by the ref-integrity
   check running in CI on every visual-prompt file.
+
+---
+
+**Update (2026-08-18):** Phase 3 is no longer reference-less. The dedicated Phase-3
+reference `_assets/cast/android_kintsugi.png` was added 2026-06-28 and is now the
+`kintsugi` entry's `path` in `_assets/cast/character_profiles.json`. The `damaged`
+reference stays allowed alongside it for the EP09 S27-S28 transition — where the body
+is still mostly damaged with emerging gold — exactly as the validator implements it:
+`tests/visual_prompt_validator.py` keeps the `damaged` paths in the allowed set when the
+resolved reference is `kintsugi`.

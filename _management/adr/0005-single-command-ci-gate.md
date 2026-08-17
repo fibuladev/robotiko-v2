@@ -40,3 +40,14 @@ guarantee has to survive any contributor and any forgotten step.
   free.
 - SHA-pinned actions must be bumped deliberately (a future Dependabot config can
   automate the PRs); this is the accepted trade-off for reproducibility.
+
+---
+
+**Update (2026-08-18):** The single-command decision still holds unchanged — one
+entrypoint, `tests/run_all.py`, run identically local and in CI, blocking on failure.
+Two decision-time descriptions have been overtaken. The suite is no longer the four
+checks named above: `CHECK_GROUPS` now holds **12 check groups** (11 blocking + 1
+advisory), grown exactly the way the ADR predicted — one entry each, CI picked them up
+for free. And the anticipated Dependabot config exists: `.github/dependabot.yml` is
+tracked, covering the GitHub Actions SHAs and the `_tools/mcp-gdrive` npm surface, with
+PR opening held at `open-pull-requests-limit: 0` until the public release.

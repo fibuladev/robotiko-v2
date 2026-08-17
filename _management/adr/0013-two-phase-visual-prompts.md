@@ -118,3 +118,14 @@ The resolved sub-decisions:
 - Cutover is EP10-onward (`TWO_PHASE_FROM_EP = 10`); EP01-EP09 are exempt as a documented
   legacy shape, so there are no perpetual WARNs and no ledger churn. EP10's v02 production
   run — the flow's first live use — is a separate session.
+
+---
+
+**Update (2026-08-18):** D4's prediction did not hold literally, and the record should
+say so. EP10's real gate-1R entry landed 2026-07-07 and pins the frozen Phase-1
+`episode-10/04_visuals/ep10_visual_prompts_v01.md`, so the interim v01 waiver is retired
+— `_management/invariant_coverage_matrix.md` already states this. Phase 2 has since
+shipped `episode-10/04_visuals/ep10_visual_prompts_v02.md`, but the 1R record still pins
+v01 rather than demanding a record of its own: the gate is satisfied by the frozen
+Phase-1 artifact D3 designed it to freeze, not by the v02 this ADR anticipated. The
+suite is green in that state.

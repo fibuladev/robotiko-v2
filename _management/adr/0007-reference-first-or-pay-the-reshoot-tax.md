@@ -60,3 +60,14 @@ reference, THEN write/generate scenes against it.**
   shown live.
 
 **Note on empirical claims (2026-07-10):** The "65-70% image first-pass" and "~80% video first-pass" figures are experiential observations from the director's production notes, not instrumented telemetry — image generation is where the universe is created (dense prompts + reference images can confuse the tools); video generation from a strong image is far more predictable. No automated retry logging exists yet. Raw folders in `04_visuals/raw/` contain unnumbered generation attempts but are not systematically labeled. EP10 adopts a mandatory attempts ledger (`attempts.md` in each `raw/` folder) so the number starts being measured.
+
+---
+
+**Update (2026-08-18):** The attempts ledger was never adopted. No `attempts.md` exists
+anywhere in the tree — not in EP10's `raw/` folders, not in any other episode — and
+`tests/attempts_report.py` describes the ledgers as "a future convention, not a backfill
+obligation" rather than as shipped practice. The reshoot tax therefore stayed
+**unmeasured** through EP10: read the 8-10x regeneration figure above as the director's
+production-note estimate it always was, not as an instrumented number. Separately, the
+build-along "Part 05" material referenced in the Consequences is not part of the public
+tree, so that pointer is to the published video series, not to a file in this repo.

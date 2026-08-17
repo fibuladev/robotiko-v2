@@ -24,7 +24,7 @@ frame. Documented imperfection beats faked polish.
 
 ## The thesis: three warm colors, three meanings
 
-The single strongest finding in the whole set. Across the final three episodes,
+The single strongest finding in the whole set. Across EP07-EP09,
 **three different warm colors carry three different meanings.** They are not
 interchangeable "warm light" — the pipeline treats them as distinct vocabulary,
 and the frames prove the distinction held.
@@ -536,6 +536,12 @@ full-resolution references the originals used, so they ship whole. The frames on
 page are **outputs**, so they ship as 640px proof, and the finished films — the
 deliverable — are public on YouTube. Inputs ship full, outputs ship as proof, the
 product ships on screen.
+
+### The set covers EP01-EP09
+
+EP10 has no frames on this page. The set was assembled while EP10 was still in production,
+and the thesis it argues — three warm colors, three meanings — is an EP07-EP09 argument that
+stands on its own. EP10 frames are a post-premiere addition, not a silent omission.
 
 ### Where the surviving set under-delivers
 

@@ -60,8 +60,9 @@ the open method (see [CONTRIBUTING.md §5](CONTRIBUTING.md#5-pull-request-proces
 get reviewed faster than large ones. `python tests/run_all.py` must pass —
 that's the one gate, enforced identically in CI.
 
-**Branch protection** — the intended rule on `main` is that the
-`validation_suite` CI check is required to pass before merge. That's a
+**Branch protection** — the intended rule on `main` is that the required
+status check is the validation suite's job context `checks` (workflow
+**Validation Suite**), which must pass before merge. That's a
 GitHub repository setting, not something enforceable from inside the repo
 itself, so it can't be verified by reading a file here. It is evidenced in
 the release runbook (kept private) §3: the branch-protection API check runs at

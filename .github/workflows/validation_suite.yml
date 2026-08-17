@@ -1,8 +1,9 @@
 name: Validation Suite
 
-# One gate for the whole repo: naming, pipeline integrity, the visual-prompt
-# sweep, and the validator meta-tests (grade-the-graders). A red here blocks the
-# merge. Everything runs through the single entrypoint `tests/run_all.py`.
+# One gate for the whole repo: all twelve check groups, from naming and pipeline
+# integrity through the validator meta-tests (grade-the-graders) and the
+# forbidden-terms gate. A red here blocks the merge. Everything runs through the
+# single entrypoint `tests/run_all.py`.
 #
 # Dependencies are pinned for reproducibility and supply-chain safety:
 #   - the project code is standard-library only (no `pip install`);

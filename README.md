@@ -78,7 +78,7 @@ The gate is real enough that a commit ([`0eb3bb4`](https://github.com/fibuladev/
 
 ## The art direction, proved on disk
 
-You don't need YouTube to check the look. 70 curated frames are tracked in the repo — one per decisive moment — and the strongest single finding is that across the last three episodes **three different warm colors carry three different meanings**: EP07's amber arrives from outside (received), EP08's fire is orange-red physics (not grace), EP09's kintsugi gold is the only warmth he makes himself.
+You don't need YouTube to check the look. 70 curated frames are tracked in the repo — one per decisive moment — and the strongest single finding is that across EP07-EP09 **three different warm colors carry three different meanings**: EP07's amber arrives from outside (received), EP08's fire is orange-red physics (not grace), EP09's kintsugi gold is the only warmth he makes himself.
 
 <table>
   <tr>
@@ -93,7 +93,7 @@ You don't need YouTube to check the look. 70 curated frames are tracked in the r
   </tr>
 </table>
 
-See the full evidence — every episode, the palette journeys, and the honest caveats where the frames under-deliver — in [docs/visual-canon.md](docs/visual-canon.md).
+See the full evidence — episode by episode, the palette journeys, and the honest caveats where the frames under-deliver — in [docs/visual-canon.md](docs/visual-canon.md).
 
 ---
 

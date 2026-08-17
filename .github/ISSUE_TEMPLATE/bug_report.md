@@ -17,6 +17,7 @@ assignees: ''
 - [ ] Musical Metadata JSON
 - [ ] Concept Notes
 - [ ] Dramaturgy
+- [ ] Reference authoring / Reference gate (1R)
 - [ ] Visual Prompts
 - [ ] Image Generation
 - [ ] Motion Script

@@ -12,8 +12,8 @@ python tests/run_all.py --coverage   # print the coverage summary and exit (no c
 
 This is the single gate. CI runs the identical entrypoint and blocks the merge on
 failure. Code is standard-library only — no `pip install`. `run_all.py` executes
-11 check groups: naming convention, pipeline integrity, visual prompt sweep, prompt
-hygiene, musical metadata, motion script, character profiles, validator
+12 check groups: naming convention, pipeline integrity, visual prompt sweep, prompt
+hygiene, musical metadata, motion script, CapCut guide, character profiles, validator
 meta-tests, doc reference integrity, energy-motion sync (advisory tier —
 its warnings are printed but never block), and the forbidden-terms gate.
 

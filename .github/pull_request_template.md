@@ -23,7 +23,7 @@ EP___
 
 ## Testing
 <!-- How was this tested? -->
-- [ ] `python tests/run_all.py` passed (single gate, ten check groups — see `tests/README.md`)
+- [ ] `python tests/run_all.py` passed (single gate, twelve check groups — see `tests/README.md`)
 - [ ] Manual review completed
 
 ## Related issues

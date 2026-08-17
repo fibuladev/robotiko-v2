@@ -16,7 +16,7 @@ This is a **repo-as-studio**: a single git repository that operates as a complet
 | **Version Control** | GitHub | The brain — text, decisions, and full history of every creative choice |
 | **Binary Storage** | Local disk + Google Drive (custom MCP server) | Heavy assets (PNG, MP4, WAV) live locally and are archived to Google Drive via `_tools/mcp-gdrive/`. Git never stores raw binaries. |
 | **Automation** | GitHub Actions + Python scripts | Episode scaffolding, naming validation, pipeline integrity |
-| **Enforcement** | `tests/` validators behind one gate (`python tests/run_all.py`), run in CI by `validation_suite.yml` | Naming, visual-prompt, pipeline-integrity, hygiene, metadata, motion, character, and meta-test checks |
+| **Enforcement** | `tests/` validators behind one gate (`python tests/run_all.py`), run in CI by `validation_suite.yml` | Naming, pipeline-integrity, visual-prompt, hygiene, metadata, motion, CapCut-guide, character, meta-test, doc-reference, energy-motion, and forbidden-terms checks |
 | **LLM Director / Crew** | Claude (Opus) via Claude Code + VSCode | Dramaturgy, visual prompts, motion scripts, packaging, skill execution |
 | **Music Generation** | Suno (generation) + BandLab (mastering) | Audio production |
 | **Musical Metadata** | Claude (`robotiko-musical-metadata` skill) | Metadata JSON from human-provided BPM, key, and timestamped lyrics |
@@ -188,15 +188,21 @@ robotiko-v2/
 │   └── select_videos.py            # Curate raw → selected (video)
 │
 ├── tests/                          # ENFORCEMENT — CI / QA validators (stdlib only)
-│   ├── run_all.py                  # THE ONE GATE — runs all 10 check groups, non-zero on any fail
+│   ├── run_all.py                  # THE ONE GATE — runs all 12 check groups, non-zero on any fail
 │   ├── naming_check.py             # Filename patterns + episode-number consistency
 │   ├── pipeline_integrity.py       # No silently-skipped pipeline steps
 │   ├── visual_prompt_validator.py  # Suffix · forbidden aesthetics · character phase · ref integrity
 │   ├── prompt_hygiene_lint.py      # Scoped — model-facing prompt strings must be plain-English ASCII
 │   ├── musical_metadata_validator.py # JSON structure · vocabulary · timestamps · total_duration
 │   ├── motion_script_validator.py  # Video suffix · anti-spawn guard · camera diversity quotas
+│   ├── capcut_guide_validator.py   # Edit-guide timing integrity: durations · contiguity · speed/trim
 │   ├── character_profiles_validator.py # Structural validation against character_profiles.schema.json
 │   ├── test_validators.py          # grade-the-graders meta-tests (count grows with every loosening)
+│   ├── doc_reference_check.py      # Backtick-quoted repo paths in load-bearing docs must exist
+│   ├── energy_motion_check.py      # Advisory: motion strength vs musical energy bands
+│   ├── forbidden_terms_gate.py     # No named religion/order/sect/scripture terms in public prose
+│   ├── universe_config.py          # Fork override point — the single source for validator constants
+│   ├── attempts_report.py          # Standalone attempts-ledger reporter (not part of run_all.py)
 │   ├── fixtures/                   # Frozen BROKEN/GOOD regression pair + README.md
 │   └── README.md
 │
@@ -281,14 +287,15 @@ The repo is one machine with five cooperating subsystems. Each maps to a directo
 │    episode status, toolchain, MCP config, global render settings.          │
 ├─────────────────────────────────────────────────────────────────────────┤
 │ 5. ENFORCEMENT    tests/ (one gate) + naming convention + GitHub Actions   │
-│    Guards correctness. `python tests/run_all.py` runs 10 check groups       │
-│    (naming, pipeline integrity, visual prompts, prompt hygiene, musical     │
-│    metadata, motion script, character profiles, meta-tests, doc            │
-│    reference integrity, energy-motion sync [advisory]). CI runs the        │
-│    identical command via validation_suite.yml and blocks the merge on red;  │
-│    create_episode.yml scaffolds episodes on dispatch. naming_convention.md  │
-│    is the contract these enforce. (A write-time naming hook was removed     │
-│    2026-07-04 after proving inert — enforcement lives in CI.)               │
+│    Guards correctness. `python tests/run_all.py` runs 12 check groups      │
+│    (naming, pipeline integrity, visual prompts, prompt hygiene, musical    │
+│    metadata, motion script, CapCut guide, character profiles, meta-tests,  │
+│    doc reference integrity, energy-motion sync [advisory], forbidden       │
+│    terms). CI runs the identical command via validation_suite.yml and      │
+│    blocks the merge on red; create_episode.yml scaffolds episodes on       │
+│    dispatch. naming_convention.md is the contract these enforce. (A        │
+│    write-time naming hook was removed 2026-07-04 after proving inert —     │
+│    enforcement lives in CI.)                                               │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -301,7 +308,7 @@ check and CI are the same command, so a green terminal predicts a green pipeline
 
 | When | Mechanism | Checks |
 |---|---|---|
-| **Locally, before you push** | `python tests/run_all.py` (one gate) | Runs all 10 check groups below in sequence; exits non-zero if any fails. Standard-library only — no `pip install`. |
+| **Locally, before you push** | `python tests/run_all.py` (one gate) | Runs all 12 check groups below in sequence; exits non-zero if any fails. Standard-library only — no `pip install`. |
 | **In CI** | GitHub Actions — [`.github/workflows/validation_suite.yml`](../.github/workflows/validation_suite.yml) | Runs the identical `python tests/run_all.py` on every push and pull request, blocking the merge on failure (Python + action SHAs pinned). [`create_episode.yml`](../.github/workflows/create_episode.yml) scaffolds episodes on `workflow_dispatch`. |
 
 **Historical note:** a write-time Claude Code PostToolUse naming hook
@@ -312,7 +319,7 @@ longer describes it as live.
 
 ### The validation backbone
 
-`tests/run_all.py` is the whole gate. It runs **10 check groups (9 blocking + 1 advisory)**:
+`tests/run_all.py` is the whole gate. It runs **12 check groups (11 blocking + 1 advisory)**:
 
 1. **Naming convention** — `naming_check.py --full` (filename patterns + episode-number consistency; count grows with the repo)
 2. **Pipeline integrity** — `pipeline_integrity.py --full` (no silently-skipped steps / missing gate outputs)
@@ -320,10 +327,12 @@ longer describes it as live.
 4. **Prompt hygiene** — `prompt_hygiene_lint.py --full` (scoped: model-facing prompt strings must be plain-English ASCII; deliberately never reads canon)
 5. **Musical metadata** — `musical_metadata_validator.py --full` (JSON structure, energy/type vocabulary, timestamp monotonicity, total_duration match)
 6. **Motion script** — `motion_script_validator.py --full` (video suffix, anti-spawn guard, camera diversity quotas)
-7. **Character profiles** — `character_profiles_validator.py --full` (structural validation against `_assets/cast/character_profiles.schema.json`)
-8. **Validator meta-tests** — `test_validators.py` — **grade-the-graders meta-tests (count grows with every loosening)**: the suite must FAIL the frozen BROKEN fixture and PASS the GOOD one, every loosening proven in both directions, plus a parser-coverage guard against the zero-scene false-green
-9. **Doc reference integrity** — `doc_reference_check.py` (backtick-quoted repo paths in load-bearing docs must exist on disk; present-tense claims about removed components fail; coverage matrix stays in sync with the `check_` functions that exist)
-10. **Energy-motion sync (advisory)** — `energy_motion_check.py` (visual motion intensity vs musical energy; exemptions ledgered in `dissonance_registry.md`)
+7. **CapCut guide** — `capcut_guide_validator.py --full` (edit-guide timing integrity: scene durations vs timestamp spans, timeline contiguity, total vs music duration, speed/trim arithmetic)
+8. **Character profiles** — `character_profiles_validator.py --full` (structural validation against `_assets/cast/character_profiles.schema.json`)
+9. **Validator meta-tests** — `test_validators.py` — **grade-the-graders meta-tests (count grows with every loosening)**: the suite must FAIL the frozen BROKEN fixture and PASS the GOOD one, every loosening proven in both directions, plus a parser-coverage guard against the zero-scene false-green
+10. **Doc reference integrity** — `doc_reference_check.py` (backtick-quoted repo paths in load-bearing docs must exist on disk; present-tense claims about removed components fail; coverage matrix stays in sync with the `check_` functions that exist)
+11. **Energy-motion sync (advisory)** — `energy_motion_check.py` (visual motion intensity vs musical energy; exemptions ledgered in `dissonance_registry.md`)
+12. **Forbidden terms** — `forbidden_terms_gate.py --full` (no named religion/order/sect/scripture terms in public prose — spirituality stays universal, never dressed in a named tradition's costume)
 
 A green run certifies only the machine-checked invariants. The
 [`invariant_coverage_matrix.md`](invariant_coverage_matrix.md) is the honesty ledger,

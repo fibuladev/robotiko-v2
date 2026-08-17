@@ -26,7 +26,7 @@ pick up; some are explicitly "help wanted, no ETA."
 | **AV-sync measurement** — the pipeline claims beat-synced visuals from `musical_metadata.json` timestamps through to motion scripts, but there's no automated measurement of actual audio-visual sync drift in rendered output today. A validator or a manual methodology would close a real gap. | Help wanted. |
 | **Retry-telemetry tooling** — image/video generation retries (Nano Banana, Kling/Veo/Seedance) aren't currently logged anywhere machine-readable. Lightweight tooling to track retry counts and failure modes per episode would sharpen the tool-selection guidance in `docs/tools-setup.md`. | Help wanted. |
 | **Reproducibility discussion** — how deterministic *should* a creative pipeline built on generative tools be, and what would "reproducible" even mean here (same prompts, same seeds, same episode)? An open discussion thread, not a fixed spec. | Maintainer will open the thread; direction depends on who shows up. |
-| **Validator coverage** — the ten check groups behind `python tests/run_all.py` are tracked against known invariants in `_management/invariant_coverage_matrix.md`. New checks are welcome per [GOVERNANCE.md](GOVERNANCE.md)'s "open to contribution" list. | Maintainer maintains the matrix; PRs add checks. |
+| **Validator coverage** — the twelve check groups behind `python tests/run_all.py` are tracked against known invariants in `_management/invariant_coverage_matrix.md`. New checks are welcome per [GOVERNANCE.md](GOVERNANCE.md)'s "open to contribution" list. | Maintainer maintains the matrix; PRs add checks. |
 
 ## What the maintainer will do regardless of outside help
 

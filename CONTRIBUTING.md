@@ -19,7 +19,7 @@ This is what the repo is *for*. You take the pipeline, swap out the ROBOTIKO sto
 
 - `_skills/` — the production crew (dramaturgy, visual prompts, motion script, packaging, and more)
 - `scripts/` — automation, including `scripts/create_episode.py`
-- `tests/` — eleven check groups (naming convention, pipeline integrity, visual prompt sweep, prompt hygiene, musical metadata, motion script, character profiles, validator meta-tests, doc reference integrity, forbidden terms, and an advisory energy-motion check) behind one gate command: `python tests/run_all.py`
+- `tests/` — twelve check groups (naming convention, pipeline integrity, visual prompt sweep, prompt hygiene, musical metadata, motion script, CapCut guide, character profiles, validator meta-tests, doc reference integrity, forbidden terms, and an advisory energy-motion check) behind one gate command: `python tests/run_all.py`
 - `_templates/` — episode scaffolding templates
 - `_tools/mcp-gdrive/` — the custom Google Drive MCP server (binary asset archive)
 - `_management/pipeline_rules.md` — the workflow and the three human gates

@@ -224,11 +224,10 @@ Cap it hard — never a back door into writing the scene set early.
 
 ### The Phase-1 sentinel — closes the v01 document
 
-Place this block **verbatim** where the scene section will later be written. It tells the validator
-this is an intentional Phase-1 file (partial pass), not a refs-only false green. It is REMOVED in v02.
-Do not paraphrase or re-case it.
+The block below is already placed live, where the scene section will later be written. It tells the
+validator this is an intentional Phase-1 file (partial pass), not a refs-only false green. Carry it
+**verbatim** into v01 — do not paraphrase or re-case it. It is REMOVED in v02.
 
-```
 ## SCENES — PENDING (PHASE 2)
 
 > STATUS: this is a valid, designed Phase 1 deliverable, not an unfinished draft.
@@ -237,7 +236,6 @@ Do not paraphrase or re-case it.
 > once a human has generated and approved them. Why: docs/two-phase-visual-prompts.md
 >
 > SCENES_STATUS: PENDING_PHASE_2
-```
 
 > v01 ENDS HERE. Everything below is authored in Phase 2 (v02), after gate 1R clears.
 

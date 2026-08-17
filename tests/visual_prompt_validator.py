@@ -577,7 +577,11 @@ def check_character_phase(scenes: list[dict], episode_number: int, whitelist: li
     """
     forbidden = EPISODE_FORBIDDEN.get(episode_number)
     if forbidden is None:
-        return [f"  WARN: Episode {episode_number} not mapped to any phase."]
+        return [
+            f"  WARN: Episode {episode_number} not mapped to any phase — character-state "
+            f"keywords not checked. Add the episode to EPISODE_FORBIDDEN in "
+            f"tests/visual_prompt_validator.py; a fork defines its own phase map there."
+        ]
 
     phase = get_phase_for_episode(episode_number, load_profiles()) if os.path.exists(
         os.path.join(".", "_assets", "cast", "character_profiles.json")
@@ -910,6 +914,12 @@ def validate_file(filepath: str) -> dict:
         route(sev, msg)
 
     if episode_number > 0:
+        # An episode outside this universe's phase map — a fork's own episode, a freshly
+        # scaffolded folder — cannot be character-phase checked. That is a gap in the map,
+        # not a defect in the file, so it WARNs instead of blocking the gate. All ten
+        # ROBOTIKO episodes are mapped, so this never downgrades a real finding here.
+        phase_bucket = "errors" if episode_number in EPISODE_FORBIDDEN else "warnings"
+
         # Reference-Image-Path field lint (D6) on the two-phase REF blocks — both phases.
         for sev, msg in check_ref_image_path(ref_blocks, episode_number):
             route(sev, msg)
@@ -919,11 +929,11 @@ def validate_file(filepath: str) -> dict:
             # are skipped. The character/group REF prompts still get pseudo-scene
             # linting (D7.4) so eye-glow and phase keywords bind to the body-state refs.
             pseudo = ref_pseudo_scenes(ref_blocks)
-            results["errors"].extend(check_character_phase(pseudo, episode_number))
+            results[phase_bucket].extend(check_character_phase(pseudo, episode_number))
             for sev, msg in check_eye_glow(pseudo, style_severity):
                 route(sev, msg)
         else:
-            results["errors"].extend(check_character_phase(scenes, episode_number))
+            results[phase_bucket].extend(check_character_phase(scenes, episode_number))
             results["errors"].extend(check_ref_integrity(scenes, episode_number))
             results["errors"].extend(check_reference_first(scenes, episode_number))
 

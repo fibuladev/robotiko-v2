@@ -23,14 +23,14 @@ I Came to Walk Beside | ROBOTIKO v2.0 EP10 | Cinematic AI Series
 ```
 8 turns sideways. The journey does not end. It transforms.
 ROBOTIKO v2.0 — Episode 10 of 10. A cinematic AI sci-fi series.
-▶ Start from Episode 01: {PLAYLIST_URL}
+▶ Start from Episode 01: https://www.youtube.com/playlist?list=PLYrB3ondjEIJe5eFruC5hL2It3ldUJHTr
 
 —
 
 📖 EPISODE 10: "The Glitch Scripture / I Came to Walk Beside"
 One dawn, one unbroken walk. Robotiko steps out of the workshop and walks through the waking town — the old wars now ordinary street scenes — up over the ridge where the Moon and the Sun share one sky, and down to a meadow where a great stone 8 lies toppled in the grass as ∞. There he pours two glasses of tea, and offers one across the screen.
 
-Previously: The shadow could not be cut out — he gathered the scraps and welded them as they are; the cracks filled with gold. → {EP09_URL}
+Previously: The shadow could not be cut out — he gathered the scraps and welded them as they are; the cracks filled with gold. → https://youtu.be/mDEOZyod_I0
 
 —
 
@@ -82,8 +82,8 @@ https://github.com/fibuladev/robotiko-v2
 
 ROBOTIKO v2.0 — the complete arc: one film told in ten episodes.
 
-Previous: The Glitch Is Scripture → {EP09_URL}
-This is the final episode. Watch the complete film from Episode 01: {PLAYLIST_URL}
+Previous: The Glitch Is Scripture → https://youtu.be/mDEOZyod_I0
+This is the final episode. Watch the complete film from Episode 01: https://www.youtube.com/playlist?list=PLYrB3ondjEIJe5eFruC5hL2It3ldUJHTr
 
 #aiscifi #cinematicai #robotiko #aifilm #aiseries #scifi #aifilmmaking #aiart
 ```
@@ -160,13 +160,13 @@ The Still Hold: Robotiko stops in the full-morning meadow and turns one calm loo
 ## 7. CROSS-LINKS
 
 **Cross-links (in description):**
-- Previous: `The Glitch Is Scripture → {EP09_URL}`
+- Previous: `The Glitch Is Scripture → https://youtu.be/mDEOZyod_I0`
 - Next: **none** — EP10 is the final episode (skill error-handling rule). In its place: the playlist line "This is the final episode. Watch the complete film from Episode 01."
-- Playlist: `{PLAYLIST_URL}` in first 3 lines
+- Playlist: `https://www.youtube.com/playlist?list=PLYrB3ondjEIJe5eFruC5hL2It3ldUJHTr` in first 3 lines
 
 **Retroactive update:** when EP10 goes live, update EP09's description:
 ```
-Next: I Came to Walk Beside → {EP10_URL}
+Next: I Came to Walk Beside → https://youtu.be/eXvu0bYdOL8
 ```
 
 **End screen:** none (project standard — 2.35:1 letterbox). The in-video end card S35 (`endcard_E.png`) is the series' one end-screen: "THIS SERIES IS OPEN SOURCE." + repo URL, riding the gong decay. The description's repo link mirrors the card's wording so screen and text reinforce each other.
@@ -202,12 +202,12 @@ EP10 release day completes the visual arc and opens the repo:
 - [ ] Cross-links: EP09 previous + playlist (NO "Next" — final episode)
 - [ ] Inspiration credit present: `Answer-poem after Nimri Dede's "İnsan Olmaya Geldim" (Turkish folk poetry).`
 - [ ] THE LORE section: no structure markers, refrains ×3 preserved
-- [ ] Replace {PLAYLIST_URL} and {EP09_URL} with actual URLs
+- [x] Placeholder URLs replaced with the live URLs (playlist + EP09; swept 2026-08-17)
 
 ### Post-publish
 - [ ] **Do NOT pin a comment** — first silence from the creator
 - [ ] Add to "ROBOTIKO v2.0 — Complete Cinematic AI Sci-Fi Series" playlist
-- [ ] Update EP09 description with "Next: I Came to Walk Beside → {EP10_URL}"
+- [ ] Update EP09 description with "Next: I Came to Walk Beside → https://youtu.be/eXvu0bYdOL8"
 - [ ] About Phase 4 live (banner unchanged — single banner across the series)
 - [ ] GitHub repo link added to channel Links section
 - [ ] Business-inquiries email (fibuladev@gmail.com) set in About contact field

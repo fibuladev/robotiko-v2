@@ -40,9 +40,9 @@ PATTERNS = {
     "external_promotion": r"^ep\d{2}_external_promotion\.md$",
     # Assets
     "raw_image":        r"^ep\d{2}_s\d{2}_v\d{2}\.png$",
-    "selected_image":   r"^ep\d{2}_s\d{2}_selected\.png$",
-    "raw_video":        r"^ep\d{2}_s\d{2}_video_(kling|veo|seedance)\.mp4$",
-    "selected_video":   r"^ep\d{2}_s\d{2}_selected\.mp4$",
+    "selected_image":   r"^ep\d{2}_s\d{2}[a-d]?_selected\.png$",  # optional a-d letter = documented sub-clip form (naming_convention.md rule 8)
+    "raw_video":        r"^ep\d{2}_s\d{2}[a-d]?_video_(kling|veo|seedance)\.mp4$",
+    "selected_video":   r"^ep\d{2}_s\d{2}[a-d]?_selected\.mp4$",
     "audio":            r"^ep\d{2}_audio_v\d{2}\.mp3$",
     "final_edit":       r"^ep\d{2}_final_v\d{2}\.mp4$",
     # Exported documents (PDF exports of text deliverables)

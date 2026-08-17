@@ -12,9 +12,10 @@ This folder contains the **source of truth** for the Robotiko universe.
 - `youtube_metadata_standards.md` - YouTube metadata standards (titles, tags, description, hashtags)
 - `dissonance_registry.md` - Ledger of sanctioned `[DISSONANCE]` shots (visual deliberately refuses the music's energy); human-readable side of the `energy_motion_check.py` exemption
 - `approvals.json` - Machine-readable gate ledger: one sha256-pinned record per human approval (gates 1, 1R, 2); consumed by `pipeline_integrity.py`
+- `cost.md` - Every subscription that produced the series, line by line, with the total
 - `invariant_coverage_matrix.md` - Honesty ledger: every invariant tiered as Machine / Heuristic / Human / Gap
 - `case_study_validation_backbone.md` - How the validation backbone was built and what it caught
-- `adr/` - Architecture Decision Records (0001-0013)
+- `adr/` - Architecture Decision Records (0001-0013; twelve records — 0011 is not part of the public set)
 
 ## Usage
 

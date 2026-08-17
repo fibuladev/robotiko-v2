@@ -1,5 +1,5 @@
 # PRODUCTION PIPELINE & QUALITY ASSURANCE
-> **Version:** 2.7
+> **Version:** 2.8
 > Always refer to `_management/master.md` as the absolute source of truth.
 
 ---
@@ -20,7 +20,7 @@ Three steps require explicit human approval before proceeding. Everything else C
 Each gate is recorded **as data** in `_management/approvals.json` — one entry per gate (`episode`, `gate`, `artifact`, `sha256`, `date`, `note`). The ledger certifies that a human approved a specific artifact on a date; the `sha256` pins WHICH bytes were approved, so post-approval drift is visible. `pipeline_integrity.py` consumes the file: an artifact beyond a gate with no record = FAIL.
 
 - **Honest limit of gate 1R:** it attests the human approved the reference PROMPTS and signed off the reference IMAGES generated from them. Those images live in gitignored `raw/` and are NOT machine-verifiable — preventive at the skill layer, detective at CI, the same posture as gates 1 and 2.
-- **Scope of gate 1R:** **EP10 onward** (`TWO_PHASE_FROM_EP = 10` in `tests/pipeline_integrity.py`). EP01-09 predate the two-phase split and are exempt; EP10's legacy v01 (authored pre-split) carries an artifact-pinned 1R waiver until the two-phase v02 run records the real gate. The code enforces the cutover — this note is a summary, not the rule.
+- **Scope of gate 1R:** **EP10 onward** (`TWO_PHASE_FROM_EP = 10` in `tests/pipeline_integrity.py`). EP01-09 predate the two-phase split and are exempt; EP10 carries a real 1R record in `approvals.json` (2026-07-07), sha-pinned to its frozen Phase-1 v01. The code enforces the cutover — this note is a summary, not the rule.
 
 ---
 
@@ -97,7 +97,7 @@ Between Phase 1 and Phase 2. **Phase 2 does not begin until it clears. Never ski
 
 - On approval, **gate 1R is recorded as data** in `_management/approvals.json` (`gate: "1R"`, `artifact:` the v01 path, `sha256`, `date`, `note`), **sha-pinned to the frozen v01 bytes.** From this point v01 is frozen; a later edit to it fires the existing sha-drift WARN — the honest late-ref-edit signal. `project_metadata.json` `production.visuals` moves to the half-state `"refs_approved"`. This mirrors gates 1 (dramaturgy) and 2 (motion script).
 - **Honest limit.** 1R attests the human approved the reference PROMPTS and signed off the reference IMAGES generated from them. The images live in gitignored `raw/` and are NOT machine-verifiable — preventive at the skill layer, detective at CI, same posture as gates 1/2.
-- **Scope.** EP10 onward (`TWO_PHASE_FROM_EP = 10`). EP01-09 are exempt (pre-split legacy); EP10's v01 carries an artifact-pinned 1R waiver until the two-phase v02 run records the real gate. The code (`tests/pipeline_integrity.py`) enforces the cutover.
+- **Scope.** EP10 onward (`TWO_PHASE_FROM_EP = 10`). EP01-09 are exempt (pre-split legacy); EP10's v01 carries a real 1R record in `approvals.json` (2026-07-07), sha-pinned to the frozen bytes. The code (`tests/pipeline_integrity.py`) enforces the cutover.
 
 ### Step 5b: Scene Authoring Against Real Pixels (Phase 2)
 - **Runs in a separate session, after gate 1R clears.**
@@ -265,6 +265,9 @@ episode's edit produces a committed sync-QC record from the template:
   - **EP01-EP07 — legacy (pre-QC-convention).** No retroactive obligation.
   - **EP08 — optional retro record** when the render is at hand.
   - **EP09 onward — mandatory.** The edit is not "done" without the record.
+    Honest exception: EP09's own record is not in the tree. It is a known gap,
+    back-fillable with [`scripts/sync_probe.py`](../scripts/sync_probe.py), not a
+    silently dropped rule.
 
 ---
 

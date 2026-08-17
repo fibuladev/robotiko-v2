@@ -1,6 +1,7 @@
 # SYSTEM ARCHITECTURE
-> **Version:** 3.1
+> **Version:** 3.2
 >
+> **v3.2 (2026-08-18):** reconciled with the shipped repository at the public release: the suite is 12 check groups (11 blocking + 1 advisory), the video-generation row names Seedance 2.0 (Dreamina) alongside 1.0, the MCP line count and the fixture-set description match the tree, and the repository-structure tree lists the full docs/, scripts/ and _templates/ contents plus the root community files.
 > **v3.1 (2026-07-10):** reconciled with the 2026-07-07 two-phase visual-prompts redesign (ADR-0013): the human-gate count is now three (adds GATE 1R), the approval ledger (`_management/approvals.json`) is documented as built rather than roadmap, the check-group count is now 11 (adds the energy-motion sync advisory check and the forbidden-terms gate), stale hard counts (grade-the-graders test count, naming-check count) were reconciled or de-hardened, and the repository-structure tree now lists `approvals.json`, `dissonance_registry.md`, and the `06_edit/` sync-QC record.
 > **v3.0 (2026-07-05):** document matches repository reality 1:1; dead hook references removed. Enforcement is now described as its actual two-layer reality — a local one-gate command `python tests/run_all.py` and the CI workflow `.github/workflows/validation_suite.yml`, both running the identical entrypoint. A write-time Claude Code PostToolUse naming hook (`tests/naming_check_hook.py` + a `.claude/settings.json` Write matcher) existed and was removed 2026-07-04 after proving inert — it never fired — so enforcement is consolidated in CI.
 > **v2.1 (2026-06-11):** Binary storage moved from the earlier S3 plan to **local disk + Google Drive via the custom MCP server** (`_tools/mcp-gdrive/`). Toolchain refreshed (Suno + BandLab, Nano Banana, Kling / Veo / Seedance 1.0, CapCut). Enforcement layer documented as a first-class subsystem. The two human approval gates are now first-class architectural elements.
@@ -21,7 +22,7 @@ This is a **repo-as-studio**: a single git repository that operates as a complet
 | **Music Generation** | Suno (generation) + BandLab (mastering) | Audio production |
 | **Musical Metadata** | Claude (`robotiko-musical-metadata` skill) | Metadata JSON from human-provided BPM, key, and timestamped lyrics |
 | **Image Generation** | Nano Banana | Visual-prompt execution |
-| **Video Generation** | Kling (2.5 Turbo / 3.0 Elements / Omni), Veo, Seedance 1.0 | Motion production |
+| **Video Generation** | Kling (2.5 Turbo / 3.0 Elements / Omni), Veo, Seedance 1.0 / 2.0 (Dreamina) | Motion production |
 | **Editing** | CapCut | Final assembly (LUT + grain + 2.35:1 letterbox unification protocol) |
 
 ---
@@ -63,7 +64,7 @@ This is a **repo-as-studio**: a single git repository that operates as a complet
         MOTION SCRIPT ══════════════════►  ✋ HUMAN GATE 2  (approve camera + tool assignment)
                   │                            (Claude · robotiko-motion-script)
                   ▼
-        VIDEO GEN                          (Kling / Veo / Seedance 1.0 → 05_video/raw/)
+        VIDEO GEN                          (Kling / Veo / Seedance → 05_video/raw/)
                   │
                   ▼
         VIDEO SELECT                       (human curates → 05_video/selected/)
@@ -127,6 +128,15 @@ robotiko-v2/
 ├── CLAUDE.md                       # Claude's role & context (auto-read every session)
 ├── README.md  AUTHOR.md  CONTRIBUTING.md
 ├── LICENSE  LICENSE-CONTENT        # MIT (method) + CC BY-NC 4.0 (creative content)
+├── CHANGELOG.md                    # Release history by version
+├── CODE_OF_CONDUCT.md              # Contributor Covenant 2.1, unmodified
+├── GOVERNANCE.md  SUPPORT.md       # How decisions are made + where to ask
+├── SECURITY.md                     # Scope + vulnerability reporting
+├── FORKING.md  UNIVERSES.md        # Fork the method + registry of forked universes
+├── ROADMAP.md                      # What is planned next
+├── setup_project.sh                # One-shot directory scaffold for a fresh clone
+├── .mcp.json                       # MCP server registration (Google Drive)
+├── .gitattributes  .gitignore      # LF normalization (sha pins) + binary exclusions
 │
 ├── _management/                    # CONSTITUTION — source of truth
 │   ├── master.md                   # Universe Canon — THE LAW
@@ -152,7 +162,9 @@ robotiko-v2/
 ├── _templates/                     # Episode scaffolding templates
 │   ├── dramaturgy_template.md
 │   ├── visual_prompt_template.md
-│   └── video_prompt_template.md
+│   ├── video_prompt_template.md
+│   ├── ep_sync_qc_template.md      # Human sync-QC record (pipeline Step 11)
+│   └── episode_metadata_template.md # YouTube packaging metadata
 │
 ├── _skills/                        # WORKFLOWS — 10 SKILL.md runbooks (the crew)
 │   ├── robotiko-musical-metadata/
@@ -173,19 +185,26 @@ robotiko-v2/
 │
 ├── _tools/
 │   └── mcp-gdrive/                 # Custom Google Drive MCP server (binary archive)
-│       ├── src/index.js            # ~300 lines, 2 deps (googleapis, MCP SDK)
+│       ├── src/index.js            # 138 lines; server totals 594 across index/auth/tools, 2 deps (googleapis, MCP SDK)
 │       └── README.md
 │
-├── docs/                           # Public onboarding
-│   ├── getting-started.md
-│   ├── skills-guide.md
-│   ├── tools-setup.md
-│   └── anatomy-of-an-episode.md
+├── docs/                           # Public onboarding + method essays
+│   ├── getting-started.md          # First-run walkthrough: clone → first episode
+│   ├── skills-guide.md             # What each of the 10 skills does
+│   ├── tools-setup.md              # Toolchain accounts + setup
+│   ├── anatomy-of-an-episode.md    # EP07 traced through every stage
+│   ├── two-phase-visual-prompts.md # Phase 1 → gate 1R → Phase 2 (ADR-0013)
+│   ├── visual-canon.md             # The art direction, proved on disk
+│   ├── hallucinating-camera.md     # Field manual for image-to-video direction
+│   ├── method-lesson-graduation.md # How a correction graduates into a check
+│   ├── text-only-first-episode.md  # The free, text-only half of the pipeline
+│   └── fork-dry-run.md             # A second universe built in one afternoon
 │
 ├── scripts/
 │   ├── create_episode.py           # Episode scaffolding
 │   ├── select_images.py            # Curate raw → selected (visuals)
-│   └── select_videos.py            # Curate raw → selected (video)
+│   ├── select_videos.py            # Curate raw → selected (video)
+│   └── sync_probe.py               # Local ffprobe/ffmpeg sync measurement (not CI)
 │
 ├── tests/                          # ENFORCEMENT — CI / QA validators (stdlib only)
 │   ├── run_all.py                  # THE ONE GATE — runs all 12 check groups, non-zero on any fail
@@ -203,7 +222,7 @@ robotiko-v2/
 │   ├── forbidden_terms_gate.py     # No named religion/order/sect/scripture terms in public prose
 │   ├── universe_config.py          # Fork override point — the single source for validator constants
 │   ├── attempts_report.py          # Standalone attempts-ledger reporter (not part of run_all.py)
-│   ├── fixtures/                   # Frozen BROKEN/GOOD regression pair + README.md
+│   ├── fixtures/                   # Frozen BROKEN/GOOD regression pairs (9) + pdf_only_visuals/ + README.md
 │   └── README.md
 │
 ├── .claude/
@@ -339,7 +358,7 @@ A green run certifies only the machine-checked invariants. The
 tiering every invariant as **Machine** (mechanically checked, CI blocks),
 **Heuristic** (advisory, can over/under-fire), **Human** (gated at a checkpoint), or
 **Gap** (cared about, no automated check yet). The reasoning behind the backbone lives
-in the [`adr/`](adr/) records (0001–0007).
+in the [`adr/`](adr/) records (0001–0013).
 
 The contract is `_management/naming_convention.md` (naming) and the
 [`adr/`](adr/) + [`invariant_coverage_matrix.md`](invariant_coverage_matrix.md)

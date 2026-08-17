@@ -176,9 +176,11 @@ you'd ship an entire episode believing it was checked when it never was.
 A check only used when someone remembers to run it is a habit, not a guarantee. We
 made it durable.
 
-- **One command.** [`tests/run_all.py`](../tests/run_all.py) runs every check —
-  naming, pipeline integrity, the visual sweep, prompt hygiene, and the meta-tests —
-  and fails if any group fails.
+- **One command.** [`tests/run_all.py`](../tests/run_all.py) runs all twelve check
+  groups in sequence — naming, pipeline integrity, the visual sweep, prompt hygiene,
+  musical metadata, motion script, CapCut guide, character profiles, the meta-tests,
+  doc-reference integrity, energy-motion sync (advisory) and the forbidden-terms
+  gate — and fails if any group fails.
 - **CI that blocks.** **CI** (Continuous Integration) is the service that
   automatically runs your checks on every change pushed to the shared repository.
   Ours ([`validation_suite.yml`](../.github/workflows/validation_suite.yml)) runs the
@@ -249,9 +251,13 @@ human-gated, or an outright gap.
 
 The reference check is the reliable, machine-enforced gate. The character-keyword
 check is honestly labelled a heuristic — free text can't fully attribute an adjective
-to a subject — and it's backed by the reliable check, not trusted alone. Some rules
-remain explicit **gaps**: the anti-spawn phrasing, the no-glow eye rule, the motion
-video-suffix. They are named as unchecked, not quietly implied to be covered. And the
+to a subject — and it's backed by the reliable check, not trusted alone. The three
+rules this document first named as explicit **gaps** — the anti-spawn phrasing, the
+no-glow eye rule, the motion video-suffix — have since been closed: all three are
+machine-checked today (`motion_script_validator.py` for the anti-spawn guard and the
+video suffix, `check_eye_glow` plus `scan_eye_glow` for the eye rule). The [coverage
+matrix](invariant_coverage_matrix.md) is the live ledger — what is still unchecked is
+named there, not implied away here. And the
 creative checkpoints — director approval after dramaturgy, at the visual stage's
 reference gate, and after the motion script — are gated by a person on purpose. We
 don't pretend to automate taste.

@@ -1,16 +1,16 @@
 {
   "project_name": "Robotiko v2.0",
   "total_episodes": 10,
-  "current_phase": "EP01-EP08 launched on YouTube; EP09-EP10 in final production (video generation)",
+  "current_phase": "EP01-EP09 released on YouTube; EP10 premieres 2026-08-18 (T0), completing the series. The repository is public.",
   "open_source": true,
-  "open_source_release": "After EP10 completion (2026-07-28, confirmed launch T0)",
+  "open_source_release": "2026-08-18 (T0 — repository public, EP10 premiere)",
 
   "version_control": {
     "master_version": "v2.0",
-    "pipeline_version": "v2.0",
-    "architecture_version": "v2.1",
-    "naming_convention_version": "v2.0",
-    "last_updated": "2026-06-11"
+    "pipeline_version": "v2.8",
+    "architecture_version": "v3.2",
+    "naming_convention_version": "v2.2",
+    "last_updated": "2026-08-18"
   },
 
   "toolchain": {
@@ -57,10 +57,9 @@
       "social_media": {
         "youtube_package": true,
         "social_atomization": true,
-        "launch_checklist": true,
-        "pre_launch_campaign": "in_progress (Days 1-6 done, Days 7-13 scheduled)"
+        "launch_checklist": true
       },
-      "notes": "Production complete. Social media rollout in progress. YouTube premiere scheduled April 22, 18:00 CET."
+      "notes": "Production complete. Launched on YouTube 2026-04-22."
     },
     "ep02": {
       "title": "The Tech Guru's Downfall (Global Collapse Tour)",
@@ -185,18 +184,18 @@
       "title": "Shadow Debugging",
       "station": "The Integrated Self (Kintsugi — making peace with flaws)",
       "language": "English (Spoken Word — dry, unprocessed)",
-      "status": "video_in_progress",
+      "status": "launched",
       "folder_name": "episode-09",
-      "key_assets_locked": false,
+      "key_assets_locked": true,
       "production": {
         "lyrics": true,
         "music": true,
         "timestamp_json": true,
         "dramaturgy": true,
         "visuals": true,
-        "video": "in_progress"
+        "video": true
       },
-      "notes": "Dramaturgy approved (38 scenes). Visual prompts complete; all scene images generated (raw/ used as keepers, selected/ empty). Motion script v02 validator-green (content unchanged from approved v01). Video generation in progress: 37 of 38 scene clips rendered (scene 37 pending), plus 27b/35b alt clips."
+      "notes": "Dramaturgy approved (38 scenes). Visual prompts complete; all scene images generated. Motion script v02 validator-green (content unchanged from approved v01). Video generation complete; launched on YouTube 2026-07-28."
     },
     "ep10": {
       "title": "The Glitch Scripture / I Came to Walk Beside",
@@ -219,7 +218,7 @@
 
   "global_settings": {
     "fps": 24,
-    "resolution": "4K",
+    "resolution": "1080p",
     "aspect_ratio": "16:9",
     "visual_suffix": "hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd Mead, Kodachrome film stock, heavy film grain, cinematic lighting, volumetric fog, 8k resolution, masterpiece."
   },
@@ -254,11 +253,9 @@
     "open_source_signal_episode": "EP01",
     "ep01_launch": "2026-04-22",
     "release_rhythm": "weekly",
-    "social_platforms": ["youtube", "instagram"],
-    "social_platforms_deferred": ["tiktok (Bratislava location + zero budget, revisit when audience exists)"],
+    "social_platforms": ["youtube"],
     "social_handles": {
-      "youtube": "@fibuladev",
-      "instagram": "@fibuladev"
+      "youtube": "@fibuladev"
     }
   }
 }

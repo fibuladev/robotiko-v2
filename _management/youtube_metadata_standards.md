@@ -5,8 +5,9 @@
 >
 > This is the **public, method-only** standard the youtube-packager skill implements.
 > It covers the craft of shipping an episode — how the upload is named, described,
-> credited, and disclosed. Audience-growth and algorithm tactics are not part of the
-> open method; they live in the creator's private notes.
+> credited, and disclosed. Audience-growth and algorithm tactics are out of scope
+> here: this document covers the craft of describing an episode accurately, not the
+> business of promoting it.
 
 ---
 

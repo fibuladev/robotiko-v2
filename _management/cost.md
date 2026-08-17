@@ -58,9 +58,13 @@ KLING was not renewed for August — video generation wrapped with the July cycl
 - **No extra purchases.** No credit top-ups, no plan upgrades beyond the listed
   subscriptions, no API usage billing. Everything in the repo was built within these
   monthly plans.
-- **Billing cycles.** The launch-window cycle (August 2026) is paid and reflected for
-  every tool still in use. KLING is the one exception: production's video generation
-  wrapped with the July cycle, so no August payment was needed.
+- **Billing cycles.** Each subscription is counted through its last production
+  cycle. Suno, BandLab, Google AI Plus and CapCut Pro run into the August 2026
+  launch window and are counted through it. KLING and Claude Max are counted
+  through July — KLING for the reason in the footnote above, Claude Max because
+  the pipeline work this file documents was finished by then. The August
+  direction work — packaging, the release itself, this very line — is not
+  counted, so the total understates rather than flatters.
 - **What is NOT counted:** hardware (a consumer PC), electricity, internet — and the
   human's time. Roughly eight months of steady evening work — one to two hours most
   weeknights: writing, listening, approving, rejecting, re-approving. Weekends stayed

@@ -4,14 +4,23 @@
 > consistency anchors across all episodes (uploaded alongside scene prompts in
 > Nano Banana / Omni References).
 >
-> **Status:** The master images already exist in this folder
-> (`ref_robotiko_master.png`, `ref_mentor_master.png`, `ref_robochica_master.png`).
-> These prompts document the canonical look so the images can be regenerated, and
-> so anyone forking the method can see exactly how a master reference is specified.
+> **Status:** The reference images already exist in this folder — four character
+> masters (`ref_robotiko_master.png`, `ref_mentor_master.png`,
+> `ref_robochica_master.png`, `ref_mechanic.png`) plus Robotiko's body-state
+> references (`android_damaged.png` with its `_2` / `_3` alt angles, and
+> `android_kintsugi.png`).
+>
+> **Scope:** This file records TWO of those prompts — the Mentor and Robochica
+> masters. They are the recorded examples of how a master reference is specified,
+> kept so the images can be regenerated and so anyone forking the method can see
+> exactly what a reference prompt has to carry. The remaining masters were
+> generated before this file existed and their prompts were never written down —
+> an honest gap, not a hidden one.
 >
 > Each prompt follows the PROMPT FORMULA and the eye-material rule from
-> `_memory/lessons.md` (never write "glowing eyes"; describe eyes as a physical
-> material). Every prompt ends with the mandatory visual suffix.
+> `_memory/lessons.md` + [ADR 0010](../../_management/adr/0010-eye-canon-reconciliation.md)
+> (never write "glowing eyes"; describe eyes as a physical material). Every prompt
+> ends with the mandatory visual suffix.
 
 ---
 

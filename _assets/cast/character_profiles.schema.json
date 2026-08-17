@@ -87,8 +87,44 @@
         "evolution": { "type": "object" }
       }
     },
-    "mentor": { "type": "object" },
-    "robochica": { "type": "object" },
+    "mentor": {
+      "type": "object",
+      "required": ["name", "master_ref_path"],
+      "properties": {
+        "name": { "type": "string" },
+        "archetype": { "type": "string" },
+        "base_visual_prompt": { "type": "string" },
+        "master_ref_path": { "type": "string" },
+        "key_characteristic": { "type": "string" },
+        "status": { "type": "object" },
+        "status_notes": { "type": "object" }
+      }
+    },
+    "robochica": {
+      "type": "object",
+      "required": ["name", "master_ref_path", "episodes_primary"],
+      "properties": {
+        "name": { "type": "string" },
+        "archetype": { "type": "string" },
+        "episodes_primary": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "episodes_echo": {
+          "type": "array",
+          "items": { "type": "integer" }
+        },
+        "episodes_echo_note": { "type": "string" },
+        "role": { "type": "string" },
+        "base_visual_prompt": { "type": "string" },
+        "master_ref_path": { "type": "string" },
+        "eye_color": { "type": "string" },
+        "wire_colors": { "type": "string" },
+        "visual_signature": { "type": "string" },
+        "damage_level": { "type": "string" },
+        "dramaturgy_rules": { "type": "object" }
+      }
+    },
     "mechanic": {
       "type": "object",
       "required": ["name", "master_ref_path", "episodes_primary"],

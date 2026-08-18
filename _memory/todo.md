@@ -797,4 +797,13 @@ launch checklist, and EP01-EP02 carry social atomization files.
 
 ---
 
+## 2026-08-18 Session Summary (Pre-Public Line-by-Line Audit - Part 2)
+**Task:** Same human-grade read applied to `_memory/`, `_skills/`, `_tools/`, `docs/`, `scripts/`, `tests/` and every root file. Six read-only audit agents, then eight fix agents on disjoint file sets; every BLOCKER/FIX verified by hand before and after the edit.
+**The one bug that would have bitten a forker:** the motion-script skill's own EXAMPLE (Good) carried a paraphrased video suffix, while `motion_script_validator.py` does an exact-substring check - so the golden example taught prompts that fail the gate. Fixed to the byte-exact suffix. Second-worst: `docs/tools-setup.md` still taught the anti-spawn phrasing that `method-lesson-graduation.md` documents as backfiring, and mandated an unachievable 4K export.
+**Counts reconciled everywhere they are claimed:** CI check groups 11 -> 12, coverage rows 40/29 -> 41/30, meta-tests 227 -> 245, ADRs 13 -> 12, commits 160+ -> 265+, lessons rules ~125 -> 144, naming patterns 12 -> 21, curated docs' `docs/` pages 4 -> 10, forbidden-terms allowlist 1 -> 2 entries. `UNIVERSES.md` said two human gates; canon is three.
+**Structural gaps closed:** `CHANGELOG.md` had a two-month hole covering the entire validation backbone, the ten `docs/` pages and the seven community root files - three dated entries authored from `git log` and the tree. `setup_project.sh` never created `_memory/`, so a fork lost the self-improvement loop it is told to read every session. `capcut_guide_validator.py` was a blocking check group documented nowhere. The launch-orchestrator's social prerequisite was a hard STOP on an artifact only EP01-02 carry, halting the skill for every later episode - now optional.
+**Lesson for the method:** a section-per-agent split leaves seams. The EP01-waiver wording lived in five files across three sections; fixing the ones inside the audit's scope left the repo stating two different things until a whole-tree sweep caught the rest. Sweep the tree for the phrase, not the section.
+
+---
+
 *Update this file at the start and end of every session.*

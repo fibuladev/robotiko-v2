@@ -1,7 +1,7 @@
 {
   "project_name": "Robotiko v2.0",
   "total_episodes": 10,
-  "current_phase": "EP01-EP09 released on YouTube; EP10 premieres 2026-08-18 (T0), completing the series. The repository is public.",
+  "current_phase": "All ten episodes released on YouTube. EP10 premiered 2026-08-18 (T0), completing the series. The repository is public.",
   "open_source": true,
   "open_source_release": "2026-08-18 (T0 — repository public, EP10 premiere)",
 
@@ -201,7 +201,7 @@
       "title": "The Glitch Scripture / I Came to Walk Beside",
       "station": "The Integrated Self — Arrival (Enlightenment. 8 → ∞)",
       "language": "English (Sung — theatrical baritone answer-poem)",
-      "status": "in_production",
+      "status": "launched",
       "folder_name": "episode-10",
       "key_assets_locked": false,
       "production": {
@@ -212,7 +212,7 @@
         "visuals": true,
         "video": true
       },
-      "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Dramaturgy v01 APPROVED 2026-07-06 (gate-1 recorded; 35 scenes; S34 revised at review — head-tilt warmth + open-palm beckon, mouthless-face guard). Visual prompts v02 COMPLETE 2026-07-08 (two-phase: 6 env refs approved + 40 scene prompts framed to pixels). Raw images REVIEWED 2026-07-12 (40/40 scenes approved; S13/S20 prompt fixes applied; S34b pick = 34b_1.png with intentional smile override). Motion script v01 APPROVED 2026-07-12 (gate-2 recorded; 37 clips, Companion Camera, MS avg 3.03, validator-green). Video generation COMPLETE 2026-08-04 (37/37 clips rendered in 05_video/raw/; S34b re-rendered 2026-08-05 with Seedance 2.0 via Dreamina — 1080p keeper, art-director review passed). CapCut guide v01 generated 2026-08-04 (metadata gaps closed, timeline = 274s, clip durations measured from the rendered files). Next: the edit, then the sync-QC record. The finale — release day = open-source go-public day."
+      "notes": "Lyrics committed (answer-poem — Nimri Dede attribution), Suno track final, musical metadata JSON done (4:34, E Minor, 153 BPM double-time / 76.5 felt half-time pulse). Concept notes APPROVED 2026-07-06 (the Dawn Walk; Brecht claims expert-verified and refined). Dramaturgy v01 APPROVED 2026-07-06 (gate-1 recorded; 35 scenes; S34 revised at review — head-tilt warmth + open-palm beckon, mouthless-face guard). Visual prompts v02 COMPLETE 2026-07-08 (two-phase: 6 env refs approved + 40 scene prompts framed to pixels). Raw images REVIEWED 2026-07-12 (40/40 scenes approved; S13/S20 prompt fixes applied; S34b pick = 34b_1.png with intentional smile override). Motion script v01 APPROVED 2026-07-12 (gate-2 recorded; 37 clips, Companion Camera, MS avg 3.03, validator-green). Video generation COMPLETE 2026-08-04 (37/37 clips rendered in 05_video/raw/; S34b re-rendered 2026-08-05 with Seedance 2.0 via Dreamina — 1080p keeper, art-director review passed). CapCut guide v01 generated 2026-08-04 (metadata gaps closed, timeline = 274s, clip durations measured from the rendered files). Edit completed by hand in CapCut; sync-QC record committed 2026-08-06 (verdict PASS-WITH-DEVIATIONS, five accepted deviations each with a stated reason). Export locked at 30fps HEVC, 2.35:1, 274.321s. YouTube package DONE (title “I Came to Walk Beside”, thumbnail S34a, no pinned comment). PREMIERED 2026-08-18 18:00 CET — the finale, and the same day the repository went public."
     }
   },
 

@@ -6,8 +6,8 @@
  * Run this ONCE to authenticate:
  *   npm run auth
  *
- * This opens a browser, you log in with the fibuladev Google account,
- * grant permissions, and the token is saved locally.
+ * This opens a browser, you log in with the Google account that owns the
+ * target Drive folder, grant permissions, and the token is saved locally.
  */
 
 import { google } from 'googleapis';
@@ -126,8 +126,12 @@ async function runAuthFlow() {
     });
 
     server.listen(3199, () => {
-      // Try to open browser automatically
-      exec(`start "" "${authUrl}"`, (err) => {
+      // Try to open browser automatically (platform-dependent opener)
+      const opener =
+        process.platform === 'win32' ? `start "" "${authUrl}"`
+        : process.platform === 'darwin' ? `open "${authUrl}"`
+        : `xdg-open "${authUrl}"`;
+      exec(opener, (err) => {
         if (err) console.log('Could not open browser automatically. Please open the URL above manually.');
       });
     });

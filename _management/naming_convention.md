@@ -69,7 +69,7 @@ ep{EPISODE_NUMBER}_s{SCENE_NUMBER}_{TYPE}_v{VERSION}.{EXTENSION}
 > **Legacy note:** EP01 (the first episode) predates strict versioning and uses a
 > few unversioned forms (`ep01_lyrics.md`). These are accepted by the validator for
 > backward compatibility; all new files use the versioned forms above. EP01's original
-> pre-pipeline working documents were personal PDFs, kept private (not in the public repo).
+> pre-pipeline working documents were personal PDFs, never repo artifacts.
 
 > **Two-phase reference images (EP10 onward):** Per-episode environment and
 > body-state reference images live in `episode-{XX}/04_visuals/raw/` as

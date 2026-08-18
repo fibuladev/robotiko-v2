@@ -234,7 +234,7 @@ PRIOR FRAME AS THE BASE IMAGE rules in `_memory/lessons.md`.
 You will not get every shot on the first generation. Image generation is where the
 universe is created — dense prompts carrying scene detail, character state,
 symbolic weight, plus reference images fed alongside. That complexity can confuse
-generation tools. Across nine episodes, the experiential rule of thumb — an
+generation tools. Measured across the first nine episodes (EP01-EP09), the experiential rule of thumb — an
 observation from the edit bay, not instrumented telemetry — is that roughly
 **65–70% of image prompts land on the first try**. The rest need a retry or prompt
 revision: simplify the prompt, swap a few words, drop a detail the tool

@@ -115,13 +115,25 @@ The stops are not optional and never skipped. They are the entire point of the a
 
 > New to the skills themselves? **[skills-guide.md](skills-guide.md)** explains what each one does and walks a worked example. The full trigger table also lives in **[../CLAUDE.md](../CLAUDE.md)**.
 
+### 5. Close every stage green
+
+The repo has exactly one gate, and it is a single command:
+
+```bash
+python tests/run_all.py
+```
+
+It runs every validator in one pass — naming convention, pipeline integrity, visual-prompt and prompt-hygiene sweeps, musical metadata, motion script, CapCut guide, character profiles, the validators' own meta-tests, doc-reference integrity, the forbidden-terms gate, and one advisory energy-motion check. **Twelve check groups: eleven blocking, one advisory.** The same command runs in CI on every push and pull request, so a green local run is the real finish line for a stage — run it after each stage above, not only at the end of the episode. Individual validators can also be run alone (for example `python tests/naming_check.py --full`) when you want to fix one thing fast.
+
+A worked, text-only walkthrough that ends on exactly this command is in **[text-only-first-episode.md](text-only-first-episode.md)** — it takes an episode through metadata, dramaturgy, and the Phase-1 visual deliverable without spending a single generation credit.
+
 ---
 
 ## What the Pipeline Does *Not* Do
 
 Set your expectations honestly before your first episode. This pipeline is a huge multiplier on time and cost — one person runs a stage-gated film crew that would otherwise take a team — but it is **not copy-paste-and-done**. The stills and clips do not fall out perfect on demand, and no amount of prompt discipline makes the generators obedient.
 
-The realistic number, from this project's own production across nine episodes: roughly **65–70% of image prompts land on the first try** when their reference images already exist. Image generation is where the universe is created — dense prompts carrying scene detail, character state, symbolic weight, plus reference images fed alongside can confuse the tools. The remaining shots need a retry or **live prompt surgery**: simplify the prompt, swap a few words, or drop a detail the tool is misreading. Video generation from a strong approved image is far more forgiving — the universe is already built, it just flows — roughly **~80% first-pass**. These figures are experiential observations from the edit bay, not instrumented telemetry (see ADR-0007). Budget credits, and a little patience, for the retry tail.
+The realistic number, measured across this project's first nine episodes (EP01-EP09): roughly **65–70% of image prompts land on the first try** when their reference images already exist. Image generation is where the universe is created — dense prompts carrying scene detail, character state, symbolic weight, plus reference images fed alongside can confuse the tools. The remaining shots need a retry or **live prompt surgery**: simplify the prompt, swap a few words, or drop a detail the tool is misreading. Video generation from a strong approved image is far more forgiving — the universe is already built, it just flows — roughly **~80% first-pass**. These figures are experiential observations from the edit bay, not instrumented telemetry (see ADR-0007). Budget credits, and a little patience, for the retry tail.
 
 The canonical example is **EP09's S30 "Full Kintsugi" shot**, where a Slow Zoom Out on a single frame made the model invent set dressing that does not exist in the universe — it failed four times before a live switch to a two-frame (start + end) setup, anchored to an existing wide frame from the episode's own set, fixed it on the first retry. The full before/after prompts and the general rule they produced are written up in **[hallucinating-camera.md](hallucinating-camera.md)** — read it before your first video-generation session so the failures are expected, not alarming.
 

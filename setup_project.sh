@@ -32,6 +32,7 @@ mkdir -p _assets/cast
 mkdir -p _assets/style
 mkdir -p _assets/banners
 mkdir -p _templates
+mkdir -p _memory
 mkdir -p _tools
 mkdir -p scripts
 mkdir -p tests

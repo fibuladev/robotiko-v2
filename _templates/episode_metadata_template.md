@@ -7,7 +7,7 @@
 
 ## PRE-GENERATION CHECKLIST
 
-- [ ] `_management/youtube_metadata_standards.md` — Title format, tags, description, hashtags, episode hooks (§11), pinned comments (§12), inspiration credits (§11.1)
+- [ ] `_management/youtube_metadata_standards.md` — Title format (§2), description template (§3), episode hooks (§8), inspiration credits (§8.1), pinned comments (§9)
 - [ ] `_management/master.md` — Episode title, station, tone, key lyrics
 - [ ] `episode-{XX}/01_lyrics/ep{XX}_lyrics_v{VV}.md` — Full lyrics for description
 - [ ] `episode-{XX}/03_direction/ep{XX}_dramaturgy_v{VV}.md` — Scene references for thumbnail
@@ -32,7 +32,7 @@
 ## 2. VIDEO DESCRIPTION
 
 ```
-{Episode hook from youtube_metadata_standards.md §11 — exact text}
+{Episode hook from youtube_metadata_standards.md §8 — exact text}
 ROBOTIKO v2.0 — Episode {XX} of 10. A cinematic AI sci-fi series.
 ▶ Start from Episode 01: {playlist link}
 
@@ -42,11 +42,11 @@ THE LORE
 
 {Full lyrics from ep{XX}_lyrics.md, cleaned as poetry}
 {Strip ALL musical structure markers: [Intro], [Verse 1], [Chorus], (Full Band), etc.}
-{Preserve rhyme scheme through punctuation — see SKILL.md / standards §4.1 for rules}
+{Preserve rhyme scheme through punctuation — see SKILL.md / standards §3.1 for rules}
 
 —
 
-{Inspiration credit — ONLY if listed in youtube_metadata_standards.md §11.1 for this episode}
+{Inspiration credit — ONLY if listed in youtube_metadata_standards.md §8.1 for this episode}
 
 A human wrote the lyrics, shaped the musical direction, designed the story arc,
 and built a tech-art pipeline.
@@ -66,7 +66,7 @@ Next: {Next episode title} → {URL} (EP01-EP09 only — omit this line for EP10
 ## 3. PINNED COMMENT
 
 ```
-{Exact text from youtube_metadata_standards.md §12 for EP{XX}}
+{Exact text from youtube_metadata_standards.md §9 for EP{XX}}
 ```
 
 Pin immediately after video goes live. No additions, no emojis. Exact text.
@@ -75,7 +75,7 @@ Pin immediately after video goes live. No additions, no emojis. Exact text.
 
 ## 4. TAGS
 
-**Base tags (constant — from youtube_metadata_standards.md §5):**
+**Base tags (constant):**
 ```
 cinematic ai series, ai sci-fi series, ai short film, ai animated series, sci-fi short film, ai filmmaking, ai generated movie, ai film, ai animation, ai storytelling, dystopian sci-fi, android story, sci-fi animation, kling ai, suno ai, veo ai, ai video generation, robotiko, robotiko v2, ai art, generative ai, sci-fi series 2026
 ```

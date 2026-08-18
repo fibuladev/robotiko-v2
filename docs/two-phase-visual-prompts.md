@@ -160,9 +160,11 @@ holds the dramaturgy and motion-script gates — pinning the exact bytes of the 
 Phase-1 document by SHA-256. From that moment the Phase-1 file (`…_v01.md`) is **frozen**:
 its references, locks, coverage map, and geometry notes are the contract. Phase 2 writes
 a *new* version (`…_v02.md`) that carries the reference blocks forward and adds the
-scenes. If someone edits the frozen v01 after the fact, the ledger's existing SHA-drift
-warning fires on its own — which is, for free, the honest signal that a reference was
-changed late (the Gap-1 alarm the old flow lacked).
+scenes. The 1R record keeps pinning the frozen `…_v01.md` — the artifact the gate was
+designed to freeze — and does **not** demand a record of its own once `…_v02.md` ships; the
+scenes are downstream of the approval, not a second approval. If someone edits the frozen v01
+after the fact, the ledger's existing SHA-drift warning fires on its own — which is, for free,
+the honest signal that a reference was changed late (the Gap-1 alarm the old flow lacked).
 
 Internally the gate carries the id **"1R"** — the reference gate, sitting one rung
 before the existing dramaturgy and motion-script gates. It is enforced from EP10 onward;
@@ -289,7 +291,9 @@ structure is enforced, the taste is human, and the repo says exactly which is wh
 
 ---
 
-*Related: the reference-first principle this builds on lives in
+*Related: the decision this page explains is recorded as
+[ADR-0013](../_management/adr/0013-two-phase-visual-prompts.md); the reference-first principle
+it builds on lives in
 [ADR-0007](../_management/adr/0007-reference-first-or-pay-the-reshoot-tax.md); the
 gate-as-data pattern in
 [ADR-0008](../_management/adr/0008-approval-gates-as-data.md); the whole stage in

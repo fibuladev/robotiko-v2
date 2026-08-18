@@ -21,13 +21,16 @@ gate inside the visual stage, and after the motion script).
 | **BandLab** | Mastering | Loudness / polish pass on the Suno output |
 | **Nano Banana** | Visuals | Image generation from prompts (reference-image-first) |
 | **Kling / Veo / Seedance** | Video | Motion generation from selected images |
-| **CapCut** | Edit | Unification, beat sync, final 4K export |
+| **CapCut** | Edit | Unification, beat sync, final 1080p export |
 | **GitHub** | Version Control | All text files, all history |
 | **Google Drive** (custom MCP) | Binary archive | PNG, MP4, WAV via `_tools/mcp-gdrive/` |
 
 > **Pricing note:** tool plans change often. Where this guide does not cite a concrete figure
-> from a project file, pricing varies — check the tool's site. The only verified figure here is
-> the Seedance Multiframes cost (see the video section).
+> from a project file, pricing varies — check the tool's site. Two figures here *are* verified
+> from this project's own production notes (`_memory/lessons.md`): the **CapCut Pro monthly
+> credit budget (~1200 cr)** and the **Seedance Multiframes cost (~565 cr per generation)** —
+> both in the video section. They were true for this project's plan at the time of production,
+> not a permanent price list.
 
 ---
 
@@ -45,8 +48,7 @@ the skill trigger table, and the file-naming convention. You do not paste it in 
 project is enough.
 
 ### Naming-convention enforcement
-A Claude Code PostToolUse hook once auto-checked naming after every Write; it was removed
-2026-07-04 (it never reliably fired). Naming enforcement is now the CI gate: `tests/naming_check.py --full`
+Naming is enforced by the CI gate, not by an editor hook: `tests/naming_check.py --full`
 validates every file name against the project naming convention (`ep{XX}_..._v{VV}` form, two-digit
 episode/scene numbers, `v01` never `v1`), run via `tests/run_all.py` on every push/PR. Run it locally
 before committing to catch a mis-named output early.
@@ -84,8 +86,9 @@ BandLab runs a loudness/polish pass on the Suno output so levels sit right for Y
 After the track is finalized, the human measures and supplies three things, which feed the
 **musical-metadata** skill (`"Create musical metadata for EP{XX}"`):
 
-1. **BPM** and **Key** — from [vocalremover.org/key-bpm-finder](https://vocalremover.org/key-bpm-finder)
-2. **Timestamped lyrics** — line-by-line timings
+1. **BPM** — from [vocalremover.org/key-bpm-finder](https://vocalremover.org/key-bpm-finder)
+2. **Key** — from the same tool
+3. **Timestamped lyrics** — line-by-line timings
 
 Claude turns these into `ep{XX}_musical_metadata.json` — the all-in-one temporal skeleton
 (sections, timestamps, energy, mood, instruments, lyrics) that every later stage anchors to.
@@ -128,14 +131,20 @@ a **physical material**:
 The two parts: (1) **solid material, not a light source** ("glass lenses," "like polished
 gemstones"); (2) **reflective, not emissive** ("catching the environment light").
 
-### Anti-spawn guard
-Image generators spawn duplicate androids. Add an explicit count guard to every
-single-character scene prompt:
+### Single-figure guard
+Image generators sometimes spawn a duplicate android. The guard that works is phrased as a
+positive description of the composition, not as a prohibition — a negation like "no second
+robot" makes the generator latch onto the forbidden noun and draw exactly the extra figure it
+was told to avoid. The approved wording is:
 
-> only ONE chrome android, no second robot
+> single figure composition, no additional characters
 
-(Deliberate multi-figure shots are the exception — there you state the exact count and guard
-only against a third figure.)
+Use it only when duplication is a real risk — no solo character reference, or a composition the
+tool tends to populate. **Omit it entirely** when a strong solo reference image and a clearly
+solo scene already establish one figure; there the phrase is pure noise.
+
+(Deliberate multi-figure shots are the other exception — there you state the exact count and each
+instance's distinct treatment, and guard only against a third figure.)
 
 ### Aspect ratio
 Always specify `16:9 widescreen composition` in every prompt. Without it Nano Banana defaults
@@ -238,7 +247,9 @@ entries, max 3/episode, warm amber), Fade to Black (final shot only). Forbidden:
 spin, slide, wipe, swipe, shape, or any "trendy" preset — they break the analog aesthetic.
 
 ### Export
-4K (3840×2160), 24 fps, H.265 (HEVC), 35–60 Mbps, MP4, no watermark.
+1080p (1920×1080), 24 fps, H.265 (HEVC), 35–60 Mbps, MP4, no watermark. The AI
+source clips top out at 1080p, so the timeline and the export both stay there — upscaling
+would add bitrate, not detail.
 
 Full step-by-step (9-phase assembly, LUT sources, QA checklist) is in the skill:
 `_skills/robotiko-capcut-editor/SKILL.md`.
@@ -247,7 +258,7 @@ Full step-by-step (9-phase assembly, LUT sources, QA checklist) is in the skill:
 
 ## 6. Google Drive MCP — Binary Archive
 
-Git holds the text; **Google Drive holds the binaries** (PNG, MP4, WAV). A custom, ~300-line MCP
+Git holds the text; **Google Drive holds the binaries** (PNG, MP4, WAV). A custom, ~600-line MCP
 server in `_tools/mcp-gdrive/` lets Claude Code upload and organize these assets through natural
 language. This is the project's only cloud archive — there is no S3 bucket.
 
@@ -269,8 +280,10 @@ holding the generated PNGs, the curated selects, the WAV audio, and the final MP
 4. **Authenticate:** `npm run auth` — opens the browser, saves a token to
    `~/.config/robotiko-mcp-gdrive/tokens.json`. Tokens expire ~hourly; re-run `npm run auth`
    when an upload fails with a token error.
-5. **Register the server:** add a `.mcp.json` at the **project root** (not inside `.claude/`)
-   pointing `node` at `_tools/mcp-gdrive/src/index.js`. The `.claude/mcp.json` path does NOT work. <!-- doc-ref: ignore -->
+5. **Verify the server registration:** the repo already tracks a `.mcp.json` at the **project
+   root**, pointing `node` at `_tools/mcp-gdrive/src/index.js` — check it and adjust the paths
+   only if your layout differs. Keep it at the project root; a config placed inside `.claude/`
+   is not read.
 
 6. **Test:** start a new Claude Code session; the Google Drive tools appear automatically.
    Then just ask, e.g., *"Upload EP04 selected images to Google Drive."*

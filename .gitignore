@@ -134,16 +134,12 @@ tmp/
 # *.png filter=lfs diff=lfs merge=lfs -text
 # *.jpg filter=lfs diff=lfs merge=lfs -text
 # -----------------------------------------------------------------------------
-# EXTERNAL LLM BASE FILES (claude.ai project-knowledge mirror - not repo content)
+# LOCAL WORKING FILES (not repo content)
 # -----------------------------------------------------------------------------
 robotiko-v2-base files/
 
 # -----------------------------------------------------------------------------
-# PRIVATE PLAYBOOKS (never ship in the public repo)
+# LOCAL-ONLY DIRECTORIES (never ship in the public repo)
 # -----------------------------------------------------------------------------
 _private/
-
-# -----------------------------------------------------------------------------
-# LAUNCH STRATEGY (local-only go-to-market research — never ship)
-# -----------------------------------------------------------------------------
 _launch/

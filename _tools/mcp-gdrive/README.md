@@ -5,7 +5,8 @@ Built for the Robotiko v2.0 production pipeline.
 
 ## Why Custom?
 
-We don't use third-party MCP packages. This server is ~300 lines of code with only two dependencies:
+We don't use third-party MCP packages. This server is ~600 lines of code (`src/auth.js` +
+`src/index.js` + `src/tools.js`) with only two dependencies:
 - `googleapis` — Google's official Node.js SDK
 - `@modelcontextprotocol/sdk` — Official MCP protocol SDK
 
@@ -24,7 +25,7 @@ We don't use third-party MCP packages. This server is ~300 lines of code with on
 ### Step 1: Google Cloud Console
 
 1. Go to [console.cloud.google.com](https://console.cloud.google.com)
-2. Sign in with the project Google account
+2. Sign in with the Google account that owns the target Drive folder
 3. Create a new project (e.g., `robotiko-v2`)
 4. Enable the **Google Drive API**:
    - Go to APIs & Services → Library
@@ -63,12 +64,15 @@ mv ~/Downloads/client_secret_*.json ~/.config/robotiko-mcp-gdrive/gcp-oauth.keys
 npm run auth
 ```
 
-This opens your browser. Sign in with the project Google account, grant permissions.
+This tries to open your default browser (Windows, macOS, and Linux are all handled). If it
+cannot, it prints the authorization URL — open that manually. Sign in with the Google account
+that owns the target Drive folder and grant permissions.
 Token is saved to `~/.config/robotiko-mcp-gdrive/tokens.json`.
 
-### Step 5: Configure Claude Code
+### Step 5: Verify the Claude Code registration
 
-Add a `.mcp.json` file in the **project root** (not inside `.claude/`):
+The repo already ships a `.mcp.json` in the **project root** (not inside `.claude/`). Open it,
+confirm it matches the block below, and adjust the paths only if your layout differs:
 
 ```json
 {
@@ -83,7 +87,7 @@ Add a `.mcp.json` file in the **project root** (not inside `.claude/`):
 ```
 
 > **Important:** Claude Code reads MCP server configs from `.mcp.json` at the project root.
-> The `.claude/mcp.json` path does NOT work — tools will silently fail to load.
+> A config placed inside `.claude/` is not read — tools will silently fail to load.
 
 ### Step 6: Test
 

@@ -115,7 +115,8 @@ PROTAGONIST_IDENTIFIERS = ["robotiko", "chrome android"]
 
 — and makes the phase/ref helpers in `tests/visual_prompt_validator.py` degrade
 gracefully: absent key → phase-unknown no-op, never a crash. Defaults are the ROBOTIKO
-values, so the real suite is unchanged (still 10/10, meta-tests included). The fork
+values, so the fix leaves the real suite fully green, meta-tests included — it was 10 check
+groups on the day of this run, and stands at 12 today (11 blocking + 1 advisory). The fork
 then points them at its own lead (`vex`, identifiers `vex` / `vex-9` /
 `detective automaton`) and gets **real phase enforcement for VEX** instead of a crash.
 
@@ -238,7 +239,9 @@ reasoning: [two-phase-visual-prompts.md](two-phase-visual-prompts.md).
 ## End state — the toy universe's gate, green
 
 After the documented fork steps (protagonist binding pointed at `vex`, curated docs
-pruned, meta-test group disabled with a loud note, ledger + metadata rewritten):
+pruned, meta-test group disabled with a loud note, ledger + metadata rewritten). The summary
+below is the run's own 2026-07-05 output, when the suite had ten check groups; today's suite
+has twelve:
 
 ```
 ================================================================

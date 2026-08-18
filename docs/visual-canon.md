@@ -440,7 +440,7 @@ still-damaged body watching its own translucent ghost-self rise free of an open 
 
 ---
 
-### EP09 — Shadow Debugging
+### EP09 — The Glitch Is Scripture
 
 <table>
   <tr>

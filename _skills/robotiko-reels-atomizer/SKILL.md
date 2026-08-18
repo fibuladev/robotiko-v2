@@ -3,6 +3,11 @@
 > **Trigger:** `"Atomize EP{XX} for social"`
 > **Output:** `episode-{XX}/07_social_media/ep{XX}_social_atomization.md`
 
+> **Status — fork-facing.** ROBOTIKO releases its episodes as full films on YouTube; a short-form
+> track is not part of that distribution. This skill is kept complete and runnable for forkers who
+> do want one — it turns a finished episode into vertical clips without re-cutting the film.
+> Worked examples live in `episode-01/` and `episode-02/` (`ep{XX}_social_atomization.md`).
+
 ---
 
 ## PURPOSE
@@ -96,7 +101,6 @@ For each clip:
 - **Hashtags:** [Ready-to-paste hashtag string — include #aiart]
 - **Platform Priority:** [Which platforms this clip works best on]
 - **Vertical Framing:** [Technique name — Cinematic Canvas / Pan & Scan / Split-Screen / Analog Typography]
-- **Related Video:** Link to full episode via YouTube Studio "Related Video"
 - **CapCut Steps:** [Numbered steps specific to this clip — timestamps, technique-specific instructions]
 ```
 
@@ -219,17 +223,6 @@ Best for: Opening or closing seconds of a clip. Can be combined with Technique 1
 
 ---
 
-## RELATED VIDEO BRIDGE
-
-After uploading each Short to YouTube, use YouTube Studio's "Related Video" feature to link the Short directly to the full episode, so a viewer can reach the full piece.
-
-**Checklist per Short:**
-- [ ] Short uploaded to YouTube
-- [ ] YouTube Studio → Short → Details → "Related Video" → select full episode
-- [ ] Verify the link appears on the Short's player page
-
----
-
 ## CLIP COUNT GUIDELINES
 
 | Episode Duration | Suggested Clips |
@@ -254,7 +247,6 @@ These are guidelines, not hard rules. Quality over quantity — a weak clip dama
 - [ ] 9:16 crop safety is noted for each clip
 - [ ] Clip ordering noted (narrative-arc or type-based)
 - [ ] No clip relies on context from the full video to make sense
-- [ ] Related Video bridge configured for every Short
 - [ ] Vertical framing technique specified for each clip
 - [ ] Ask yourself: **"Would Fibula approve this?"**
 

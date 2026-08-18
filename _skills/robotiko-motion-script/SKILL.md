@@ -212,6 +212,7 @@ After determining coverage strategy (Step 6), assign an AI video generation tool
 | **Kling 3.0** | Start + End | 1080p | 5s or 10s | Full vocabulary | Credits (paid) | ✅ Yes |
 | **Kling 2.5 Turbo** | Start + End | 1080p | 5s or 10s | Static only | Credits (paid) | ❌ No |
 | **Seedance 1.0 (CapCut)** | Start + End | 1080p | 5s or 10s | Limited | 25cr/5s, 50cr/10s | ❌ No |
+| **Seedance 2.0 (Dreamina)** | Start | 1080p | 5s or 10s | Limited | Credits (paid, premium tier) | ❌ No |
 | **Google Veo** | None | ~1080p | 8s fixed | Limited | Free (daily limit) | ❌ No |
 
 > Tool inventory may change between episodes. Always check `_management/project_metadata.json` for current tool availability and credit budgets before assigning.
@@ -225,7 +226,8 @@ After determining coverage strategy (Step 6), assign an AI video generation tool
 5. **Map/texture shots → Kling 2.5 Turbo or Kling 3.0** — Seedance performs poorly on abstract/texture content.
 6. **Character close-ups → Kling 3.0** — Chrome detail, eye color, wire textures are resolution-sensitive and benefit from Elements consistency.
 7. **Standalone detail shots (no camera move, no Element) → Seedance 1.0** — Budget diversification for simple character-focused scenes.
-8. **Veo → diminished role** — Free daily limit useful for test renders or non-critical atmospheric shots only.
+8. **Deliberate human hand gestures → Seedance 2.0 (Dreamina)** — Kling animates motion, not intent: asked for a small open-palm beckon it returns broad presenter-style arm movement. When a shot's meaning lives in one specific human gesture, escalate that single clip to Seedance 2.0 via Dreamina (proven on EP10 S34b: correct gesture at 1080p, no audio track). Note the Dreamina watermark sits top-left — verify it falls under the 2.35:1 letterbox bar before accepting the take.
+9. **Veo → diminished role** — Free daily limit useful for test renders or non-critical atmospheric shots only.
 
 #### EP07+ Tool Distribution Target
 
@@ -235,6 +237,7 @@ After determining coverage strategy (Step 6), assign an AI video generation tool
 | Kling 2.5 Turbo | 5-10% | Static budget shots only. |
 | Seedance 1.0 | 10-20% | Standalone detail, character-only, no camera move. |
 | Veo | 0-5% | Test renders, non-critical atmospherics. |
+| Seedance 2.0 (Dreamina) | as needed | Escalation only — gesture-critical single clips Kling cannot execute. Not budgeted as a share. |
 
 #### Budget Tracking
 
@@ -271,7 +274,7 @@ Before the shot-by-shot section, define ALL Elements used in this episode:
 | Element Name | Description | Reference Images | Episodes Active |
 |---|---|---|---|
 | @Damaged | Robotiko EP07 state (missing ear, torso dent, forearm tattoos) | android_damaged.png, android_damaged_2.png, android_damaged_3.png | EP07 |
-| @Crane | Turna (crane bird) — a wild migrating flock crossing the sky, historical/example only | crane_ref_01.png, crane_ref_02.png | (none — see EP10 Camera Personality) |
+| @Kintsugi | Robotiko EP09-EP10 state (gold-seamed repairs across chrome, copper patchwork) | android_kintsugi.png | EP09, EP10 |
 ```
 
 #### Angles 2.0 Protocol
@@ -294,13 +297,13 @@ For each Element, generate 12 reference angles from the master reference photo:
 
 For episodes where character appearance evolves across the episode (EP08: 40 days of weathering):
 
-**Strategy: Phase-Staged Elements** (to be tested in EP08 production)
+**Strategy: Phase-Staged Elements**
 - Create 2-3 Element variants per episode: @Phase1, @Phase2, @Phase3
 - Assign phase boundaries at specific timestamps in the episode
 - Switch Element tag at phase transitions
 - This creates gradual visual evolution without per-clip inconsistency
 
-> Outcome not recorded in this file as of this revision — if EP08 production settled on Phase-Staged Elements or fell back to single Element + descriptive prompts, record the result here before reusing this strategy for a future episode.
+> **Production outcome (EP08).** The phase-staged variant was not used. EP08 shipped with a single Element — `@Damaged` on every Kling 3.0 character clip — and carried the 40-day weathering progression in the per-clip motion prompts instead. Single Element + descriptive prompts is therefore the proven default. Phase-Staged Elements remains the untested alternative: validate it on a short scene range before committing a whole episode to it.
 
 ### Generation Mode Field
 
@@ -602,7 +605,7 @@ In scenes with multiple characters (2+ people), follow these rules strictly:
 > The @Damaged chrome android stands in pouring rain, water streaming down chrome surfaces. Slow head tilt downward. Fog drifts at knee level, neon reflections shimmer on wet pavement. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ### EXAMPLE (Good — texture/map scene):
-> Extreme close-up on a glowing red light marker on a charred, burnt map. The red light pulses slowly and hypnotically. The surrounding paper is heavily textured with ashes and decay. Cinematic 35mm film style, heavy film grain, shallow depth of field, Kodachrome colors, 16:9. Do not add extra characters. Keep everything as pictured.
+> Extreme close-up on a glowing red light marker on a charred, burnt map. The red light pulses slowly and hypnotically. The surrounding paper is heavily textured with ashes and decay. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ### EXAMPLE (Bad — narrative/musical contamination):
 > Slow zoom in toward Robotiko's face as the Hammond organ swell builds. The slowdown to 0.71× will make the approach feel weighty — a crowd drawn to the speaker in suspended time.

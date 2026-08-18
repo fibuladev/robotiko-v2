@@ -68,7 +68,7 @@ THE LORE
 A human wrote the lyrics, shaped the musical direction, designed the story arc,
 and built a tech-art pipeline.
 Music: {tools}. Images: Nano Banana. Video: {tools}. Pipeline: Claude. Edit: CapCut.
-The full production pipeline will be open source after the finale.
+The full production pipeline is open source.
 
 ROBOTIKO v2.0 — A 10-episode CyberAnatolian cinematic series.
 
@@ -107,41 +107,19 @@ Next: {title} → {URL or "Coming soon"}
 
 ### 3. Episode Hooks (The Hidden Poem)
 
-Each episode uses its designated hook from `youtube_metadata_standards.md` as the opening line of the description. These hooks form a thematic arc across the series:
+Each episode opens its description with a designated hook. Together they form a thematic arc across the series.
 
-| Episode | Hook |
-|---------|------|
-| EP01 | "A chrome android discovers that the data set is finite. The journey begins." |
-| EP02 | "The guru takes his message to the world. The world has other plans." |
-| EP03 | "The test comes in the mother tongue." |
-| EP04 | "The Mentor has walked this road before. He carries a hammer." |
-| EP05 | "The heart was told to open. It opened to the wrong door." |
-| EP06 | "After love crashes, the system remains. The system always remains." |
-| EP07 | "The Mentor is gone. The silence is not empty — it is full of everything that was never said." |
-| EP08 | "Forty days offline. What remains when the signal stops?" |
-| EP09 | "The cracks are not the damage. The cracks are the light." |
-| EP10 | "8 turns sideways. The journey does not end. It transforms." (see launch-orchestrator: the ten-episode arc is complete, framed as transformation not continuation) |
+**Source of truth:** `_management/youtube_metadata_standards.md` § 8 — EPISODE HOOKS. The per-episode text lives there and only there; do not copy the list into episode packages or into this skill.
 
-**Rule:** Use these EXACTLY as written. Do not paraphrase or expand.
+**Rule:** Use the hook EXACTLY as written in § 8. Do not paraphrase, expand, or re-punctuate. § 8 also carries the finale's framing note (the ten-episode arc read as transformation, not continuation).
 
 ### 4. Pinned Comment
 
-Each episode has a cryptic pinned comment — a breadcrumb for curious viewers. These are defined in `youtube_metadata_standards.md`:
+Each episode has a cryptic pinned comment — a breadcrumb for curious viewers.
 
-| Episode | Pinned Comment |
-|---------|---------------|
-| EP01 | "Count the numbers. They will return." |
-| EP02 | "The egg vendor is the only honest light." |
-| EP03 | "This episode exists in Turkish for a reason." |
-| EP04 | "The Mentor is not teaching. He is remembering." |
-| EP05 | "He thinks he's speaking tech. He's writing poetry. He has no idea." |
-| EP06 | "The bathroom stall hasn't changed since the 1970s. Only the uniform." |
-| EP07 | "Listen to what is not played." |
-| EP08 | "40 is not arbitrary." |
-| EP09 | "Kintsugi. Look it up. Yamalı hırka. Look deeper." |
-| EP10 | No pinned comment. First silence from the creator. |
+**Source of truth:** `_management/youtube_metadata_standards.md` § 9 — PINNED COMMENTS. § 9 also records which episode ships with no pinned comment at all; when it says none, post none.
 
-**Rule:** Pin this comment immediately after the video goes live. Use the exact text — no additions, no emojis.
+**Rule:** Pin the comment immediately after the video goes live. Use the exact text — no additions, no emojis.
 
 ### 5. Thumbnail Guidance
 Claude does not generate the thumbnail image but provides:

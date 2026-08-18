@@ -13,12 +13,17 @@ Coordinate the complete launch sequence for a finished episode — from pre-laun
 
 ## PREREQUISITE
 
-> All of the following must be true before this skill executes:
+> Both of the following must be true before this skill executes:
 > 1. Final video edit exists: `episode-{XX}/06_edit/ep{XX}_final_v{VV}.mp4`
 > 2. YouTube package exists: `episode-{XX}/07_social_media/ep{XX}_youtube_package.md`
-> 3. Social atomization exists: `episode-{XX}/07_social_media/ep{XX}_social_atomization.md`
 >
-> If any are missing, STOP. List what is missing and inform the human.
+> If either is missing, STOP. List what is missing and inform the human.
+>
+> **Optional:** `episode-{XX}/07_social_media/ep{XX}_social_atomization.md`. ROBOTIKO releases
+> episodes as full films on YouTube, and the short-form track sits outside that release; the
+> artifact exists for EP01 and EP02. Its absence is not a blocking condition — skip PHASE 3
+> entirely, generate the rest of the checklist, and note in the output that the phase was
+> omitted for want of an atomization file.
 
 ---
 
@@ -27,7 +32,7 @@ Coordinate the complete launch sequence for a finished episode — from pre-laun
 | # | File | What to Extract |
 |---|---|---|
 | 1 | `episode-{XX}/07_social_media/ep{XX}_youtube_package.md` | Title, description, thumbnail guidance |
-| 2 | `episode-{XX}/07_social_media/ep{XX}_social_atomization.md` | Clip list, captions, hashtags |
+| 2 | `episode-{XX}/07_social_media/ep{XX}_social_atomization.md` | *(optional — PHASE 3 only)* Clip list, captions, hashtags. Absent = skip PHASE 3. |
 | 3 | `_management/project_metadata.json` | Episode status, previous episode status (for playlist linking) |
 | 4 | `_management/master.md` | Episode context for cross-referencing narrative continuity |
 
@@ -43,7 +48,7 @@ The output is a comprehensive checklist organized in launch phases:
 ## PRE-LAUNCH VERIFICATION
 - [ ] Final video export confirmed (1080p, correct aspect ratio, audio sync verified)
 - [ ] YouTube package reviewed and approved
-- [ ] Social atomization clips reviewed and approved
+- [ ] Social atomization clips reviewed and approved *(only if the episode has a short-form track)*
 - [ ] Thumbnail created based on youtube_package.md guidance
 - [ ] Episode title and description proofread (no typos, correct episode number)
 - [ ] Description verified to contain NO timestamps/chapters (continuous-piece rule)
@@ -67,21 +72,19 @@ The output is a comprehensive checklist organized in launch phases:
 - [ ] **Pinned comment posted** — exact text from youtube_package.md (breadcrumb for curious viewers)
 ```
 
-### PHASE 3: SOCIAL MEDIA ROLLOUT
+### PHASE 3: SHORT-FORM ROLLOUT (Optional)
+
+> ROBOTIKO releases episodes as full films on YouTube; short-form clips are not part of that
+> release. The phase is kept complete and runnable for forks that do want a short-form track.
+> Include it only when `ep{XX}_social_atomization.md` exists — otherwise omit the whole block.
 
 ```
-## SOCIAL MEDIA ROLLOUT
-- [ ] Clip 1 posted
-  - [ ] Instagram Reels
-  - [ ] YouTube Shorts
-  - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
-- [ ] Remaining clips posted (in the order chosen in social_atomization.md)
-  - [ ] Instagram Reels
-  - [ ] YouTube Shorts
-  - [ ] **YouTube Studio → "Related Video" → link Short to full episode**
+## SHORT-FORM ROLLOUT
+- [ ] Clip 1 published to the short-form surface(s) this project uses
+- [ ] Remaining clips published (in the order chosen in social_atomization.md)
 - [ ] All captions and hashtags pasted from social_atomization.md
-- [ ] Link to full YouTube video in bio / link tree
-- [ ] Cross-platform links verified
+- [ ] Every published clip re-checked after upload: 9:16 framing intact, audio in sync,
+      no crop into the letterbox bars, typography legible at phone size
 ```
 
 ### PHASE 4: POST-LAUNCH
@@ -106,7 +109,7 @@ After each episode launch, check if a banner/About section update is due:
 | EP10 | Banner v5 — full Kintsugi, gold light from within | Phase 4 About text + open source link |
 
 If a banner update is due after this episode's launch, flag it as an action item.
-Banner specs: `_assets/banners/banner_v{N}_spec.md`
+Banner spec: `_assets/banners/banner_v1_spec.md` — the launch banner, and the only spec written in this run (see the production note below). A fork taking the phased route writes one spec per phase beside it.
 ```
 
 **Production reality:** in ROBOTIKO's own run, the channel kept a single banner
@@ -152,7 +155,7 @@ EP10 is the series finale. The launch orchestration for EP10 includes additional
 ```
 ## OPEN SOURCE NOTE
 
-All episode descriptions may include: "The full production pipeline will be open source after the finale."
+All episode descriptions may include: "The full production pipeline is open source."
 EP10 description: "The ten-episode arc is complete. The pipeline is open source: [GitHub link]"
 
 ## EP10 SPECIAL — SERIES FINALE
@@ -183,7 +186,7 @@ The output document contains:
 1. **Episode Launch Header** — Episode number, title, planned launch date
 2. **Pre-Launch Verification Checklist** — All items from Phase 1
 3. **YouTube Upload Checklist** — All items from Phase 2
-4. **Social Media Rollout Checklist** — All items from Phase 3
+4. **Short-Form Rollout Checklist** — All items from Phase 3 *(included only when an atomization file exists)*
 5. **Post-Launch Checklist** — All items from Phase 4
 6. **Cross-Episode Continuity Checks** — Table from above
 7. **Launch Timing Recommendation** — Claude's suggested strategy with rationale
@@ -193,9 +196,9 @@ The output document contains:
 
 ## POST-GENERATION CHECKLIST
 
-- [ ] All four launch phases are present in the checklist
+- [ ] All applicable phases are present — Phases 1, 2 and 4 always; Phase 3 only when an atomization file exists
 - [ ] YouTube package content is correctly referenced (not duplicated — linked)
-- [ ] Social atomization clips are correctly referenced
+- [ ] Social atomization clips are correctly referenced *(when the file is present)*
 - [ ] Cross-episode continuity checks are included
 - [ ] EP10 special handling is included (if applicable)
 - [ ] No broken file references in the checklist
@@ -209,7 +212,7 @@ The output document contains:
 | Situation | Action |
 |---|---|
 | YouTube package missing | STOP. Cannot orchestrate without upload metadata. |
-| Social atomization missing | Proceed with YouTube-only launch, but flag that social rollout is blocked. |
+| Social atomization missing | Not an error. Omit PHASE 3, generate the rest of the checklist, and note the omission in the output. |
 | Previous episode not yet published | Flag in continuity checks. Cross-link updates are blocked until the previous episode is live. |
 | This is EP01 (first episode) | No previous episode to link to. Skip "previous episode cross-link" checks. |
 | This is EP10 (series finale) | Include EP10 Special section. Trigger open source release review. |

@@ -6,7 +6,7 @@ Skills are operational instructions for Claude AI to execute specific workflows.
 
 1. **robotiko-musical-metadata** - Build the temporal metadata JSON from BPM, key, and timestamped lyrics
 2. **robotiko-dramaturgy** - Generate scene-by-scene breakdowns [HUMAN GATE 1]
-3. **robotiko-visual-prompts** - Create Nano Banana image prompts
+3. **robotiko-visual-prompts** - Two-phase Nano Banana image prompts: reference sheet first, scene prompts after [HUMAN GATE 1R]
 4. **robotiko-motion-script** - Generate Kling/Veo/Seedance video prompts [HUMAN GATE 2]
 5. **robotiko-episode-scaffold** - Auto-create episode folder structure
 6. **robotiko-naming-enforcer** - Validate file naming conventions
@@ -21,6 +21,16 @@ Skills are operational instructions for Claude AI to execute specific workflows.
 
 - **Creative Skills** (dramaturgy, visuals, motion): Opus — high to max thinking effort
 - **Mechanical Skills** (scaffolding, naming): low thinking effort (a lighter model is fine here)
+
+## Human Gates
+
+Three approval gates are mandatory and pinned by sha256 in `_management/approvals.json`:
+
+| Gate | Where | What the human approves |
+|---|---|---|
+| **GATE 1** | after `robotiko-dramaturgy` | the scene breakdown, before any prompt is written |
+| **GATE 1R** | inside `robotiko-visual-prompts`, between Phase 1 and Phase 2 | the reference images, before scene prompts are generated |
+| **GATE 2** | after `robotiko-motion-script` | the motion script, before any video is generated |
 
 ## Usage
 

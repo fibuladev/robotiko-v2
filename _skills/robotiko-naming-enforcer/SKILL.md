@@ -25,7 +25,14 @@ This skill is a quality gate. It catches naming errors before they propagate thr
 
 ### Full Scan (No episode specified)
 Trigger: `"Validate file names"`
-Scope: All `episode-{XX}/` folders + `_management/` + `_assets/` + `_skills/` + `_templates/`
+Scope: every `episode-{XX}/` folder in the repository root, walked recursively.
+
+**Not scanned.** `tests/naming_check.py` treats `_management/`, `_assets/`, `_memory/`, `_skills/`,
+`_templates/`, `scripts/`, `tests/`, `docs/` and `.github/` as non-episode directories
+(`NON_EPISODE_DIRS`) and never enters them. Root-level files (`CLAUDE.md`, `README.md`,
+`CONTRIBUTING.md`, and the rest) are outside every episode folder and are likewise never seen.
+Skipped anywhere in the tree: `raw/`, `.git/`, `__pycache__/`, `node_modules/`, `.claude/`
+(`SKIP_DIRS`) — `raw/` is gitignored by design.
 
 ### Episode Scan
 Trigger: `"Validate file names for EP{XX}"`
@@ -34,6 +41,12 @@ Scope: Only `episode-{XX}/` and its subfolders.
 ---
 
 ## VALIDATION RULES
+
+> **What is enforced by which method.** Rules 1-7 are exactly what `tests/naming_check.py`
+> enforces — filename patterns plus the episode-number-matches-folder check, inside episode
+> folders only. Rules 8-10 describe convention the script does not implement: it never validates
+> folder structure and never enters `_management/` or `_assets/`. Check those by review
+> (Method A), and do not report them as script failures.
 
 ### Rule 1: Episode Number Format
 - Must be exactly 2 digits: `01`, `02`, `10`
@@ -52,8 +65,11 @@ Scope: Only `episode-{XX}/` and its subfolders.
 - Pattern: `/v\d{2}\./`
 
 ### Rule 4: Lowercase Enforcement
-- All filenames must be lowercase
-- Exception: `SKILL.md`, `CHANGELOG.md`, `CLAUDE.md`, `CONTRIBUTING.md`, `README.md`
+- All filenames inside an episode folder must be lowercase
+- Exception — fixed names accepted verbatim wherever they appear in a scanned folder
+  (`ALLOWED_FIXED_NAMES` in `tests/naming_check.py`): `SKILL.md`, `CHANGELOG.md`, `MANIFEST.md`, `.gitkeep`
+- Uppercase root files such as `CLAUDE.md`, `CONTRIBUTING.md` and `README.md` need no exception:
+  they live outside every episode folder, so the validator never reaches them
 - Violation: `Ep02_Lyrics_v01.md`, `EP02_dramaturgy.md`
 
 ### Rule 5: No Spaces
@@ -73,19 +89,19 @@ These file types must NOT have a version suffix:
 - `ep{XX}_concept_notes.md` — single document, Git-versioned
 - Violation: `ep02_musical_metadata_v01.json`, `ep02_s01_selected_v02.png`
 
-### Rule 8: Folder Structure Compliance
+### Rule 8: Folder Structure Compliance — review-only
 - Episode folders must follow the canonical structure from `architecture.md`
 - Required subfolders: `01_lyrics/`, `02_music/`, `03_direction/`, `04_visuals/`, `05_video/`, `06_edit/`, `07_social_media/`
 - `04_visuals/` must contain `raw/` and `selected/`
 - `05_video/` must contain `raw/` and `selected/`
 - `07_social_media/` must contain `stills/` and `reels/`
 
-### Rule 9: Management Files (Fixed Names)
+### Rule 9: Management Files (Fixed Names) — review-only
 - `_management/` files have fixed names, no episode prefix, no version suffix
 - Valid: `master.md`, `pipeline_rules.md`, `naming_convention.md`, `architecture.md`, `project_metadata.json`
 - Violation: `master_v02.md`, `pipeline_rules_2.md`
 
-### Rule 10: Asset Files
+### Rule 10: Asset Files — review-only
 - Character references: `ref_{character}_master.png`
 - Profiles: `character_profiles.json`
 - Violation: `robotiko_ref.png`, `characters.json`

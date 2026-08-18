@@ -5,10 +5,7 @@
 
 ---
 
-## [1.0.0] — TBD (target 2026-08-04) — Open Source Release (EP10 Release Day)
-
-> **Status: PREPARED — not yet released.** The public release ships on EP10 release day,
-> when the repository goes public.
+## [1.0.0] — 2026-08-18 — Open Source Release (EP10 Release Day)
 
 A complete, reproducible, open-source methodology for LLM-directed music cinema — a ten-episode
 closed arc produced by a git repository operating as a one-person film studio, with Claude as a
@@ -20,22 +17,128 @@ stage-gated production crew and the human retaining two irreplaceable roles: cre
   - `master.md` — Universe Canon (constitution / policy-as-code: golden rules, mandatory suffixes).
   - 10 production skills in `_skills/` — musical-metadata, dramaturgy, visual-prompts, motion-script,
     episode-scaffold, naming-enforcer, youtube-packager, reels-atomizer, launch-orchestrator, capcut-editor.
-  - `_memory/lessons.md` — ~125 dated, tested generative-film-grammar rules (a self-improving knowledge base).
+  - `_memory/lessons.md` — 144 dated, tested generative-film-grammar rules (a self-improving knowledge base).
   - `_memory/decisions_log.md` — architectural decision records.
   - `character_profiles.json` + `project_metadata.json` — explicit multi-episode character state machine
     (cumulative damage tracked and enforced across all episodes).
-  - `_templates/` — dramaturgy, visual-prompt, video-prompt templates.
-- **Enforcement / CI layer:** `tests/naming_check.py`, `tests/pipeline_integrity.py`,
-  `tests/visual_prompt_validator.py`, Claude Code PostToolUse naming hook (later removed 2026-07-04),
-  GitHub Actions scaffold.
+  - `_templates/` — dramaturgy, visual-prompt, video-prompt, episode-metadata and sync-QC templates.
+- **Enforcement / CI layer:** one command, one gate — `python tests/run_all.py` runs **12 check
+  groups (11 blocking + 1 advisory)** and exits non-zero if any blocking group fails; CI
+  (`.github/workflows/validation_suite.yml`) calls that same command on push/PR. The groups: naming
+  convention, pipeline integrity, visual-prompt sweep (suffix / forbidden aesthetics / character
+  phase / reference integrity), prompt hygiene, musical metadata, motion script, CapCut guide,
+  character profiles, validator meta-tests (frozen fixtures grading the graders), doc-reference
+  integrity, forbidden terms — plus energy-motion sync as the advisory tier (warns, never blocks).
+  Standard library only, nothing to `pip install`. `_management/invariant_coverage_matrix.md` states,
+  per invariant, what the suite guarantees and what still rests on a human eye.
 - **Tooling:** custom-built Google Drive MCP server (`_tools/mcp-gdrive/`, no third-party packages),
   Python episode-scaffold scripts.
 - **Dual license:**
   - `LICENSE` — **MIT** for the method (pipeline, skills, scripts, templates, docs).
   - `LICENSE-CONTENT` — **CC BY-NC 4.0** for the creative content (lyrics, dramaturgy, visuals, audio).
-- **Authorship & docs:** `AUTHOR.md` (creator Can Yalcin, channel Fibula), completed `docs/`
-  (getting-started, skills-guide, tools-setup, anatomy-of-an-episode), CONTRIBUTING.md.
+- **Authorship & docs:** `AUTHOR.md` (creator Can Yalçın, channel Fibula), 10 `docs/` pages
+  (getting-started, skills-guide, tools-setup, anatomy-of-an-episode, visual-canon,
+  hallucinating-camera, method-lesson-graduation, two-phase-visual-prompts, fork-dry-run,
+  text-only-first-episode), `CONTRIBUTING.md` and the community surface (`CODE_OF_CONDUCT.md`,
+  `SECURITY.md`, `SUPPORT.md`, `GOVERNANCE.md`, `ROADMAP.md`, `FORKING.md`, `UNIVERSES.md`).
+- **Production economics:** `_management/cost.md` — what the ten episodes actually cost to make.
 - **10 episodes** documented end-to-end; EP01–EP10 published on YouTube.
+
+---
+
+## [0.9.9] — 2026-07-12 — Two-Phase Visual Prompts, Public-Prose Gate, Cost Disclosure
+
+### Added
+- **Two-phase visual prompts** ([ADR 0013](_management/adr/0013-two-phase-visual-prompts.md)):
+  environment references are authored and approved first (Phase 1), scene prompts are then framed to
+  the approved pixels (Phase 2). Ships as `robotiko-visual-prompts` SKILL v2.0, a phase-aware
+  `tests/visual_prompt_validator.py` (`check_phase_state`, `check_ref_image_path`), a third human
+  checkpoint (**gate 1R**) in `_management/approvals.json`, and `docs/two-phase-visual-prompts.md`.
+- `tests/forbidden_terms_gate.py` — public prose (canon docs, direction notes, musical metadata) is
+  scanned against a pinned term list, with a narrow allowlist for the one sanctioned mention.
+- `_management/cost.md` — full production cost disclosure for the ten-episode arc, surfaced from
+  `README.md` and `FORKING.md`.
+- `.gitattributes` — LF forced on sha-pinned text, so approval pins match the bytes a fresh clone
+  receives.
+
+### Notes
+- **EP10 direction complete:** lyrics, musical metadata (9 sections, 4:34, E minor, 153 BPM
+  double-time), concept notes and dramaturgy v01 (35 scenes, Companion Camera, gate-1 recorded),
+  two-phase visual prompts (6 environment references, gate-1R recorded, Phase-2 merged), motion
+  script v01 (37 clips, gate-2 recorded).
+- Canon pass across `master.md` and the public docs: cultural attribution, theory labels verified
+  against sources, honest first-pass figures (~65-70% image, ~80% video), three human gates stated
+  consistently everywhere.
+
+---
+
+## [0.9.8] — 2026-07-05 — Repo Readiness: Docs, Governance, Gates as Data
+
+### Added
+- **Community surface** at the repo root: `CODE_OF_CONDUCT.md`, `SECURITY.md`, `SUPPORT.md`,
+  `GOVERNANCE.md`, `ROADMAP.md`, `FORKING.md`, `UNIVERSES.md`, plus GitHub issue templates and a
+  pull-request template in `.github/`.
+- **Five more `docs/` pages** — `visual-canon.md`, `hallucinating-camera.md`,
+  `method-lesson-graduation.md`, `fork-dry-run.md`, `text-only-first-episode.md` — taking `docs/` to
+  nine pages at this point.
+- **Four more validators:** `tests/musical_metadata_validator.py`, `tests/motion_script_validator.py`
+  (video suffix, anti-spawn guard, full camera-diversity enforcement),
+  `tests/character_profiles_validator.py` (schema-based), and `tests/doc_reference_check.py` (every
+  backtick path in a curated doc must exist on disk).
+- `tests/energy_motion_check.py` — the advisory tier: clip motion strength against the musical
+  section's energy band, warnings only.
+- `_management/approvals.json` — the human approval gates recorded **as data**, sha256-pinned per
+  artifact ([ADR 0008](_management/adr/0008-approval-gates-as-data.md)); `pipeline_integrity.py`
+  consumes it, so an artifact past a gate with no record fails and post-approval drift is visible.
+- `tests/universe_config.py` — universe constants in a single config so a fork can retune the
+  pipeline for its own world; proven by a real toy-universe dry run (`docs/fork-dry-run.md`).
+- `_management/dissonance_registry.md` — the Lesson Graduation Ladder's registry of open tensions.
+- `_templates/ep_sync_qc_template.md` + `scripts/sync_probe.py` — sync-QC convention and local
+  measurement; `tests/attempts_report.py` for the attempts ledger.
+- ADRs [0007](_management/adr/0007-reference-first-or-pay-the-reshoot-tax.md) (reference-first),
+  [0008](_management/adr/0008-approval-gates-as-data.md),
+  [0009](_management/adr/0009-style-suffix-v2.md) (style suffix v2),
+  [0010](_management/adr/0010-eye-canon-reconciliation.md) (eye canon),
+  [0012](_management/adr/0012-scaffold-pr-flow.md) (scaffold PR flow).
+
+### Changed
+- `README.md` — v2: the storefront shows the method rather than describing it.
+- `master.md` + `character_profiles.json` — eye canon reconciled and the style suffix v2 variant
+  ruled, closing the last coverage gaps in the invariant matrix.
+- Docs reconciled 1:1 with the tree, and the doc-reference lint now keeps them that way.
+
+---
+
+## [0.9.5] — 2026-06-26 — Validation Backbone (One Command, One Gate)
+
+### Added
+- `tests/run_all.py` — **the single gate**: every machine check in sequence, non-zero exit if any
+  blocking group fails, plus a coverage summary printed from the invariant matrix.
+- `.github/workflows/validation_suite.yml` — CI runs that same one command on push/PR.
+- `tests/prompt_hygiene_lint.py` — model-facing prompt strings kept plain-English ASCII, scoped to
+  the strings a generator actually reads
+  ([ADR 0006](_management/adr/0006-scoped-prompt-hygiene.md)).
+- `tests/test_validators.py` + `tests/fixtures/` — meta-tests that **grade the graders**: frozen
+  GOOD/BAD fixtures prove each check fires in both directions
+  ([ADR 0003](_management/adr/0003-frozen-fixtures-and-meta-tests.md)).
+- Reference-integrity checking in `tests/visual_prompt_validator.py` — the phase-to-reference map is
+  the source of truth and the check parses reference metadata rather than prose
+  ([ADR 0001](_management/adr/0001-phase-reference-map-source-of-truth.md),
+  [ADR 0002](_management/adr/0002-ref-integrity-parses-reference-metadata.md)).
+- `_management/invariant_coverage_matrix.md` — an honest coverage table (Machine / Heuristic / Human
+  / Gap): a green CI run does **not** mean every Golden Rule is enforced, and the table says which.
+- `_management/case_study_validation_backbone.md` — the whole arc written up as a teachable case
+  study (find one, find all; triage policy in
+  [ADR 0004](_management/adr/0004-triage-policy-and-check-refinements.md)).
+- `_management/adr/` — architecture decision records open here, with
+  [ADR 0005](_management/adr/0005-single-command-ci-gate.md) recording the single-command gate.
+
+### Notes
+- **EP09 direction and visuals** landed alongside: musical metadata, concept notes, dramaturgy v01,
+  visual prompts v01 with the mechanic character reference, then the inline-reference binding format
+  and the kintsugi / exterior references.
+- The backbone was built the honest way — a real reference-chain defect in EP09 became the first
+  check, then the sweep that found the whole class of it.
 
 ---
 
@@ -44,9 +147,7 @@ stage-gated production crew and the human retaining two irreplaceable roles: cre
 ### Added
 - `LICENSE` — MIT, covering the method (pipeline, skills, scripts, templates, docs).
 - `LICENSE-CONTENT` — CC BY-NC 4.0, covering the creative content (lyrics, dramaturgy, visuals, audio).
-- `AUTHOR.md` — repo root; creator identity (Can Yalcin) and channel (Fibula).
-- `_management/golden_release_report.md` — multi-role golden-release audit (FDE / architect / DevOps /
-  art director / dramaturg) with web-researched market comparison, novelty verdict, and P0/P1/P2 roadmap.
+- `AUTHOR.md` — repo root; creator identity (Can Yalçın) and channel (Fibula).
 - `docs/anatomy-of-an-episode.md` — one episode traced end-to-end as the showcase artifact.
 - `episode-09/` + `episode-10/` scaffolded; `ep09_lyrics_v01.md` committed (canonical creative input now in git).
 
@@ -59,10 +160,6 @@ stage-gated production crew and the human retaining two irreplaceable roles: cre
 - Corrected the stale video-tool name to `Seedance` across naming-enforcer SKILL, `architecture.md`,
   setup script, `docs/getting-started.md`, and `tests/naming_check.py` regex.
 - `_management/README.md` — removed a forbidden legacy source-file reference; file list brought current.
-
-### Removed / Separated
-- Private files separated from the public tree (local playbook and personal system-maintenance
-  utilities gitignored); secrets/PII sweep across `_tools/` and committed JSON.
 
 ### Notes
 - Planned for golden quality (P1): CI workflow running the naming + pipeline-integrity tests on push/PR.
@@ -128,8 +225,8 @@ stage-gated production crew and the human retaining two irreplaceable roles: cre
 ### Changed
 - `_skills/robotiko-youtube-packager/SKILL.md` — **v4.0**: "Cinematic AI Series" title format,
   film-first tags, new description template, new hashtags. EP01–EP03 packages retrofitted.
-- YouTube strategy overhaul: Film & Animation recategorization, no mixed playlists with competitors,
-  film-first metadata standards across all episodes.
+- `_management/youtube_metadata_standards.md` — film-first metadata standards adopted across all
+  episodes (title format, tag families, description structure, inspiration-credit convention).
 
 ### Notes
 - EP01–EP07 launched on YouTube (channel @fibuladev): EP01 (Apr 22), EP02 (May 1), EP03 (May 13),
@@ -163,15 +260,14 @@ stage-gated production crew and the human retaining two irreplaceable roles: cre
 ## [0.3.5] — 2026-04-22 — EP01 Launch & Social Infrastructure
 
 ### Added
-- `episode-01/07_social_media/` — YouTube package, social atomization, launch checklist, walkthrough,
-  external promotion strategy.
+- `episode-01/07_social_media/` — `ep01_youtube_package.md`, `ep01_social_atomization.md`,
+  `ep01_launch_checklist.md`.
 - Social infrastructure: YouTube + Instagram accounts (@fibuladev), banner, About section, playlist.
-- Creator strategy defined (kept in the creator's private notes) — channel name Fibula,
-  AUTHOR.md on EP10 release day, AI transparency from EP01, weekly release rhythm.
+- Creator strategy defined: channel name Fibula, `AUTHOR.md` published on EP10 release day,
+  AI transparency from EP01.
 
 ### Notes
 - **EP01 launched on YouTube April 22, 2026.** First public episode of the series.
-- Strategy pivot: pre-launch teaser campaign killed; Instagram repositioned as a post-launch Reels funnel.
 
 ---
 

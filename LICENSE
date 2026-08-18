@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025-2026 Can Yalcin (Fibula)
+Copyright (c) 2025-2026 Can Yalçın (Fibula)
 
 This license covers the SOFTWARE and METHOD of this repository: the Claude
 skills (`_skills/`), automation scripts (`scripts/`, `tests/`, `setup_project.sh`),

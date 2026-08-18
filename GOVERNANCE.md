@@ -4,7 +4,7 @@ Stated plainly, because vague governance docs are worse than none.
 
 ## One maintainer
 
-There is one maintainer: Can Yalcin (Fibula). There is no team, no core
+There is one maintainer: Can Yalçın (Fibula). There is no team, no core
 group, no committee. Decisions about the pipeline and the story are made by
 one person — and that person has a full-time day job and a life outside
 this repo. The ten-episode arc is complete; what remains is maintenance,
@@ -60,14 +60,15 @@ the open method (see [CONTRIBUTING.md §5](CONTRIBUTING.md#5-pull-request-proces
 get reviewed faster than large ones. `python tests/run_all.py` must pass —
 that's the one gate, enforced identically in CI.
 
-**Branch protection** — the intended rule on `main` is that the required
+**Branch protection** — `main` is protected on four counts: the required
 status check is the validation suite's job context `checks` (workflow
-**Validation Suite**), which must pass before merge. That's a
-GitHub repository setting, not something enforceable from inside the repo
-itself, so it can't be verified by reading a file here. It is evidenced in
-the release runbook (kept private) §3: the branch-protection API check runs at
-go-public, once the setting is live and can be confirmed against the actual
-branch protection API — not claimed in advance of that.
+**Validation Suite**), which must pass before merge; force-pushes are
+blocked; branch deletion is blocked; and administrators are included, so the
+maintainer gets no silent bypass of the same gate contributors face. Those
+are GitHub repository settings rather than files in the tree, so no file here
+can prove them — read them off the repository's branch-protection settings
+page, and read the gate itself in
+[`.github/workflows/validation_suite.yml`](.github/workflows/validation_suite.yml).
 
 ## Bus factor
 

@@ -14,7 +14,7 @@ first fork has somewhere to be counted. Entry #1 could be yours.
 
 ## What qualifies
 
-Any project that took the pipeline — the skills, the scripts, the two
+Any project that took the pipeline — the skills, the scripts, the three
 human gates, the stage-gated structure — and pointed it at a *different*
 story. It doesn't have to be finished. It doesn't have to replace
 everything (see the checklist in the

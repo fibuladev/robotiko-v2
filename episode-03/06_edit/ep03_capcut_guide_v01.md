@@ -139,6 +139,8 @@ Place clips on the video track in this exact order. **Timeline order follows tim
 
 **Total timeline: 524s = 8:44 ✓**
 
+**Note:** The **Scene Dur** column is rounded down to whole seconds per row, so summing it gives less than the contiguous 524s total — the **Timestamp** column is the authoritative span.
+
 ### §S04b Instructions (CapCut-Only Shot)
 
 1. Import `4.1.png` as a static image on the timeline (8s duration)

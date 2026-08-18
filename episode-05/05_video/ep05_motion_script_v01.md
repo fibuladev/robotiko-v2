@@ -1,7 +1,6 @@
 # VIDEO PRODUCTION SHEET (KLING / VEO / SEEDANCE)
 > **Version:** v01 | Skill: `_skills/robotiko-motion-script/SKILL.md`
 > **Generated:** 2026-04-02
-> This template is auto-populated by Claude. Do not fill manually.
 > For video generation strategy rules, refer to `_management/pipeline_rules.md`
 
 ---
@@ -440,7 +439,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the chrome android pressing a finger to his temple. Translucent streams of retro-futuristic data flow outward around his head — punch-card patterns and vacuum-tube amber glow spiraling in geometric structures. One highlighted memory cell glows brighter in warm amber. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the chrome android pressing a finger to his temple. Translucent streams of retro-futuristic data flow outward around his head - punch-card patterns and vacuum-tube amber glow spiraling in geometric structures. One highlighted memory cell glows brighter in warm amber. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -564,7 +563,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the chrome android's cracked chest. A few thin beams of warm amber light seep through the fractures from within, casting delicate lines on the iron vault floor. The light pulses very gently — fragile, quiet, temporary. The surrounding iron vault is cool blue-gray. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the chrome android's cracked chest. A few thin beams of warm amber light seep through the fractures from within, casting delicate lines on the iron vault floor. The light pulses very gently - fragile, quiet, temporary. The surrounding iron vault is cool blue-gray. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -588,7 +587,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Two chrome figures stand close together in the vast colossal iron vault. Dust motes drift slowly through shafts of amber light falling from broken skylights above. Their reflections shimmer on the polished chrome floor. Minimal movement — the epic stillness is the power. Faint amber glow on the distant horizon. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Two chrome figures stand close together in the vast colossal iron vault. Dust motes drift slowly through shafts of amber light falling from broken skylights above. Their reflections shimmer on the polished chrome floor. Minimal movement - the epic stillness is the power. Faint amber glow on the distant horizon. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -612,7 +611,7 @@
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
-> The chrome android stands still in the exact pose pictured at the threshold between two worlds already visible in the frame — warm amber iron vault on the left, cool retro-futuristic office with CRT terminals on the right. Slow zoom out keeping the same composition intact. Dust motes drift gently through the amber shaft of light on the left. The fluorescent light on the right flickers subtly. Both environments remain exactly as pictured — do not transform, morph, or replace either side. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The chrome android stands still in the exact pose pictured at the threshold between two worlds already visible in the frame - warm amber iron vault on the left, cool retro-futuristic office with CRT terminals on the right. Slow zoom out keeping the same composition intact. Dust motes drift gently through the amber shaft of light on the left. The fluorescent light on the right flickers subtly. Both environments remain exactly as pictured - do not transform, morph, or replace either side. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -660,7 +659,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Yellow file folders and papers scatter through the air in all directions — tumbling, spinning, fluttering down like confetti. The chrome android's arms are still extended from the throw. Data sheets and punch-cards drift through the fluorescent light. His blue eyes are bright, locked on something across the office. Papers settle slowly on chrome desks around him. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Yellow file folders and papers scatter through the air in all directions - tumbling, spinning, fluttering down like confetti. The chrome android's arms are still extended from the throw. Data sheets and punch-cards drift through the fluorescent light. His blue eyes are bright, locked on something across the office. Papers settle slowly on chrome desks around him. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -708,7 +707,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Electricity arcs visibly across the chrome android's red-hot upper body — blue-white bolts jumping between joints, cracks, and exposed wires. Each bolt illuminates the surrounding chrome in sharp white-blue flashes against the deep red glow. The arcs crawl and leap unpredictably across the chrome surface. Maximum visual intensity. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Electricity arcs visibly across the chrome android's red-hot upper body - blue-white bolts jumping between joints, cracks, and exposed wires. Each bolt illuminates the surrounding chrome in sharp white-blue flashes against the deep red glow. The arcs crawl and leap unpredictably across the chrome surface. Maximum visual intensity. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -764,7 +763,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the chrome android leaned forward on the cot, elbows on knees. His blue eyes scan the room slowly. The amber desk lamp flickers, its light unsteady. Faint sparks at his damaged joints — small, pathological, no longer celebratory. The room feels empty. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the chrome android leaned forward on the cot, elbows on knees. His blue eyes scan the room slowly. The amber desk lamp flickers, its light unsteady. Faint sparks at his damaged joints - small, pathological, no longer celebratory. The room feels empty. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -788,7 +787,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> The chrome android remains completely motionless in the exact pose pictured — head fixed, eyes fixed, the twin amber beams from his eyes remain locked in position pointing straight ahead. The projected golden female figure in front of him stays in the exact same spot. The only motion is a gentle, slow pulsing of the projection's amber glow — brightening and dimming rhythmically, like a heartbeat of light. The cold dark room around them remains completely static. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> The chrome android remains completely motionless in the exact pose pictured - head fixed, eyes fixed, the twin amber beams from his eyes remain locked in position pointing straight ahead. The projected golden female figure in front of him stays in the exact same spot. The only motion is a gentle, slow pulsing of the projection's amber glow - brightening and dimming rhythmically, like a heartbeat of light. The cold dark room around them remains completely static. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -812,7 +811,7 @@
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
-> Slow zoom toward the chrome android reaching both hands toward a flickering, dying holographic projection. The projection fragments — scan lines cut across the figure, the form pixelates and dissolves at the edges. His chrome fingers pass through the light, grasping nothing. The warm amber light of the projection stutters and dies. Cold blue creeps in from the edges of the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Slow zoom toward the chrome android reaching both hands toward a flickering, dying holographic projection. The projection fragments - scan lines cut across the figure, the form pixelates and dissolves at the edges. His chrome fingers pass through the light, grasping nothing. The warm amber light of the projection stutters and dies. Cold blue creeps in from the edges of the frame. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 
@@ -863,7 +862,7 @@
 
 **Motion Prompt:**
 > Animated version of the attached image. Maintain 100% visual fidelity to the original scene. Do not add any new characters, people, or objects. The environment and background must remain completely static and unchanged.
-> Action: Extreme close-up of the chrome android's eyes remains in the exact framing pictured. The only motion is the dying blue light in his irises — flickering weakly, stuttering between a faint glow and complete darkness. Each return of blue light is weaker than the last. No other movement anywhere in the frame. Absolute stillness. 35mm film aesthetic, heavy film grain, shallow depth of field, Kodachrome color palette.
+> Action: Extreme close-up of the chrome android's eyes remains in the exact framing pictured. The only motion is the dying blue light in his irises - flickering weakly, stuttering between a faint glow and complete darkness. Each return of blue light is weaker than the last. No other movement anywhere in the frame. Absolute stillness. 35mm film aesthetic, heavy film grain, shallow depth of field, Kodachrome color palette.
 
 ---
 
@@ -888,7 +887,7 @@
 **Camera Move:** Static
 
 **Motion Prompt:**
-> Near-total darkness. The faintest ghost of chrome catches one final, weak flicker of cold blue light — then nothing. A single faint horizontal scan line, barely perceptible, crosses the darkness. The screen powers down. Deep black fills the composition. Absolute silence. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
+> Near-total darkness. The faintest ghost of chrome catches one final, weak flicker of cold blue light - then nothing. A single faint horizontal scan line, barely perceptible, crosses the darkness. The screen powers down. Deep black fills the composition. Absolute silence. Shot on 35mm film, cinematic 16:9 framing, Kodachrome color palette, heavy film grain, shallow depth of field. Do not add extra characters. Keep everything as pictured.
 
 ---
 

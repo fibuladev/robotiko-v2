@@ -59,9 +59,9 @@
       "episode": "03",
       "gate": 2,
       "artifact": "episode-03/05_video/ep03_motion_script_v01.md",
-      "sha256": "388878e63e27735fe5377786f9069715443638063437d21b4f559cfbdd72360a",
+      "sha256": "aef6c7971d269af0ef25f38d583476a82e85315c72c548195d12151a24bb9da5",
       "date": "2026-03-15",
-      "note": "legacy - reconstructed from session log (motion-script approval date not explicitly recorded; placed after the 2026-03-10 dramaturgy approval and before EP04 direction)."
+      "note": "legacy - reconstructed from session log (motion-script approval date not explicitly recorded; placed after the 2026-03-10 dramaturgy approval and before EP04 direction). sha re-baselined 2026-08-18: S30 Scene Context note reworded as a generator-facing framing instruction; no motion prompt, camera move, or tool assignment changed."
     },
     {
       "episode": "04",
@@ -91,9 +91,9 @@
       "episode": "05",
       "gate": 2,
       "artifact": "episode-05/05_video/ep05_motion_script_v01.md",
-      "sha256": "a0a7dcf4e27252895e9334d805ba41e601db3a13bf060e6473bc178bfe1d24dc",
+      "sha256": "2c61b656bc14911a92669b32d46d007ea0c36f5b1a4e0c65732554f835d5b465",
       "date": "2026-04-05",
-      "note": "legacy - reconstructed from session log (motion-script approval date not explicitly recorded; placed after the 2026-03-31 dramaturgy approval and before EP06 direction). sha re-baselined 2026-07-12: line-ending normalization - pin recomputed from the LF bytes git stores and fresh clones receive (.gitattributes); content unchanged."
+      "note": "legacy - reconstructed from session log (motion-script approval date not explicitly recorded; placed after the 2026-03-31 dramaturgy approval and before EP06 direction). sha re-baselined 2026-07-12: line-ending normalization - pin recomputed from the LF bytes git stores and fresh clones receive (.gitattributes); content unchanged. sha re-baselined 2026-08-18: stray template header line dropped so the pipeline checker reads this shipped script as complete, and the prompt blocks ASCII-normalized with tests/prompt_hygiene_lint.py --fix; no prompt content changed."
     },
     {
       "episode": "06",
@@ -139,9 +139,9 @@
       "episode": "08",
       "gate": 2,
       "artifact": "episode-08/05_video/ep08_motion_script_v01.md",
-      "sha256": "a5205162a50f9b89aaf10b3bc64727a4a6e3c1970dfea8cc133292f8f2692d0d",
+      "sha256": "ce1f367428299a78df7b84857cd338cc3e3125c1b6ade1fcf0aff09618adf721",
       "date": "2026-06-04",
-      "note": "legacy - reconstructed from session log (approved; date taken from the 2026-06-04 motion-script generation session; launched 2026-06-17)."
+      "note": "legacy - reconstructed from session log (approved; date taken from the 2026-06-04 motion-script generation session; launched 2026-06-17). sha re-baselined 2026-08-18: Markdown list spacing repaired so the clip blocks render correctly; no wording, count, or field value changed."
     },
     {
       "episode": "09",

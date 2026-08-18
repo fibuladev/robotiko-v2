@@ -16,7 +16,7 @@
 | **Station** | The Commanding Self (Arrogance — cracks forming) |
 | **Character Phase** | Phase 1: Awakening |
 | **Robotiko Visual State** | pristine chrome body, clean exposed analog wires (blue and red), glowing steady blue eyes, no damage, full armor, retro-futuristic 70s mechanical aesthetic |
-| **Total Prompts** | 47 (35 scenes + 6 Start/End keyframe pairs: S07a/b, S11a/b, S19a/b, S23a/b, S28a/b, S32a/b) |
+| **Total Prompts** | 39 (35 scenes: 31 single-scene prompts + 4 Start/End keyframe pairs: S07a/b, S11a/b, S23a/b, S32a/b) |
 
 ---
 
@@ -594,19 +594,19 @@ hyper-realistic, 70s progressive rock album art style, Frank Frazetta meets Syd 
 
 ## QUALITY CHECKLIST (Self-Validation)
 
-- [x] Every single prompt ends with the mandatory style suffix (checked: all 47 prompts)
+- [x] Every single prompt ends with the mandatory style suffix (checked: all 39 prompts)
 - [x] Every scene with Robotiko includes the full phase-appropriate visual state from character_profiles.json
 - [x] Every scene with Robotiko references `_assets/cast/ref_robotiko_master.png`
 - [x] Mentor reference included where applicable: `_assets/cast/ref_mentor_master.png`
-- [x] Character visual state is Phase 1 throughout (pristine chrome baseline, damage cumulative from S19b onward)
-- [x] Damage continuity respected: shoulder scrape appears S19b→S35, torso dent S23b→S35, back sensors S28b→S35, ear loss S32b→S33/34/35
+- [x] Character visual state is Phase 1 throughout (pristine chrome baseline, damage cumulative from S19 onward)
+- [x] Damage continuity respected: shoulder scrape appears S19→S35, torso dent S23b→S35, back sensors S28→S35, ear loss S32b→S33/34/35
 - [x] No forbidden aesthetics: no Apple-clean design, no Pixar rendering, no generic neon cyberpunk, no smooth plastic, no cheap melodrama
 - [x] All prompts composed with headroom and breathing space for future camera movement
-- [x] Start/End keyframe pairs complete: S07a/b, S11a/b, S19a/b, S23a/b, S28a/b, S32a/b (6 pairs = 12 prompts)
+- [x] Start/End keyframe pairs complete: S07a/b, S11a/b, S23a/b, S32a/b (4 pairs = 8 prompts)
 - [x] Environmental prompts (S01, S08, S16, S21, S25, S29) have specific textures and materials
 - [x] Lighting direction specified in every prompt
 - [x] No prompt references another prompt — each is self-contained
-- [x] Total prompt count: 47 (35 scenes + 6 Start/End pairs replacing their base scenes with two keyframes each, net +6 additional prompts for keyframe pairs)
+- [x] Total prompt count: 39 (35 scenes, of which 4 are authored as Start/End keyframe pairs replacing their base scene with two keyframes each: 31 single-scene prompts + 4 pairs x 2 = 8 keyframe prompts)
 - [x] Color progression respected: cold blues (Davos) → neon pinks/greens (SF) → deep reds/ochre (Congo) → sickly yellows/greens (Bangladesh) → warm gold + dirty gray split (Paris) → desaturated monochrome (War Zone) → near-black (Outro)
 - [x] The egg vendor scene (S12) protected as the single moment of genuine warmth
 - [x] S32b (The Ear Shot END) written with maximum detail — this is the episode climax

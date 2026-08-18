@@ -107,7 +107,7 @@ You are just... a resource... a resource... a resource...
 
 —
 
-Inspired by Hasan Huseyin Korkmazgil's "Bir Ornek Insan Portresi."
+Inspired by Hasan Hüseyin Korkmazgil's "Bir Örnek İnsan Portresi".
 The poet asked these questions in the 1970s.
 The bathroom stall still has no answer.
 

@@ -24,7 +24,7 @@ The Moon Has No Light of Its Own | ROBOTIKO v2.0 EP04 | Cinematic AI Series
 ```
 The Mentor has walked this road before. He carries a hammer.
 ROBOTIKO v2.0 — Episode 04 of 10. A cinematic AI sci-fi series.
-▶ Start from Episode 01: {playlist link} <!-- TODO: confirm playlist ID -->
+▶ Start from Episode 01: https://www.youtube.com/playlist?list=PLYrB3ondjEIJe5eFruC5hL2It3ldUJHTr
 
 —
 

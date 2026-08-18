@@ -13,7 +13,7 @@
 |---|---|
 | **Episode** | EP10 |
 | **Edit date** | 2026-08-06 |
-| **Final render filename** | ep10_final_v01.mp4 (E: MEDIA) |
+| **Final render filename** | ep10_final_v01.mp4 |
 | **Render duration** | 4:34.321 (274.321s — ffprobe) |
 | **Metadata total_duration** | 274.0s |
 | **Duration delta** | +0.321s (target: within ±1s) ✅ |
@@ -60,7 +60,7 @@ of the score. The series ends on a measured breath.
 
 ---
 
-> **Why this record exists.** The final render is gitignored — it lives on the E: MEDIA disk and Drive,
+> **Why this record exists.** The final render is gitignored — it lives on local media storage and Drive,
 > never in the repository tree. CI can validate the *score* (musical metadata, motion script, naming,
 > prompt hygiene) but it can never see the *mix*. This file is the committed evidence that beat-sync
 > was **measured**, not merely checked off.

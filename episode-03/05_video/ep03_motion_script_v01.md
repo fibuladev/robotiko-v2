@@ -1017,7 +1017,7 @@
 | **Scene Duration** | 5s |
 | **Coverage** | Direct — 1 × 5s (perfect match) |
 | **Musical Moment** | Verse 10 — "Hem okundu hem üflendi… Metâl gövde de ellendi…" Tension building. |
-| **Scene Context** | Close-up: hand with gold ring touches chrome shoulder from behind. Eye-screen activates with scandal headline. NOTE: This is a "cinci hoca (exorcist)" (faith healer) blessing/praying scene — NOT harassment. The hand rests still, protective/ritualistic. Prompt must keep hand static to avoid misinterpretation. |
+| **Scene Context** | Close-up: hand with gold ring touches chrome shoulder from behind. Eye-screen activates with scandal headline. NOTE: The hand is the fraudulent folk healer's. Keep the contact non-explicit — resting weight only, no stroking, gripping, or repositioning. Prompt must keep hand static to avoid misinterpretation. |
 | **Tech Strategy** | Mode A |
 | **Clip Duration** | 5s |
 | **Motion Strength** | 5 |

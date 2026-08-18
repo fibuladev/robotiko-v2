@@ -552,6 +552,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s11_selected.png`
+
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
@@ -584,6 +585,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s12_selected.png`
+
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -604,6 +606,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s12_selected.png`
+
 **Camera Move:** Pan Left
 
 **Motion Prompt:**
@@ -635,7 +638,9 @@
 | **Recommended Tool** | Kling 3.0 (Mode B, 1080p) — Mode B requires K3.0; the time-passage morph |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s11_selected.png`- **End Frame:** `episode-08/04_visuals/selected/ep08_s13_selected.png`
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s11_selected.png`
+- **End Frame:** `episode-08/04_visuals/selected/ep08_s13_selected.png`
+
 **Camera Move:** Static
 
 **Motion Prompt:**
@@ -657,6 +662,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s13_selected.png`
+
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -689,6 +695,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s14_selected.png`
+
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
@@ -709,6 +716,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s14_selected.png`
+
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
@@ -737,6 +745,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s15_selected.png`
+
 **Camera Move:** Crane Up
 
 **Motion Prompt:**
@@ -765,6 +774,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s16_selected.png`
+
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -793,6 +803,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s17_selected.png`
+
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -821,6 +832,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s18_selected.png`
+
 **Camera Move:** Pan Right
 
 **Motion Prompt:**
@@ -848,6 +860,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s19_selected.png`
+
 **Camera Move:** Dolly In
 
 **Motion Prompt:**
@@ -876,6 +889,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s20_selected.png`
+
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -904,6 +918,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s21_selected.png`
+
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -936,6 +951,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png`
+
 **Camera Move:** Orbital
 
 **Motion Prompt:**
@@ -956,6 +972,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png`
+
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -976,6 +993,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s22_selected.png`
+
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -1004,6 +1022,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s23_selected.png`
+
 **Camera Move:** Tilt Down
 
 **Motion Prompt:**
@@ -1032,6 +1051,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s24_selected.png`
+
 **Camera Move:** Static
 
 **Motion Prompt:**
@@ -1064,6 +1084,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s25_selected.png`
+
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
@@ -1085,6 +1106,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s25_selected.png`
+
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -1112,6 +1134,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s26_selected.png`
+
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -1140,6 +1163,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s27_selected.png`
+
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -1167,6 +1191,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s28_selected.png`
+
 **Camera Move:** Slow Zoom In
 
 **Motion Prompt:**
@@ -1194,6 +1219,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s29_selected.png`
+
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
@@ -1221,7 +1247,8 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — CRITICAL: most important shot, Element, OmniEdit priority, flag for multiple attempts |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s30_selected.png`- **Special Ref:** `episode-08/04_visuals/raw/ep08_ref_ghost_style.png` (translucent android reference)
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s30_selected.png`
+- **Special Ref:** `episode-08/04_visuals/raw/ep08_ref_ghost_style.png` (translucent android reference)
 
 **Camera Move:** Static
 
@@ -1250,7 +1277,8 @@
 | **Recommended Tool** | Kling 3.0 (Standard, 1080p) — Element, dual-figure aftermath |
 
 **Assets Required:**
-- **Start Frame:** `episode-08/04_visuals/selected/ep08_s31_selected.png`- **Special Ref:** `episode-08/04_visuals/raw/ep08_ref_ghost_style.png`
+- **Start Frame:** `episode-08/04_visuals/selected/ep08_s31_selected.png`
+- **Special Ref:** `episode-08/04_visuals/raw/ep08_ref_ghost_style.png`
 
 **Camera Move:** Static
 
@@ -1284,6 +1312,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s32_selected.png`
+
 **Camera Move:** Dolly Out
 
 **Motion Prompt:**
@@ -1305,6 +1334,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s32_selected.png`
+
 **Camera Move:** Pan Left
 
 **Motion Prompt:**
@@ -1337,6 +1367,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png`
+
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -1357,6 +1388,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png`
+
 **Camera Move:** Slow Zoom Out
 
 **Motion Prompt:**
@@ -1377,6 +1409,7 @@
 
 **Assets Required:**
 - **Start Frame:** `episode-08/04_visuals/selected/ep08_s33_selected.png`
+
 **Camera Move:** Static
 
 **Motion Prompt:**

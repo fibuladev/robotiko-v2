@@ -45,7 +45,8 @@ IN_SCOPE = [
 ]
 
 # Files that carry sanctioned Turkish attribution and must NEVER be read here.
-# Listed for the proving test; the globs above already exclude them by construction.
+# Documentation only: the IN_SCOPE globs above already exclude them by construction,
+# so this tuple records the intent rather than enforcing it.
 OUT_OF_SCOPE_PATTERNS = (
     "master.md", "_concept_notes", "_dramaturgy", "_musical_metadata",
     "/philosophy", "\\philosophy",

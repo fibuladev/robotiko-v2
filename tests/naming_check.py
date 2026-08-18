@@ -60,7 +60,10 @@ ALLOWED_FIXED_NAMES = {
 # Folders to skip during validation
 SKIP_DIRS = {"raw", ".git", "__pycache__", "node_modules", ".claude"}
 
-# Root-level directories that are NOT episode folders (skip naming validation)
+# Root-level directories that are NOT episode folders. The `--full` sweep already
+# only walks `episode-*/`, so nothing here is filtered at runtime today; this set is
+# the declared list `_management/naming_convention.md` documents, and the place to
+# extend if the sweep is ever widened past the episode tree.
 NON_EPISODE_DIRS = {
     "_management", "_assets", "_memory", "_skills", "_templates",
     "scripts", "tests", "docs", ".github",
@@ -74,6 +77,11 @@ def validate_file(filename: str, folder_context: str = "") -> tuple[bool, str]:
     """
     Validate a single filename against all known patterns.
     Returns (is_valid, message).
+
+    `folder_context` (the containing folder, e.g. "episode-02") is accepted for
+    callers that pass it positionally; the current patterns are self-describing
+    enough that no check needs it. Episode-vs-folder consistency is checked by the
+    caller, which already knows the folder it is walking.
     """
     # Allow fixed-name files
     if filename in ALLOWED_FIXED_NAMES:

@@ -19,6 +19,9 @@ scene-numbered raw image into 04_visuals/selected/ using the naming convention:
 Reference images (ep{XX}_ref_*) and anything not scene-numbered are skipped.
 Copying is non-destructive (raw/ is left untouched) and safe to re-run.
 
+Run this from the repository root -- paths are resolved against the current
+working directory.
+
 This step is OPTIONAL: the rest of the pipeline can read straight from the
 numbered raw files. The selected/ set is a clean, convention-named, shareable
 copy -- this script just spares you from renaming every file by hand.

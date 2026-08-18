@@ -20,7 +20,8 @@ Check groups:
      section's energy band (heuristic; warnings are printed but never block)
  12. Forbidden terms        — public prose (canon docs, direction notes, musical
      metadata) never names a banned religion/order/sect/scripture term; a narrow,
-     pinned allowlist covers the one sanctioned mention (the rule that bans it)
+     pinned allowlist covers the two sanctioned mentions (the rule that states the
+     ban, and the canon line that names labels only to reject them)
 
 Dependencies: standard library only. No `pip install`, nothing to pin at the
 package level — the strongest form of dependency hygiene. The toolchain (Python

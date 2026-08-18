@@ -11,10 +11,9 @@ Three things this checker enforces:
 
   1. SKIPPED STEPS (honest, waiver-aware). A non-sequential pattern (an empty step N
      with a present step N+1) is a skipped step. It is a FAIL unless a legacy waiver
-     record exists in the approvals ledger. episode-01 is the one legacy case: its
-     visual-prompts stage ran on a personal pre-pipeline working PDF, kept private (not
-     in the public repo), so step 5 reads empty while step 6 (Motion Script) is present.
-     That skip PASSES only
+     record exists in the approvals ledger. episode-01 is the one legacy case: it
+     predates the pipeline, so the public tree carries no visuals artifact for it and
+     step 5 reads empty while step 6 (Motion Script) is present. That skip PASSES only
      because approvals.json carries a waiver for it; the identical pattern in a new
      episode with no waiver FAILS. The old summary printed "no skipped steps" while
      its own checkboxes showed one — that contradiction is gone.
@@ -193,8 +192,8 @@ def phase2_asserted(ep: str, repo_root: str = ".") -> bool:
 
 def resolve_1r(ledger: list, ep: str, latest_vp: str) -> bool:
     """Pure resolution of the gate-1R state from the ledger + the CURRENT latest
-    visual-prompts path (repo-relative, or None). Closes panel risk R2 / plan D4 — "a
-    grandfather waiver must not permanently disarm the real gate":
+    visual-prompts path (repo-relative, or None). Enforces the rule that an interim
+    waiver must not permanently disarm the real gate:
 
       * A REAL 1R record (note WITHOUT 'waiv') is a genuine references-approval and
         satisfies the gate REGARDLESS of which file is latest. This preserves the
@@ -368,7 +367,7 @@ def gate_findings(ep: str, status, ledger: list, production: dict, repo_root: st
     # Phase-1 sentinel gone), the 1R gate must be satisfied by a VALID 1R (has_valid_1r,
     # computed by check_episode): a genuine references-approval record, OR the interim
     # artifact-pinned waiver WHILE it still pins the latest file. A grandfather waiver
-    # that no longer pins latest does NOT count (panel risk R2). ep < TWO_PHASE_FROM_EP
+    # that no longer pins latest does NOT count. ep < TWO_PHASE_FROM_EP
     # is exempt (documented pre-two-phase cutover). rec1r is still fetched for the
     # sha-drift WARN below.
     rec1r = gate_record(ledger, ep, "1R")

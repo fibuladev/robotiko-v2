@@ -22,6 +22,9 @@ untouched) and safe to re-run.
 This step is OPTIONAL: CapCut imports straight from the numbered raw clips. The
 selected/ set is a clean, convention-named, shareable copy -- this script is the
 twin of select_images.py and just spares you renaming every clip by hand.
+
+Run this from the repository root -- paths are resolved against the current
+working directory.
 """
 
 import argparse

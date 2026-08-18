@@ -12,11 +12,13 @@ The script creates the standard episode folder tree, copies the direction /
 visuals / video templates into place, and substitutes the episode-level
 placeholders ({XX}) inside the copied templates. Scene-level placeholders
 (S{XX}, _s{XX}) are intentionally left untouched for Claude to fill in later.
+
+Run this from the repository root -- paths are resolved against the current
+working directory.
 """
 
 import argparse
 import os
-import shutil
 
 # CONFIGURATION
 BASE_DIR = os.getcwd()

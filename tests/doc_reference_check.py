@@ -79,7 +79,7 @@ KNOWN_EXTENSIONS = (
 # Top-level directories that mark a backtick token as a repo path (even a bare dir).
 KNOWN_DIR_PREFIXES = (
     "tests/", "docs/", "scripts/", "_management/", "_assets/", "_skills/",
-    ".github/", ".claude/", "_memory/", "_templates/", "_tools/", "_launch/",
+    ".github/", ".claude/", "_memory/", "_templates/", "_tools/",
 )
 
 # Render outputs that are gitignored by design (never committed, absent in CI).

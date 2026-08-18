@@ -14,7 +14,7 @@ Usage:
     python tests/visual_prompt_validator.py --file episode-02/04_visuals/ep02_visual_prompts_v01.md
     python tests/visual_prompt_validator.py --episode 02
 
-Status: IMPLEMENTED v2.0
+Status: IMPLEMENTED v2.1
 """
 
 import os
@@ -164,7 +164,7 @@ STYLE_MODE_MARKER = "style mode"
 
 SCENES_PENDING_SENTINEL = "SCENES_STATUS: PENDING_PHASE_2"
 # Line-anchored; tolerates a leading markdown blockquote marker ('> ') because the
-# live sentinel sits inside the human-facing PENDING block's blockquote (D1). Applied
+# live sentinel sits inside the human-facing PENDING block's blockquote. Applied
 # only after strip_code_fences() so a fenced QUOTE of the token never false-positives.
 _SENTINEL_RE = re.compile(r"(?m)^\s*>?\s*SCENES_STATUS:\s*PENDING_PHASE_2\s*$")
 _FENCE_RE = re.compile(r"(?ms)^[ \t]*```.*?^[ \t]*```[ \t]*$")
@@ -784,7 +784,7 @@ def check_phase_state(content: str, scenes: list[dict]) -> list[tuple]:
     return []
 
 
-# Canonical Reference-Image-Path form (D6): episode-XX/04_visuals/[raw/]epXX_ref_<name>.png
+# Canonical Reference-Image-Path form: episode-XX/04_visuals/[raw/]epXX_ref_<name>.png
 # with the path's episode number matching the folder episode. The optional raw/ segment
 # tolerates EP10 v01's raw-less committed paths; canonical form includes raw/.
 _REF_IMAGE_PATH_RE = re.compile(
@@ -795,8 +795,8 @@ _REF_IMAGE_PATH_RE = re.compile(
 def check_ref_image_path(ref_blocks: list[dict], episode_number: int,
                          severity: str = "FAIL") -> list[tuple]:
     """
-    Reference-Image-Path field lint (D6) on the two-phase REF blocks. The one cheap,
-    machine-visible guard the panel kept after declining a full under-segmentation
+    Reference-Image-Path field lint on the two-phase REF blocks. The one cheap,
+    machine-visible guard kept after declining a full under-segmentation
     lint: a REF block's declared image path must be well-formed AND belong to this
     episode's folder, so a mis-pointed or malformed ref path is caught on cheap text
     before generation. Returns (severity, message) tuples. ASCII output only."""
@@ -920,14 +920,14 @@ def validate_file(filepath: str) -> dict:
         # ROBOTIKO episodes are mapped, so this never downgrades a real finding here.
         phase_bucket = "errors" if episode_number in EPISODE_FORBIDDEN else "warnings"
 
-        # Reference-Image-Path field lint (D6) on the two-phase REF blocks — both phases.
+        # Reference-Image-Path field lint on the two-phase REF blocks — both phases.
         for sev, msg in check_ref_image_path(ref_blocks, episode_number):
             route(sev, msg)
 
         if phase1_only:
             # Phase-1 deliverable: scenes intentionally pending, so scene-level checks
             # are skipped. The character/group REF prompts still get pseudo-scene
-            # linting (D7.4) so eye-glow and phase keywords bind to the body-state refs.
+            # linting so eye-glow and phase keywords bind to the body-state refs.
             pseudo = ref_pseudo_scenes(ref_blocks)
             results[phase_bucket].extend(check_character_phase(pseudo, episode_number))
             for sev, msg in check_eye_glow(pseudo, style_severity):
@@ -992,11 +992,11 @@ def find_pdf_visuals(visuals_dir: str) -> list[str]:
     Recursively find PDF visual-prompt files anywhere under an episode's 04_visuals
     directory — including the selected/ and raw/ subfolders.
 
-    This is the M4 real fix. The prior code called os.listdir(visuals_dir) (one level
-    only), so EP01's PDF — which lives at episode-01/04_visuals/selected/ep01_visual_
-    prompts_v01.pdf — was NEVER seen: the branch could not fire and EP01 was skipped
-    silently, with no output line at all. os.walk sees the whole subtree, so the
-    PDF-only skip actually triggers and becomes visible.
+    A one-level os.listdir(visuals_dir) cannot see a PDF that sits in a subfolder,
+    e.g. 04_visuals/selected/. The PDF-only branch then never fires and the episode is
+    skipped silently, with no output line at all — a whole stage passing unexamined.
+    os.walk sees the entire subtree, so the PDF-only skip actually triggers and
+    becomes visible.
     """
     pdfs = []
     for root, _dirs, files in os.walk(visuals_dir):
@@ -1008,7 +1008,7 @@ def find_pdf_visuals(visuals_dir: str) -> list[str]:
 
 def pdf_skip_message(ep_dir: str, pdf_path: str) -> str:
     """The VISIBLE skip line for a PDF-only (pre-method) episode. Asserted verbatim
-    by a meta-test so it can never silently vanish again (the M4 regression)."""
+    by a meta-test so it can never silently vanish."""
     rel = pdf_path.replace("\\", "/")
     return (
         f"  Skipping {ep_dir}: PDF-only visuals ({rel}) - pre-method episode, "
@@ -1035,7 +1035,7 @@ def run_full() -> int:
                 print("\n" + pdf_skip_message(ep_dir, pdf_files[0]))
             continue
         filepath = os.path.join(visuals_dir, candidates[0])
-        # Sentinel check BEFORE the unfilled-template skip (D2): a Phase-1 deliverable
+        # Sentinel check BEFORE the unfilled-template skip: a Phase-1 deliverable
         # (scene-pending sentinel present) must ALWAYS be validated, never silently
         # routed into the scaffold-skip path — even if a scaffold marker lingers.
         try:
@@ -1088,8 +1088,10 @@ def main():
             print(f"  Directory not found: {visuals_dir}")
             sys.exit(1)
     else:
-        print("  Usage: python tests/visual_prompt_validator.py --file <path>")
+        print("  Usage: python tests/visual_prompt_validator.py --full")
+        print("         python tests/visual_prompt_validator.py --file <path>")
         print("         python tests/visual_prompt_validator.py --episode 02")
+        print("  (--full is the mode CI and tests/run_all.py invoke.)")
         sys.exit(0)
 
     results = validate_file(filepath)

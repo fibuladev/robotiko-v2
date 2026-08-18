@@ -1,24 +1,27 @@
 """
 Robotiko v2.0 — Forbidden-Terms Gate (religion/order/sect/scripture names)
 
+WHAT THIS GATE CHECKS
+Public prose — canon documents, direction notes, and musical-metadata JSON — must
+never name a specific religion, order, sect, or scripture. This is a narrow, hard
+line about NAMES, not about spiritual content: the terms list below is deliberately
+short, and broad adjectives stay out of it entirely.
+
+WHY THE STANCE EXISTS
 The editorial stance (lessons.md, CATEGORY: CREATIVE & NARRATIVE) is that ROBOTIKO
 renders spirituality as universal, lived, earned experience — never dressed in a
-named tradition's costume. Two real violations slipped past every other gate before
-this one existed:
+named tradition's costume. A tradition label borrows authority the story has not
+earned, and narrows a deliberately universal theme into someone else's doctrine.
 
-  * `_management/master.md` once carried a "Sufi lodges ... Halvetî ... etvârnâme"
-    block — a named-tradition block in the Universe Bible itself.
-  * `episode-08/02_music/ep08_musical_metadata.json` once carried "The Sufi image..."
-    inside a JSON string value.
-
-Both are the same failure mode: a named religion/order/sect/scripture term leaking
-into PUBLIC PROSE (canon docs, direction notes, musical metadata) — not the model-
-facing prompt strings `prompt_hygiene_lint.py` already scopes, and not the sanctioned
-Turkish attribution (Yunus Emre, "Turkish wisdom tradition") that canon is allowed to
-keep. This gate polices a narrower, harder line: specific tradition/sect/scripture
-NAMES, banned everywhere in public prose, with a pinned, narrow allowlist for the one
-sanctioned exception — a rule that MENTIONS the banned word as its own subject, rather
-than USING it.
+WHY IT NEEDS A MACHINE GATE
+A tradition name in prose reads as ordinary English to every other check in the
+suite. It is not a model-facing prompt string, which is the only thing
+`prompt_hygiene_lint.py` scopes, and it is not the sanctioned Turkish attribution
+(Yunus Emre, "Turkish wisdom tradition") that canon is allowed to keep — so nothing
+else in the gate has any reason to look at it. Human review catches this only when
+someone happens to be reading that paragraph. A narrow, pinned allowlist covers the
+sanctioned exception: a line that MENTIONS a banned word as its own subject, rather
+than USING it as a label.
 
 SCOPE (tracked files only — `git ls-files`, so gitignored/untracked never enter):
   * every top-level `*.md` (repo root only, not recursive)
@@ -60,7 +63,7 @@ import subprocess
 import unicodedata
 
 # ─────────────────────────────────────────────
-# FORBIDDEN TERMS — the R1 class: religion/order/sect/scripture NAMES.
+# FORBIDDEN TERMS — religion/order/sect/scripture NAMES.
 # Deliberately narrow: broad adjectives ("sacred", "divine", "mystical", "dervish",
 # "zen") stay OUT — they have sanctioned in-fiction/satire uses and remain
 # human-judged. Listed as plain-ASCII root forms; diacritic normalization (below)
@@ -98,9 +101,10 @@ _TERM_PATTERNS = {
 # ALLOWLIST — narrow, pinned, in-file. file (repo-relative, forward slashes) ->
 # list of {"substring": exact text a line must contain, "reason": why}. A hit is
 # exempted only if its LINE contains the pinned substring verbatim — not "the file
-# contains this term somewhere", not a filename match. Seeded with exactly one entry:
-# the lessons.md rule line that names "Sufi" as the rule's OBJECT (the ban's own
-# documentation), never as a used tradition label.
+# contains this term somewhere", not a filename match. It holds two entries: the
+# `_memory/lessons.md` rule line that names a banned word as the rule's own OBJECT
+# (the ban's own documentation), and the `_management/master.md` line that names two
+# labels only to reject them as dividing lines. Mention and negation, never use.
 # ─────────────────────────────────────────────
 
 ALLOWLIST = {
@@ -110,7 +114,7 @@ ALLOWLIST = {
             "reason": "Rule text names the banned word as the rule's own object "
                       "(mention, not use) — this line documents and enforces the "
                       "ban on \"Sufi\"; it does not use the word as a tradition "
-                      "label the way the two audit-caught violations did.",
+                      "label.",
         },
     ],
     "_management/master.md": [
@@ -139,7 +143,8 @@ _RECURSIVE_MD_PREFIXES = (
 
 def in_scope(relpath: str) -> bool:
     """True if a repo-relative (already tracked) path is public prose this gate
-    polices. Deliberately mirrors the SPEC scope list, not a broad glob."""
+    polices. Deliberately mirrors the SCOPE list in this file's docstring, one entry
+    at a time, rather than sweeping the repo with a broad glob."""
     p = relpath.replace("\\", "/")
 
     if p.startswith("tests/fixtures/"):

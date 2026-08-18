@@ -1,6 +1,14 @@
 """
 Robotiko v2.0 — Character Profiles Structural Validator
-Validates character_profiles.json against required structure from schema.json.
+Validates character_profiles.json against required structure from schema.json, and
+guards the model-facing prompt fields against eye-glow keywords.
+
+Checks:
+  1. Structure — required keys/types present, mirroring character_profiles.schema.json
+  2. Eye-glow guard (ADR-0010, FAIL tier) — a glow keyword near an eye/lens word in
+     `base_visual_prompt` or `visual_prompt_addition`. This JSON is a live production
+     input the skills read when they generate prompts, so a leak here reaches the image
+     model directly. Reuses the visual validator's detector, so both surfaces agree.
 
 This is a lightweight stdlib-only structural check. Full JSON Schema draft-2020-12
 validation is deferred per the stdlib-only constraint (no jsonschema dependency).
@@ -8,7 +16,7 @@ validation is deferred per the stdlib-only constraint (no jsonschema dependency)
 Usage:
     python tests/character_profiles_validator.py
 
-Status: IMPLEMENTED v1.0
+Status: IMPLEMENTED v1.1
 """
 
 import os

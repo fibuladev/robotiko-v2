@@ -11,9 +11,11 @@ with ROBOTIKO's mandatory style suffix, every motion prompt with the video suffi
 certain aesthetics are forbidden, and every motion prompt must carry an anti-spawn
 guard. Before this module, those strings were hardcoded inside
 visual_prompt_validator.py and motion_script_validator.py. A forker who followed
-CONTRIBUTING §3 step 4 ("set your own mandatory suffix in CLAUDE.md") got a RED gate
-on their first `run_all`: the skills read CLAUDE.md, but the validators still demanded
-the ROBOTIKO suffix from a string the forker never saw. This module is the one place a
+an earlier CONTRIBUTING step that pointed only at CLAUDE.md got a RED gate on their
+first `run_all`: the skills read CLAUDE.md, but the validators still demanded the
+ROBOTIKO suffix from a string the forker never saw. CONTRIBUTING §3 step 4 now says to
+change the suffix in BOTH places — `tests/universe_config.py` (the single source the
+gate reads) AND `CLAUDE.md` (what the skills read when they generate prompts). This module is the one place a
 forker edits to re-point the gate at their own universe.
 
 Defaults below are the current ROBOTIKO values, verbatim. Changing a value here

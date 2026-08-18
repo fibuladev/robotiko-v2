@@ -34,12 +34,14 @@ so one command answers both "did it pass" and "what do we NOT guarantee".
 | `visual_prompt_validator.py` | Visual prompt content: suffix · forbidden aesthetics · character phase · **reference integrity** · **eye-glow** (model-facing) · **style-suffix variant** | v2.1 |
 | `prompt_hygiene_lint.py` | **Scoped** — model-facing prompt strings (Text/Motion blocks only) must be plain-English ASCII; never reads canon/direction notes | v1.0 |
 | `musical_metadata_validator.py` | Validates `musical_metadata.json` structure and vocabulary compliance: required fields, energy/section-type vocabulary, timestamp monotonicity (unmarked overlap = FAIL), **overlay convention** (`"overlay": true` + containment), `total_duration` match | v1.1 |
+| `capcut_guide_validator.py` | Validates CapCut edit guides: Scene Dur = timestamp span (the gap-propagation class of bug), timestamp contiguity, total timeline = music duration, speed = `clip_dur / scene_dur`, trim = `clip_dur - scene_dur` | v1.0 |
 | `motion_script_validator.py` | Validates motion scripts: mandatory video suffix, anti-spawn guard, camera diversity (global quotas + **5-clip local window** + **accent budget** + **one-move-per-clip** + personality WARN) | v1.1 |
 | `energy_motion_check.py` | **Advisory tier** — cross-checks each clip's Motion Strength against the SKILL energy band of its musical section; `[DISSONANCE]` exempt, ramps widened, pre-SKILL-v2 skipped; warnings never block | v1.0 |
 | `character_profiles_validator.py` | Structural check of `character_profiles.json` against `schema.json` + **eye-glow guard** on model-facing prompt fields (ADR-0010) | v1.1 |
 | `test_validators.py` | Meta-tests — grade the graders (fixtures + both-directions proofs) | v1.0 |
 | `doc_reference_check.py` | **Doc-reality drift lint** — curated docs' backtick repo paths must exist on disk; no hook-rot; coverage-matrix ↔ `check_` sync | v1.0 |
-| `forbidden_terms_gate.py` | **Forbidden-terms gate** — public prose (canon docs, direction notes, musical metadata JSON) never names a banned religion/order/sect/scripture term (case-insensitive, diacritic-insensitive, word-ish boundary); a narrow, pinned allowlist covers the one sanctioned mention | v1.0 |
+| `forbidden_terms_gate.py` | **Forbidden-terms gate** — public prose (canon docs, direction notes, musical metadata JSON) never names a banned religion/order/sect/scripture term (case-insensitive, diacritic-insensitive, word-ish boundary); a narrow, pinned allowlist covers the sanctioned mentions | v1.0 |
+| `attempts_report.py` | **Standalone reporter, not a gate** — reads the per-episode attempts ledgers (`episode-*/04_visuals/raw/attempts.md`) and prints first-pass percentages plus a failure-reason histogram; deliberately not wired into `run_all.py` | v1.0 |
 | `fixtures/` | Frozen BROKEN/GOOD + doc-ref BAD/GOOD + musical overlay GOOD/BAD + forbidden-terms BAD/GOOD regression pairs (see `fixtures/README.md`) | — |
 
 ---
@@ -94,7 +96,7 @@ run via `tests/run_all.py` and enforced in CI.
 ## What Each Validator Checks
 
 ### naming_check.py
-- File name matches one of 12 known patterns (lyrics, metadata, dramaturgy, etc.)
+- File name matches one of 21 known patterns (lyrics, metadata, dramaturgy, etc.)
 - Episode number consistency (file ep02_* lives in episode-02/)
 - Skips raw folders and non-episode directories
 
@@ -116,10 +118,10 @@ run via `tests/run_all.py` and enforced in CI.
   header (ADR-0009), else WARN (legacy) / FAIL (version-stamped)
 - **PDF-only skip is visible** — `--full` searches the whole `04_visuals` subtree
   (including `selected/` and `raw/`), so a pre-method PDF-only visuals stage prints a
-  clear skip line instead of being silently dropped (the M4 fix — the old one-level
-  `os.listdir` never saw a subdir PDF). EP01's own pre-pipeline visuals PDF is now
-  personal working material, kept private; its stage is waived
-  in `_management/approvals.json` and named in the pipeline-integrity summary, and the
+  clear skip line instead of being silently dropped (a one-level `os.listdir` never
+  saw a PDF sitting in a subdirectory). EP01 predates the pipeline, and the public
+  tree carries no visuals artifact for it; its stage is waived in
+  `_management/approvals.json` and named in the pipeline-integrity summary, and the
   detector is proven by the synthetic fixture `fixtures/pdf_only_visuals/`
 
 ### prompt_hygiene_lint.py (scoped)
@@ -178,6 +180,27 @@ run via `tests/run_all.py` and enforced in CI.
 - A ±1 soft tolerance is applied by default (`--strict` disables it for audits)
 - WARN everywhere — heuristic, art-adjacent territory; warnings never block
 
+### capcut_guide_validator.py
+- **Scene Dur = Timestamp span.** Each row's declared scene duration must equal the
+  span of its own timestamps — the gap-propagation class of bug, where one short row
+  silently shifts every row after it
+- **Timestamp contiguity.** No gap between one scene's end and the next scene's start
+- **Total timeline = music duration.** The last timestamp must match the episode's
+  `musical_metadata.json` `total_duration`
+- **Speed correctness.** Declared speed must equal `clip_dur / scene_dur` (±0.02)
+- **Trim correctness.** Declared trim must equal `clip_dur - scene_dur` (±1s)
+- Scaffold guides (`{XX}` placeholders, "[Claude generates") are skipped, not failed
+
+### attempts_report.py (standalone reporter — not a gate)
+- Reads every `episode-*/04_visuals/raw/attempts.md` ledger and prints per-episode
+  first-pass percentages plus a failure-reason histogram, turning the
+  first-pass rate from an experiential estimate into a measured number
+- Deliberately **not** wired into `run_all.py`: telemetry is not a gate, and the
+  absence of ledgers is not a failure. It defines no `check_` functions on purpose,
+  so the coverage-matrix lint has nothing to demand of it
+- `--demo` renders the report from an inline sample, so the output format is
+  inspectable without any ledger on disk
+
 ### character_profiles_validator.py
 - Lightweight stdlib-only structural check of `character_profiles.json` against
   `character_profiles.schema.json` (full JSON Schema draft-2020-12 validation is
@@ -193,8 +216,9 @@ run via `tests/run_all.py` and enforced in CI.
 
 ### doc_reference_check.py
 - **Doc-reference existence.** Scans a curated list of load-bearing docs
-  (`architecture.md`, this README, the coverage matrix, `CONTRIBUTING.md`,
-  `README.md`, and the four `docs/` guides) and fails if any backtick-quoted
+  (17 in all: `architecture.md`, this README, the coverage matrix, the dissonance
+  registry, `CONTRIBUTING.md`, `README.md`, `FORKING.md`, and the ten `docs/`
+  guides) and fails if any backtick-quoted
   repo-relative path no longer exists on disk — the doc-rot the sweep just cleaned,
   now machine-caught forever
 - **Scope discipline.** Only tokens that look like repo paths are checked; URLs,
@@ -229,12 +253,15 @@ run via `tests/run_all.py` and enforced in CI.
   `dervish`, `zen`) stay OUT by design — sanctioned in-fiction/satire uses remain
   human-judged.
 - **Allowlist.** A narrow, pinned, in-file `file -> exact substring` mapping — a
-  hit is exempted only if its own line contains the pinned substring verbatim.
-  Seeded with one entry: the `_memory/lessons.md` rule line that names "Sufi" as
-  the rule's own object (the ban's documentation), not a used tradition label.
-- Catches the class of bug two real audit findings were: a named-tradition block in
-  `_management/master.md` and a `"Sufi"` mention inside
-  `episode-08/02_music/ep08_musical_metadata.json`'s prose.
+  hit is exempted only if its own line contains the pinned substring verbatim. It
+  holds two entries: the `_memory/lessons.md` rule line that names a banned word as
+  the rule's own object (the ban's own documentation), and the `_management/master.md`
+  line that names two labels only to reject them as dividing lines. Mention and
+  negation, never use.
+- **Rule class enforced.** A named tradition/sect/scripture label must never appear
+  in public prose — not as a heading or a block inside a canon document, and not
+  inside a JSON string value in an episode's musical metadata. Prose that reads as
+  ordinary English to every other check is exactly what this gate is for.
 
 See [`_management/invariant_coverage_matrix.md`](../_management/invariant_coverage_matrix.md)
 for what is machine-checked vs. human-gated, and [`_management/adr/`](../_management/adr/)

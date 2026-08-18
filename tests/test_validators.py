@@ -104,7 +104,7 @@ _cgspec.loader.exec_module(cgv)
 STYLE_EYE_BAD = os.path.join(FIXTURES, "ep07_style_eye_v2_BAD.md")
 STYLE_EYE_GOOD = os.path.join(FIXTURES, "ep07_style_eye_v2_GOOD.md")
 
-# Frozen two-phase phase-state fixtures (ADR-0013), both directions (QA's set).
+# Frozen two-phase phase-state fixtures (ADR-0013), both directions.
 PHASE1_GOOD = os.path.join(FIXTURES, "ep10_visual_prompts_PHASE1_GOOD.md")
 NOSCENES_BAD = os.path.join(FIXTURES, "ep10_visual_prompts_NOSCENES_BAD.md")
 LYINGSENTINEL_BAD = os.path.join(FIXTURES, "ep10_visual_prompts_LYINGSENTINEL_BAD.md")
@@ -120,8 +120,8 @@ FORBIDDEN_TERMS_GOOD = "tests/fixtures/forbidden_terms_GOOD.md"
 OVERLAY_GOOD = os.path.join(FIXTURES, "musical_metadata_overlay_GOOD.json")
 OVERLAP_BAD = os.path.join(FIXTURES, "musical_metadata_overlap_BAD.json")
 
-# M4 fixture: a PDF that lives in a selected/ SUBDIR (exactly where EP01's real PDF
-# sits) — the case the old one-level os.listdir could never see.
+# Fixture for the PDF-only visuals stage: a PDF that lives in a selected/ SUBDIR,
+# the case a one-level os.listdir could never see.
 PDF_SUBDIR_VISUALS = os.path.join(FIXTURES, "pdf_only_visuals", "04_visuals")
 
 # Frozen CapCut guide fixtures: the real EP09 v01 gap-propagation bug (Scene Dur
@@ -225,8 +225,10 @@ class TestRefIntegrityGrader(unittest.TestCase):
         self.assertEqual(vpv.check_ref_integrity(scenes, 9), [])
 
     def test_damaged_ref_allowed_as_base_in_kintsugi_range(self):
-        # No dedicated Phase 3 ref exists yet; damaged-as-base is the approved
-        # kintsugi base. This must NOT be flagged.
+        # A dedicated Phase 3 ref (android_kintsugi.png) is registered and on disk,
+        # but the damaged ref stays legal inside the kintsugi range: for the S27-S28
+        # transition the body is still mostly damaged with the gold only emerging, so
+        # damaged-as-base is the approved starting point. This must NOT be flagged.
         scenes = [{
             "scene_number": 27, "characters": "Robotiko (@Damaged to first gold)",
             "ref_path": "`_assets/cast/android_damaged.png`",
@@ -407,7 +409,7 @@ class TestReferenceFirstGuard(unittest.TestCase):
 
 
 class TestParserCoverage(unittest.TestCase):
-    """The false-green that started TAKE 05: a scene parser that silently matches
+    """The false green this guard exists for: a scene parser that silently matches
     zero blocks reports PASS over an unchecked file. Guard it forever."""
 
     SHIPPED = [
@@ -448,8 +450,8 @@ class TestParserCoverage(unittest.TestCase):
         visual_prompts .md, exactly one of {parsed scenes>0, Phase-1 sentinel present}
         holds. A file with BOTH (stale sentinel) or NEITHER (refs-only false green) is
         exactly the two states the phase-state gate FAILs — this proves the real tree
-        never sits in either. EP01 has no visuals .md (stage waived — working PDF kept
-        private) and is skipped."""
+        never sits in either. EP01 has no visuals .md (stage waived — pre-pipeline working
+        PDF, never a repo artifact) and is skipped."""
         checked = 0
         for ep_dir in sorted(d for d in os.listdir(REPO_ROOT)
                              if d.startswith("episode-")
@@ -540,7 +542,7 @@ class TestPhaseStateTruthTable(unittest.TestCase):
 
 
 class TestRefImagePathLint(unittest.TestCase):
-    """check_ref_image_path (D6): a REF block's declared image path must be well-formed
+    """check_ref_image_path: a REF block's declared image path must be well-formed
     and belong to this episode's folder. Both directions."""
 
     def _rb(self, path):
@@ -618,7 +620,7 @@ class TestPseudoSceneLint(unittest.TestCase):
 
 
 class TestPhaseStateFixtures(unittest.TestCase):
-    """The five frozen fixtures (QA's set) driven through the full validate_file path.
+    """The five frozen phase-state fixtures driven through the full validate_file path.
     Both directions: two GOOD (partial-pass / normal-pass) and three BAD."""
 
     def test_phase1_good_partial_passes_and_is_visible(self):
@@ -872,19 +874,18 @@ class TestMatrixSync(unittest.TestCase):
 
 
 # ─────────────────────────────────────────────
-# M4 real fix: the EP01 PDF-only skip is now VISIBLE (was inert).
+# The PDF-only visuals skip must be VISIBLE, not inert.
 # ─────────────────────────────────────────────
 
 class TestPdfOnlySkipVisible(unittest.TestCase):
-    """The audit found EP01 was silently skipped: a pre-method PDF-only visuals stage
-    lived in 04_visuals/selected/ but the detector only listed the top level, so the
-    skip branch never fired and no line printed at all. The recursive detector is the
-    machinery that keeps ANY such subdir PDF visible; the SYNTHETIC fixture below proves
-    that skip branch both directions. EP01's own original working PDF was a personal
-    pre-pipeline document, moved to private storage,
-    so the public tree now carries NO visuals artifact for EP01 — the stage is waived
-    (see _management/approvals.json). Lock BOTH: the detector finds a subdir PDF in the
-    fixture, and the real EP01 tree is the waived-empty state."""
+    """A pre-method PDF-only visuals stage can live in a 04_visuals/ SUBDIR (e.g.
+    selected/). A detector that only lists the top level never fires its skip branch
+    there, so the whole stage passes with no line printed at all — a silent skip. The
+    recursive detector is the machinery that keeps ANY such subdir PDF visible; the
+    SYNTHETIC fixture below proves that skip branch both directions. EP01 predates the
+    pipeline and the public tree carries NO visuals artifact for it, so its stage is
+    waived (see _management/approvals.json). Lock BOTH: the detector finds a subdir PDF
+    in the fixture, and the real EP01 tree is the waived-empty state."""
 
     def test_finds_pdf_in_selected_subdir_fixture(self):
         found = vpv.find_pdf_visuals(PDF_SUBDIR_VISUALS)
@@ -892,15 +893,13 @@ class TestPdfOnlySkipVisible(unittest.TestCase):
         self.assertTrue(found[0].endswith("ep01_visual_prompts_v01.pdf"))
 
     def test_ep01_real_tree_is_waived_empty(self):
-        # EP01's visual-prompts stage ran on a personal
-        # pre-pipeline working PDF, kept private (not in the public repo). The public
-        # tree carries no visuals artifact for EP01, so the detector finds nothing here.
-        # The skip branch itself is still proven — by the synthetic fixture above — and
-        # the stage's visibility now lives in the approvals waiver + pipeline_integrity
-        # summary, not in a personal file committed to the repo.
+        # EP01 predates the pipeline: the public tree carries no visuals artifact for
+        # it, so the detector finds nothing here. The skip branch itself is still
+        # proven — by the synthetic fixture above — and the stage's visibility lives in
+        # the approvals waiver + the pipeline_integrity summary.
         found = vpv.find_pdf_visuals(os.path.join(REPO_ROOT, "episode-01", "04_visuals"))
         self.assertEqual(found, [],
-                         "EP01's public tree carries no visuals PDF (stage waived; working PDF is private).")
+                         "EP01's tree carries no visuals PDF (stage waived).")
 
     def test_top_level_only_would_have_missed_it(self):
         # Prove the subdir is why the old code failed: nothing matches at the top level.
@@ -1084,8 +1083,8 @@ class TestRefGate1R(unittest.TestCase):
     both hermetic:
       (A) gate_findings driven by the two computed bools (phase2_asserted, has_valid_1r)
           -- the FAIL mapping, no disk.
-      (B) resolve_1r -- the REFINED honoring rule that closes panel risk R2 (a
-          grandfather waiver must not permanently disarm the real gate): a genuine 1R is
+      (B) resolve_1r -- the refined honoring rule enforcing that an interim waiver
+          must not permanently disarm the real gate: a genuine 1R is
           pin-agnostic; a waiver counts only while it pins the current latest file. Pure,
           so both directions are unit-testable without touching the tree."""
 
@@ -1143,11 +1142,13 @@ class TestRefGate1R(unittest.TestCase):
     def test_no_1r_record_is_not_valid(self):
         self.assertFalse(pi.resolve_1r([], "10", self.EP10_V01))
 
-    def test_case1_ep10_today_waiver_pins_latest_v01_is_valid(self):
-        # EP10 today: latest = v01, the real ledger's waiver pins v01 -> honored -> green.
+    def test_case1_ep10_real_1r_in_the_committed_ledger_is_valid(self):
+        # EP10's committed ledger carries a REAL 1R record (references approved), not a
+        # waiver, so it is pin-agnostic: it honors the gate whichever visual-prompts
+        # file it is resolved against -- here, the Phase-1 v01.
         ledger = pi.load_approvals(REPO_ROOT)
         self.assertTrue(pi.resolve_1r(ledger, "10", self.EP10_V01))
-        # And end-to-end against the real disk state (latest really is v01 today).
+        # And end-to-end against the real disk state, where v02 is the latest file.
         self.assertTrue(pi.has_valid_1r("10", ledger, REPO_ROOT))
 
     def test_case2_clean_flow_real_1r_is_pin_agnostic(self):
@@ -1258,7 +1259,7 @@ class TestRealTreeStaysGreen(unittest.TestCase):
 
 
 # ─────────────────────────────────────────────
-# WS2 A2.5 — camera-diversity machine enforcement, graded both directions.
+# Camera-diversity machine enforcement, graded both directions.
 # ─────────────────────────────────────────────
 
 def _mv(seq):
@@ -1388,13 +1389,15 @@ class TestMotionScriptRealTree(unittest.TestCase):
         self.assertTrue(findings, "EP05 must be validated, not scaffold-skipped.")
         self.assertEqual([m for s, m in findings if s in ("FAIL", "ERROR")], [])
 
-    def test_ep10_scaffold_is_still_skipped(self):
-        # EP10 is a true scaffold (S{XX} placeholders) — must return zero findings.
+    def test_ep10_motion_script_produces_zero_findings(self):
+        # EP10's shipped motion script carries no scaffold markers at all — it is a
+        # real, complete script that the validator fully parses. Zero findings here
+        # therefore proves the SCRIPT is clean, not that it was skipped as a template.
         self.assertEqual(self._findings("10"), [])
 
 
 # ─────────────────────────────────────────────
-# WS2 A2.6 — energy -> motion cross-check (advisory tier), graded both ways.
+# Energy -> motion cross-check (advisory tier), graded both ways.
 # ─────────────────────────────────────────────
 
 def _clip(shot="S01", ts=(0.0, 10.0), ms=5, dissonance=False):
@@ -1521,7 +1524,7 @@ class TestEnergyMotionRealTree(unittest.TestCase):
 
 
 # ─────────────────────────────────────────────
-# WS2 A2.7 — overlay convention, fixtures prove both directions.
+# Overlay convention, fixtures prove both directions.
 # ─────────────────────────────────────────────
 
 class TestOverlayConvention(unittest.TestCase):
@@ -1771,7 +1774,7 @@ class TestSyncQcNamingPattern(unittest.TestCase):
 
 
 class TestUniverseConfigIsLive(unittest.TestCase):
-    """WS7 A7.1: the suffix the gate enforces derives from tests/universe_config.py,
+    """Fork safety: the suffix the gate enforces derives from tests/universe_config.py,
     not a second hardcoded copy. This is the fork-safety proof — CONTRIBUTING §3 step 4
     tells a forker to change the suffix, and this test guarantees that change reaches the
     gate instead of leaving it demanding the ROBOTIKO string. Both validators, and the
@@ -1877,7 +1880,7 @@ class TestForbiddenTermsMatching(unittest.TestCase):
 
 
 class TestForbiddenTermsScope(unittest.TestCase):
-    """in_scope mirrors the SPEC scope list exactly: top-level *.md (not recursive),
+    """in_scope mirrors the gate's documented scope list exactly: top-level *.md (not recursive),
     the named directories recursively, the two episode subpaths — and explicitly
     excludes fixtures, lyrics, and anything not on the list."""
 
@@ -1927,9 +1930,11 @@ class TestForbiddenTermsScope(unittest.TestCase):
     def test_lyrics_excluded(self):
         self.assertFalse(ftg.in_scope("episode-05/01_lyrics/ep05_lyrics_v01.md"))
 
-    def test_private_and_launch_not_listed_so_out_of_scope(self):
+    def test_unlisted_directories_are_out_of_scope(self):
+        # SCOPE is an allowlist: a directory the gate does not name is never
+        # scanned, no matter what it holds.
         self.assertFalse(ftg.in_scope("_private/audit/x.md"))
-        self.assertFalse(ftg.in_scope("_launch/plan.md"))
+        self.assertFalse(ftg.in_scope("_scratch/plan.md"))
 
     def test_gitignored_files_never_reach_scope_via_tracked_files(self):
         # Structural proof: the live scanner only ever calls in_scope() on
@@ -1944,8 +1949,8 @@ class TestForbiddenTermsScope(unittest.TestCase):
 class TestForbiddenTermsAllowlistIsolation(unittest.TestCase):
     """The allowlist mechanism, proven both directions with synthetic lines (no file
     I/O): the pinned substring suppresses ITS line only; the identical banned word on
-    another line in the SAME file still fires. This is the isolation proof the SPEC
-    requires -- allowlisting must be narrow, never a whole-file or whole-word pass."""
+    another line in the SAME file still fires. This is the isolation proof the gate's
+    design requires -- allowlisting must be narrow, never a whole-file or whole-word pass."""
 
     def test_pinned_line_is_suppressed_same_word_elsewhere_still_fires(self):
         lines = [

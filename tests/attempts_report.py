@@ -2,15 +2,20 @@
 Robotiko v2.0 - Attempts-ledger reporter (STANDALONE - not part of run_all.py).
 
 The "65-70% image first-pass / ~80% video first-pass" figures have always been
-experiential - numbers from the director's production notes, never instrumented. The attempts
-ledger (`episode-{XX}/04_visuals/raw/attempts.md`, schema in
-`_management/pipeline_rules.md`) is where that number finally gets measured, one
-generated scene at a time, DURING production. EP10 is the first episode with a
-mandatory ledger.
+experiential - numbers from the director's production notes, never instrumented. The
+attempts ledger (`episode-{XX}/04_visuals/raw/attempts.md`, schema in
+`_management/pipeline_rules.md`) is where that number can finally be measured, one
+generated scene at a time, DURING production.
+
+STATUS: no attempts ledger exists in this repo. The convention was defined but the
+ten shipped episodes were produced without one, and ledgers are never backfilled from
+memory - that would just re-launder the same estimate through a table. So this
+reporter has nothing to read today. It is here for anyone (including a forker)
+producing an episode from now on: keep the ledger as you generate, and the figure
+stops being a recollection.
 
 This reporter scans every `episode-*/04_visuals/raw/attempts.md`, and:
-  * if none exist yet, says so honestly and exits 0 (the ledgers are a future
-    convention, not a backfill obligation);
+  * if none exist, says so and exits 0 (an absent ledger is not a failure);
   * if present, prints per-episode first-pass percentage plus a failure-reason
     histogram.
 
@@ -173,11 +178,12 @@ def main():
 
     ledgers = find_ledgers(REPO_ROOT)
     if not ledgers:
-        print("No attempts ledgers found yet.")
+        print("No attempts ledgers found.")
         print("  Expected at: episode-*/04_visuals/raw/attempts.md")
-        print("  First mandatory ledger: EP10 (schema in "
-              "_management/pipeline_rules.md).")
-        print("  Nothing to report - this is expected before EP10 production.")
+        print("  Schema: _management/pipeline_rules.md")
+        print("  Nothing to report. No episode in this repo was produced with a")
+        print("  ledger, and ledgers are never backfilled from memory - start one")
+        print("  during your next generation run and this report fills itself in.")
         return 0
 
     run_report(ledgers)

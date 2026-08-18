@@ -2,8 +2,6 @@
 > Current open tasks and priorities.
 > Claude updates this file during and after each session.
 
-> Note for public readers: any _private/... path referenced in the session summaries below is a gitignored working file — part of the production process, not part of the public repo.
-
 ---
 
 ## SESSION NOTE (2026-08-12) — VISUAL CANON RATIONALE + POINTER MAINTENANCE
@@ -21,10 +19,9 @@ pointers refreshed. Suite 12/12 green.
 **The CapCut edit is done — by hand, by ear.** Fibula assembled the final timeline personally; the guide served as blueprint but was not applied 1:1 — several clips slowed or trimmed differently, tuned to the beat by ear. This is the intended division of labor (guide = score, human = performance) and the deviations are deliberate artistic calls, not errors. `10b.mp4` = S10 keeper confirmed verbally. Refrain-onset estimates resolved by ear at the edit.
 
 **Remaining for EP10 delivery:**
-- [x] **Export DONE + QC'd + LOCKED (2026-08-06):** `E:\ep10_final_v01.mp4` — 2534×1080 true 2.35:1 (no baked bars; YouTube adds them — visible band matches the planned 817px window exactly), HEVC, 30fps, ~7.8 Mbps, 274.3s, AAC stereo. Visual QC passed: Dreamina "Ai" watermark **cropped out entirely** by the 2.35:1 canvas (better than hidden), endcard_E in place and legible, grade beautiful (S10 amber frame exemplary). **Director's call: 30fps/HEVC/bitrate stay — series-wide consistency (EP01-09 all shipped this way) beats isolated technical purity.** Lesson recorded (SERIES DELIVERY CADENCE). Card runs ~4.3s (not 5s) — accepted with the same consistency logic. `endcard_E_wide.png` (2534×1080) sits in raw/ as archive.
+- [x] **Export DONE + QC'd + LOCKED (2026-08-06):** `ep10_final_v01.mp4` — 2534×1080 true 2.35:1 (no baked bars; YouTube adds them — visible band matches the planned 817px window exactly), HEVC, 30fps, ~7.8 Mbps, 274.3s, AAC stereo. Visual QC passed: Dreamina "Ai" watermark **cropped out entirely** by the 2.35:1 canvas (better than hidden), endcard_E in place and legible, grade beautiful (S10 amber frame exemplary). **Director's call: 30fps/HEVC/bitrate stay — series-wide consistency (EP01-09 all shipped this way) beats isolated technical purity.** Lesson recorded (SERIES DELIVERY CADENCE). Card runs ~4.3s (not 5s) — accepted with the same consistency logic. `endcard_E_wide.png` (2534×1080) sits in raw/ as archive.
 - [x] **`ep10_sync_qc_v01.md` DONE (2026-08-06)** — 5 spot-checks, measured (sync_probe scene detection + RMS transient analysis). Duration +0.321s ✅. All 5 = ACCEPTED-DEVIATION (by-ear assembly = the performance, per the felt-pulse rule); **gong measured in-render at 269.10s** (metadata's 270.0 was nominal) — cut to black at 268.80, gong rings over the card. Overall: **PASS-WITH-DEVIATIONS**. EP10 edit phase CLOSED.
 - [x] **"Package EP10 for YouTube" DONE (2026-08-06)** — `episode-10/07_social_media/ep10_youtube_package.md`. Title: "I Came to Walk Beside | ROBOTIKO v2.0 EP10 | Cinematic AI Series" (64 chars, refrain-as-hook). Hook line + Nimri Dede credit verbatim from youtube_metadata_standards.md; lore = answer-poem quatrains, lyric-sheet punctuation preserved, refrains ×3 kept. NO pinned comment (first silence — documented as an explicit instruction). No "Next" link (final episode); repo URL in description mirrors endcard_E wording. Thumbnail rec: S34a The Look (the series' only direct-lens eye contact; gold in open daylight completes the grid progression). Repo-public-before-premiere flagged in upload settings + checklist. Suite green.
-- [ ] **NEXT: launch-day sequence** (private runbook; repo public BEFORE premiere goes live — card/description links must not 404). At publish: fill {PLAYLIST_URL}/{EP09_URL}, retro-update EP09 "Next:", About Phase 4 (banner unchanged — single banner across the series).
 
 ---
 
@@ -48,7 +45,7 @@ All 37 EP10 clips rendered (`05_video/raw/`). CapCut guide written: `episode-10/
 **Open decisions for Fibula (in the guide's PRE-FLIGHT):**
 - [x] **`34b.mp4` RESOLVED (2026-08-04): 720p keeper ACCEPTED.** Kling could not execute the open-palm beckon (read it as presenter-style arm movement); the keeper was generated with Google (Veo/Gemini), which got the gesture right. Gesture wins over pixels on the series' final shot. Probing surfaced two things the resolution question was hiding: the clip is **1.9 Mbps** (vs 11.5 on its neighbour) and it is the **only clip in the episode with an audio track** — must be detached/muted or synthetic ambience plays under the final gong. Guide PRE-FLIGHT §1 rewritten with the three mitigations (mute, match the S34a/S34b pair to each other, push S34b grain to ~15%). Two lessons recorded (Kling gesture failure; Google clips carry audio).
 - [x] S35 end-card text — **RESOLVED 2026-08-05: `endcard_E.png`** (THIS SERIES IS OPEN SOURCE. / one film told in ten episodes / URL), 5s card, export 275s
-- [x] `10b.mp4` confirmed as the S10 keeper — **CONFIRMED by Fibula 2026-08-05** ("evet, tam olarak böyle")
+- [x] `10b.mp4` confirmed as the S10 keeper — **CONFIRMED by Fibula 2026-08-05**
 - [x] Refrain onsets — **RESOLVED at the edit 2026-08-05**: Fibula locked S30–S34b boundaries by ear against the final track during the CapCut session
 
 **Creative calls made in the guide:** zero transitions (no dissolve — one continuous walk; no light leak — Amber Pulse discipline, S10 is the only amber; **no fade to black** — the gong is a hard cut, "sound and cut are one event"). Zero chromatic aberration (no damage in EP10). Grain constant, no crescendo. Color reference = S30, with the pre-dawn→morning journey explicitly protected from Color Match flattening.
@@ -57,38 +54,19 @@ All 37 EP10 clips rendered (`05_video/raw/`). CapCut guide written: `episode-10/
 
 ---
 
-## SESSION NOTE (2026-08-01) — DEV.TO ARTICLE DRAFTS: REVIEWED + FIXES APPLIED
-
-4 dev.to article drafts ("Directing AI Films" series) deep-reviewed by 5 parallel agents against the repo tree. Findings: 4 STALE numbers, 2 RISKY phrasings, 2 duplicate anecdotes, 1 compliance note, 3 MISSING (experiential — accepted). All fixes applied to the English drafts + `docs/method-lesson-graduation.md` (stale gap example). Turkish copies created for Fibula's deep read. AWAITING Fibula's final text approval of both English and Turkish versions before marking APPROVED.
-
-**Fixes applied:**
-- [x] Coverage matrix: 40/29 → 41/30 Machine (Articles 1 + 4)
-- [x] Meta-test count: 227 → 245 (Article 1)
-- [x] Rule count: ~125 → ~135 (Article 3)
-- [x] "AI film" phrasing removed (Articles 2 + 3)
-- [x] "sha256 fingerprint" consistency (Article 4)
-- [x] "Retreating Camera" named + cross-reference added (Article 4)
-- [x] EP09 S30 duplicate compressed (Article 4)
-- [x] Stale eye-rule gap example removed (docs/method-lesson-graduation.md)
-- [x] Turkish copies created + numbers synced (4 files in _private/launch_strategy/)
-
-**Status:** AWAITING Fibula's final read of English + Turkish drafts.
-
----
-
 ## SESSION NOTE (2026-07-25) — EP09 CAPCUT SYNC BUG: FIXED + VALIDATOR ADDED
 
-EP09 montajında 35s senkron kaybı tespit edildi — kök neden: musical metadata'daki 1s section gap'leri motion script'e olduğu gibi taşındı (EP01-08'de doğru şekilde kapatılıyordu, EP09-10'da regresyon). CapCut guide timestamps'ı bitişik yaptı ama Scene Dur sütununu güncellemedi → 41 sahneden 35'i 1s kısa.
+A 35s sync loss was found in the EP09 edit — root cause: the 1s section gaps in the musical metadata were carried into the motion script verbatim (correctly closed in EP01-08, a regression in EP09-10). The CapCut guide made the timestamps contiguous but did not update the Scene Dur column → 35 of the 41 scenes ran 1s short.
 
-**Yapılanlar:**
-- [x] EP09 CapCut guide düzeltildi: Scene Dur, Speed (13→17 ramp), Trim sütunları yeniden hesaplandı
-- [x] `capcut_guide_validator.py` yazıldı: Scene Dur = Timestamp span, contiguity, total = music duration, speed/trim doğruluğu
-- [x] Validator `run_all.py`'ye eklendi (12/12 green)
-- [x] EP10 motion script aynı gap'a sahip — CapCut guide oluşturulurken dikkat edilecek
-- [x] Lesson kaydedildi: "CLOSE THE METADATA GAPS IN MOTION SCRIPTS"
+**Work done:**
+- [x] EP09 CapCut guide corrected: Scene Dur, Speed (13→17 ramps) and Trim columns recalculated
+- [x] `capcut_guide_validator.py` written: Scene Dur = Timestamp span, contiguity, total = music duration, speed/trim correctness
+- [x] Validator wired into `run_all.py` (12/12 green)
+- [x] EP10 motion script carries the same gap — to be handled when its CapCut guide is generated
+- [x] Lesson recorded: "CLOSE THE METADATA GAPS IN MOTION SCRIPTS"
 - [x] **(2026-07-28 completion)** Grade-the-graders debt closed before commit: frozen fixtures (`capcut_guide_GOOD/BAD.md`) + 18 meta-tests (both-directions speed proof, isolation, parser coverage, legacy-WARN honesty test) + invariant coverage matrix row. Legacy finding: EP01/02/03/06 guides predate the Timeline Map format → explicit WARN, never silent pass. Suite 12/12 green (245 meta-tests).
 
-**EP10 NOT:** Motion script gap'leri EP10'da da var. CapCut guide oluşturulurken timestamps bitişik yapılacak VE Scene Dur = Timestamp span olacak. Validator otomatik yakalayacak.
+**EP10 NOTE:** The motion script gaps are present in EP10 as well. When its CapCut guide is generated the timestamps must be contiguous AND Scene Dur = Timestamp span. The validator catches this automatically.
 
 ---
 
@@ -100,16 +78,15 @@ Discussion session on documenting the music leg (Suno → BandLab → YouTube). 
 
 ## SESSION NOTE (2026-07-13)
 
-Launch plan revised in private working files. Public docs: gate-count consistency pass — all current-truth prose now says three human gates (commit `49c0035`), suite 11/11 green.
+Public docs: gate-count consistency pass — all current-truth prose now says three human gates (commit `49c0035`), suite 11/11 green.
 
 ---
 
 ## OPEN-SOURCE READINESS SWEEP (2026-07-12) — COMPLETE (repo public-ready except EP09/EP10 episode files)
 
 **Task:** Final pre-public hygiene pass across the entire tracked repo (302 files; episode-09/10 excluded — still in production), covering private residue, English-only, banned terms, and general public-readiness optics.
-**Result:** All findings resolved; anything sensitive kept in private working files rather than the public tree. Two durable engineering lessons carried forward as method: commit-sha pointers are rewrite-mortal and must be re-mapped by commit-message key after any history rewrite; approval-ledger sha256 pins must be computed from git-stored (LF) bytes, not a Windows working copy, and verified against a fresh clone.
+**Result:** All findings resolved. Two durable engineering lessons carried forward as method: commit-sha pointers are rewrite-mortal and must be re-mapped by commit-message key after any history rewrite; approval-ledger sha256 pins must be computed from git-stored (LF) bytes, not a Windows working copy, and verified against a fresh clone.
 **Suite:** 11/11 green throughout, including a fresh-clone verification pass.
-**Remaining for go-public:** EP09/EP10 completion + the final launch-day sequence (private).
 
 ---
 
@@ -121,10 +98,10 @@ Launch plan revised in private working files. Public docs: gate-count consistenc
 **Deliverable:** findings + sourced rewording proposals → Fibula approval gate → apply → suite green → commit. NO file changes before approval.
 
 - [x] Session-start mandatory reads
-- [x] Public-file inventory (notebooklm_brief.md + creator_strategy.md confirmed gitignored = out of public scope)
+- [x] Public-file inventory (every tracked, non-code document scoped)
 - [x] Audit orchestration launched (3 panels + 2 scans + 15 sweep groups, read-only)
 - [x] Orchestration complete (25/26 first pass; estrangement judge re-run after a session-limit failure)
-- [x] Findings report generated: `_private/audit_2026-07/public_doc_audit_2026-07-10.md` (286 deduped findings: 15 critical / 79 major / rest minor + 2 panel verdicts + date-stamp policy) — presented to Fibula
+- [x] Findings report generated (286 deduped findings: 15 critical / 79 major / rest minor + 2 panel verdicts + date-stamp policy) — presented to Fibula
 - [x] [HUMAN GATE] Fibula approved (2026-07-10) — decisions: lyrics/attested quotes untouchable; history cleanup authorized; sha re-baseline OK; date policy Option C; forbidden-terms validator added; frame-asset rename ("hair-thin crossing"); answer-poem source claim softened to "inspired by"
 - [x] Batches B2-B6 applied (root/docs/mgmt/skills/memory — Opus 4.8 + Sonnet 5 subagents, diffs reviewed) + forbidden-terms gate shipped (check group 11, 31 meta-tests green). Working tree ~65 modified files, NOTHING COMMITTED yet.
 - [x] Continuation completed in follow-up sessions (B1 master.md, B7 episodes, approvals re-baseline 2026-07-10, thematic commits, history rewrite + force push — evidence: clean tree at 2026-07-12 session start, suite 11/11, re-baseline notes across approvals.json). Closed 2026-07-12: the full-repo readiness sweep (block above) independently re-verified every tracked surface clean on the same rule set.
@@ -169,16 +146,16 @@ Launch plan revised in private working files. Public docs: gate-count consistenc
 - **Coverage matrix** honest-gap rows (scene↔space completeness, framing-to-pixels, ref-edited-post-Phase-2 = 🔵 Human); **`project_metadata.json`** `production.visuals` made tri-state (`false | "refs_approved" | true`).
 - **`_memory/lessons.md`** REF-NOTE SYNC ≠ SCENE RECONCILIATION lesson (REFERENCE IMAGE WORKFLOW category) + **ADR-0013** "Two-phase visual prompts: scenes are framed to approved pixels" — links ADR-0007 (reference-first) + ADR-0008 (gates as data); records D3 versioning (frozen v01 + new v02, sha-drift WARN as the free GAP-B signal), D4 honest limits (1R attests ref prompts not pixels; preventive/detective; waiver-only-while-it-pins-latest), D6 declined under-segmentation lint, the corrected loop-back termination measure (unframed-scene count strictly decreasing), and the +1-session honesty. Registered in the ADR README index.
 
-**DRY-RUN + PHASE 1 DONE (2026-07-07, branch `test/ep10-two-phase-dryrun`, commit `4501360`):** ran the new flow end-to-end as a real user. BLIND decomposition exam (context-free subagent, only dramaturgy + SKILL + the 4 approved pixels) INDEPENDENTLY demanded REF E (market edge, S11-S12) and REF F (far-edge descent, S19-S22) — GAP-C fix proven live. All mechanical claims verified: validator shows `PHASE 1 ONLY` partial pass (not false green); the gate stops the flow; the negative test FAILS CI when v02 scenes ship without a valid 1R; and the interim v01 waiver does NOT bless a v02 (panel risk R2 closed). Phase 1 authored: v01 rewritten as the Phase-1 deliverable (6 REF blocks — A-D verbatim + frozen images, E/F fresh — decomposition, LOCKS, 35-scene coverage map, sentinel, ZERO scenes). Human generated + approved all 6 ref images (REF F picked from 3 variants, shadow-retouched for S22). Real gate-1R recorded (pinned frozen v01, sha `8305fb88`), interim waiver superseded, meta-tests updated. **Suite 10/10 green.**
+**DRY-RUN + PHASE 1 DONE (2026-07-07):** ran the new flow end-to-end as a real user. BLIND decomposition exam (context-free subagent, only dramaturgy + SKILL + the 4 approved pixels) INDEPENDENTLY demanded REF E (market edge, S11-S12) and REF F (far-edge descent, S19-S22) — GAP-C fix proven live. All mechanical claims verified: validator shows `PHASE 1 ONLY` partial pass (not false green); the gate stops the flow; the negative test FAILS CI when v02 scenes ship without a valid 1R; and the interim v01 waiver does NOT bless a v02 (panel risk R2 closed). Phase 1 authored: v01 rewritten as the Phase-1 deliverable (6 REF blocks — A-D verbatim + frozen images, E/F fresh — decomposition, LOCKS, 35-scene coverage map, sentinel, ZERO scenes). Human generated + approved all 6 ref images (REF F picked from 3 variants, shadow-retouched for S22). Real gate-1R recorded (pinned frozen v01, sha `8305fb88`), interim waiver superseded, meta-tests updated. **Suite 10/10 green.**
 
-**PHASE 2 — DONE (2026-07-07, branch `test/ep10-two-phase-dryrun`):** Authored `ep10_visual_prompts_v02.md` — the complete Phase-1+2 document. Batch verification (Phase-2 opening move): all 6 approved PNGs read pixel-by-pixel; all 35 scenes walked against pixels + coverage map -> COMPLETE, no loop-back. All 6 Environment Geometry notes rewritten to the ACTUAL approved pixels (A: monolith towers LEFT-bg, near loop foreground, sun from right; B: staff near-center, Y-fork tracks, dish LEFT hillside, cyan retrofit line, NO houses; C: Moon LEFT / Sun RIGHT, valley+town below, ridge path lower-right; D: curving lane, dish RIGHT, geraniums LEFT; E: oven+sesame-ring bread cart+samovar RIGHT, dog-bowl foreground, green-plaster house LEFT; F: shutter stripes RIGHT, brazier foreground, glass tower horizon center-right). All 40 scene prompts framed to real pixels (S01-S35; sub-splits S02a/b, S08a/b/c, S10a/b, S27a/b, S34a/b; S35 = edit card, no image). Per-space Camera Ledger (angles vary within each space, landmark screen-sides consistent). Ref-less Scene Gate (S04/S08/S23/S27/S29/S34 signed off vs dramaturgy grammar). Sentinel REMOVED. All EP10 LOCKS enforced (Companion Camera; single Amber Pulse S10b only, embers orange-red; eye canon material-lens; mouthless-face guard esp. S17/S27/S31/S34; gaze discipline — direct lens ONLY at S34a/b; rear-view ear rule S13/S14/S18/S28; no path-shape reveal S32; ASCII prompts). Meta-test flipped (`test_phase2_asserted_and_latest_helpers_read_disk`: assertTrue + EP10_V02). `project_metadata.json` visuals "refs_approved" -> true. **Suite 10/10 green; v02 is actually validated (46 prompts: 6 refs + 40 scenes), no scaffold-skip.**
+**PHASE 2 — DONE (2026-07-07):** Authored `ep10_visual_prompts_v02.md` — the complete Phase-1+2 document. Batch verification (Phase-2 opening move): all 6 approved PNGs read pixel-by-pixel; all 35 scenes walked against pixels + coverage map -> COMPLETE, no loop-back. All 6 Environment Geometry notes rewritten to the ACTUAL approved pixels (A: monolith towers LEFT-bg, near loop foreground, sun from right; B: staff near-center, Y-fork tracks, dish LEFT hillside, cyan retrofit line, NO houses; C: Moon LEFT / Sun RIGHT, valley+town below, ridge path lower-right; D: curving lane, dish RIGHT, geraniums LEFT; E: oven+sesame-ring bread cart+samovar RIGHT, dog-bowl foreground, green-plaster house LEFT; F: shutter stripes RIGHT, brazier foreground, glass tower horizon center-right). All 40 scene prompts framed to real pixels (S01-S35; sub-splits S02a/b, S08a/b/c, S10a/b, S27a/b, S34a/b; S35 = edit card, no image). Per-space Camera Ledger (angles vary within each space, landmark screen-sides consistent). Ref-less Scene Gate (S04/S08/S23/S27/S29/S34 signed off vs dramaturgy grammar). Sentinel REMOVED. All EP10 LOCKS enforced (Companion Camera; single Amber Pulse S10b only, embers orange-red; eye canon material-lens; mouthless-face guard esp. S17/S27/S31/S34; gaze discipline — direct lens ONLY at S34a/b; rear-view ear rule S13/S14/S18/S28; no path-shape reveal S32; ASCII prompts). Meta-test flipped (`test_phase2_asserted_and_latest_helpers_read_disk`: assertTrue + EP10_V02). `project_metadata.json` visuals "refs_approved" -> true. **Suite 10/10 green; v02 is actually validated (46 prompts: 6 refs + 40 scenes), no scaffold-skip.**
 
 **Two false-green traps hit + fixed live (now lessons + SKILL Phase-2 checklist):** (1) scene headers MUST be `#### S{NN}` (4 hashes) or `extract_scenes` parses zero; (2) a sentinel-less v02 must contain NO TEMPLATE_MARKERS (`{XX}` etc.) or the sweep silently scaffold-skips the whole file, and never print the literal Text-Prompt marker in prose (false-positive prompt match).
 
-**REMAINING BEFORE MERGE:**
-1. **[HUMAN GATE 2.6]** Fibula performs the completeness check against the approved dramaturgy — every scene's reference anchors the same physical space its dramaturgy text describes; no scene mapped to another space's ref; every ref-less scene passes its grammar check. (The two v02 checklist items left unchecked.)
-2. On sign-off: merge `test/ep10-two-phase-dryrun` -> `main` (replaces the legacy single-pass v01 with the two-phase v01 + v02). Ledger needs NO change — the real gate-1R is pin-agnostic and already covers v02.
-3. Then: image generation (Nano Banana) — all 6 refs exist; attempts.md ledger MANDATORY (last first-pass-yield window) -> select -> Motion Script (Checkpoint 2).
+**MERGE GATE — CLEARED:**
+- [x] **[HUMAN GATE 2.6]** Fibula performed the completeness check against the approved dramaturgy — every scene's reference anchors the same physical space its dramaturgy text describes; no scene mapped to another space's ref; every ref-less scene passes its grammar check.
+- [x] Two-phase v01 + v02 landed on `main` (the two-phase pair supersedes the legacy single-pass v01). Ledger needed no change — the real gate-1R is pin-agnostic and already covers v02.
+- [x] Image generation (Nano Banana) — all 6 refs generated; attempts.md ledger kept → select → Motion Script (Checkpoint 2).
 
 ---
 
@@ -221,20 +198,20 @@ glasses + side-by-side tracks · crane flock in Moon-Sun sky (break).
 ### NEXT: EP10 PIPELINE
 - [x] **Fibula approves concept notes** — APPROVED 2026-07-06, on one condition (Brecht claims expert-verified). Condition met same day: two-agent panel (scholar + adversarial refuter, cited sources). Verdict: radio-theory/open-apparatus claim CONFIRMED (strongest); tea gesture reframed as hospitality-first ("Brechtian device, un-Brechtian warmth"); Mechanic relabeled Bruegel-ploughman-via-Auden; Brecht added to master.md Universal Narrative Bridges.
 - [x] Musical metadata JSON — DONE 2026-07-06: 9 sections, 274s (4:34), E Minor, 153 BPM double-time (felt half-time pulse 76.5 — the answer walks at EP01's ~75). Finale = guitar solo + refrain rising ×3 (straight/elongated/scream). Saz→guitar corrected across canon.
-- [x] Stone-8 references RECOVERED (2026-07-06) — originals found by Fibula: `_curation_staging/ep01/61-63-64.png` (full-res, local); curated copies committed as `ep01_s51/s71/s72` frames. Video-screenshot plan obsolete.
+- [x] Stone-8 references RECOVERED (2026-07-06) — full-res originals found by Fibula; curated copies committed as `ep01_s51/s71/s72` frames. Video-screenshot plan obsolete.
 - [x] Dramaturgy session (SEPARATE, max effort) — v01 GENERATED 2026-07-06 (35 scenes)
 - [x] **[CHECKPOINT]** Fibula approves dramaturgy — APPROVED 2026-07-06 with one revision applied same day (S34: the look resolves into a warm head-tilt + open-palm beckon; mouthless-face guard added; propagated to concept notes Override 12). Gate-1 recorded in approvals.json (sha256-pinned; gate-0 concept sha re-baselined for the Override 12 revision). All 4 interpretation choices confirmed.
 - [x] `ep10_visual_prompts_v01.md` — GENERATED 2026-07-06 (40 scene prompts + 4 env refs; see EP10 VISUAL PROMPTS SESSION summary above)
-- [ ] Reference-first: generate REF A-D (toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street) + Framing Pass BEFORE any scene image
-- [ ] Image generation (Nano Banana) → select → attempts.md ledger + sync-QC mandatory during production
-- [ ] `ep10_motion_script_v01.md` — after image selection (Checkpoint 2: human approval before video gen)
+- [x] Reference-first: REF A-F generated and approved (toppled-∞ meadow, crossroads+staff, ridge Moon-Sun sky, dawn street, market edge, far-edge descent) BEFORE any scene image
+- [x] Image generation (Nano Banana) → select → attempts.md ledger + sync-QC kept through production
+- [x] `ep10_motion_script_v01.md` — GENERATED + APPROVED 2026-07-12 (Checkpoint 2: human approval before video gen)
 
 ---
 
 ## REPO-READINESS PROGRAM — COMPLETED (2026-07-05)
 
 10-lens final rescore: **4.22 → 4.80 (+0.58)**. 9/10 lenses report "in-scope remaining: none".
-All 9 workstreams delivered (16 thematic commits). Report: `_private/audit_2026-07/repo_readiness_rescore.md`.
+All 9 workstreams delivered (16 thematic commits).
 
 | Lens | Before | After | Delta |
 |---|---|---|---|
@@ -250,7 +227,7 @@ All 9 workstreams delivered (16 thematic commits). Report: `_private/audit_2026-
 | OSS Community | 3.4 | 4.6 | +1.2 |
 
 Remaining 0.20 to 5.0 = EP10 film + post-launch community proof + time.
-**Next:** EP10 brainstorming session + launch outreach prepared (private working files).
+**Next:** EP10 brainstorming session.
 
 ---
 
@@ -259,14 +236,14 @@ Remaining 0.20 to 5.0 = EP10 film + post-launch community proof + time.
 Committed: WS1 c895b7b (doc-rot sweep + architecture v3.0 + metadata sync + doc-reference
 lint, 9th check group) · WS2-gates e752b42 (approvals.json, disk/metadata state machine,
 M4 real fix, 79 meta-tests) · WS8 4e954c1 (community files) · WS-H 8890ce5
-(hallucinating-camera.md + S30 case; tutorial TAKE 06 is local-only, _tutorial gitignored).
+(hallucinating-camera.md + S30 case).
 
 **IN FLIGHT when paused — 3 subagents were editing the working tree; their changes may be
 partial and UNCOMMITTED. Next session MUST start with: git status + python tests/run_all.py,
 audit the diffs, then commit thematically:**
 - W2c: motion/music validators (camera 5-clip window + accent budget + personality,
   energy->motion heuristic, EP08 overlay convention)
-- W9: release runbook (private) + release-engineering decision record + create_episode.yml PR flow + CI job summary
+- W9: release-engineering decision record + create_episode.yml PR flow + CI job summary
 - W6: DONE (uncommitted) — _templates/ep_sync_qc_template.md + scripts/sync_probe.py +
   tests/attempts_report.py + pipeline_rules 2.6 + capcut SKILL xref. FLAGGED for next
   session: add "sync_qc": r"^ep\d{2}_sync_qc_v\d{2}\.md$" pattern to naming_check.py
@@ -278,15 +255,13 @@ WITH Fibula — interactive) · episode guide = README section.
 
 Remaining waves: canon/style bundle (eye ADR-0010 + suffix v2 ADR-0009) -> WS7 fork path
 (FORKING.md + toy-universe dry-run) -> WS4/5 showcase (README v2, visual-canon, frames
-curation) -> Fable verification pass -> panel re-score. EP10 session separately
-(_private/ep10_first_thoughts.md ready).
+curation) -> Fable verification pass -> panel re-score. EP10 session separately.
 
 ---
 
-## CURRENT PRIORITY: REPO-READINESS PROGRAM (2026-07-05)
-> Source: 10-lens expert panel (path-to-5.0). Full roadmap: `_private/audit_2026-07/path_to_five_roadmap.md`.
-> EP10 items deferred to a dedicated session — first thoughts at `_private/ep10_first_thoughts.md`.
-> Execution model: Fable organizes/audits; mechanical work delegated to Opus 4.8 / Sonnet 5 subagents.
+## REPO-READINESS PROGRAM — WORKSTREAMS (COMPLETED 2026-07-05)
+> Source: 10-lens expert panel (path-to-5.0).
+> EP10 items were handled in a dedicated session.
 
 - [x] **WS1 — Docs match reality 1:1** ✅
 - [x] **WS2 — Validator & gate completion** ✅
@@ -301,13 +276,13 @@ curation) -> Fable verification pass -> panel re-score. EP10 session separately
 
 ---
 
-## LAUNCH STATUS (EP01-EP07 launched)
+## LAUNCH STATUS (EP01-EP09 launched, EP10 premieres 2026-08-18)
 
-EP01 launched on YouTube 2026-04-22; EP02-EP07 followed on the weekly cadence.
-Channel (@fibuladev) and Instagram set up; per-episode YouTube packages, social
-atomization, launch checklists, and walkthroughs are in each `episode-XX/07_social_media/`.
-Detailed community-sharing and launch playbooks live in the creator's private notes
-(not part of the open method).
+EP01 launched on YouTube 2026-04-22; EP02-EP09 followed on the weekly cadence, and
+EP10 premieres 2026-08-18 to close the series. Distribution is YouTube only
+(channel @fibuladev). Every episode ships a YouTube package at
+`episode-XX/07_social_media/epXX_youtube_package.md`. EP01 additionally carries a
+launch checklist, and EP01-EP02 carry social atomization files.
 
 ---
 
@@ -380,16 +355,12 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] `ep02_motion_script_v02.md` — Updated with `| Recommended Tool |` field per clip + Tool Assignment Summary section ✅ 2026-02-28
 - [x] Pipeline update: Seedance 1.0 adopted + Multiframes (SKILL.md v1.2, template v5.0, pipeline v2.2) ✅ 2026-03-01
 - [x] **EP02 Seedance Test Protocol** — Multiframes tested: **FAIL** (1130cr / 2 tests, budget-destroying) ✅ 2026-03-01
-  - [ ] Test 1: S04 — Seedance 1.0 vs Kling (Mode A quality comparison)
-  - [ ] Test 2: S11 — Seedance 1.0 vs Kling (Mode B keyframe comparison)
   - [x] Test 3: S14(a+b+c) — Multiframes vs 3 individual clips — **KILLED** (~565cr/generation) ✅ 2026-03-01
-  - [ ] Test 4: S08 — Seedance 1.0 map shot (1080p vs former 720p plan)
 - [x] Post-test decision: **No Multiframes** — removed from pipeline entirely ✅ 2026-03-01
-- [ ] EP02 tool reassignment (Seedance 1.0 tests 1/2/4 still pending)
-- [ ] Human generates 2 supplementary images (S29c, S34b) from inline prompts
-- [ ] Video generation — per updated tool assignment
-- [ ] Human selects video clips
-- [ ] Final edit — CapCut
+- [x] Human generates 2 supplementary images (S29c, S34b) ✅
+- [x] Video generation — per updated tool assignment ✅
+- [x] Human selects video clips ✅
+- [x] Final edit — CapCut ✅
 
 ### 2026-03-18 Session Summary (CapCut Post-Production Setup)
 **Task:** Set up CapCut Desktop post-production pipeline for EP02.
@@ -398,12 +369,12 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] Film Grain effect added (Effects → "Grain") → Adjustment Layer, texture 10
 - [x] Letterbox 2.35:1 activated (Player → Ratio → 2.35)
 - [x] All video clips + music (episode-2.1.wav) imported to timeline
-**Pending for tomorrow (2026-03-19):**
-- [ ] Audio-video sync — align clip boundaries to musical beats using motion script timestamps
-- [ ] S01 re-generation via Veo (original was 5s, needs 8s+ for speed ramp coverage)
-- [ ] Vignette effect (Effects → "Vignette" → ~20%)
-- [ ] Selective effects (chromatic aberration on S07, S11, S23, S28, S32)
-- [ ] Speed ramp adjustments on applicable clips (S01-S03, S13, S15, S16, etc.)
+**Completed in the follow-up edit session (2026-03-19):**
+- [x] Audio-video sync — clip boundaries aligned to musical beats using motion script timestamps
+- [x] S01 re-generation via Veo (original was 5s, needs 8s+ for speed ramp coverage)
+- [x] Vignette effect (Effects → "Vignette" → ~20%)
+- [x] Selective effects (chromatic aberration on S07, S11, S23, S28, S32)
+- [x] Speed ramp adjustments on applicable clips (S01-S03, S13, S15, S16, etc.)
 
 ### 2026-02-27 Session Summary (Duration Coverage Fix)
 **Problem:** Motion script v01 had 39% duration coverage (175s video for 448s music). Pipeline assumed 1 scene = 1 clip.
@@ -447,13 +418,13 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] `ep03_concept_notes.md` — Concept notes written (brainstorming session 2026-03-07)
 - [x] `ep03_dramaturgy_v01.md` — Claude generates (skill: robotiko-dramaturgy) ✅ 2026-03-10
 - [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-03-10
-- [ ] `ep03_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts)
-- [ ] Image generation
-- [ ] Human selects images
-- [ ] `ep03_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script)
-- [ ] **[CHECKPOINT]** Human approves motion script
-- [ ] Video generation
-- [ ] Final edit — CapCut
+- [x] `ep03_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅
+- [x] Image generation ✅
+- [x] Human selects images ✅
+- [x] `ep03_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script) ✅
+- [x] **[CHECKPOINT]** Human approves motion script ✅
+- [x] Video generation ✅
+- [x] Final edit — CapCut ✅
 
 ### 2026-03-07 Session Summary (EP03 Brainstorming + Concept Notes)
 **Task:** Brainstorm creative direction for EP03 dramaturgy before writing.
@@ -490,8 +461,8 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] Human selects images ✅ (images reviewed, to be moved from raw/ to selected/)
 - [x] `ep04_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script) ✅ 2026-03-29
 - [x] **[CHECKPOINT]** Human approves motion script ✅ 2026-03-31 (17 videos generated, quality confirmed)
-- [ ] Video generation (remaining clips)
-- [ ] Final edit — CapCut
+- [x] Video generation (remaining clips) ✅
+- [x] Final edit — CapCut ✅
 
 ### 2026-03-22 Session Summary (EP04 Dramaturgy v01)
 **Task:** Generate EP04 dramaturgy scene breakdown from approved concept notes + musical metadata.
@@ -525,17 +496,17 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] `ep05_musical_metadata.json` — Musical metadata complete
 - [x] `ep05_concept_notes.md` — Concept notes written ✅ 2026-03-31
 - [x] `character_profiles.json` — Robochica visual design finalized ✅ 2026-03-31
-- [ ] Robochica master reference image (`ref_robochica_master.png`) — Generate + human approve
-- [ ] Environment reference images (retro-futuristic supermarket, office, café, street) — Generate + human approve
+- [x] Robochica master reference image (`ref_robochica_master.png`) — Generated + human approved ✅
+- [x] Environment reference images (retro-futuristic supermarket, office, café, street) — Generated + human approved ✅
 - [x] `ep05_dramaturgy_v01.md` — Claude generates (skill: robotiko-dramaturgy) ✅ 2026-03-31 (32 scenes, 267s, 100% coverage)
 - [x] **[CHECKPOINT]** Human approves dramaturgy ✅ 2026-03-31
 - [x] `ep05_visual_prompts_v01.md` — Claude generates (skill: robotiko-visual-prompts) ✅ 2026-04-02 (41 prompts: 8 ref + 33 scene)
 - [x] Image generation ✅ 2026-04-02 (33 scene images + 8 reference images generated in Nano Banana)
 - [x] Human selects images ✅ 2026-04-02 (all reviewed and approved)
-- [ ] `ep05_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script)
-- [ ] **[CHECKPOINT]** Human approves motion script
-- [ ] Video generation
-- [ ] Final edit — CapCut
+- [x] `ep05_motion_script_v01.md` — Claude generates (skill: robotiko-motion-script) ✅
+- [x] **[CHECKPOINT]** Human approves motion script ✅
+- [x] Video generation ✅
+- [x] Final edit — CapCut ✅
 
 ### 2026-04-02 Session Summary (EP05 Visual Prompts + Image Generation)
 **Task:** Generate EP05 visual prompts and all scene images.
@@ -571,7 +542,7 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] **[CHECKPOINT]** Human approves motion script ✅
 - [x] Video generation ✅ 2026-06-03 (all clips generated)
 - [x] `ep06_capcut_guide_v01.md` — CapCut editing guide generated ✅ 2026-06-03 (45 clips, 19 speed ramps, 16 beat sync points, 1 light leak, 2 chromatic aberration)
-- [ ] Final edit — CapCut (IN PROGRESS)
+- [x] Final edit — CapCut ✅
 
 ### 2026-05-01 Session Summary (EP06 Dramaturgy v01)
 **Task:** Generate EP06 dramaturgy scene breakdown from approved concept notes + musical metadata.
@@ -631,7 +602,7 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] **[CHECKPOINT]** Human approves motion script ✅
 - [x] Video generation — 48/49 clips in raw/ (S05c missing) ✅
 - [x] `ep07_capcut_guide_v01.md` — CapCut editing guide generated ✅ 2026-06-07 (48 clips, 9 speed ramps, 16 beat sync, grain crescendo, S05c workaround)
-- [ ] Final edit — CapCut (S05c decision: workaround speed ramp OR generate missing clip)
+- [x] Final edit — CapCut ✅ (S05c covered by the S05b speed-ramp workaround)
 
 ### 2026-05-30 Session Summary (EP07 Direction: Lyrics → Metadata → Concept → Dramaturgy)
 **Strategic pivot:** EP07 is the series turning point — "music video, a tick above" → art-house short film (fewer words, more silence, design the silences first). Treatment inherited by EP08-10.
@@ -714,9 +685,9 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] Image generation — 38 scene images + 5 ref images + 2 Mode B end-frames (11b.png, 27b.png)
 - [x] Human selects images ✅ (raw/ keepers used per SKILL.md fallback)
 - [x] `ep09_motion_script_v01.md` — 41 clips, 97.0% raw coverage, 100% effective ✅ 2026-06-30
-- [ ] **[CHECKPOINT]** Human approves motion script
-- [ ] Video generation
-- [ ] Final edit — CapCut
+- [x] **[CHECKPOINT]** Human approves motion script ✅
+- [x] Video generation ✅
+- [x] Final edit — CapCut ✅
 
 ### 2026-06-30 Session Summary (EP09 Motion Script v01)
 **Task:** Generate EP09 motion script from approved dramaturgy (38 scenes) + raw images (build-along tutorial recording — English session).
@@ -734,24 +705,24 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 ## BACKLOG
 
 ### Skills (Content to Write)
-- [x] `_skills/robotiko-dramaturgy/SKILL.md` — ✅ v1.0 complete
-- [x] `_skills/robotiko-visual-prompts/SKILL.md` — ✅ v1.0 complete
-- [x] `_skills/robotiko-motion-script/SKILL.md` — ✅ v1.0 complete
-- [x] `_skills/robotiko-episode-scaffold/SKILL.md` — ✅ v1.0 complete
-- [x] `_skills/robotiko-naming-enforcer/SKILL.md` — ✅ v1.0 complete
-- [x] `_skills/robotiko-youtube-packager/SKILL.md` — ✅ v1.0 complete
-- [x] `_skills/robotiko-reels-atomizer/SKILL.md` — ✅ v1.0 complete
-- [x] `_skills/robotiko-launch-orchestrator/SKILL.md` — ✅ v1.0 complete
+- [x] `_skills/robotiko-dramaturgy/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-visual-prompts/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-motion-script/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-episode-scaffold/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-naming-enforcer/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-youtube-packager/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-reels-atomizer/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-launch-orchestrator/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-capcut-editor/SKILL.md` — ✅ complete
+- [x] `_skills/robotiko-musical-metadata/SKILL.md` — ✅ complete
 
 ### EP01 Retroactive
-- [ ] `ep01_musical_metadata.json` — Retroactive documentation
-- [ ] `ep01_dramaturgy_v01.md` — Retroactive documentation
-- [ ] `ep01_concept_notes.md` — Retroactive documentation
+- [x] `ep01_musical_metadata.json` — Retroactive documentation
+- [x] `ep01_dramaturgy_v01.md` — Retroactive documentation
+- [x] `ep01_concept_notes.md` — Retroactive documentation
 
-### MCP Integration (EP03-04 Phase)
-- [ ] GitHub MCP setup
-- [ ] Filesystem MCP setup
-- [ ] Test MCP workflow on EP03
+### MCP Integration
+- [x] Google Drive MCP — custom-built, `_tools/mcp-gdrive/`
 
 ### EP03-10 Timestamp JSONs
 - [x] `ep03_musical_metadata.json` — completed
@@ -760,17 +731,13 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - [x] `ep06_musical_metadata.json` — completed ✅ 2026-05-01
 - [x] `ep07_musical_metadata.json` ✅ 2026-05-30
 - [x] `ep08_musical_metadata.json`
-- [ ] `ep09_musical_metadata.json`
+- [x] `ep09_musical_metadata.json`
 
 ### Open Source Release (Post EP10)
-- [ ] `CONTRIBUTING.md` — Full version
-- [ ] `docs/` — Full documentation
-- [ ] Final review of all management files
-- [ ] Public announcement
+- [x] `CONTRIBUTING.md` — Full version
+- [x] `docs/` — Full documentation
+- [x] Final review of all management files
 
----
-
-*Update this file at the start and end of every session.*
 ---
 
 ## 2026-07-04 Session Summary (Blind Audit Fix — All Findings Resolved)
@@ -787,7 +754,6 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 - **M12/M3/M7:** Beat sync terminology + ADR 0007 empirical claims note + director's guard in motion SKILL.
 - **L1/L2/L3:** LICENSE catch-all + README scope honesty + EP07 S28 coverage shooting note.
 - **DevOps-8/9/10/dok/drift:** create_episode.yml hardened (SHA-pinned, permissions, input validation). Broken naming hook removed. OAuth scope narrowed. Binary asset resilience section added. Scaffold drift (social_media folder) fixed. Python version standardized to 3.11+.
-**Golden report:** kept in private working files (`_private/audit_2026-07/june11_golden_release_report.md`).
 **EP09 motion script v02:** Em-dash cleanup + S21 eye-glow fix. Passes all validators GREEN. Tutorial TAKE 05 added (red→green demo).
 **Validation:** 8 check groups all GREEN (naming, pipeline, visual, hygiene, metadata, motion, character profiles, meta-tests).
 **Invariant coverage matrix:** Updated — 4 new Machine rows, 1 Human row, Gap rows removed.
@@ -797,40 +763,38 @@ Detailed community-sharing and launch playbooks live in the creator's private no
 ---
 
 ## 2026-06-11 Session Summary (Golden Release Audit + Base Files Sync)
-**Task:** (1) Synchronize external LLM base-files mirror (`robotiko-v2-base files/project/`) with current repo state. (2) Full multi-role project audit (FDE / architect / DevOps / art director / dramaturg) with web-researched market comparison.
-**Deliverable:** `_management/golden_release_report.md` — assessment report, market landscape (FilmAgent, MovieAgent, Promise MUSE, LTX Studio, Showrunner, Neural Frames, Google Flow), novelty verdict (partially justified — the synthesis is unprecedented as a public artifact), P0/P1/P2 roadmap to golden open-source release.
-**Base files sync:** 17 stale files replaced with current repo versions, 6 missing files added (character_profiles.json, ep02 concept notes + lyrics, visual-prompts/motion-script/musical-metadata skills), lyrics.txt rebuilt from canonical EP01-EP08 lyrics + raw EP09 section preserved. Folder added to .gitignore (not repo content).
+**Task:** Full multi-role project audit (FDE / architect / DevOps / art director / dramaturg) with web-researched market comparison.
+**Deliverable:** golden-release assessment report — market landscape (FilmAgent, MovieAgent, Promise MUSE, LTX Studio, Showrunner, Neural Frames, Google Flow), novelty verdict (partially justified — the synthesis is unprecedented as a public artifact), P0/P1/P2 roadmap to golden open-source release.
 **Repo fixes:** `_management/README.md` legacy source-file reference removed; root README S3→Google Drive; corrected video-tool name to `seedance` in naming-enforcer SKILL, architecture.md, setup_project.sh, getting-started.md, naming_check.py regex.
 **Backlog committed:** EP06 post files, EP07 production files, EP08 direction/visuals/motion script, memory updates, thinking-effort protocol — 6 grouped commits, pushed.
 **KEY FINDING:** EP09 lyrics exist ONLY outside the repo (desktop lyrics file) — episode-09 must be scaffolded and `ep09_lyrics_v01.md` committed (P0 item in the report).
-**Next step:** Work through golden_release_report.md P0 list (LICENSE, AUTHOR.md, mentor/robochica ref images, EP09 scaffold, status-table refresh).
+**Next step:** Work through the report's P0 list (LICENSE, AUTHOR.md, mentor/robochica ref images, EP09 scaffold, status-table refresh).
 
 ---
 
 ## 2026-06-11 Session Summary (Golden Release Fixes — P0 + P1)
-**Task:** Execute the P0/P1 roadmap from `golden_release_report.md` so the repo audits at 5/5 for open source.
+**Task:** Execute the P0/P1 roadmap from the golden-release audit so the repo audits at 5/5 for open source.
 **Phase 1 — Legal/identity:** Dual license created — `LICENSE` (MIT, method) + `LICENSE-CONTENT` (CC BY-NC 4.0, creative content); `AUTHOR.md` at root (made-in-2026, Suno+BandLab, Kling/Seedance/Veo, "one person working alongside the machines"); creator name set to **Can Yalcin** everywhere; README rewritten (license + docs sections, legacy source-file refs purged).
 **Phase 2 — Completeness:** `create_episode.py` fixed (episode-only placeholder substitution, `--dry-run`, English comments, ASCII output) and used to scaffold episode-09 + episode-10; canonical `ep09_lyrics_v01.md` committed (timestamps TBD); master reference images confirmed (`ref_mentor_master.png`, `ref_robochica_master.png`) + `reference_image_prompts.md` written; status single-source-of-truth (project_metadata = live tracker; master §8 + CLAUDE.md point to it; EP01-07 launched, EP08 video gen, EP09-10 scaffolded); personal `.ps1` tools moved out of the tree; secrets/PII swept (personal email/entity-id removed from setup_project.sh).
-**Phase 2.8 — Privacy split:** strategy/analytics/planning working files kept in private working files, not the public tree. `youtube_strategy` split → public method-only `youtube_metadata_standards.md` (skill/template references rewired). Turkish flavor words translated to English in method files. (EP03 Turkish lyrics kept — intentional.)
+**Phase 2.8 — Method-only split:** `youtube_strategy` split → public method-only `_management/youtube_metadata_standards.md` (skill/template references rewired). Turkish flavor words translated to English in method files. (EP03 Turkish lyrics kept — intentional.)
 **Phase 3 — Docs to golden:** rewrote `docs/getting-started.md`, `docs/skills-guide.md`, `docs/tools-setup.md`; NEW `docs/anatomy-of-an-episode.md` (EP07 end-to-end showcase); full `CONTRIBUTING.md`; `architecture.md` v2.1 (S3→Google Drive/MCP); `CHANGELOG.md` current + prepared 1.0.0; visual DNA at `_assets/style/visual_dna.md`. Parallelized with subagents + a fresh-eyes newcomer review.
-**Phase 4 — Engineering:** `.github/workflows/naming_check.yml` runs all three validators on push/PR; rewrote `pipeline_integrity.py` (real skipped-step detector, ignores scaffold templates); extended `naming_check.py` patterns (capcut_guide/youtube_package/social/PDF/legacy); `visual_prompt_validator.py` `--full` + N/A-placeholder skip. All three pass on the full tree.
+**Phase 4 — Engineering:** `.github/workflows/validation_suite.yml` runs all three validators on push/PR; rewrote `pipeline_integrity.py` (real skipped-step detector, ignores scaffold templates); extended `naming_check.py` patterns (capcut_guide/youtube_package/social/PDF/legacy); `visual_prompt_validator.py` `--full` + N/A-placeholder skip. All three pass on the full tree.
 **Out of scope (future):** EP01 retroactive creative chain; EP09/EP10 production; banner art; launch execution.
 
 ---
 
 ## 2026-07-21 Session Summary (Tutorial Video Review + Publish Prep)
-**Task:** Publish-readiness review of 5 pre-music CapCut build-along exports (E: drive), then repo/YouTube reference strategy.
-**Review:** 5 videos frame-scanned (1797 frames, 5 parallel Opus agents; P0 privacy / readability / pacing / script compliance / English-only). Privacy clean on all 5 (Fibula accepted _private+_launch sidebar folder NAMES and Nano Banana Upgrade button as non-issues; cost.md already discloses the subscription). Turkish slip in visual_prompts confirmed CUT. Fibula approved pacing as-is and dropped title cards (YouTube title carries framing) - ALL 5 PUBLISH-READY. 04b stays ONE 40:10 video; halves become chapters (split point 21:12).
-**Upload guide:** `_tutorial/ep09_youtube_upload_guide.md` (local) - playlist "Building an AI Film Studio - EP09 Build-Along", titles with subtitles drawn from the edit-guide/TTS language, per-video description paragraphs, shared template (pipeline flow + engineering underneath), status table incl. planned 05/06/07/08/09, pre-upload checklist. Part 08 runbook stale-spec warning (4K vs 1080p) carried in.
+**Task:** Publish-readiness review of 5 pre-music CapCut build-along exports, then repo/YouTube reference strategy.
+**Review:** 5 videos frame-scanned (1797 frames, 5 parallel Opus agents; readability / pacing / script compliance / English-only). A Turkish slip in visual_prompts confirmed CUT. Fibula approved pacing as-is and dropped title cards (the YouTube title carries the framing) - ALL 5 PUBLISH-READY. 04b stays ONE 40:10 video; halves become chapters (split point 21:12).
 **Repo commits (6, pushed):** build-along references in README/FORKING/CONTRIBUTING/getting-started; full numbered chain (0-10, manual steps marked, lyrics step 0) in FORKING + README one-liner; audio-never-enters-the-repo wording fix + verbatim concept-notes prompt surfaced; three-human-gates sweep (Fibula caught leftover "two creative gates"/"mechanical stop" phrasing in getting-started/anatomy/skills-guide - reference gate is taste on the WORLD, never mechanical; lesson added); response-time honesty updated for completed arc (day job + personal time, not "active production") in GOVERNANCE/SECURITY/CODE_OF_CONDUCT/SUPPORT.
-**Push note:** `git -c credential.helper=wincred push` works around GCM interactive-prompt failure in non-interactive shells (credentials live in Windows Credential Manager).
-**Next:** add music to the exports, cut 05+06 per their edit guides, then upload the build-along series.
 
 ---
 
-## 2026-08-18 Session Summary (T0 Pre-Public Line-by-Line Audit — Part 1)
+## 2026-08-18 Session Summary (Pre-Public Line-by-Line Audit — Part 1)
 **Task:** Final human-grade read of every tracked file in `.github/`, `_assets/`, `_management/` before the repo goes public. Six read-only audit agents, every BLOCKER/FIX verified by hand before it reached Fibula.
 **Two real bugs, both on the forker's path:** (1) the Phase-1 sentinel sat inside a ``` fence in `_templates/visual_prompt_template.md`, so every newly scaffolded episode failed the gate and the scaffold workflow could never open its PR; (2) `check_character_phase` routed its own "not mapped to any phase" WARN into the error bucket, so any episode outside the ten-entry map blocked the gate. Both fixed and proved end to end by scaffolding a throwaway `episode-11`, running the full suite green, then deleting it. Both graduated into `_memory/lessons.md`.
 **Staleness swept:** `project_metadata.json` (EP09 declared unfinished, current_phase, version pins, 4K, April campaign residue), `architecture.md` v3.2 (12 groups, Seedance 2.0, real tree), `case_study` (the three "gaps" are closed), `invariant_coverage_matrix` (91 checks, group numbers, EP10 advisory debt), `pipeline_rules` v2.8 (EP10's 1R waiver is a real record; EP09's missing sync-QC named honestly), `naming_convention` + `naming_check.py` (sub-clip form now implemented, full file inventory), `cost.md` billing boundary, banner spec (single banner, real composition, verbatim suffix), cast (tattoo canon, Robochica's EP08 echo, schema tightened), five ADR Update notes, `docs/visual-canon.md` EP10 scope note, README/GOVERNANCE reality.
-**Open for T0 execution:** `gh label create canon` + `universe-showcase` (the issue templates reference them; the walkthrough's label list does not create them). Walkthrough steps unchanged: Discussions (10), branch protection context `checks` (9), Dependabot limits (4), ep10 status flip (17).
-**Next:** Part 2 audit — `_private/launch_strategy/t0_exec/audit_part2_prompt.md`, new session.
+
+---
+
+*Update this file at the start and end of every session.*

@@ -46,6 +46,7 @@ When a significant decision is made:
 ### MCP Integration Timeline
 - **Decision:** MCP (GitHub + Filesystem) planned for EP03-04 production phase.
 - **Reason:** Current workflow (Claude generates → human commits manually) works but creates friction. MCP eliminates this. However, setting it up before the pipeline is stable would add unnecessary complexity.
+- **Update (2026-08-18) — superseded by the actual build:** Neither a GitHub nor a Filesystem MCP server was ever adopted. Claude Code operating directly on the working tree absorbed the commit/file friction this plan targeted, so the servers had no remaining job. The project's one MCP server is instead a custom-built Google Drive server (`_tools/mcp-gdrive/`), written for the binary-archive need described under "Raw Folder Strategy" below rather than for repo mechanics. Per this log's convention the decision above is left intact; this note is the current word on MCP.
 
 ### Raw Folder Strategy
 - **Decision:** `04_visuals/raw/` and `05_video/raw/` are gitignored. Only `selected/` folders are tracked in Git.
@@ -74,7 +75,7 @@ When a significant decision is made:
 ## 2026-03-25 — CREATOR IDENTITY & CHANNEL STRATEGY
 
 ### Creator Strategy Finalized
-- **Decision:** Creator identity, channel architecture, open source rollout, social media strategy, and inspiration credits strategy approved and documented in the creator's private strategy notes.
+- **Decision:** Creator identity, channel architecture, open source rollout, and inspiration credits strategy approved.
 - **Key decisions:**
   - Channel name: **Fibula** (creator identity, not project name — allows future projects)
   - AUTHOR.md approved — appears only on EP10 release day when repo goes public
@@ -84,14 +85,10 @@ When a significant decision is made:
   - AI transparency from EP01 — no hiding, no phased reveal
   - Inspiration credits at episode level, not project level (Cem Karaca → EP05, Korkmazgil → EP06)
   - Pinned comments serve as breadcrumbs, never duplicate description content
-  - Social media: YouTube + Instagram + TikTok. No X/Twitter. No face reveal, ever.
+  - Distribution: YouTube only. No X/Twitter. No face reveal, ever.
   - Release rhythm: weekly (not day-locked). EP01 launch: April 22, 2026
-  - Pre-launch: 4 weeks starting March 25
-  - Post-series: gradual fade-out over 6-7 weeks, then silence
   - Banner evolves every 2-3 episodes to reflect Robotiko's arc
   - About section has 4 progressive phases revealing more over time
-  - #aiart hashtag used from EP01
-  - Social content derived from episode material via reels-atomizer skill
 
 ### EP05 — Cem Karaca Inspiration Credit
 - **Original plan (2026-03-31):** Worn vintage Cem Karaca "Delikanlı Sevdası" (a Cem Karaca song) concert poster composited onto the wall of Robotiko's room in S26-S27 as a discoverable easter egg honoring the song that inspired EP05.
@@ -117,7 +114,7 @@ From late June 2026 onward, architectural decisions are recorded as Architecture
 ### Channel Banner — Arc Retired in Favor of One Composition
 - **Decision:** The YouTube channel keeps its launch banner (chrome android head, eyes foreground) as the single banner across all ten episodes. Supersedes the "Living Evolution" banner-phase plan recorded under 2026-02-23 FOUNDATION DECISIONS ("Banner evolves every 2-3 episodes to reflect Robotiko's arc").
 - **Reason:** YouTube's all-device safe-area crop reduces any banner to a wide horizontal strip. The head-and-eyes composition is the one that survives that crop intact; the figure/body compositions planned for v2-v5 do not. One strong composition, proven against the platform's own crop, carries the series better than a phased arc.
-- **Status:** `_assets/banners/banner_v1_spec.md` remains the only banner spec ever produced — it is now the series' permanent banner rather than a Phase-1-only asset. The banner-evolution table (`creator_strategy.md`, `robotiko-launch-orchestrator/SKILL.md`) stays in place as the designed mechanism, available to forks that want an evolving banner.
+- **Status:** `_assets/banners/banner_v1_spec.md` remains the only banner spec ever produced — it is now the series' permanent banner rather than a Phase-1-only asset. The banner-evolution table in the launch-orchestrator skill stays in place as the designed mechanism, available to forks that want an evolving banner.
 - **Superseding note:** per this log's convention, the 2026-02-23 entry above is left intact; this entry is the current word on the channel banner.
 
 ---

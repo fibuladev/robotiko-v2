@@ -822,6 +822,56 @@ launch checklist, and EP01-EP02 carry social atomization files.
 
 **Lesson for the method:** a gate whose scope mirrors the sweep that created it cannot catch what the sweep missed. Scope the check to where the content lives, not to where the last cleanup happened.
 
+## 2026-08-18 Session Summary (T0 — the repository went public, EP10 premiered)
+
+**What happened.** The whole arc landed in one day. Morning: the last of the
+three pre-public line-by-line audits (Part 3, ten episode folders). Midday: the
+flip. Evening: EP10 premiered at 18:00 CET, closing the ten-episode
+bildungsroman.
+
+**The flip, in order.** Dependabot PR limits lifted and pushed BEFORE protection
+went on (direct pushes to main close afterwards). Tag `v2.0.0` pushed and the
+release published from the staged notes. Repository made public. Branch
+protection ON — `checks` required, force pushes off, and `enforce_admins: true`,
+so from that moment every commit to main goes through a PR, this one included.
+Discussions enabled, START HERE posted in Announcements and pinned. Seven labels
+and eight seed issues opened (#5–#12). YouTube About, Links and contact updated.
+
+**The verification that actually matters.** Not the green tick on our own
+machine: an anonymous clone with no credentials, from the public URL, running
+`python tests/run_all.py` → 12/12. Plus every public surface checked
+logged-out — repo root, the v2.0.0 release page, the pinned discussion, the
+issues list, the playlist, both episode URLs.
+
+**Dependabot, four PRs, two different standards of proof.** The two GitHub
+Actions bumps (`setup-python` 5.6→7.0, `checkout` 4.3→7.0) were genuinely
+proven: CI ran the workflow *with the new versions* and passed. The two npm
+bumps for the Drive MCP server were not — CI is Python-only and never touches
+`_tools/mcp-gdrive`, so a green tick there proves nothing. Those two were
+verified by hand: each branch cloned, `npm install`, and the server booted.
+`googleapis` jumped 144→174, thirty majors, and still starts. All four merged,
+all four branches deleted; remote is `main` only again.
+
+**First outside contribution — PR #14.** A markdown-link pass added to
+`doc_reference_check.py`, closing issue #8. Reviewed rather than trusted: suite
+12/12 on the branch, 249 meta-tests OK, and — the number that decided it — 254
+markdown link targets across the 22 curated docs that no gate had ever checked.
+Proven to bite by planting a broken link in README (caught) and confirming
+main's extractor misses the same line entirely. Scope clean: four files, all
+under `tests/`. One change requested before merge: three places still describe
+the check as backtick-only, so merging as-is would ship doc drift inside the
+doc-drift checker. Awaiting the contributor.
+
+**Operational note worth keeping.** Fork PRs arrive with zero checks — GitHub
+holds the workflow run until a maintainer approves it, and approving means
+running a stranger's code in our CI. The habit is: read the diff first, approve
+the run second. Never the reverse.
+
+**Open at session end.** The HN account is still shadowbanned and showlim-
+restricted, so Show HN is not available; the dev.to set and the r/ClaudeAI
+approach are the remaining distribution decisions. Post-T0 maintenance backlog
+lives outside the tree.
+
 ---
 
 *Update this file at the start and end of every session.*

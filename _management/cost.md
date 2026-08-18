@@ -62,9 +62,10 @@ KLING was not renewed for August — video generation wrapped with the July cycl
   cycle. Suno, BandLab, Google AI Plus and CapCut Pro run into the August 2026
   launch window and are counted through it. KLING and Claude Max are counted
   through July — KLING for the reason in the footnote above, Claude Max because
-  the pipeline work this file documents was finished by then. The August
-  direction work — packaging, the release itself, this very line — is not
-  counted, so the total understates rather than flatters.
+  the pipeline work this file documents was finished by then. Every hour of the
+  film itself falls inside the counted cycles. What falls outside is the work of
+  opening the repository — packaging, the release, this very line — which is not
+  part of the film's cost.
 - **What is NOT counted:** hardware (a consumer PC), electricity, internet — and the
   human's time. Roughly eight months of steady evening work — one to two hours most
   weeknights: writing, listening, approving, rejecting, re-approving. Weekends stayed

@@ -139,6 +139,18 @@ your generators, and your taste enter.
    > episode-{XX}/03_direction/ep{XX}_concept_notes.md under 'Must-Have Shots
    > (Override)' and 'Mood'. Here they are: — Must-have: [your shots] —
    > Mood: [your mood direction]"*
+
+   That prompt is the mechanics; the craft is what goes in the blanks, and it
+   is the single largest creative lever a human holds in this pipeline. A
+   must-have that actually steers an episode carries five things: the exact
+   moment in the timeline it lands on (a lyric here; in your universe a
+   narration line, a beat of dialogue, or a section timestamp — see the
+   no-music mapping below), the visual staging, the symbolic logic (why this
+   image for these words), one camera or blocking constraint, and awareness
+   of the medium's limits (e.g. split a two-action beat into two clips). Two words
+   in the blank produce a generic film; see
+   `episode-07/03_direction/ep07_concept_notes.md` ("MUST-HAVE SHOTS — Human
+   Overrides", Override 1) for what a real one looks like.
 4. **`"Create dramaturgy for EP{XX}"`** — scene-by-scene visual breakdown.
    **⛔ Gate 1 — review and approve before any image work begins.**
 5. **`"Generate visual prompts for EP{XX}"`** — one prompt per scene, anchored to

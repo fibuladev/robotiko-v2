@@ -111,6 +111,8 @@ An episode starts with its words and its audio: you write the lyrics, Suno gener
 
 The concept-notes step needs no special trigger — plain words work. From the build-along session, verbatim: *"I'll give you my concept notes for EP09. Write them into episode-09/03_direction/ep09_concept_notes.md under 'Must-Have Shots (Override)' and 'Mood'. Here they are: — Must-have: [your shots] — Mood: [your mood direction]"*
 
+Do not let the fill-in blank fool you: this is where the human's actual authorship lives, and the dramaturgy can only be as good as what you write here. A must-have shot worth the name carries the timeline moment it lands on (a lyric in this repo; a narration or dialogue line in a fork without music), the staging, the symbolic logic, a camera or blocking constraint, and a production note where the medium needs one — [EP07's Override 1](../episode-07/03_direction/ep07_concept_notes.md) is the reference example: it times the rise to "But now…", forbids shooting from behind so the defeat reads on the face, and pre-splits the beat into two clips to avoid multi-action morphing. Every skill downstream treats these lines as a contract.
+
 The stops are not optional and never skipped. They are the entire point of the arrangement: the machine does the labor; the human keeps the taste. All three gates are human: the dramaturgy and motion-script gates approve *direction*; the reference gate approves the *world* the scenes will be framed against.
 
 > New to the skills themselves? **[skills-guide.md](skills-guide.md)** explains what each one does and walks a worked example. The full trigger table also lives in **[../CLAUDE.md](../CLAUDE.md)**.

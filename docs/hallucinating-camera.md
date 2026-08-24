@@ -103,8 +103,8 @@ did.
 
 ### 3a. EP06 monotony — how the Camera Diversity Rule was born
 
-EP06 was generated before any diversity discipline existed. The result: **42% of
-its clips were the same move, Slow Zoom In.** Watched end to end, the episode felt
+EP06 was generated before any diversity discipline existed. The result: **40% of
+its clips were the same move, Slow Zoom In** (18 of 45). Watched end to end, the episode felt
 like one long push — the camera had a single idea and repeated it until the
 repetition became the only thing you noticed. That is not a style; it is a tic.
 
@@ -126,8 +126,9 @@ move. Diversity is a decision you impose from outside; it never emerges on its o
 EP07 ("The Silence Protocol", `episode-07/03_direction/ep07_concept_notes.md`) is
 the counter-example: camera restraint used as the entire spine of a film.
 
-Its personality is **the Retreating Camera**. Dolly Out dominates (~25-30%); Static
-fills the emptiness between (~20-25%). The character speaks a refrain five times —
+Its personality is **the Retreating Camera**. Dolly Out and Static together carry
+half the film (12 and 13 of its 49 clips); the busiest moves in this episode are
+the ones that stop or step back. The character speaks a refrain five times —
 *"...Here. But you... are NOT."* — and on each of the five, across five different
 locations, the camera pulls **one rung more distant**. Bench, home, transit, mall,
 bed: a consistent *distance ladder* that makes isolation legible through scale

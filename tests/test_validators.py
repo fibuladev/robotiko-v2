@@ -114,6 +114,10 @@ QUOTEDSENTINEL_GOOD = os.path.join(FIXTURES, "ep10_visual_prompts_QUOTEDSENTINEL
 DOC_REF_BAD = os.path.join(FIXTURES, "doc_ref_BAD.md")
 DOC_REF_GOOD = os.path.join(FIXTURES, "doc_ref_GOOD.md")
 
+# Frozen markdown-link fixtures: [text](path) targets, not backtick tokens.
+DOC_LINK_BAD = os.path.join(FIXTURES, "doc_link_BAD.md")
+DOC_LINK_GOOD = os.path.join(FIXTURES, "doc_link_GOOD.md")
+
 FORBIDDEN_TERMS_BAD = "tests/fixtures/forbidden_terms_BAD.md"
 FORBIDDEN_TERMS_GOOD = "tests/fixtures/forbidden_terms_GOOD.md"
 
@@ -812,6 +816,50 @@ class TestDocReferenceExistence(unittest.TestCase):
     def test_current_tree_is_clean(self):
         # The curated docs on disk must stay green (this is what CI enforces).
         self.assertEqual(drc.scan_all_docs(REPO_ROOT), [])
+
+
+class TestMarkdownDocLinks(unittest.TestCase):
+    """The [text](path) link pass, proven both directions: a frozen doc with a
+    dead link target must FAIL (reporting the bare filename), a clean doc
+    (relative links, #anchor fragments, a tolerated _private/ link, a gitignored
+    render output) must PASS with zero findings."""
+
+    def _fails(self, findings):
+        return [m for s, m in findings if s == "FAIL"]
+
+    def test_bad_fixture_fails_on_missing_link(self):
+        findings = drc.lint_doc_file("tests/fixtures/doc_link_BAD.md", REPO_ROOT)
+        fails = self._fails(findings)
+        self.assertTrue(fails, "BAD fixture must fail: it links to a nonexistent path.")
+        self.assertTrue(
+            any("nonexistent.md" in m for m in fails),
+            f"the dead link target must be the reported failure. Got: {fails}",
+        )
+
+    def test_bad_fixture_real_path_is_not_the_failure(self):
+        # tests/run_all.py in the same fixture must not be flagged.
+        findings = drc.lint_doc_file("tests/fixtures/doc_link_BAD.md", REPO_ROOT)
+        self.assertFalse(any("run_all.py" in m for _, m in findings))
+
+    def test_good_fixture_passes_clean(self):
+        findings = drc.lint_doc_file("tests/fixtures/doc_link_GOOD.md", REPO_ROOT)
+        self.assertEqual(
+            findings, [],
+            f"GOOD fixture must pass with zero findings. Got: {findings}",
+        )
+
+    def test_anchor_fragments_and_out_of_scope_links_dropped(self):
+        # The extraction is pure (no existence check): an #anchor is stripped,
+        # a bare in-page anchor produces no path, URLs and _private/ and render
+        # outputs are skipped before anything is checked.
+        toks = drc.extract_link_targets(
+            "see [anatomy](docs/foo.md#scenes), [top](#), "
+            "[drive](https://example.com/a.md), "
+            "[secret](_private/audit/x.md), [clip](episode-07/05_video/raw/f.mp4)"
+        )
+        self.assertIn("docs/foo.md", toks)
+        for unwanted in ("#", "https://", "_private/", "/raw/"):
+            self.assertFalse(any(unwanted in t for t in toks), toks)
 
 
 class TestHookRotGuard(unittest.TestCase):

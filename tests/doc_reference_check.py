@@ -10,11 +10,14 @@ machine-caught forever.
 Two check sections, one file:
 
   SECTION 1 - Doc-reference existence
-    Scans a CURATED list of load-bearing docs, extracts backtick-quoted repo paths,
-    and fails if any referenced path does not exist on disk. Deliberately narrow:
+    Scans a CURATED list of load-bearing docs, extracts both backtick-quoted repo
+    paths and markdown [text](path) link targets, and fails if any referenced path
+    does not exist on disk. Deliberately narrow:
       * only backtick-quoted tokens that LOOK like repo-relative paths
         (contain "/" and end in a known extension, OR start with a known top-level
-        dir like tests/ docs/ _management/ ...);
+        dir like tests/ docs/ _management/ ...), plus markdown link targets checked
+        as-is (a bare filename is a valid relative link; #anchor fragments are
+        stripped before checking, and ../ relative paths resolve naturally);
       * URLs, glob/placeholder tokens ({XX}, *, <...>, [ ]), absolute / home paths,
         and paths under _private/ (gitignored by design) are skipped;
       * a line is tolerated whole if it carries an inline `<!-- doc-ref: ignore -->`
@@ -68,6 +71,11 @@ CURATED_DOCS = [
     "docs/text-only-first-episode.md",
     "docs/two-phase-visual-prompts.md",
     "docs/visual-canon.md",
+    "GOVERNANCE.md",
+    "ROADMAP.md",
+    "UNIVERSES.md",
+    "SUPPORT.md",
+    "CODE_OF_CONDUCT.md",
 ]
 
 # Extensions that mark a backtick token as a file path.
@@ -103,26 +111,33 @@ ALLOWLIST = {
 
 MATRIX_PATH = "_management/invariant_coverage_matrix.md"
 BACKTICK = re.compile(r"`([^`]+)`")
+MARKDOWN_LINK = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 
 
 # -------------------------------------------------------------------
 # SECTION 1 - helpers: path extraction + existence
 # -------------------------------------------------------------------
 
+def _scope_rejects(token):
+    """True for tokens this lint is designed to skip: URLs, globs/placeholders,
+    and absolute or home paths. Shared by the backtick and link-target scans."""
+    low = token.lower()
+    if "://" in low or low.startswith(("http", "www.", "mailto:")):
+        return True
+    if token.startswith(("/", "~")):
+        return True
+    if any(c in token for c in "*{}<>[]|") or " " in token:
+        return True
+    if "XX" in token or "VV" in token:            # ep{XX}, v{VV}, episode-XX/
+        return True
+    return False
+
+
 def _looks_like_repo_path(token):
     """True if a backtick token looks like a repo-relative path worth checking."""
     if not token:
         return False
-    # Reject globs / placeholders / template tokens outright.
-    if any(c in token for c in "*{}<>[]|") or " " in token:
-        return False
-    if "XX" in token or "VV" in token:            # ep{XX}, v{VV}, episode-XX/
-        return False
-    # Reject URLs and absolute / home paths (not repo-relative).
-    low = token.lower()
-    if "://" in low or low.startswith(("http", "www.", "mailto:")):
-        return False
-    if token.startswith(("/", "~")):
+    if _scope_rejects(token):
         return False
 
     # Normalize leading ./ and ../ only for the prefix test.
@@ -171,6 +186,31 @@ def extract_path_tokens(line):
     return out
 
 
+def extract_link_targets(line):
+    """Yield markdown [text](path) link targets worth checking for existence.
+
+    The backtick heuristic (a token must contain "/" or start with a known
+    prefix) is deliberately NOT applied here: a bare filename like `file.md`
+    is a valid markdown relative link and must be checked. _private/ paths and
+    gitignored render outputs are dropped, matching extract_path_tokens."""
+    out = []
+    for target in MARKDOWN_LINK.findall(line):
+        path = target.split("#", 1)[0].strip()
+        if not path:                       # pure in-page anchor, no path to check
+            continue
+        if _scope_rejects(path):
+            continue
+        if path.startswith("_private/") or "/_private/" in target:
+            continue
+        if path.lower().endswith(RENDER_OUTPUT_EXTENSIONS):
+            continue
+        if any(m in target for m in RENDER_OUTPUT_DIR_MARKERS) or \
+                path.endswith(("/raw", "/selected")):
+            continue
+        out.append(path)
+    return out
+
+
 def path_exists(token, doc_abspath, repo_root):
     """A token resolves if it exists relative to the repo root OR to the doc dir
     (the repo mixes repo-root-relative backticks with ../-relative doc links)."""
@@ -215,7 +255,17 @@ def lint_doc_file(doc_relpath, repo_root):
     for i, line in enumerate(lines, 1):
         if _line_suppressed(line) or "removed" in line.lower():
             continue
-        for tok in extract_path_tokens(line):
+        seen = set()
+        for tok in extract_path_tokens(line) + extract_link_targets(line):
+            # The same broken target often appears as both `` `path` `` and
+            # [x](path) on one line, with and without a leading ../ in the two
+            # forms — report the underlying miss once, keyed on the repo file.
+            key = tok
+            while key.startswith("../") or key.startswith("./"):
+                key = key[3:] if key.startswith("../") else key[2:]
+            if key in seen:
+                continue
+            seen.add(key)
             if not path_exists(tok, doc_abspath, repo_root):
                 findings.append(
                     ("FAIL", f"{doc_relpath}:{i} references missing path: {tok}")
